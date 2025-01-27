@@ -17,7 +17,7 @@ website:
   page-navigation: true
   favicon: assets/LMU_OSC_favicon.jpg
   margin-header: |
-    ![](/assets/LMU_OSC_logo.jpg){width="175"}
+    ![](/assets/LMU_OSC_logo.svg){width="175"}
 
 
   navbar:
@@ -59,20 +59,28 @@ website:
 
       - section: "GitHub Organization"
         contents:
-          - href: new_staff/page1.qmd
+          - href: github/page1.qmd
             text: "About out GitHub Organization"
-          - href: new_staff/page2.qmd
+          - href: github/page2.qmd
             text: "What to learn?"
-          - href: new_staff/page3.qmd
+          - href: github/page3.qmd
             text: "Repository Overview"
-          - href: new_staff/page4.qmd
+          - href: github/page4.qmd
             text: "What are GitHub Actions?"
+          - href: github/page4.qmd
+            text: "Pull Requests and Issues"
+          - href: github/page4.qmd
+            text: "Zenodo Integration"
+          - href: github/page4.qmd
+            text: "Citations and Licenses"
       - section: "GitLab"
         contents:
-          - href: new_staff/page1.qmd
+          - href: gitlab/page1.qmd
             text: "The LRZ GitLab"
-          - href: new_staff/page2.qmd
+          - href: gitlab/page2.qmd
             text: "Repository Overview"
+          - href: gitlab/page2.qmd
+            text: "Web Hosting?"
       - section: "Authoring Tutorials"
         contents:
           - href: authoring_tutorials/page1.qmd
@@ -85,6 +93,10 @@ website:
             text: "Matomo Analytics"
           - href: authoring_tutorials/page5.qmd
             text: "Best Practices"
+          - href: authoring_tutorials/page4.qmd
+            text: "Releases and Zenodo"
+          - href: authoring_tutorials/page4.qmd
+            text: "Updates and Versioning"
 
 
 
