@@ -48,7 +48,7 @@ website:
             text: "TOPIC1 Page1 Title"
           - href: about/page2.qmd
             text: "TOPIC1 Page2 Title"
-      - section: "New Hires"
+      - section: "Onboarding"
         contents:
           - href: new_staff/page1.qmd
             text: "TOPIC2 Page1 Title"
@@ -56,6 +56,35 @@ website:
             text: "TOPIC2 Page2 Title"
           - href: new_staff/page3.qmd
             text: "TOPIC2 Page3 Title"
+
+      - section: "GitHub Organization"
+        contents:
+          - href: new_staff/page1.qmd
+            text: "About out GitHub Organization"
+          - href: new_staff/page2.qmd
+            text: "What to learn?"
+          - href: new_staff/page3.qmd
+            text: "Repository Overview"
+          - href: new_staff/page4.qmd
+            text: "What are GitHub Actions?"
+      - section: "GitLab"
+        contents:
+          - href: new_staff/page1.qmd
+            text: "The LRZ GitLab"
+          - href: new_staff/page2.qmd
+            text: "Repository Overview"
+      - section: "Authoring Tutorials"
+        contents:
+          - href: authoring_tutorials/page1.qmd
+            text: "Tutorial Template Overview"
+          - href: authoring_tutorials/page2.qmd
+            text: "Creating and Adding Content"
+          - href: authoring_tutorials/page3.qmd
+            text: "Things you shouldn't change"
+          - href: authoring_tutorials/page4.qmd
+            text: "Matomo Analytics"
+          - href: authoring_tutorials/page5.qmd
+            text: "Best Practices"
 
 
 
