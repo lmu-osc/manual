@@ -1,6 +1,12 @@
 
 
 
+### NOTE!
+
+# CODE NEEDS TO BE UPDATED TO HANDLE >30 MEMBERS--THIS IS WHERE
+# PAGINATION BEGINS IN THE GITHUB API
+
+
 # Set your GitHub organization and personal access token (PAT)
 org <- "lmu-osc"  # Replace with your organization name
 access_token <- Sys.getenv("lmu_osc_access_token")  # Replace with your GitHub Personal Access Token
