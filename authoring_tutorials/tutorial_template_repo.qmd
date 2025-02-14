@@ -44,9 +44,7 @@ Some of these files and folders require more explanation than others, and we aim
 
 If you're not familiar with `.gitignore` files, I recommend taking a look at [this overview](https://www.w3schools.com/git/git_ignore.asp?remote=github).
 
-The included ignore file for the tutorials is a modified version of GitHub's template for R projects with some additions to ignore Quarto specific files, namely the `_site` folder. 
-
-Some people push this folder to their GitHub repo, and use it to serve their website from. However, we have a CI/CD workflow that will automatically render the website and serve it from the `gh-pages` branch.
+The included ignore file for the tutorials is a modified version of GitHub's template for R projects with some additions to ignore Quarto specific files, namely the `_site` folder. Some people push this folder to their GitHub repo, and use it to serve their website from. However, we have a CI/CD workflow that will automatically render the website and serve it from the `gh-pages` branch.
 
 For Mac users, any `.DS_Store` files are also automatically ignored--those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the command `usethis::git_vaccinate()` if you want to globally ignore a handful of annoying)
 
@@ -76,9 +74,9 @@ A later chapter will talk about how to manually run these pipelines if you need/
 
 There is fairly extensive documentation online for [Citation File Format](https://citation-file-format.github.io/), but, in short, it is a standardized method for writing citation files in a `yaml` format. There are hundreds of different "fields" that can be filled out like DOIs, ORCIDs, author information, institution information, and so on.
 
-#### Why these files?
+#### Why?
 
-This file ultimately has three main uses for our project:
+This file ultimately has three main uses for our projects:
 
 1. They are needed for automated processing and the DOI generation procedure we use with Zenodo.
 2. GitHub recognizes these files, and will create a citation for us directly in the repo. (Not as a file, but check out the "Cite this repository" button on the right-hand side of the repository home.)
@@ -122,6 +120,10 @@ Otherwise, we have no strong recommendations on what to include in this file oth
 
 ### TOPIC1 and TOPIC2 Directories {#topic_directories}
 
+These two directories are just example/template spaces for where you should store your Quarto (`.qmd`) files. In general, we anticipate that the tutorials will be divided into 2-5 broad sections, and each section will be represented by one of these folders. Each section will contain chapters which are independent Quarto files stored within their respective folders.
+
+This image illustrates how "TOPIC1" and "TOPIC2" are the different "sections" of the tutorial while the Quarto files are the different chapters.
+
 ::::: {.columns}
 
 ::: {.column}
@@ -148,15 +150,9 @@ cat("```yaml",
 ::::
 
 
-
-These two directories are just example/template spaces for where you should store your Quarto (`.qmd`) files. In general, we anticipate that the tutorials will be divided into 2-5 broad sections, and each section will be represented by one of these folders. Each section will contain chapters which are independent Quarto files stored within their respective folders.
-
-This image illustrates how "TOPIC1" and "TOPIC2" are the different "sections" of the tutorial while the Quarto files are the different chapters.
-
-
 **Note that placing the chapter files in the respective folders will not automatically organize them into that location. You must specify which files are rendered, and where they are located in the `_quarto.yml` file.**
 
-### _quarto.yml {#quarto_yml}
+### \_quarto.yml {#quarto_yml}
 
 The `_quarto.yml` file can be thought of the central orchestrator for the website. It defines what website themes/CSS/SCSS to use, how the pages should be organized, and other general properties of the website. 
 
@@ -191,23 +187,43 @@ At a high level, this defines the entire project as being a website and I have u
 
 This is the section you will interact with the most (and almost exclusively) when developing your project. This will be subdivided into 3 sections: a general section, the `navbar`, and the `sidebar`.
 
+::: {.callout-note appearance="simple" collapse="true"}
+
+## All `website` Options
+
 ```{r, results='asis'}
 setwd("tutorial-template")
 cat("```yaml", readLines("_quarto.yml")[7:58], "```", sep = "\n")
 ```
 
+:::
+
+
 ##### General Options
 
-This encompasses all of the options between `title` and `margin-header`. Fields you should update or pay attention to:
+
+
+Fields you should update or pay attention to:
 
 * `title` should be the actual project title
 * `repo-url` should be the URL directly to the GitHub repo
 * `page-footer` please update the year in the copyright if needed
 
 
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[7:20], "```", sep = "\n")
+```
+
+
 ##### `navbar`
 
 This section is for specifying the navbar or navigation bar at the top of the window. The only updates that should be made here are to the URLs which should be updated to include the correct GitHub repo address.
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[23:37], "```", sep = "\n")
+```
 
 
 ##### `sidebar`
@@ -216,24 +232,29 @@ This is the section of the `_quarto.yml` file that allows you to specify the lay
 
 You can also add a `text` tag directly after the `href` which will provide a new name for the chapter in the sidebar. However, you do not need to specify a `text` tag as Quarto will otherwise search for and use the value of `title` in your `.qmd` file.
 
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[40:58], "```", sep = "\n")
+```
+
 
 ##### `format`
+
+This section only provides additional website formatting and styling decisions, and does not need any changes. (However, if you think there are broad styling changes or additions we should make for all of our tutorials, feel free to open an issue or a PR!)
 
 ```{r, results='asis'}
 setwd("tutorial-template")
 cat("```yaml", readLines("_quarto.yml")[62:75], "```", sep = "\n")
 ```
 
-This section only provides additional website formatting and styling decisions, and does not need any changes. (However, if you think there are broad styling changes or additions we should make for all of our tutorials, feel free to open an issue or a PR!)
-
 ##### `editor`
+
+When editing the project in RStudio, this determines whether Quarto documents will open up in `source` or `visual` mode by default. We have opted for `source` as the default.
 
 ```{r, results='asis'}
 setwd("tutorial-template")
 cat("```yaml", readLines("_quarto.yml")[77], "```", sep = "\n")
 ```
-
-When editing the project in RStudio, this determines whether Quarto documents will open up in `source` or `visual` mode by default. We have opted for `source` as the default
 
 
 
