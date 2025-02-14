@@ -40,7 +40,7 @@ Some of these files and folders require more explanation than others, and we aim
 
 ## Important Files and Folders
 
-### `.gitignore` {#gitignore}
+### .gitignore {#gitignore}
 
 If you're not familiar with `.gitignore` files, I recommend taking a look at [this overview](https://www.w3schools.com/git/git_ignore.asp?remote=github).
 
@@ -50,13 +50,19 @@ Some people push this folder to their GitHub repo, and use it to serve their web
 
 For Mac users, any `.DS_Store` files are also automatically ignored--those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the command `usethis::git_vaccinate()` if you want to globally ignore a handful of annoying)
 
-```{r, results='asis'}
+
+::: {.callout-note appearance="simple" collapse="true"}
+
+## .gitignore File Contents
+
+```{r, results='asis', warning=FALSE}
 setwd("tutorial-template")
 cat("```yaml", readLines(".gitignore"), "```", sep = "\n")
 ```
 
+:::
 
-### `.github/workflows` {#pipelines}
+### .github/workflows {#pipelines}
 
 The two files contained in this directory, `citation-check.yml` and `publish.yml`, are `yaml` files for GitHub Actions that should run in your tutorials. The first action file checks that the formatting of your `CITIATION.cff` file meets requirements, and the `publish.yml` waits for changes on the `main` git branch then renders the whole website to the `gh-pages` branch in the repo.
 
@@ -82,11 +88,16 @@ This file ultimately has three main uses for our project:
 
 The current version of the `CITATION.cff` file is listed below.
 
+::: {.callout-note appearance="simple" collapse="true"}
+
+## CITATION.cff File Contents
+
 ```{r, results='asis'}
 setwd("tutorial-template")
 cat("```yaml", readLines("CITATION.cff"), "```", sep = "\n")
 ```
 
+:::
 
 Fields you should pay attention to or fill out:
 
@@ -99,48 +110,67 @@ Fields you should pay attention to or fill out:
 * `url` should be the address for the actual websige i.e. the GitHub Pages
 
 
-### `LICENSE.md` and `LICENSE-CODE.md` {#licenses}
+### LICENSE.md and LICENSE-CODE.md {#licenses}
 
 Our standard licenses are CC-BY-SA 4.0 for the written text and CC-0 for code contained within the tutorials. These license files are contained in `LICENSE.md` and `LICENSE-CODE.md` respectively.
 
-### `README.md` {#readme}
+### README.md {#readme}
 
 This file should follow the typical conventions of a README file in that it provides a brief overview of the project, and any particular specifications on running code or downloading additional softwares as needed.
 
 Otherwise, we have no strong recommendations on what to include in this file other the Zenodo DOI badge at the top of the file. (Again, this is discussed in a later chapter.)
 
-### `TOPIC1` and `TOPIC2` Directories {#topic_directories}
+### TOPIC1 and TOPIC2 Directories {#topic_directories}
 
-```yaml
-├── TOPIC1
-│   ├── page1.qmd
-│   └── page2.qmd
-├── TOPIC2
-│   ├── page1.qmd
-│   ├── page2.qmd
-│   └── page3.qmd
+::::: {.columns}
+
+::: {.column}
+```{r, results='asis'}
+cat("```yaml", 
+    '├── TOPIC1',
+    '│   ├── page1.qmd',
+    '│   └── page2.qmd',
+    '├── TOPIC2',
+    '│   ├── page1.qmd',
+    '│   ├── page2.qmd',
+    '│   ├── page3.qmd',
+    "```", 
+    sep = "\n")
 ```
+
+:::
+
+::: {.column}
+
+![](images/topic_organization.png){fig-align="center" width="70%"}
+:::
+
+::::
+
+
 
 These two directories are just example/template spaces for where you should store your Quarto (`.qmd`) files. In general, we anticipate that the tutorials will be divided into 2-5 broad sections, and each section will be represented by one of these folders. Each section will contain chapters which are independent Quarto files stored within their respective folders.
 
 This image illustrates how "TOPIC1" and "TOPIC2" are the different "sections" of the tutorial while the Quarto files are the different chapters.
 
-![Content Organization](images/topic_organization.png)
 
 **Note that placing the chapter files in the respective folders will not automatically organize them into that location. You must specify which files are rendered, and where they are located in the `_quarto.yml` file.**
 
-### `_quarto.yml` {#quarto_yml}
+### _quarto.yml {#quarto_yml}
 
 The `_quarto.yml` file can be thought of the central orchestrator for the website. It defines what website themes/CSS/SCSS to use, how the pages should be organized, and other general properties of the website. 
 
 
-```{r, results='asis'}
+::: {.callout-note appearance="simple" collapse="true"}
 
+## _quarto.yml File Contents
+
+```{r, results='asis'}
 setwd("tutorial-template")
 cat("```yaml", readLines("_quarto.yml"), "```", sep = "\n")
-
 ```
 
+:::
 
 This is one of the more complex files in the repository, but there are only a few sections you'll need to interact with directly. I'll break down the file based on the 4 major categories in our file: `project`, `website`, `format`, and `editor`.
 
