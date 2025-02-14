@@ -1,0 +1,88 @@
+---
+title: "Getting Started"
+format:
+  html:
+    code-tools: true
+    code-fold: true
+    code-summary: "Show the code"
+---
+
+This chapter introduces how to make a tutorial based off of our template at `lmu-osc/tutorial-template`, and assumes you are familiar with the structure of this repo after reading the previous chapter.
+
+::: {.callout-important}
+## Development Practices & gitflow
+
+**It is strongly encouraged that you develop your tutorial by using git branches, issues, and pull requests on GitHub.**
+
+This helps us clearly see what content has been added when, by whom, and (thanks to some features of GitHub pull requests) easily create lists of changes from one version of the tutorial to the next. Moreover, you can tag other team members directly to request feedback or review of your content in a more manageable approach by doing this.
+
+:::
+
+
+# Create a New Repo from Template
+
+1. If you are not already a member of the LMU OSC GitHub organization, request to be added to the organization by any of the admins.
+2. Navigate to the "Repositories" section of our organization, and click "New Repository"
+3. Under the "Repository template" section, select the `lmu-osc/tutorial-template` option.
+4. Create an informative, but short, repository name
+  - **Please only use dashes `-` to separate words e.g. `tutorial-template` or `introduction-to-renv`**
+5. Add a brief description. This can be updated later.
+6. Set the repository to Public.
+  - We do not have a GitHub Enterprise account so we cannot host GitHub Pages from private repositories.
+  
+# Local Set-up
+
+## Pages Deployment
+
+1. Clone the new repository
+2. If you are going to use RStudio with your project, create a new RStudio project while on the main branch. Commit this `.RProj` file and push to GitHub immediately.
+3. Run the command `quarto publish gh-pages` at the terminal, and agree to publish the site.
+  - This will automatically activate GitHub Pages on the repo, and set the site to be deployed from the `gh-pages` branch on GitHub.
+  - You can check the status of the website deployment by navigating to Actions in the repo. A green checkbox indicates succesful deployment. Your terminal may or may not continue to display "Deploying gh-pages branch to website (this may take a few minutes)." If your deloyment was successful, you can simply use "Cmd+C" to exit the loop.
+  - Note: if your terminal becomes stuck on the message "Deploying gh-pages branch to website (this may take a few minutes)" and if your deployment wasn't successful, then you have probably not made the repository public. Navigate to the Visibility option in your settings, and change to public. Then, repeat the command above.
+4. Remove the `gh-pages` branch from your local computer with `git branch -D gh-pages`. You should not be making direct edits to this branch as it is updated by the CI/CD pipeline for publishing.
+
+## Zenodo Preparation
+
+### CITATION File
+
+1. Open the CITATION.cff file, and complete it to the best of your ability/knowledge of what the tutorial will be named, who the authors will be, etc.
+2. Set the version to `0.0.1`.
+3. Remove the DOI field for now. This will be added back after we generated a DOI from Zenodo.
+
+### About.qmd
+
+1. Open the about.qmd file, and complete the `yaml` header with essentially the same citation information as above.
+
+### README
+
+1. Open the README file, and add a basic description of the project. This does not need to be more than a few basic sentences for now.
+
+### Enable Zenodo Extension
+
+1. Fellow the 5 GitHub steps for [linking Zenodo with GitHub](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#issuing-a-persistent-identifier-for-your-repository-with-zenodo).
+2. If you don't want to connect these accounts or you are otherwise unable to authorize the repo on Zenodo, notify one of the admin members of the OSC GitHub organization. They should have the admin rights necessary to enable your new GitHub repo.
+  
+
+## Zenodo Connection
+
+After the connection between the repository and Zenodo has been confirmed, it is now possible to trigger the connection by having a GitHub "release."
+
+1. From the GitHub repo page, press the "Create a new release" link on the right hand side.
+2. You must enter a tag, a release title, and a description.
+  - The tag should be the semantic version prefixed with "v" e.g. `v0.0.1` for the first release
+  - The title can be something like "Tutorial repo begin" or similar.
+  - The description can be very basic info about the repo/project. Later releases will use the "Generate release notes" button to create this description information.
+3. Press "Publish release." The repo will now be sent to Zenodo, and a DOI should be generated.
+  - However, this may fail if the CITATION file has errors. You should receive a notice about this ahead of time from the GitHub Action that checks the CITATION file so make sure to fix any mistakes in advance.
+4. Navigate to Zenodo.org, log-in, press on your user-name in the top right corner, and click on GitHub. Under the enabled repositories, you should see the name of your repo.
+5. Click the DOI badge. This should open a pop-up with different options for copying the text of the badge. Copy the Markdown option.
+6. Paste the code for the DOI Markdown badge at the top of the README file.
+7. Add the DOI to the CITATION file.
+
+Congrats! Your tutorial now has the infrastructure for automated deployments to GitHub Pages, and additional releases on GitHub will update the DOI + content of your project on Zenodo.
+
+
+
+
+

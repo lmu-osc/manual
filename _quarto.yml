@@ -63,7 +63,7 @@ website:
           - href: membership/page4.qmd
             text: "HiWis (Student Assistants)"
 
-      - section: "Onboarding"
+      - section: "Staff Onboarding"
         contents:
           - href: new_staff/page1.qmd
             text: "TOPIC2 Page1 Title"
@@ -102,10 +102,10 @@ website:
 
       - section: "Authoring Tutorials"
         contents:
-          - href: authoring_tutorials/page1.qmd
+          - href: authoring_tutorials/tutorial_template_repo.qmd
             text: "Tutorial Template Overview"
-          - href: authoring_tutorials/page2.qmd
-            text: "Creating and Adding Content"
+          - href: authoring_tutorials/getting_started.qmd
+            text: "Getting Started"
           - href: authoring_tutorials/page3.qmd
             text: "Things you shouldn't change"
           - href: authoring_tutorials/page4.qmd
