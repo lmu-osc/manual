@@ -108,7 +108,7 @@ website:
             text: "Getting Started"
           - href: authoring_tutorials/things_you_should_not_change.qmd
             text: "Things you shouldn't change"
-          - href: authoring_tutorials/page4.qmd
+          - href: authoring_tutorials/matomo_analytics.qmd
             text: "Matomo Analytics"
           - href: authoring_tutorials/page5.qmd
             text: "Best Practices"
