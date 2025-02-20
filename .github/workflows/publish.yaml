@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -43,6 +46,10 @@ jobs:
           install.packages(renv::dependencies()$Package)
         shell: Rscript {0}
         if: ${{ hashFiles('renv.lock') == '' }}
+
+      - name: Print git info
+        run: |
+          git config --list
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
