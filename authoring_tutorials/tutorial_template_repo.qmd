@@ -1,0 +1,266 @@
+---
+title: "Tutorial Template Repo"
+format:
+  html:
+    code-tools: true
+    code-fold: true
+    code-summary: "Show the code"
+---
+
+# Background
+
+One of the primary objectives of the OSC is to braoden both knowledge and practice of open science, and the online tutorials we offer are a cornerstone of this initiative. In that regard, some tutorials were brought over by our staff members from previous research institutions, and several more were commissioned between approximately 2021 and 2025. 
+
+While the content from these tutorials was designed and/or adapted to fit in with the other tutorials to create a logical learning flow, the tutorials were not *technically* standardized. That is, the licenses, HTML/CSS formatting, citation styles, and so on were not consistent between projects. Towards the end of 2024 and through 2025 we worked to align our existing tutorials as much as possible on these issues, but this was a significant amount of work.
+
+Wanting to avoid a repeat of this process in the future, we established a templated GitHub repository, [`lmu-osc/tutorial-template`](https://github.com/lmu-osc/tutorial-template) with all of the default settings and files we wish to have applied to our projects going forward. The core contents of this repo are generally intended to be prescriptive when creating new tutorials, outside of deciding what content should be included in the tutorial itself. Let's explore this in more detail below.
+
+# `tutorial-template` Overview
+
+Rather than linking out to files in the `lmu-osc/tutorial-template` repository, the code below clones the most up-to-date of the repo so we can look at recent versions. (And if there are new files or sections of code not discussed in this manual, please feel free to open a GitHub Issue for the Manual repo--someone from the OSC will get around to explaining the changes!)
+
+```{bash}
+#| results: 'hide'
+#| message: false
+git clone https://github.com/lmu-osc/tutorial-template.git
+```
+
+
+
+## Basic Repo Structure
+
+All of the folders and files in the `lmu-osc/tutorial-template` repo are laid out in the directory tree below.
+
+```{r}
+setwd("tutorial-template")
+fs::dir_tree(recurse = T, all = T, regexp = "^.git$|^.DS_Store$", invert = T)
+```
+
+Some of these files and folders require more explanation than others, and we aim to clarify all important pieces below. Later chapters will elaborate on how precisely to set up e.g. GitHub Pages for the tutorial, connect with Zotero, etc. But before diving in to developing a tutorial, it's necessary to get an overview of the structure.
+
+## Important Files and Folders
+
+### .gitignore {#gitignore}
+
+If you're not familiar with `.gitignore` files, I recommend taking a look at [this overview](https://www.w3schools.com/git/git_ignore.asp?remote=github).
+
+The included ignore file for the tutorials is a modified version of GitHub's template for R projects with some additions to ignore Quarto specific files, namely the `_site` folder. Some people push this folder to their GitHub repo, and use it to serve their website from. However, we have a CI/CD workflow that will automatically render the website and serve it from the `gh-pages` branch.
+
+For Mac users, any `.DS_Store` files are also automatically ignored--those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the command `usethis::git_vaccinate()` if you want to globally ignore a handful of annoying)
+
+
+::: {.callout-note appearance="simple" collapse="true"}
+
+## .gitignore File Contents
+
+```{r, results='asis', warning=FALSE}
+setwd("tutorial-template")
+cat("```yaml", readLines(".gitignore"), "```", sep = "\n")
+```
+
+:::
+
+### .github/workflows {#pipelines}
+
+The two files contained in this directory, `citation-check.yml` and `publish.yml`, are `yaml` files for GitHub Actions that should run in your tutorials. The first action file checks that the formatting of your `CITIATION.cff` file meets requirements, and the `publish.yml` waits for changes on the `main` git branch then renders the whole website to the `gh-pages` branch in the repo.
+
+Both workflows are from commonly available templates, but I have modified the `publish.yml` to have some additional executuion instructions depending on whether or not the {renv} package is used in your project. (If you have any R code included, then please do use {renv}.)
+
+A later chapter will talk about how to manually run these pipelines if you need/want to for any reason, and will go into more detail on the code. However, 95% of the time you will not need to make any changes to these pipelines. Just be aware that they exist, and they are doing things that should make your life easier.
+
+### CITATION.cff {#citation.cff}
+
+#### Background: Citation File Format
+
+There is fairly extensive documentation online for [Citation File Format](https://citation-file-format.github.io/), but, in short, it is a standardized method for writing citation files in a `yaml` format. There are hundreds of different "fields" that can be filled out like DOIs, ORCIDs, author information, institution information, and so on.
+
+#### Why?
+
+This file ultimately has three main uses for our projects:
+
+1. They are needed for automated processing and the DOI generation procedure we use with Zenodo.
+2. GitHub recognizes these files, and will create a citation for us directly in the repo. (Not as a file, but check out the "Cite this repository" button on the right-hand side of the repository home.)
+3. This helps prepare the information that goes into the `about.qmd` file, discussed later.
+
+#### Our File
+
+The current version of the `CITATION.cff` file is listed below.
+
+::: {.callout-note appearance="simple" collapse="true"}
+
+## CITATION.cff File Contents
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("CITATION.cff"), "```", sep = "\n")
+```
+
+:::
+
+Fields you should pay attention to or fill out:
+
+* `authors` should be completed with your family (last) name, given (first) name, and an ORCID for all authors. Remove the ORCID field if you do not have one.
+* `title` should be replaced with the name of the tutorial
+* `version` should begin with 0.0.1 following typical semantic versioning rules. Do not increase this until after making the initial Zenodo connection (discussed in a later chapter).
+* `doi` will remain empty inititally, but can be filled out after connecting with Zenodo
+* `data-released` should be the date that the current version of the repo was released
+* `repository-code` should be the link directly to the GitHub repository of the project
+* `url` should be the address for the actual websige i.e. the GitHub Pages
+
+
+### LICENSE.md and LICENSE-CODE.md {#licenses}
+
+Our standard licenses are CC-BY-SA 4.0 for the written text and CC-0 for code contained within the tutorials. These license files are contained in `LICENSE.md` and `LICENSE-CODE.md` respectively.
+
+### README.md {#readme}
+
+This file should follow the typical conventions of a README file in that it provides a brief overview of the project, and any particular specifications on running code or downloading additional softwares as needed.
+
+Otherwise, we have no strong recommendations on what to include in this file other the Zenodo DOI badge at the top of the file. (Again, this is discussed in a later chapter.)
+
+### TOPIC1 and TOPIC2 Directories {#topic_directories}
+
+These two directories are just example/template spaces for where you should store your Quarto (`.qmd`) files. In general, we anticipate that the tutorials will be divided into 2-5 broad sections, and each section will be represented by one of these folders. Each section will contain chapters which are independent Quarto files stored within their respective folders.
+
+This image illustrates how "TOPIC1" and "TOPIC2" are the different "sections" of the tutorial while the Quarto files are the different chapters.
+
+::::: {.columns}
+
+::: {.column}
+```{r, results='asis'}
+cat("```yaml", 
+    '├── TOPIC1',
+    '│   ├── page1.qmd',
+    '│   └── page2.qmd',
+    '├── TOPIC2',
+    '│   ├── page1.qmd',
+    '│   ├── page2.qmd',
+    '│   ├── page3.qmd',
+    "```", 
+    sep = "\n")
+```
+
+:::
+
+::: {.column}
+
+![](images/topic_organization.png){fig-align="center" width="70%"}
+:::
+
+::::
+
+
+**Note that placing the chapter files in the respective folders will not automatically organize them into that location. You must specify which files are rendered, and where they are located in the `_quarto.yml` file.**
+
+### \_quarto.yml {#quarto_yml}
+
+The `_quarto.yml` file can be thought of the central orchestrator for the website. It defines what website themes/CSS/SCSS to use, how the pages should be organized, and other general properties of the website. 
+
+
+::: {.callout-note appearance="simple" collapse="true"}
+
+## _quarto.yml File Contents
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml"), "```", sep = "\n")
+```
+
+:::
+
+This is one of the more complex files in the repository, but there are only a few sections you'll need to interact with directly. I'll break down the file based on the 4 major categories in our file: `project`, `website`, `format`, and `editor`.
+
+#### `project`
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[1:4], "```", sep = "\n")
+```
+
+At a high level, this defines the entire project as being a website and I have used the pre- and post- render options to collect some standardized SCSS styling from our `lmu-osc/branding` repository. The details of this are in a footnote below[^scss_branding_explanation], but, in short, this is done to ensure that the same branding is added to all of our repos **and** so that we can just make branding changes to *one* repo in the future (rather than *all* of our tutorials.)
+
+[^scss_branding_explanation]: Due to how Quarto renders projects, the SCSS file must physically be present in the directory when executing. As such, the file is downloaded from our branding GitHub repo before rendering, and then removed again after rendering becasue we do not want to retain this file in the repo. This is in contrast to the CSS file which can simply be read from somewhere on the web, and is the reason why we are able to specify the `css` parameter as just a link to our central branding repo.
+
+
+
+#### `website`
+
+This is the section you will interact with the most (and almost exclusively) when developing your project. This will be subdivided into 3 sections: a general section, the `navbar`, and the `sidebar`.
+
+::: {.callout-note appearance="simple" collapse="true"}
+
+## All `website` Options
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[7:58], "```", sep = "\n")
+```
+
+:::
+
+
+##### General Options
+
+
+
+Fields you should update or pay attention to:
+
+* `title` should be the actual project title
+* `repo-url` should be the URL directly to the GitHub repo
+* `page-footer` please update the year in the copyright if needed
+
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[7:20], "```", sep = "\n")
+```
+
+
+##### `navbar`
+
+This section is for specifying the navbar or navigation bar at the top of the window. The only updates that should be made here are to the URLs which should be updated to include the correct GitHub repo address.
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[23:37], "```", sep = "\n")
+```
+
+
+##### `sidebar`
+
+This is the section of the `_quarto.yml` file that allows you to specify the layout of your sections and chapters, as discussed in the [`TOPIC1` and `TOPIC2` section](#topic_dirs). You can add as many `section`s as you need--just make sure to provide them with an appropriate title. Likewise, you can include chapters under a section by listing the chapters under `contents`, and then providing at least an `href` which is a path to the chapter Quarto file. 
+
+You can also add a `text` tag directly after the `href` which will provide a new name for the chapter in the sidebar. However, you do not need to specify a `text` tag as Quarto will otherwise search for and use the value of `title` in your `.qmd` file.
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[40:58], "```", sep = "\n")
+```
+
+
+##### `format`
+
+This section only provides additional website formatting and styling decisions, and does not need any changes. (However, if you think there are broad styling changes or additions we should make for all of our tutorials, feel free to open an issue or a PR!)
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[62:75], "```", sep = "\n")
+```
+
+##### `editor`
+
+When editing the project in RStudio, this determines whether Quarto documents will open up in `source` or `visual` mode by default. We have opted for `source` as the default.
+
+```{r, results='asis'}
+setwd("tutorial-template")
+cat("```yaml", readLines("_quarto.yml")[77], "```", sep = "\n")
+```
+
+
+
+
+
+```{bash}
+rm -rf tutorial-template
+```
+
