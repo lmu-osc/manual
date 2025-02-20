@@ -22,7 +22,7 @@ Rather than linking out to files in the `lmu-osc/tutorial-template` repository, 
 ```{bash}
 #| results: 'hide'
 #| message: false
-git clone git@github.com:lmu-osc/tutorial-template.git
+git clone https://github.com/lmu-osc/tutorial-template.git
 ```
 
 
