@@ -19,11 +19,11 @@ Wanting to avoid a repeat of this process in the future, we established a templa
 
 Rather than linking out to files in the `lmu-osc/tutorial-template` repository, the code below clones the most up-to-date of the repo so we can look at recent versions. (And if there are new files or sections of code not discussed in this manual, please feel free to open a GitHub Issue for the Manual repo--someone from the OSC will get around to explaining the changes!)
 
-<!-- ```{bash} -->
-<!-- #| results: 'hide' -->
-<!-- #| message: false -->
-<!-- git clone git@github.com:lmu-osc/tutorial-template.git -->
-<!-- ``` -->
+```{bash}
+#| results: 'hide'
+#| message: false
+git clone git@github.com:lmu-osc/tutorial-template.git
+```
 
 
 
@@ -260,7 +260,7 @@ cat("```yaml", readLines("_quarto.yml")[77], "```", sep = "\n")
 
 
 
-<!-- ```{bash} -->
-<!-- rm -rf tutorial-template -->
-<!-- ``` -->
+```{bash}
+rm -rf tutorial-template
+```
 
