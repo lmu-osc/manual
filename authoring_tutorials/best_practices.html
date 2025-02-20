@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction – OSC Manual</title>
+<title>Best Practices – OSC Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../authoring_tutorials/tutorial_template_repo.html" rel="next">
-<link href="../gitlab/page2.qmd" rel="prev">
+<link href="../authoring_tutorials/updates_and_versioning.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -128,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Authoring Tutorials</a></li><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Introduction</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Authoring Tutorials</a></li><li class="breadcrumb-item"><a href="../authoring_tutorials/best_practices.html">Best Practices</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -346,7 +345,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../authoring_tutorials/introduction.html" class="sidebar-item-text sidebar-link active">
+  <a href="../authoring_tutorials/introduction.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
@@ -388,7 +387,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../authoring_tutorials/best_practices.html" class="sidebar-item-text sidebar-link">
+  <a href="../authoring_tutorials/best_practices.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Best Practices</span></a>
   </div>
 </li>
@@ -407,9 +406,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Authoring Tutorials</a></li><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Introduction</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Authoring Tutorials</a></li><li class="breadcrumb-item"><a href="../authoring_tutorials/best_practices.html">Best Practices</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">Best Practices</h1>
 </div>
 
 
@@ -426,31 +425,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome! This section of the manual is dedicated to the procedures for creating a new tutorial hosted via our GitHub organization. The following chapters will introduce you to the basics of the <a href="https://github.com/lmu-osc/tutorial-template"><code>lmu-osc/tutorial-template</code></a> which standardizes the design of our websites, the licensing, the citation styles used, and more to provide a coherent structure across our growing catalogue of tutorials. In particular, the chapters are organized as follows:</p>
-<ol type="1">
-<li><a href="../authoring_tutorials/tutorial_template_repo.html">Tutorial Template Overview</a> introduces the major files and folders in the tutorial, and briefly describes the purpose of each of them.</li>
-<li><a href="../authoring_tutorials/things_you_should_not_change.html">Things You Shouldn’t Change</a> provides some warnings about files that should only be changed in extenuating circumstances, and how to go about doing so.</li>
-<li><a href="../authoring_tutorials/getting_started.html">Getting Started</a> outlines the technical steps needed to get started with a new tutorial</li>
-<li><a href="../authoring_tutorials/matomo_analytics.html">Matomo Analytics</a> discusses our website data analytics tool, and how to include the necessary tracking code in the website.</li>
-<li><a href="../authoring_tutorials/releases_and_zenodo.html">Releases and Zenodo</a> shows you how to make sure your repo is available to Zenodo, and how to use GitHub “releases” to trigger sending your repo to Zenodo (which, importantly, creates a DOI for the repository).</li>
-<li><a href="../authoring_tutorials/updates_and_versioning.html">Updates and Versioning</a> covers in greater detail when and how to make updates to your project, with particular attention paid to GitHub releases and versioning of the project.</li>
-<li><a href="">Best Practices</a> discusses some best practices when developing your tutorial. These are largely recommendations. (Chapter not developed yet–questioning content.)</li>
-</ol>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note on Authoring Practices, Writing Style, and Formatting
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>We do not prescribe how or what tutorial authors should write, obviously as long as content is within the scope of the tutorial topic.</p>
-<p>Feel free to stylize your content to your liking, and take advantage of Quarto features, Markdown features, and code embedded in the documents as your see fit.</p>
-<p>You can, as always, tag an OSC member for review or help in pull requests or issues!</p>
-</div>
-</div>
 
 
 
@@ -874,14 +848,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../gitlab/page2.qmd" class="pagination-link" aria-label="Repository Overview">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Repository Overview</span>
+      <a href="../authoring_tutorials/updates_and_versioning.html" class="pagination-link" aria-label="Updates and Versioning">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Updates and Versioning</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../authoring_tutorials/tutorial_template_repo.html" class="pagination-link" aria-label="Tutorial Template Overview">
-        <span class="nav-page-text">Tutorial Template Overview</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -892,7 +863,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring_tutorials/introduction.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring_tutorials/best_practices.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
