@@ -9,7 +9,7 @@ format:
 
 # Background
 
-One of the primary objectives of the OSC is to braoden both knowledge and practice of open science, and the online tutorials we offer are a cornerstone of this initiative. In that regard, some tutorials were brought over by our staff members from previous research institutions, and several more were commissioned between approximately 2021 and 2025. 
+One of the primary objectives of the OSC is to braoden both knowledge and practice of open science, and the online tutorials we offer are a cornerstone of this initiative. In that regard, some tutorials were brought over by our staff members from previous research institutions, and several more were commissioned between approximately 2021 and 2025.
 
 While the content from these tutorials was designed and/or adapted to fit in with the other tutorials to create a logical learning flow, the tutorials were not *technically* standardized. That is, the licenses, HTML/CSS formatting, citation styles, and so on were not consistent between projects. Towards the end of 2024 and through 2025 we worked to align our existing tutorials as much as possible on these issues, but this was a significant amount of work.
 
@@ -46,7 +46,7 @@ If you're not familiar with `.gitignore` files, I recommend taking a look at [th
 
 The included ignore file for the tutorials is a modified version of GitHub's template for R projects with some additions to ignore Quarto specific files, namely the `_site` folder. Some people push this folder to their GitHub repo, and use it to serve their website from. However, we have a CI/CD workflow that will automatically render the website and serve it from the `gh-pages` branch.
 
-For Mac users, any `.DS_Store` files are also automatically ignored--those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the command `usethis::git_vaccinate()` if you want to globally ignore a handful of annoying)
+For Mac users, any `.DS_Store` files are also automatically ignored--those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the command `usethis::git_vaccinate()` if you want to globally ignore a handful of annoying files)
 
 
 ::: {.callout-note appearance="simple" collapse="true"}
@@ -99,22 +99,22 @@ cat("```yaml", readLines("CITATION.cff"), "```", sep = "\n")
 
 Fields you should pay attention to or fill out:
 
-* `authors` should be completed with your family (last) name, given (first) name, and an ORCID for all authors. Remove the ORCID field if you do not have one.
+* `authors` should be completed with your family (last) name, given (first) name, and an ORCID for all authors. Remove the ORCID field if you do not have one
 * `title` should be replaced with the name of the tutorial
-* `version` should begin with 0.0.1 following typical semantic versioning rules. Do not increase this until after making the initial Zenodo connection (discussed in a later chapter).
+* `version` should begin with 0.0.1 following typical semantic versioning rules. Do not update this until after making the initial Zenodo connection (discussed in a later chapter)
 * `doi` will remain empty inititally, but can be filled out after connecting with Zenodo
 * `data-released` should be the date that the current version of the repo was released
 * `repository-code` should be the link directly to the GitHub repository of the project
-* `url` should be the address for the actual websige i.e. the GitHub Pages
+* `url` should be the address for the actual website i.e. the GitHub Pages
 
 
 ### LICENSE.md and LICENSE-CODE.md {#licenses}
 
-Our standard licenses are CC-BY-SA 4.0 for the written text and CC-0 for code contained within the tutorials. These license files are contained in `LICENSE.md` and `LICENSE-CODE.md` respectively.
+Our recommended licenses are CC-BY-SA 4.0 for the written text and CC-0 for code contained within the tutorials. These license files are contained in `LICENSE.md` and `LICENSE-CODE.md` respectively.
 
 ### README.md {#readme}
 
-This file should follow the typical conventions of a README file in that it provides a brief overview of the project, and any particular specifications on running code or downloading additional softwares as needed.
+This README file explains what this project is about in simple terms. It gives a short overview of the project and easy-to-follow instructions for running code and installing any additional software if needed.
 
 Otherwise, we have no strong recommendations on what to include in this file other the Zenodo DOI badge at the top of the file. (Again, this is discussed in a later chapter.)
 
@@ -128,7 +128,7 @@ This image illustrates how "TOPIC1" and "TOPIC2" are the different "sections" of
 
 ::: {.column}
 ```{r, results='asis'}
-cat("```yaml", 
+cat("```yaml",
     '├── TOPIC1',
     '│   ├── page1.qmd',
     '│   └── page2.qmd',
@@ -136,7 +136,7 @@ cat("```yaml",
     '│   ├── page1.qmd',
     '│   ├── page2.qmd',
     '│   ├── page3.qmd',
-    "```", 
+    "```",
     sep = "\n")
 ```
 
@@ -154,7 +154,7 @@ cat("```yaml",
 
 ### \_quarto.yml {#quarto_yml}
 
-The `_quarto.yml` file can be thought of the central orchestrator for the website. It defines what website themes/CSS/SCSS to use, how the pages should be organized, and other general properties of the website. 
+The `_quarto.yml` file can be thought of the central orchestrator for the website. It defines what website themes/CSS/SCSS to use, how the pages should be organized, and other general properties of the website.
 
 
 ::: {.callout-note appearance="simple" collapse="true"}
@@ -168,7 +168,7 @@ cat("```yaml", readLines("_quarto.yml"), "```", sep = "\n")
 
 :::
 
-This is one of the more complex files in the repository, but there are only a few sections you'll need to interact with directly. I'll break down the file based on the 4 major categories in our file: `project`, `website`, `format`, and `editor`.
+This file might seem complex, but you only need to focus on a few sections. I'll explain it using four main parts: `project`, `website`, `format`, and `editor`.
 
 #### `project`
 
@@ -218,7 +218,7 @@ cat("```yaml", readLines("_quarto.yml")[7:20], "```", sep = "\n")
 
 ##### `navbar`
 
-This section is for specifying the navbar or navigation bar at the top of the window. The only updates that should be made here are to the URLs which should be updated to include the correct GitHub repo address.
+This section specifies the navbar (navigation bar) at the top of the window. Only update the URLs to include the correct GitHub repository address.
 
 ```{r, results='asis'}
 setwd("tutorial-template")
@@ -228,7 +228,7 @@ cat("```yaml", readLines("_quarto.yml")[23:37], "```", sep = "\n")
 
 ##### `sidebar`
 
-This is the section of the `_quarto.yml` file that allows you to specify the layout of your sections and chapters, as discussed in the [`TOPIC1` and `TOPIC2` section](#topic_dirs). You can add as many `section`s as you need--just make sure to provide them with an appropriate title. Likewise, you can include chapters under a section by listing the chapters under `contents`, and then providing at least an `href` which is a path to the chapter Quarto file. 
+This section allows you to specify the layout of your sections and chapters, as discussed in the [`TOPIC1` and `TOPIC2` section](#topic_dirs). You can add as many `section`s as you need--just make sure to provide them with an appropriate title. Likewise, you can include chapters under a section by listing the chapters under `contents`, and then providing at least an `href` which is a path to the chapter Quarto file.
 
 You can also add a `text` tag directly after the `href` which will provide a new name for the chapter in the sidebar. However, you do not need to specify a `text` tag as Quarto will otherwise search for and use the value of `title` in your `.qmd` file.
 
@@ -240,7 +240,7 @@ cat("```yaml", readLines("_quarto.yml")[40:58], "```", sep = "\n")
 
 ##### `format`
 
-This section only provides additional website formatting and styling decisions, and does not need any changes. (However, if you think there are broad styling changes or additions we should make for all of our tutorials, feel free to open an issue or a PR!)
+This section specifies additional website formatting and styling decisions and requires no change. (However, if you think there are broad styling changes or additions we should make for all of our tutorials, feel free to open an issue or a PR!)
 
 ```{r, results='asis'}
 setwd("tutorial-template")
