@@ -39,6 +39,7 @@ website:
 
   sidebar:
     style: "docked"
+    collapse-level: 1
     contents:
       - text: "Home"
         href: index.qmd
@@ -77,7 +78,7 @@ website:
           - href: github/page1.qmd
             text: "About out GitHub Organization"
           - href: github/page2.qmd
-            text: "What to learn?"
+            text: "Essential git Skills"
           - href: github/page3.qmd
             text: "Repository Overview"
           - href: github/page4.qmd
@@ -91,7 +92,7 @@ website:
           - href: github/page4.qmd
             text: "Citations and Licenses"
 
-      - section: "GitLab"
+      - section: "LRZ GitLab"
         contents:
           - href: gitlab/page1.qmd
             text: "The LRZ GitLab"
@@ -102,20 +103,22 @@ website:
 
       - section: "Authoring Tutorials"
         contents:
+          - href: authoring_tutorials/introduction.qmd
+            text: "Introduction"
           - href: authoring_tutorials/tutorial_template_repo.qmd
             text: "Tutorial Template Overview"
           - href: authoring_tutorials/getting_started.qmd
             text: "Getting Started"
           - href: authoring_tutorials/things_you_should_not_change.qmd
-            text: "Things you shouldn't change"
+            text: "Things You Shouldn't change"
           - href: authoring_tutorials/matomo_analytics.qmd
             text: "Matomo Analytics"
-          - href: authoring_tutorials/page5.qmd
-            text: "Best Practices"
           - href: authoring_tutorials/page4.qmd
             text: "Releases and Zenodo"
           - href: authoring_tutorials/page4.qmd
             text: "Updates and Versioning"
+          - href: authoring_tutorials/page5.qmd
+            text: "Best Practices"
 
 
 
