@@ -1,0 +1,26 @@
+---
+title: "Introduction"
+---
+
+Welcome! This section of the manual is dedicated to the procedures for creating a new tutorial hosted via our GitHub organization. The following chapters will introduce you to the basics of the [`lmu-osc/tutorial-template`](https://github.com/lmu-osc/tutorial-template) which standardizes the design of our websites, the licensing, the citation styles used, and more to provide a coherent structure across our growing catalogue of tutorials. In particular, the chapters are organized as follows:
+
+1. [Tutorial Template Overview](tutorial_template_repo.qmd) introduces the major files and folders in the tutorial, and briefly describes the purpose of each of them.
+2. [Things You Shouldn't Change](things_you_should_not_change.qmd) provides some warnings about files that should only be changed in extenuating circumstances, and how to go about doing so.
+3. [Getting Started](getting_started.qmd) outlines the technical steps needed to get started with a new tutorial
+4. [Matomo Analytics](matomo_analytics.qmd) discusses our website data analytics tool, and how to include the necessary tracking code in the website.
+5. [Releases and Zenodo](releases_and_zenodo.qmd) shows you how to make sure your repo is available to Zenodo, and how to use GitHub "releases" to trigger sending your repo to Zenodo (which, importantly, creates a DOI for the repository).
+6. [Updates and Versioning](updates_and_versioning.qmd) covers in greater detail when and how to make updates to your project, with particular attention paid to GitHub releases and versioning of the project.
+7. [Best Practices]() discusses some best practices when developing your tutorial. These are largely recommendations. (Chapter not developed yet--questioning content.)
+
+
+::: {.callout-tip}
+
+## Note on Authoring Practices, Writing Style, and Formatting
+
+We do not prescribe how or what tutorial authors should write, obviously as long as content is within the scope of the tutorial topic. 
+
+Feel free to stylize your content to your liking, and take advantage of Quarto features, Markdown features, and code embedded in the documents as your see fit.
+
+You can, as always, tag an OSC member for review or help in pull requests or issues!
+
+:::
