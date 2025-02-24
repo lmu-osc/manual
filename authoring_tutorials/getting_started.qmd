@@ -29,7 +29,11 @@ This helps us clearly see what content has been added when, by whom, and (thanks
 5. Add a brief description. This can be updated later.
 6. Set the repository to Public.
     - We do not have a GitHub Enterprise account so we cannot host GitHub Pages from private repositories.
-  
+    
+::: {.column width=100%}
+{{< video ../assets/videos/create_new_tutorial_repo_from_template.mp4 >}}
+:::
+
 # Local Set-up
 
 ## Pages Deployment
