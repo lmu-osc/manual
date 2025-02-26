@@ -175,7 +175,10 @@ This is one of the more complex files in the repository, but there are only a fe
 
 ```{r, results='asis'}
 setwd("tutorial-template")
-cat("```yaml", readLines("_quarto.yml")[1:4], "```", sep = "\n")
+all_lines <- readLines("_quarto.yml")
+start <- which(stringr::str_detect(all_lines, "# Begin Project"))
+stop <- which(stringr::str_detect(all_lines, "# End Project"))
+cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
 At a high level, this defines the entire project as being a website and I have used the pre- and post- render options to collect some standardized SCSS styling from our `lmu-osc/branding` repository. The details of this are in a footnote below[^scss_branding_explanation], but, in short, this is done to ensure that the same branding is added to all of our repos **and** so that we can just make branding changes to *one* repo in the future (rather than *all* of our tutorials.)
@@ -194,7 +197,10 @@ This is the section you will interact with the most (and almost exclusively) whe
 
 ```{r, results='asis'}
 setwd("tutorial-template")
-cat("```yaml", readLines("_quarto.yml")[7:58], "```", sep = "\n")
+all_lines <- readLines("_quarto.yml")
+start <- which(stringr::str_detect(all_lines, "# Begin Website"))
+stop <- which(stringr::str_detect(all_lines, "# End Website"))
+cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
 :::
@@ -213,7 +219,10 @@ Fields you should update or pay attention to:
 
 ```{r, results='asis'}
 setwd("tutorial-template")
-cat("```yaml", readLines("_quarto.yml")[7:20], "```", sep = "\n")
+all_lines <- readLines("_quarto.yml")
+start <- which(stringr::str_detect(all_lines, "website:"))
+stop <- which(stringr::str_detect(all_lines, "navbar:")) - 1
+cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
 
@@ -223,7 +232,10 @@ This section is for specifying the navbar or navigation bar at the top of the wi
 
 ```{r, results='asis'}
 setwd("tutorial-template")
-cat("```yaml", readLines("_quarto.yml")[23:37], "```", sep = "\n")
+all_lines <- readLines("_quarto.yml")
+start <- which(stringr::str_detect(all_lines, "navbar:"))
+stop <- which(stringr::str_detect(all_lines, "sidebar:")) - 1
+cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
 
@@ -235,7 +247,10 @@ You can also add a `text` tag directly after the `href` which will provide a new
 
 ```{r, results='asis'}
 setwd("tutorial-template")
-cat("```yaml", readLines("_quarto.yml")[40:58], "```", sep = "\n")
+all_lines <- readLines("_quarto.yml")
+start <- which(stringr::str_detect(all_lines, "sidebar:"))
+stop <- which(stringr::str_detect(all_lines, "# End Website")) - 1
+cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
 
@@ -245,7 +260,10 @@ This section only provides additional website formatting and styling decisions, 
 
 ```{r, results='asis'}
 setwd("tutorial-template")
-cat("```yaml", readLines("_quarto.yml")[62:75], "```", sep = "\n")
+all_lines <- readLines("_quarto.yml")
+start <- which(stringr::str_detect(all_lines, "# Begin Format"))
+stop <- which(stringr::str_detect(all_lines, "# End Format"))
+cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
 ##### `editor`
@@ -254,7 +272,10 @@ When editing the project in RStudio, this determines whether Quarto documents wi
 
 ```{r, results='asis'}
 setwd("tutorial-template")
-cat("```yaml", readLines("_quarto.yml")[77], "```", sep = "\n")
+all_lines <- readLines("_quarto.yml")
+start <- which(stringr::str_detect(all_lines, "# Begin Editor"))
+stop <- which(stringr::str_detect(all_lines, "# End Editor"))
+cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
 
