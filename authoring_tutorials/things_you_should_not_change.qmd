@@ -6,11 +6,15 @@ A more accurate title for this page would be "**Things You Shouldn't Change With
 
 # The GitHub Action Files
 
-The publishing workflow *should* work out of the box for Quarto projects, and for projects that are combined with R (with or without {renv}--but please do use {renv} if your project uses R). If you need to change this workflow file, it should only be because there is genuinely an issue with the configuration or if a dependency is not installed. You're welcome to adjust or create your own publish workflow if needed, or you can contact staff at the OSC for help.
+The publishing workflow *should* work out of the box for Quarto projects, and for projects that are combined with R (with or without {renv}--but **please do use {renv} if your project uses R**). If you need to change this workflow file, it should only be because there is genuinely an issue with the configuration or if a dependency is not installed. 
+
+Missing system dependencies may particularly be a problem for now because, at the time of writing this in early 2025, GitHub recently changed their latest Ubuntu image to 24.04 and stripped away some dependencies that they included in the 22.02 image.
+
+You're welcome to adjust or create your own publish workflow if needed, or you can contact staff at the OSC for help.
 
 # The .gitignore
 
-This has been set-up to ignore annoying or unneeded components of R projects/packages, Quarto projects, and files that are commonly included in repositories even though they **should not** be. Feel free to add more files to the `.gitignore` if something is missing from your project, but, in general, you should not delete items from this file.
+This has been set-up to ignore annoying or unneeded components of R projects/packages, Quarto projects, and files that are commonly included in repositories even though they **should not** be. Feel free to add more files to the `.gitignore` if something specific needs to be blocked or ignored, but, in general, you should not delete items from this file.
 
 # The `_quarto.yml` File
 
@@ -18,7 +22,7 @@ We aim for our tutorials to have a standard look and feel, and the `_quarto.yml`
 
 # The LICENSE Files
 
-The license files are there to protect the intellectual property of the authors and the OSC, and should not be changed unless there are legal reasons or extenuating circumstances to do so. If you have questions about the license, please contact staff at the OSC.
+The license files are there to protect the intellectual property of the authors and the OSC, and should not be changed unless there are legal reasons or extenuating circumstances to do so. If you have questions about the license, please contact staff at the OSC. We're currently working on documentation that outlines our licensing decisions in greater detail.
 
 # The CITATION File
 
@@ -26,5 +30,9 @@ The CITATION file is there to help others cite your work, and we have tried to s
 
 # The About Page
 
-The `yaml` header in the About page is also standardized to approximately align with the CITATION file, but does not align exactly with CFF.
+The `yaml` header in the About page is also standardized to approximately align with the CITATION file, but Quarto does not align exactly with CFF so you cannot simply copy/paste the CITATION file contents to this section.
+
+The main content of the About page can be altered to add contributors notes and any other relevant authoring information that cannot be included as metadata in the `yaml` field. Please do not remove or change the notes about licensing on this page.
+
+If you have cited other sources in your tutorial and created a bibliography, please reference the bibliography in the `yaml` header of this page with e.g. `bibliography: your_bib_file.bib` 
 

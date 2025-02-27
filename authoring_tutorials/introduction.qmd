@@ -8,9 +8,8 @@ Welcome! This section of the manual is dedicated to the procedures for creating 
 2. [Things You Shouldn't Change](things_you_should_not_change.qmd) provides some warnings about files that should only be changed in extenuating circumstances, and how to go about doing so.
 3. [Getting Started](getting_started.qmd) outlines the technical steps needed to get started with a new tutorial
 4. [Matomo Analytics](matomo_analytics.qmd) discusses our website data analytics tool, and how to include the necessary tracking code in the website.
-5. [Releases and Zenodo](releases_and_zenodo.qmd) shows you how to make sure your repo is available to Zenodo, and how to use GitHub "releases" to trigger sending your repo to Zenodo (which, importantly, creates a DOI for the repository).
-6. [Updates and Versioning](updates_and_versioning.qmd) covers in greater detail when and how to make updates to your project, with particular attention paid to GitHub releases and versioning of the project.
-7. [Best Practices]() discusses some best practices when developing your tutorial. These are largely recommendations. (Chapter not developed yet--questioning content.)
+5. [Authoring and Versions](updates_and_versioning.qmd) covers in greater detail when and how to make updates to your project, with particular attention paid to GitHub releases and versioning of the project.
+6. [Best Practices](best_practices.qmd) discusses some best practices when developing your tutorial. These are largely recommendations. (Chapter not developed yet--questioning content.)
 
 
 ::: {.callout-tip}
