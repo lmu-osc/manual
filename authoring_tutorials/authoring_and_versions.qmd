@@ -1,0 +1,91 @@
+---
+title: "Authoring and Versions"
+---
+
+# Tech Set-up Complete!
+
+Congrats, the technical set-up of the repository is now complete! As a review, the following features are now available:
+
+1. A standardized CITATION file that can be used by both GitHub and Zenodo
+2. A standardized About page that is indexable by Google Scholar
+3. A connection to Zenodo for each new "release" of the tutorial
+4. A DOI to identify our repository
+5. Analytics of the website with Matomo
+6. A unified layout with the other LMU OSC tutorials
+
+
+# Authoring Content
+
+Authoring of content is entirely up to you! Try to make the content look as appealing and interactive as possible using Markdown and Quarto features, including images or plots where helpful, and make your code visible if you think it will be informative to your readers.
+
+# Versioning
+
+As you continue to develop the content and structure of your tutorial, you may reach interemediate stability points where it makes sense to "release" the tutorial again on GitHub so you can have a clear record of changes over time.
+
+Of course, judging what constitutes a "releases" can seem ambiguous and that's because, well, it is. For some initial guidance on this, please read about [Semantic Versioning](https://semver.org/) first so you have some framing of how `major.minor.patch` releasing works. Below, I'll try to lay-out some practical guidance in the context of creating tutorials for the OSC:
+
+## When to version?
+
+### Moving Beyond v0.0.1
+
+If you followed the earlier instructions, the initial version of your project should always be v0.0.1. This version contains essentially no content, and only some technical/set-up files. But what should constitute your first "release" after this? When have you moved up a version?
+
+You could, for example, increment the patch numbers to e.g. v0.0.2, v0.0.3, ... as you add and refine sections or chapters to your tutorial. However, this becomes tedious, and doesn't reflect the reality of jumping between chapters as we develop, expanding upon and deleting chapters, and so on.
+
+My rule of thumb is, in the early and initial stages of development, that it's okay to be a little bit fast and dirty with the versioning: only bother to reversion when you are at the point that your first minor release, i.e. v0.1.0, seems like it would be reasonable. And a minor release is probably reasonable around the time that you would ask another OSC member to review a (nearly) completed draft.
+
+
+### Moving Beyond v0.1.X
+
+At the stage of v0.1.X, there will likely be several rounds of review and refinement. How and when should reviews be incremented?
+
+1. Patches: if primarily text, grammar, and other small adjustments are made to the tutorial, increment by just a patch.
+2. Minor: if large chunks of a chapter or chapters are added, removed, or relocated, increment by a minor release.
+3. Major: the first major release should occur around the time the tutorial goes live for e.g. the first workshop. This might not hold universally, but is a good rule-of-thumb for when a tutorial is "finalized."
+
+
+## Where to Version?
+
+### CITATION File
+
+* update the citation file
+
+### About File
+
+### GitHub Releases
+
+* versioning will also be done in the GitHub Release, discusses in the Releases section
+
+
+
+# Development Practices
+
+* discuss some best practices for developing, and helping to keep development clear
+
+## Branching
+
+* use branches for new features and changes, particularly after v0.1.0 is released as this helps us keep a better record of changes over time
+
+## Pull Requests
+
+* open pull requests for branches, even if you are going to self-approve the content. the PR's will be the basis for notes 
+* use informative titles for the pull requests
+* generally, choose to Squash and Merge. use a Merge commit if you're finalizing a version increment
+
+### Reviewers
+
+* always feel free to assign someone as a reviewer of your PR, especially if 
+
+## Issues
+
+* opening issues is a great way to keep track of potential changes you want to make yourself to the repo, where others can request changes, or you can ask for help or request that others assist on a task.
+* helpful tip: you can create a branch directly from a GitHub Issue, and then check this out locally. The branch will automatically be linked to the Issue such that when you eventually merge that branch through a Pull Request, the issue will automatically be marked as resolved
+
+
+
+# Releases
+
+* draft a release from the main branch of the repo with new version number
+* Press the Generate Notes button. All of the titles of the Pull Requests will be listed along with the authors--this is effectively a log of everything new that has been added since the latest version.
+* release the draft when all changes have been merged
+

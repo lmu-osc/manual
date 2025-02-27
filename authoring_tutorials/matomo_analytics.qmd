@@ -8,13 +8,17 @@ This procedure is still a work in-progress, and **is not yet live.**
 
 :::
 
-[Matomo](https://matomo.org/) is a privacy-focused, self-hosted web analytics tool that allows us to get an idea of how much each of our tutorials are being used, where they're being accessed from (rough geographic area), and from where people are being linked to our websites (e.g. directly from other LMU OSC websites, or from other sites that link to us.) At the end of the day, these analytics are useful for us in 1) improving the sites to see which sites have more/less traffic than expected and 2) quantify the utility of our sites for grant purposes.
+[Matomo](https://matomo.org/) is a privacy-focused, self-hosted web analytics tool that allows us to get an idea of how much each of our tutorials are being used, where they're being accessed from (rough geographic area), and from where people are being linked to our websites (e.g. directly from other LMU OSC websites, or from other sites that link to us.) 
+At the end of the day, these analytics are useful for us in 1) improving the sites to see which sites have more/less traffic than expected and 2) quantify the utility of our sites for grant purposes.
 
 # The `matomo_analytics.html` File
 
 (Note: this section is very likely to change--we may soon include a template Matomo analytics script).
 
-This file is intentionally left empty in the tutorial template, but particular tracking code needs to be pasted to this file. However, that code must first be generated, and is specific to each separate tutorial. Please contact Felix Schönbrodt with the GitHub Pages link to the website you are developing, and request that he generate and send the required Matomo tracking code to you.
+This file is intentionally left empty in the tutorial template, but is intended to hold a tracking script which has code specific to each individual website. This code can only be generated within our self-hosted Matomo instance.
+
+Please contact any of the OSC admin members with a link to the GitHub Pages website you are developing, and request that Matomo tracking code be generated. 
+
 
 # Our Matomo Instance
 
@@ -25,5 +29,23 @@ Access to our Matomo instance, and especially access to the server containing th
 # Matomo Tracking Code to Generate
 
 (Matomo provides some default tracking, but this does not necessarily collect all of the information we want to incldue--after determining what we cant to collect, add the Matomo-specific instructions here e.g. what options to choose when generating the code in the UI.)
+
+## Generating Matomo Code
+
+If you are one of the "superusers" of our Matomo instance, you can generate code with the following steps:
+
+1. Log in at www.analytics.osc.lmu.de
+2. Press "All Websites" and then "Add a new website"
+3. Our websites are *not* intranet sites so select "Website"
+4. Fill out the page with the following information
+    - Name: the tutorial title
+    - URL: the GitHub Pages site link
+5. Save the configuration
+6. Click "View tracking code" for the tutorial. Make sure you select the correct tutorial from the list!
+<!-- 7. Under the "JavaScript Tracking Code" section, press the "Show advanced options" dropdown. -->
+<!--     - Select "Disable all tracking cookies" -->
+7. Copy the tracking code
+8. Send the tracking code back to the requestor, and remind them to place it in the `matomo_analytics.html` file as is.
+    - Alternatively, you can just open a pull request in their repo
 
 

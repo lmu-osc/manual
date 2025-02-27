@@ -47,7 +47,7 @@ If you're not familiar with `.gitignore` files, I recommend taking a look at [th
 
 The included ignore file for the tutorials is a modified version of GitHub's template for R projects with some additions to ignore Quarto specific files, namely the `_site` folder. Some people push this folder to their GitHub repo, and use it to serve their website from. However, we have a CI/CD workflow that will automatically render the website and serve it from the `gh-pages` branch.
 
-For Mac users, any `.DS_Store` files are also automatically ignored--those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the command `usethis::git_vaccinate()` if you want to globally ignore a handful of annoying)
+For Mac users, any `.DS_Store` files are also automatically ignored--those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the R function `usethis::git_vaccinate()` if you want to globally ignore a handful of annoying files, namely `.Rproj.user`, `.Rhistory`, `.Rdata`, `.httr-oauth`, `.DS_Store`, and `.quarto`.)
 
 
 ::: {.callout-note appearance="simple" collapse="true"}
@@ -109,7 +109,7 @@ Fields you should pay attention to or fill out:
 * `url` should be the address for the actual websige i.e. the GitHub Pages
 
 
-### LICENSE.md and LICENSE-CODE.md {#licenses}
+### LICENSES {#licenses}
 
 Our standard licenses are CC-BY-SA 4.0 for the written text and CC-0 for code contained within the tutorials. These license files are contained in `LICENSE.md` and `LICENSE-CODE.md` respectively.
 
@@ -119,7 +119,7 @@ This file should follow the typical conventions of a README file in that it prov
 
 Otherwise, we have no strong recommendations on what to include in this file other the Zenodo DOI badge at the top of the file. (Again, this is discussed in a later chapter.)
 
-### TOPIC1 and TOPIC2 Directories {#topic_directories}
+### TOPIC* Directories {#topic_directories}
 
 These two directories are just example/template spaces for where you should store your Quarto (`.qmd`) files. In general, we anticipate that the tutorials will be divided into 2-5 broad sections, and each section will be represented by one of these folders. Each section will contain chapters which are independent Quarto files stored within their respective folders.
 
@@ -173,6 +173,10 @@ This is one of the more complex files in the repository, but there are only a fe
 
 #### `project`
 
+::: {.callout-note appearance="simple" collapse="true"}
+
+## Project Options
+
 ```{r, results='asis'}
 setwd("tutorial-template")
 all_lines <- readLines("_quarto.yml")
@@ -180,6 +184,8 @@ start <- which(stringr::str_detect(all_lines, "# Begin Project"))
 stop <- which(stringr::str_detect(all_lines, "# End Project"))
 cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
+
+:::
 
 At a high level, this defines the entire project as being a website and I have used the pre- and post- render options to collect some standardized SCSS styling from our `lmu-osc/branding` repository. The details of this are in a footnote below[^scss_branding_explanation], but, in short, this is done to ensure that the same branding is added to all of our repos **and** so that we can just make branding changes to *one* repo in the future (rather than *all* of our tutorials.)
 
@@ -216,34 +222,50 @@ Fields you should update or pay attention to:
 * `repo-url` should be the URL directly to the GitHub repo
 * `page-footer` please update the year in the copyright if needed
 
+::: {.callout-note appearance="simple" collapse="true"}
+
+## General Website Options
+
 
 ```{r, results='asis'}
 setwd("tutorial-template")
 all_lines <- readLines("_quarto.yml")
 start <- which(stringr::str_detect(all_lines, "website:"))
-stop <- which(stringr::str_detect(all_lines, "navbar:")) - 1
+stop <- which(stringr::str_detect(all_lines, "navbar:")) - 2
 cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
+:::
 
 ##### `navbar`
 
 This section is for specifying the navbar or navigation bar at the top of the window. The only updates that should be made here are to the URLs which should be updated to include the correct GitHub repo address.
 
+::: {.callout-note appearance="simple" collapse="true"}
+
+## Navigation Bar (navbar) Options
+
+
 ```{r, results='asis'}
 setwd("tutorial-template")
 all_lines <- readLines("_quarto.yml")
 start <- which(stringr::str_detect(all_lines, "navbar:"))
-stop <- which(stringr::str_detect(all_lines, "sidebar:")) - 1
+stop <- which(stringr::str_detect(all_lines, "sidebar:")) - 2
 cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
+:::
 
 ##### `sidebar`
 
 This is the section of the `_quarto.yml` file that allows you to specify the layout of your sections and chapters, as discussed in the [`TOPIC1` and `TOPIC2` section](#topic_dirs). You can add as many `section`s as you need--just make sure to provide them with an appropriate title. Likewise, you can include chapters under a section by listing the chapters under `contents`, and then providing at least an `href` which is a path to the chapter Quarto file. 
 
 You can also add a `text` tag directly after the `href` which will provide a new name for the chapter in the sidebar. However, you do not need to specify a `text` tag as Quarto will otherwise search for and use the value of `title` in your `.qmd` file.
+
+::: {.callout-note appearance="simple" collapse="true"}
+
+## Sidebar Options
+
 
 ```{r, results='asis'}
 setwd("tutorial-template")
@@ -253,10 +275,16 @@ stop <- which(stringr::str_detect(all_lines, "# End Website")) - 1
 cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
+:::
 
 ##### `format`
 
 This section only provides additional website formatting and styling decisions, and does not need any changes. (However, if you think there are broad styling changes or additions we should make for all of our tutorials, feel free to open an issue or a PR!)
+
+::: {.callout-note appearance="simple" collapse="true"}
+
+## Format Options
+
 
 ```{r, results='asis'}
 setwd("tutorial-template")
@@ -266,9 +294,15 @@ stop <- which(stringr::str_detect(all_lines, "# End Format"))
 cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
+:::
+
 ##### `editor`
 
 When editing the project in RStudio, this determines whether Quarto documents will open up in `source` or `visual` mode by default. We have opted for `source` as the default.
+
+::: {.callout-note appearance="simple" collapse="true"}
+
+## Source or Visual Editor
 
 ```{r, results='asis'}
 setwd("tutorial-template")
@@ -278,8 +312,21 @@ stop <- which(stringr::str_detect(all_lines, "# End Editor"))
 cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 ```
 
+:::
 
 
+## .qmd Files
+
+The `index.qmd` and `about.qmd` files are the only two Quarto (i.e. `.qmd`) files that also need to be included in the tutorial--you will presumably author the rest! 
+
+The `index.qmd` file is essentially the home page of the website, much like `https://lmu-osc.github.io/manual/` is the home page of this website. You have flexibility to populate this how you see fit.
+
+The `about.qmd` is much more structured, and will be discussed in later chapters. This page should be updated to include author information, but the other content should not be changed.
+
+
+## Assets Folder
+
+This folder is a quasi-standard location for storing e.g. images, videos, and other media files. The only files we store in here by default are some LMU logos. Please try to make use of this folder for storing your media files.
 
 
 ```{bash}

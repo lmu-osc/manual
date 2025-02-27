@@ -113,10 +113,8 @@ website:
             text: "Things You Shouldn't change"
           - href: authoring_tutorials/matomo_analytics.qmd
             text: "Matomo Analytics"
-          - href: authoring_tutorials/releases_and_zenodo.qmd
-            text: "Releases and Zenodo"
-          - href: authoring_tutorials/updates_and_versioning.qmd
-            text: "Updates and Versioning"
+          - href: authoring_tutorials/authoring_and_versions.qmd
+            text: "Authoring and Versions"
           - href: authoring_tutorials/best_practices.qmd
             text: "Best Practices"
 
