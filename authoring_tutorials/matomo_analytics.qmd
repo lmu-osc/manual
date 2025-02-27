@@ -10,7 +10,7 @@ This procedure is still a work in-progress, and **is not yet live.**
 
 [Matomo](https://matomo.org/) is a privacy-focused, self-hosted web analytics tool that allows us to get an idea of how much each of our tutorials are being used, where they're being accessed from (rough geographic area), and from where people are being linked to our websites (e.g. directly from other LMU OSC websites, or from other sites that link to us.) At the end of the day, these analytics are useful for us in 1) improving the sites to see which sites have more/less traffic than expected and 2) quantify the utility of our sites for grant purposes.
 
-# The matomo_analytics.html File
+# The `matomo_analytics.html` File
 
 (Note: this section is very likely to change--we may soon include a template Matomo analytics script).
 
@@ -20,9 +20,7 @@ This file is intentionally left empty in the tutorial template, but particular t
 
 As mentioned, we self-host an instance of Matomo on our servers so the data we collect is assured to remain within the EU, and is not passed along to any other parties.
 
-Access to our Matomo instance, and especially access to the server containing the instance, is restricted to a handful of OSC staff members. If you believe you need access, please contact Felix. Additional, if you 
-
-If you are an OSC admin or staff who needs direct access to the server, please contact Felix to discuss.
+Access to our Matomo instance, and especially access to the server containing the instance, is restricted to a handful of OSC staff members. If you believe you need access, please contact Felix. Additionally, if you are an OSC admin or staff who needs direct access to the server, please contact Felix to discuss.
 
 # Matomo Tracking Code to Generate
 
