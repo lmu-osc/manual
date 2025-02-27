@@ -376,14 +376,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../authoring_tutorials/releases_and_zenodo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Releases and Zenodo</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../authoring_tutorials/updates_and_versioning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Updates and Versioning</span></a>
+  <a href="../authoring_tutorials/authoring_and_versions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authoring and Versions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -440,11 +434,13 @@ ul.task-list li input[type="checkbox"] {
 <p>A more accurate title for this page would be “<strong>Things You Shouldn’t Change Without a Good Reason</strong>.” The following are some of the things you should be careful about changing in the project:</p>
 <section id="the-github-action-files" class="level1">
 <h1>The GitHub Action Files</h1>
-<p>The publishing workflow <em>should</em> work out of the box for Quarto projects, and for projects that are combined with R (with or without {renv}–but please do use {renv} if your project uses R). If you need to change this workflow file, it should only be because there is genuinely an issue with the configuration or if a dependency is not installed. You’re welcome to adjust or create your own publish workflow if needed, or you can contact staff at the OSC for help.</p>
+<p>The publishing workflow <em>should</em> work out of the box for Quarto projects, and for projects that are combined with R (with or without {renv}–but <strong>please do use {renv} if your project uses R</strong>). If you need to change this workflow file, it should only be because there is genuinely an issue with the configuration or if a dependency is not installed.</p>
+<p>Missing system dependencies may particularly be a problem for now because, at the time of writing this in early 2025, GitHub recently changed their latest Ubuntu image to 24.04 and stripped away some dependencies that they included in the 22.02 image.</p>
+<p>You’re welcome to adjust or create your own publish workflow if needed, or you can contact staff at the OSC for help.</p>
 </section>
 <section id="the-.gitignore" class="level1">
 <h1>The .gitignore</h1>
-<p>This has been set-up to ignore annoying or unneeded components of R projects/packages, Quarto projects, and files that are commonly included in repositories even though they <strong>should not</strong> be. Feel free to add more files to the <code>.gitignore</code> if something is missing from your project, but, in general, you should not delete items from this file.</p>
+<p>This has been set-up to ignore annoying or unneeded components of R projects/packages, Quarto projects, and files that are commonly included in repositories even though they <strong>should not</strong> be. Feel free to add more files to the <code>.gitignore</code> if something specific needs to be blocked or ignored, but, in general, you should not delete items from this file.</p>
 </section>
 <section id="the-_quarto.yml-file" class="level1">
 <h1>The <code>_quarto.yml</code> File</h1>
@@ -452,7 +448,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-license-files" class="level1">
 <h1>The LICENSE Files</h1>
-<p>The license files are there to protect the intellectual property of the authors and the OSC, and should not be changed unless there are legal reasons or extenuating circumstances to do so. If you have questions about the license, please contact staff at the OSC.</p>
+<p>The license files are there to protect the intellectual property of the authors and the OSC, and should not be changed unless there are legal reasons or extenuating circumstances to do so. If you have questions about the license, please contact staff at the OSC. We’re currently working on documentation that outlines our licensing decisions in greater detail.</p>
 </section>
 <section id="the-citation-file" class="level1">
 <h1>The CITATION File</h1>
@@ -460,7 +456,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-about-page" class="level1">
 <h1>The About Page</h1>
-<p>The <code>yaml</code> header in the About page is also standardized to approximately align with the CITATION file, but does not align exactly with CFF.</p>
+<p>The <code>yaml</code> header in the About page is also standardized to approximately align with the CITATION file, but Quarto does not align exactly with CFF so you cannot simply copy/paste the CITATION file contents to this section.</p>
+<p>The main content of the About page can be altered to add contributors notes and any other relevant authoring information that cannot be included as metadata in the <code>yaml</code> field. Please do not remove or change the notes about licensing on this page.</p>
+<p>If you have cited other sources in your tutorial and created a bibliography, please reference the bibliography in the <code>yaml</code> header of this page with e.g.&nbsp;<code>bibliography: your_bib_file.bib</code></p>
 
 
 </section>
