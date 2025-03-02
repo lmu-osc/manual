@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Authoring and Versions – OSC Manual</title>
+<title>Updates and Versioning – OSC Manual</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../authoring_tutorials/best_practices.html" rel="next">
-<link href="../authoring_tutorials/matomo_analytics.html" rel="prev">
+<link href="../authoring_tutorials/releases_and_zenodo.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Authoring Tutorials</a></li><li class="breadcrumb-item"><a href="../authoring_tutorials/authoring_and_versions.html">Authoring and Versions</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Authoring Tutorials</a></li><li class="breadcrumb-item"><a href="../authoring_tutorials/updates_and_versioning.html">Updates and Versioning</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -376,8 +376,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../authoring_tutorials/authoring_and_versions.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Authoring and Versions</span></a>
+  <a href="../authoring_tutorials/releases_and_zenodo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Releases and Zenodo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../authoring_tutorials/updates_and_versioning.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Updates and Versioning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -396,45 +402,14 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><img src="../assets/LMU_OSC_logo.svg" class="img-fluid" width="175"></p>
 </div></div>
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#tech-set-up-complete" id="toc-tech-set-up-complete" class="nav-link active" data-scroll-target="#tech-set-up-complete">Tech Set-up Complete!</a></li>
-  <li><a href="#authoring-content" id="toc-authoring-content" class="nav-link" data-scroll-target="#authoring-content">Authoring Content</a></li>
-  <li><a href="#versioning" id="toc-versioning" class="nav-link" data-scroll-target="#versioning">Versioning</a>
-  <ul class="collapse">
-  <li><a href="#when-to-version" id="toc-when-to-version" class="nav-link" data-scroll-target="#when-to-version">When to version?</a>
-  <ul class="collapse">
-  <li><a href="#moving-beyond-v0.0.1" id="toc-moving-beyond-v0.0.1" class="nav-link" data-scroll-target="#moving-beyond-v0.0.1">Moving Beyond v0.0.1</a></li>
-  <li><a href="#moving-beyond-v0.1.x" id="toc-moving-beyond-v0.1.x" class="nav-link" data-scroll-target="#moving-beyond-v0.1.x">Moving Beyond v0.1.X</a></li>
-  </ul></li>
-  <li><a href="#where-to-version" id="toc-where-to-version" class="nav-link" data-scroll-target="#where-to-version">Where to Version?</a>
-  <ul class="collapse">
-  <li><a href="#citation-file" id="toc-citation-file" class="nav-link" data-scroll-target="#citation-file">CITATION File</a></li>
-  <li><a href="#about-file" id="toc-about-file" class="nav-link" data-scroll-target="#about-file">About File</a></li>
-  <li><a href="#github-releases" id="toc-github-releases" class="nav-link" data-scroll-target="#github-releases">GitHub Releases</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#development-practices" id="toc-development-practices" class="nav-link" data-scroll-target="#development-practices">Development Practices</a>
-  <ul class="collapse">
-  <li><a href="#branching" id="toc-branching" class="nav-link" data-scroll-target="#branching">Branching</a></li>
-  <li><a href="#pull-requests" id="toc-pull-requests" class="nav-link" data-scroll-target="#pull-requests">Pull Requests</a>
-  <ul class="collapse">
-  <li><a href="#reviewers" id="toc-reviewers" class="nav-link" data-scroll-target="#reviewers">Reviewers</a></li>
-  </ul></li>
-  <li><a href="#issues" id="toc-issues" class="nav-link" data-scroll-target="#issues">Issues</a></li>
-  </ul></li>
-  <li><a href="#releases" id="toc-releases" class="nav-link" data-scroll-target="#releases">Releases</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring_tutorials/authoring_and_versions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Authoring Tutorials</a></li><li class="breadcrumb-item"><a href="../authoring_tutorials/authoring_and_versions.html">Authoring and Versions</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring_tutorials/introduction.html">Authoring Tutorials</a></li><li class="breadcrumb-item"><a href="../authoring_tutorials/updates_and_versioning.html">Updates and Versioning</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Authoring and Versions</h1>
+<h1 class="title">Updates and Versioning</h1>
 </div>
 
 
@@ -451,106 +426,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="tech-set-up-complete" class="level1">
-<h1>Tech Set-up Complete!</h1>
-<p>Congrats, the technical set-up of the repository is now complete! As a review, the following features are now available:</p>
-<ol type="1">
-<li>A standardized CITATION file that can be used by both GitHub and Zenodo</li>
-<li>A standardized About page that is indexable by Google Scholar</li>
-<li>A connection to Zenodo for each new “release” of the tutorial</li>
-<li>A DOI to identify our repository</li>
-<li>Analytics of the website with Matomo</li>
-<li>A unified layout with the other LMU OSC tutorials</li>
-</ol>
-</section>
-<section id="authoring-content" class="level1">
-<h1>Authoring Content</h1>
-<p>Authoring of content is entirely up to you! Try to make the content look as appealing and interactive as possible using Markdown and Quarto features, including images or plots where helpful, and make your code visible if you think it will be informative to your readers.</p>
-</section>
-<section id="versioning" class="level1">
-<h1>Versioning</h1>
-<p>As you continue to develop the content and structure of your tutorial, you may reach interemediate stability points where it makes sense to “release” the tutorial again on GitHub so you can have a clear record of changes over time.</p>
-<p>Of course, judging what constitutes a “releases” can seem ambiguous and that’s because, well, it is. For some initial guidance on this, please read about <a href="https://semver.org/">Semantic Versioning</a> first so you have some framing of how <code>major.minor.patch</code> releasing works. Below, I’ll try to lay-out some practical guidance in the context of creating tutorials for the OSC:</p>
-<section id="when-to-version" class="level2">
-<h2 class="anchored" data-anchor-id="when-to-version">When to version?</h2>
-<section id="moving-beyond-v0.0.1" class="level3">
-<h3 class="anchored" data-anchor-id="moving-beyond-v0.0.1">Moving Beyond v0.0.1</h3>
-<p>If you followed the earlier instructions, the initial version of your project should always be v0.0.1. This version contains essentially no content, and only some technical/set-up files. But what should constitute your first “release” after this? When have you moved up a version?</p>
-<p>You could, for example, increment the patch numbers to e.g.&nbsp;v0.0.2, v0.0.3, … as you add and refine sections or chapters to your tutorial. However, this becomes tedious, and doesn’t reflect the reality of jumping between chapters as we develop, expanding upon and deleting chapters, and so on.</p>
-<p>My rule of thumb is, in the early and initial stages of development, that it’s okay to be a little bit fast and dirty with the versioning: only bother to reversion when you are at the point that your first minor release, i.e.&nbsp;v0.1.0, seems like it would be reasonable. And a minor release is probably reasonable around the time that you would ask another OSC member to review a (nearly) completed draft.</p>
-</section>
-<section id="moving-beyond-v0.1.x" class="level3">
-<h3 class="anchored" data-anchor-id="moving-beyond-v0.1.x">Moving Beyond v0.1.X</h3>
-<p>At the stage of v0.1.X, there will likely be several rounds of review and refinement. How and when should reviews be incremented?</p>
-<ol type="1">
-<li>Patches: if primarily text, grammar, and other small adjustments are made to the tutorial, increment by just a patch.</li>
-<li>Minor: if large chunks of a chapter or chapters are added, removed, or relocated, increment by a minor release.</li>
-<li>Major: the first major release should occur around the time the tutorial goes live for e.g.&nbsp;the first workshop. This might not hold universally, but is a good rule-of-thumb for when a tutorial is “finalized.”</li>
-</ol>
-</section>
-</section>
-<section id="where-to-version" class="level2">
-<h2 class="anchored" data-anchor-id="where-to-version">Where to Version?</h2>
-<section id="citation-file" class="level3">
-<h3 class="anchored" data-anchor-id="citation-file">CITATION File</h3>
-<ul>
-<li>update the citation file</li>
-</ul>
-</section>
-<section id="about-file" class="level3">
-<h3 class="anchored" data-anchor-id="about-file">About File</h3>
-</section>
-<section id="github-releases" class="level3">
-<h3 class="anchored" data-anchor-id="github-releases">GitHub Releases</h3>
-<ul>
-<li>versioning will also be done in the GitHub Release, discusses in the Releases section</li>
-</ul>
-</section>
-</section>
-</section>
-<section id="development-practices" class="level1">
-<h1>Development Practices</h1>
-<ul>
-<li>discuss some best practices for developing, and helping to keep development clear</li>
-</ul>
-<section id="branching" class="level2">
-<h2 class="anchored" data-anchor-id="branching">Branching</h2>
-<ul>
-<li>use branches for new features and changes, particularly after v0.1.0 is released as this helps us keep a better record of changes over time</li>
-</ul>
-</section>
-<section id="pull-requests" class="level2">
-<h2 class="anchored" data-anchor-id="pull-requests">Pull Requests</h2>
-<ul>
-<li>open pull requests for branches, even if you are going to self-approve the content. the PR’s will be the basis for notes</li>
-<li>use informative titles for the pull requests</li>
-<li>generally, choose to Squash and Merge. use a Merge commit if you’re finalizing a version increment</li>
-</ul>
-<section id="reviewers" class="level3">
-<h3 class="anchored" data-anchor-id="reviewers">Reviewers</h3>
-<ul>
-<li>always feel free to assign someone as a reviewer of your PR, especially if</li>
-</ul>
-</section>
-</section>
-<section id="issues" class="level2">
-<h2 class="anchored" data-anchor-id="issues">Issues</h2>
-<ul>
-<li>opening issues is a great way to keep track of potential changes you want to make yourself to the repo, where others can request changes, or you can ask for help or request that others assist on a task.</li>
-<li>helpful tip: you can create a branch directly from a GitHub Issue, and then check this out locally. The branch will automatically be linked to the Issue such that when you eventually merge that branch through a Pull Request, the issue will automatically be marked as resolved</li>
-</ul>
-</section>
-</section>
-<section id="releases" class="level1">
-<h1>Releases</h1>
-<ul>
-<li>draft a release from the main branch of the repo with new version number</li>
-<li>Press the Generate Notes button. All of the titles of the Pull Requests will be listed along with the authors–this is effectively a log of everything new that has been added since the latest version.</li>
-<li>release the draft when all changes have been merged</li>
-</ul>
 
 
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -972,8 +849,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../authoring_tutorials/matomo_analytics.html" class="pagination-link" aria-label="Matomo Analytics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Matomo Analytics</span>
+      <a href="../authoring_tutorials/releases_and_zenodo.html" class="pagination-link" aria-label="Releases and Zenodo">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Releases and Zenodo</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
@@ -990,7 +867,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring_tutorials/authoring_and_versions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring_tutorials/updates_and_versioning.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

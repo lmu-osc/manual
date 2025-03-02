@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../authoring_tutorials/authoring_and_versions.html" rel="next">
+<link href="../authoring_tutorials/releases_and_zenodo.html" rel="next">
 <link href="../authoring_tutorials/things_you_should_not_change.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -376,8 +376,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../authoring_tutorials/authoring_and_versions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Authoring and Versions</span></a>
+  <a href="../authoring_tutorials/releases_and_zenodo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Releases and Zenodo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../authoring_tutorials/updates_and_versioning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Updates and Versioning</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -402,10 +408,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#the-matomo_analytics.html-file" id="toc-the-matomo_analytics.html-file" class="nav-link active" data-scroll-target="#the-matomo_analytics.html-file">The <code>matomo_analytics.html</code> File</a></li>
   <li><a href="#our-matomo-instance" id="toc-our-matomo-instance" class="nav-link" data-scroll-target="#our-matomo-instance">Our Matomo Instance</a></li>
-  <li><a href="#matomo-tracking-code-to-generate" id="toc-matomo-tracking-code-to-generate" class="nav-link" data-scroll-target="#matomo-tracking-code-to-generate">Matomo Tracking Code to Generate</a>
-  <ul class="collapse">
-  <li><a href="#generating-matomo-code" id="toc-generating-matomo-code" class="nav-link" data-scroll-target="#generating-matomo-code">Generating Matomo Code</a></li>
-  </ul></li>
+  <li><a href="#matomo-tracking-code-to-generate" id="toc-matomo-tracking-code-to-generate" class="nav-link" data-scroll-target="#matomo-tracking-code-to-generate">Matomo Tracking Code to Generate</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring_tutorials/matomo_analytics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -448,8 +451,7 @@ Warning
 <section id="the-matomo_analytics.html-file" class="level1">
 <h1>The <code>matomo_analytics.html</code> File</h1>
 <p>(Note: this section is very likely to change–we may soon include a template Matomo analytics script).</p>
-<p>This file is intentionally left empty in the tutorial template, but is intended to hold a tracking script which has code specific to each individual website. This code can only be generated within our self-hosted Matomo instance.</p>
-<p>Please contact any of the OSC admin members with a link to the GitHub Pages website you are developing, and request that Matomo tracking code be generated.</p>
+<p>This file is intentionally left empty in the tutorial template, but particular tracking code needs to be pasted to this file. However, that code must first be generated, and is specific to each separate tutorial. Please contact Felix Schönbrodt with the GitHub Pages link to the website you are developing, and request that he generate and send the required Matomo tracking code to you.</p>
 </section>
 <section id="our-matomo-instance" class="level1">
 <h1>Our Matomo Instance</h1>
@@ -459,29 +461,8 @@ Warning
 <section id="matomo-tracking-code-to-generate" class="level1">
 <h1>Matomo Tracking Code to Generate</h1>
 <p>(Matomo provides some default tracking, but this does not necessarily collect all of the information we want to incldue–after determining what we cant to collect, add the Matomo-specific instructions here e.g.&nbsp;what options to choose when generating the code in the UI.)</p>
-<section id="generating-matomo-code" class="level2">
-<h2 class="anchored" data-anchor-id="generating-matomo-code">Generating Matomo Code</h2>
-<p>If you are one of the “superusers” of our Matomo instance, you can generate code with the following steps:</p>
-<ol type="1">
-<li>Log in at www.analytics.osc.lmu.de</li>
-<li>Press “All Websites” and then “Add a new website”</li>
-<li>Our websites are <em>not</em> intranet sites so select “Website”</li>
-<li>Fill out the page with the following information
-<ul>
-<li>Name: the tutorial title</li>
-<li>URL: the GitHub Pages site link</li>
-</ul></li>
-<li>Save the configuration</li>
-<li>Click “View tracking code” for the tutorial. Make sure you select the correct tutorial from the list! <!-- 7. Under the "JavaScript Tracking Code" section, press the "Show advanced options" dropdown. --> <!--     - Select "Disable all tracking cookies" --></li>
-<li>Copy the tracking code</li>
-<li>Send the tracking code back to the requestor, and remind them to place it in the <code>matomo_analytics.html</code> file as is.
-<ul>
-<li>Alternatively, you can just open a pull request in their repo</li>
-</ul></li>
-</ol>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -909,8 +890,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../authoring_tutorials/authoring_and_versions.html" class="pagination-link" aria-label="Authoring and Versions">
-        <span class="nav-page-text">Authoring and Versions</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../authoring_tutorials/releases_and_zenodo.html" class="pagination-link" aria-label="Releases and Zenodo">
+        <span class="nav-page-text">Releases and Zenodo</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
