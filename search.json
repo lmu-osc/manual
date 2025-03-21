@@ -234,7 +234,7 @@
     "href": "authoring_tutorials/tutorial_template_repo.html#footnotes",
     "title": "Tutorial Template Repo",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nDue to how Quarto renders projects, the SCSS file must physically be present in the directory when executing. As such, the file is downloaded from our branding GitHub repo before rendering, and then removed again after rendering becasue we do not want to retain this file in the repo. This is in contrast to the CSS file which can simply be read from somewhere on the web, and is the reason why we are able to specify the css parameter as just a link to our central branding repo.↩︎",
+    "text": "Footnotes\n\n\nDue to how Quarto renders projects, the SCSS file must physically be present in the directory when executing. As such, the file is downloaded from our branding GitHub repo before rendering, and then removed again after rendering because we do not want to retain this file in the repo. This is in contrast to the CSS file which can simply be read from somewhere on the web, and is the reason why we are able to specify the css parameter as just a link to our central branding repo.↩︎",
     "crumbs": [
       "Home",
       "Authoring Tutorials",
