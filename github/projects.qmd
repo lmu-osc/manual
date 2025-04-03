@@ -1,0 +1,124 @@
+---
+title: "GitHub Projects Feature"
+---
+
+
+Certainly! Here’s a comprehensive write-up on **GitHub Projects**, including its features and how to effectively use it for project management:
+
+---
+
+# **GitHub Projects: An Overview**
+
+GitHub Projects is a powerful tool built directly into GitHub to help developers and teams plan, track, and manage their work. It is designed to provide project management features, making it easier to organize issues, pull requests, and tasks, all within the same environment where code is being developed. 
+
+GitHub Projects integrates with issues, pull requests, and the GitHub ecosystem, providing a seamless way to collaborate on software development projects. Whether you’re working on a solo project or collaborating with a team, GitHub Projects helps keep everything in one place, promoting transparency and accountability.
+
+## **Key Features of GitHub Projects**
+
+1. **Boards**:
+   - GitHub Projects uses a **Kanban-style board**, where tasks are organized into columns. These columns are customizable and can be used to represent various stages of your workflow, such as "To Do," "In Progress," and "Done."
+   - Cards (which represent tasks or issues) can be moved between columns as they progress. Cards can represent **issues**, **pull requests**, or even **notes**.
+   
+2. **Customizable Workflow**:
+   - You can create custom columns and workflows that match the needs of your team or project. For example, you might want columns for "Backlog," "In Review," or "Testing" depending on your development process.
+   - You can also add **automations** to simplify tasks. For instance, when an issue is closed, it can automatically be moved to the "Done" column.
+
+3. **Issue and Pull Request Integration**:
+   - Projects are tightly integrated with GitHub **issues** and **pull requests**. When creating a card in the project board, you can link it to an issue or PR to track specific tasks.
+   - This integration ensures that all the work being tracked on the project board is directly related to the work being done in the repository. For example, when a pull request is merged, the associated issue or card can be moved automatically to the “Done” column.
+
+4. **Filters and Views**:
+   - GitHub Projects allows you to **filter** cards based on specific criteria, such as labels, assignees, or milestones. This makes it easy to focus on a particular subset of tasks.
+   - Additionally, you can create **multiple views** within a single project board, so different teams can have tailored perspectives on the same project, showing only the tasks relevant to their needs.
+
+5. **Roadmaps and Milestones**:
+   - You can associate issues with **milestones** and use GitHub Projects to create a roadmap. A milestone represents a specific goal or deliverable in the project (such as a version release or feature completion). 
+   - This helps track progress toward major objectives and gives everyone involved a clear view of the project’s timeline and milestones.
+   
+7. **Collaboration Features**:
+   - As with other GitHub tools, **collaboration is built-in**. Team members can comment on issues and pull requests, and the board serves as a centralized place to coordinate the development process. You can assign team members to tasks, track their progress, and make sure everyone knows what needs to be done.
+
+8. **Notifications and Activity Feed**:
+   - GitHub Projects includes an **activity feed** to show updates to your project. You can see when issues are created, cards are moved, and PRs are merged. 
+   - You’ll also receive notifications about changes, so you stay informed about updates and progress on tasks you're assigned to or watching.
+
+## **How to Use GitHub Projects Effectively**
+
+1. **Setting Up a Project Board**
+
+   - **Create a New Project**: Start by creating a new project within your repository or organization. You can either choose one of the GitHub templates, create your own, or use one of the OSC templates (if you have admin access). Different project templates have different workflow (i.e. column) set-ups.
+
+2. **Adding Issues and Pull Requests**
+
+   - **Add Existing Issues**: Link any open issues or pull requests to the board by creating a card. This keeps track of ongoing work. You can assign issues to team members and label them (e.g., bug, enhancement, documentation) to categorize tasks.
+   - **Create New Issues**: For new tasks or bugs, create new issues directly from the project board. You can create Draft issues, however, they are just as a basic text board that doesn't allow e.g. commenting. You should aim to create proper issues and associate them to the relevant repo.
+    - If the issue or task you have in mind is more of a "meta" task, it is a task that needs to applied to many repos, or otherwise doesn't fit neatly to a single repo, then you should assign it to the `lmu-osc-tasks` repo.
+   - **Track Pull Requests**: Link pull requests to cards on the board, and use the PRs to track code changes that are part of the larger task. When a PR is merged, the associated task can be moved to the “Done” column.
+
+3. **Using Labels and Milestones for Organization**
+   - Use **labels** to categorize and prioritize tasks. For example, you might use labels like “high priority,” “low priority,” or “waiting for review.” This will help you filter and find issues more easily.
+   - **Milestones** can help you keep track of important project deadlines or releases. Link issues and pull requests to milestones, and use the project board to see the progress toward those milestones.
+
+4. **Tracking Progress with Views and Filters**
+   - Set up **multiple views** if different team members or stakeholders need different perspectives on the project. For example, the development team might focus on tasks labeled “bug” or “feature,” while the product team might focus on tasks associated with milestones.
+   - Use filters to narrow down the board based on labels, assignees, or due dates to focus on relevant tasks.
+
+5. **Collaborating with Team Members**
+   - Use **comments and mentions** on issues and pull requests to communicate with team members. This keeps discussions focused on specific tasks and ensures that everyone stays informed.
+   - If someone is assigned to a task, they will receive notifications when updates or changes occur, ensuring that they’re aware of progress and required actions.
+
+6. **Automating Workflows**
+   - GitHub Projects can automate parts of your workflow. For example, you can set rules to automatically move cards when an issue is closed or a pull request is merged.
+   - **GitHub Actions** can be used to further automate tasks within the project board. For example, you can create workflows that update project boards when a PR is merged or an issue is tagged with a particular label.
+
+7. **Periodic Review and Updates**
+   - Regularly review your project board to make sure tasks are still relevant, and ensure that everyone is aligned on priorities.
+   - Use the **activity feed** to monitor recent changes to the project board and ensure that no tasks or discussions are overlooked.
+
+## **Best Practices for Using GitHub Projects**
+
+1. **Keep the Board Updated**: Ensure that the board is regularly updated to reflect the current state of work. Move tasks through the workflow as they progress, and make sure everyone has visibility into which tasks are blocked, in progress, or completed.
+
+2. **Use Templates for Consistency**: If you have recurring tasks (such as new feature requests or bug fixes), create issue and project templates to streamline the process and maintain consistency across different tasks.
+
+3. **Keep Columns Focused**: Avoid creating too many columns that make the board overwhelming. Instead, focus on the critical stages of your development process.
+
+4. **Regular Standups and Reviews**: Use the project board in your team’s regular standup or sprint reviews to quickly assess progress and discuss blockers.
+
+5. **Provide Clear Task Descriptions**: Ensure that every issue or PR linked to the board has clear and concise descriptions. This will help team members quickly understand the task at hand and reduce confusion.
+
+---
+
+
+# OSC Projects
+
+* The info above should be a good general introduction to Projects and the motivation to use them.
+* We as an organization don't deviate in any significant way from the advice above, but have a few specific recommendations on how to use Projects
+
+
+
+## Creating New Projects
+
+Short note at the beginning: issues can be assigned to multiple boards simultaneously. The Member Task boards are set up to be the default boards when someone is assigned a task in any of our repos.
+
+- Good things to know in general about this and workflows we should use:
+    - Open Issues and then create branches/PRs based off of those Issues. Merging this PR into your project will then close the PR, the Issue itself, and move its status to Done on all boards where it is active
+
+### Members Task Boards
+
+- These should your general to-do items, and will be visible to other admin members in the organization.
+- They should be created from the Project template
+- The naming **must be** "USERNAME Tasks" in order for our tagging integration to work
+- The column titled (TO BE NAMED) should always exist, preferably as the first column in your board. The issue-adding integration will look for a column with this name to place issues; otherwise, it will create a new column called "No Status". You can also just use/keep a "No Status" column if you'd prefer
+- The default privacy setting for the template board is Private from the public (i.e. only the members of our GitHub organization, of any level, can see that these project boards exist.) You can choose to hide your board from others, but you should always grant admin privileges to the other OSC admins by adding the Team `osc-admin-members` to the access list.
+
+### Other Project Boards
+
+- Some projects will also be particularly related to one (or a few) repositories
+- These boards will not (or least do not currently) have any extra integration to assign issues to a Project, but can be done manually with GitHub's dropdown option within an issue.
+
+## The Tagging Integration
+
+- Background: the Workflows options in Projects allows for Issues in repos to be automatically added to Project boards. However, on the free organization tier, only 1 repo at a time can be linked to a project board. On the tiers 1 and 2 steps above free, the numbers increase to 5 and 20 repos, respectively. However, this is insufficient as we want **all** repos in our organization to have this feature
+- As such, the next best solution is to have a GitHub Action in all of our repos that listens for Issues to be assigned to someone. When this happens, a Workflow is triggered that 1) finds the "USERNAME Tasks" board for the assignee and 2) adds the task to that user's board.
+- The integration relies on a secret (stored either in each individual repo or in an organization secret--**Still need to evaluate security implications of both**
