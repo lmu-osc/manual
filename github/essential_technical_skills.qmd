@@ -175,4 +175,16 @@ Good documentation makes collaboration smoother and ensures that the project rem
 
 ---
 
-By following these guidelines, you can ensure a smooth and professional collaboration on GitHub, foster a positive and respectful environment, and help create a high-quality, maintainable project.
+Beyond the information above, I would add some of the following key elements:
+
+
+- DON'T COMMIT DIRECTLY TO `main`!
+  - Self-enforce the use of Issues and Pull Requests. 
+- No issue or pull request is urgent unless someone says specifically says it is. In which case, this should also be communicated via Matrix.
+  - As a corrollary: Issues might be opened without complete details. This is fine initially, and some time should be allotted for the author to make updates.
+- Try to review assigned pull requests within a few days, max 2 weeks.
+  - If you've requested a review from someone buy not received a review by that time, then it's okay to just continue working or merge if desired.
+- Can always assign someone as a reviewer of a PR or assign them to an issue. 
+  - They can unassign, recommend someone else, and/or state when they might be able to get to it.
+  - That is, **being assigned an Issue or PR does not mean you are commanded to do it.** If you unassign or can't contribute, try to let the author know, and either assign it back to the author or delegate to someone else if reasonable.
+- **Disable emails from new comments, assigned issues/PRs, etc. Only check these within the GitHub website.** Lifesaver 🌟 
