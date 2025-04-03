@@ -1,0 +1,16 @@
+---
+title: "OSC GitHub Org Customizations"
+---
+
+# Non-Default Settings
+
+## Discussions and the Discussions Repo
+
+## Enforcing 2FA (Eventually)
+
+
+# Workflows
+
+## Publishing Workflow for the Tutorials
+
+## Projects Task Assignment
