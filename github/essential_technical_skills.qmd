@@ -1,0 +1,178 @@
+---
+title: "Essential Tech Skills"
+---
+
+
+* We collaborate extensively on GitHub, both internally amongest OSC members and when working with external contributors. This should be the primary point for updating, editing, and otherwise discussing the content of our GitHub repos.
+* To facilitate this collaboration internally, there are a number of technical skills you should first familiarize yourself with and then some typical "etiquette" to become accustomed to when using GitHub.
+
+
+# Basic Technical Skills
+
+This section broadly lists skills that are useful to learn to varying degrees, but does not prescribe any particular training or learning path. The goal is to give you a sense of the skills that are useful to have, and then you can choose how much time you want to invest in each one. Where relevant, I will try to denote which skills might be more important than others, and have linked to some resources that I have found useful. If you have other resources that you think are useful, please add them to the list! The goal is to make this a living document that we can all contribute to.
+
+
+* Learn Markdown, specifically [Pandoc Markdown](https://pandoc.org/MANUAL.html) which is the specific version of markdown used in RMarkdown documents and Quarto documents. You don't need to learn everything, but you should have the manual above handy for your projects.
+  - Quarto has a [nice summary page](https://quarto.org/docs/authoring/markdown-basics.html) of some of the more important features and how they actually appear once coded.
+* Basic terminal and command line usage. This is OS dependent, but MacOS and Linux are ~90% the same, and Windows still has some command overlap: https://linuxjourney.com/
+* File naming conventions: 
+  - [Harvard's Biomedical Data Management recommendations](https://datamanagement.hms.harvard.edu/plan-design/file-naming-conventions)
+  - Make use of snake**\_**case, **K**ebab**C**ase, or camel**C**ase although generally snake**\_**case is preferred for naming files for readability purposes
+  - [Use the ISO 8601 date format](https://xkcd.com/1179/) i.e. YYYY-MM-DD when dates are of relevance. The format YYYYMMDD is also generally acceptable.
+* [Semantic versioning](https://semver.org/) particularly because we use it for GitHub tutorials
+* Learn git. This is a never-ending topic, but here are some of the main points:
+  - Start with our [Intro to Version Control](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) and [Collaborative Coding with Github](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/) tutorials for the basics. These are flavored specifically for use with RStudio, but I think the [W3 Schools Git tutorial](https://www.w3schools.com/git/) is also good for learning to use basic git with the command line.
+  - Learn about git branching as a means of separating your in-development features or updates, and for collaborating with others. We're working on a tutorial for this, but this [Learn Git Branching](https://learngitbranching.js.org/) site is also recommended.
+  - [How to Write a Git Commit Message](https://cbea.ms/git-commit/). My main take away from this article is to use the imperative mood and keep first-line messages to less than 50 characters as much as possible. Also, note that you'll get better with determining what should be a commit as you practice using git over time. 
+* Understand [how SSH works](https://www.youtube.com/watch?v=5JvLV2-ngCI) and maybe some detail on generating SSH keys with [ssh-keygen](https://www.ssh.com/academy/ssh/keygen). We teach people to use it for our git and GitHub tutorials, and we have enough systems in place where SSH becomes of concern that you should probably have a passing knowledge of what it is, how it works, and how to store/view/delete SSH keys on your computer. You can always ask ChatGPT for help using `ssh-keygen`, but it helps a lot to first learn what options are available!
+
+
+# Git and GitHub Skills
+
+Misc. resources:
+
+1. How to write a git commit (https://cbea.ms/git-commit/)
+2. How to write a git issue (https://medium.com/nyc-planning-digital/writing-a-proper-github-issue-97427d62a20f , https://dev.to/opensauced/how-to-write-a-good-issue-tips-for-effective-communication-in-open-source-5443)
+3. git branching (https://www.youtube.com/watch?v=e2IbNHi4uCI) and (https://www.youtube.com/watch?v=Q1kHG842HoI )
+4. git branching strategies (https://www.youtube.com/watch?v=U_IFGpJDbeU)
+5. writing pull requests (https://github.blog/developer-skills/github/how-to-write-the-perfect-pull-request/)
+6. Quickstart guide for GitHub projects (https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects)
+
+General flow of knowledge one needs:
+
+1. General git knowledge, and connecting to GitHub
+2. Writing **good** git commits
+3. Creating Issues on GitHub
+4. Creating branches and pushing them to GitHub
+5. Opening pull requests
+6. Connecting PRs to issues
+7. Connecting issues to projects
+8. Managing your project boards
+  
+  
+# Collaboration Etiquette
+
+I asked ChatGPT to summarize typical GitHub collab etiquette for me, and here is the result (after light editing by me)
+
+
+---
+
+### 1. **Clear and Concise Commit Messages**
+Commit messages are one of the most important aspects of collaboration because they communicate the history and reasoning behind changes in a project. Here's how to keep them effective:
+
+- **Be Descriptive**: A good commit message explains *what* and *why* something was changed, not just *how* it was changed. For example, instead of writing “fixed bug,” write “Fixes crash on login when no network connection is available.”
+  
+- **Use Conventional Formatting**: A widely used convention is to use a short (50-character) summary followed by a more detailed description if needed. For example:
+  
+  ```
+  Add feature to export user data as CSV
+  
+  This change introduces an export button that allows users to download their data in CSV format. The feature includes basic validation of the file content.
+  ```
+
+- **Keep It Concise**: The summary should ideally be 50 characters or less. This is because it helps the message remain readable in Git logs and is often used in tools that visualize commit history.
+
+- **Use Imperative Mood**: For example, use "Fix bug" or "Add feature," rather than "Fixed bug" or "Adding feature." This makes the message align with the "what" the commit is doing.
+
+---
+
+### 2. **Respect Branching Workflow**
+A well-defined branching workflow helps to ensure that work is organized and the codebase remains clean. Here are some best practices:
+
+- **Follow Project’s Branching Strategy**: Projects may have different branching strategies, such as Git Flow or trunk-based development. Understand and follow these rules:
+  - **Main (or Master)**: This is the stable version of the project.
+  - **Develop**: A branch for integrating features and testing new code before it’s merged into the main branch.
+  - **Feature Branches**: Create a new branch for each new feature or bug fix (e.g., `feature/login-page` or `bugfix/fix-crash`).
+  - **Release Branches**: For preparing code for production or a new version release.
+
+- **Keep Branches Small and Focused**: Each branch should handle one task (such as a feature or bugfix) to make it easier to review and merge. Avoid mixing different changes in one branch.
+
+---
+
+### 3. **Pull Requests (PRs) Best Practices**
+
+Pull Requests (PRs) are a critical way of proposing changes and getting feedback from others. Following these practices ensures that your PR is clear, concise, and easy to review.
+
+- **Provide Context**: When you open a PR, include a description of the changes. What problem does it solve? Are there any known issues? Are there things reviewers need to pay special attention to?
+
+  Example:
+  ```
+  Fixes the crash when submitting a form with empty input fields.
+  - Checks for empty fields before submission.
+  - Adds a user-friendly error message.
+  ```
+
+- **Keep PRs Focused**: A PR should focus on one specific task or bug fix. It should not try to accomplish too many different things at once. If a PR is large or touches multiple areas of the codebase, consider splitting it into multiple smaller PRs.
+
+- **Use Meaningful Titles**: PR titles should clearly indicate what is being changed, such as “Add user authentication” or “Fix issue with loading images in gallery view.”
+
+- **Link Related Issues**: If the PR is addressing an issue, mention it using GitHub's syntax to close the issue automatically (e.g., "Fixes #45" or "Closes #23"). This ensures that the issue is tracked and easily traceable. **You can also explicitly link PRs to Issues in the GitHub repo. You can also create branches from GitHub Issues that will automatically link to the eventual PR.**
+
+- **Be Responsive to Feedback**: After submitting a PR, be prepared for feedback. Address comments promptly and be polite. If you're unsure about something, don't hesitate to ask for clarification. If you disagree with a comment, explain your reasoning clearly.
+
+---
+
+### 4. **Code Review Etiquette**
+Code reviews are an essential part of maintaining quality in a collaborative project. Here’s how to conduct and participate in them properly:
+
+- **Be Constructive, Not Critical**: If you're reviewing someone’s code, focus on the code, not the person. Avoid personal comments, and instead provide suggestions that can help improve the code. For example:
+  - Instead of saying "This code is bad," say "This could be more efficient by using a hash map instead of a list."
+  
+- **Be Respectful and Kind**: Every developer is at a different skill level, and everyone makes mistakes. Use positive language to encourage others to improve. A simple, "Great job on the implementation! I suggest we update this section to improve readability," can go a long way.
+
+- **Ask for Clarification, Don’t Assume**: If you're unsure why someone implemented something a certain way, ask them to explain. It could be a deliberate decision based on context or constraints you're unaware of.
+
+- **Make It a Two-Way Conversation**: A good code review is a dialogue. Be willing to explain your decisions when someone requests a change, but also be open to suggestions for improving your own code.
+
+- **Check for Readability**: Code readability is just as important as functionality. Make sure the code follows the project’s style guide, has meaningful variable names, and is well-commented where necessary.
+
+---
+
+### 5. **Issue Tracking and Communication**
+GitHub’s issue tracker is essential for managing bugs, features, and tasks. Here's how to use it effectively:
+
+- **Use Labels and Milestones**: Labels help categorize issues (e.g., `bug`, `enhancement`, `help wanted`). Milestones can track progress towards project versions. Use these tools to keep track of priorities and deadlines.
+
+- **Provide Detailed Issue Descriptions**: When opening an issue, be as specific as possible. Include the steps to reproduce, the expected behavior, and the actual behavior. If applicable, add logs, screenshots, or videos to clarify the problem.
+
+  Example:
+  ```
+  **Bug:** Button does not work on mobile
+  **Steps to reproduce:**
+  1. Open the app on mobile.
+  2. Tap on the 'Submit' button.
+  **Expected behavior:** The button submits the form.
+  **Actual behavior:** Nothing happens.
+  ```
+
+- **Regular Communication**: If you are working on an issue, comment regularly on progress, especially if the issue is complex or you’re waiting for input. If you're waiting for feedback or testing, keep others informed.
+
+- **Close Issues Properly**: When an issue is resolved, make sure to close it. If a PR fixes an issue, reference it in the PR description. 
+
+---
+
+### 6. **Respect Licensing and Permissions**
+Open-source projects often have a license that dictates how the code can be used, modified, and distributed. It's crucial to:
+
+- **Read and Follow the License**: Make sure you understand the project’s license before contributing or using the code. Popular licenses like MIT, GPL, or Apache each have different terms regarding modification and redistribution.
+
+- **Ask for Permission When Needed**: If you're unsure whether a piece of code is open to contribution or use, it's always best to ask. Avoid using third-party code unless you’ve reviewed the licensing and have permission.
+
+- **Acknowledge Contributions**: If you're using someone else’s code or resources (like libraries, icons, or documentation), be sure to give credit according to the project’s license.
+
+---
+
+### 7. **Documentation and Readability**
+Good documentation makes collaboration smoother and ensures that the project remains maintainable over time.
+
+- **Write Clear README Files**: Every project should have a README that explains the purpose of the project, how to set it up, and how to contribute. Keep it concise and beginner-friendly.
+
+- **Document Your Code**: Use comments to explain complex or non-obvious parts of your code. Follow the project's documentation style guidelines to maintain consistency.
+
+- **Contribute to Wiki or Docs**: If you're adding a new feature or making a significant change, update or create relevant documentation. This includes setup instructions, how-to guides, or API documentation.
+
+- **Style Guide**: If the project has a coding style guide, make sure to follow it. Consistency in style helps maintain code readability and reduces friction when reviewing.
+
+---
+
+By following these guidelines, you can ensure a smooth and professional collaboration on GitHub, foster a positive and respectful environment, and help create a high-quality, maintainable project.
