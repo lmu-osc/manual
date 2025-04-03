@@ -410,14 +410,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../authoring_tutorials/releases_and_zenodo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Releases and Zenodo</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../authoring_tutorials/updates_and_versioning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Updates and Versioning</span></a>
+  <a href="../authoring_tutorials/authoring_and_versions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authoring and Versions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -449,11 +443,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#gitignore" id="toc-gitignore" class="nav-link" data-scroll-target="#gitignore">.gitignore</a></li>
   <li><a href="#pipelines" id="toc-pipelines" class="nav-link" data-scroll-target="#pipelines">.github/workflows</a></li>
   <li><a href="#citation.cff" id="toc-citation.cff" class="nav-link" data-scroll-target="#citation.cff">CITATION.cff</a></li>
-  <li><a href="#licenses" id="toc-licenses" class="nav-link" data-scroll-target="#licenses">LICENSE.md and LICENSE-CODE.md</a></li>
+  <li><a href="#licenses" id="toc-licenses" class="nav-link" data-scroll-target="#licenses">LICENSES</a></li>
   <li><a href="#readme" id="toc-readme" class="nav-link" data-scroll-target="#readme">README.md</a></li>
-  <li><a href="#topic_directories" id="toc-topic_directories" class="nav-link" data-scroll-target="#topic_directories">TOPIC1 and TOPIC2 Directories</a></li>
+  <li><a href="#topic_directories" id="toc-topic_directories" class="nav-link" data-scroll-target="#topic_directories">TOPIC* Directories</a></li>
   <li><a href="#quarto_yml" id="toc-quarto_yml" class="nav-link" data-scroll-target="#quarto_yml">_quarto.yml</a></li>
   </ul></li>
+  <li><a href="#qmd-files" id="toc-qmd-files" class="nav-link" data-scroll-target="#qmd-files">.qmd Files</a></li>
+  <li><a href="#assets-folder" id="toc-assets-folder" class="nav-link" data-scroll-target="#assets-folder">Assets Folder</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring_tutorials/tutorial_template_repo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -529,7 +525,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="gitignore">.gitignore</h3>
 <p>If you’re not familiar with <code>.gitignore</code> files, I recommend taking a look at <a href="https://www.w3schools.com/git/git_ignore.asp?remote=github">this overview</a>.</p>
 <p>The included ignore file for the tutorials is a modified version of GitHub’s template for R projects with some additions to ignore Quarto specific files, namely the <code>_site</code> folder. Some people push this folder to their GitHub repo, and use it to serve their website from. However, we have a CI/CD workflow that will automatically render the website and serve it from the <code>gh-pages</code> branch.</p>
-<p>For Mac users, any <code>.DS_Store</code> files are also automatically ignored–those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the command <code>usethis::git_vaccinate()</code> if you want to globally ignore a handful of annoying)</p>
+<p>For Mac users, any <code>.DS_Store</code> files are also automatically ignored–those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the R function <code>usethis::git_vaccinate()</code> if you want to globally ignore a handful of annoying files, namely <code>.Rproj.user</code>, <code>.Rhistory</code>, <code>.Rdata</code>, <code>.httr-oauth</code>, <code>.DS_Store</code>, and <code>.quarto</code>.)</p>
 <div class="callout callout-style-simple callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -676,7 +672,7 @@ CITATION.cff File Contents
 </section>
 </section>
 <section id="licenses" class="level3">
-<h3 class="anchored" data-anchor-id="licenses">LICENSE.md and LICENSE-CODE.md</h3>
+<h3 class="anchored" data-anchor-id="licenses">LICENSES</h3>
 <p>Our standard licenses are CC-BY-SA 4.0 for the written text and CC-0 for code contained within the tutorials. These license files are contained in <code>LICENSE.md</code> and <code>LICENSE-CODE.md</code> respectively.</p>
 </section>
 <section id="readme" class="level3">
@@ -685,7 +681,7 @@ CITATION.cff File Contents
 <p>Otherwise, we have no strong recommendations on what to include in this file other the Zenodo DOI badge at the top of the file. (Again, this is discussed in a later chapter.)</p>
 </section>
 <section id="topic_directories" class="level3">
-<h3 class="anchored" data-anchor-id="topic_directories">TOPIC1 and TOPIC2 Directories</h3>
+<h3 class="anchored" data-anchor-id="topic_directories">TOPIC* Directories</h3>
 <p>These two directories are just example/template spaces for where you should store your Quarto (<code>.qmd</code>) files. In general, we anticipate that the tutorials will be divided into 2-5 broad sections, and each section will be represented by one of these folders. Each section will contain chapters which are independent Quarto files stored within their respective folders.</p>
 <p>This image illustrates how “TOPIC1” and “TOPIC2” are the different “sections” of the tutorial while the Quarto files are the different chapters.</p>
 <div class="columns">
@@ -812,19 +808,34 @@ _quarto.yml File Contents
 <p>This is one of the more complex files in the repository, but there are only a few sections you’ll need to interact with directly. I’ll break down the file based on the 4 major categories in our file: <code>project</code>, <code>website</code>, <code>format</code>, and <code>editor</code>.</p>
 <section id="project" class="level4">
 <h4 class="anchored" data-anchor-id="project"><code>project</code></h4>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Project Options
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Begin Project</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pre-render</span><span class="kw">:</span><span class="at"> wget -nc https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">post-render</span><span class="kw">:</span><span class="at"> rm lmu-osc-custom.scss</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># End Project</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 <p>At a high level, this defines the entire project as being a website and I have used the pre- and post- render options to collect some standardized SCSS styling from our <code>lmu-osc/branding</code> repository. The details of this are in a footnote below<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, but, in short, this is done to ensure that the same branding is added to all of our repos <strong>and</strong> so that we can just make branding changes to <em>one</em> repo in the future (rather than <em>all</em> of our tutorials.)</p>
 </section>
 <section id="website" class="level4">
 <h4 class="anchored" data-anchor-id="website"><code>website</code></h4>
 <p>This is the section you will interact with the most (and almost exclusively) when developing your project. This will be subdivided into 3 sections: a general section, the <code>navbar</code>, and the <code>sidebar</code>.</p>
 <div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -833,7 +844,7 @@ All <code>website</code> Options
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Begin Website</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
@@ -900,6 +911,18 @@ All <code>website</code> Options
 <li><code>repo-url</code> should be the URL directly to the GitHub repo</li>
 <li><code>page-footer</code> please update the year in the copyright if needed</li>
 </ul>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+General Website Options
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"TUTORIAL TITLE HERE"</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">page-footer</span><span class="kw">:</span><span class="at"> </span></span>
@@ -914,12 +937,26 @@ All <code>website</code> Options
 <span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> assets/LMU_OSC_favicon.jpg</span></span>
 <span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="fu">  margin-header</span><span class="kw">: </span><span class="ch">|</span></span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    ![](/assets/LMU_OSC_logo.svg){width="175"}</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="at">  </span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="at">  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="at">  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="navbar" class="level5">
 <h5 class="anchored" data-anchor-id="navbar"><code>navbar</code></h5>
 <p>This section is for specifying the navbar or navigation bar at the top of the window. The only updates that should be made here are to the URLs which should be updated to include the correct GitHub repo address.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Navigation Bar (navbar) Options
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb9"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span><span class="at"> </span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span></span>
@@ -935,13 +972,27 @@ All <code>website</code> Options
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">url</span><span class="kw">:</span><span class="at">  https://github.com/lmu-osc/REPO-NAME-HERE/issues</span></span>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> house-heart</span></span>
 <span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">url</span><span class="kw">:</span><span class="at"> https://www.osc.uni-muenchen.de/index.html</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="at">   </span></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="at">        </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="at">   </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="sidebar" class="level5">
 <h5 class="anchored" data-anchor-id="sidebar"><code>sidebar</code></h5>
 <p>This is the section of the <code>_quarto.yml</code> file that allows you to specify the layout of your sections and chapters, as discussed in the <a href="#topic_dirs"><code>TOPIC1</code> and <code>TOPIC2</code> section</a>. You can add as many <code>section</code>s as you need–just make sure to provide them with an appropriate title. Likewise, you can include chapters under a section by listing the chapters under <code>contents</code>, and then providing at least an <code>href</code> which is a path to the chapter Quarto file.</p>
 <p>You can also add a <code>text</code> tag directly after the <code>href</code> which will provide a new name for the chapter in the sidebar. However, you do not need to specify a <code>text</code> tag as Quarto will otherwise search for and use the value of <code>title</code> in your <code>.qmd</code> file.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sidebar Options
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb10"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">style</span><span class="kw">:</span><span class="at"> </span><span class="st">"docked"</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span></span>
@@ -961,10 +1012,25 @@ All <code>website</code> Options
 <span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"TOPIC2 Page2 Title"</span></span>
 <span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> TOPIC2/page3.qmd</span></span>
 <span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"TOPIC2 Page3 Title"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="format" class="level5">
 <h5 class="anchored" data-anchor-id="format"><code>format</code></h5>
 <p>This section only provides additional website formatting and styling decisions, and does not need any changes. (However, if you think there are broad styling changes or additions we should make for all of our tutorials, feel free to open an issue or a PR!)</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Format Options
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb11"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Begin Format</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
@@ -981,20 +1047,48 @@ All <code>website</code> Options
 <span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">include-in-header</span><span class="kw">:</span></span>
 <span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">file</span><span class="kw">:</span><span class="at"> matomo-analytics.html</span></span>
 <span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a><span class="co"># End Format</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="editor" class="level5">
 <h5 class="anchored" data-anchor-id="editor"><code>editor</code></h5>
 <p>When editing the project in RStudio, this determines whether Quarto documents will open up in <code>source</code> or <code>visual</code> mode by default. We have opted for <code>source</code> as the default.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Source or Visual Editor
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
 <div class="sourceCode" id="cb12"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Begin Editor</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">editor</span><span class="kw">:</span><span class="at"> source</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># End Editor</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="qmd-files" class="level2">
+<h2 class="anchored" data-anchor-id="qmd-files">.qmd Files</h2>
+<p>The <code>index.qmd</code> and <code>about.qmd</code> files are the only two Quarto (i.e.&nbsp;<code>.qmd</code>) files that also need to be included in the tutorial–you will presumably author the rest!</p>
+<p>The <code>index.qmd</code> file is essentially the home page of the website, much like <code>https://lmu-osc.github.io/manual/</code> is the home page of this website. You have flexibility to populate this how you see fit.</p>
+<p>The <code>about.qmd</code> is much more structured, and will be discussed in later chapters. This page should be updated to include author information, but the other content should not be changed.</p>
+</section>
+<section id="assets-folder" class="level2">
+<h2 class="anchored" data-anchor-id="assets-folder">Assets Folder</h2>
+<p>This folder is a quasi-standard location for storing e.g.&nbsp;images, videos, and other media files. The only files we store in here by default are some LMU logos. Please try to make use of this folder for storing your media files.</p>
 
 
 <!-- -->
 
-</section>
-</section>
-</section>
 </section>
 </section>
 
@@ -1534,7 +1628,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-51"><a href="#cb13-51" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-52"><a href="#cb13-52" aria-hidden="true" tabindex="-1"></a>The included ignore file for the tutorials is a modified version of GitHub's template for R projects with some additions to ignore Quarto specific files, namely the <span class="in">`_site`</span> folder. Some people push this folder to their GitHub repo, and use it to serve their website from. However, we have a CI/CD workflow that will automatically render the website and serve it from the <span class="in">`gh-pages`</span> branch.</span>
 <span id="cb13-53"><a href="#cb13-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-54"><a href="#cb13-54" aria-hidden="true" tabindex="-1"></a>For Mac users, any <span class="in">`.DS_Store`</span> files are also automatically ignored--those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the command <span class="in">`usethis::git_vaccinate()`</span> if you want to globally ignore a handful of annoying)</span>
+<span id="cb13-54"><a href="#cb13-54" aria-hidden="true" tabindex="-1"></a>For Mac users, any <span class="in">`.DS_Store`</span> files are also automatically ignored--those should never be tracked in a git project anyway as they are local indexing files for searching the system. (Tip: run the R function <span class="in">`usethis::git_vaccinate()`</span> if you want to globally ignore a handful of annoying files, namely <span class="in">`.Rproj.user`</span>, <span class="in">`.Rhistory`</span>, <span class="in">`.Rdata`</span>, <span class="in">`.httr-oauth`</span>, <span class="in">`.DS_Store`</span>, and <span class="in">`.quarto`</span>.)</span>
 <span id="cb13-55"><a href="#cb13-55" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-56"><a href="#cb13-56" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-57"><a href="#cb13-57" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" collapse="true"}</span>
@@ -1596,7 +1690,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-113"><a href="#cb13-113" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`url`</span> should be the address for the actual websige i.e. the GitHub Pages</span>
 <span id="cb13-114"><a href="#cb13-114" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-115"><a href="#cb13-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-116"><a href="#cb13-116" aria-hidden="true" tabindex="-1"></a><span class="fu">### LICENSE.md and LICENSE-CODE.md {#licenses}</span></span>
+<span id="cb13-116"><a href="#cb13-116" aria-hidden="true" tabindex="-1"></a><span class="fu">### LICENSES {#licenses}</span></span>
 <span id="cb13-117"><a href="#cb13-117" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-118"><a href="#cb13-118" aria-hidden="true" tabindex="-1"></a>Our standard licenses are CC-BY-SA 4.0 for the written text and CC-0 for code contained within the tutorials. These license files are contained in <span class="in">`LICENSE.md`</span> and <span class="in">`LICENSE-CODE.md`</span> respectively.</span>
 <span id="cb13-119"><a href="#cb13-119" aria-hidden="true" tabindex="-1"></a></span>
@@ -1606,7 +1700,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-123"><a href="#cb13-123" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-124"><a href="#cb13-124" aria-hidden="true" tabindex="-1"></a>Otherwise, we have no strong recommendations on what to include in this file other the Zenodo DOI badge at the top of the file. (Again, this is discussed in a later chapter.)</span>
 <span id="cb13-125"><a href="#cb13-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-126"><a href="#cb13-126" aria-hidden="true" tabindex="-1"></a><span class="fu">### TOPIC1 and TOPIC2 Directories {#topic_directories}</span></span>
+<span id="cb13-126"><a href="#cb13-126" aria-hidden="true" tabindex="-1"></a><span class="fu">### TOPIC* Directories {#topic_directories}</span></span>
 <span id="cb13-127"><a href="#cb13-127" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-128"><a href="#cb13-128" aria-hidden="true" tabindex="-1"></a>These two directories are just example/template spaces for where you should store your Quarto (<span class="in">`.qmd`</span>) files. In general, we anticipate that the tutorials will be divided into 2-5 broad sections, and each section will be represented by one of these folders. Each section will contain chapters which are independent Quarto files stored within their respective folders.</span>
 <span id="cb13-129"><a href="#cb13-129" aria-hidden="true" tabindex="-1"></a></span>
@@ -1660,118 +1754,165 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb13-177"><a href="#cb13-177" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-178"><a href="#cb13-178" aria-hidden="true" tabindex="-1"></a><span class="fu">#### `project`</span></span>
 <span id="cb13-179"><a href="#cb13-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-180"><a href="#cb13-180" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
-<span id="cb13-181"><a href="#cb13-181" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
-<span id="cb13-182"><a href="#cb13-182" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
-<span id="cb13-183"><a href="#cb13-183" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "# Begin Project"))</span></span>
-<span id="cb13-184"><a href="#cb13-184" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Project"))</span></span>
-<span id="cb13-185"><a href="#cb13-185" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
-<span id="cb13-186"><a href="#cb13-186" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-187"><a href="#cb13-187" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-188"><a href="#cb13-188" aria-hidden="true" tabindex="-1"></a>At a high level, this defines the entire project as being a website and I have used the pre- and post- render options to collect some standardized SCSS styling from our <span class="in">`lmu-osc/branding`</span> repository. The details of this are in a footnote below<span class="ot">[^scss_branding_explanation]</span>, but, in short, this is done to ensure that the same branding is added to all of our repos **and** so that we can just make branding changes to *one* repo in the future (rather than *all* of our tutorials.)</span>
-<span id="cb13-189"><a href="#cb13-189" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-190"><a href="#cb13-190" aria-hidden="true" tabindex="-1"></a><span class="ot">[^scss_branding_explanation]: </span>Due to how Quarto renders projects, the SCSS file must physically be present in the directory when executing. As such, the file is downloaded from our branding GitHub repo before rendering, and then removed again after rendering becasue we do not want to retain this file in the repo. This is in contrast to the CSS file which can simply be read from somewhere on the web, and is the reason why we are able to specify the <span class="in">`css`</span> parameter as just a link to our central branding repo.</span>
+<span id="cb13-180"><a href="#cb13-180" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" collapse="true"}</span>
+<span id="cb13-181"><a href="#cb13-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-182"><a href="#cb13-182" aria-hidden="true" tabindex="-1"></a><span class="fu">## Project Options</span></span>
+<span id="cb13-183"><a href="#cb13-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-184"><a href="#cb13-184" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
+<span id="cb13-185"><a href="#cb13-185" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
+<span id="cb13-186"><a href="#cb13-186" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
+<span id="cb13-187"><a href="#cb13-187" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "# Begin Project"))</span></span>
+<span id="cb13-188"><a href="#cb13-188" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Project"))</span></span>
+<span id="cb13-189"><a href="#cb13-189" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
+<span id="cb13-190"><a href="#cb13-190" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb13-191"><a href="#cb13-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-192"><a href="#cb13-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-192"><a href="#cb13-192" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb13-193"><a href="#cb13-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-194"><a href="#cb13-194" aria-hidden="true" tabindex="-1"></a><span class="fu">#### `website`</span></span>
+<span id="cb13-194"><a href="#cb13-194" aria-hidden="true" tabindex="-1"></a>At a high level, this defines the entire project as being a website and I have used the pre- and post- render options to collect some standardized SCSS styling from our <span class="in">`lmu-osc/branding`</span> repository. The details of this are in a footnote below<span class="ot">[^scss_branding_explanation]</span>, but, in short, this is done to ensure that the same branding is added to all of our repos **and** so that we can just make branding changes to *one* repo in the future (rather than *all* of our tutorials.)</span>
 <span id="cb13-195"><a href="#cb13-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-196"><a href="#cb13-196" aria-hidden="true" tabindex="-1"></a>This is the section you will interact with the most (and almost exclusively) when developing your project. This will be subdivided into 3 sections: a general section, the <span class="in">`navbar`</span>, and the <span class="in">`sidebar`</span>.</span>
+<span id="cb13-196"><a href="#cb13-196" aria-hidden="true" tabindex="-1"></a><span class="ot">[^scss_branding_explanation]: </span>Due to how Quarto renders projects, the SCSS file must physically be present in the directory when executing. As such, the file is downloaded from our branding GitHub repo before rendering, and then removed again after rendering becasue we do not want to retain this file in the repo. This is in contrast to the CSS file which can simply be read from somewhere on the web, and is the reason why we are able to specify the <span class="in">`css`</span> parameter as just a link to our central branding repo.</span>
 <span id="cb13-197"><a href="#cb13-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-198"><a href="#cb13-198" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" collapse="true"}</span>
+<span id="cb13-198"><a href="#cb13-198" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-199"><a href="#cb13-199" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-200"><a href="#cb13-200" aria-hidden="true" tabindex="-1"></a><span class="fu">## All `website` Options</span></span>
+<span id="cb13-200"><a href="#cb13-200" aria-hidden="true" tabindex="-1"></a><span class="fu">#### `website`</span></span>
 <span id="cb13-201"><a href="#cb13-201" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-202"><a href="#cb13-202" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
-<span id="cb13-203"><a href="#cb13-203" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
-<span id="cb13-204"><a href="#cb13-204" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
-<span id="cb13-205"><a href="#cb13-205" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "# Begin Website"))</span></span>
-<span id="cb13-206"><a href="#cb13-206" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Website"))</span></span>
-<span id="cb13-207"><a href="#cb13-207" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
-<span id="cb13-208"><a href="#cb13-208" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-209"><a href="#cb13-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-210"><a href="#cb13-210" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb13-211"><a href="#cb13-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-212"><a href="#cb13-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-213"><a href="#cb13-213" aria-hidden="true" tabindex="-1"></a><span class="fu">##### General Options</span></span>
-<span id="cb13-214"><a href="#cb13-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-202"><a href="#cb13-202" aria-hidden="true" tabindex="-1"></a>This is the section you will interact with the most (and almost exclusively) when developing your project. This will be subdivided into 3 sections: a general section, the <span class="in">`navbar`</span>, and the <span class="in">`sidebar`</span>.</span>
+<span id="cb13-203"><a href="#cb13-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-204"><a href="#cb13-204" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" collapse="true"}</span>
+<span id="cb13-205"><a href="#cb13-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-206"><a href="#cb13-206" aria-hidden="true" tabindex="-1"></a><span class="fu">## All `website` Options</span></span>
+<span id="cb13-207"><a href="#cb13-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-208"><a href="#cb13-208" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
+<span id="cb13-209"><a href="#cb13-209" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
+<span id="cb13-210"><a href="#cb13-210" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
+<span id="cb13-211"><a href="#cb13-211" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "# Begin Website"))</span></span>
+<span id="cb13-212"><a href="#cb13-212" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Website"))</span></span>
+<span id="cb13-213"><a href="#cb13-213" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
+<span id="cb13-214"><a href="#cb13-214" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb13-215"><a href="#cb13-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-216"><a href="#cb13-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-217"><a href="#cb13-217" aria-hidden="true" tabindex="-1"></a>Fields you should update or pay attention to:</span>
+<span id="cb13-216"><a href="#cb13-216" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb13-217"><a href="#cb13-217" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-218"><a href="#cb13-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-219"><a href="#cb13-219" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`title`</span> should be the actual project title</span>
-<span id="cb13-220"><a href="#cb13-220" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`repo-url`</span> should be the URL directly to the GitHub repo</span>
-<span id="cb13-221"><a href="#cb13-221" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`page-footer`</span> please update the year in the copyright if needed</span>
+<span id="cb13-219"><a href="#cb13-219" aria-hidden="true" tabindex="-1"></a><span class="fu">##### General Options</span></span>
+<span id="cb13-220"><a href="#cb13-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-221"><a href="#cb13-221" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-222"><a href="#cb13-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-223"><a href="#cb13-223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-224"><a href="#cb13-224" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
-<span id="cb13-225"><a href="#cb13-225" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
-<span id="cb13-226"><a href="#cb13-226" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
-<span id="cb13-227"><a href="#cb13-227" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "website:"))</span></span>
-<span id="cb13-228"><a href="#cb13-228" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "navbar:")) - 1</span></span>
-<span id="cb13-229"><a href="#cb13-229" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
-<span id="cb13-230"><a href="#cb13-230" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-231"><a href="#cb13-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-223"><a href="#cb13-223" aria-hidden="true" tabindex="-1"></a>Fields you should update or pay attention to:</span>
+<span id="cb13-224"><a href="#cb13-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-225"><a href="#cb13-225" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`title`</span> should be the actual project title</span>
+<span id="cb13-226"><a href="#cb13-226" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`repo-url`</span> should be the URL directly to the GitHub repo</span>
+<span id="cb13-227"><a href="#cb13-227" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span><span class="in">`page-footer`</span> please update the year in the copyright if needed</span>
+<span id="cb13-228"><a href="#cb13-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-229"><a href="#cb13-229" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" collapse="true"}</span>
+<span id="cb13-230"><a href="#cb13-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-231"><a href="#cb13-231" aria-hidden="true" tabindex="-1"></a><span class="fu">## General Website Options</span></span>
 <span id="cb13-232"><a href="#cb13-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-233"><a href="#cb13-233" aria-hidden="true" tabindex="-1"></a><span class="fu">##### `navbar`</span></span>
-<span id="cb13-234"><a href="#cb13-234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-235"><a href="#cb13-235" aria-hidden="true" tabindex="-1"></a>This section is for specifying the navbar or navigation bar at the top of the window. The only updates that should be made here are to the URLs which should be updated to include the correct GitHub repo address.</span>
-<span id="cb13-236"><a href="#cb13-236" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-237"><a href="#cb13-237" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
-<span id="cb13-238"><a href="#cb13-238" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
-<span id="cb13-239"><a href="#cb13-239" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
-<span id="cb13-240"><a href="#cb13-240" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "navbar:"))</span></span>
-<span id="cb13-241"><a href="#cb13-241" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "sidebar:")) - 1</span></span>
-<span id="cb13-242"><a href="#cb13-242" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
-<span id="cb13-243"><a href="#cb13-243" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-244"><a href="#cb13-244" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-233"><a href="#cb13-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-234"><a href="#cb13-234" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
+<span id="cb13-235"><a href="#cb13-235" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
+<span id="cb13-236"><a href="#cb13-236" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
+<span id="cb13-237"><a href="#cb13-237" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "website:"))</span></span>
+<span id="cb13-238"><a href="#cb13-238" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "navbar:")) - 2</span></span>
+<span id="cb13-239"><a href="#cb13-239" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
+<span id="cb13-240"><a href="#cb13-240" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-241"><a href="#cb13-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-242"><a href="#cb13-242" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb13-243"><a href="#cb13-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-244"><a href="#cb13-244" aria-hidden="true" tabindex="-1"></a><span class="fu">##### `navbar`</span></span>
 <span id="cb13-245"><a href="#cb13-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-246"><a href="#cb13-246" aria-hidden="true" tabindex="-1"></a><span class="fu">##### `sidebar`</span></span>
+<span id="cb13-246"><a href="#cb13-246" aria-hidden="true" tabindex="-1"></a>This section is for specifying the navbar or navigation bar at the top of the window. The only updates that should be made here are to the URLs which should be updated to include the correct GitHub repo address.</span>
 <span id="cb13-247"><a href="#cb13-247" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-248"><a href="#cb13-248" aria-hidden="true" tabindex="-1"></a>This is the section of the <span class="in">`_quarto.yml`</span> file that allows you to specify the layout of your sections and chapters, as discussed in the <span class="co">[</span><span class="ot">`TOPIC1` and `TOPIC2` section</span><span class="co">](#topic_dirs)</span>. You can add as many <span class="in">`section`</span>s as you need--just make sure to provide them with an appropriate title. Likewise, you can include chapters under a section by listing the chapters under <span class="in">`contents`</span>, and then providing at least an <span class="in">`href`</span> which is a path to the chapter Quarto file. </span>
+<span id="cb13-248"><a href="#cb13-248" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" collapse="true"}</span>
 <span id="cb13-249"><a href="#cb13-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-250"><a href="#cb13-250" aria-hidden="true" tabindex="-1"></a>You can also add a <span class="in">`text`</span> tag directly after the <span class="in">`href`</span> which will provide a new name for the chapter in the sidebar. However, you do not need to specify a <span class="in">`text`</span> tag as Quarto will otherwise search for and use the value of <span class="in">`title`</span> in your <span class="in">`.qmd`</span> file.</span>
+<span id="cb13-250"><a href="#cb13-250" aria-hidden="true" tabindex="-1"></a><span class="fu">## Navigation Bar (navbar) Options</span></span>
 <span id="cb13-251"><a href="#cb13-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-252"><a href="#cb13-252" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
-<span id="cb13-253"><a href="#cb13-253" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
-<span id="cb13-254"><a href="#cb13-254" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
-<span id="cb13-255"><a href="#cb13-255" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "sidebar:"))</span></span>
-<span id="cb13-256"><a href="#cb13-256" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Website")) - 1</span></span>
-<span id="cb13-257"><a href="#cb13-257" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
-<span id="cb13-258"><a href="#cb13-258" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-259"><a href="#cb13-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-252"><a href="#cb13-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-253"><a href="#cb13-253" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
+<span id="cb13-254"><a href="#cb13-254" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
+<span id="cb13-255"><a href="#cb13-255" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
+<span id="cb13-256"><a href="#cb13-256" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "navbar:"))</span></span>
+<span id="cb13-257"><a href="#cb13-257" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "sidebar:")) - 2</span></span>
+<span id="cb13-258"><a href="#cb13-258" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
+<span id="cb13-259"><a href="#cb13-259" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb13-260"><a href="#cb13-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-261"><a href="#cb13-261" aria-hidden="true" tabindex="-1"></a><span class="fu">##### `format`</span></span>
+<span id="cb13-261"><a href="#cb13-261" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb13-262"><a href="#cb13-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-263"><a href="#cb13-263" aria-hidden="true" tabindex="-1"></a>This section only provides additional website formatting and styling decisions, and does not need any changes. (However, if you think there are broad styling changes or additions we should make for all of our tutorials, feel free to open an issue or a PR!)</span>
+<span id="cb13-263"><a href="#cb13-263" aria-hidden="true" tabindex="-1"></a><span class="fu">##### `sidebar`</span></span>
 <span id="cb13-264"><a href="#cb13-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-265"><a href="#cb13-265" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
-<span id="cb13-266"><a href="#cb13-266" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
-<span id="cb13-267"><a href="#cb13-267" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
-<span id="cb13-268"><a href="#cb13-268" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "# Begin Format"))</span></span>
-<span id="cb13-269"><a href="#cb13-269" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Format"))</span></span>
-<span id="cb13-270"><a href="#cb13-270" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
-<span id="cb13-271"><a href="#cb13-271" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-265"><a href="#cb13-265" aria-hidden="true" tabindex="-1"></a>This is the section of the <span class="in">`_quarto.yml`</span> file that allows you to specify the layout of your sections and chapters, as discussed in the <span class="co">[</span><span class="ot">`TOPIC1` and `TOPIC2` section</span><span class="co">](#topic_dirs)</span>. You can add as many <span class="in">`section`</span>s as you need--just make sure to provide them with an appropriate title. Likewise, you can include chapters under a section by listing the chapters under <span class="in">`contents`</span>, and then providing at least an <span class="in">`href`</span> which is a path to the chapter Quarto file. </span>
+<span id="cb13-266"><a href="#cb13-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-267"><a href="#cb13-267" aria-hidden="true" tabindex="-1"></a>You can also add a <span class="in">`text`</span> tag directly after the <span class="in">`href`</span> which will provide a new name for the chapter in the sidebar. However, you do not need to specify a <span class="in">`text`</span> tag as Quarto will otherwise search for and use the value of <span class="in">`title`</span> in your <span class="in">`.qmd`</span> file.</span>
+<span id="cb13-268"><a href="#cb13-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-269"><a href="#cb13-269" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" collapse="true"}</span>
+<span id="cb13-270"><a href="#cb13-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-271"><a href="#cb13-271" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sidebar Options</span></span>
 <span id="cb13-272"><a href="#cb13-272" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-273"><a href="#cb13-273" aria-hidden="true" tabindex="-1"></a><span class="fu">##### `editor`</span></span>
-<span id="cb13-274"><a href="#cb13-274" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-275"><a href="#cb13-275" aria-hidden="true" tabindex="-1"></a>When editing the project in RStudio, this determines whether Quarto documents will open up in <span class="in">`source`</span> or <span class="in">`visual`</span> mode by default. We have opted for <span class="in">`source`</span> as the default.</span>
-<span id="cb13-276"><a href="#cb13-276" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-277"><a href="#cb13-277" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
-<span id="cb13-278"><a href="#cb13-278" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
-<span id="cb13-279"><a href="#cb13-279" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
-<span id="cb13-280"><a href="#cb13-280" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "# Begin Editor"))</span></span>
-<span id="cb13-281"><a href="#cb13-281" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Editor"))</span></span>
-<span id="cb13-282"><a href="#cb13-282" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
-<span id="cb13-283"><a href="#cb13-283" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb13-284"><a href="#cb13-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-273"><a href="#cb13-273" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-274"><a href="#cb13-274" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
+<span id="cb13-275"><a href="#cb13-275" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
+<span id="cb13-276"><a href="#cb13-276" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
+<span id="cb13-277"><a href="#cb13-277" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "sidebar:"))</span></span>
+<span id="cb13-278"><a href="#cb13-278" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Website")) - 1</span></span>
+<span id="cb13-279"><a href="#cb13-279" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
+<span id="cb13-280"><a href="#cb13-280" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-281"><a href="#cb13-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-282"><a href="#cb13-282" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb13-283"><a href="#cb13-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-284"><a href="#cb13-284" aria-hidden="true" tabindex="-1"></a><span class="fu">##### `format`</span></span>
 <span id="cb13-285"><a href="#cb13-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-286"><a href="#cb13-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-286"><a href="#cb13-286" aria-hidden="true" tabindex="-1"></a>This section only provides additional website formatting and styling decisions, and does not need any changes. (However, if you think there are broad styling changes or additions we should make for all of our tutorials, feel free to open an issue or a PR!)</span>
 <span id="cb13-287"><a href="#cb13-287" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-288"><a href="#cb13-288" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-291"><a href="#cb13-291" aria-hidden="true" tabindex="-1"></a><span class="in">```{bash}</span></span>
-<span id="cb13-292"><a href="#cb13-292" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> tutorial-template</span>
-<span id="cb13-293"><a href="#cb13-293" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-288"><a href="#cb13-288" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" collapse="true"}</span>
+<span id="cb13-289"><a href="#cb13-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-290"><a href="#cb13-290" aria-hidden="true" tabindex="-1"></a><span class="fu">## Format Options</span></span>
+<span id="cb13-291"><a href="#cb13-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-292"><a href="#cb13-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-293"><a href="#cb13-293" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
+<span id="cb13-294"><a href="#cb13-294" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
+<span id="cb13-295"><a href="#cb13-295" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
+<span id="cb13-296"><a href="#cb13-296" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "# Begin Format"))</span></span>
+<span id="cb13-297"><a href="#cb13-297" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Format"))</span></span>
+<span id="cb13-298"><a href="#cb13-298" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
+<span id="cb13-299"><a href="#cb13-299" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-300"><a href="#cb13-300" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-301"><a href="#cb13-301" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb13-302"><a href="#cb13-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-303"><a href="#cb13-303" aria-hidden="true" tabindex="-1"></a><span class="fu">##### `editor`</span></span>
+<span id="cb13-304"><a href="#cb13-304" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-305"><a href="#cb13-305" aria-hidden="true" tabindex="-1"></a>When editing the project in RStudio, this determines whether Quarto documents will open up in <span class="in">`source`</span> or <span class="in">`visual`</span> mode by default. We have opted for <span class="in">`source`</span> as the default.</span>
+<span id="cb13-306"><a href="#cb13-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-307"><a href="#cb13-307" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="simple" collapse="true"}</span>
+<span id="cb13-308"><a href="#cb13-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-309"><a href="#cb13-309" aria-hidden="true" tabindex="-1"></a><span class="fu">## Source or Visual Editor</span></span>
+<span id="cb13-310"><a href="#cb13-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-311"><a href="#cb13-311" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, results='asis'}</span></span>
+<span id="cb13-312"><a href="#cb13-312" aria-hidden="true" tabindex="-1"></a><span class="in">setwd("tutorial-template")</span></span>
+<span id="cb13-313"><a href="#cb13-313" aria-hidden="true" tabindex="-1"></a><span class="in">all_lines &lt;- readLines("_quarto.yml")</span></span>
+<span id="cb13-314"><a href="#cb13-314" aria-hidden="true" tabindex="-1"></a><span class="in">start &lt;- which(stringr::str_detect(all_lines, "# Begin Editor"))</span></span>
+<span id="cb13-315"><a href="#cb13-315" aria-hidden="true" tabindex="-1"></a><span class="in">stop &lt;- which(stringr::str_detect(all_lines, "# End Editor"))</span></span>
+<span id="cb13-316"><a href="#cb13-316" aria-hidden="true" tabindex="-1"></a><span class="in">cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")</span></span>
+<span id="cb13-317"><a href="#cb13-317" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-318"><a href="#cb13-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-319"><a href="#cb13-319" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb13-320"><a href="#cb13-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-321"><a href="#cb13-321" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-322"><a href="#cb13-322" aria-hidden="true" tabindex="-1"></a><span class="fu">## .qmd Files</span></span>
+<span id="cb13-323"><a href="#cb13-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-324"><a href="#cb13-324" aria-hidden="true" tabindex="-1"></a>The <span class="in">`index.qmd`</span> and <span class="in">`about.qmd`</span> files are the only two Quarto (i.e. <span class="in">`.qmd`</span>) files that also need to be included in the tutorial--you will presumably author the rest! </span>
+<span id="cb13-325"><a href="#cb13-325" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-326"><a href="#cb13-326" aria-hidden="true" tabindex="-1"></a>The <span class="in">`index.qmd`</span> file is essentially the home page of the website, much like <span class="in">`https://lmu-osc.github.io/manual/`</span> is the home page of this website. You have flexibility to populate this how you see fit.</span>
+<span id="cb13-327"><a href="#cb13-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-328"><a href="#cb13-328" aria-hidden="true" tabindex="-1"></a>The <span class="in">`about.qmd`</span> is much more structured, and will be discussed in later chapters. This page should be updated to include author information, but the other content should not be changed.</span>
+<span id="cb13-329"><a href="#cb13-329" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-330"><a href="#cb13-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-331"><a href="#cb13-331" aria-hidden="true" tabindex="-1"></a><span class="fu">## Assets Folder</span></span>
+<span id="cb13-332"><a href="#cb13-332" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-333"><a href="#cb13-333" aria-hidden="true" tabindex="-1"></a>This folder is a quasi-standard location for storing e.g. images, videos, and other media files. The only files we store in here by default are some LMU logos. Please try to make use of this folder for storing your media files.</span>
+<span id="cb13-334"><a href="#cb13-334" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-335"><a href="#cb13-335" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-338"><a href="#cb13-338" aria-hidden="true" tabindex="-1"></a><span class="in">```{bash}</span></span>
+<span id="cb13-339"><a href="#cb13-339" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span> <span class="at">-rf</span> tutorial-template</span>
+<span id="cb13-340"><a href="#cb13-340" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
