@@ -117,6 +117,11 @@ Short note at the beginning: issues can be assigned to multiple boards simultane
 - Some projects will also be particularly related to one (or a few) repositories
 - These boards will not (or least do not currently) have any extra integration to assign issues to a Project, but can be done manually with GitHub's dropdown option within an issue.
 
+### A Note on Closing Issues
+
+* Make note of [lmu-osc/test-repo#6](https://github.com/lmu-osc/test-repo/issues/6): don't close issues on your board just because they annoy you. It will close the Issue for everyone. 
+  - Unassign an issue if you're not responsible for it, or just remove it from your board (without unassigning) if you don't want to see it on your board. (This 2nd option would be a bit unusual, but you do you, reader.)
+
 ## The Tagging Integration
 
 - Background: the Workflows options in Projects allows for Issues in repos to be automatically added to Project boards. However, on the free organization tier, only 1 repo at a time can be linked to a project board. On the tiers 1 and 2 steps above free, the numbers increase to 5 and 20 repos, respectively. However, this is insufficient as we want **all** repos in our organization to have this feature
