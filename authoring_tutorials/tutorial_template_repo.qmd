@@ -10,7 +10,7 @@ format:
 
 # Background
 
-One of the primary objectives of the OSC is to braoden both knowledge and practice of open science, and the online tutorials we offer are a cornerstone of this initiative. In that regard, some tutorials were brought over by our staff members from previous research institutions, and several more were commissioned between approximately 2021 and 2025. 
+One of the primary objectives of the OSC is to broaden both knowledge and practice of open science, and the online tutorials we offer are a cornerstone of this initiative. In that regard, some tutorials were brought over by our staff members from previous research institutions, and several more were commissioned between approximately 2021 and 2025. 
 
 While the content from these tutorials was designed and/or adapted to fit in with the other tutorials to create a logical learning flow, the tutorials were not *technically* standardized. That is, the licenses, HTML/CSS formatting, citation styles, and so on were not consistent between projects. Towards the end of 2024 and through 2025 we worked to align our existing tutorials as much as possible on these issues, but this was a significant amount of work.
 
@@ -189,7 +189,7 @@ cat("```yaml", readLines("_quarto.yml")[start:stop], "```", sep = "\n")
 
 At a high level, this defines the entire project as being a website and I have used the pre- and post- render options to collect some standardized SCSS styling from our `lmu-osc/branding` repository. The details of this are in a footnote below[^scss_branding_explanation], but, in short, this is done to ensure that the same branding is added to all of our repos **and** so that we can just make branding changes to *one* repo in the future (rather than *all* of our tutorials.)
 
-[^scss_branding_explanation]: Due to how Quarto renders projects, the SCSS file must physically be present in the directory when executing. As such, the file is downloaded from our branding GitHub repo before rendering, and then removed again after rendering becasue we do not want to retain this file in the repo. This is in contrast to the CSS file which can simply be read from somewhere on the web, and is the reason why we are able to specify the `css` parameter as just a link to our central branding repo.
+[^scss_branding_explanation]: Due to how Quarto renders projects, the SCSS file must physically be present in the directory when executing. As such, the file is downloaded from our branding GitHub repo before rendering, and then removed again after rendering because we do not want to retain this file in the repo. This is in contrast to the CSS file which can simply be read from somewhere on the web, and is the reason why we are able to specify the `css` parameter as just a link to our central branding repo.
 
 
 
