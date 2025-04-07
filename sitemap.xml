@@ -2,74 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lmu-osc.github.io/manual/new_staff/page3.html</loc>
-    <lastmod>2025-04-06T23:15:29.816Z</lastmod>
+    <lastmod>2025-04-07T20:15:46.050Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/manual/new_staff/page1.html</loc>
-    <lastmod>2025-04-06T23:15:29.816Z</lastmod>
+    <lastmod>2025-04-07T20:15:46.050Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/manual/LICENSE.html</loc>
-    <lastmod>2025-04-06T23:15:29.802Z</lastmod>
+    <lastmod>2025-04-07T20:15:46.035Z</lastmod>
   </url>
   <url>
-    <loc>https://lmu-osc.github.io/manual/github/page1.html</loc>
-    <lastmod>2025-04-06T23:15:29.816Z</lastmod>
+    <loc>https://lmu-osc.github.io/manual/github/lmu_osc_github_org_overview.html</loc>
+    <lastmod>2025-04-07T20:15:46.049Z</lastmod>
   </url>
   <url>
-    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/matomo_analytics.html</loc>
-    <lastmod>2025-04-06T23:15:29.815Z</lastmod>
+    <loc>https://lmu-osc.github.io/manual/github/projects.html</loc>
+    <lastmod>2025-04-07T20:15:46.050Z</lastmod>
   </url>
   <url>
-    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/introduction.html</loc>
-    <lastmod>2025-04-06T23:15:29.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/best_practices.html</loc>
-    <lastmod>2025-04-06T23:15:29.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/manual/about/page2.html</loc>
-    <lastmod>2025-04-06T23:15:29.802Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/manual/index.html</loc>
-    <lastmod>2025-04-06T23:15:29.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/manual/LICENSE-CODE.html</loc>
-    <lastmod>2025-04-06T23:15:29.802Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/manual/about/page1.html</loc>
-    <lastmod>2025-04-06T23:15:29.802Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/tutorial_template_repo.html</loc>
-    <lastmod>2025-04-06T23:15:29.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/authoring_and_versions.html</loc>
-    <lastmod>2025-04-06T23:15:29.815Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/getting_started.html</loc>
-    <lastmod>2025-04-06T23:15:29.815Z</lastmod>
+    <loc>https://lmu-osc.github.io/manual/github/essential_technical_skills.html</loc>
+    <lastmod>2025-04-07T20:15:46.049Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/manual/authoring_tutorials/things_you_should_not_change.html</loc>
-    <lastmod>2025-04-06T23:15:29.815Z</lastmod>
+    <lastmod>2025-04-07T20:15:46.049Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/getting_started.html</loc>
+    <lastmod>2025-04-07T20:15:46.049Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/authoring_and_versions.html</loc>
+    <lastmod>2025-04-07T20:15:46.048Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/tutorial_template_repo.html</loc>
+    <lastmod>2025-04-07T20:15:46.049Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/about/page1.html</loc>
+    <lastmod>2025-04-07T20:15:46.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/LICENSE-CODE.html</loc>
+    <lastmod>2025-04-07T20:15:46.035Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/index.html</loc>
+    <lastmod>2025-04-07T20:15:46.050Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/about/page2.html</loc>
+    <lastmod>2025-04-07T20:15:46.036Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/best_practices.html</loc>
+    <lastmod>2025-04-07T20:15:46.048Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/introduction.html</loc>
+    <lastmod>2025-04-07T20:15:46.049Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/authoring_tutorials/matomo_analytics.html</loc>
+    <lastmod>2025-04-07T20:15:46.049Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/github/osc_resource_repos.html</loc>
+    <lastmod>2025-04-07T20:15:46.050Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/github/customizations.html</loc>
+    <lastmod>2025-04-07T20:15:46.049Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/manual/github/osc_repos.html</loc>
+    <lastmod>2025-04-07T20:15:46.049Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/manual/about.html</loc>
-    <lastmod>2025-04-06T23:15:29.802Z</lastmod>
+    <lastmod>2025-04-07T20:15:46.036Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/manual/lrz_gitlab/page1.html</loc>
-    <lastmod>2025-04-06T23:15:29.816Z</lastmod>
+    <lastmod>2025-04-07T20:15:46.050Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/manual/new_staff/page2.html</loc>
-    <lastmod>2025-04-06T23:15:29.816Z</lastmod>
+    <lastmod>2025-04-07T20:15:46.050Z</lastmod>
   </url>
 </urlset>
