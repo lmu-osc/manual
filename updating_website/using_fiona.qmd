@@ -1,0 +1,27 @@
+---
+title: "Using Fiona"
+---
+
+Currently Fiona is our management system for our website
+
+## Useful Links
+
+[The OSC website](https://www.osc.uni-muenchen.de/index.html)
+
+[General information about Fiona](https://www.internetdienste.verwaltung.uni-muenchen.de/online-workshops/basisworkshop-online/index.html) 
+
+## Navigating Fiona
+
+Let's get you ready to start using Fiona:
+
+- Follow [this link to an online workshop](https://www.internetdienste.verwaltung.uni-muenchen.de/online-workshops/basisworkshop-online/anm-bw-online/index.html) and apply to take the course: 
+- Send an email to **it.internet@verwaltung.uni-muenchen.de** with your “LMU-Kennung” and the Fiona path `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center` with Felix and Malika cc’ed to give it legitimacy.
+- After taking the course and receiving the relevant permission to access Fiona, follow [this link to the Fiona Login site](https://cms.verwaltung.uni-muenchen.de/default/NPS/login)
+- Once in Fiona, follow this path to find the OSC:
+`Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center`
+
+::: callout-important
+## Accessing Fiona
+
+If you are trying to access Fiona outside of the eduroam wifi, you will need to use a specific VPN. [Follow this link](https://www.eduvpn.org/client-apps/), download eduVPN, and turn it on before logging in to Fiona. 
+:::

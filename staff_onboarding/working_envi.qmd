@@ -1,0 +1,45 @@
+---
+title: "Working Environment"
+---
+
+We use several platforms that allow us to share our work and collaborate on projects.
+
+## Google Drive
+
+**Google Docs**:
+
+Always create the Google Doc in the [Work with Assistants](https://drive.google.com/drive/folders/1WxLB_xM4eN8GsSdGrfw6DnW8QqlZ33av) folder. 
+
+If you create Google Docs, please make them 'anyone with the link can comment', add the OSC team (Malika and assistants) as editors, and transfer ownership to Malika so it can stay within the LMU OSC - Work with Assistants folder.
+
+Please share the link of the document you created here:
+
+- At the top of each relevant section in the todo
+- In the task table
+- In the right folder
+
+**Folder structure of the OSC**:
+
+- Onboarding Hiwis: here you can find the Onboarding document for each new Hiwi with tasks to be completed
+- Templates: a folder for all kind of templates we use (designs, mail drafts, social media drafts, website drafts, consent forms)
+- Credentials: This folder is not shared publicly and contains credentials like passwords, certificates etc.
+
+## Github
+
+These are links relevant to the GitHub workspace:
+
+- [All repositories of the OSC](https://github.com/orgs/lmu-osc/repositories)
+- [OSC repository on Github](https://github.com/lmu-osc)
+- [The website for organizing all the OSC’s resources on Github](https://github.com/lmu-osc/lmu-osc.github.io)
+
+## LRZ sync and Share
+
+We will use **LRZ Sync and Share** for Sensitive info such as:
+
+- Job application files
+- Letter of support for grant applicants
+- Financial records
+
+## Gitlab 
+
+private repositories

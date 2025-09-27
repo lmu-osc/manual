@@ -1,0 +1,102 @@
+---
+title: "Creating a Program and Liaising with Guest Instructor"
+format: html
+---
+
+## Creating a Program
+
+Here's a useful checklist of things to do to when creating a program:
+
+-   [ ] Create a tentative program, do some research, define the target audience
+-   [ ] Decide on format (e.g hybrid participants and/or hybrid presenters; one or several concurrent sessions)
+-   [ ] Invite potential presenters 3 months in advance, give them a 2 weeks deadline to reply, offer range of date for possible event and ask them to provide several possible options if in person, send follow up email
+-   [ ] Create a webpage for advertisement (abstract, profile, requirement, etc) for the OSC website - see section [create news item](updating_website/Create%20a%20News%20Item.qmd).
+-   [ ] Draft a flyer and newsletter items
+-   [ ] Meet with workshop co-instructors to coordinate content
+-   [ ] Collect content for final program
+
+    -   Title
+    -   Abstract
+    -   Instructor short bio
+    -   Target audience (e.g. field, career stage, dept, interdisciplinary, country)
+    -   Prerequisite (e.g. prior knowledge necessary, software installed)
+    -   Format (e.g. hybrid, in person, online)
+    -   Language (english or german)
+    -   Custom question(s) to ask registrants (e.g. prior knowledge)
+    -   Max number of participants
+
+-   [ ] Book room as soon as you have possible dates - only Malika has access to the LSF booking system of the LMU. It is hard to find room available within the semester so this step needs to be done as much in advance as possible and with several possible date to maximize chances of finding a room for one of the dates.
+-   [ ] Send a calendar invitation to all instructors and facilitators with a Zoom link if hybrid or online and/or the in person location. The Zoom link should be ‘no sign in required,' with an alternative host (e.g., another member of the team)- to add them, use their @lmu.de emails.
+-   [ ] Ask presenters for an open license, consent to record, etc.
+-   [ ] Ask instructors bank details for payment / prepare all admin forms for reimbursement and collect handwritten signatures during event
+
+## Liaising with Guest Instructor
+
+Here are some email templates for communication with a potential **guest instructor**:
+
+
+::: {.panel-tabset .nav-pill}
+
+## First Email
+
+*this is a mixture of several emails - one needs to pick and choose the appropriate sentences*
+
+Dear Prof Dr X
+
+My name is Malika, I am the coordinator of the LMU Open Science Center (if they know Felix: whose managing director is Felix Schönbrodt).
+
+Based on your work XX, we were wondering if you would be willing and available to give a workshop on X sometimes in XXMonthsXX
+
+I think XX what would be interesting for our community and why XX . Usually, PhD students and post docs across many disciplines constitute the core of the audience, but we can limit it to a certain type of research and specify prerequisites if more appropriate.
+
+Would that be of interest to you? Please feel free to suggest any alternative topics. I’m available for a brief Zoom call to define a more precise topic if easier!
+
+We usually run all our events in a hybrid format, with the presenter in person and with me facilitating the online participation. However, solely in person or online events are also possible. Should you be able to come to Munich, we would of course cover your travel and accommodation expenses. We can also cover the travel expense of an additional person you would like to bring to facilitate the workshop with you.
+
+// Though all is possible, our workshops are preferentially offered in a hybrid format (I can help with online facilitation) with the presenter in person. If interested, would you be able to come in person? We would pay for your transport and accommodation of course.
+
+A possible time for this event could be XX-XX.  from  XX monthXX
+
+I would be grateful if you would let me know either way before XX two weeks later XX and if interested, if you could please suggest a few suitable dates!
+
+Thanks and best wishes
+Malika 
+
+## Second Email
+
+*In this email, confirm specific details*:
+
+- set a date
+- ask if they need hotel, if then for what night, we can book it
+- let them know they need to book their own train and send us the e-tickets
+- ask them for their bank info and address in a specific form to be returned as a Word document
+
+*Get the following information at least one month prior to the event*.
+
+- Title
+- Abstract
+- Instructor short bio
+- Target audience (e.g. field, career stage, dept, interdisciplinary, country)
+- Prerequisite (e.g. prior knowledge necessary, software installed)
+- Format (e.g. hybrid, in person, online)
+- Language (english or german)
+- Custom question(s) to ask registrants (e.g. prior knowledge)
+- Max number of participants
+- Further emails 
+
+Forward them the hotel booking, usually:
+
+Hotel Carlton MunichFürstenstraße 12 <br>
+80333 Munich <br>
+Tel.: +49 (89) 380 33 76 00 <br>
+welcome@hotel-carlton.de
+
+We need an invoice from the hotel with the LMU address and VAT number as found in the credential file… 
+
+LMU Open Science Center <br>
+Ludwig-Maximilians-Universität München <br>
+Department Psychologie <br>
+Leopoldstr. 13, 80802 München <br>
+VAT: DE811205325
+
+:::

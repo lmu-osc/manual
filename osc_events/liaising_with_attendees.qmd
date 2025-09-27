@@ -1,0 +1,45 @@
+---
+title: "Liaising with Attendees"
+format: html
+---
+
+Here's a useful checklist of things to do and consider when commmunicating with the attendees for an event:
+
+- [ ] Create registration page for public part of the event (several tickets, e.g. in person, online, waiting list for non-member – on for each session or for the whole course only).
+- [ ] If the registrant needs to apply to attend specific sessions (e.g. hands on workshop with limited number of seats), then develop rubrics to score applications.
+- [ ] For **in-person reception**: secure venue, catering, & prepare registration form
+- [ ] Advertise event to relevant channels, e.g.
+  - graduate center
+  - Infodienst
+  - OSC
+  - BlueSky/Mastodon/LinkedIn
+  - UB University of Munich - Central Library
+  - List of comms officers per departments
+  - Follow up list of comm officers
+- [ ] Send an email and forms to applicants
+- [ ] Confirm attendance (Google form with name; email; "I confirm and will inform if need to cancel"; confirm mode of attendance and R/Julia) + Google form for their PI to approve; waiting list- confirm desire to be on waiting list (Google form) +  registration page to attend public part of event
+- [ ] Check that registration numbers are normal, and check that the registrants bought the right tickets etc. 
+  - Accept Klinikum, if their tickets need approval. 
+  - TUM in person ticket also to approve. 
+  - The rest may need approval depending on whether there are seats remaining- email them minimally two days in advance. (Suggestion: email the top 3 on waiting list to ask whether they are still interested to be invited last minute or not)
+- [ ] Inform local attendees of in-person reception they need to register for
+- [ ] print signage for in person venue
+- [ ] Send participants’ info to instructors who requested it
+- [ ] Have the registration platform or manually send reminder to registrants/applicants with relevant info (e.g. Zoom link, abstracts)
+- [ ] Possibly create online workspace for attendees + share CoC + share password protected webpage (e.g. with Zoom link, or private repository) - invite LMU participants to LMU chat OSC space
+- [ ] Email reminder to registrants either when fully booked or 4 days in advance (whichever comes first)
+
+*Mail draft if fully booked:* 
+
+Dear registrants of the FIXME title (linked),
+
+The in-person seats of this event are now booked out and there are already people on the waiting list. <br>
+Please cancel your seat reservation if you can no longer attend in person by emailing me back or directly on Pretix. <br>
+Your participation will remain possible online: FIXME zoom link 
+
+Meeting ID: FIXME <br>
+Passcode: FIXME <br>
+
+We are looking forward to discussing with you soon!
+
+- [ ] Send participants’ info to instructors who requested it

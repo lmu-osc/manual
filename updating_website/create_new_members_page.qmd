@@ -1,0 +1,48 @@
+---
+title: "Create a New Members Profile Page"
+format: html
+---
+
+[Follow this link](https://www.osc.uni-muenchen.de/members/index.html) to see where the Members page is on the OSC Website.
+
+## Individual Members 
+
+**How will you know when to add a member to the page?**
+
+Malika will send you an email containing all the relevant information from the person themselves. If any information is missing, let Malika know and she will either get the information or give further instructions. 
+
+**How to add a new individual member to the page?**
+
+Follow this path in Fiona: `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Members / Individual Members`
+
+- Depending on which kind of member, open the respective folder (LMU, Associated, Past, Fellows)
+- Copy a folder of an already existing member by clicking on that folder and then clicking the “Kopieren” sign( next to the scissors at the top)
+- Click on the respective members folder from the beginning again and paste the copied folder by clicking the “Einfügen” sign (next to the “copy” sign at the top)
+- Start editing the pasted folder with the information that you received from Malika
+
+**What you need to change**:
+
+- Under “Felder” click “alle bearbeiten” and edit:
+  - **Titel**
+  - **Anrede**
+  - **Akademischer Titel**
+  - **Nachname & Vorname**
+  - **Funktion**
+  - **E-Mail**
+  - **Website**
+
+- **Foto**: save the picture from the mail on your computer and upload it in the folder you created for the new member by clicking the “Date importieren” button at the top. Then link the uploaded picture in the “Foto” section. 
+  - You might have to make the picture smaller. Here's how: click on picture, click `Bearbeiten > Bild bearbeiten > Skalieren” > choose “Breite: 200px"`
+- Paste the Mission Statement of the new member in “Hauptinhalt”.
+- Publish: “Workflow > Bearbeitung abschließen”
+
+## Institutional members:
+
+Again, you can copy existing members here and adapt following information. 
+
+**These members are shown with**:
+
+- Title of the member
+- An image of their logo
+- Abstract about the institution (mostly written by themselves)
+- Contact person: name [link to contact page]
