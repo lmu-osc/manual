@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Matomo Analytics – 2</title>
+<title>Registration and OSC Event Pages – 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Matomo Analytics</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../osc_events/creating_program.html">Organizing an OSC Event</a></li><li class="breadcrumb-item"><a href="../osc_events/registration.html">Registration and OSC Event Pages</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -271,13 +271,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">Organizing an OSC Event</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../osc_events/creating_program.html" class="sidebar-item-text sidebar-link">
@@ -286,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../osc_events/registration.html" class="sidebar-item-text sidebar-link">
+  <a href="../osc_events/registration.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Registration and OSC Event Pages</span></a>
   </div>
 </li>
@@ -455,21 +455,28 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-matomo_analytics.html-file" id="toc-the-matomo_analytics.html-file" class="nav-link active" data-scroll-target="#the-matomo_analytics.html-file">The <code>matomo_analytics.html</code> File</a></li>
-  <li><a href="#our-matomo-instance" id="toc-our-matomo-instance" class="nav-link" data-scroll-target="#our-matomo-instance">Our Matomo Instance</a></li>
-  <li><a href="#matomo-tracking-code-to-generate" id="toc-matomo-tracking-code-to-generate" class="nav-link" data-scroll-target="#matomo-tracking-code-to-generate">Matomo Tracking Code to Generate</a>
+  <li><a href="#registering-event-on-pretix" id="toc-registering-event-on-pretix" class="nav-link active" data-scroll-target="#registering-event-on-pretix">Registering Event on Pretix</a>
   <ul class="collapse">
-  <li><a href="#generating-matomo-code" id="toc-generating-matomo-code" class="nav-link" data-scroll-target="#generating-matomo-code">Generating Matomo Code</a></li>
+  <li><a href="#administration" id="toc-administration" class="nav-link" data-scroll-target="#administration">Administration</a></li>
+  <li><a href="#using-pretix" id="toc-using-pretix" class="nav-link" data-scroll-target="#using-pretix">Using Pretix</a></li>
+  <li><a href="#payment-tax-rules-invoicing" id="toc-payment-tax-rules-invoicing" class="nav-link" data-scroll-target="#payment-tax-rules-invoicing">Payment, Tax Rules, Invoicing</a></li>
+  <li><a href="#tickets" id="toc-tickets" class="nav-link" data-scroll-target="#tickets">Tickets</a></li>
+  <li><a href="#e-mail-setting" id="toc-e-mail-setting" class="nav-link" data-scroll-target="#e-mail-setting">E-Mail setting</a></li>
+  <li><a href="#cancellation-settings" id="toc-cancellation-settings" class="nav-link" data-scroll-target="#cancellation-settings">Cancellation Settings</a></li>
+  <li><a href="#products" id="toc-products" class="nav-link" data-scroll-target="#products">Products</a></li>
+  <li><a href="#orders" id="toc-orders" class="nav-link" data-scroll-target="#orders">Orders</a></li>
+  <li><a href="#going-online-with-the-event" id="toc-going-online-with-the-event" class="nav-link" data-scroll-target="#going-online-with-the-event">Going Online with the Event</a></li>
   </ul></li>
+  <li><a href="#formr" id="toc-formr" class="nav-link" data-scroll-target="#formr">FormR</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../osc_events/creating_program.html">Organizing an OSC Event</a></li><li class="breadcrumb-item"><a href="../osc_events/registration.html">Registration and OSC Event Pages</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Matomo Analytics</h1>
+<h1 class="title">Registration and OSC Event Pages</h1>
 </div>
 
 
@@ -486,57 +493,276 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
+<section id="registering-event-on-pretix" class="level2">
+<h2 class="anchored" data-anchor-id="registering-event-on-pretix">Registering Event on Pretix</h2>
+<p>Pretix is our management system to create registration pages for events (e.g.&nbsp;workshops, discussions, etc.).</p>
+<section id="administration" class="level3">
+<h3 class="anchored" data-anchor-id="administration">Administration</h3>
+<p>Malika will add new team members to the Pretix LMU OSC organisation on the OSC server so you can create registration pages for OSC events.</p>
+<p>To login on <a href="http://www.pretix.osc.lmu.de/control/">the server</a>, the default login username will be your LMU campus email.</p>
+</section>
+<section id="using-pretix" class="level3">
+<h3 class="anchored" data-anchor-id="using-pretix">Using Pretix</h3>
+<p>The following will take you through the entire set up process of a new event using Pretix, including general rules to follow regarding the settings as we as text examples for Mails.</p>
+<p><strong>Create a new page</strong> <br> A suggestion is to clone an event and then change the necessary details.</p>
+<ul>
+<li>Basics: if copied, everything is the same</li>
+<li>Short form will be in URL <em>(change this)</em></li>
+<li>Contact address -&gt; Malika’s (=content event organiser)</li>
+<li>Imprint URL -&gt; page on the (=bottom of the ticket page)</li>
+</ul>
+<p><strong>Settings</strong></p>
+<ul>
+<li>Available language: typically, German/English but change to whatever is specified.</li>
+<li>Customer and attendee info: if copied from another ticket, usually remains unchanged</li>
+<li>Email twice</li>
+<li>No phone number</li>
+<li>Names of the attendees asked by default</li>
+</ul>
+<p><strong>Texts</strong> <br> Usually no presale/no voucher/no confirmation</p>
+<p>Frontpage Text <em>needs to be changed</em> and should include: Instructors, Abstract, Target Audience, Prerequisites, Logistics (ie. Where / online / hybrid)</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example Frontpage Text
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><em>Instructors</em>: <br> <em>Dr.&nbsp;Katarina Blask</em>, Leibniz Institute for Psychology (ZPID)</p>
+<p><em>Abstract</em>: Transparency and openness in the research process are becoming increasingly important in all scientific fields - including psychology. Accordingly, researchers should not only make research results freely available, for example in the form of scientific articles (open access), but also provide research data, analysis scripts and study materials. However, the reusability of the data made available requires comprehensive research data management (RDM) on the part of the researchers. In particular, research data should be made available in accordance with the FAIR principles, meaning that research data should be Findable, Accessible, and usable (Interoperable and Reusable). In this workshop, you will learn about FAIR data management in psychology by using the data management assistance system DataWiz, which allows you to plan, create and publish FAIR data objects. Specifically, you will 1) get an introduction to FAIR data documentation, 2) create a data management plan, and 3) learn how to organize your data. <br> <em>Target audience</em>: PhD students and post-docs from psychology. <br> <em>Prerequisites</em>: There is no prior knowledge required on research data management or the implementation of the FAIR principles. <br> To participate in the hands-on sessions, please create an account for DataWiz if you do not already have one. <br> <em>Logistics</em>: This event will be held online.</p>
+</div>
+</div>
+</div>
+<p><strong>Shop Design</strong></p>
+<ul>
+<li>Logo is always the OSC logo</li>
+<li>The colours are already set by Malika (but are changeable in the organisation part)</li>
+</ul>
+<p><strong>Timeline</strong></p>
+<ul>
+<li>Start: put nothing in here</li>
+<li>End: when the event happens</li>
+<li>Show number of check ins/ Allow modifications -&gt; <em>No</em></li>
+</ul>
+<p><strong>Display</strong></p>
+<ul>
+<li>Show everything except the following:
+<ul>
+<li>Price (as our events are for free)</li>
+<li>Product variations</li>
+</ul></li>
+</ul>
+<p>Don’t hide sold out products <br> Show numbers of tickets left not shown (if number of seats is very large or limited) (?)</p>
+<p><strong>Cart</strong> <br> Check the box to go directly to the cart. <br> Set the maximum of items people can choose to buy to “1” (if nothing else is specified)</p>
+<p><strong>Waiting list</strong> <br> Enable waiting list.</p>
+</section>
+<section id="payment-tax-rules-invoicing" class="level3">
+<h3 class="anchored" data-anchor-id="payment-tax-rules-invoicing">Payment, Tax Rules, Invoicing</h3>
+<p>Nothing to change here if we don’t charge for our events.</p>
+<p><strong>Available plugins</strong> <br> If copied from another event, usually nothing needs to be changed here.</p>
+<p><strong>Features</strong> <br> We have Emails and statistics enabled.</p>
+<p><strong>Payment</strong> <br> Not needed if for free</p>
+<p><strong>PDF Ticket</strong> <br> PDF Ticket output active (even if we don’t want a pdf in the end, you can keep it active as it could lead to problems if we switch at some point)</p>
+<p><strong>API</strong> <br> Not needed as we do all the booking via pretix</p>
+</section>
+<section id="tickets" class="level3">
+<h3 class="anchored" data-anchor-id="tickets">Tickets</h3>
+<p>Usually nothing needs to be changed here. We’re basically using the System standard.</p>
+<p>Only confirmation needed, no PDF.</p>
+</section>
+<section id="e-mail-setting" class="level3">
+<h3 class="anchored" data-anchor-id="e-mail-setting">E-Mail setting</h3>
+<p><strong>General</strong></p>
+<ul>
+<li>Subject prefix: <em>change this</em> depending on the kind of Event (e.g.&nbsp;“OSC workshop”)</li>
+<li>Don’t attach ticket files (as we don’t send PDFs as tickets)</li>
+<li>(If not specified otherwise) Sender name, Signature and Bcc can be left out (as Malika’s Email will still be indicated)</li>
+</ul>
+<p><strong>Calendar Invites</strong></p>
+<ul>
+<li>Attach calendar files only if the spot and payment is confirmed (i.e.&nbsp;calendar invite goes to all orders, even those that need approving)
+<ul>
+<li>that’s why the text should say “if you got a confirmation, approval,… you can join here”</li>
+</ul></li>
+<li>Event description: <em>Change text</em> according to event and check if it has the correct zoom link/address in it.</li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example Text for Invite
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Hello! <br> If your order was approved (automatically, or by the organiser if you are not a member of the LMU), you can join in person in X room in X address.</p>
+<p>Best wishes <br> Malika (malika.ihle@lmu.de)</p>
+</div>
+</div>
+</div>
+<p><strong>E-Mail design</strong> <br> Simple with logo</p>
+<p><strong>Email content</strong>:</p>
+<ul>
+<li>Add zoom links to the free order. Depends on the kind of event. Check free order + text for approved free order for zoom links.</li>
+<li>Depending on the kind of event you need to <em>change</em> other ones (e.g order approval process)</li>
+</ul>
+<p><em>When do I need to change which emails?</em></p>
+<ul>
+<li>If event is free: free order, resend link, order changed, waiting list notification, order canceled, order approval</li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example Text for Free Order sent to Registrant
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Hello, <br> your order for X (event) was successful. <br> You can join in person in room FIXME in FIXME or on Zoom: FIXME <br> Meeting ID: FIXME <br> Passcode: FIXME <br></p>
+<p>Best wishes, <br> Malika</p>
+<p>PS: You can change your order details at {url}</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example of Text for Approved Free Order
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Hello, <br> we approved your order for X (event) and will be happy to welcome you at our event. <br> You can join in person in room FIXME in FIXME Munich or on Zoom: https://lmu-munich.zoom-x.de/j/FIXME <br> Meeting ID: FIXME <br> Passcode: FIXME <br></p>
+<p>Best wishes, <br> Malika</p>
+<p>PS: You can change your order details and view the status of your order at {url}</p>
+</div>
+</div>
+</div>
+</section>
+<section id="cancellation-settings" class="level3">
+<h3 class="anchored" data-anchor-id="cancellation-settings">Cancellation Settings</h3>
+<p><strong>Unpaid or Free Orders</strong> <br> You can always cancel (as all our current events are free of charge the other settings don’t matter)</p>
+</section>
+<section id="products" class="level3">
+<h3 class="anchored" data-anchor-id="products">Products</h3>
+<p>Here you select which types of ticket exist. These usually are:</p>
+<ul>
+<li>Online ticket - member of a LMU Unit sponsoring the Open Science Center (Psychology, Business Administration, Biology)</li>
+<li>Online ticket - LMU member</li>
+<li>Online ticket - non-LMU member</li>
+<li>In-person ticket - member of a LMU Unit sponsoring the Open Science Center (Psychology, Business Administration, Biology)</li>
+<li>In-person ticket - LMU member</li>
+<li>In-person ticket - non-LMU member</li>
+</ul>
+<p><strong>General</strong></p>
+<ul>
+<li>Active</li>
+<li>Give it a concise name (as in the examples above)</li>
+<li>Always an <em>Admission</em> product for all groups</li>
+</ul>
+<p><strong>Price</strong> <br> Price = zero</p>
+<p><strong>Availability</strong></p>
+<ul>
+<li>Most of the dates can just be taken from:
+<ul>
+<li>Waiting list depending on event</li>
+<li>Sale channel: online shop</li>
+</ul></li>
+<li>Allow product to be cancelled or changed is ticked here (this seems similar to the one in general settings. Even if the first one is not, this still works)</li>
+<li>Show waiting list for this ticket = yes</li>
+</ul>
+<p><strong>Add ons</strong> <br> Not needed for our events</p>
+<p><strong>Additional Settings</strong> <br> Show the number of tickets left depending on event; Default setting is that it’s not shown but this is manually adjusted by Mailka when the event is online.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+<span class="screen-reader-only">Tip</span>Tip for Showing the Number of Tickets
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This procedure is still a work in-progress, and <strong>is not yet live.</strong></p>
+<p>If a lot of tickets left: don’t show, if only a few left: click show (The manual approval process of Tickets also plays into this)</p>
 </div>
 </div>
-<p><a href="https://matomo.org/">Matomo</a> is a privacy-focused, self-hosted web analytics tool that allows us to get an idea of how much each of our tutorials are being used, where they’re being accessed from (rough geographic area), and from where people are being linked to our websites (e.g.&nbsp;directly from other LMU OSC websites, or from other sites that link to us.) At the end of the day, these analytics are useful for us in 1) improving the sites to see which sites have more/less traffic than expected and 2) quantify the utility of our sites for grant purposes.</p>
-<section id="the-matomo_analytics.html-file" class="level1">
-<h1>The <code>matomo_analytics.html</code> File</h1>
-<p>(Note: this section is very likely to change–we may soon include a template Matomo analytics script).</p>
-<p>This file is intentionally left empty in the tutorial template, but is intended to hold a tracking script which has code specific to each individual website. This code can only be generated within our self-hosted Matomo instance.</p>
-<p>Please contact any of the OSC admin members with a link to the GitHub Pages website you are developing, and request that Matomo tracking code be generated.</p>
-</section>
-<section id="our-matomo-instance" class="level1">
-<h1>Our Matomo Instance</h1>
-<p>As mentioned, we self-host an instance of Matomo on our servers so the data we collect is assured to remain within the EU, and is not passed along to any other parties.</p>
-<p>Access to our Matomo instance, and especially access to the server containing the instance, is restricted to a handful of OSC staff members. If you believe you need access, please contact Felix. Additionally, if you are an OSC admin or staff who needs direct access to the server, please contact Felix to discuss.</p>
-</section>
-<section id="matomo-tracking-code-to-generate" class="level1">
-<h1>Matomo Tracking Code to Generate</h1>
-<p>(Matomo provides some default tracking, but this does not necessarily collect all of the information we want to incldue–after determining what we cant to collect, add the Matomo-specific instructions here e.g.&nbsp;what options to choose when generating the code in the UI.)</p>
-<section id="generating-matomo-code" class="level2">
-<h2 class="anchored" data-anchor-id="generating-matomo-code">Generating Matomo Code</h2>
-<p>If you are one of the “superusers” of our Matomo instance, you can generate code with the following steps:</p>
-<ol type="1">
-<li>Log in at www.analytics.osc.lmu.de</li>
-<li>Press “All Websites” and then “Add a new website”</li>
-<li>Our websites are <em>not</em> intranet sites so select “Website”</li>
-<li>Fill out the page with the following information
+<p>Generally not a lot needs to be done here. For more complex events such as the Summer School, we use <em>FormR</em>.</p>
+<p><strong>Quota</strong> <br> How many tickets of which kind are up for sale?</p>
 <ul>
-<li>Name: the tutorial title</li>
-<li>URL: the GitHub Pages site link</li>
-</ul></li>
-<li>Save the configuration</li>
-<li>Click “View tracking code” for the tutorial. Make sure you select the correct tutorial from the list! <!-- 7. Under the "JavaScript Tracking Code" section, press the "Show advanced options" dropdown. --> <!--     - Select "Disable all tracking cookies" --></li>
-<li>Copy the tracking code</li>
-<li>Send the tracking code back to the requestor, and remind them to place it in the <code>matomo_analytics.html</code> file as is.
+<li>Add kind of tickets (in person/ online)</li>
+<li>Add the number of tickets</li>
+<li>When to hide tickets and when not to add Info (e.g.&nbsp;for non LMU members)</li>
+</ul>
+<p>At first, it’s only a ‘to be approved ticket’ for non LMU, with its own quota (unlimited) then Malika starts to accept some (e.g.&nbsp;TUM, or Munich based) and changes the LMU quota manually. Then two-three days before the event, she merges the quotas of both LMU and non LMU tickets.</p>
+<p><strong>Categories</strong> <br> Only use it if it is a large event with a complex ticket structure. Franka is the only person to have used this yet.</p>
+<p><strong>Questions</strong> <br> Copy general ones from the last event.</p>
+<p>These are:</p>
 <ul>
-<li>Alternatively, you can just open a pull request in their repo</li>
-</ul></li>
-</ol>
+<li>Attendee name (system &lt;- as ask for attendee name is ticked in general settings)</li>
+<li>What organization are you from? (list)</li>
+<li>What faculty are you from? (list)</li>
+<li>Please specify: (text)</li>
+</ul>
+<p><em>Everyone should receive these questions</em>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Event-Specific Questions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If requested by the presenter, add those specific questions here too.</p>
+</div>
+</div>
+<p>Which questions are mandatory depends on the event. Generally only the first few questions are required.</p>
+<p><strong>Adding conditional subquestions</strong> <br> Add new question &gt; then go to “Advanced” settings &gt; click on “Question dependency” &gt; choose from the previous question the answer</p>
+</section>
+<section id="orders" class="level3">
+<h3 class="anchored" data-anchor-id="orders">Orders</h3>
+<p><strong>All Orders</strong> <br> If tickets need to be approved they are here</p>
+<p><strong>Export</strong> <br> Order data: download the sheet to do something With it (Malika uses this to send mails from her personal email)</p>
+<p><em>DELETE DATA IF EVEN ALLOWED TO DOWNLOAD IT</em></p>
+<p><strong>Check in</strong> <br> Not needed.</p>
+<p><strong>Send out emails</strong> <br> If personalised emails are supposed to be sent, Malika usually does that manually.</p>
+</section>
+<section id="going-online-with-the-event" class="level3">
+<h3 class="anchored" data-anchor-id="going-online-with-the-event">Going Online with the Event</h3>
+<p>Please also test the design and send some of the Mails to yourself by following this: <em>Dashboard-&gt; “your ticket shop is [status]” - “click here to change” &gt; enable test mode</em></p>
+<p><strong>For Test Mode</strong>:</p>
+<ul>
+<li>Go to “Go to Shop” (right at the beginning of the page)</li>
+<li>Try out all possible tickets</li>
+<li>Then go to back to the Dashboard (View backend) &gt; “Test mode” &gt; click “Disable test mode”</li>
+</ul>
+<p>In dashboard, you see ‘your ticket shop is’ then email test mode, then fake all the possible kind of orders check the emails you receive (text in email, calendar invite). <br> When all is good, disable test mode and delete all fake tickets (a tick box in the page to disable test mode) and check with Malika that you didn’t forget anything important. She will test again, give feedback or go online.</p>
+<p>To test mails go to Arrow top left (account and organisation -&gt; settings) user settings: <em>turn on/off notifications</em> (New order placed -&gt; receive emails during testing)</p>
+<p>You can find new projects are in the Dashboard/shop status and you can test them or set them on and offline once everything else is done.</p>
+<p><strong>Other resources</strong> <br> <a href="https://docs.pretix.eu/en/latest/user/events/email.html#e-mail-content">Click here for information on how the mails work</a></p>
+</section>
+</section>
+<section id="formr" class="level2">
+<h2 class="anchored" data-anchor-id="formr">FormR</h2>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

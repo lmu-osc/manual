@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Matomo Analytics – 2</title>
+<title>Create a New Members Profile Page – 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Matomo Analytics</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../updating_website/using_fiona.html">Updating Website</a></li><li class="breadcrumb-item"><a href="../updating_website/create_new_members_page.html">Create a Profile Page</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -213,13 +213,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Updating Website</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../updating_website/using_fiona.html" class="sidebar-item-text sidebar-link">
@@ -240,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../updating_website/create_new_members_page.html" class="sidebar-item-text sidebar-link">
+  <a href="../updating_website/create_new_members_page.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Create a Profile Page</span></a>
   </div>
 </li>
@@ -455,21 +455,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-matomo_analytics.html-file" id="toc-the-matomo_analytics.html-file" class="nav-link active" data-scroll-target="#the-matomo_analytics.html-file">The <code>matomo_analytics.html</code> File</a></li>
-  <li><a href="#our-matomo-instance" id="toc-our-matomo-instance" class="nav-link" data-scroll-target="#our-matomo-instance">Our Matomo Instance</a></li>
-  <li><a href="#matomo-tracking-code-to-generate" id="toc-matomo-tracking-code-to-generate" class="nav-link" data-scroll-target="#matomo-tracking-code-to-generate">Matomo Tracking Code to Generate</a>
-  <ul class="collapse">
-  <li><a href="#generating-matomo-code" id="toc-generating-matomo-code" class="nav-link" data-scroll-target="#generating-matomo-code">Generating Matomo Code</a></li>
-  </ul></li>
+  <li><a href="#individual-members" id="toc-individual-members" class="nav-link active" data-scroll-target="#individual-members">Individual Members</a></li>
+  <li><a href="#institutional-members" id="toc-institutional-members" class="nav-link" data-scroll-target="#institutional-members">Institutional members:</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../updating_website/using_fiona.html">Updating Website</a></li><li class="breadcrumb-item"><a href="../updating_website/create_new_members_page.html">Create a Profile Page</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Matomo Analytics</h1>
+<h1 class="title">Create a New Members Profile Page</h1>
 </div>
 
 
@@ -486,57 +482,55 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This procedure is still a work in-progress, and <strong>is not yet live.</strong></p>
-</div>
-</div>
-<p><a href="https://matomo.org/">Matomo</a> is a privacy-focused, self-hosted web analytics tool that allows us to get an idea of how much each of our tutorials are being used, where they’re being accessed from (rough geographic area), and from where people are being linked to our websites (e.g.&nbsp;directly from other LMU OSC websites, or from other sites that link to us.) At the end of the day, these analytics are useful for us in 1) improving the sites to see which sites have more/less traffic than expected and 2) quantify the utility of our sites for grant purposes.</p>
-<section id="the-matomo_analytics.html-file" class="level1">
-<h1>The <code>matomo_analytics.html</code> File</h1>
-<p>(Note: this section is very likely to change–we may soon include a template Matomo analytics script).</p>
-<p>This file is intentionally left empty in the tutorial template, but is intended to hold a tracking script which has code specific to each individual website. This code can only be generated within our self-hosted Matomo instance.</p>
-<p>Please contact any of the OSC admin members with a link to the GitHub Pages website you are developing, and request that Matomo tracking code be generated.</p>
-</section>
-<section id="our-matomo-instance" class="level1">
-<h1>Our Matomo Instance</h1>
-<p>As mentioned, we self-host an instance of Matomo on our servers so the data we collect is assured to remain within the EU, and is not passed along to any other parties.</p>
-<p>Access to our Matomo instance, and especially access to the server containing the instance, is restricted to a handful of OSC staff members. If you believe you need access, please contact Felix. Additionally, if you are an OSC admin or staff who needs direct access to the server, please contact Felix to discuss.</p>
-</section>
-<section id="matomo-tracking-code-to-generate" class="level1">
-<h1>Matomo Tracking Code to Generate</h1>
-<p>(Matomo provides some default tracking, but this does not necessarily collect all of the information we want to incldue–after determining what we cant to collect, add the Matomo-specific instructions here e.g.&nbsp;what options to choose when generating the code in the UI.)</p>
-<section id="generating-matomo-code" class="level2">
-<h2 class="anchored" data-anchor-id="generating-matomo-code">Generating Matomo Code</h2>
-<p>If you are one of the “superusers” of our Matomo instance, you can generate code with the following steps:</p>
-<ol type="1">
-<li>Log in at www.analytics.osc.lmu.de</li>
-<li>Press “All Websites” and then “Add a new website”</li>
-<li>Our websites are <em>not</em> intranet sites so select “Website”</li>
-<li>Fill out the page with the following information
+<p><a href="https://www.osc.uni-muenchen.de/members/index.html">Follow this link</a> to see where the Members page is on the OSC Website.</p>
+<section id="individual-members" class="level2">
+<h2 class="anchored" data-anchor-id="individual-members">Individual Members</h2>
+<p><strong>How will you know when to add a member to the page?</strong></p>
+<p>Malika will send you an email containing all the relevant information from the person themselves. If any information is missing, let Malika know and she will either get the information or give further instructions.</p>
+<p><strong>How to add a new individual member to the page?</strong></p>
+<p>Follow this path in Fiona: <code>Startseite / 00 Fakultätsübergreifende Einrichtungen → eOpen Science Center → Members → Individual Members</code></p>
 <ul>
-<li>Name: the tutorial title</li>
-<li>URL: the GitHub Pages site link</li>
-</ul></li>
-<li>Save the configuration</li>
-<li>Click “View tracking code” for the tutorial. Make sure you select the correct tutorial from the list! <!-- 7. Under the "JavaScript Tracking Code" section, press the "Show advanced options" dropdown. --> <!--     - Select "Disable all tracking cookies" --></li>
-<li>Copy the tracking code</li>
-<li>Send the tracking code back to the requestor, and remind them to place it in the <code>matomo_analytics.html</code> file as is.
+<li>Depending on which kind of member, open the respective folder (LMU, Associated, Past, Fellows)</li>
+<li>Copy a folder of an already existing member by clicking on that folder and then clicking the “Kopieren” sign( next to the scissors at the top)</li>
+<li>Click on the respective members folder from the beginning again and paste the copied folder by clicking the “Einfügen” sign (next to the “copy” sign at the top)</li>
+<li>Start editing the pasted folder with the information that you received from Malika</li>
+</ul>
+<p>What you need to change:</p>
 <ul>
-<li>Alternatively, you can just open a pull request in their repo</li>
+<li><p>Under “<strong>Felder</strong>”, click “<strong>alle bearbeiten</strong>” and edit:</p>
+<ul>
+<li><strong>Titel</strong></li>
+<li><strong>Anrede</strong></li>
+<li><strong>Akademischer Titel</strong></li>
+<li><strong>Nachname &amp; Vorname</strong></li>
+<li><strong>Funktion</strong></li>
+<li><strong>E-Mail</strong></li>
+<li><strong>Website</strong></li>
 </ul></li>
-</ol>
+<li><p><strong>Feldgruppe</strong>: To change how their faculty and department info appear in the Members table (while still in “<strong>alle bearbeiten</strong>”) go to <code>Feldgruppe → Weitere Felder</code> then change “<strong>benutzerdefiniert1</strong> (faculty)” &amp; “<strong>benutzerdefiniert2</strong> (department)”</p></li>
+<li><p><strong>Foto</strong>:</p>
+<ul>
+<li>Save the picture from the mail on your device/computer</li>
+<li>While in the new member’s profile in Fiona, upload the photo by clicking the <code>Datei → Datei importieren</code> button in the top toolbar. Use “Choose File” to find the image on your device</li>
+<li>Then link the uploaded picture in the “<strong>Foto</strong>” section under “<strong>Felder</strong>”</li>
+<li>You might have to make the picture smaller. Here’s how: click on the picture, then in the top toolbar click <code>Bearbeiten → Bild bearbeiten → Skalieren</code> and choose “<strong>Breite: 200px</strong>”</li>
+</ul></li>
+<li><p><strong>Hauptinhalt</strong>: Paste the Mission Statement of the new member in “<strong>Hauptinhalt</strong>”</p></li>
+<li><p>Publish: click “<strong>Bearbeitung abschließen</strong>” icon on the second toolbar on the top of the screen.</p></li>
+</ul>
+</section>
+<section id="institutional-members" class="level2">
+<h2 class="anchored" data-anchor-id="institutional-members">Institutional members:</h2>
+<p>Again, you can copy existing members here and adapt following information.</p>
+<p><strong>These members are shown with</strong>:</p>
+<ul>
+<li>Title of the member</li>
+<li>An image of their logo</li>
+<li>Abstract about the institution (mostly written by themselves)</li>
+<li>Contact person: name [link to contact page]</li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

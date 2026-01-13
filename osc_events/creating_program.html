@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Matomo Analytics – 2</title>
+<title>Creating a Program and Liaising with Guest Instructor – 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Matomo Analytics</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../osc_events/creating_program.html">Organizing an OSC Event</a></li><li class="breadcrumb-item"><a href="../osc_events/creating_program.html">Creating a Program and Liaising with Guest Instructor</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -271,16 +271,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">Organizing an OSC Event</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../osc_events/creating_program.html" class="sidebar-item-text sidebar-link">
+  <a href="../osc_events/creating_program.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Creating a Program and Liaising with Guest Instructor</span></a>
   </div>
 </li>
@@ -455,21 +455,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-matomo_analytics.html-file" id="toc-the-matomo_analytics.html-file" class="nav-link active" data-scroll-target="#the-matomo_analytics.html-file">The <code>matomo_analytics.html</code> File</a></li>
-  <li><a href="#our-matomo-instance" id="toc-our-matomo-instance" class="nav-link" data-scroll-target="#our-matomo-instance">Our Matomo Instance</a></li>
-  <li><a href="#matomo-tracking-code-to-generate" id="toc-matomo-tracking-code-to-generate" class="nav-link" data-scroll-target="#matomo-tracking-code-to-generate">Matomo Tracking Code to Generate</a>
-  <ul class="collapse">
-  <li><a href="#generating-matomo-code" id="toc-generating-matomo-code" class="nav-link" data-scroll-target="#generating-matomo-code">Generating Matomo Code</a></li>
-  </ul></li>
+  <li><a href="#creating-a-program" id="toc-creating-a-program" class="nav-link active" data-scroll-target="#creating-a-program">Creating a Program</a></li>
+  <li><a href="#liaising-with-guest-instructor" id="toc-liaising-with-guest-instructor" class="nav-link" data-scroll-target="#liaising-with-guest-instructor">Liaising with Guest Instructor</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../osc_events/creating_program.html">Organizing an OSC Event</a></li><li class="breadcrumb-item"><a href="../osc_events/creating_program.html">Creating a Program and Liaising with Guest Instructor</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Matomo Analytics</h1>
+<h1 class="title">Creating a Program and Liaising with Guest Instructor</h1>
 </div>
 
 
@@ -486,57 +482,83 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This procedure is still a work in-progress, and <strong>is not yet live.</strong></p>
-</div>
-</div>
-<p><a href="https://matomo.org/">Matomo</a> is a privacy-focused, self-hosted web analytics tool that allows us to get an idea of how much each of our tutorials are being used, where they’re being accessed from (rough geographic area), and from where people are being linked to our websites (e.g.&nbsp;directly from other LMU OSC websites, or from other sites that link to us.) At the end of the day, these analytics are useful for us in 1) improving the sites to see which sites have more/less traffic than expected and 2) quantify the utility of our sites for grant purposes.</p>
-<section id="the-matomo_analytics.html-file" class="level1">
-<h1>The <code>matomo_analytics.html</code> File</h1>
-<p>(Note: this section is very likely to change–we may soon include a template Matomo analytics script).</p>
-<p>This file is intentionally left empty in the tutorial template, but is intended to hold a tracking script which has code specific to each individual website. This code can only be generated within our self-hosted Matomo instance.</p>
-<p>Please contact any of the OSC admin members with a link to the GitHub Pages website you are developing, and request that Matomo tracking code be generated.</p>
-</section>
-<section id="our-matomo-instance" class="level1">
-<h1>Our Matomo Instance</h1>
-<p>As mentioned, we self-host an instance of Matomo on our servers so the data we collect is assured to remain within the EU, and is not passed along to any other parties.</p>
-<p>Access to our Matomo instance, and especially access to the server containing the instance, is restricted to a handful of OSC staff members. If you believe you need access, please contact Felix. Additionally, if you are an OSC admin or staff who needs direct access to the server, please contact Felix to discuss.</p>
-</section>
-<section id="matomo-tracking-code-to-generate" class="level1">
-<h1>Matomo Tracking Code to Generate</h1>
-<p>(Matomo provides some default tracking, but this does not necessarily collect all of the information we want to incldue–after determining what we cant to collect, add the Matomo-specific instructions here e.g.&nbsp;what options to choose when generating the code in the UI.)</p>
-<section id="generating-matomo-code" class="level2">
-<h2 class="anchored" data-anchor-id="generating-matomo-code">Generating Matomo Code</h2>
-<p>If you are one of the “superusers” of our Matomo instance, you can generate code with the following steps:</p>
-<ol type="1">
-<li>Log in at www.analytics.osc.lmu.de</li>
-<li>Press “All Websites” and then “Add a new website”</li>
-<li>Our websites are <em>not</em> intranet sites so select “Website”</li>
-<li>Fill out the page with the following information
+<section id="creating-a-program" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-program">Creating a Program</h2>
+<p>Here’s a useful checklist of things to do to when creating a program:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Create a tentative program, do some research, define the target audience</label></p></li>
+<li><p><label><input type="checkbox">Decide on format (e.g hybrid participants and/or hybrid presenters; one or several concurrent sessions)</label></p></li>
+<li><p><label><input type="checkbox">Invite potential presenters 3 months in advance, give them a 2 weeks deadline to reply, offer range of date for possible event and ask them to provide several possible options if in person, send follow up email</label></p></li>
+<li><p><label><input type="checkbox">Create a webpage for advertisement (abstract, profile, requirement, etc) for the OSC website - see section <a href="updating_website/Create a News Item.qmd">create news item</a>.</label></p></li>
+<li><p><label><input type="checkbox">Draft a flyer and newsletter items</label></p></li>
+<li><p><label><input type="checkbox">Meet with workshop co-instructors to coordinate content</label></p></li>
+<li><p><label><input type="checkbox">Collect content for final program</label></p>
 <ul>
-<li>Name: the tutorial title</li>
-<li>URL: the GitHub Pages site link</li>
+<li>Title</li>
+<li>Abstract</li>
+<li>Instructor short bio</li>
+<li>Target audience (e.g.&nbsp;field, career stage, dept, interdisciplinary, country)</li>
+<li>Prerequisite (e.g.&nbsp;prior knowledge necessary, software installed)</li>
+<li>Format (e.g.&nbsp;hybrid, in person, online)</li>
+<li>Language (english or german)</li>
+<li>Custom question(s) to ask registrants (e.g.&nbsp;prior knowledge)</li>
+<li>Max number of participants</li>
 </ul></li>
-<li>Save the configuration</li>
-<li>Click “View tracking code” for the tutorial. Make sure you select the correct tutorial from the list! <!-- 7. Under the "JavaScript Tracking Code" section, press the "Show advanced options" dropdown. --> <!--     - Select "Disable all tracking cookies" --></li>
-<li>Copy the tracking code</li>
-<li>Send the tracking code back to the requestor, and remind them to place it in the <code>matomo_analytics.html</code> file as is.
+<li><p><label><input type="checkbox">Book room as soon as you have possible dates - only Malika has access to the LSF booking system of the LMU. It is hard to find room available within the semester so this step needs to be done as much in advance as possible and with several possible date to maximize chances of finding a room for one of the dates.</label></p></li>
+<li><p><label><input type="checkbox">Send a calendar invitation to all instructors and facilitators with a Zoom link if hybrid or online and/or the in person location. The Zoom link should be ‘no sign in required,’ with an alternative host (e.g., another member of the team)- to add them, use their <span class="citation" data-cites="lmu.de">@lmu.de</span> emails.</label></p></li>
+<li><p><label><input type="checkbox">Ask presenters for an open license, consent to record, etc.</label></p></li>
+<li><p><label><input type="checkbox">Ask instructors bank details for payment / prepare all admin forms for reimbursement and collect handwritten signatures during event</label></p></li>
+</ul>
+</section>
+<section id="liaising-with-guest-instructor" class="level2">
+<h2 class="anchored" data-anchor-id="liaising-with-guest-instructor">Liaising with Guest Instructor</h2>
+<p>Here are some email templates for communication with a potential <strong>guest instructor</strong>:</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset nav-pill">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">First Email</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Second Email</a></li></ul>
+<div class="tab-content nav-pill">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><em>this is a mixture of several emails - one needs to pick and choose the appropriate sentences</em></p>
+<p>Dear Prof Dr X</p>
+<p>My name is Malika, I am the coordinator of the LMU Open Science Center (if they know Felix: whose managing director is Felix Schönbrodt).</p>
+<p>Based on your work XX, we were wondering if you would be willing and available to give a workshop on X sometimes in XXMonthsXX</p>
+<p>I think XX what would be interesting for our community and why XX . Usually, PhD students and post docs across many disciplines constitute the core of the audience, but we can limit it to a certain type of research and specify prerequisites if more appropriate.</p>
+<p>Would that be of interest to you? Please feel free to suggest any alternative topics. I’m available for a brief Zoom call to define a more precise topic if easier!</p>
+<p>We usually run all our events in a hybrid format, with the presenter in person and with me facilitating the online participation. However, solely in person or online events are also possible. Should you be able to come to Munich, we would of course cover your travel and accommodation expenses. We can also cover the travel expense of an additional person you would like to bring to facilitate the workshop with you.</p>
+<p>// Though all is possible, our workshops are preferentially offered in a hybrid format (I can help with online facilitation) with the presenter in person. If interested, would you be able to come in person? We would pay for your transport and accommodation of course.</p>
+<p>A possible time for this event could be XX-XX. from XX monthXX</p>
+<p>I would be grateful if you would let me know either way before XX two weeks later XX and if interested, if you could please suggest a few suitable dates!</p>
+<p>Thanks and best wishes Malika</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><em>In this email, confirm specific details</em>:</p>
 <ul>
-<li>Alternatively, you can just open a pull request in their repo</li>
-</ul></li>
-</ol>
+<li>set a date</li>
+<li>ask if they need hotel, if then for what night, we can book it</li>
+<li>let them know they need to book their own train and send us the e-tickets</li>
+<li>ask them for their bank info and address in a specific form to be returned as a Word document</li>
+</ul>
+<p><em>Get the following information at least one month prior to the event</em>.</p>
+<ul>
+<li>Title</li>
+<li>Abstract</li>
+<li>Instructor short bio</li>
+<li>Target audience (e.g.&nbsp;field, career stage, dept, interdisciplinary, country)</li>
+<li>Prerequisite (e.g.&nbsp;prior knowledge necessary, software installed)</li>
+<li>Format (e.g.&nbsp;hybrid, in person, online)</li>
+<li>Language (english or german)</li>
+<li>Custom question(s) to ask registrants (e.g.&nbsp;prior knowledge)</li>
+<li>Max number of participants</li>
+<li>Further emails</li>
+</ul>
+<p>Forward them the hotel booking, usually:</p>
+<p>Hotel Carlton MunichFürstenstraße 12 <br> 80333 Munich <br> Tel.: +49 (89) 380 33 76 00 <br> welcome@hotel-carlton.de</p>
+<p>We need an invoice from the hotel with the LMU address and VAT number as found in the credential file…</p>
+<p>LMU Open Science Center <br> Ludwig-Maximilians-Universität München <br> Department Psychologie <br> Leopoldstr. 13, 80802 München <br> VAT: DE811205325</p>
+</div>
+</div>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
