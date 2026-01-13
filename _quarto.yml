@@ -1,124 +1,138 @@
 project:
   type: website
-  output-dir: _site
+  pre-render: wget -nc https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss
+  post-render: rm lmu-osc-custom.scss
+
 
 website:
-  title: "2"
+  title: "OSC Manual"
+  page-footer:
+    center: "Copyright, 2024 Open Science Center at LMU Munich"
+    border: false
+  search:
+    location: sidebar
+  repo-url: https://github.com/lmu-osc/manual
+  repo-actions: [edit, issue]
+  back-to-top-navigation: true
+  page-navigation: true
+  favicon: assets/LMU_OSC_favicon.jpg
+  margin-header: |
+    ![](/assets/LMU_OSC_logo.svg){width="175"}
+
+
   navbar:
+    right:
+      - about.qmd
     left:
       - href: index.qmd
-        text: "3"
+        text: Home
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/lmu-osc/manual
+          - text: Report a Bug
+            url:  https://github.com/lmu-osc/manual/issues
+      - icon: house-heart
+        url: https://www.osc.uni-muenchen.de/index.html
+
 
   sidebar:
-    style: docked
+    style: "docked"
     collapse-level: 1
     contents:
-      - text: Home
+      - text: "Home"
         href: index.qmd
+
+      - section: "About"
+        contents:
+          - href: about/page1.qmd
+            text: "TOPIC1 Page1 Title"
+          - href: about/page2.qmd
+            text: "TOPIC1 Page2 Title"
+
+      - section: "Membership"
+        contents:
+          - href: membership/page1.qmd
+            text: "General Information"
+          - href: membership/page1.qmd
+            text: "Professors and Postdocs"
+          - href: membership/page2.qmd
+            text: "PhD Students and Postgraduates"
+          - href: membership/page3.qmd
+            text: "Masters and Bachelors"
+          - href: membership/page4.qmd
+            text: "HiWis (Student Assistants)"
+
       - section: "Staff Onboarding"
         contents:
-          - href: staff_onboarding/internal_communication.qmd
-            text: "Internal Communication"
-          - href: staff_onboarding/working_envi.qmd
-            text: "Working Environment"
-          - href: staff_onboarding/administration.qmd
-            text: "Administration"
-      - section: "OSC GitHub Organization"
+          - href: new_staff/page1.qmd
+            text: "TOPIC2 Page1 Title"
+          - href: new_staff/page2.qmd
+            text: "TOPIC2 Page2 Title"
+          - href: new_staff/page3.qmd
+            text: "TOPIC2 Page3 Title"
+
+      - section: "GitHub Organization"
         contents:
-          - href: path/file.qmd
-            text: "About GitHub Organization"
-          - href: path/file.qmd
-            text: "Essential Git Skills"
-          - href: path/file.qmd
+          - href: github/page1.qmd
+            text: "About out GitHub Organization"
+          - href: github/page2.qmd
+            text: "Essential git Skills"
+          - href: github/page3.qmd
             text: "Repository Overview"
-          - href: path/file.qmd
+          - href: github/page4.qmd
             text: "Resource Repos"
-          - href: path/file.qmd
+          - href: github/page4.qmd
             text: "What are GitHub Actions?"
-          - href: path/file.qmd
+          - href: github/page4.qmd
             text: "Pull Requests and Issues"
-          - href: path/file.qmd
+          - href: github/page4.qmd
             text: "Zenodo Integration"
-          - href: path/file.qmd
+          - href: github/page4.qmd
             text: "Citations and Licenses"
-      - section: "Updating Website" #with Fiona for now
+
+      - section: "LRZ GitLab"
         contents:
-          - href: updating_website/using_fiona.qmd
-            text: "Using Fiona"
-          - href: updating_website/create_news_item.qmd
-            text: "Create a News Item"
-          - href: updating_website/create_event_page.qmd
-            text: "Create an Event Page"
-          - href: updating_website/create_new_members_page.qmd
-            text: "Create a Profile Page"
-          - href: .qmd
-            text: "Edit Other Pages"
-      - section: "Onboarding an OSC Member"
+          - href: gitlab/page1.qmd
+            text: "The LRZ GitLab"
+          - href: gitlab/page2.qmd
+            text: "Repository Overview"
+          - href: gitlab/page2.qmd
+            text: "Web Hosting?"
+
+      - section: "Authoring Tutorials"
         contents:
-          - href: onboarding_member/onboarding_osc_member.qmd
-            text: "Onboarding an OSC Member"
-      - section: "Organizing an OSC Event"
-        contents:
-          - href: osc_events/creating_program.qmd
-            text: "Creating a Program and Liaising with Guest Instructor"
-          - href: osc_events/registration.qmd
-            text: "Registration and OSC Event Pages"
-          - href: osc_events/liaising_with_attendees.qmd
-            text: "Liaising with Attendees"
-          - href: osc_events/additional_prep.qmd
-            text: "Additional Preparation"
-          - href: osc_events/logistics.qmd
-            text: "Logistics within the Event"
-          - href: osc_events/wrapup_feedback.qmd
-            text: "Wrap Up and Feedback"
-      - section: "OSC Public Outreach"
-        contents:
-          - href: osc_outreach/social_media.qmd
-            text: "Social Media"
-          - href: osc_outreach/newsletter.qmd
-            text: "Newsletter"
-          - href: osc_outreach/flyer_design_and_images.qmd
-            text: "Flyer Design and Images"
-          - href: osc_events/additional_prep.qmd
-            text: "Mail Drafts"
-      - section: "Authoring an OSC Tutorial"
-        contents:
-          - href: path/file.qmd
+          - href: authoring_tutorials/introduction.qmd
             text: "Introduction"
-          - href: path/file.qmd
+          - href: authoring_tutorials/tutorial_template_repo.qmd
             text: "Tutorial Template Overview"
-          - href: path/file.qmd
+          - href: authoring_tutorials/getting_started.qmd
             text: "Getting Started"
-          - href: path/file.qmd
-            text: "Things You Shouldn't Change"
-          - href: path/file.qmd
+          - href: authoring_tutorials/things_you_should_not_change.qmd
+            text: "Things You Shouldn't change"
+          - href: authoring_tutorials/matomo_analytics.qmd
             text: "Matomo Analytics"
-          - href: path/file.qmd
+          - href: authoring_tutorials/authoring_and_versions.qmd
             text: "Authoring and Versions"
-          - href: path/file.qmd
+          - href: authoring_tutorials/best_practices.qmd
             text: "Best Practices"
-      - section: "Switching a Group to Open Research Practices"
-        contents:
-          - href: path/file.qmd
-            text: "Survey"
-          - href: path/file.qmd
-            text: "Template Google Doc"
-          - href: path/file.qmd
-            text: "Feedback Form"
-          - href: path/file.qmd
-            text: "Additional Processes"
-          - href: path/file.qmd
-            text: "Lessons Learned and Iterative Improvements"
+
+
 
 format:
   html:
     theme:
       - cosmo
-      - assets/lmu-osc-custom.scss
+      - lmu-osc-custom.scss
     css:
-      - assets/styles.css   # or the remote URL you used before
+      - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-styles.css
     toc: true
     fontsize: 13pt
     code-overflow: wrap
     grid:
       sidebar-width: 300px
+    include-in-header:
+      - file: matomo-analytics.html
+
+editor: source
