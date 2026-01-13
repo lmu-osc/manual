@@ -1,6 +1,6 @@
 ---
-title: "Lab Manual"
+title: "Manual"
 ---
 
-This website serves as the lab manual for the LMU Open Science Center
+This is a Quarto website.
 
