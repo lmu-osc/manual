@@ -71,7 +71,7 @@ Zenodo in particular looks for a Citation File Format citation file so that it c
 
 ### About.qmd
 
-In addition to the CITATION file, we include citation information direcrtly in the tutorial in the About pages.
+In addition to the CITATION file, we include citation information directly in the tutorial in the About pages.
 
 1. Open the about.qmd file, and complete the `yaml` header with essentially the same citation information as above, filling out the fields to the best of your ability.
 

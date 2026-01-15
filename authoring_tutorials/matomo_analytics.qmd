@@ -28,7 +28,7 @@ Access to our Matomo instance, and especially access to the server containing th
 
 # Matomo Tracking Code to Generate
 
-(Matomo provides some default tracking, but this does not necessarily collect all of the information we want to incldue--after determining what we cant to collect, add the Matomo-specific instructions here e.g. what options to choose when generating the code in the UI.)
+(Matomo provides some default tracking, but this does not necessarily collect all of the information we want to include. After determining what we cant to collect, add the Matomo-specific instructions here e.g. what options to choose when generating the code in the UI.)
 
 ## Generating Matomo Code
 
