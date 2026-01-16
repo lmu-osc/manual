@@ -75,22 +75,18 @@ website:
 
       - section: "GitHub Organization"
         contents:
-          - href: github/page1.qmd
-            text: "About out GitHub Organization"
-          - href: github/page2.qmd
-            text: "Essential git Skills"
-          - href: github/page3.qmd
-            text: "Repository Overview"
-          - href: github/page4.qmd
+          - href: github/lmu_osc_github_org_overview.qmd
+            text: "LMU OSC GitHub Org Overview"
+          - href: github/essential_technical_skills.qmd
+            text: "Essential Tech Skills"
+          - href: github/projects.qmd
+            text: "Projects Overview"
+          - href: github/osc_repos.qmd
+            text: "Repositories Overview"
+          - href: github/osc_resource_repos.qmd
             text: "Resource Repos"
-          - href: github/page4.qmd
-            text: "What are GitHub Actions?"
-          - href: github/page4.qmd
-            text: "Pull Requests and Issues"
-          - href: github/page4.qmd
-            text: "Zenodo Integration"
-          - href: github/page4.qmd
-            text: "Citations and Licenses"
+          - href: github/customizations.qmd
+            text: "Our Customizations"
 
       - section: "LRZ GitLab"
         contents:
