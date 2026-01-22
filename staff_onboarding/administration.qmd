@@ -1,0 +1,55 @@
+---
+title: "Administration"
+---
+
+## Contract 
+
+### Contract Creation
+
+1. Lessons learned from Sarah and Sara Lil
+2. Getting LRZ credentials
+3. Getting Psy email
+4. Getting zoom pro account with webinar extension
+
+### Contract Renewal 
+
+### Transponder
+
+A **transponder** is the contact-less key used to open the office door.
+
+- Please sign the *form when collecting it
+- It must be activated by pointing it towards the activation station box at the front door of Building 2 and clicking it.
+  - If the activation station box blinks with a green light, the transponder has been activated. This activation lasts for **2 days** after which it must be activated again.
+  - If the activation station box blinks red or does not blink at all, there may be an issue with the transponder.
+  
+::: callout-important
+## Transponder Help
+
+If there is an issue with your transponder, you can either request a new one (if available) or visit the „Schliessmedien“-Office at LMU, Geschwister-Scholl-Platz 1, Raum EZ 008.
+:::
+
+### Logging Hours
+
+**Working Times**
+You are free to work at the most suitable time for you. Please try and answer within 2 days whether you can or cannot take on an assigned task, providing a timeline if you can take it on.
+
+**Tracking Hours**
+Please use [this Google Sheet template](https://docs.google.com/spreadsheets/d/14mOZh3M0XvYzte4neq2CknvnU29HckUL/edit?rtpof=true&sd=true&gid=853702177#gid=853702177) in the [Logging working hours folder](https://drive.google.com/drive/folders/15R3RZ4DiHdWOtbbj2w7dd1W2E2N_XkR_?usp=sharing) to log your hours. 
+
+Follow this steps: 
+
+- Make a copy of this template
+- Save the template offline for your usage
+- Be responsible in entering your working hours 
+
+::: callout-note
+## Meetings 
+
+Times when we meet count towards your working hours.
+:::
+
+You can also use this to:
+
+- Mark out unavailable times 
+- Calculate how much time some tasks take for future planning purposes 
+- Add in possible deadlines

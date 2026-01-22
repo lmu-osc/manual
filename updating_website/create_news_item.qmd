@@ -1,0 +1,66 @@
+---
+title: "Create a News Item"
+format: html
+---
+
+[Follow this link](https://www.osc.uni-muenchen.de/news/index.html) to see where the News Items are on the OSC Website.
+
+News Items are about:
+
+-   Any upcoming events,
+-   The latest Open Science related information,
+-   Members of the OSC receiving an award, etc.
+
+**How will you know when to make a 'News' item?**
+
+Malika will write to you when you have to create a news item about something and she will also provide you all important information that needs to be included,
+
+::: callout-tip
+Most times this item also has to be added to the events table (for further information see: [Events Table]() ).
+:::
+
+**How to create a new news item?**
+
+Follow this path in Fiona: `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / News`
+
+First, the main strategy is to copy an existing page and then manually change whatever needs to be changed. Therefore, the existing pages can serve as *templates* for creating new ones.
+
+If you don’t want to copy and paste an existing page, let's go through what you need to do to create the new page in the News Folder in Fiona.
+
+**What you need to change**:
+
+- **Name**: This will be shown in the hyperlink so choose something short and precise which describes the content well. Depending on the category, there may be rules on how to name it e.g. just by adding a number (affected categories: Hacky Hour, Journal Club, Newsletter)
+- **Vorlage**: \[Allgemein\] Meldung
+- **Titel**: This is the title of the news item so choose something short and precise:
+    - For categories, titles are written in following style: Category: “Title”
+- **Untertitel**: The subtitle mostly serves as a short description about:
+    - Who conducts the event, then write “by…” or “organised by…"
+    - Or What you can learn new in this event
+- **Teaserbild**: Every News Item has its own icon depending on its category. You can find all icons in Fiona (named after category) by following this path: `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Images / News Images`
+    - Icons for creating new news items: [icons_for_OSC_website.pptx](https://docs.google.com/presentation/d/15rVXv6SutUa7jsG0UyaOHC-WuQ4vlwJh/edit?slide=id.p1#slide=id.p1)
+- **Datum**: date of the event
+    - When not applicable, choose the date you publish the item.
+- *Hauptinhalt**: The main information of the news item depends on the category (for further information see below).
+    - You need to summarize the main information about the news. However, this depends on what you write in following structure grey box with short information at the top of the page including:
+        -   When: date of event
+        -   Where: address/ zoom link
+        -   Instructor(s): person from institution
+        -   Registration: pretix registration link
+        -   Material: (optional) in most times osf link
+        -   Abstract: short description of the event
+        -   Target audience: who should attend the event
+        -   Agenda: what’s the time schedule for the event
+        -   Logistics: what should you bring to the event
+    - Gültig ab: Doesn’t need to be changed just be mindful that it’s a past date (which it will be when you just copy an existing news item and work with that as a template)
+
+**Categories**
+
+-   Discussion
+-   Hacky Hour
+-   Journal Club
+-   Workshop
+-   Interview
+-   Lecture
+-   Newsletter
+-   Symposium
+-   (not applicable): e.g. award, paper releases, job ad,...
