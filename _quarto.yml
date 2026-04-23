@@ -79,10 +79,8 @@ website:
           - href: path/file.qmd
             text: "Citations and Licenses"
     
-      - section: "Updating Website" #with Fiona for now
+      - section: "Updating Website"
         contents:
-          - href: updating_website/using_fiona.qmd
-            text: "Using Fiona"
           - href: updating_website/create_news_item.qmd
             text: "Create a News Item"
           - href: updating_website/create_event_page.qmd
@@ -152,6 +150,10 @@ website:
           - href: path/file.qmd
             text: "Lessons Learned and Iterative Improvements"
 
+      - section: "Archive"
+        contents:
+          - href: archive/using_fiona.qmd
+            text: "Using Fiona"
 
 
 format:

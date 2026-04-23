@@ -3,7 +3,7 @@ title: "Create a News Item"
 format: html
 ---
 
-[Follow this link](https://www.osc.uni-muenchen.de/news/index.html) to see where the News Items are on the OSC Website.
+[Follow this link](https://www.osc.lmu.de/news/) to see where the News Items are on the LMU OSC Website.
 
 News Items are about:
 
@@ -15,52 +15,49 @@ News Items are about:
 
 Malika will write to you when you have to create a news item about something and she will also provide you all important information that needs to be included,
 
-::: callout-tip
-Most times this item also has to be added to the events table (for further information see: [Events Table]() ).
-:::
+**Creating a new news item**
 
-**How to create a new news item?**
 
-Follow this path in Fiona: `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / News`
+1. Using the [GitHub workflow](path/file), create an **issue** (if Malika already hasn't) in the **lmu-osc.github.io** repo, title it "Add News Item *title of news item*", and use it to create a new branch. 
+2. In your local copy, switch to this branch 
+3. Navigate to `news → news → templates` folder **(!!!NOTE: there is no template .qmd - to ask Pat about)**
+4. Make a copy of the `_news_template.qmd` file and follow the instructions to fill it out according to the News item details 
+5. Change the name of the new .qmd file by following this format: YYYY-MM-DD-short-slug
 
-First, the main strategy is to copy an existing page and then manually change whatever needs to be changed. Therefore, the existing pages can serve as *templates* for creating new ones.
+**Full Instructions**
 
-If you don’t want to copy and paste an existing page, let's go through what you need to do to create the new page in the News Folder in Fiona.
+Full and detailed instructions of how to add a new member using the `_news_template.qmd` can be found in the README in the first `news` folder. 
 
-**What you need to change**:
+Or [click here to view the New Event README](assets/newsitem_README.md).
 
-- **Name**: This will be shown in the hyperlink so choose something short and precise which describes the content well. Depending on the category, there may be rules on how to name it e.g. just by adding a number (affected categories: Hacky Hour, Journal Club, Newsletter)
-- **Vorlage**: \[Allgemein\] Meldung
-- **Titel**: This is the title of the news item so choose something short and precise:
-    - For categories, titles are written in following style: Category: “Title”
-- **Untertitel**: The subtitle mostly serves as a short description about:
-    - Who conducts the event, then write “by…” or “organised by…"
-    - Or What you can learn new in this event
-- **Teaserbild**: Every News Item has its own icon depending on its category. You can find all icons in Fiona (named after category) by following this path: `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Images / News Images`
-    - Icons for creating new news items: [icons_for_OSC_website.pptx](https://docs.google.com/presentation/d/15rVXv6SutUa7jsG0UyaOHC-WuQ4vlwJh/edit?slide=id.p1#slide=id.p1)
-- **Datum**: date of the event
-    - When not applicable, choose the date you publish the item.
-- *Hauptinhalt**: The main information of the news item depends on the category (for further information see below).
-    - You need to summarize the main information about the news. However, this depends on what you write in following structure grey box with short information at the top of the page including:
-        -   When: date of event
-        -   Where: address/ zoom link
-        -   Instructor(s): person from institution
-        -   Registration: pretix registration link
-        -   Material: (optional) in most times osf link
-        -   Abstract: short description of the event
-        -   Target audience: who should attend the event
-        -   Agenda: what’s the time schedule for the event
-        -   Logistics: what should you bring to the event
-    - Gültig ab: Doesn’t need to be changed just be mindful that it’s a past date (which it will be when you just copy an existing news item and work with that as a template)
+## News Categories
 
-**Categories**
+### Announcement
+Use this category for important organizational updates, major changes, launches, partnerships, or general news that does not fit into a more specific category.
 
--   Discussion
--   Hacky Hour
--   Journal Club
--   Workshop
--   Interview
--   Lecture
--   Newsletter
--   Symposium
--   (not applicable): e.g. award, paper releases, job ad,...
+### Awards/Recognition
+Use this category to highlight awards, honours, grants, nominations, or other forms of recognition received by OSC members or affiliated projects.
+
+### Call for Application
+Use this category for opportunities that require applications, such as training programs, workshops, summer schools, fellowships, or other initiatives with registration/application deadlines.
+
+### Event Highlights
+Use this category for recap posts about past events hosted, attended, or supported by the OSC. These posts should focus on key takeaways, outcomes, or reflections—not event promotion.
+
+### Interviews
+Use this category for featured interviews, Q&As, or spotlight conversations with OSC members, collaborators, or guests.
+
+### Job Ads
+Use this category for job openings, internships, student assistant roles, fellowships, or other employment opportunities related to the OSC or partner organizations.
+
+### New Members
+Use this category to announce and introduce new OSC members, including individual members, institutional members, or affiliated collaborators.
+
+### Newsletters
+Use this category for newsletter releases, updates, or archived newsletter announcements.
+
+### Publications
+Use this category to highlight newly published papers, reports, preprints, books, or other scholarly outputs from OSC members.
+
+### Reports
+Use this category for formal reports, annual summaries, project reports, evaluation reports, or documents that summarize findings, progress, or institutional activities.

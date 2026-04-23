@@ -1,0 +1,181 @@
+---
+title: "Using Fiona"
+---
+
+## About Fiona
+
+Fiona was our management system for our website
+
+[General information about Fiona](https://www.internetdienste.verwaltung.uni-muenchen.de/online-workshops/basisworkshop-online/index.html) 
+
+**Navigating Fiona**
+
+- Follow [this link to an online workshop](https://www.internetdienste.verwaltung.uni-muenchen.de/online-workshops/basisworkshop-online/anm-bw-online/index.html) and apply to take the course: 
+- Send an email to **it.internet@verwaltung.uni-muenchen.de** with your “LMU-Kennung” and the Fiona path `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center` with Felix and Malika cc’ed to give it legitimacy.
+- After taking the course and receiving the relevant permission to access Fiona, follow [this link to the Fiona Login site](https://cms.verwaltung.uni-muenchen.de/default/NPS/login)
+- Once in Fiona, follow this path to find the OSC:
+`Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center`
+
+::: callout-important
+## Accessing Fiona
+
+If you are trying to access Fiona outside of the eduroam wifi, you will need to use a specific VPN. [Follow this link](https://www.eduvpn.org/client-apps/), download eduVPN, and turn it on before logging in to Fiona. 
+:::
+
+## Creating a New Members Profile Page
+
+### Individual Members 
+
+**How will you know when to add a member to the page?**
+
+Malika will send you an email containing all the relevant information from the person themselves. If any information is missing, let Malika know and she will either get the information or give further instructions. 
+
+**How to add a new individual member to the page?**
+
+Follow this path in Fiona: `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Members / Individual Members`
+
+- Depending on which kind of member, open the respective folder (LMU, Associated, Past, Fellows)
+- Copy a folder of an already existing member by clicking on that folder and then clicking the “Kopieren” sign( next to the scissors at the top)
+- Click on the respective members folder from the beginning again and paste the copied folder by clicking the “Einfügen” sign (next to the “copy” sign at the top)
+- Start editing the pasted folder with the information that you received from Malika
+
+**What you need to change**:
+
+- Under “Felder” click “alle bearbeiten” and edit:
+  - **Titel**
+  - **Anrede**
+  - **Akademischer Titel**
+  - **Nachname & Vorname**
+  - **Funktion**
+  - **E-Mail**
+  - **Website**
+
+- **Foto**: save the picture from the mail on your computer and upload it in the folder you created for the new member by clicking the “Date importieren” button at the top. Then link the uploaded picture in the “Foto” section. 
+  - You might have to make the picture smaller. Here's how: click on picture, click `Bearbeiten > Bild bearbeiten > Skalieren” > choose “Breite: 200px"`
+- Paste the Mission Statement of the new member in “Hauptinhalt”.
+- Publish: “Workflow > Bearbeitung abschließen”
+
+### Institutional members:
+
+Again, you can copy existing members here and adapt following information. 
+
+**These members are shown with**:
+
+- Title of the member
+- An image of their logo
+- Abstract about the institution (mostly written by themselves)
+- Contact person: name [link to contact page]
+
+## Creating an Event Page
+
+The event table serves as an overview of past and upcoming events of the OSC. 
+
+::: callout-important
+## Past Events
+
+Keep an eye out for when the events pass and update the table regularly.
+:::
+
+**How to create a new events item?**
+
+Follow this path in Fiona: `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Events`
+
+Unlike the News Items, the Events Items are all put into ONE table. Each event will have its own webpage that will be included as a *link* in the table.
+
+- Click on **Hauptinhalt**
+- Go to the notebook with the pencil (under “Vorlage”)
+- Click “Zeile oberhalb hinzufügen” when updating the table (the latest event is at the top)
+
+**What to add**:
+
+- **Date**: date + time
+- **Description**: category + **title** in bold + by + **link to news item** in bold; in the following structure: “Category: “**Title**” by xy **[more]**”
+- **Language**: English/German or English or German
+- **Place**:
+  - When in Person: *address* preferably with room number e.g.: “Leopoldstraße 13, room 3322”
+  - When Zoom: “Online (Zoom)”
+  - When Hybrid: “Hybrid (*address* and via Zoom)"
+- **Contact**: Name of main contact person/team with link to either mail or page with contact information
+
+**Event Categories**: (similar to News categories)
+
+- Discussion
+- Hacky Hour
+- ReproducibiliTea Journal Club
+- Workshop
+- Lecture
+- Symposium
+- Conference
+- Summer School
+- Panel Discussion Series
+- Application call
+
+### Meetups
+
+The Meetups are grassroot initiatives which aim to promote open science within their discipline or to provide important skills to work transparently in a research context. 
+
+**Meetup categories are**:
+
+- LMU Open Science Initiative in Psychology (*not active*)
+- LMU Open Science Initiative in Medicine 
+- LMU Open Science Initiative in Statistics
+- ReproducibiliTea Journal Club (*not active*)
+- Hacky Hour (*not active*)
+
+## Creating a News Item
+
+News Items are about:
+
+-   Any upcoming events,
+-   The latest Open Science related information,
+-   Members of the OSC receiving an award, etc.
+
+**How will you know when to make a 'News' item?**
+
+Malika will write to you when you have to create a news item about something and she will also provide you all important information that needs to be included,
+
+**How to create a new news item?**
+
+Follow this path in Fiona: `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / News`
+
+First, the main strategy is to copy an existing page and then manually change whatever needs to be changed. Therefore, the existing pages can serve as *templates* for creating new ones.
+
+If you don’t want to copy and paste an existing page, let's go through what you need to do to create the new page in the News Folder in Fiona.
+
+**What you need to change**:
+
+- **Name**: This will be shown in the hyperlink so choose something short and precise which describes the content well. Depending on the category, there may be rules on how to name it e.g. just by adding a number (affected categories: Hacky Hour, Journal Club, Newsletter)
+- **Vorlage**: \[Allgemein\] Meldung
+- **Titel**: This is the title of the news item so choose something short and precise:
+    - For categories, titles are written in following style: Category: “Title”
+- **Untertitel**: The subtitle mostly serves as a short description about:
+    - Who conducts the event, then write “by…” or “organised by…"
+    - Or What you can learn new in this event
+- **Teaserbild**: Every News Item has its own icon depending on its category. You can find all icons in Fiona (named after category) by following this path: `Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Images / News Images`
+    - Icons for creating new news items: [icons_for_OSC_website.pptx](https://docs.google.com/presentation/d/15rVXv6SutUa7jsG0UyaOHC-WuQ4vlwJh/edit?slide=id.p1#slide=id.p1)
+- **Datum**: date of the event
+    - When not applicable, choose the date you publish the item.
+- **Hauptinhalt**: The main information of the news item depends on the category (for further information see below).
+    - You need to summarize the main information about the news. However, this depends on what you write in following structure grey box with short information at the top of the page including:
+        -   When: date of event
+        -   Where: address/ zoom link
+        -   Instructor(s): person from institution
+        -   Registration: pretix registration link
+        -   Material: (optional) in most times osf link
+        -   Abstract: short description of the event
+        -   Target audience: who should attend the event
+        -   Agenda: what’s the time schedule for the event
+        -   Logistics: what should you bring to the event
+    - Gültig ab: Doesn’t need to be changed just be mindful that it’s a past date (which it will be when you just copy an existing news item and work with that as a template)
+
+**Categories**
+
+-   Discussion
+-   Hacky Hour
+-   Journal Club
+-   Workshop
+-   Interview
+-   Lecture
+-   Newsletter
+-   Symposium
+-   (not applicable): e.g. award, paper releases, job ad,...
