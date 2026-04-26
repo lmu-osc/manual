@@ -497,10 +497,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output cell-output-stdout">
 <pre><code>.
 ├── .Rbuildignore
+├── .filenameignore
 ├── .github
 │   ├── .gitignore
 │   └── workflows
 │       ├── citation-check.yml
+│       ├── filename-check.yml
 │       ├── publish.yaml
 │       └── style.yaml
 ├── .gitignore
@@ -511,8 +513,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ├── _quarto.yml
 ├── about.qmd
 ├── assets
-│   ├── LMU_OSC_favicon.jpg
-│   └── LMU_OSC_logo.svg
+│   ├── lmu-osc-favicon.jpg
+│   └── lmu-osc-logo.svg
 ├── index.qmd
 ├── lmu-osc-custom.scss
 ├── matomo-analytics.html
@@ -762,9 +764,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">repo-actions</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">edit</span><span class="kw">,</span><span class="at"> issue</span><span class="kw">]</span></span>
 <span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">back-to-top-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">page-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> assets/LMU_OSC_favicon.jpg</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> assets/lmu-osc-favicon.jpg</span></span>
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="fu">  margin-header</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    ![](/assets/LMU_OSC_logo.svg){width="175"}</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    ![](/assets/lmu-osc-logo.svg){width="175"}</span>
 <span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="at">  </span></span>
 <span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="at">  </span></span>
 <span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
@@ -880,9 +882,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">repo-actions</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">edit</span><span class="kw">,</span><span class="at"> issue</span><span class="kw">]</span></span>
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">back-to-top-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">page-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> assets/LMU_OSC_favicon.jpg</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> assets/lmu-osc-favicon.jpg</span></span>
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="fu">  margin-header</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    ![](/assets/LMU_OSC_logo.svg){width="175"}</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    ![](/assets/lmu-osc-logo.svg){width="175"}</span>
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="at">  </span></span>
 <span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="at">  </span></span>
 <span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
@@ -955,9 +957,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">repo-actions</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">edit</span><span class="kw">,</span><span class="at"> issue</span><span class="kw">]</span></span>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">back-to-top-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">page-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> assets/LMU_OSC_favicon.jpg</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">favicon</span><span class="kw">:</span><span class="at"> assets/lmu-osc-favicon.jpg</span></span>
 <span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="fu">  margin-header</span><span class="kw">: </span><span class="ch">|</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    ![](/assets/LMU_OSC_logo.svg){width="175"}</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    ![](/assets/lmu-osc-logo.svg){width="175"}</span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="at">  </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
