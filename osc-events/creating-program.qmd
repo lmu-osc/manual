@@ -10,7 +10,7 @@ Here's a useful checklist of things to do to when creating a program:
 -   [ ] Create a tentative program, do some research, define the target audience
 -   [ ] Decide on format (e.g hybrid participants and/or hybrid presenters; one or several concurrent sessions)
 -   [ ] Invite potential presenters 3 months in advance, give them a 2 weeks deadline to reply, offer range of date for possible event and ask them to provide several possible options if in person, send follow up email
--   [ ] Create a webpage for advertisement (abstract, profile, requirement, etc) for the OSC website - see section [create news item](updating_website/Create%20a%20News%20Item.qmd).
+-   [ ] Create a webpage for advertisement (abstract, profile, requirement, etc) for the OSC website - see section [create news item](updating-website/Create%20a%20News%20Item.qmd).
 -   [ ] Draft a flyer and newsletter items
 -   [ ] Meet with workshop co-instructors to coordinate content
 -   [ ] Collect content for final program

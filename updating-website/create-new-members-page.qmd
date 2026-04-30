@@ -35,7 +35,7 @@ There will be a designated place in the `_people_template.qmd` to put the path t
 
 Full and detailed instructions of how to add a new member using the `_people_template.qmd` can be found in the README in the first `people` folder. 
 
-Or [click here to view the New Member README](assets/newmember_README.md).
+Or [click here to view the New Member README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/people).
 
 Any questions or missing information, please ask Malika.
 

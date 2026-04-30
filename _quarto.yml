@@ -1,7 +1,7 @@
 project:
   type: website
-  pre-render: wget -nc https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss
-  post-render: rm lmu-osc-custom.scss
+  # pre-render: wget -nc https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss
+  # post-render: rm lmu-osc-custom.scss
 
 
 website:
@@ -53,11 +53,11 @@ website:
 
       - section: "Staff Onboarding"
         contents:
-          - href: staff_onboarding/internal_communication.qmd
+          - href: staff-onboarding/internal-communication.qmd
             text: "Internal Communication"
-          - href: staff_onboarding/working_envi.qmd
+          - href: staff-onboarding/working-envi.qmd
             text: "Working Environment"
-          - href: staff_onboarding/administration.qmd
+          - href: staff-onboarding/administration.qmd
             text: "Administration"
     
       - section: "OSC GitHub Organization"
@@ -81,43 +81,43 @@ website:
     
       - section: "Updating Website"
         contents:
-          - href: updating_website/create_news_item.qmd
+          - href: updating-website/create-news-item.qmd
             text: "Create a News Item"
-          - href: updating_website/create_event_page.qmd
+          - href: updating-website/create-event-page.qmd
             text: "Create an Event Page"
-          - href: updating_website/create_new_members_page.qmd
+          - href: updating-website/create-new-members-page.qmd
             text: "Create a Profile Page"
           - href: .qmd
             text: "Edit Other Pages"
  
       - section: "Onboarding an OSC Member"
         contents:
-          - href: onboarding_member/onboarding_osc_member.qmd
+          - href: onboarding-member/onboarding-osc-member.qmd
             text: "Onboarding an OSC Member"
   
       - section: "Organizing an OSC Event"
         contents:
-          - href: osc_events/creating_program.qmd
+          - href: osc-events/creating-program.qmd
             text: "Creating a Program and Liaising with Guest Instructor"
-          - href: osc_events/registration.qmd
+          - href: osc-events/registration.qmd
             text: "Registration and OSC Event Pages"
-          - href: osc_events/liaising_with_attendees.qmd
+          - href: osc-events/liaising-with-attendees.qmd
             text: "Liaising with Attendees"
-          - href: osc_events/additional_prep.qmd
+          - href: osc-events/additional-prep.qmd
             text: "Additional Preparation"
-          - href: osc_events/logistics.qmd
+          - href: osc-events/logistics.qmd
             text: "Logistics within the Event"
-          - href: osc_events/wrapup_feedback.qmd
+          - href: osc-events/wrapup-feedback.qmd
             text: "Wrap Up and Feedback"
       - section: "OSC Public Outreach"
         contents:
-          - href: osc_outreach/social_media.qmd
+          - href: osc-outreach/social-media.qmd
             text: "Social Media"
-          - href: osc_outreach/newsletter.qmd
+          - href: osc-outreach/newsletter.qmd
             text: "Newsletter"
-          - href: osc_outreach/flyer_design_and_images.qmd
+          - href: osc-outreach/flyer-design-and-images.qmd
             text: "Flyer Design and Images"
-          - href: osc_events/additional_prep.qmd
+          - href: osc-events/additional-prep.qmd
             text: "Mail Drafts"
   
       - section: "Authoring an OSC Tutorial"
@@ -152,7 +152,7 @@ website:
 
       - section: "Archive"
         contents:
-          - href: archive/using_fiona.qmd
+          - href: archive/using-fiona.qmd
             text: "Using Fiona"
 
 
@@ -160,7 +160,7 @@ format:
   html:
     theme:
       - cosmo
-      - lmu-osc-custom.scss
+      # - lmu-osc-custom.scss
     css:
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-styles.css
     toc: true

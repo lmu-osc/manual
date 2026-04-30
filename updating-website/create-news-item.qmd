@@ -28,7 +28,7 @@ Malika will write to you when you have to create a news item about something and
 
 Full and detailed instructions of how to add a new member using the `_news_template.qmd` can be found in the README in the first `news` folder. 
 
-Or [click here to view the New Event README](assets/newsitem_README.md).
+Or [click here to view the New Event README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/news).
 
 ## News Categories
 

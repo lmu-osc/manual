@@ -23,7 +23,7 @@ Events are grouped by the year it occured and specific category of event.
 
 Full and detailed instructions of how to add a new member using the `_event_template.qmd` can be found in the README in the first `events` folder. 
 
-Or [click here to view the New Event README](assets/newevent_README.md).
+Or [click here to view the New Event README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/events).
 
 ## Event categories
 
