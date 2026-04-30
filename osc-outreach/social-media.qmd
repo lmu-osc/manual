@@ -1,0 +1,31 @@
+---
+title: "Social Media"
+format: html
+---
+
+## Administration
+
+Create personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages. 
+
+If you don’t want this, you can also log in with the OSC account and we only indicate your name in the profile page of this account (for accountability). 
+
+Ask Malika to give you access to the credentials for the following OSC accounts:
+
+- LinkedIn (lim: 3000): https://www.linkedin.com/company/91742131/admin/feed/posts/
+- Bluesky (lim: 300): https://bsky.app/profile/lmu-osc.bsky.social/post/3kbhybwivz22q
+- Mastodon (lim: 500): https://scicomm.xyz/home
+- X is deactivated
+
+The OSC publishes different **categories of posts** on social media:
+
+- Research work from members (e.g. articles)
+- Information about various aspects of open science 
+- Upcoming events for open science community
+- Campaigns for making open science topics more visible
+
+Your main ideas and plans when to publish any campaigns will get into the [main Social Media doc](https://docs.google.com/document/u/0/d/18aIg0UEzhhkycSRIPZLNTflnXUX-H0kaBzMa-dC3V_8/edit)
+
+When you create longer texts or campaigns, create a separate Google doc for that and work in there (?)
+
+Use insights from social media (especially LinkedIn) to scope for new potential members (e.g. view the follower list, see those who liked and commented)
+

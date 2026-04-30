@@ -1,0 +1,42 @@
+---
+title: "Administration"
+---
+
+## Contract 
+
+### Contract Creation
+
+1. Lessons learned from Sarah and Sara Lil
+2. Getting LRZ credentials
+3. Getting Psy email
+4. Getting zoom pro account with webinar extension
+
+### Contract Renewal 
+
+### Transponder
+
+### Logging Hours
+
+**Working Times**
+You are free to work at the most suitable time for you. Please try and answer within 2 days whether you can or cannot take on an assigned task, providing a timeline if you can take it on.
+
+**Tracking Hours**
+Please use [this Google Sheet template](https://docs.google.com/spreadsheets/d/14mOZh3M0XvYzte4neq2CknvnU29HckUL/edit?rtpof=true&sd=true&gid=853702177#gid=853702177) in the [Logging working hours folder](https://drive.google.com/drive/folders/15R3RZ4DiHdWOtbbj2w7dd1W2E2N_XkR_?usp=sharing) to log your hours. 
+
+Follow this steps: 
+
+- Make a copy of this template
+- Save the template offline for your usage
+- Be responsible in entering your working hours 
+
+::: callout-important
+## Meetings 
+
+Times when we meet count towards your working hours.
+:::
+
+You can also use this to:
+
+- Mark out unavailable times 
+- Calculate how much time some tasks take for future planning purposes 
+- Add in possible deadlines

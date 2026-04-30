@@ -1,0 +1,68 @@
+---
+title: "Create an Event Page"
+format: html
+---
+
+[Follow this link](https://www.osc.lmu.de/events/) to see where the Event items are on the LMU OSC Website.
+
+## What's on this page?
+
+**Upcoming Events** will always be at the top with events that are in the future. An event will automatically move to **Past Events** after the event has happened (i.e. the date of the event is before "today's" date). 
+
+Events are grouped by the year it occured and specific category of event. 
+
+## Creating a new event item
+
+1. Using the [GitHub workflow](path/file), create an **issue** (if Malika already hasn't) in the **lmu-osc.github.io** repo, title it "Add New Event *name of event*", and use it to create a new branch. 
+2. In your local copy, switch to this branch 
+3. Navigate to `events → events → templates` folder **(!!!NOTE: the template .qmd is currently not in this folder- to ask Pat about)**
+4. Make a copy of the `_event_template.qmd` file and follow the instructions to fill it out according to the event details 
+5. Change the name of the new .qmd file by following this format: YYYY-MM-DD-event-name
+
+**Full Instructions**
+
+Full and detailed instructions of how to add a new member using the `_event_template.qmd` can be found in the README in the first `events` folder. 
+
+Or [click here to view the New Event README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/events).
+
+## Event categories
+
+### Conference
+Use this category for large academic or professional gatherings focused on a specific theme where researchers, practitioners, or organizations present work, share ideas, and network. Example: *META-REP 2024 – Conference on Meta-Science and Replicability in the Social, Behavioral, and Cognitive Sciences.*
+
+### Discussion
+Use this category for informal or semi-structured conversations centered around a specific topic, issue, or challenge in Open Science. These may include panel discussions, roundtables, or community conversations.
+
+### Event
+Use this as a general category for activities that do not clearly fit into any of the more specific categories below. This can include networking events, launches, celebrations, or general public engagement activities (e.g. Love Data Week).
+
+### Hackathon
+Use this category for collaborative, project-based events where participants work intensively over a short period to solve problems, build tools, or develop ideas related to Open Science or research infrastructure.
+
+Examples of activities may include:
+
+- Learning how to install a BitTorrent client to seed and safeguard critical research datasets  
+- Scraping at-risk datasets  
+- Repurposing old hardware into data rescue nodes  
+- Improving documentation or developing one-click installation scripts to simplify deployment  
+
+### Hacky Hour
+Use this category for informal coding or troubleshooting sessions where participants come together to work on technical challenges, share solutions, or collaborate in a relaxed setting. Each session is usually centered around a specific topic or tool.
+
+### Lecture
+Use this category for formal presentations delivered by a speaker or expert to share knowledge on a specific topic. These events are typically more presentation-focused than interactive.
+
+### OSIM Meetup
+Use this category specifically for Open Science Initiative Munich (OSIM) community meetups, networking events, or collaborative gatherings.
+
+### ReproducibiliTea Journal Club
+Use this category for journal club sessions under the ReproducibiliTea format, where participants discuss research papers and topics related to reproducibility, transparency, and Open Science.
+
+### Summer School
+Use this category specifically for the annual Open Science Summer School—a multi-day training event designed to provide participants with structured learning experiences, workshops, and practical skill development.
+
+### Symposium
+Use this category for academic events that bring together multiple speakers or presentations centered around a shared research theme.
+
+### Workshop
+Use this category for interactive, hands-on training sessions where participants actively develop skills, complete activities, or engage with practical tools and methods.

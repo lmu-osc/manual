@@ -1,0 +1,44 @@
+---
+title: "Create a New Members Profile Page"
+format: html
+---
+
+[Follow this link](https://www.osc.lmu.de/people/members.html) to see where the Members page is on the LMU OSC Website.
+
+## Individual Members 
+
+**How will you know when to add a member to the page?**
+
+Malika will send you an email containing all the relevant information from the person themselves. If any information is missing, let Malika know and she will either get the information or give further instructions. 
+
+**How to add a new individual member to the page?**
+
+1. Using the [GitHub workflow](path/file), create an **issue** (if Malika already hasn't) in the **lmu-osc.github.io** repo, title it "Add New Member *firstname lastname*", and use it to create a new branch. 
+2. In your local copy, switch to this branch 
+3. Navigate to `people → people → templates` folder
+4. Make a copy of the `_people_template.qmd` file and follow the instructions to fill it out according to the person's information 
+5. Change the name of the new .qmd file by following this format: firstname-lastname
+
+**Adding the new member's profile picture**
+
+1. Save either the picture sent by the new member during their application OR a public picture of them (for e.g. the picture used for their profile on the official LMU Website)
+2. Navigate to `people → people → images` folder
+3. Add the picture to this foler and change the name following this format: lastname-firstname
+
+::: callout-note
+## Adding the Profile Picture
+
+There will be a designated place in the `_people_template.qmd` to put the path to the picture.
+:::
+
+**Full Instructions**
+
+Full and detailed instructions of how to add a new member using the `_people_template.qmd` can be found in the README in the first `people` folder. 
+
+Or [click here to view the New Member README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/people).
+
+Any questions or missing information, please ask Malika.
+
+## Institutional Members
+
+what can i say here? what's different in the process?

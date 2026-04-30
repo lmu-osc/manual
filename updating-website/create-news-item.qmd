@@ -1,0 +1,63 @@
+---
+title: "Create a News Item"
+format: html
+---
+
+[Follow this link](https://www.osc.lmu.de/news/) to see where the News Items are on the LMU OSC Website.
+
+News Items are about:
+
+-   Any upcoming events,
+-   The latest Open Science related information,
+-   Members of the OSC receiving an award, etc.
+
+**How will you know when to make a 'News' item?**
+
+Malika will write to you when you have to create a news item about something and she will also provide you all important information that needs to be included,
+
+**Creating a new news item**
+
+
+1. Using the [GitHub workflow](path/file), create an **issue** (if Malika already hasn't) in the **lmu-osc.github.io** repo, title it "Add News Item *title of news item*", and use it to create a new branch. 
+2. In your local copy, switch to this branch 
+3. Navigate to `news → news → templates` folder **(!!!NOTE: there is no template .qmd - to ask Pat about)**
+4. Make a copy of the `_news_template.qmd` file and follow the instructions to fill it out according to the News item details 
+5. Change the name of the new .qmd file by following this format: YYYY-MM-DD-short-slug
+
+**Full Instructions**
+
+Full and detailed instructions of how to add a new member using the `_news_template.qmd` can be found in the README in the first `news` folder. 
+
+Or [click here to view the New Event README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/news).
+
+## News Categories
+
+### Announcement
+Use this category for important organizational updates, major changes, launches, partnerships, or general news that does not fit into a more specific category.
+
+### Awards/Recognition
+Use this category to highlight awards, honours, grants, nominations, or other forms of recognition received by OSC members or affiliated projects.
+
+### Call for Application
+Use this category for opportunities that require applications, such as training programs, workshops, summer schools, fellowships, or other initiatives with registration/application deadlines.
+
+### Event Highlights
+Use this category for recap posts about past events hosted, attended, or supported by the OSC. These posts should focus on key takeaways, outcomes, or reflections—not event promotion.
+
+### Interviews
+Use this category for featured interviews, Q&As, or spotlight conversations with OSC members, collaborators, or guests.
+
+### Job Ads
+Use this category for job openings, internships, student assistant roles, fellowships, or other employment opportunities related to the OSC or partner organizations.
+
+### New Members
+Use this category to announce and introduce new OSC members, including individual members, institutional members, or affiliated collaborators.
+
+### Newsletters
+Use this category for newsletter releases, updates, or archived newsletter announcements.
+
+### Publications
+Use this category to highlight newly published papers, reports, preprints, books, or other scholarly outputs from OSC members.
+
+### Reports
+Use this category for formal reports, annual summaries, project reports, evaluation reports, or documents that summarize findings, progress, or institutional activities.

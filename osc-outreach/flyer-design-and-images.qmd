@@ -1,0 +1,30 @@
+---
+title: "Flyer Design and Images"
+format: html
+---
+
+[Here is the template for a flyer](https://docs.google.com/presentation/d/188QPtIdl2IjIXbJcthXYj3QCBCJURbqJ/edit?slide=id.p1#slide=id.p1).
+
+## Printing Service
+
+The printing service for the LMU is: Hausdruckerei (Ricoh Deutschland GmbH Printcenter LMU)
+
+You can find [all information here](https://www.serviceportal.verwaltung.uni-muenchen.de/services/beschaffung/ausstatt_rahmenvertr_dienstlst/hausdruckerei/index.html) (price list, formulars, etc).  
+
+**Responsible Person**: Thomas <br>
+**Address**: Ricoh Deutschland GmbH, Hausdruckerei der LMU, Ludwig-Maximilians-Universität München Leopoldstr. 3, 80802 München <br>
+**Phone**:  089/2180-3669
+
+Current opening hours of the in-house print shop: <br>
+Monday to Thursday from 9:00 AM to 3:00 PM
+Friday: CLOSED
+
+If you want to print something, (e.g flyers) write a mail to `hausdruckerei@lmu.de` or call them and you can talk to them about your preferences.
+
+## Canva
+
+Canva is a free-to-use online graphic design platform that helps to create content, even without any design experience. Whether you want to make social media posts, presentations, posters, logos, or videos, Canva offers an easy drag-and-drop many customizable templates.
+
+[Click here to go to the Canva website](https://www.canva.com/de_de/) <br>
+[Click here for some instructions on how to use Canva](https://www.canva.com/learn/how-to-canva-beginners-guide/)
+
