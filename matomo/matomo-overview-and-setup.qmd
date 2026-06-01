@@ -1,0 +1,55 @@
+---
+title: Matomo Overview and Our Server Setup
+---
+
+
+## What is Matomo?
+
+* Matomo is a free and open-source web analytics platform that provides insights into website traffic and user behavior. It is a powerful alternative to proprietary analytics tools, offering features such as real-time data tracking, customizable dashboards, and privacy-focused analytics.
+* We use Matomo on our websites to track visitor interactions, understand our audience, and improve our content and user experience. Our Matomo instance is hosted on our own server, which allows us to have full control over our data and ensure compliance with privacy regulations.
+
+## Our Matomo Server Setup
+
+* Our Matomo instance is hosted on a dedicated server that we manage. This setup allows us to have full control over the analytics data and ensures that we can customize the tracking and reporting features to meet our specific needs.
+* Specific details of our server setup of Matomo are kept within our LRZ GitLab instance, and are not publicly available. If you are interested in learning more about our server setup or have specific questions about how we manage our Matomo instance, please feel free to reach out to us directly.
+* We do, however, use a fairly standard Docker Compose setup for our Matomo instance, which includes the Matomo application and a MySQL database. This setup allows us to easily manage and update our Matomo instance while ensuring that it runs smoothly and efficiently.
+
+```yaml
+version: "3"
+
+services:
+  db:
+    image: mariadb
+    command: --max-allowed-packet=64MB
+    restart: always
+    environment:
+      - MARIADB_DATABASE=matomo
+      - MARIADB_USER
+      - MARIADB_PASSWORD
+      - MARIADB_ROOT_PASSWORD
+    volumes:
+      - ./db:/var/lib/mysql
+
+  app:
+    image: matomo
+    restart: always
+    volumes:
+      - ./matomo:/var/www/html
+    ports:
+      - 127.0.0.1:8080:80
+```
+
+## Privacy and Data Protection
+
+* We take privacy and data protection seriously, and our Matomo setup is configured to comply with relevant regulations such as GDPR. We do not collect personally identifiable information (PII) without explicit consent, and we provide users with options to opt-out of tracking if they choose to do so.
+* All IP addresses collected on our Matomo instance are anonymized to 2 bytes e.g. 192.168.xxx.xxx, and we do not use cookies for tracking purposes. That is, we have enabled the "Force tracking without cookies" option:
+
+> Enabling this option will automatically update matomo.js, so it contains some additional code to ensure all trackers won't use cookies.? Additionally Matomo will ignore all tracking cookies on server side.
+>
+> Cookies will be disabled even when using the consent methods in Matomo tracker and calling for example the cookie consent methods won't enable cookies.
+
+* This means that we do not track individual users across sessions, and we do not collect any information that could be used to identify specific individuals. According to Matomo:
+
+> Note: Geolocation will have approximately the same results with 1 byte anonymized. With 2 bytes or more, Geolocation will be inaccurate.
+
+* Moreover, this is in line with the university's stated privacy policy (https://www.lmu.de/de/footer/datenschutz/)

@@ -1,0 +1,9 @@
+---
+title: Matomo Analytics
+---
+
+* chapter discusses matomo analytics
+* what it is, technical details on the setup on our server, how to upgrade that
+* how and when to include tracking in a new website, and how to check that it's working
+* how and when to create campaigns and use the campaign tracking features of matomo
+* how to use the data from matomo to understand your audience and improve your website
