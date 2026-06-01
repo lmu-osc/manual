@@ -53,3 +53,18 @@ services:
 > Note: Geolocation will have approximately the same results with 1 byte anonymized. With 2 bytes or more, Geolocation will be inaccurate.
 
 * Moreover, this is in line with the university's stated privacy policy (https://www.lmu.de/de/footer/datenschutz/)
+
+
+## Updating Matomo
+
+* Generally can do this directly from the Matomo dashboard, and simply clicking on the "Update Matomo" button when a new version is available. However, it should be noted that this will only update the Matomo application, but not the version of the SQL database that Matomo uses. If there are significant updates to the database, then we may need to update the database version as well, which would require some additional steps and testing to ensure that everything continues to work smoothly after the update.
+* We will generally try to keep our Matomo instance up to date with the latest stable release, as this ensures that we have access to the latest features and security updates.
+* The more involved process of updating the database version in step with the application would require you to pull the latest version of both images which can be done with the following commands:
+
+```bash
+cd /path/to/matomo # see GitLab documentation for details on where this is located
+docker-compose pull
+docker-compose up -d
+```
+
+* This will pull the latest versions of both the Matomo application and the MySQL database, and then restart the containers with the new versions. 
