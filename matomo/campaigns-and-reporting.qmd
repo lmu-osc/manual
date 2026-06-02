@@ -14,6 +14,12 @@ In short, a campaign is a way to track the effectiveness of specific marketing e
 
 `https://www.example.com/?utm_source=social&utm_medium=post&utm_campaign=social_media_campaign`
 
+where the `utm_source`, `utm_medium`, and `utm_campaign` parameters are used to track the source, medium, and name of the campaign, respectively. This is a general example, and Matomo uses its own specific tracking parameters, but the concept is the same: you add tracking parameters to your URLs to track the effectiveness of your campaigns in Matomo. For example, a Matomo URL with tracking parameters might look like this:
+
+`https://example.org/?mtm_campaign=name&mtm_kwd=campaign-keyword&mtm_medium=medium`
+
+where `mtm_campaign` is the campaign name, `mtm_kwd` is the campaign keyword, and `mtm_medium` is the campaign medium. By including these tracking parameters in your URLs, you can track the effectiveness of your campaigns in Matomo and see how many visitors are coming to your website from each campaign, and how they are engaging with your content.
+
 Note that these tracking parameters (UTM parameters) are not what is actually used in Matomo, but they are a common example of how tracking parameters work in general. Matomo uses its own specific tracking parameters, several of which will be discussed in the next section.
 
 ## How and When to Create Campaigns
