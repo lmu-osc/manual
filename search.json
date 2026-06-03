@@ -48,68 +48,56 @@
     ]
   },
   {
-    "objectID": "updating-website/create-new-members-page.html",
-    "href": "updating-website/create-new-members-page.html",
-    "title": "Create a New Members Profile Page",
+    "objectID": "updating-website/using-fiona.html",
+    "href": "updating-website/using-fiona.html",
+    "title": "Using Fiona",
     "section": "",
-    "text": "Follow this link to see where the Members page is on the LMU OSC Website.",
-    "crumbs": [
-      "Home",
-      "Updating Website",
-      "Create a Profile Page"
-    ]
+    "text": "Fiona was our internal content management system (CMS) for the OSC website, but we no longer use it since launching our new website in April of 2026"
   },
   {
-    "objectID": "updating-website/create-new-members-page.html#individual-members",
-    "href": "updating-website/create-new-members-page.html#individual-members",
-    "title": "Create a New Members Profile Page",
-    "section": "Individual Members",
-    "text": "Individual Members\nHow will you know when to add a member to the page?\nMalika will send you an email containing all the relevant information from the person themselves. If any information is missing, let Malika know and she will either get the information or give further instructions.\nHow to add a new individual member to the page?\n\nUsing the GitHub workflow, create an issue (if Malika already hasn’t) in the lmu-osc.github.io repo, title it “Add New Member firstname lastname”, and use it to create a new branch.\nIn your local copy, switch to this branch\nNavigate to people → people → templates folder\nMake a copy of the _people_template.qmd file and follow the instructions to fill it out according to the person’s information\nChange the name of the new .qmd file by following this format: firstname-lastname\n\nAdding the new member’s profile picture\n\nSave either the picture sent by the new member during their application OR a public picture of them (for e.g. the picture used for their profile on the official LMU Website)\nNavigate to people → people → images folder\nAdd the picture to this foler and change the name following this format: lastname-firstname\n\n\n\n\n\n\n\nNoteAdding the Profile Picture\n\n\n\nThere will be a designated place in the _people_template.qmd to put the path to the picture.\n\n\nFull Instructions\nFull and detailed instructions of how to add a new member using the _people_template.qmd can be found in the README in the first people folder.\nOr click here to view the New Member README.\nAny questions or missing information, please ask Malika.",
-    "crumbs": [
-      "Home",
-      "Updating Website",
-      "Create a Profile Page"
-    ]
+    "objectID": "updating-website/using-fiona.html#useful-links",
+    "href": "updating-website/using-fiona.html#useful-links",
+    "title": "Using Fiona",
+    "section": "Useful Links",
+    "text": "Useful Links\nThe OSC website\nGeneral information about Fiona"
   },
   {
-    "objectID": "updating-website/create-new-members-page.html#institutional-members",
-    "href": "updating-website/create-new-members-page.html#institutional-members",
-    "title": "Create a New Members Profile Page",
-    "section": "Institutional Members",
-    "text": "Institutional Members\nwhat can i say here? what’s different in the process?",
-    "crumbs": [
-      "Home",
-      "Updating Website",
-      "Create a Profile Page"
-    ]
+    "objectID": "updating-website/using-fiona.html#navigating-fiona",
+    "href": "updating-website/using-fiona.html#navigating-fiona",
+    "title": "Using Fiona",
+    "section": "Navigating Fiona",
+    "text": "Navigating Fiona\nLet’s get you ready to start using Fiona:\n\nFollow this link to an online workshop and apply to take the course:\nSend an email to it.internet@verwaltung.uni-muenchen.de with your “LMU-Kennung” and the Fiona path Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center with Felix and Malika cc’ed to give it legitimacy.\nAfter taking the course and receiving the relevant permission to access Fiona, follow this link to the Fiona Login site\nOnce in Fiona, follow this path to find the OSC: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center\n\n\n\n\n\n\n\nImportantAccessing Fiona\n\n\n\nIf you are trying to access Fiona outside of the eduroam wifi, you will need to use a specific VPN. Follow this link, download eduVPN, and turn it on before logging in to Fiona."
   },
   {
-    "objectID": "new-staff/page3.html",
-    "href": "new-staff/page3.html",
-    "title": "Page Title Here",
+    "objectID": "updating-website/create-news-item.html",
+    "href": "updating-website/create-news-item.html",
+    "title": "Create a News Item",
     "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible."
+    "text": "Follow this link to see where the News Items are on the LMU OSC Website.\nNews Items are about:\nHow will you know when to make a ‘News’ item?\nMalika will write to you when you have to create a news item about something and she will also provide you all important information that needs to be included,\nCreating a new news item\nFull Instructions\nFull and detailed instructions of how to add a new member using the _news_template.qmd can be found in the README in the first news folder.\nOr click here to view the New Event README.",
+    "crumbs": [
+      "Home",
+      "Updating Website",
+      "Create a News Item"
+    ]
   },
   {
-    "objectID": "new-staff/page3.html#level-two",
-    "href": "new-staff/page3.html#level-two",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two\n\nL3\n\n\nL3 Again\n\n\nAnd one more time"
+    "objectID": "updating-website/create-news-item.html#news-categories",
+    "href": "updating-website/create-news-item.html#news-categories",
+    "title": "Create a News Item",
+    "section": "News Categories",
+    "text": "News Categories\n\nAnnouncement\nUse this category for important organizational updates, major changes, launches, partnerships, or general news that does not fit into a more specific category.\n\n\nAwards/Recognition\nUse this category to highlight awards, honours, grants, nominations, or other forms of recognition received by OSC members or affiliated projects.\n\n\nCall for Application\nUse this category for opportunities that require applications, such as training programs, workshops, summer schools, fellowships, or other initiatives with registration/application deadlines.\n\n\nEvent Highlights\nUse this category for recap posts about past events hosted, attended, or supported by the OSC. These posts should focus on key takeaways, outcomes, or reflections—not event promotion.\n\n\nInterviews\nUse this category for featured interviews, Q&As, or spotlight conversations with OSC members, collaborators, or guests.\n\n\nJob Ads\nUse this category for job openings, internships, student assistant roles, fellowships, or other employment opportunities related to the OSC or partner organizations.\n\n\nNew Members\nUse this category to announce and introduce new OSC members, including individual members, institutional members, or affiliated collaborators.\n\n\nNewsletters\nUse this category for newsletter releases, updates, or archived newsletter announcements.\n\n\nPublications\nUse this category to highlight newly published papers, reports, preprints, books, or other scholarly outputs from OSC members.\n\n\nReports\nUse this category for formal reports, annual summaries, project reports, evaluation reports, or documents that summarize findings, progress, or institutional activities.",
+    "crumbs": [
+      "Home",
+      "Updating Website",
+      "Create a News Item"
+    ]
   },
   {
-    "objectID": "new-staff/page3.html#another-level-two",
-    "href": "new-staff/page3.html#another-level-two",
-    "title": "Page Title Here",
-    "section": "Another Level Two",
-    "text": "Another Level Two"
-  },
-  {
-    "objectID": "new-staff/page3.html#level-two-1",
-    "href": "new-staff/page3.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two"
+    "objectID": "new-staff/index.html",
+    "href": "new-staff/index.html",
+    "title": "OSC Manual",
+    "section": "",
+    "text": "Back to top"
   },
   {
     "objectID": "new-staff/page1.html",
@@ -140,32 +128,26 @@
     "text": "Level Two"
   },
   {
-    "objectID": "github/page1.html",
-    "href": "github/page1.html",
-    "title": "Page Title Here",
+    "objectID": "github/index.html",
+    "href": "github/index.html",
+    "title": "OSC Manual",
     "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible."
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "OSC GitHub Organization"
+    ]
   },
   {
-    "objectID": "github/page1.html#level-two",
-    "href": "github/page1.html#level-two",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two\n\nL3\n\n\nL3 Again\n\n\nAnd one more time"
-  },
-  {
-    "objectID": "github/page1.html#another-level-two",
-    "href": "github/page1.html#another-level-two",
-    "title": "Page Title Here",
-    "section": "Another Level Two",
-    "text": "Another Level Two"
-  },
-  {
-    "objectID": "github/page1.html#level-two-1",
-    "href": "github/page1.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two"
+    "objectID": "onboarding-member/index.html",
+    "href": "onboarding-member/index.html",
+    "title": "OSC Manual",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Onboarding an OSC Member"
+    ]
   },
   {
     "objectID": "osc-events/registration.html",
@@ -252,30 +234,93 @@
     ]
   },
   {
-    "objectID": "osc-events/liaising-with-attendees.html",
-    "href": "osc-events/liaising-with-attendees.html",
-    "title": "Liaising with Attendees",
+    "objectID": "osc-events/index.html",
+    "href": "osc-events/index.html",
+    "title": "OSC Manual",
     "section": "",
-    "text": "Here’s a useful checklist of things to do and consider when commmunicating with the attendees for an event:\n\nCreate registration page for public part of the event (several tickets, e.g. in person, online, waiting list for non-member – on for each session or for the whole course only).\nIf the registrant needs to apply to attend specific sessions (e.g. hands on workshop with limited number of seats), then develop rubrics to score applications.\nFor in-person reception: secure venue, catering, & prepare registration form\nAdvertise event to relevant channels, e.g.\n\ngraduate center\nInfodienst\nOSC\nBlueSky/Mastodon/LinkedIn\nUB University of Munich - Central Library\nList of comms officers per departments\nFollow up list of comm officers\n\nSend an email and forms to applicants\nConfirm attendance (Google form with name; email; “I confirm and will inform if need to cancel”; confirm mode of attendance and R/Julia) + Google form for their PI to approve; waiting list- confirm desire to be on waiting list (Google form) + registration page to attend public part of event\nCheck that registration numbers are normal, and check that the registrants bought the right tickets etc.\n\nAccept Klinikum, if their tickets need approval.\nTUM in person ticket also to approve.\nThe rest may need approval depending on whether there are seats remaining- email them minimally two days in advance. (Suggestion: email the top 3 on waiting list to ask whether they are still interested to be invited last minute or not)\n\nInform local attendees of in-person reception they need to register for\nprint signage for in person venue\nSend participants’ info to instructors who requested it\nHave the registration platform or manually send reminder to registrants/applicants with relevant info (e.g. Zoom link, abstracts)\nPossibly create online workspace for attendees + share CoC + share password protected webpage (e.g. with Zoom link, or private repository) - invite LMU participants to LMU chat OSC space\nEmail reminder to registrants either when fully booked or 4 days in advance (whichever comes first)\n\nMail draft if fully booked:\nDear registrants of the FIXME title (linked),\nThe in-person seats of this event are now booked out and there are already people on the waiting list.  Please cancel your seat reservation if you can no longer attend in person by emailing me back or directly on Pretix.  Your participation will remain possible online: FIXME zoom link\nMeeting ID: FIXME  Passcode: FIXME \nWe are looking forward to discussing with you soon!\n\nSend participants’ info to instructors who requested it\n\n\n\n\n Back to top",
+    "text": "Back to top",
     "crumbs": [
       "Home",
-      "Organizing an OSC Event",
-      "Liaising with Attendees"
+      "Organizing an OSC Event"
     ]
   },
   {
-    "objectID": "authoring-tutorials/matomo-analytics.html",
-    "href": "authoring-tutorials/matomo-analytics.html",
-    "title": "Matomo Analytics",
+    "objectID": "osc-events/wrapup-feedback.html",
+    "href": "osc-events/wrapup-feedback.html",
+    "title": "Wrap Up and Feedback",
     "section": "",
-    "text": "Warning\n\n\n\nThis procedure is still a work in-progress, and is not yet live.\nMatomo is a privacy-focused, self-hosted web analytics tool that allows us to get an idea of how much each of our tutorials are being used, where they’re being accessed from (rough geographic area), and from where people are being linked to our websites (e.g. directly from other LMU OSC websites, or from other sites that link to us.) At the end of the day, these analytics are useful for us in 1) improving the sites to see which sites have more/less traffic than expected and 2) quantify the utility of our sites for grant purposes."
+    "text": "After an event, you should send emails to wrap up the event and also collect feedback.",
+    "crumbs": [
+      "Home",
+      "Organizing an OSC Event",
+      "Wrap Up and Feedback"
+    ]
   },
   {
-    "objectID": "authoring-tutorials/matomo-analytics.html#generating-matomo-code",
-    "href": "authoring-tutorials/matomo-analytics.html#generating-matomo-code",
-    "title": "Matomo Analytics",
-    "section": "Generating Matomo Code",
-    "text": "Generating Matomo Code\nIf you are one of the “superusers” of our Matomo instance, you can generate code with the following steps:\n\nLog in at www.analytics.osc.lmu.de\nPress “All Websites” and then “Add a new website”\nOur websites are not intranet sites so select “Website”\nFill out the page with the following information\n\nName: the tutorial title\nURL: the GitHub Pages site link\n\nSave the configuration\nClick “View tracking code” for the tutorial. Make sure you select the correct tutorial from the list!  \nCopy the tracking code\nSend the tracking code back to the requestor, and remind them to place it in the matomo_analytics.html file as is.\n\nAlternatively, you can just open a pull request in their repo"
+    "objectID": "osc-events/wrapup-feedback.html#wrap-up",
+    "href": "osc-events/wrapup-feedback.html#wrap-up",
+    "title": "Wrap Up and Feedback",
+    "section": "Wrap up",
+    "text": "Wrap up\n\nSend feedback form (formR) to all registrants and ask to fill within one week + advertise repository with event material (e.g. recordings, slides, etc)\nAdvertise repository with event material (e.g. recordings if gotten consent in advance, slides, etc) also on social media\nSend feedback (formR report) to instructors",
+    "crumbs": [
+      "Home",
+      "Organizing an OSC Event",
+      "Wrap Up and Feedback"
+    ]
+  },
+  {
+    "objectID": "osc-events/wrapup-feedback.html#email-templates",
+    "href": "osc-events/wrapup-feedback.html#email-templates",
+    "title": "Wrap Up and Feedback",
+    "section": "Email Templates",
+    "text": "Email Templates\nMail to attendees\n\nGerman Wrap Up Email Example 1German Wrap Up Email Example 2English Wrap Up Email Example 1\n\n\nLiebe Teilnehmerinnen und Teilnehmer des Workshops “XX”\nWenn Sie teilgenommen haben, nehmen Sie sich bitte FIXME Zeit, um uns innerhalb einer Woche ein Feedback zu geben:  FIXME link to the Feedback form\nDas Material zum Workshop finden Sie hier: FIXME link to the materials\nDie Liste aller zukünftigen OSIP- und OSC-Veranstaltungen finden Sie hier: https://www.osc.uni-muenchen.de/events/index.html\nHerzliche Grüße,  Malika\n\n\nLiebe Teilnehmerinnen und Teilnehmer von „DEAL zu Diamond“,\nvielen Dank für Ihr Interesse und Engagement!\n📄 Materialien:  Folien sowie das Video von Teil 2 sind auf OSF:  https://osf.io/r49ng/files/osfstorage  Die Folien haben eine CC-BY Lizenz, so dass Sie sie nachnutzen können.\n📝 Feedback:  Wir laden Sie zu einer kurzen (2 min)-Umfrage zu dem Event ein: Wie hat es Ihnen gefallen? Was würden Sie sich wünschen?  https://surveys.osc.lmu.de/deal-diamond-feedback\n📢 Informiert bleiben:  Auf unserer Website oder über unsere Mailingliste erhalten Sie Ankündigungen für zukünftige Workshops und Symposien des LMU Open Science Center.\n🤝 Mitglied werden:  Als LMU-Angehörige können Sie auch zu unseren Aktivitäten beitragen, indem Sie Mitglied werden.\nViele Grüße, Felix Schönbrodt\n\n\nDear participants of the “XX” workshop,\nIf you attended the workshop, please take FIXME time to provide us with your feedback within one week:\nFIXME link to the Feedback form\nYou can find the workshop materials here:  FIXME link to the materials\nA list of all upcoming OSIP and OSC events can be found here:  https://www.osc.uni-muenchen.de/events/index.html\nBest regards,  Malika",
+    "crumbs": [
+      "Home",
+      "Organizing an OSC Event",
+      "Wrap Up and Feedback"
+    ]
+  },
+  {
+    "objectID": "authoring-tutorials/authoring-and-versions.html",
+    "href": "authoring-tutorials/authoring-and-versions.html",
+    "title": "Authoring and Versions",
+    "section": "",
+    "text": "Congrats, the technical set-up of the repository is now complete! As a review, the following features are now available:\n\nA standardized CITATION file that can be used by both GitHub and Zenodo\nA standardized About page that is indexable by Google Scholar\nA connection to Zenodo for each new “release” of the tutorial\nA DOI to identify our repository\nAnalytics of the website with Matomo\nA unified layout with the other LMU OSC tutorials"
+  },
+  {
+    "objectID": "authoring-tutorials/authoring-and-versions.html#when-to-version",
+    "href": "authoring-tutorials/authoring-and-versions.html#when-to-version",
+    "title": "Authoring and Versions",
+    "section": "When to version?",
+    "text": "When to version?\n\nMoving Beyond v0.0.1\nIf you followed the earlier instructions, the initial version of your project should always be v0.0.1. This version contains essentially no content, and only some technical/set-up files. But what should constitute your first “release” after this? When have you moved up a version?\nYou could, for example, increment the patch numbers to e.g. v0.0.2, v0.0.3, … as you add and refine sections or chapters to your tutorial. However, this becomes tedious, and doesn’t reflect the reality of jumping between chapters as we develop, expanding upon and deleting chapters, and so on.\nMy rule of thumb is, in the early and initial stages of development, that it’s okay to be a little bit fast and dirty with the versioning: only bother to reversion when you are at the point that your first minor release, i.e. v0.1.0, seems like it would be reasonable. And a minor release is probably reasonable around the time that you would ask another OSC member to review a (nearly) completed draft.\n\n\nMoving Beyond v0.1.X\nAt the stage of v0.1.X, there will likely be several rounds of review and refinement. How and when should reviews be incremented?\n\nPatches: if primarily text, grammar, and other small adjustments are made to the tutorial, increment by just a patch.\nMinor: if large chunks of a chapter or chapters are added, removed, or relocated, increment by a minor release.\nMajor: the first major release should occur around the time the tutorial goes live for e.g. the first workshop. This might not hold universally, but is a good rule-of-thumb for when a tutorial is “finalized.”"
+  },
+  {
+    "objectID": "authoring-tutorials/authoring-and-versions.html#where-to-version",
+    "href": "authoring-tutorials/authoring-and-versions.html#where-to-version",
+    "title": "Authoring and Versions",
+    "section": "Where to Version?",
+    "text": "Where to Version?\n\nCITATION File\n\nupdate the citation file\n\n\n\nAbout File\n\n\nGitHub Releases\n\nversioning will also be done in the GitHub Release, discusses in the Releases section"
+  },
+  {
+    "objectID": "authoring-tutorials/authoring-and-versions.html#branching",
+    "href": "authoring-tutorials/authoring-and-versions.html#branching",
+    "title": "Authoring and Versions",
+    "section": "Branching",
+    "text": "Branching\n\nuse branches for new features and changes, particularly after v0.1.0 is released as this helps us keep a better record of changes over time"
+  },
+  {
+    "objectID": "authoring-tutorials/authoring-and-versions.html#pull-requests",
+    "href": "authoring-tutorials/authoring-and-versions.html#pull-requests",
+    "title": "Authoring and Versions",
+    "section": "Pull Requests",
+    "text": "Pull Requests\n\nopen pull requests for branches, even if you are going to self-approve the content. the PR’s will be the basis for notes\nuse informative titles for the pull requests\ngenerally, choose to Squash and Merge. use a Merge commit if you’re finalizing a version increment\n\n\nReviewers\n\nalways feel free to assign someone as a reviewer of your PR, especially if"
+  },
+  {
+    "objectID": "authoring-tutorials/authoring-and-versions.html#issues",
+    "href": "authoring-tutorials/authoring-and-versions.html#issues",
+    "title": "Authoring and Versions",
+    "section": "Issues",
+    "text": "Issues\n\nopening issues is a great way to keep track of potential changes you want to make yourself to the repo, where others can request changes, or you can ask for help or request that others assist on a task.\nhelpful tip: you can create a branch directly from a GitHub Issue, and then check this out locally. The branch will automatically be linked to the Issue such that when you eventually merge that branch through a Pull Request, the issue will automatically be marked as resolved"
   },
   {
     "objectID": "authoring-tutorials/best-practices.html",
@@ -299,99 +344,74 @@
     "text": "A more accurate title for this page would be “Things You Shouldn’t Change Without a Good Reason.” The following are some of the things you should be careful about changing in the project:\n\nThe GitHub Action Files\nThe publishing workflow should work out of the box for Quarto projects, and for projects that are combined with R (with or without {renv}–but please do use {renv} if your project uses R). If you need to change this workflow file, it should only be because there is genuinely an issue with the configuration or if a dependency is not installed.\nMissing system dependencies may particularly be a problem for now because, at the time of writing this in early 2025, GitHub recently changed their latest Ubuntu image to 24.04 and stripped away some dependencies that they included in the 22.02 image.\nYou’re welcome to adjust or create your own publish workflow if needed, or you can contact staff at the OSC for help.\n\n\nThe .gitignore\nThis has been set-up to ignore annoying or unneeded components of R projects/packages, Quarto projects, and files that are commonly included in repositories even though they should not be. Feel free to add more files to the .gitignore if something specific needs to be blocked or ignored, but, in general, you should not delete items from this file.\n\n\nThe _quarto.yml File\nWe aim for our tutorials to have a standard look and feel, and the _quarto.yml file is a big part of that. If you need to change this file beyond the required adjustments mentioned in previous chapters, please contact staff at the OSC for help. We’re always open for improvements to the design, but we do want to make sure any changes get applied across all tutorials.\n\n\nThe LICENSE Files\nThe license files are there to protect the intellectual property of the authors and the OSC, and should not be changed unless there are legal reasons or extenuating circumstances to do so. If you have questions about the license, please contact staff at the OSC. We’re currently working on documentation that outlines our licensing decisions in greater detail.\n\n\nThe CITATION File\nThe CITATION file is there to help others cite your work, and we have tried to select useful fields provided by the Citation File Format. As with the _quarto.yml file, we’re open to suggestions if more fields should be added, but please contact staff at the OSC before making changes.\n\n\nThe About Page\nThe yaml header in the About page is also standardized to approximately align with the CITATION file, but Quarto does not align exactly with CFF so you cannot simply copy/paste the CITATION file contents to this section.\nThe main content of the About page can be altered to add contributors notes and any other relevant authoring information that cannot be included as metadata in the yaml field. Please do not remove or change the notes about licensing on this page.\nIf you have cited other sources in your tutorial and created a bibliography, please reference the bibliography in the yaml header of this page with e.g. bibliography: your_bib_file.bib\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "archive/using-fiona.html",
-    "href": "archive/using-fiona.html",
-    "title": "Using Fiona",
+    "objectID": "archive/index.html",
+    "href": "archive/index.html",
+    "title": "OSC Manual",
     "section": "",
-    "text": "Fiona was our management system for our website\nGeneral information about Fiona\nNavigating Fiona\n\nFollow this link to an online workshop and apply to take the course:\nSend an email to it.internet@verwaltung.uni-muenchen.de with your “LMU-Kennung” and the Fiona path Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center with Felix and Malika cc’ed to give it legitimacy.\nAfter taking the course and receiving the relevant permission to access Fiona, follow this link to the Fiona Login site\nOnce in Fiona, follow this path to find the OSC: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center\n\n\n\n\n\n\n\nImportantAccessing Fiona\n\n\n\nIf you are trying to access Fiona outside of the eduroam wifi, you will need to use a specific VPN. Follow this link, download eduVPN, and turn it on before logging in to Fiona.",
+    "text": "Back to top",
     "crumbs": [
       "Home",
-      "Archive",
-      "Using Fiona"
+      "Archive"
     ]
   },
   {
-    "objectID": "archive/using-fiona.html#about-fiona",
-    "href": "archive/using-fiona.html#about-fiona",
-    "title": "Using Fiona",
+    "objectID": "osc-outreach/social-media.html",
+    "href": "osc-outreach/social-media.html",
+    "title": "Social Media",
     "section": "",
-    "text": "Fiona was our management system for our website\nGeneral information about Fiona\nNavigating Fiona\n\nFollow this link to an online workshop and apply to take the course:\nSend an email to it.internet@verwaltung.uni-muenchen.de with your “LMU-Kennung” and the Fiona path Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center with Felix and Malika cc’ed to give it legitimacy.\nAfter taking the course and receiving the relevant permission to access Fiona, follow this link to the Fiona Login site\nOnce in Fiona, follow this path to find the OSC: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center\n\n\n\n\n\n\n\nImportantAccessing Fiona\n\n\n\nIf you are trying to access Fiona outside of the eduroam wifi, you will need to use a specific VPN. Follow this link, download eduVPN, and turn it on before logging in to Fiona.",
-    "crumbs": [
-      "Home",
-      "Archive",
-      "Using Fiona"
-    ]
-  },
-  {
-    "objectID": "archive/using-fiona.html#creating-a-new-members-profile-page",
-    "href": "archive/using-fiona.html#creating-a-new-members-profile-page",
-    "title": "Using Fiona",
-    "section": "Creating a New Members Profile Page",
-    "text": "Creating a New Members Profile Page\n\nIndividual Members\nHow will you know when to add a member to the page?\nMalika will send you an email containing all the relevant information from the person themselves. If any information is missing, let Malika know and she will either get the information or give further instructions.\nHow to add a new individual member to the page?\nFollow this path in Fiona: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Members / Individual Members\n\nDepending on which kind of member, open the respective folder (LMU, Associated, Past, Fellows)\nCopy a folder of an already existing member by clicking on that folder and then clicking the “Kopieren” sign( next to the scissors at the top)\nClick on the respective members folder from the beginning again and paste the copied folder by clicking the “Einfügen” sign (next to the “copy” sign at the top)\nStart editing the pasted folder with the information that you received from Malika\n\nWhat you need to change:\n\nUnder “Felder” click “alle bearbeiten” and edit:\n\nTitel\nAnrede\nAkademischer Titel\nNachname & Vorname\nFunktion\nE-Mail\nWebsite\n\nFoto: save the picture from the mail on your computer and upload it in the folder you created for the new member by clicking the “Date importieren” button at the top. Then link the uploaded picture in the “Foto” section.\n\nYou might have to make the picture smaller. Here’s how: click on picture, click Bearbeiten &gt; Bild bearbeiten &gt; Skalieren” &gt; choose “Breite: 200px\"\n\nPaste the Mission Statement of the new member in “Hauptinhalt”.\nPublish: “Workflow &gt; Bearbeitung abschließen”\n\n\n\nInstitutional members:\nAgain, you can copy existing members here and adapt following information.\nThese members are shown with:\n\nTitle of the member\nAn image of their logo\nAbstract about the institution (mostly written by themselves)\nContact person: name [link to contact page]",
-    "crumbs": [
-      "Home",
-      "Archive",
-      "Using Fiona"
-    ]
-  },
-  {
-    "objectID": "archive/using-fiona.html#creating-an-event-page",
-    "href": "archive/using-fiona.html#creating-an-event-page",
-    "title": "Using Fiona",
-    "section": "Creating an Event Page",
-    "text": "Creating an Event Page\nThe event table serves as an overview of past and upcoming events of the OSC.\n\n\n\n\n\n\nImportantPast Events\n\n\n\nKeep an eye out for when the events pass and update the table regularly.\n\n\nHow to create a new events item?\nFollow this path in Fiona: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Events\nUnlike the News Items, the Events Items are all put into ONE table. Each event will have its own webpage that will be included as a link in the table.\n\nClick on Hauptinhalt\nGo to the notebook with the pencil (under “Vorlage”)\nClick “Zeile oberhalb hinzufügen” when updating the table (the latest event is at the top)\n\nWhat to add:\n\nDate: date + time\nDescription: category + title in bold + by + link to news item in bold; in the following structure: “Category: “Title” by xy [more]”\nLanguage: English/German or English or German\nPlace:\n\nWhen in Person: address preferably with room number e.g.: “Leopoldstraße 13, room 3322”\nWhen Zoom: “Online (Zoom)”\nWhen Hybrid: “Hybrid (address and via Zoom)”\n\nContact: Name of main contact person/team with link to either mail or page with contact information\n\nEvent Categories: (similar to News categories)\n\nDiscussion\nHacky Hour\nReproducibiliTea Journal Club\nWorkshop\nLecture\nSymposium\nConference\nSummer School\nPanel Discussion Series\nApplication call\n\n\nMeetups\nThe Meetups are grassroot initiatives which aim to promote open science within their discipline or to provide important skills to work transparently in a research context.\nMeetup categories are:\n\nLMU Open Science Initiative in Psychology (not active)\nLMU Open Science Initiative in Medicine\nLMU Open Science Initiative in Statistics\nReproducibiliTea Journal Club (not active)\nHacky Hour (not active)",
-    "crumbs": [
-      "Home",
-      "Archive",
-      "Using Fiona"
-    ]
-  },
-  {
-    "objectID": "archive/using-fiona.html#creating-a-news-item",
-    "href": "archive/using-fiona.html#creating-a-news-item",
-    "title": "Using Fiona",
-    "section": "Creating a News Item",
-    "text": "Creating a News Item\nNews Items are about:\n\nAny upcoming events,\nThe latest Open Science related information,\nMembers of the OSC receiving an award, etc.\n\nHow will you know when to make a ‘News’ item?\nMalika will write to you when you have to create a news item about something and she will also provide you all important information that needs to be included,\nHow to create a new news item?\nFollow this path in Fiona: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / News\nFirst, the main strategy is to copy an existing page and then manually change whatever needs to be changed. Therefore, the existing pages can serve as templates for creating new ones.\nIf you don’t want to copy and paste an existing page, let’s go through what you need to do to create the new page in the News Folder in Fiona.\nWhat you need to change:\n\nName: This will be shown in the hyperlink so choose something short and precise which describes the content well. Depending on the category, there may be rules on how to name it e.g. just by adding a number (affected categories: Hacky Hour, Journal Club, Newsletter)\nVorlage: [Allgemein] Meldung\nTitel: This is the title of the news item so choose something short and precise:\n\nFor categories, titles are written in following style: Category: “Title”\n\nUntertitel: The subtitle mostly serves as a short description about:\n\nWho conducts the event, then write “by…” or “organised by…”\nOr What you can learn new in this event\n\nTeaserbild: Every News Item has its own icon depending on its category. You can find all icons in Fiona (named after category) by following this path: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Images / News Images\n\nIcons for creating new news items: icons_for_OSC_website.pptx\n\nDatum: date of the event\n\nWhen not applicable, choose the date you publish the item.\n\nHauptinhalt: The main information of the news item depends on the category (for further information see below).\n\nYou need to summarize the main information about the news. However, this depends on what you write in following structure grey box with short information at the top of the page including:\n\nWhen: date of event\nWhere: address/ zoom link\nInstructor(s): person from institution\nRegistration: pretix registration link\nMaterial: (optional) in most times osf link\nAbstract: short description of the event\nTarget audience: who should attend the event\nAgenda: what’s the time schedule for the event\nLogistics: what should you bring to the event\n\nGültig ab: Doesn’t need to be changed just be mindful that it’s a past date (which it will be when you just copy an existing news item and work with that as a template)\n\n\nCategories\n\nDiscussion\nHacky Hour\nJournal Club\nWorkshop\nInterview\nLecture\nNewsletter\nSymposium\n(not applicable): e.g. award, paper releases, job ad,…",
-    "crumbs": [
-      "Home",
-      "Archive",
-      "Using Fiona"
-    ]
-  },
-  {
-    "objectID": "osc-outreach/newsletter.html",
-    "href": "osc-outreach/newsletter.html",
-    "title": "Newsletter",
-    "section": "",
-    "text": "For newsletter creation we use Beefree",
+    "text": "Create personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages.\nIf you don’t want this, you can also log in with the OSC account and we only indicate your name in the profile page of this account (for accountability).\nAsk Malika to give you access to the credentials for the following OSC accounts:\n\nLinkedIn (lim: 3000): https://www.linkedin.com/company/91742131/admin/feed/posts/\nBluesky (lim: 300): https://bsky.app/profile/lmu-osc.bsky.social/post/3kbhybwivz22q\nMastodon (lim: 500): https://scicomm.xyz/home\nX is deactivated\n\nThe OSC publishes different categories of posts on social media:\n\nResearch work from members (e.g. articles)\nInformation about various aspects of open science\nUpcoming events for open science community\nCampaigns for making open science topics more visible\n\nYour main ideas and plans when to publish any campaigns will get into the main Social Media doc\nWhen you create longer texts or campaigns, create a separate Google doc for that and work in there (?)\nUse insights from social media (especially LinkedIn) to scope for new potential members (e.g. view the follower list, see those who liked and commented)",
     "crumbs": [
       "Home",
       "OSC Public Outreach",
-      "Newsletter"
+      "Social Media"
     ]
   },
   {
-    "objectID": "osc-outreach/newsletter.html#administration",
-    "href": "osc-outreach/newsletter.html#administration",
-    "title": "Newsletter",
-    "section": "Administration",
-    "text": "Administration\nLink for Login: https://beefree.io  Login with this mail: osc@psy.lmu.de  Project for the Newsletter is called “OSC organization”",
+    "objectID": "osc-outreach/social-media.html#administration",
+    "href": "osc-outreach/social-media.html#administration",
+    "title": "Social Media",
+    "section": "",
+    "text": "Create personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages.\nIf you don’t want this, you can also log in with the OSC account and we only indicate your name in the profile page of this account (for accountability).\nAsk Malika to give you access to the credentials for the following OSC accounts:\n\nLinkedIn (lim: 3000): https://www.linkedin.com/company/91742131/admin/feed/posts/\nBluesky (lim: 300): https://bsky.app/profile/lmu-osc.bsky.social/post/3kbhybwivz22q\nMastodon (lim: 500): https://scicomm.xyz/home\nX is deactivated\n\nThe OSC publishes different categories of posts on social media:\n\nResearch work from members (e.g. articles)\nInformation about various aspects of open science\nUpcoming events for open science community\nCampaigns for making open science topics more visible\n\nYour main ideas and plans when to publish any campaigns will get into the main Social Media doc\nWhen you create longer texts or campaigns, create a separate Google doc for that and work in there (?)\nUse insights from social media (especially LinkedIn) to scope for new potential members (e.g. view the follower list, see those who liked and commented)",
     "crumbs": [
       "Home",
       "OSC Public Outreach",
-      "Newsletter"
+      "Social Media"
     ]
   },
   {
-    "objectID": "osc-outreach/newsletter.html#create-a-newsletter",
-    "href": "osc-outreach/newsletter.html#create-a-newsletter",
-    "title": "Newsletter",
-    "section": "Create a newsletter",
-    "text": "Create a newsletter\nFor creating the newsletter you can copy one of the last ones (click on the three dots and then “make a copy”), so the design is standardized.\nThings to standardize:\n\nDate (e.g. Jan 8, vs Jan. 8, vs Jan 8, 2024 and other variation)\nTime (e.g. 14:00 vs 2pm or missing)\nTitles (e.g. Prof. Dr.)\nSpacing between titles and text\nContinuous numbering of titles\nJustification of text (this means aligned both sides)\nAmounts of money (e.g. 500.000 € vs other formats)\nEvent info, order and type of info.\nCheck links are all working",
+    "objectID": "osc-outreach/flyer-design-and-images.html",
+    "href": "osc-outreach/flyer-design-and-images.html",
+    "title": "Flyer Design and Images",
+    "section": "",
+    "text": "Here is the template for a flyer.",
     "crumbs": [
       "Home",
       "OSC Public Outreach",
-      "Newsletter"
+      "Flyer Design and Images"
+    ]
+  },
+  {
+    "objectID": "osc-outreach/flyer-design-and-images.html#printing-service",
+    "href": "osc-outreach/flyer-design-and-images.html#printing-service",
+    "title": "Flyer Design and Images",
+    "section": "Printing Service",
+    "text": "Printing Service\nThe printing service for the LMU is: Hausdruckerei (Ricoh Deutschland GmbH Printcenter LMU)\nYou can find all information here (price list, formulars, etc).\nResponsible Person: Thomas  Address: Ricoh Deutschland GmbH, Hausdruckerei der LMU, Ludwig-Maximilians-Universität München Leopoldstr. 3, 80802 München  Phone: 089/2180-3669\nCurrent opening hours of the in-house print shop:  Monday to Thursday from 9:00 AM to 3:00 PM Friday: CLOSED\nIf you want to print something, (e.g flyers) write a mail to hausdruckerei@lmu.de or call them and you can talk to them about your preferences.",
+    "crumbs": [
+      "Home",
+      "OSC Public Outreach",
+      "Flyer Design and Images"
+    ]
+  },
+  {
+    "objectID": "osc-outreach/flyer-design-and-images.html#canva",
+    "href": "osc-outreach/flyer-design-and-images.html#canva",
+    "title": "Flyer Design and Images",
+    "section": "Canva",
+    "text": "Canva\nCanva is a free-to-use online graphic design platform that helps to create content, even without any design experience. Whether you want to make social media posts, presentations, posters, logos, or videos, Canva offers an easy drag-and-drop many customizable templates.\nClick here to go to the Canva website  Click here for some instructions on how to use Canva",
+    "crumbs": [
+      "Home",
+      "OSC Public Outreach",
+      "Flyer Design and Images"
     ]
   },
   {
@@ -473,18 +493,92 @@
     ]
   },
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "objectID": "lrz-gitlab/page1.html",
+    "href": "lrz-gitlab/page1.html",
+    "title": "Page Title Here",
     "section": "",
-    "text": "Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n\nConsiderations for licensors: Our public licenses are intended for use by those authorized to give the public permission to use material in ways otherwise restricted by copyright and certain other rights. Our licenses are irrevocable. Licensors should read and understand the terms and conditions of the license they choose before applying it. Licensors should also secure all rights necessary before applying our licenses so that the public can reuse the material as expected. Licensors should clearly mark any material not subject to the license. This includes other CC-licensed material, or material used under an exception or limitation to copyright. More considerations for licensors.\nConsiderations for the public: By using one of our public licenses, a licensor grants the public permission to use the licensed material under specified terms and conditions. If the licensor’s permission is not necessary for any reason–for example, because of any applicable exception or limitation to copyright–then that use is not regulated by the license. Our licenses grant only permissions under copyright and certain other rights that a licensor has authority to grant. Use of the licensed material may still be restricted for other reasons, including because others have copyright or other rights in the material. A licensor may make special requests, such as asking that all changes be marked or described. Although not required by our licenses, you are encouraged to respect those requests where reasonable. More considerations for the public.\n\n\n\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\n\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\n\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\n\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\n\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\n\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\n\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\n\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\n\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
+    "text": "The headers below cause the table of contents/dropdown on the right to be visible."
   },
   {
-    "objectID": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
-    "href": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
-    "title": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "objectID": "lrz-gitlab/page1.html#level-two",
+    "href": "lrz-gitlab/page1.html#level-two",
+    "title": "Page Title Here",
+    "section": "Level Two",
+    "text": "Level Two\n\nL3\n\n\nL3 Again\n\n\nAnd one more time"
+  },
+  {
+    "objectID": "lrz-gitlab/page1.html#another-level-two",
+    "href": "lrz-gitlab/page1.html#another-level-two",
+    "title": "Page Title Here",
+    "section": "Another Level Two",
+    "text": "Another Level Two"
+  },
+  {
+    "objectID": "lrz-gitlab/page1.html#level-two-1",
+    "href": "lrz-gitlab/page1.html#level-two-1",
+    "title": "Page Title Here",
+    "section": "Level Two",
+    "text": "Level Two"
+  },
+  {
+    "objectID": "staff-onboarding/working-envi.html",
+    "href": "staff-onboarding/working-envi.html",
+    "title": "Working Environment",
     "section": "",
-    "text": "By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\n\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\n\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\n\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\n\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\n\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\n\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\n\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\n\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
+    "text": "We use several platforms that allow us to share our work and collaborate on projects.",
+    "crumbs": [
+      "Home",
+      "Staff Onboarding",
+      "Working Environment"
+    ]
+  },
+  {
+    "objectID": "staff-onboarding/working-envi.html#google-drive",
+    "href": "staff-onboarding/working-envi.html#google-drive",
+    "title": "Working Environment",
+    "section": "Google Drive",
+    "text": "Google Drive\nGoogle Docs:\nAlways create the Google Doc in the Work with Assistants folder.\nIf you create Google Docs, please make them ‘anyone with the link can comment’, add the OSC team (Malika and assistants) as editors, and transfer ownership to Malika so it can stay within the LMU OSC - Work with Assistants folder.\nPlease share the link of the document you created here:\n\nAt the top of each relevant section in the todo\nIn the task table\nIn the right folder\n\nFolder structure of the OSC:\n\nOnboarding Hiwis: here you can find the Onboarding document for each new Hiwi with tasks to be completed\nTemplates: a folder for all kind of templates we use (designs, mail drafts, social media drafts, website drafts, consent forms)\nCredentials: This folder is not shared publicly and contains credentials like passwords, certificates etc.",
+    "crumbs": [
+      "Home",
+      "Staff Onboarding",
+      "Working Environment"
+    ]
+  },
+  {
+    "objectID": "staff-onboarding/working-envi.html#github",
+    "href": "staff-onboarding/working-envi.html#github",
+    "title": "Working Environment",
+    "section": "Github",
+    "text": "Github\nThese are links relevant to the GitHub workspace:\n\nAll repositories of the OSC\nOSC repository on Github\nThe website for organizing all the OSC’s resources on Github",
+    "crumbs": [
+      "Home",
+      "Staff Onboarding",
+      "Working Environment"
+    ]
+  },
+  {
+    "objectID": "staff-onboarding/working-envi.html#lrz-sync-and-share",
+    "href": "staff-onboarding/working-envi.html#lrz-sync-and-share",
+    "title": "Working Environment",
+    "section": "LRZ sync and Share",
+    "text": "LRZ sync and Share\nWe will use LRZ Sync and Share for Sensitive info such as:\n\nJob application files\nLetter of support for grant applicants\nFinancial records",
+    "crumbs": [
+      "Home",
+      "Staff Onboarding",
+      "Working Environment"
+    ]
+  },
+  {
+    "objectID": "staff-onboarding/working-envi.html#gitlab",
+    "href": "staff-onboarding/working-envi.html#gitlab",
+    "title": "Working Environment",
+    "section": "Gitlab",
+    "text": "Gitlab\nprivate repositories",
+    "crumbs": [
+      "Home",
+      "Staff Onboarding",
+      "Working Environment"
+    ]
   },
   {
     "objectID": "staff-onboarding/internal-communication.html",
@@ -554,54 +648,6 @@
     "text": "Contributors\nThis site was authored by AUTHORS, and edits/contributions were made by EDITORS/AUTHORS.\n\n\nLicenses\nThe overall project is licensed under the CC BY-SA 4.0 license found at LICENSE; all code snippets are additionally licensed under the CC0 1.0 Universal license found at LICENSE-CODE.\nWhy two licenses? The CC BY-SA 4.0 license is for the content of the website, while the CC0 1.0 Universal license is for the code and configuration files. This is a common practice for websites that include code snippets and other content that may be reused in other projects, particularly because the CC BY-SA 4.0 license is not intended to be used with software.\n\n\nNotes\nThis tutorial was primarily written in YYYY using SOFTWARE-NAME SOFTWARE-VERSION. Major changes to the SOFTWARE-NAME can be found at the package’s website for the most up-to-date information, and to confirm that our tutorial is not out-of-date.\n\n\n\n\n Back to topCitationBibTeX citation:@online{1,\n  author = {1, AUTHOR and 2, AUTHOR},\n  title = {TITLE {HERE}},\n  date = {},\n  url = {https://lmu-osc.github.io/introduction-to-renv},\n  doi = {DOI HERE},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n1, AUTHOR, and AUTHOR 2. “TITLE HERE.” LMU Open Science\nCenter. https://doi.org/DOI HERE."
   },
   {
-    "objectID": "about/page1.html",
-    "href": "about/page1.html",
-    "title": "Page Title Here",
-    "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible.",
-    "crumbs": [
-      "Home",
-      "About",
-      "TOPIC1 Page1 Title"
-    ]
-  },
-  {
-    "objectID": "about/page1.html#level-two",
-    "href": "about/page1.html#level-two",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two\n\nL3\n\n\nL3 Again\n\n\nAnd one more time",
-    "crumbs": [
-      "Home",
-      "About",
-      "TOPIC1 Page1 Title"
-    ]
-  },
-  {
-    "objectID": "about/page1.html#another-level-two",
-    "href": "about/page1.html#another-level-two",
-    "title": "Page Title Here",
-    "section": "Another Level Two",
-    "text": "Another Level Two",
-    "crumbs": [
-      "Home",
-      "About",
-      "TOPIC1 Page1 Title"
-    ]
-  },
-  {
-    "objectID": "about/page1.html#level-two-1",
-    "href": "about/page1.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two",
-    "crumbs": [
-      "Home",
-      "About",
-      "TOPIC1 Page1 Title"
-    ]
-  },
-  {
     "objectID": "about/page2.html",
     "href": "about/page2.html",
     "title": "Page Title Here",
@@ -650,6 +696,50 @@
     ]
   },
   {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Page Title Here",
+    "section": "",
+    "text": "The headers below cause the table of contents/dropdown on the right to be visible.",
+    "crumbs": [
+      "Home",
+      "About"
+    ]
+  },
+  {
+    "objectID": "about/index.html#level-two",
+    "href": "about/index.html#level-two",
+    "title": "Page Title Here",
+    "section": "Level Two",
+    "text": "Level Two\n\nL3\n\n\nL3 Again\n\n\nAnd one more time",
+    "crumbs": [
+      "Home",
+      "About"
+    ]
+  },
+  {
+    "objectID": "about/index.html#another-level-two",
+    "href": "about/index.html#another-level-two",
+    "title": "Page Title Here",
+    "section": "Another Level Two",
+    "text": "Another Level Two",
+    "crumbs": [
+      "Home",
+      "About"
+    ]
+  },
+  {
+    "objectID": "about/index.html#level-two-1",
+    "href": "about/index.html#level-two-1",
+    "title": "Page Title Here",
+    "section": "Level Two",
+    "text": "Level Two",
+    "crumbs": [
+      "Home",
+      "About"
+    ]
+  },
+  {
     "objectID": "staff-onboarding/administration.html",
     "href": "staff-onboarding/administration.html",
     "title": "Administration",
@@ -674,92 +764,36 @@
     ]
   },
   {
-    "objectID": "staff-onboarding/working-envi.html",
-    "href": "staff-onboarding/working-envi.html",
-    "title": "Working Environment",
+    "objectID": "staff-onboarding/index.html",
+    "href": "staff-onboarding/index.html",
+    "title": "OSC Manual",
     "section": "",
-    "text": "We use several platforms that allow us to share our work and collaborate on projects.",
+    "text": "Back to top",
     "crumbs": [
       "Home",
-      "Staff Onboarding",
-      "Working Environment"
+      "Staff Onboarding"
     ]
   },
   {
-    "objectID": "staff-onboarding/working-envi.html#google-drive",
-    "href": "staff-onboarding/working-envi.html#google-drive",
-    "title": "Working Environment",
-    "section": "Google Drive",
-    "text": "Google Drive\nGoogle Docs:\nAlways create the Google Doc in the Work with Assistants folder.\nIf you create Google Docs, please make them ‘anyone with the link can comment’, add the OSC team (Malika and assistants) as editors, and transfer ownership to Malika so it can stay within the LMU OSC - Work with Assistants folder.\nPlease share the link of the document you created here:\n\nAt the top of each relevant section in the todo\nIn the task table\nIn the right folder\n\nFolder structure of the OSC:\n\nOnboarding Hiwis: here you can find the Onboarding document for each new Hiwi with tasks to be completed\nTemplates: a folder for all kind of templates we use (designs, mail drafts, social media drafts, website drafts, consent forms)\nCredentials: This folder is not shared publicly and contains credentials like passwords, certificates etc.",
-    "crumbs": [
-      "Home",
-      "Staff Onboarding",
-      "Working Environment"
-    ]
-  },
-  {
-    "objectID": "staff-onboarding/working-envi.html#github",
-    "href": "staff-onboarding/working-envi.html#github",
-    "title": "Working Environment",
-    "section": "Github",
-    "text": "Github\nThese are links relevant to the GitHub workspace:\n\nAll repositories of the OSC\nOSC repository on Github\nThe website for organizing all the OSC’s resources on Github",
-    "crumbs": [
-      "Home",
-      "Staff Onboarding",
-      "Working Environment"
-    ]
-  },
-  {
-    "objectID": "staff-onboarding/working-envi.html#lrz-sync-and-share",
-    "href": "staff-onboarding/working-envi.html#lrz-sync-and-share",
-    "title": "Working Environment",
-    "section": "LRZ sync and Share",
-    "text": "LRZ sync and Share\nWe will use LRZ Sync and Share for Sensitive info such as:\n\nJob application files\nLetter of support for grant applicants\nFinancial records",
-    "crumbs": [
-      "Home",
-      "Staff Onboarding",
-      "Working Environment"
-    ]
-  },
-  {
-    "objectID": "staff-onboarding/working-envi.html#gitlab",
-    "href": "staff-onboarding/working-envi.html#gitlab",
-    "title": "Working Environment",
-    "section": "Gitlab",
-    "text": "Gitlab\nprivate repositories",
-    "crumbs": [
-      "Home",
-      "Staff Onboarding",
-      "Working Environment"
-    ]
-  },
-  {
-    "objectID": "lrz-gitlab/page1.html",
-    "href": "lrz-gitlab/page1.html",
-    "title": "Page Title Here",
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Creative Commons Attribution-ShareAlike 4.0 International",
     "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible."
+    "text": "Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.\nUsing Creative Commons Public Licenses\nCreative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.\n\nConsiderations for licensors: Our public licenses are intended for use by those authorized to give the public permission to use material in ways otherwise restricted by copyright and certain other rights. Our licenses are irrevocable. Licensors should read and understand the terms and conditions of the license they choose before applying it. Licensors should also secure all rights necessary before applying our licenses so that the public can reuse the material as expected. Licensors should clearly mark any material not subject to the license. This includes other CC-licensed material, or material used under an exception or limitation to copyright. More considerations for licensors.\nConsiderations for the public: By using one of our public licenses, a licensor grants the public permission to use the licensed material under specified terms and conditions. If the licensor’s permission is not necessary for any reason–for example, because of any applicable exception or limitation to copyright–then that use is not regulated by the license. Our licenses grant only permissions under copyright and certain other rights that a licensor has authority to grant. Use of the licensed material may still be restricted for other reasons, including because others have copyright or other rights in the material. A licensor may make special requests, such as asking that all changes be marked or described. Although not required by our licenses, you are encouraged to respect those requests where reasonable. More considerations for the public.\n\n\n\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\n\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\n\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\n\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\n\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\n\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\n\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\n\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\n\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
   },
   {
-    "objectID": "lrz-gitlab/page1.html#level-two",
-    "href": "lrz-gitlab/page1.html#level-two",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two\n\nL3\n\n\nL3 Again\n\n\nAnd one more time"
+    "objectID": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
+    "href": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
+    "title": "Creative Commons Attribution-ShareAlike 4.0 International",
+    "section": "",
+    "text": "By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\n\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\n\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\nA. reproduce and Share the Licensed Material, in whole or in part; and\nB. produce, reproduce, and Share Adapted Material.\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\nB. Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\n\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\nA. retain the following if it is supplied by the Licensor with the Licensed Material:\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\nB. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nC. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\n\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\n\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\n\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\n\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\n\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org."
   },
   {
-    "objectID": "lrz-gitlab/page1.html#another-level-two",
-    "href": "lrz-gitlab/page1.html#another-level-two",
-    "title": "Page Title Here",
-    "section": "Another Level Two",
-    "text": "Another Level Two"
-  },
-  {
-    "objectID": "lrz-gitlab/page1.html#level-two-1",
-    "href": "lrz-gitlab/page1.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two"
+    "objectID": "lrz-gitlab/index.html",
+    "href": "lrz-gitlab/index.html",
+    "title": "OSC Manual",
+    "section": "",
+    "text": "Back to top"
   },
   {
     "objectID": "matomo/campaigns-and-reporting.html",
@@ -870,63 +904,110 @@
     ]
   },
   {
-    "objectID": "osc-outreach/flyer-design-and-images.html",
-    "href": "osc-outreach/flyer-design-and-images.html",
-    "title": "Flyer Design and Images",
+    "objectID": "osc-outreach/index.html",
+    "href": "osc-outreach/index.html",
+    "title": "OSC Manual",
     "section": "",
-    "text": "Here is the template for a flyer.",
+    "text": "Back to top",
     "crumbs": [
       "Home",
-      "OSC Public Outreach",
-      "Flyer Design and Images"
+      "OSC Public Outreach"
     ]
   },
   {
-    "objectID": "osc-outreach/flyer-design-and-images.html#printing-service",
-    "href": "osc-outreach/flyer-design-and-images.html#printing-service",
-    "title": "Flyer Design and Images",
-    "section": "Printing Service",
-    "text": "Printing Service\nThe printing service for the LMU is: Hausdruckerei (Ricoh Deutschland GmbH Printcenter LMU)\nYou can find all information here (price list, formulars, etc).\nResponsible Person: Thomas  Address: Ricoh Deutschland GmbH, Hausdruckerei der LMU, Ludwig-Maximilians-Universität München Leopoldstr. 3, 80802 München  Phone: 089/2180-3669\nCurrent opening hours of the in-house print shop:  Monday to Thursday from 9:00 AM to 3:00 PM Friday: CLOSED\nIf you want to print something, (e.g flyers) write a mail to hausdruckerei@lmu.de or call them and you can talk to them about your preferences.",
-    "crumbs": [
-      "Home",
-      "OSC Public Outreach",
-      "Flyer Design and Images"
-    ]
-  },
-  {
-    "objectID": "osc-outreach/flyer-design-and-images.html#canva",
-    "href": "osc-outreach/flyer-design-and-images.html#canva",
-    "title": "Flyer Design and Images",
-    "section": "Canva",
-    "text": "Canva\nCanva is a free-to-use online graphic design platform that helps to create content, even without any design experience. Whether you want to make social media posts, presentations, posters, logos, or videos, Canva offers an easy drag-and-drop many customizable templates.\nClick here to go to the Canva website  Click here for some instructions on how to use Canva",
-    "crumbs": [
-      "Home",
-      "OSC Public Outreach",
-      "Flyer Design and Images"
-    ]
-  },
-  {
-    "objectID": "osc-outreach/social-media.html",
-    "href": "osc-outreach/social-media.html",
-    "title": "Social Media",
+    "objectID": "osc-outreach/newsletter.html",
+    "href": "osc-outreach/newsletter.html",
+    "title": "Newsletter",
     "section": "",
-    "text": "Create personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages.\nIf you don’t want this, you can also log in with the OSC account and we only indicate your name in the profile page of this account (for accountability).\nAsk Malika to give you access to the credentials for the following OSC accounts:\n\nLinkedIn (lim: 3000): https://www.linkedin.com/company/91742131/admin/feed/posts/\nBluesky (lim: 300): https://bsky.app/profile/lmu-osc.bsky.social/post/3kbhybwivz22q\nMastodon (lim: 500): https://scicomm.xyz/home\nX is deactivated\n\nThe OSC publishes different categories of posts on social media:\n\nResearch work from members (e.g. articles)\nInformation about various aspects of open science\nUpcoming events for open science community\nCampaigns for making open science topics more visible\n\nYour main ideas and plans when to publish any campaigns will get into the main Social Media doc\nWhen you create longer texts or campaigns, create a separate Google doc for that and work in there (?)\nUse insights from social media (especially LinkedIn) to scope for new potential members (e.g. view the follower list, see those who liked and commented)",
+    "text": "For newsletter creation we use Beefree",
     "crumbs": [
       "Home",
       "OSC Public Outreach",
-      "Social Media"
+      "Newsletter"
     ]
   },
   {
-    "objectID": "osc-outreach/social-media.html#administration",
-    "href": "osc-outreach/social-media.html#administration",
-    "title": "Social Media",
-    "section": "",
-    "text": "Create personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages.\nIf you don’t want this, you can also log in with the OSC account and we only indicate your name in the profile page of this account (for accountability).\nAsk Malika to give you access to the credentials for the following OSC accounts:\n\nLinkedIn (lim: 3000): https://www.linkedin.com/company/91742131/admin/feed/posts/\nBluesky (lim: 300): https://bsky.app/profile/lmu-osc.bsky.social/post/3kbhybwivz22q\nMastodon (lim: 500): https://scicomm.xyz/home\nX is deactivated\n\nThe OSC publishes different categories of posts on social media:\n\nResearch work from members (e.g. articles)\nInformation about various aspects of open science\nUpcoming events for open science community\nCampaigns for making open science topics more visible\n\nYour main ideas and plans when to publish any campaigns will get into the main Social Media doc\nWhen you create longer texts or campaigns, create a separate Google doc for that and work in there (?)\nUse insights from social media (especially LinkedIn) to scope for new potential members (e.g. view the follower list, see those who liked and commented)",
+    "objectID": "osc-outreach/newsletter.html#administration",
+    "href": "osc-outreach/newsletter.html#administration",
+    "title": "Newsletter",
+    "section": "Administration",
+    "text": "Administration\nLink for Login: https://beefree.io  Login with this mail: osc@psy.lmu.de  Project for the Newsletter is called “OSC organization”",
     "crumbs": [
       "Home",
       "OSC Public Outreach",
-      "Social Media"
+      "Newsletter"
+    ]
+  },
+  {
+    "objectID": "osc-outreach/newsletter.html#create-a-newsletter",
+    "href": "osc-outreach/newsletter.html#create-a-newsletter",
+    "title": "Newsletter",
+    "section": "Create a newsletter",
+    "text": "Create a newsletter\nFor creating the newsletter you can copy one of the last ones (click on the three dots and then “make a copy”), so the design is standardized.\nThings to standardize:\n\nDate (e.g. Jan 8, vs Jan. 8, vs Jan 8, 2024 and other variation)\nTime (e.g. 14:00 vs 2pm or missing)\nTitles (e.g. Prof. Dr.)\nSpacing between titles and text\nContinuous numbering of titles\nJustification of text (this means aligned both sides)\nAmounts of money (e.g. 500.000 € vs other formats)\nEvent info, order and type of info.\nCheck links are all working",
+    "crumbs": [
+      "Home",
+      "OSC Public Outreach",
+      "Newsletter"
+    ]
+  },
+  {
+    "objectID": "archive/using-fiona.html",
+    "href": "archive/using-fiona.html",
+    "title": "Using Fiona",
+    "section": "",
+    "text": "Fiona was our management system for our website\nGeneral information about Fiona\nNavigating Fiona\n\nFollow this link to an online workshop and apply to take the course:\nSend an email to it.internet@verwaltung.uni-muenchen.de with your “LMU-Kennung” and the Fiona path Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center with Felix and Malika cc’ed to give it legitimacy.\nAfter taking the course and receiving the relevant permission to access Fiona, follow this link to the Fiona Login site\nOnce in Fiona, follow this path to find the OSC: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center\n\n\n\n\n\n\n\nImportantAccessing Fiona\n\n\n\nIf you are trying to access Fiona outside of the eduroam wifi, you will need to use a specific VPN. Follow this link, download eduVPN, and turn it on before logging in to Fiona.",
+    "crumbs": [
+      "Home",
+      "Archive",
+      "Using Fiona"
+    ]
+  },
+  {
+    "objectID": "archive/using-fiona.html#about-fiona",
+    "href": "archive/using-fiona.html#about-fiona",
+    "title": "Using Fiona",
+    "section": "",
+    "text": "Fiona was our management system for our website\nGeneral information about Fiona\nNavigating Fiona\n\nFollow this link to an online workshop and apply to take the course:\nSend an email to it.internet@verwaltung.uni-muenchen.de with your “LMU-Kennung” and the Fiona path Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center with Felix and Malika cc’ed to give it legitimacy.\nAfter taking the course and receiving the relevant permission to access Fiona, follow this link to the Fiona Login site\nOnce in Fiona, follow this path to find the OSC: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center\n\n\n\n\n\n\n\nImportantAccessing Fiona\n\n\n\nIf you are trying to access Fiona outside of the eduroam wifi, you will need to use a specific VPN. Follow this link, download eduVPN, and turn it on before logging in to Fiona.",
+    "crumbs": [
+      "Home",
+      "Archive",
+      "Using Fiona"
+    ]
+  },
+  {
+    "objectID": "archive/using-fiona.html#creating-a-new-members-profile-page",
+    "href": "archive/using-fiona.html#creating-a-new-members-profile-page",
+    "title": "Using Fiona",
+    "section": "Creating a New Members Profile Page",
+    "text": "Creating a New Members Profile Page\n\nIndividual Members\nHow will you know when to add a member to the page?\nMalika will send you an email containing all the relevant information from the person themselves. If any information is missing, let Malika know and she will either get the information or give further instructions.\nHow to add a new individual member to the page?\nFollow this path in Fiona: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Members / Individual Members\n\nDepending on which kind of member, open the respective folder (LMU, Associated, Past, Fellows)\nCopy a folder of an already existing member by clicking on that folder and then clicking the “Kopieren” sign( next to the scissors at the top)\nClick on the respective members folder from the beginning again and paste the copied folder by clicking the “Einfügen” sign (next to the “copy” sign at the top)\nStart editing the pasted folder with the information that you received from Malika\n\nWhat you need to change:\n\nUnder “Felder” click “alle bearbeiten” and edit:\n\nTitel\nAnrede\nAkademischer Titel\nNachname & Vorname\nFunktion\nE-Mail\nWebsite\n\nFoto: save the picture from the mail on your computer and upload it in the folder you created for the new member by clicking the “Date importieren” button at the top. Then link the uploaded picture in the “Foto” section.\n\nYou might have to make the picture smaller. Here’s how: click on picture, click Bearbeiten &gt; Bild bearbeiten &gt; Skalieren” &gt; choose “Breite: 200px\"\n\nPaste the Mission Statement of the new member in “Hauptinhalt”.\nPublish: “Workflow &gt; Bearbeitung abschließen”\n\n\n\nInstitutional members:\nAgain, you can copy existing members here and adapt following information.\nThese members are shown with:\n\nTitle of the member\nAn image of their logo\nAbstract about the institution (mostly written by themselves)\nContact person: name [link to contact page]",
+    "crumbs": [
+      "Home",
+      "Archive",
+      "Using Fiona"
+    ]
+  },
+  {
+    "objectID": "archive/using-fiona.html#creating-an-event-page",
+    "href": "archive/using-fiona.html#creating-an-event-page",
+    "title": "Using Fiona",
+    "section": "Creating an Event Page",
+    "text": "Creating an Event Page\nThe event table serves as an overview of past and upcoming events of the OSC.\n\n\n\n\n\n\nImportantPast Events\n\n\n\nKeep an eye out for when the events pass and update the table regularly.\n\n\nHow to create a new events item?\nFollow this path in Fiona: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Events\nUnlike the News Items, the Events Items are all put into ONE table. Each event will have its own webpage that will be included as a link in the table.\n\nClick on Hauptinhalt\nGo to the notebook with the pencil (under “Vorlage”)\nClick “Zeile oberhalb hinzufügen” when updating the table (the latest event is at the top)\n\nWhat to add:\n\nDate: date + time\nDescription: category + title in bold + by + link to news item in bold; in the following structure: “Category: “Title” by xy [more]”\nLanguage: English/German or English or German\nPlace:\n\nWhen in Person: address preferably with room number e.g.: “Leopoldstraße 13, room 3322”\nWhen Zoom: “Online (Zoom)”\nWhen Hybrid: “Hybrid (address and via Zoom)”\n\nContact: Name of main contact person/team with link to either mail or page with contact information\n\nEvent Categories: (similar to News categories)\n\nDiscussion\nHacky Hour\nReproducibiliTea Journal Club\nWorkshop\nLecture\nSymposium\nConference\nSummer School\nPanel Discussion Series\nApplication call\n\n\nMeetups\nThe Meetups are grassroot initiatives which aim to promote open science within their discipline or to provide important skills to work transparently in a research context.\nMeetup categories are:\n\nLMU Open Science Initiative in Psychology (not active)\nLMU Open Science Initiative in Medicine\nLMU Open Science Initiative in Statistics\nReproducibiliTea Journal Club (not active)\nHacky Hour (not active)",
+    "crumbs": [
+      "Home",
+      "Archive",
+      "Using Fiona"
+    ]
+  },
+  {
+    "objectID": "archive/using-fiona.html#creating-a-news-item",
+    "href": "archive/using-fiona.html#creating-a-news-item",
+    "title": "Using Fiona",
+    "section": "Creating a News Item",
+    "text": "Creating a News Item\nNews Items are about:\n\nAny upcoming events,\nThe latest Open Science related information,\nMembers of the OSC receiving an award, etc.\n\nHow will you know when to make a ‘News’ item?\nMalika will write to you when you have to create a news item about something and she will also provide you all important information that needs to be included,\nHow to create a new news item?\nFollow this path in Fiona: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / News\nFirst, the main strategy is to copy an existing page and then manually change whatever needs to be changed. Therefore, the existing pages can serve as templates for creating new ones.\nIf you don’t want to copy and paste an existing page, let’s go through what you need to do to create the new page in the News Folder in Fiona.\nWhat you need to change:\n\nName: This will be shown in the hyperlink so choose something short and precise which describes the content well. Depending on the category, there may be rules on how to name it e.g. just by adding a number (affected categories: Hacky Hour, Journal Club, Newsletter)\nVorlage: [Allgemein] Meldung\nTitel: This is the title of the news item so choose something short and precise:\n\nFor categories, titles are written in following style: Category: “Title”\n\nUntertitel: The subtitle mostly serves as a short description about:\n\nWho conducts the event, then write “by…” or “organised by…”\nOr What you can learn new in this event\n\nTeaserbild: Every News Item has its own icon depending on its category. You can find all icons in Fiona (named after category) by following this path: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center / Images / News Images\n\nIcons for creating new news items: icons_for_OSC_website.pptx\n\nDatum: date of the event\n\nWhen not applicable, choose the date you publish the item.\n\nHauptinhalt: The main information of the news item depends on the category (for further information see below).\n\nYou need to summarize the main information about the news. However, this depends on what you write in following structure grey box with short information at the top of the page including:\n\nWhen: date of event\nWhere: address/ zoom link\nInstructor(s): person from institution\nRegistration: pretix registration link\nMaterial: (optional) in most times osf link\nAbstract: short description of the event\nTarget audience: who should attend the event\nAgenda: what’s the time schedule for the event\nLogistics: what should you bring to the event\n\nGültig ab: Doesn’t need to be changed just be mindful that it’s a past date (which it will be when you just copy an existing news item and work with that as a template)\n\n\nCategories\n\nDiscussion\nHacky Hour\nJournal Club\nWorkshop\nInterview\nLecture\nNewsletter\nSymposium\n(not applicable): e.g. award, paper releases, job ad,…",
+    "crumbs": [
+      "Home",
+      "Archive",
+      "Using Fiona"
     ]
   },
   {
@@ -951,7 +1032,7 @@
     "href": "authoring-tutorials/tutorial-template-repo.html#basic-repo-structure",
     "title": "Tutorial Template Repo",
     "section": "Basic Repo Structure",
-    "text": "Basic Repo Structure\nAll of the folders and files in the lmu-osc/tutorial-template repo are laid out in the directory tree below.\n\n\n.\n├── .Rbuildignore\n├── .filenameignore\n├── .github\n│   ├── .gitignore\n│   └── workflows\n│       ├── README.md\n│       ├── citation-check.yml\n│       ├── filename-check.yml\n│       ├── publish.yaml\n│       └── style.yaml\n├── .gitignore\n├── CITATION.cff\n├── LICENSE-CODE.md\n├── LICENSE.md\n├── README.md\n├── _quarto.yml\n├── about.qmd\n├── assets\n│   ├── lmu-osc-favicon.jpg\n│   └── lmu-osc-logo.svg\n├── index.qmd\n├── lmu-osc-custom.scss\n├── matomo-analytics.html\n├── styles.css\n├── topic-one\n│   ├── index.qmd\n│   ├── page-one.qmd\n│   └── page-two.qmd\n├── topic-two\n│   ├── index.qmd\n│   ├── page-one.qmd\n│   ├── page-three.qmd\n│   └── page-two.qmd\n└── .git\n    ├── HEAD\n    ├── config\n    ├── description\n    ├── hooks\n    │   ├── applypatch-msg.sample\n    │   ├── commit-msg.sample\n    │   ├── fsmonitor-watchman.sample\n    │   ├── post-update.sample\n    │   ├── pre-applypatch.sample\n    │   ├── pre-commit.sample\n    │   ├── pre-merge-commit.sample\n    │   ├── pre-push.sample\n    │   ├── pre-rebase.sample\n    │   ├── pre-receive.sample\n    │   ├── prepare-commit-msg.sample\n    │   ├── push-to-checkout.sample\n    │   ├── sendemail-validate.sample\n    │   └── update.sample\n    ├── index\n    ├── info\n    │   └── exclude\n    ├── logs\n    │   ├── HEAD\n    │   └── refs\n    │       ├── heads\n    │       │   └── main\n    │       └── remotes\n    │           └── origin\n    │               └── HEAD\n    ├── objects\n    │   ├── info\n    │   └── pack\n    │       ├── pack-c0620c625f295bfb9541cd708935e7b6698bbdcf.idx\n    │       ├── pack-c0620c625f295bfb9541cd708935e7b6698bbdcf.pack\n    │       └── pack-c0620c625f295bfb9541cd708935e7b6698bbdcf.rev\n    ├── packed-refs\n    └── refs\n        ├── heads\n        │   └── main\n        ├── remotes\n        │   └── origin\n        │       └── HEAD\n        └── tags\n\n\nSome of these files and folders require more explanation than others, and we aim to clarify all important pieces below. Later chapters will elaborate on how precisely to set up e.g. GitHub Pages for the tutorial, connect with Zotero, etc. But before diving in to developing a tutorial, it’s necessary to get an overview of the structure."
+    "text": "Basic Repo Structure\nAll of the folders and files in the lmu-osc/tutorial-template repo are laid out in the directory tree below.\n\n\n.\n├── .Rbuildignore\n├── .filenameignore\n├── .github\n│   ├── .gitignore\n│   └── workflows\n│       ├── README.md\n│       ├── citation-check.yml\n│       ├── filename-check.yml\n│       ├── publish.yaml\n│       └── style.yaml\n├── .gitignore\n├── CITATION.cff\n├── LICENSE-CODE.md\n├── LICENSE.md\n├── README.md\n├── _quarto.yml\n├── about.qmd\n├── assets\n│   ├── lmu-osc-favicon.jpg\n│   └── lmu-osc-logo.svg\n├── index.qmd\n├── lmu-osc-custom.scss\n├── matomo-analytics.html\n├── styles.css\n├── topic-one\n│   ├── index.qmd\n│   ├── page-one.qmd\n│   └── page-two.qmd\n├── topic-two\n│   ├── index.qmd\n│   ├── page-one.qmd\n│   ├── page-three.qmd\n│   └── page-two.qmd\n└── .git\n    ├── HEAD\n    ├── config\n    ├── description\n    ├── hooks\n    │   ├── applypatch-msg.sample\n    │   ├── commit-msg.sample\n    │   ├── fsmonitor-watchman.sample\n    │   ├── post-update.sample\n    │   ├── pre-applypatch.sample\n    │   ├── pre-commit.sample\n    │   ├── pre-merge-commit.sample\n    │   ├── pre-push.sample\n    │   ├── pre-rebase.sample\n    │   ├── pre-receive.sample\n    │   ├── prepare-commit-msg.sample\n    │   ├── push-to-checkout.sample\n    │   ├── sendemail-validate.sample\n    │   └── update.sample\n    ├── index\n    ├── info\n    │   └── exclude\n    ├── logs\n    │   ├── HEAD\n    │   └── refs\n    │       ├── heads\n    │       │   └── main\n    │       └── remotes\n    │           └── origin\n    │               └── HEAD\n    ├── objects\n    │   ├── info\n    │   └── pack\n    │       ├── pack-69594fd647087ede0f86a34dd4691b0a354cf4e9.idx\n    │       ├── pack-69594fd647087ede0f86a34dd4691b0a354cf4e9.pack\n    │       └── pack-69594fd647087ede0f86a34dd4691b0a354cf4e9.rev\n    ├── packed-refs\n    └── refs\n        ├── heads\n        │   └── main\n        ├── remotes\n        │   └── origin\n        │       └── HEAD\n        └── tags\n\n\nSome of these files and folders require more explanation than others, and we aim to clarify all important pieces below. Later chapters will elaborate on how precisely to set up e.g. GitHub Pages for the tutorial, connect with Zotero, etc. But before diving in to developing a tutorial, it’s necessary to get an overview of the structure."
   },
   {
     "objectID": "authoring-tutorials/tutorial-template-repo.html#important-files-and-folders",
@@ -1010,81 +1091,40 @@
     "text": "Zenodo Connection\nAfter the connection between the repository and Zenodo has been confirmed, it is now possible to trigger the connection by having a GitHub “release.”\n\nFrom the GitHub repo page, press the “Create a new release” link on the right hand side.\nYou must enter a tag, a release title, and a description.\n\nThe tag should be the semantic version prefixed with “v” e.g. v0.0.1 for the first release\nThe title can be something like “Tutorial repo begin” or similar.\nThe description can be very basic info about the repo/project. Later releases will use the “Generate release notes” button to create this description information.\n\nPress “Publish release.” The repo will now be sent to Zenodo, and a DOI should be generated.\n\nHowever, this may fail if the CITATION file has errors. You should receive a notice about this ahead of time from the GitHub Action that checks the CITATION file so make sure to fix any mistakes in advance.\n\nNavigate to Zenodo.org, log-in, press on your user-name in the top right corner, and click on GitHub. Under the enabled repositories, you should see the name of your repo.\nClick the DOI badge. This should open a pop-up with different options for copying the text of the badge. Copy the Markdown option.\nPaste the code for the DOI Markdown badge at the top of the README file.\nAdd the DOI to the CITATION file.\n\nCongrats! Your tutorial now has the infrastructure for automated deployments to GitHub Pages, and additional releases on GitHub will update the DOI + content of your project on Zenodo."
   },
   {
-    "objectID": "authoring-tutorials/authoring-and-versions.html",
-    "href": "authoring-tutorials/authoring-and-versions.html",
-    "title": "Authoring and Versions",
+    "objectID": "authoring-tutorials/index.html",
+    "href": "authoring-tutorials/index.html",
+    "title": "OSC Manual",
     "section": "",
-    "text": "Congrats, the technical set-up of the repository is now complete! As a review, the following features are now available:\n\nA standardized CITATION file that can be used by both GitHub and Zenodo\nA standardized About page that is indexable by Google Scholar\nA connection to Zenodo for each new “release” of the tutorial\nA DOI to identify our repository\nAnalytics of the website with Matomo\nA unified layout with the other LMU OSC tutorials"
-  },
-  {
-    "objectID": "authoring-tutorials/authoring-and-versions.html#when-to-version",
-    "href": "authoring-tutorials/authoring-and-versions.html#when-to-version",
-    "title": "Authoring and Versions",
-    "section": "When to version?",
-    "text": "When to version?\n\nMoving Beyond v0.0.1\nIf you followed the earlier instructions, the initial version of your project should always be v0.0.1. This version contains essentially no content, and only some technical/set-up files. But what should constitute your first “release” after this? When have you moved up a version?\nYou could, for example, increment the patch numbers to e.g. v0.0.2, v0.0.3, … as you add and refine sections or chapters to your tutorial. However, this becomes tedious, and doesn’t reflect the reality of jumping between chapters as we develop, expanding upon and deleting chapters, and so on.\nMy rule of thumb is, in the early and initial stages of development, that it’s okay to be a little bit fast and dirty with the versioning: only bother to reversion when you are at the point that your first minor release, i.e. v0.1.0, seems like it would be reasonable. And a minor release is probably reasonable around the time that you would ask another OSC member to review a (nearly) completed draft.\n\n\nMoving Beyond v0.1.X\nAt the stage of v0.1.X, there will likely be several rounds of review and refinement. How and when should reviews be incremented?\n\nPatches: if primarily text, grammar, and other small adjustments are made to the tutorial, increment by just a patch.\nMinor: if large chunks of a chapter or chapters are added, removed, or relocated, increment by a minor release.\nMajor: the first major release should occur around the time the tutorial goes live for e.g. the first workshop. This might not hold universally, but is a good rule-of-thumb for when a tutorial is “finalized.”"
-  },
-  {
-    "objectID": "authoring-tutorials/authoring-and-versions.html#where-to-version",
-    "href": "authoring-tutorials/authoring-and-versions.html#where-to-version",
-    "title": "Authoring and Versions",
-    "section": "Where to Version?",
-    "text": "Where to Version?\n\nCITATION File\n\nupdate the citation file\n\n\n\nAbout File\n\n\nGitHub Releases\n\nversioning will also be done in the GitHub Release, discusses in the Releases section"
-  },
-  {
-    "objectID": "authoring-tutorials/authoring-and-versions.html#branching",
-    "href": "authoring-tutorials/authoring-and-versions.html#branching",
-    "title": "Authoring and Versions",
-    "section": "Branching",
-    "text": "Branching\n\nuse branches for new features and changes, particularly after v0.1.0 is released as this helps us keep a better record of changes over time"
-  },
-  {
-    "objectID": "authoring-tutorials/authoring-and-versions.html#pull-requests",
-    "href": "authoring-tutorials/authoring-and-versions.html#pull-requests",
-    "title": "Authoring and Versions",
-    "section": "Pull Requests",
-    "text": "Pull Requests\n\nopen pull requests for branches, even if you are going to self-approve the content. the PR’s will be the basis for notes\nuse informative titles for the pull requests\ngenerally, choose to Squash and Merge. use a Merge commit if you’re finalizing a version increment\n\n\nReviewers\n\nalways feel free to assign someone as a reviewer of your PR, especially if"
-  },
-  {
-    "objectID": "authoring-tutorials/authoring-and-versions.html#issues",
-    "href": "authoring-tutorials/authoring-and-versions.html#issues",
-    "title": "Authoring and Versions",
-    "section": "Issues",
-    "text": "Issues\n\nopening issues is a great way to keep track of potential changes you want to make yourself to the repo, where others can request changes, or you can ask for help or request that others assist on a task.\nhelpful tip: you can create a branch directly from a GitHub Issue, and then check this out locally. The branch will automatically be linked to the Issue such that when you eventually merge that branch through a Pull Request, the issue will automatically be marked as resolved"
-  },
-  {
-    "objectID": "osc-events/wrapup-feedback.html",
-    "href": "osc-events/wrapup-feedback.html",
-    "title": "Wrap Up and Feedback",
-    "section": "",
-    "text": "After an event, you should send emails to wrap up the event and also collect feedback.",
+    "text": "Back to top",
     "crumbs": [
       "Home",
-      "Organizing an OSC Event",
-      "Wrap Up and Feedback"
+      "Authoring an OSC Tutorial"
     ]
   },
   {
-    "objectID": "osc-events/wrapup-feedback.html#wrap-up",
-    "href": "osc-events/wrapup-feedback.html#wrap-up",
-    "title": "Wrap Up and Feedback",
-    "section": "Wrap up",
-    "text": "Wrap up\n\nSend feedback form (formR) to all registrants and ask to fill within one week + advertise repository with event material (e.g. recordings, slides, etc)\nAdvertise repository with event material (e.g. recordings if gotten consent in advance, slides, etc) also on social media\nSend feedback (formR report) to instructors",
-    "crumbs": [
-      "Home",
-      "Organizing an OSC Event",
-      "Wrap Up and Feedback"
-    ]
+    "objectID": "authoring-tutorials/matomo-analytics.html",
+    "href": "authoring-tutorials/matomo-analytics.html",
+    "title": "Matomo Analytics",
+    "section": "",
+    "text": "Warning\n\n\n\nThis procedure is still a work in-progress, and is not yet live.\nMatomo is a privacy-focused, self-hosted web analytics tool that allows us to get an idea of how much each of our tutorials are being used, where they’re being accessed from (rough geographic area), and from where people are being linked to our websites (e.g. directly from other LMU OSC websites, or from other sites that link to us.) At the end of the day, these analytics are useful for us in 1) improving the sites to see which sites have more/less traffic than expected and 2) quantify the utility of our sites for grant purposes."
   },
   {
-    "objectID": "osc-events/wrapup-feedback.html#email-templates",
-    "href": "osc-events/wrapup-feedback.html#email-templates",
-    "title": "Wrap Up and Feedback",
-    "section": "Email Templates",
-    "text": "Email Templates\nMail to attendees\n\nGerman Wrap Up Email Example 1German Wrap Up Email Example 2English Wrap Up Email Example 1\n\n\nLiebe Teilnehmerinnen und Teilnehmer des Workshops “XX”\nWenn Sie teilgenommen haben, nehmen Sie sich bitte FIXME Zeit, um uns innerhalb einer Woche ein Feedback zu geben:  FIXME link to the Feedback form\nDas Material zum Workshop finden Sie hier: FIXME link to the materials\nDie Liste aller zukünftigen OSIP- und OSC-Veranstaltungen finden Sie hier: https://www.osc.uni-muenchen.de/events/index.html\nHerzliche Grüße,  Malika\n\n\nLiebe Teilnehmerinnen und Teilnehmer von „DEAL zu Diamond“,\nvielen Dank für Ihr Interesse und Engagement!\n📄 Materialien:  Folien sowie das Video von Teil 2 sind auf OSF:  https://osf.io/r49ng/files/osfstorage  Die Folien haben eine CC-BY Lizenz, so dass Sie sie nachnutzen können.\n📝 Feedback:  Wir laden Sie zu einer kurzen (2 min)-Umfrage zu dem Event ein: Wie hat es Ihnen gefallen? Was würden Sie sich wünschen?  https://surveys.osc.lmu.de/deal-diamond-feedback\n📢 Informiert bleiben:  Auf unserer Website oder über unsere Mailingliste erhalten Sie Ankündigungen für zukünftige Workshops und Symposien des LMU Open Science Center.\n🤝 Mitglied werden:  Als LMU-Angehörige können Sie auch zu unseren Aktivitäten beitragen, indem Sie Mitglied werden.\nViele Grüße, Felix Schönbrodt\n\n\nDear participants of the “XX” workshop,\nIf you attended the workshop, please take FIXME time to provide us with your feedback within one week:\nFIXME link to the Feedback form\nYou can find the workshop materials here:  FIXME link to the materials\nA list of all upcoming OSIP and OSC events can be found here:  https://www.osc.uni-muenchen.de/events/index.html\nBest regards,  Malika",
+    "objectID": "authoring-tutorials/matomo-analytics.html#generating-matomo-code",
+    "href": "authoring-tutorials/matomo-analytics.html#generating-matomo-code",
+    "title": "Matomo Analytics",
+    "section": "Generating Matomo Code",
+    "text": "Generating Matomo Code\nIf you are one of the “superusers” of our Matomo instance, you can generate code with the following steps:\n\nLog in at www.analytics.osc.lmu.de\nPress “All Websites” and then “Add a new website”\nOur websites are not intranet sites so select “Website”\nFill out the page with the following information\n\nName: the tutorial title\nURL: the GitHub Pages site link\n\nSave the configuration\nClick “View tracking code” for the tutorial. Make sure you select the correct tutorial from the list!  \nCopy the tracking code\nSend the tracking code back to the requestor, and remind them to place it in the matomo_analytics.html file as is.\n\nAlternatively, you can just open a pull request in their repo"
+  },
+  {
+    "objectID": "osc-events/liaising-with-attendees.html",
+    "href": "osc-events/liaising-with-attendees.html",
+    "title": "Liaising with Attendees",
+    "section": "",
+    "text": "Here’s a useful checklist of things to do and consider when commmunicating with the attendees for an event:\n\nCreate registration page for public part of the event (several tickets, e.g. in person, online, waiting list for non-member – on for each session or for the whole course only).\nIf the registrant needs to apply to attend specific sessions (e.g. hands on workshop with limited number of seats), then develop rubrics to score applications.\nFor in-person reception: secure venue, catering, & prepare registration form\nAdvertise event to relevant channels, e.g.\n\ngraduate center\nInfodienst\nOSC\nBlueSky/Mastodon/LinkedIn\nUB University of Munich - Central Library\nList of comms officers per departments\nFollow up list of comm officers\n\nSend an email and forms to applicants\nConfirm attendance (Google form with name; email; “I confirm and will inform if need to cancel”; confirm mode of attendance and R/Julia) + Google form for their PI to approve; waiting list- confirm desire to be on waiting list (Google form) + registration page to attend public part of event\nCheck that registration numbers are normal, and check that the registrants bought the right tickets etc.\n\nAccept Klinikum, if their tickets need approval.\nTUM in person ticket also to approve.\nThe rest may need approval depending on whether there are seats remaining- email them minimally two days in advance. (Suggestion: email the top 3 on waiting list to ask whether they are still interested to be invited last minute or not)\n\nInform local attendees of in-person reception they need to register for\nprint signage for in person venue\nSend participants’ info to instructors who requested it\nHave the registration platform or manually send reminder to registrants/applicants with relevant info (e.g. Zoom link, abstracts)\nPossibly create online workspace for attendees + share CoC + share password protected webpage (e.g. with Zoom link, or private repository) - invite LMU participants to LMU chat OSC space\nEmail reminder to registrants either when fully booked or 4 days in advance (whichever comes first)\n\nMail draft if fully booked:\nDear registrants of the FIXME title (linked),\nThe in-person seats of this event are now booked out and there are already people on the waiting list.  Please cancel your seat reservation if you can no longer attend in person by emailing me back or directly on Pretix.  Your participation will remain possible online: FIXME zoom link\nMeeting ID: FIXME  Passcode: FIXME \nWe are looking forward to discussing with you soon!\n\nSend participants’ info to instructors who requested it\n\n\n\n\n Back to top",
     "crumbs": [
       "Home",
       "Organizing an OSC Event",
-      "Wrap Up and Feedback"
+      "Liaising with Attendees"
     ]
   },
   {
@@ -1196,6 +1236,34 @@
     ]
   },
   {
+    "objectID": "github/page1.html",
+    "href": "github/page1.html",
+    "title": "Page Title Here",
+    "section": "",
+    "text": "The headers below cause the table of contents/dropdown on the right to be visible."
+  },
+  {
+    "objectID": "github/page1.html#level-two",
+    "href": "github/page1.html#level-two",
+    "title": "Page Title Here",
+    "section": "Level Two",
+    "text": "Level Two\n\nL3\n\n\nL3 Again\n\n\nAnd one more time"
+  },
+  {
+    "objectID": "github/page1.html#another-level-two",
+    "href": "github/page1.html#another-level-two",
+    "title": "Page Title Here",
+    "section": "Another Level Two",
+    "text": "Another Level Two"
+  },
+  {
+    "objectID": "github/page1.html#level-two-1",
+    "href": "github/page1.html#level-two-1",
+    "title": "Page Title Here",
+    "section": "Level Two",
+    "text": "Level Two"
+  },
+  {
     "objectID": "LICENSE-CODE.html",
     "href": "LICENSE-CODE.html",
     "title": "Creative Commons Zero v1.0 Universal",
@@ -1231,48 +1299,78 @@
     "text": "Level Two"
   },
   {
-    "objectID": "updating-website/create-news-item.html",
-    "href": "updating-website/create-news-item.html",
-    "title": "Create a News Item",
+    "objectID": "new-staff/page3.html",
+    "href": "new-staff/page3.html",
+    "title": "Page Title Here",
     "section": "",
-    "text": "Follow this link to see where the News Items are on the LMU OSC Website.\nNews Items are about:\nHow will you know when to make a ‘News’ item?\nMalika will write to you when you have to create a news item about something and she will also provide you all important information that needs to be included,\nCreating a new news item\nFull Instructions\nFull and detailed instructions of how to add a new member using the _news_template.qmd can be found in the README in the first news folder.\nOr click here to view the New Event README.",
+    "text": "The headers below cause the table of contents/dropdown on the right to be visible."
+  },
+  {
+    "objectID": "new-staff/page3.html#level-two",
+    "href": "new-staff/page3.html#level-two",
+    "title": "Page Title Here",
+    "section": "Level Two",
+    "text": "Level Two\n\nL3\n\n\nL3 Again\n\n\nAnd one more time"
+  },
+  {
+    "objectID": "new-staff/page3.html#another-level-two",
+    "href": "new-staff/page3.html#another-level-two",
+    "title": "Page Title Here",
+    "section": "Another Level Two",
+    "text": "Another Level Two"
+  },
+  {
+    "objectID": "new-staff/page3.html#level-two-1",
+    "href": "new-staff/page3.html#level-two-1",
+    "title": "Page Title Here",
+    "section": "Level Two",
+    "text": "Level Two"
+  },
+  {
+    "objectID": "updating-website/create-new-members-page.html",
+    "href": "updating-website/create-new-members-page.html",
+    "title": "Create a New Members Profile Page",
+    "section": "",
+    "text": "Follow this link to see where the Members page is on the LMU OSC Website.",
     "crumbs": [
       "Home",
       "Updating Website",
-      "Create a News Item"
+      "Create a Profile Page"
     ]
   },
   {
-    "objectID": "updating-website/create-news-item.html#news-categories",
-    "href": "updating-website/create-news-item.html#news-categories",
-    "title": "Create a News Item",
-    "section": "News Categories",
-    "text": "News Categories\n\nAnnouncement\nUse this category for important organizational updates, major changes, launches, partnerships, or general news that does not fit into a more specific category.\n\n\nAwards/Recognition\nUse this category to highlight awards, honours, grants, nominations, or other forms of recognition received by OSC members or affiliated projects.\n\n\nCall for Application\nUse this category for opportunities that require applications, such as training programs, workshops, summer schools, fellowships, or other initiatives with registration/application deadlines.\n\n\nEvent Highlights\nUse this category for recap posts about past events hosted, attended, or supported by the OSC. These posts should focus on key takeaways, outcomes, or reflections—not event promotion.\n\n\nInterviews\nUse this category for featured interviews, Q&As, or spotlight conversations with OSC members, collaborators, or guests.\n\n\nJob Ads\nUse this category for job openings, internships, student assistant roles, fellowships, or other employment opportunities related to the OSC or partner organizations.\n\n\nNew Members\nUse this category to announce and introduce new OSC members, including individual members, institutional members, or affiliated collaborators.\n\n\nNewsletters\nUse this category for newsletter releases, updates, or archived newsletter announcements.\n\n\nPublications\nUse this category to highlight newly published papers, reports, preprints, books, or other scholarly outputs from OSC members.\n\n\nReports\nUse this category for formal reports, annual summaries, project reports, evaluation reports, or documents that summarize findings, progress, or institutional activities.",
+    "objectID": "updating-website/create-new-members-page.html#individual-members",
+    "href": "updating-website/create-new-members-page.html#individual-members",
+    "title": "Create a New Members Profile Page",
+    "section": "Individual Members",
+    "text": "Individual Members\nHow will you know when to add a member to the page?\nMalika will send you an email containing all the relevant information from the person themselves. If any information is missing, let Malika know and she will either get the information or give further instructions.\nHow to add a new individual member to the page?\n\nUsing the GitHub workflow, create an issue (if Malika already hasn’t) in the lmu-osc.github.io repo, title it “Add New Member firstname lastname”, and use it to create a new branch.\nIn your local copy, switch to this branch\nNavigate to people → people → templates folder\nMake a copy of the _people_template.qmd file and follow the instructions to fill it out according to the person’s information\nChange the name of the new .qmd file by following this format: firstname-lastname\n\nAdding the new member’s profile picture\n\nSave either the picture sent by the new member during their application OR a public picture of them (for e.g. the picture used for their profile on the official LMU Website)\nNavigate to people → people → images folder\nAdd the picture to this foler and change the name following this format: lastname-firstname\n\n\n\n\n\n\n\nNoteAdding the Profile Picture\n\n\n\nThere will be a designated place in the _people_template.qmd to put the path to the picture.\n\n\nFull Instructions\nFull and detailed instructions of how to add a new member using the _people_template.qmd can be found in the README in the first people folder.\nOr click here to view the New Member README.\nAny questions or missing information, please ask Malika.",
     "crumbs": [
       "Home",
       "Updating Website",
-      "Create a News Item"
+      "Create a Profile Page"
     ]
   },
   {
-    "objectID": "updating-website/using-fiona.html",
-    "href": "updating-website/using-fiona.html",
-    "title": "Using Fiona",
+    "objectID": "updating-website/create-new-members-page.html#institutional-members",
+    "href": "updating-website/create-new-members-page.html#institutional-members",
+    "title": "Create a New Members Profile Page",
+    "section": "Institutional Members",
+    "text": "Institutional Members\nwhat can i say here? what’s different in the process?",
+    "crumbs": [
+      "Home",
+      "Updating Website",
+      "Create a Profile Page"
+    ]
+  },
+  {
+    "objectID": "updating-website/index.html",
+    "href": "updating-website/index.html",
+    "title": "OSC Manual",
     "section": "",
-    "text": "Fiona was our internal content management system (CMS) for the OSC website, but we no longer use it since launching our new website in April of 2026"
-  },
-  {
-    "objectID": "updating-website/using-fiona.html#useful-links",
-    "href": "updating-website/using-fiona.html#useful-links",
-    "title": "Using Fiona",
-    "section": "Useful Links",
-    "text": "Useful Links\nThe OSC website\nGeneral information about Fiona"
-  },
-  {
-    "objectID": "updating-website/using-fiona.html#navigating-fiona",
-    "href": "updating-website/using-fiona.html#navigating-fiona",
-    "title": "Using Fiona",
-    "section": "Navigating Fiona",
-    "text": "Navigating Fiona\nLet’s get you ready to start using Fiona:\n\nFollow this link to an online workshop and apply to take the course:\nSend an email to it.internet@verwaltung.uni-muenchen.de with your “LMU-Kennung” and the Fiona path Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center with Felix and Malika cc’ed to give it legitimacy.\nAfter taking the course and receiving the relevant permission to access Fiona, follow this link to the Fiona Login site\nOnce in Fiona, follow this path to find the OSC: Startseite / 00 Fakultätsübergreifende Einrichtungen / eOpen Science Center\n\n\n\n\n\n\n\nImportantAccessing Fiona\n\n\n\nIf you are trying to access Fiona outside of the eduroam wifi, you will need to use a specific VPN. Follow this link, download eduVPN, and turn it on before logging in to Fiona."
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Updating Website"
+    ]
   }
 ]
