@@ -24,6 +24,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: tech-overview.qmd
+        text: Tech Overview
     tools:
       - icon: github
         menu:
