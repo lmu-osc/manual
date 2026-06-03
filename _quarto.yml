@@ -148,6 +148,17 @@ website:
           - href: path/file.qmd
             text: "Lessons Learned and Iterative Improvements"
 
+      - id: matomo-analytics
+        title: Matomo Analytics
+        href: matomo/index.qmd
+        contents:
+            - text: Overview and Setup
+              href: matomo/matomo-overview-and-setup.qmd
+            - text: Campaigns
+              href: matomo/campaigns-and-reporting.qmd
+            - text: Adding Sites
+              href: matomo/adding-a-new-website.qmd
+
       - section: "Archive"
         contents:
           - href: archive/using-fiona.qmd
