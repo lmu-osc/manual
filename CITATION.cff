@@ -1,14 +1,17 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-- family-names: "YOUR_NAME_HERE"
-  given-names: "YOUR_NAME_HERE"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-- family-names: "Lisa"
-  given-names: "Mona"
-  orcid: "https://orcid.org/0000-0000-0000-0000"
-title: "tutorial-template"
-version: 1.0.0
-doi: 10.5281/zenodo.1234
+- family-names: Callahan
+  given-names: Pat
+  orcid: https://orcid.org/0000-0003-1769-7580
+- family-names: Waterfield
+  given-names: Elizabeth
+  orcid: https://orcid.org/0009-0006-3725-6730
+- family-names: Ihle
+  given-names: Malika
+  orcid: https://orcid.org/0000-0002-3242-5981
+title: LMU Open Science Center Manual
+version: 0.0.1
+# doi: 
 date-released: 2025-01-20
-url: "https://github.com/lmu-osc/tutorial-template"
+url: https://github.com/lmu-osc/manual
