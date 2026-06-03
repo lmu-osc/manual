@@ -27,7 +27,7 @@ FIXME link to the Feedback form
  
 Das Material zum Workshop finden Sie hier: FIXME link to the materials
  
-Die Liste aller zukünftigen OSIP- und OSC-Veranstaltungen finden Sie hier: https://www.osc.uni-muenchen.de/events/index.html
+Die Liste aller zukünftigen OSIP- und OSC-Veranstaltungen finden Sie hier: https://www.osc.lmu.de/events/
  
 Herzliche Grüße, <br>
 Malika
@@ -67,7 +67,7 @@ You can find the workshop materials here: <br>
 FIXME link to the materials
 
 A list of all upcoming OSIP and OSC events can be found here: <br>
-https://www.osc.uni-muenchen.de/events/index.html
+https://www.osc.lmu.de/events/
 
 Best regards, <br>
 Malika

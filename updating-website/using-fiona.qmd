@@ -7,7 +7,7 @@ Fiona was our internal content management system (CMS) for the OSC website, but 
 
 ## Useful Links
 
-[The OSC website](https://www.osc.uni-muenchen.de/index.html)
+[The OSC website](https://www.osc.lmu.de)
 
 [General information about Fiona](https://www.internetdienste.verwaltung.uni-muenchen.de/online-workshops/basisworkshop-online/index.html) 
 
