@@ -43,6 +43,7 @@ website:
         href: index.qmd
 
       - section: "About"
+        href: about/index.qmd
         contents:
           - href: about/page1.qmd
             text: "TOPIC1 Page1 Title"
@@ -50,6 +51,7 @@ website:
             text: "TOPIC1 Page2 Title"
 
       - section: "Staff Onboarding"
+        href: staff-onboarding/index.qmd
         contents:
           - href: staff-onboarding/internal-communication.qmd
             text: "Internal Communication"
@@ -57,8 +59,9 @@ website:
             text: "Working Environment"
           - href: staff-onboarding/administration.qmd
             text: "Administration"
-    
+
       - section: "OSC GitHub Organization"
+        href: github/index.qmd
         contents:
           - href: path/file.qmd
             text: "About GitHub Organization"
@@ -76,8 +79,9 @@ website:
             text: "Zenodo Integration"
           - href: path/file.qmd
             text: "Citations and Licenses"
-    
+
       - section: "Updating Website"
+        href: updating-website/index.qmd
         contents:
           - href: updating-website/create-news-item.qmd
             text: "Create a News Item"
@@ -87,13 +91,15 @@ website:
             text: "Create a Profile Page"
           - href: .qmd
             text: "Edit Other Pages"
- 
+
       - section: "Onboarding an OSC Member"
+        href: onboarding-member/index.qmd
         contents:
           - href: onboarding-member/onboarding-osc-member.qmd
             text: "Onboarding an OSC Member"
-  
+
       - section: "Organizing an OSC Event"
+        href: osc-events/index.qmd
         contents:
           - href: osc-events/creating-program.qmd
             text: "Creating a Program and Liaising with Guest Instructor"
@@ -107,7 +113,9 @@ website:
             text: "Logistics within the Event"
           - href: osc-events/wrapup-feedback.qmd
             text: "Wrap Up and Feedback"
+
       - section: "OSC Public Outreach"
+        href: osc-outreach/index.qmd
         contents:
           - href: osc-outreach/social-media.qmd
             text: "Social Media"
@@ -117,8 +125,9 @@ website:
             text: "Flyer Design and Images"
           - href: osc-events/additional-prep.qmd
             text: "Mail Drafts"
-  
+
       - section: "Authoring an OSC Tutorial"
+        href: authoring-tutorials/index.qmd
         contents:
           - href: path/file.qmd
             text: "Introduction"
@@ -134,8 +143,9 @@ website:
             text: "Authoring and Versions"
           - href: path/file.qmd
             text: "Best Practices"
-    
+
       - section: "Switching a Group to Open Research Practices"
+        href: path/index.qmd
         contents:
           - href: path/file.qmd
             text: "Survey"
@@ -148,8 +158,7 @@ website:
           - href: path/file.qmd
             text: "Lessons Learned and Iterative Improvements"
 
-      - id: matomo-analytics
-        title: Matomo Analytics
+      - section: Matomo Analytics
         href: matomo/index.qmd
         contents:
             - text: Overview and Setup
@@ -159,7 +168,8 @@ website:
             - text: Adding Sites
               href: matomo/adding-a-new-website.qmd
 
-      - section: "Archive"
+      - section: Archive
+        href: archive/index.qmd
         contents:
           - href: archive/using-fiona.qmd
             text: "Using Fiona"
