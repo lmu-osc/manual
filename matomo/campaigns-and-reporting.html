@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Page Title Here – OSC Manual</title>
+<title>Campaigns and Reporting Analytics – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../about/page2.html" rel="next">
-<link href="../index.html" rel="prev">
+<link href="../matomo/adding-a-new-website.html" rel="next">
+<link href="../matomo/matomo-overview-and-setup.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../about/page1.html">About</a></li><li class="breadcrumb-item"><a href="../about/page1.html">TOPIC1 Page1 Title</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../matomo/index.html">Matomo Analytics</a></li><li class="breadcrumb-item"><a href="../matomo/campaigns-and-reporting.html">Campaigns</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -160,16 +160,16 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">About</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../about/page1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../about/page1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TOPIC1 Page1 Title</span></a>
   </div>
 </li>
@@ -501,11 +501,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../matomo/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Matomo Analytics</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../matomo/matomo-overview-and-setup.html" class="sidebar-item-text sidebar-link">
@@ -514,7 +514,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../matomo/campaigns-and-reporting.html" class="sidebar-item-text sidebar-link">
+  <a href="../matomo/campaigns-and-reporting.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Campaigns</span></a>
   </div>
 </li>
@@ -555,29 +555,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#level-one-header" id="toc-level-one-header" class="nav-link active" data-scroll-target="#level-one-header">Level One Header</a>
+  <li><a href="#what-are-campaigns" id="toc-what-are-campaigns" class="nav-link active" data-scroll-target="#what-are-campaigns">What Are Campaigns?</a></li>
+  <li><a href="#how-and-when-to-create-campaigns" id="toc-how-and-when-to-create-campaigns" class="nav-link" data-scroll-target="#how-and-when-to-create-campaigns">How and When to Create Campaigns</a></li>
+  <li><a href="#campaign-examples" id="toc-campaign-examples" class="nav-link" data-scroll-target="#campaign-examples">Campaign Examples</a>
   <ul class="collapse">
-  <li><a href="#level-two" id="toc-level-two" class="nav-link" data-scroll-target="#level-two">Level Two</a>
-  <ul class="collapse">
-  <li><a href="#l3" id="toc-l3" class="nav-link" data-scroll-target="#l3">L3</a></li>
-  <li><a href="#l3-again" id="toc-l3-again" class="nav-link" data-scroll-target="#l3-again">L3 Again</a></li>
-  <li><a href="#and-one-more-time" id="toc-and-one-more-time" class="nav-link" data-scroll-target="#and-one-more-time">And one more time</a></li>
-  </ul></li>
-  <li><a href="#another-level-two" id="toc-another-level-two" class="nav-link" data-scroll-target="#another-level-two">Another Level Two</a></li>
-  </ul></li>
-  <li><a href="#level-one-again" id="toc-level-one-again" class="nav-link" data-scroll-target="#level-one-again">Level One Again</a>
-  <ul class="collapse">
-  <li><a href="#level-two-1" id="toc-level-two-1" class="nav-link" data-scroll-target="#level-two-1">Level Two</a></li>
+  <li><a href="#a-bad-but-original-example-of-a-campaign" id="toc-a-bad-but-original-example-of-a-campaign" class="nav-link" data-scroll-target="#a-bad-but-original-example-of-a-campaign">A Bad, But Original, Example of a Campaign</a></li>
+  <li><a href="#a-better-example-of-a-campaign" id="toc-a-better-example-of-a-campaign" class="nav-link" data-scroll-target="#a-better-example-of-a-campaign">A Better Example of a Campaign</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/about/page1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../about/page1.html">About</a></li><li class="breadcrumb-item"><a href="../about/page1.html">TOPIC1 Page1 Title</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../matomo/index.html">Matomo Analytics</a></li><li class="breadcrumb-item"><a href="../matomo/campaigns-and-reporting.html">Campaigns</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Page Title Here</h1>
+<h1 class="title">Campaigns and Reporting Analytics</h1>
 </div>
 
 
@@ -594,29 +587,56 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The headers below cause the table of contents/dropdown on the right to be visible.</p>
-<section id="level-one-header" class="level1">
-<h1>Level One Header</h1>
-<section id="level-two" class="level2">
-<h2 class="anchored" data-anchor-id="level-two">Level Two</h2>
-<section id="l3" class="level3">
-<h3 class="anchored" data-anchor-id="l3">L3</h3>
+<p>This chapter discusses how to use the campaign tracking features of Matomo, and how to use the data from Matomo to understand your audience and improve your website.</p>
+<section id="what-are-campaigns" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-campaigns">What Are Campaigns?</h2>
+<p>Campaigns are a way to track the effectiveness of specific marketing efforts, such as email campaigns, social media posts, or paid advertising. By creating a campaign in Matomo and including the appropriate tracking parameters in your URLs, you can see how many visitors are coming to your website from each campaign, and how they are interacting with your site once they arrive.</p>
+<p>For example, if you are running a social media campaign to promote a new blog post, you could create a campaign in Matomo called “Social Media Campaign” and include the appropriate tracking parameters in the URLs that you share on social media. This would allow you to see how many visitors are coming to your website from that campaign, and how they are engaging with your content.</p>
+<p>In short, a campaign is a way to track the effectiveness of specific marketing efforts by using personalized URLs with tracking parameters. These tracking parameters are added to the end of a URL, and they typically include information about the campaign, such as the source, medium, and name of the campaign. For example, a URL with tracking parameters might look like this:</p>
+<p><code>https://www.example.com/?utm_source=social&amp;utm_medium=post&amp;utm_campaign=social_media_campaign</code></p>
+<p>where the <code>utm_source</code>, <code>utm_medium</code>, and <code>utm_campaign</code> parameters are used to track the source, medium, and name of the campaign, respectively. This is a general example, and Matomo uses its own specific tracking parameters, but the concept is the same: you add tracking parameters to your URLs to track the effectiveness of your campaigns in Matomo. For example, a Matomo URL with tracking parameters might look like this:</p>
+<p><code>https://example.org/?mtm_campaign=name&amp;mtm_kwd=campaign-keyword&amp;mtm_medium=medium</code></p>
+<p>where <code>mtm_campaign</code> is the campaign name, <code>mtm_kwd</code> is the campaign keyword, and <code>mtm_medium</code> is the campaign medium. By including these tracking parameters in your URLs, you can track the effectiveness of your campaigns in Matomo and see how many visitors are coming to your website from each campaign, and how they are engaging with your content.</p>
+<p>Note that these tracking parameters (UTM parameters) are not what is actually used in Matomo, but they are a common example of how tracking parameters work in general. Matomo uses its own specific tracking parameters, several of which will be discussed in the next section.</p>
 </section>
-<section id="l3-again" class="level3">
-<h3 class="anchored" data-anchor-id="l3-again">L3 Again</h3>
+<section id="how-and-when-to-create-campaigns" class="level2">
+<h2 class="anchored" data-anchor-id="how-and-when-to-create-campaigns">How and When to Create Campaigns</h2>
+<p>Strictly speaking, you can “create” a campaign in Matomo by simply including the appropriate tracking parameters in your URLs. There is no need to create a campaign in the Matomo dashboard before you start tracking, as Matomo will automatically recognize the tracking parameters and attribute the traffic to the appropriate campaign.</p>
+<p>However, it is often helpful to use the “Campaign URL Builder” found in the Matomo dashboard of a website, which can help you generate the appropriate tracking parameters for your URLs. This feature allows you to easily create URLs with the correct tracking parameters by inputting the base URL and any of the following parameters:</p>
+<ul>
+<li><strong>Campaign Name (required)</strong>: The name of the campaign you want to track. This is the most important parameter, as it will be used to identify the campaign in your Matomo reports.</li>
+<li><strong>Campaign Keyword</strong>: The keyword associated with the campaign, which can be useful for tracking specific keywords in paid search campaigns.</li>
+<li><strong>Campaign Source</strong>: The source of the traffic, such as “social media”, “email”, or “paid advertising”. This parameter helps you understand where your traffic is coming from.</li>
+<li><strong>Campaign Medium</strong>: The medium through which the traffic is coming, such as “post”, “newsletter”, or “cpc”. This parameter helps you understand how your traffic is being delivered.</li>
+<li><strong>Campaign Content</strong>: Additional information about the campaign, such as the specific ad or link that was clicked. This can help you differentiate between different versions of a campaign.</li>
+<li><strong>Campaign ID</strong>: A unique identifier for the campaign, which can be useful for tracking campaigns across different platforms or tools.</li>
+<li><strong>Campaign Group</strong>: Identifies a specific group or audience.</li>
+<li><strong>Campaign Placement</strong>: Used to describe the advertising placement or position, for example an entire website, specific pages from a website, an individual ad unit positioned on a single page, a video, a mobile phone app, and more.</li>
+</ul>
+<p>The bolded parameters above are the ones that we typically use for our campaigns, but you can use any combination of these parameters to track your campaigns in Matomo. <strong>The important thing is to be consistent in how you use these parameters across your campaigns, so that you can easily compare and analyze the data in your Matomo reports for a website.</strong> Think of your parameter choices as being like the columns in an Excel Pivot Table or a Table 1 in a paper—you want to establish clear, reusable, descriptive categories that allow you to look at cross-sections of data.</p>
 </section>
-<section id="and-one-more-time" class="level3">
-<h3 class="anchored" data-anchor-id="and-one-more-time">And one more time</h3>
+<section id="campaign-examples" class="level2">
+<h2 class="anchored" data-anchor-id="campaign-examples">Campaign Examples</h2>
+<section id="a-bad-but-original-example-of-a-campaign" class="level3">
+<h3 class="anchored" data-anchor-id="a-bad-but-original-example-of-a-campaign">A Bad, But Original, Example of a Campaign</h3>
+<p>At the launch of our new OSC website in 2026, we ran a campaign to promote the new website and encourage people to visit and explore the new content. We created a campaign in Matomo and included the following tracking parameters in the URLs that we shared on social media and in our email newsletters:</p>
+<ul>
+<li>Campaign Name: <code>launch</code></li>
+<li>Campaign Keywords: <code>email</code>, <code>linkedin</code>, <code>bsky</code>, <code>mastodon</code></li>
+</ul>
+<p>This was our first use of the campaign tracking features of Matomo, and it allowed us to see how many visitors were coming to our website from each of our promotional efforts, and how they were engaging with our content as a result.</p>
+<p><strong>However, this was ultimately not the best use of the campaign tracking features of Matomo.</strong> We should have considered using the <strong>Campaign Source</strong> parameter to differentiate between the different platforms (e.g., email, LinkedIn, Bluesky, Mastodon) instead of using the <strong>Campaign Keywords</strong> parameter. The <strong>Campaign Source</strong> parameter is specifically designed to track the source of traffic, and it is how we collect data going forward. By using <strong>Campaign Keywords</strong> instead, we introduced an inconsistency in how the parameters are used across our campaigns. This is a good example of why it is important to be consistent in how you use the tracking parameters across campaigns, so that you can easily compare and analyze the data in your Matomo reports. Ultimately, the data from this campaign was still useful, but it would have been more straightforward to analyze if we had used the <strong>Campaign Source</strong> parameter to differentiate between the different platforms.</p>
 </section>
-</section>
-<section id="another-level-two" class="level2">
-<h2 class="anchored" data-anchor-id="another-level-two">Another Level Two</h2>
-</section>
-</section>
-<section id="level-one-again" class="level1">
-<h1>Level One Again</h1>
-<section id="level-two-1" class="level2">
-<h2 class="anchored" data-anchor-id="level-two-1">Level Two</h2>
+<section id="a-better-example-of-a-campaign" class="level3">
+<h3 class="anchored" data-anchor-id="a-better-example-of-a-campaign">A Better Example of a Campaign</h3>
+<p>Now let us look at how a well-structured campaign should be set up. Suppose the OSC is organising a workshop on research data management (RDM) and wants to promote it via email to our mailing list, as well as on LinkedIn, Bluesky, and Mastodon. A properly configured campaign would assign each parameter to the dimension it is meant to describe, like this:</p>
+<ul>
+<li><strong>Campaign Name</strong>: <code>rdm-workshop-2026</code></li>
+<li><strong>Campaign Source</strong>: <code>email</code>, <code>linkedin</code>, <code>bsky</code>, <code>mastodon</code></li>
+<li><strong>Campaign Medium</strong>: <code>newsletter</code>, <code>social-post</code></li>
+</ul>
+<p>In this setup, the <strong>Campaign Name</strong> groups all traffic under a single campaign (<code>rdm-workshop-2026</code>), making it easy to see the total impact of the workshop promotion. The <strong>Campaign Source</strong> parameter cleanly separates traffic by platform, so you can compare which channel drove the most visitors. The <strong>Campaign Medium</strong> distinguishes the delivery method (a newsletter versus a social media post). Finally, <strong>Campaign Group</strong> captures which audience segment each link targeted (our mailing list versus a general audience on social media), which can be useful for understanding how different groups respond to your promotions.</p>
+<p>With this structure, your Matomo reports will immediately show you meaningful breakdowns without any manual cleanup. For example, you could quickly answer questions like: “How many visitors came from the LinkedIn post vs.&nbsp;the email newsletter?” or “Did the email newsletter drive more engagement per visitor than the social media posts?” By keeping each parameter focused on a single dimension, you ensure that your data remains clean, consistent, and easy to analyse across all future campaigns.</p>
 
 
 </section>
@@ -1025,13 +1045,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../index.html" class="pagination-link" aria-label="Home">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Home</span>
+      <a href="../matomo/matomo-overview-and-setup.html" class="pagination-link" aria-label="Overview and Setup">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview and Setup</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../about/page2.html" class="pagination-link" aria-label="TOPIC1 Page2 Title">
-        <span class="nav-page-text">TOPIC1 Page2 Title</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../matomo/adding-a-new-website.html" class="pagination-link" aria-label="Adding Sites">
+        <span class="nav-page-text">Adding Sites</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1043,7 +1063,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/about/page1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

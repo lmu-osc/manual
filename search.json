@@ -402,6 +402,77 @@
     "text": "Back to top"
   },
   {
+    "objectID": "matomo/matomo-overview-and-setup.html",
+    "href": "matomo/matomo-overview-and-setup.html",
+    "title": "Matomo Overview and Our Server Setup",
+    "section": "",
+    "text": "Web analytics is an essential part of managing any modern website. By understanding how visitors find, navigate, and interact with a site, you can make informed decisions about content, layout, and outreach. Matomo (formerly known as Piwik) is a free and open-source web analytics platform designed to provide exactly this kind of insight. Originally created as a privacy-respecting alternative to proprietary tools like Google Analytics, Matomo has grown into a mature, full-featured platform that gives website operators complete ownership and control over their analytics data.\nMatomo offers a comprehensive suite of features for tracking and understanding website traffic. These include real-time visitor monitoring, customizable dashboards, detailed visitor profiles, goal and conversion tracking, heatmaps and session recordings, and a wide range of pre-built and custom reports. Because it is open-source, Matomo can be extended with plugins, integrated with other systems, and tailored to fit specific institutional needs. Its strong emphasis on data privacy – including full compliance with the General Data Protection Regulation (GDPR) by default – makes it particularly well suited for academic and research organizations such as ours.\nAt the Open Science Center, we use Matomo to track visitor interactions across our websites. This helps us understand who our audience is, which content resonates with them, and how we can continuously improve the user experience. Our Matomo instance is hosted on our own dedicated server, which means that we retain full control over all analytics data and can ensure that our tracking practices remain in line with our privacy commitments and with applicable regulations.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Overview and Setup"
+    ]
+  },
+  {
+    "objectID": "matomo/matomo-overview-and-setup.html#what-is-matomo",
+    "href": "matomo/matomo-overview-and-setup.html#what-is-matomo",
+    "title": "Matomo Overview and Our Server Setup",
+    "section": "",
+    "text": "Web analytics is an essential part of managing any modern website. By understanding how visitors find, navigate, and interact with a site, you can make informed decisions about content, layout, and outreach. Matomo (formerly known as Piwik) is a free and open-source web analytics platform designed to provide exactly this kind of insight. Originally created as a privacy-respecting alternative to proprietary tools like Google Analytics, Matomo has grown into a mature, full-featured platform that gives website operators complete ownership and control over their analytics data.\nMatomo offers a comprehensive suite of features for tracking and understanding website traffic. These include real-time visitor monitoring, customizable dashboards, detailed visitor profiles, goal and conversion tracking, heatmaps and session recordings, and a wide range of pre-built and custom reports. Because it is open-source, Matomo can be extended with plugins, integrated with other systems, and tailored to fit specific institutional needs. Its strong emphasis on data privacy – including full compliance with the General Data Protection Regulation (GDPR) by default – makes it particularly well suited for academic and research organizations such as ours.\nAt the Open Science Center, we use Matomo to track visitor interactions across our websites. This helps us understand who our audience is, which content resonates with them, and how we can continuously improve the user experience. Our Matomo instance is hosted on our own dedicated server, which means that we retain full control over all analytics data and can ensure that our tracking practices remain in line with our privacy commitments and with applicable regulations.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Overview and Setup"
+    ]
+  },
+  {
+    "objectID": "matomo/matomo-overview-and-setup.html#our-matomo-server-setup",
+    "href": "matomo/matomo-overview-and-setup.html#our-matomo-server-setup",
+    "title": "Matomo Overview and Our Server Setup",
+    "section": "Our Matomo Server Setup",
+    "text": "Our Matomo Server Setup\nOur Matomo instance is hosted on a dedicated server that we manage ourselves. This self-hosted approach gives us complete control over the analytics data and allows us to customize tracking and reporting features to suit our specific needs without relying on a third-party service. It also means that no data ever leaves our infrastructure, which is an important factor in our overall data protection strategy.\nThe specific details of our server configuration – including access credentials, network setup, and deployment procedures – are kept within our LRZ GitLab instance and are not publicly available. If you are involved in the maintenance of our Matomo instance and need access to these details, or if you have questions about our setup, please reach out to us directly.\nThat said, the core of our deployment follows a fairly standard pattern. We use Docker Compose to run Matomo alongside a MariaDB (MySQL-compatible) database. This containerized setup makes it straightforward to deploy, update, and maintain the application while keeping its dependencies isolated. The relevant docker-compose.yml file looks like this:\nversion: \"3\"\n\nservices:\n  db:\n    image: mariadb\n    command: --max-allowed-packet=64MB\n    restart: always\n    environment:\n      - MARIADB_DATABASE=matomo\n      - MARIADB_USER\n      - MARIADB_PASSWORD\n      - MARIADB_ROOT_PASSWORD\n    volumes:\n      - ./db:/var/lib/mysql\n\n  app:\n    image: matomo\n    restart: always\n    volumes:\n      - ./matomo:/var/www/html\n    ports:\n      - 127.0.0.1:8080:80\nThe db service uses the official MariaDB image to store all analytics data persistently, while the app service runs the Matomo application itself. The application is bound to 127.0.0.1:8080 on the host, meaning it is only accessible locally – a reverse proxy (configured separately) handles public-facing traffic and TLS termination.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Overview and Setup"
+    ]
+  },
+  {
+    "objectID": "matomo/matomo-overview-and-setup.html#privacy-and-data-protection",
+    "href": "matomo/matomo-overview-and-setup.html#privacy-and-data-protection",
+    "title": "Matomo Overview and Our Server Setup",
+    "section": "Privacy and Data Protection",
+    "text": "Privacy and Data Protection\nData privacy is at the heart of how we use Matomo. Our setup is configured to comply fully with LMU’s own data protection policies. We do not collect personally identifiable information (PII) without explicit consent, and we provide website visitors with the option to opt out of tracking entirely.\nA key part of our privacy-conscious configuration is IP address anonymization. All IP addresses collected by our Matomo instance are truncated to 2 bytes (for example, 192.168.xxx.xxx), which means that individual visitors cannot be identified by their IP address alone. In addition, we have enabled Matomo’s “Force tracking without cookies” option. This setting has two important effects: first, the tracking code (matomo.js) is updated so that no cookies are set in the visitor’s browser; second, Matomo’s server-side logic ignores any tracking cookies it receives, even if consent methods are used on the front end. The official Matomo documentation describes this option as follows:\n\nEnabling this option will automatically update matomo.js, so it contains some additional code to ensure all trackers won’t use cookies. Additionally Matomo will ignore all tracking cookies on server side.\nCookies will be disabled even when using the consent methods in Matomo tracker and calling for example the cookie consent methods won’t enable cookies.\n\nBecause we do not use cookies and we anonymize IP addresses, we do not track individual users across sessions, nor do we collect any information that could be used to identify specific individuals. It is worth noting that IP anonymization does have a modest impact on geolocation accuracy. As Matomo notes:\n\nNote: Geolocation will have approximately the same results with 1 byte anonymized. With 2 bytes or more, Geolocation will be inaccurate.\n\nWe have judged this trade-off to be acceptable, as our primary interest is in aggregate trends rather than precise geographic data. This approach is also in line with LMU’s official privacy policy, which you can read at https://www.lmu.de/de/footer/datenschutz/.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Overview and Setup"
+    ]
+  },
+  {
+    "objectID": "matomo/matomo-overview-and-setup.html#updating-matomo",
+    "href": "matomo/matomo-overview-and-setup.html#updating-matomo",
+    "title": "Matomo Overview and Our Server Setup",
+    "section": "Updating Matomo",
+    "text": "Updating Matomo\nKeeping Matomo up to date is important for accessing the latest features and, more crucially, for receiving security patches. For routine updates – those that involve only the Matomo application code – the process is straightforward: you can update directly from the Matomo dashboard by navigating to the administration area and clicking the “Update Matomo” button when a new version is announced.\nHowever, it is important to understand that dashboard-based updates only update the Matomo application code. If a new version of Matomo also requires an updated version of the database schema (for example, because the new release introduces changes to how data is stored or indexed), the dashboard update alone will not handle that. In such cases, a more involved update process is needed, and you should test the update thoroughly in a staging environment before applying it to production.\nOur general policy is to keep our Matomo instance on the latest stable release. When a database-level update is required, the process involves updating both Docker images. From the server where Matomo is deployed, you would run:\ncd /path/to/matomo # see GitLab documentation for details on where this is located\ndocker-compose pull\ndocker-compose up -d\nThe docker-compose pull command fetches the latest versions of both the Matomo application image and the MariaDB image. The docker-compose up -d command then recreates and restarts the containers with these updated images. As with any infrastructure change, it is advisable to review the release notes for the new Matomo version beforehand and to verify that everything is working correctly after the update.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Overview and Setup"
+    ]
+  },
+  {
+    "objectID": "matomo/index.html",
+    "href": "matomo/index.html",
+    "title": "Matomo Analytics",
+    "section": "",
+    "text": "Matomo is a free and open-source web analytics platform that we self-host on our own infrastructure. Unlike many analytics services, Matomo gives us full control over our data — no third-party tracking, no data sharing — while still providing powerful insights into how our websites are used.\nThis chapter is divided into four sections:\n\nMatomo Overview and Setup — What Matomo is, how it compares to alternatives like Google Analytics, and a technical walkthrough of our server setup, configuration, and upgrade process.\nAdding a New Website — How and when to add Matomo tracking to a new site, including embedding the tracking code, configuring goals, and verifying that tracking is working correctly.\nCampaigns and Reporting — How to create and manage campaign tracking URLs, use Matomo’s campaign reporting features, and analyze the effectiveness of outreach efforts.\n\nBy the end of this chapter, you should be comfortable setting up Matomo tracking for a new project, creating and measuring campaigns, and using Matomo’s reporting dashboard to understand your audience and improve the OSC website.\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics"
+    ]
+  },
+  {
     "objectID": "LICENSE.html",
     "href": "LICENSE.html",
     "title": "Creative Commons Attribution-ShareAlike 4.0 International",
@@ -691,6 +762,114 @@
     "text": "Level Two"
   },
   {
+    "objectID": "matomo/campaigns-and-reporting.html",
+    "href": "matomo/campaigns-and-reporting.html",
+    "title": "Campaigns and Reporting Analytics",
+    "section": "",
+    "text": "This chapter discusses how to use the campaign tracking features of Matomo, and how to use the data from Matomo to understand your audience and improve your website.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Campaigns"
+    ]
+  },
+  {
+    "objectID": "matomo/campaigns-and-reporting.html#what-are-campaigns",
+    "href": "matomo/campaigns-and-reporting.html#what-are-campaigns",
+    "title": "Campaigns and Reporting Analytics",
+    "section": "What Are Campaigns?",
+    "text": "What Are Campaigns?\nCampaigns are a way to track the effectiveness of specific marketing efforts, such as email campaigns, social media posts, or paid advertising. By creating a campaign in Matomo and including the appropriate tracking parameters in your URLs, you can see how many visitors are coming to your website from each campaign, and how they are interacting with your site once they arrive.\nFor example, if you are running a social media campaign to promote a new blog post, you could create a campaign in Matomo called “Social Media Campaign” and include the appropriate tracking parameters in the URLs that you share on social media. This would allow you to see how many visitors are coming to your website from that campaign, and how they are engaging with your content.\nIn short, a campaign is a way to track the effectiveness of specific marketing efforts by using personalized URLs with tracking parameters. These tracking parameters are added to the end of a URL, and they typically include information about the campaign, such as the source, medium, and name of the campaign. For example, a URL with tracking parameters might look like this:\nhttps://www.example.com/?utm_source=social&utm_medium=post&utm_campaign=social_media_campaign\nwhere the utm_source, utm_medium, and utm_campaign parameters are used to track the source, medium, and name of the campaign, respectively. This is a general example, and Matomo uses its own specific tracking parameters, but the concept is the same: you add tracking parameters to your URLs to track the effectiveness of your campaigns in Matomo. For example, a Matomo URL with tracking parameters might look like this:\nhttps://example.org/?mtm_campaign=name&mtm_kwd=campaign-keyword&mtm_medium=medium\nwhere mtm_campaign is the campaign name, mtm_kwd is the campaign keyword, and mtm_medium is the campaign medium. By including these tracking parameters in your URLs, you can track the effectiveness of your campaigns in Matomo and see how many visitors are coming to your website from each campaign, and how they are engaging with your content.\nNote that these tracking parameters (UTM parameters) are not what is actually used in Matomo, but they are a common example of how tracking parameters work in general. Matomo uses its own specific tracking parameters, several of which will be discussed in the next section.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Campaigns"
+    ]
+  },
+  {
+    "objectID": "matomo/campaigns-and-reporting.html#how-and-when-to-create-campaigns",
+    "href": "matomo/campaigns-and-reporting.html#how-and-when-to-create-campaigns",
+    "title": "Campaigns and Reporting Analytics",
+    "section": "How and When to Create Campaigns",
+    "text": "How and When to Create Campaigns\nStrictly speaking, you can “create” a campaign in Matomo by simply including the appropriate tracking parameters in your URLs. There is no need to create a campaign in the Matomo dashboard before you start tracking, as Matomo will automatically recognize the tracking parameters and attribute the traffic to the appropriate campaign.\nHowever, it is often helpful to use the “Campaign URL Builder” found in the Matomo dashboard of a website, which can help you generate the appropriate tracking parameters for your URLs. This feature allows you to easily create URLs with the correct tracking parameters by inputting the base URL and any of the following parameters:\n\nCampaign Name (required): The name of the campaign you want to track. This is the most important parameter, as it will be used to identify the campaign in your Matomo reports.\nCampaign Keyword: The keyword associated with the campaign, which can be useful for tracking specific keywords in paid search campaigns.\nCampaign Source: The source of the traffic, such as “social media”, “email”, or “paid advertising”. This parameter helps you understand where your traffic is coming from.\nCampaign Medium: The medium through which the traffic is coming, such as “post”, “newsletter”, or “cpc”. This parameter helps you understand how your traffic is being delivered.\nCampaign Content: Additional information about the campaign, such as the specific ad or link that was clicked. This can help you differentiate between different versions of a campaign.\nCampaign ID: A unique identifier for the campaign, which can be useful for tracking campaigns across different platforms or tools.\nCampaign Group: Identifies a specific group or audience.\nCampaign Placement: Used to describe the advertising placement or position, for example an entire website, specific pages from a website, an individual ad unit positioned on a single page, a video, a mobile phone app, and more.\n\nThe bolded parameters above are the ones that we typically use for our campaigns, but you can use any combination of these parameters to track your campaigns in Matomo. The important thing is to be consistent in how you use these parameters across your campaigns, so that you can easily compare and analyze the data in your Matomo reports for a website. Think of your parameter choices as being like the columns in an Excel Pivot Table or a Table 1 in a paper—you want to establish clear, reusable, descriptive categories that allow you to look at cross-sections of data.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Campaigns"
+    ]
+  },
+  {
+    "objectID": "matomo/campaigns-and-reporting.html#campaign-examples",
+    "href": "matomo/campaigns-and-reporting.html#campaign-examples",
+    "title": "Campaigns and Reporting Analytics",
+    "section": "Campaign Examples",
+    "text": "Campaign Examples\n\nA Bad, But Original, Example of a Campaign\nAt the launch of our new OSC website in 2026, we ran a campaign to promote the new website and encourage people to visit and explore the new content. We created a campaign in Matomo and included the following tracking parameters in the URLs that we shared on social media and in our email newsletters:\n\nCampaign Name: launch\nCampaign Keywords: email, linkedin, bsky, mastodon\n\nThis was our first use of the campaign tracking features of Matomo, and it allowed us to see how many visitors were coming to our website from each of our promotional efforts, and how they were engaging with our content as a result.\nHowever, this was ultimately not the best use of the campaign tracking features of Matomo. We should have considered using the Campaign Source parameter to differentiate between the different platforms (e.g., email, LinkedIn, Bluesky, Mastodon) instead of using the Campaign Keywords parameter. The Campaign Source parameter is specifically designed to track the source of traffic, and it is how we collect data going forward. By using Campaign Keywords instead, we introduced an inconsistency in how the parameters are used across our campaigns. This is a good example of why it is important to be consistent in how you use the tracking parameters across campaigns, so that you can easily compare and analyze the data in your Matomo reports. Ultimately, the data from this campaign was still useful, but it would have been more straightforward to analyze if we had used the Campaign Source parameter to differentiate between the different platforms.\n\n\nA Better Example of a Campaign\nNow let us look at how a well-structured campaign should be set up. Suppose the OSC is organising a workshop on research data management (RDM) and wants to promote it via email to our mailing list, as well as on LinkedIn, Bluesky, and Mastodon. A properly configured campaign would assign each parameter to the dimension it is meant to describe, like this:\n\nCampaign Name: rdm-workshop-2026\nCampaign Source: email, linkedin, bsky, mastodon\nCampaign Medium: newsletter, social-post\n\nIn this setup, the Campaign Name groups all traffic under a single campaign (rdm-workshop-2026), making it easy to see the total impact of the workshop promotion. The Campaign Source parameter cleanly separates traffic by platform, so you can compare which channel drove the most visitors. The Campaign Medium distinguishes the delivery method (a newsletter versus a social media post). Finally, Campaign Group captures which audience segment each link targeted (our mailing list versus a general audience on social media), which can be useful for understanding how different groups respond to your promotions.\nWith this structure, your Matomo reports will immediately show you meaningful breakdowns without any manual cleanup. For example, you could quickly answer questions like: “How many visitors came from the LinkedIn post vs. the email newsletter?” or “Did the email newsletter drive more engagement per visitor than the social media posts?” By keeping each parameter focused on a single dimension, you ensure that your data remains clean, consistent, and easy to analyse across all future campaigns.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Campaigns"
+    ]
+  },
+  {
+    "objectID": "matomo/adding-a-new-website.html",
+    "href": "matomo/adding-a-new-website.html",
+    "title": "Adding a New Website to Matomo",
+    "section": "",
+    "text": "This chapter describes how to add a new website to Matomo and how to set up the tracking code on your website so that you can begin collecting data.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Adding Sites"
+    ]
+  },
+  {
+    "objectID": "matomo/adding-a-new-website.html#adding-a-new-website",
+    "href": "matomo/adding-a-new-website.html#adding-a-new-website",
+    "title": "Adding a New Website to Matomo",
+    "section": "Adding a New Website",
+    "text": "Adding a New Website\nStart by logging into your Matomo account. On the landing page, click the “Add a New Website” button. You will then be prompted to choose the type of website you would like to track. Select “Website” rather than “Intranet Website”—we will likely never use the Intranet Website option, which is intended for tracking internal traffic on a private network.\nNext, fill in the form with the appropriate information about your website, including the name and URL of the website. There are a few settings you should configure at this stage:\n\nAdd 127.0.0.1 to the Excluded IPs list.\nAdd localhost to the Excluded referrers list.\nUnder “Tracking data anonymization settings”, make sure that the “Use System settings” option is selected. This should already be the default, but it is worth confirming.\n\nOnce you have filled in the form, click the Save button.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Adding Sites"
+    ]
+  },
+  {
+    "objectID": "matomo/adding-a-new-website.html#obtaining-and-installing-the-tracking-code",
+    "href": "matomo/adding-a-new-website.html#obtaining-and-installing-the-tracking-code",
+    "title": "Adding a New Website to Matomo",
+    "section": "Obtaining and Installing the Tracking Code",
+    "text": "Obtaining and Installing the Tracking Code\nAfter saving the new website, you will be taken to a page that displays the tracking code for your website. This code is what enables Matomo to collect data about your website visitors and their interactions with your site. Copy this tracking code and add it to the HTML of your website.\nThe convention we have adopted for our websites is to place the tracking code in a file named matomo-analytics.html in the root directory of the website. This file is then included in the HTML of every page by configuring _quarto.yml as follows:\nformat:\n  html:\n    include-in-header: matomo-analytics.html",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Adding Sites"
+    ]
+  },
+  {
+    "objectID": "matomo/adding-a-new-website.html#preventing-local-tracking-during-development",
+    "href": "matomo/adding-a-new-website.html#preventing-local-tracking-during-development",
+    "title": "Adding a New Website to Matomo",
+    "section": "Preventing Local Tracking during Development",
+    "text": "Preventing Local Tracking during Development\nIt is important to ensure that the tracking code only runs on the live, production version of your website and not on local development instances. This prevents you from collecting data about your own visits while developing and testing the site locally. To achieve this, wrap the tracking code in a conditional statement that checks the hostname of the page. The tracking code should only execute if the hostname is neither localhost nor 127.0.0.1. Here is an example:\n&lt;script&gt;\nif (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {\n    // the tracking code goes here\n    ...\n    ...\n}\n&lt;/script&gt;",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Adding Sites"
+    ]
+  },
+  {
+    "objectID": "matomo/adding-a-new-website.html#additional-notes-on-implementation",
+    "href": "matomo/adding-a-new-website.html#additional-notes-on-implementation",
+    "title": "Adding a New Website to Matomo",
+    "section": "Additional Notes on Implementation",
+    "text": "Additional Notes on Implementation\nYou can look at any of our existing website repositories to see how this is implemented in practice. For example, the matomo-analytics.html file in the root directory of the lmu-osc.github.io repository, together with its corresponding _quarto.yml, provides a working reference. The main difference between repositories is the site_id variable in the tracking code (e.g. _paq.push(['setSiteId', '3']);), because each website has a unique site ID in Matomo. The rest of the code should remain the same across all of our websites.\nNote that the OSC website is a partial exception: it sends data to both our OSC Matomo instance and the LMU Matomo instance. As a result, the tracking code on the OSC website contains two sets of tracking instructions instead of one. The principle is the same, however—you are simply repeating the pattern for a second Matomo instance.",
+    "crumbs": [
+      "Home",
+      "Matomo Analytics",
+      "Adding Sites"
+    ]
+  },
+  {
     "objectID": "osc-outreach/flyer-design-and-images.html",
     "href": "osc-outreach/flyer-design-and-images.html",
     "title": "Flyer Design and Images",
@@ -772,7 +951,7 @@
     "href": "authoring-tutorials/tutorial-template-repo.html#basic-repo-structure",
     "title": "Tutorial Template Repo",
     "section": "Basic Repo Structure",
-    "text": "Basic Repo Structure\nAll of the folders and files in the lmu-osc/tutorial-template repo are laid out in the directory tree below.\n\n\n.\n├── .Rbuildignore\n├── .filenameignore\n├── .github\n│   ├── .gitignore\n│   └── workflows\n│       ├── README.md\n│       ├── citation-check.yml\n│       ├── filename-check.yml\n│       ├── publish.yaml\n│       └── style.yaml\n├── .gitignore\n├── CITATION.cff\n├── LICENSE-CODE.md\n├── LICENSE.md\n├── README.md\n├── _quarto.yml\n├── about.qmd\n├── assets\n│   ├── lmu-osc-favicon.jpg\n│   └── lmu-osc-logo.svg\n├── index.qmd\n├── lmu-osc-custom.scss\n├── matomo-analytics.html\n├── styles.css\n├── topic-one\n│   ├── index.qmd\n│   ├── page-one.qmd\n│   └── page-two.qmd\n├── topic-two\n│   ├── index.qmd\n│   ├── page-one.qmd\n│   ├── page-three.qmd\n│   └── page-two.qmd\n└── .git\n    ├── HEAD\n    ├── config\n    ├── description\n    ├── hooks\n    │   ├── applypatch-msg.sample\n    │   ├── commit-msg.sample\n    │   ├── fsmonitor-watchman.sample\n    │   ├── post-update.sample\n    │   ├── pre-applypatch.sample\n    │   ├── pre-commit.sample\n    │   ├── pre-merge-commit.sample\n    │   ├── pre-push.sample\n    │   ├── pre-rebase.sample\n    │   ├── pre-receive.sample\n    │   ├── prepare-commit-msg.sample\n    │   ├── push-to-checkout.sample\n    │   ├── sendemail-validate.sample\n    │   └── update.sample\n    ├── index\n    ├── info\n    │   └── exclude\n    ├── logs\n    │   ├── HEAD\n    │   └── refs\n    │       ├── heads\n    │       │   └── main\n    │       └── remotes\n    │           └── origin\n    │               └── HEAD\n    ├── objects\n    │   ├── info\n    │   └── pack\n    │       ├── pack-c0620c625f295bfb9541cd708935e7b6698bbdcf.idx\n    │       ├── pack-c0620c625f295bfb9541cd708935e7b6698bbdcf.pack\n    │       └── pack-c0620c625f295bfb9541cd708935e7b6698bbdcf.rev\n    ├── packed-refs\n    └── refs\n        ├── heads\n        │   └── main\n        ├── remotes\n        │   └── origin\n        │       └── HEAD\n        └── tags\n\n\nSome of these files and folders require more explanation than others, and we aim to clarify all important pieces below. Later chapters will elaborate on how precisely to set up e.g. GitHub Pages for the tutorial, connect with Zotero, etc. But before diving in to developing a tutorial, it’s necessary to get an overview of the structure."
+    "text": "Basic Repo Structure\nAll of the folders and files in the lmu-osc/tutorial-template repo are laid out in the directory tree below.\n\n\n.\n├── .Rbuildignore\n├── .filenameignore\n├── .github\n│   ├── .gitignore\n│   └── workflows\n│       ├── README.md\n│       ├── citation-check.yml\n│       ├── filename-check.yml\n│       ├── publish.yaml\n│       └── style.yaml\n├── .gitignore\n├── CITATION.cff\n├── LICENSE-CODE.md\n├── LICENSE.md\n├── README.md\n├── _quarto.yml\n├── about.qmd\n├── assets\n│   ├── lmu-osc-favicon.jpg\n│   └── lmu-osc-logo.svg\n├── index.qmd\n├── lmu-osc-custom.scss\n├── matomo-analytics.html\n├── styles.css\n├── topic-one\n│   ├── index.qmd\n│   ├── page-one.qmd\n│   └── page-two.qmd\n├── topic-two\n│   ├── index.qmd\n│   ├── page-one.qmd\n│   ├── page-three.qmd\n│   └── page-two.qmd\n└── .git\n    ├── HEAD\n    ├── config\n    ├── description\n    ├── hooks\n    │   ├── applypatch-msg.sample\n    │   ├── commit-msg.sample\n    │   ├── fsmonitor-watchman.sample\n    │   ├── post-update.sample\n    │   ├── pre-applypatch.sample\n    │   ├── pre-commit.sample\n    │   ├── pre-merge-commit.sample\n    │   ├── pre-push.sample\n    │   ├── pre-rebase.sample\n    │   ├── pre-receive.sample\n    │   ├── prepare-commit-msg.sample\n    │   ├── push-to-checkout.sample\n    │   ├── sendemail-validate.sample\n    │   └── update.sample\n    ├── index\n    ├── info\n    │   └── exclude\n    ├── logs\n    │   ├── HEAD\n    │   └── refs\n    │       ├── heads\n    │       │   └── main\n    │       └── remotes\n    │           └── origin\n    │               └── HEAD\n    ├── objects\n    │   ├── info\n    │   └── pack\n    │       ├── pack-69594fd647087ede0f86a34dd4691b0a354cf4e9.idx\n    │       ├── pack-69594fd647087ede0f86a34dd4691b0a354cf4e9.pack\n    │       └── pack-69594fd647087ede0f86a34dd4691b0a354cf4e9.rev\n    ├── packed-refs\n    └── refs\n        ├── heads\n        │   └── main\n        ├── remotes\n        │   └── origin\n        │       └── HEAD\n        └── tags\n\n\nSome of these files and folders require more explanation than others, and we aim to clarify all important pieces below. Later chapters will elaborate on how precisely to set up e.g. GitHub Pages for the tutorial, connect with Zotero, etc. But before diving in to developing a tutorial, it’s necessary to get an overview of the structure."
   },
   {
     "objectID": "authoring-tutorials/tutorial-template-repo.html#important-files-and-folders",
