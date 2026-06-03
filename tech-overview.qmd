@@ -1,6 +1,6 @@
 ---
 title: Tech Overview
-subtitle: What we use at the OSC
+subtitle: What technologies we use at the OSC
 ---
 
 This page provides a high-level overview of the technologies we use at the OSC, organized by proficiency level. Use it as a guide for what to learn depending on your role and goals.
@@ -20,10 +20,10 @@ If you are just joining the team, **basic** should be more than enough to get st
 These are the tools almost everyone at the OSC uses daily.
 
 - **R** — Our primary language for data analysis and statistical computing, including the **Tidyverse** (main packages + styling) and **{renv}** for reproducible environments.
-- **RStudio / Positron** — Our integrated development environment (IDE) for R. We are in the process of transitioning from RStudio to [Positron](https://positron.posit.co/).
-- **git** — Version control system for tracking changes in code and content.
+- **RStudio / Positron** — The standard integrated development environment (IDE) for R. We are in the process of transitioning from RStudio to [Positron](https://positron.posit.co/) as Positron offers better support for R and Python in the same environment, and will be the primary IDE from Posit (formerly RStudio) moving forward.
+- **git** — Version control system for tracking changes in code and content. You should understand the basics of committing, branching, and pushing to GitHub.
 - **GitHub** — Platform for hosting repositories, managing contributions, and collaborating via pull requests and issues. See the [GitHub Organization](github/index.qmd) section for more.
-- **Pandoc Markdown** — The markup language used across our tutorials and documentation.
+- **Pandoc Markdown** — The markup language used across our tutorials and documentation. You don't necessarily need to know the details here, but understand that Quarto uses Pandoc Markdown as its underlying format, which allows for a lot of flexibility in how we write content. (And if you do want to know the details, the [Pandoc documentation](https://pandoc.org/MANUAL.html#pandocs-markdown) is a great resource.)
 - **Quarto** (basic) — Publishing system built on Pandoc that we use for all of our websites and tutorials. See the [Authoring Tutorials](authoring-tutorials/index.qmd) section for details.
 
 ::: callout-tip
@@ -37,8 +37,8 @@ Don't worry — you don't need to be an expert in any of them on day one. Famili
 These technologies become relevant as you start working on our website and more complex projects.
 
 - **CSS / HTML** — Used for styling and structuring our Quarto websites. See the [Updating Website](updating-website/index.qmd) section for practical examples.
-- **Bootstrap** — The underlying CSS framework for our Quarto websites (we use the Cosmo Bootswatch theme).
-- **Python** — Used alongside R for various data processing and automation tasks.
+- **Bootstrap** — The underlying CSS framework for our Quarto websites. Understanding how it works can help with customizing our site templates.
+- **Python** — Used alongside R for various data processing and automation tasks. We don't use this directly for our tutorials (currently), but it emerges in some of the Carpentries lessons we use and in some of our internal tools.
 - **GitHub Actions** (high-level understanding) — CI/CD pipelines for automating builds, tests, and deployments. See the [GitHub Organization](github/index.qmd) section for more.
 
 ## Advanced
@@ -46,7 +46,7 @@ These technologies become relevant as you start working on our website and more 
 If you are taking on a development or maintenance role, these tools will become important.
 
 - **In-depth HTML/CSS and Bootstrap + EJS templating** — Customizing our website templates beyond standard Quarto configurations.
-- **In-depth Quarto** — Advanced configuration, custom formats, Lua filters, and extension development.
+- **In-depth Quarto** — Advanced configuration, custom formats, Lua filters, EJS templates, and extension development.
 - **Docker** — Containerization for reproducible environments and deployment.
 - **GitHub Actions** (troubleshooting and development) — Writing and debugging custom workflow files.
 
