@@ -4,6 +4,7 @@ This repository contains the [LMU Open Science Center (OSC)](https://www.osc.lmu
 
 ## Sections
 
+- **Tech Overview** — High-level overview of our tech stack by proficiency level
 - **About** — Overview of the OSC
 - **Staff Onboarding** — Internal communication, working environment, and administration
 - **OSC GitHub Organization** — Git workflows, repository management, GitHub Actions, Zenodo, and licensing
