@@ -170,6 +170,13 @@ website:
             - text: Adding Sites
               href: matomo/adding-a-new-website.qmd
 
+
+      - section: Miscellaneous Topics
+        href: misc-topics/index.qmd
+        contents:
+          - href: misc-topics/our-licensing-choices.qmd
+            text: "Our Licensing Choices"
+
       - section: Archive
         href: archive/index.qmd
         contents:
