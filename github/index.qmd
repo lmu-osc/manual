@@ -1,0 +1,8 @@
+---
+title: GitHub, the OSC Organization, and Repositories
+subtitle: How we use GitHub for collaboration and hosting our code and content
+---
+
+* This chapter provides an overview of GitHub, the OSC's GitHub organization, and how we use repositories to manage our code and content.
+* It covers the structure of our GitHub organization, the types of repositories we have, and best practices for using GitHub effectively in our workflow.
+* This is essential reading for anyone contributing to our projects, as GitHub is central to how we collaborate and manage our work.

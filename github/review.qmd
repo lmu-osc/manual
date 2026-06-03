@@ -1,0 +1,13 @@
+---
+title: Git and GitHub Review
+subtitle: A refresher on the basics of git and GitHub for version control and collaboration
+---
+
+* Ideally, you've already have some experience with git and GitHub or have completed our tutorials on the topics. If not, this is a good place to start before diving into the specifics of how we use GitHub at the OSC.
+* This chapter provides a high-level overview of git and GitHub, covering the basics of version control, how to use GitHub for collaboration, and some best practices for working with git and GitHub effectively.
+* It's not meant to be an exhaustive tutorial on git and GitHub, but rather a refresher and guide for how we use these tools in our workflow.
+
+* Tech you'll need to know for this chapter:
+    * git (basic commands and concepts)
+    * GitHub (repositories, pull requests, issues, etc.)
+    * Setting up SSH keys to authenticate your git client with GitHub

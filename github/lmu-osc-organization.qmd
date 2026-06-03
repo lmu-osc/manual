@@ -1,0 +1,23 @@
+---
+title: The LMU OSC GitHub Organization
+subtitle: How we use GitHub for collaboration, hosting our code and content, and management
+---
+
+# Overview
+
+* Section about the organization in general i.e. what an organization is, how we use it, and how to navigate it.
+* Section about repositories in general, including how to find them, how to use them
+* Some notable repositories to mention now would be the `.github` repository which is the public-facing README for the organization as well as `.github-private` which contains the internal README for our organization (these are GitHub convention repositories for organization-level documentation and configuration).
+* Organization features
+    * Repositories (public and private) - we have a mix of public and private repositories, but all of our content repositories are public. Private repositories are mainly for internal tools and projects that aren't ready for public release.
+    * Discussions (not really used yet, but we could use them for more public-facing discussions and Q&A)
+    * Projects (we attempted use for a period, but it didn't really work for us, so we don't use it currently formally. You're always welcome to open your own project board to keep track of your Issues across repos if you find this useful, but we don't have an official one for the organization.)
+    * Teams allows for setting group level permissions on repositories and for organizing members. We have a few teams set up for this purpose, mainly for the full time staff and for active HiWis.
+
+
+# Management
+
+* Section about management of the organization, including how to get added, how to manage permissions, and best practices for maintaining a healthy organization.
+    * Most commonly will need/want to add new members to the organization, which is done through the GitHub UI. You can add them to specific teams if you want to give them access to specific repositories, or you can give them access to all repositories by adding them to the "All Members" team. (But most of our members are not members of the team)
+        * To do this: click on the People tab, click "Invite Member" and search by username, full name or email address. Username tends to be the easiest approach followed by email. They will need to accept the invite within a few days or it will expire.
+        * The default is for members to be listed as Private i.e. not visible to the public. We ask members to make themselves visible so that it's easier for others to find them and see who is part of the organization, but this is up to the individual. Documentation on how users can do this is available via [GitHub's documentation](https://docs.github.com/en/account-and-profile/how-tos/organization-membership/publicizing-or-hiding-organization-membership)
