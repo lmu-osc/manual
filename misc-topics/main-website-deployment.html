@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Campaigns and Reporting Analytics – OSC Manual</title>
+<title>Main Website Deployment – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -33,8 +68,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../matomo/adding-a-new-website.html" rel="next">
-<link href="../matomo/matomo-overview-and-setup.html" rel="prev">
+<link href="../archive/index.html" rel="next">
+<link href="../misc-topics/our-licensing-choices.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -136,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../matomo/index.html">Matomo Analytics</a></li><li class="breadcrumb-item"><a href="../matomo/campaigns-and-reporting.html">Campaigns</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../misc-topics/index.html">Miscellaneous Topics</a></li><li class="breadcrumb-item"><a href="../misc-topics/main-website-deployment.html">Main Website Deployment Details</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -487,11 +522,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../matomo/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Matomo Analytics</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../matomo/matomo-overview-and-setup.html" class="sidebar-item-text sidebar-link">
@@ -500,7 +535,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../matomo/campaigns-and-reporting.html" class="sidebar-item-text sidebar-link active">
+  <a href="../matomo/campaigns-and-reporting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Campaigns</span></a>
   </div>
 </li>
@@ -516,11 +551,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../misc-topics/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Miscellaneous Topics</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../misc-topics/our-licensing-choices.html" class="sidebar-item-text sidebar-link">
@@ -529,7 +564,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../misc-topics/main-website-deployment.html" class="sidebar-item-text sidebar-link">
+  <a href="../misc-topics/main-website-deployment.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Main Website Deployment Details</span></a>
   </div>
 </li>
@@ -564,22 +599,39 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-are-campaigns" id="toc-what-are-campaigns" class="nav-link active" data-scroll-target="#what-are-campaigns">What Are Campaigns?</a></li>
-  <li><a href="#how-and-when-to-create-campaigns" id="toc-how-and-when-to-create-campaigns" class="nav-link" data-scroll-target="#how-and-when-to-create-campaigns">How and When to Create Campaigns</a></li>
-  <li><a href="#campaign-examples" id="toc-campaign-examples" class="nav-link" data-scroll-target="#campaign-examples">Campaign Examples</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#trigger-what-starts-the-pipeline" id="toc-trigger-what-starts-the-pipeline" class="nav-link" data-scroll-target="#trigger-what-starts-the-pipeline">Trigger: what starts the pipeline</a></li>
+  <li><a href="#the-github-actions-workflow" id="toc-the-github-actions-workflow" class="nav-link" data-scroll-target="#the-github-actions-workflow">The GitHub Actions workflow</a>
   <ul class="collapse">
-  <li><a href="#a-bad-but-original-example-of-a-campaign" id="toc-a-bad-but-original-example-of-a-campaign" class="nav-link" data-scroll-target="#a-bad-but-original-example-of-a-campaign">A Bad, But Original, Example of a Campaign</a></li>
-  <li><a href="#a-better-example-of-a-campaign" id="toc-a-better-example-of-a-campaign" class="nav-link" data-scroll-target="#a-better-example-of-a-campaign">A Better Example of a Campaign</a></li>
+  <li><a href="#job-1-build-for-github-pages-build-github" id="toc-job-1-build-for-github-pages-build-github" class="nav-link" data-scroll-target="#job-1-build-for-github-pages-build-github">Job 1: Build for GitHub Pages (<code>build-github</code>)</a></li>
+  <li><a href="#job-2-build-for-production-build-production" id="toc-job-2-build-for-production-build-production" class="nav-link" data-scroll-target="#job-2-build-for-production-build-production">Job 2: Build for production (<code>build-production</code>)</a></li>
   </ul></li>
+  <li><a href="#github-pages-deployment" id="toc-github-pages-deployment" class="nav-link" data-scroll-target="#github-pages-deployment">GitHub Pages deployment</a></li>
+  <li><a href="#production-server-deployment-via-webhooks" id="toc-production-server-deployment-via-webhooks" class="nav-link" data-scroll-target="#production-server-deployment-via-webhooks">Production server deployment (via webhooks)</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-webhook" id="toc-what-is-a-webhook" class="nav-link" data-scroll-target="#what-is-a-webhook">What is a webhook?</a></li>
+  <li><a href="#the-webhook-receiver-application" id="toc-the-webhook-receiver-application" class="nav-link" data-scroll-target="#the-webhook-receiver-application">The webhook-receiver application</a></li>
+  <li><a href="#how-the-webhook-is-configured" id="toc-how-the-webhook-is-configured" class="nav-link" data-scroll-target="#how-the-webhook-is-configured">How the webhook is configured</a></li>
+  <li><a href="#how-the-production-site-files-are-served" id="toc-how-the-production-site-files-are-served" class="nav-link" data-scroll-target="#how-the-production-site-files-are-served">How the production site files are served</a></li>
+  </ul></li>
+  <li><a href="#the-complete-flow-step-by-step" id="toc-the-complete-flow-step-by-step" class="nav-link" data-scroll-target="#the-complete-flow-step-by-step">The complete flow, step by step</a></li>
+  <li><a href="#troubleshooting-and-maintenance" id="toc-troubleshooting-and-maintenance" class="nav-link" data-scroll-target="#troubleshooting-and-maintenance">Troubleshooting and maintenance</a>
+  <ul class="collapse">
+  <li><a href="#if-the-production-site-is-not-updating" id="toc-if-the-production-site-is-not-updating" class="nav-link" data-scroll-target="#if-the-production-site-is-not-updating">If the production site is not updating</a></li>
+  <li><a href="#common-issues" id="toc-common-issues" class="nav-link" data-scroll-target="#common-issues">Common issues</a></li>
+  <li><a href="#updating-the-webhook-receiver" id="toc-updating-the-webhook-receiver" class="nav-link" data-scroll-target="#updating-the-webhook-receiver">Updating the webhook receiver</a></li>
+  </ul></li>
+  <li><a href="#the-webhook-is-broken-and-i-have-no-idea-why-or-what-to-do" id="toc-the-webhook-is-broken-and-i-have-no-idea-why-or-what-to-do" class="nav-link" data-scroll-target="#the-webhook-is-broken-and-i-have-no-idea-why-or-what-to-do">The Webhook is Broken and I Have No Idea Why or What to Do</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/misc-topics/main-website-deployment.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../matomo/index.html">Matomo Analytics</a></li><li class="breadcrumb-item"><a href="../matomo/campaigns-and-reporting.html">Campaigns</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../misc-topics/index.html">Miscellaneous Topics</a></li><li class="breadcrumb-item"><a href="../misc-topics/main-website-deployment.html">Main Website Deployment Details</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Campaigns and Reporting Analytics</h1>
+<h1 class="title">Main Website Deployment</h1>
+<p class="subtitle lead">Technical details of how we deploy our main website using GitHub, Quarto, and Webhooks</p>
 </div>
 
 
@@ -596,59 +648,192 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This chapter discusses how to use the campaign tracking features of Matomo, and how to use the data from Matomo to understand your audience and improve your website.</p>
-<section id="what-are-campaigns" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-campaigns">What Are Campaigns?</h2>
-<p>Campaigns are a way to track the effectiveness of specific marketing efforts, such as email campaigns, social media posts, or paid advertising. By creating a campaign in Matomo and including the appropriate tracking parameters in your URLs, you can see how many visitors are coming to your website from each campaign, and how they are interacting with your site once they arrive.</p>
-<p>For example, if you are running a social media campaign to promote a new blog post, you could create a campaign in Matomo called “Social Media Campaign” and include the appropriate tracking parameters in the URLs that you share on social media. This would allow you to see how many visitors are coming to your website from that campaign, and how they are engaging with your content.</p>
-<p>In short, a campaign is a way to track the effectiveness of specific marketing efforts by using personalized URLs with tracking parameters. These tracking parameters are added to the end of a URL, and they typically include information about the campaign, such as the source, medium, and name of the campaign. For example, a URL with tracking parameters might look like this:</p>
-<p><code>https://www.example.com/?utm_source=social&amp;utm_medium=post&amp;utm_campaign=social_media_campaign</code></p>
-<p>where the <code>utm_source</code>, <code>utm_medium</code>, and <code>utm_campaign</code> parameters are used to track the source, medium, and name of the campaign, respectively. This is a general example, and Matomo uses its own specific tracking parameters, but the concept is the same: you add tracking parameters to your URLs to track the effectiveness of your campaigns in Matomo. For example, a Matomo URL with tracking parameters might look like this:</p>
-<p><code>https://example.org/?mtm_campaign=name&amp;mtm_kwd=campaign-keyword&amp;mtm_medium=medium</code></p>
-<p>where <code>mtm_campaign</code> is the campaign name, <code>mtm_kwd</code> is the campaign keyword, and <code>mtm_medium</code> is the campaign medium. By including these tracking parameters in your URLs, you can track the effectiveness of your campaigns in Matomo and see how many visitors are coming to your website from each campaign, and how they are engaging with your content.</p>
-<p>Note that these tracking parameters (UTM parameters) are not what is actually used in Matomo, but they are a common example of how tracking parameters work in general. Matomo uses its own specific tracking parameters, several of which will be discussed in the next section.</p>
+<p>This page describes the automated deployment pipeline for the <a href="https://lmu-osc.github.io/">main OSC website</a> (repository: <a href="https://github.com/lmu-osc/lmu-osc.github.io">lmu-osc/lmu-osc.github.io</a>). When changes are pushed to the <code>main</code> branch, the site is automatically rendered and deployed to two destinations: <strong>GitHub Pages</strong> (for the <code>lmu-osc.github.io</code> address) and our <strong>production server</strong> at the LMU web address. This page covers how both paths work, from commit to live site.</p>
+<p><strong>Note: the webhook receiver should run in perpetuity without needing maintenance. If you are here because the production site is not updating, please follow the troubleshooting steps at the end of this page before attempting any changes.</strong></p>
+<hr>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The deployment pipeline consists of three main stages:</p>
+<ol type="1">
+<li><strong>A GitHub Actions workflow</strong> triggered by pushes to <code>main</code> (and weekly on a schedule). This workflow renders the Quarto site using two different profiles and publishes the output to two branches.</li>
+<li><strong>GitHub Pages</strong> serves the <code>gh-pages</code> branch automatically — no further action needed.</li>
+<li><strong>A webhook receiver</strong> running on our LRZ server listens for pushes to the <code>prod-pages</code> branch and updates the live production site.</li>
+</ol>
+<pre><code>┌──────────────┐    ┌──────────────────────┐    ┌───────────────────┐
+│  Push to     │───▶│  GitHub Actions      │───▶│  gh-pages branch  │───▶ GitHub Pages
+│  main branch │    │  (Render &amp; Publish)  │    │                   │    (automatic)
+└──────────────┘    │                      │    └───────────────────┘
+                    │  Two parallel jobs:  │
+                    │  • github profile    │    ┌───────────────────┐
+                    │  • production profile│───▶│  prod-pages branch│───▶ Webhook
+                    └──────────────────────┘    └───────────────────┘      │
+                                                                           ▼
+                                                                    ┌───────────────────┐
+                                                                    │  Webhook Receiver │
+                                                                    │  (LRZ server)     │
+                                                                    │  git fetch + reset│
+                                                                    └───────────────────┘
+                                                                            │
+                                                                            ▼
+                                                                    ┌──────────────────┐
+                                                                    │  Production site │
+                                                                    │  (LMU web addr.) │
+                                                                    └──────────────────┘</code></pre>
+<hr>
 </section>
-<section id="how-and-when-to-create-campaigns" class="level2">
-<h2 class="anchored" data-anchor-id="how-and-when-to-create-campaigns">How and When to Create Campaigns</h2>
-<p>Strictly speaking, you can “create” a campaign in Matomo by simply including the appropriate tracking parameters in your URLs. There is no need to create a campaign in the Matomo dashboard before you start tracking, as Matomo will automatically recognize the tracking parameters and attribute the traffic to the appropriate campaign.</p>
-<p>However, it is often helpful to use the “Campaign URL Builder” found in the Matomo dashboard of a website, which can help you generate the appropriate tracking parameters for your URLs. This feature allows you to easily create URLs with the correct tracking parameters by inputting the base URL and any of the following parameters:</p>
-<ul>
-<li><strong>Campaign Name (required)</strong>: The name of the campaign you want to track. This is the most important parameter, as it will be used to identify the campaign in your Matomo reports.</li>
-<li><strong>Campaign Keyword</strong>: The keyword associated with the campaign, which can be useful for tracking specific keywords in paid search campaigns.</li>
-<li><strong>Campaign Source</strong>: The source of the traffic, such as “social media”, “email”, or “paid advertising”. This parameter helps you understand where your traffic is coming from.</li>
-<li><strong>Campaign Medium</strong>: The medium through which the traffic is coming, such as “post”, “newsletter”, or “cpc”. This parameter helps you understand how your traffic is being delivered.</li>
-<li><strong>Campaign Content</strong>: Additional information about the campaign, such as the specific ad or link that was clicked. This can help you differentiate between different versions of a campaign.</li>
-<li><strong>Campaign ID</strong>: A unique identifier for the campaign, which can be useful for tracking campaigns across different platforms or tools.</li>
-<li><strong>Campaign Group</strong>: Identifies a specific group or audience.</li>
-<li><strong>Campaign Placement</strong>: Used to describe the advertising placement or position, for example an entire website, specific pages from a website, an individual ad unit positioned on a single page, a video, a mobile phone app, and more.</li>
-</ul>
-<p>The bolded parameters above are the ones that we typically use for our campaigns, but you can use any combination of these parameters to track your campaigns in Matomo. <strong>The important thing is to be consistent in how you use these parameters across your campaigns, so that you can easily compare and analyze the data in your Matomo reports for a website.</strong> Think of your parameter choices as being like the columns in an Excel Pivot Table or a Table 1 in a paper—you want to establish clear, reusable, descriptive categories that allow you to look at cross-sections of data.</p>
+<section id="trigger-what-starts-the-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="trigger-what-starts-the-pipeline">Trigger: what starts the pipeline</h2>
+<p>The workflow runs automatically whenever code is pushed to the <code>main</code> branch of <a href="https://github.com/lmu-osc/lmu-osc.github.io">lmu-osc/lmu-osc.github.io</a>. It also runs on a weekly schedule (Sundays at 11 PM UTC) to pick up any changes from dependencies, and can be triggered manually via the GitHub Actions UI (<code>workflow_dispatch</code>).</p>
+<hr>
 </section>
-<section id="campaign-examples" class="level2">
-<h2 class="anchored" data-anchor-id="campaign-examples">Campaign Examples</h2>
-<section id="a-bad-but-original-example-of-a-campaign" class="level3">
-<h3 class="anchored" data-anchor-id="a-bad-but-original-example-of-a-campaign">A Bad, But Original, Example of a Campaign</h3>
-<p>At the launch of our new OSC website in 2026, we ran a campaign to promote the new website and encourage people to visit and explore the new content. We created a campaign in Matomo and included the following tracking parameters in the URLs that we shared on social media and in our email newsletters:</p>
-<ul>
-<li>Campaign Name: <code>launch</code></li>
-<li>Campaign Keywords: <code>email</code>, <code>linkedin</code>, <code>bsky</code>, <code>mastodon</code></li>
-</ul>
-<p>This was our first use of the campaign tracking features of Matomo, and it allowed us to see how many visitors were coming to our website from each of our promotional efforts, and how they were engaging with our content as a result.</p>
-<p><strong>However, this was ultimately not the best use of the campaign tracking features of Matomo.</strong> We should have considered using the <strong>Campaign Source</strong> parameter to differentiate between the different platforms (e.g., email, LinkedIn, Bluesky, Mastodon) instead of using the <strong>Campaign Keywords</strong> parameter. The <strong>Campaign Source</strong> parameter is specifically designed to track the source of traffic, and it is how we collect data going forward. By using <strong>Campaign Keywords</strong> instead, we introduced an inconsistency in how the parameters are used across our campaigns. This is a good example of why it is important to be consistent in how you use the tracking parameters across campaigns, so that you can easily compare and analyze the data in your Matomo reports. Ultimately, the data from this campaign was still useful, but it would have been more straightforward to analyze if we had used the <strong>Campaign Source</strong> parameter to differentiate between the different platforms.</p>
+<section id="the-github-actions-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="the-github-actions-workflow">The GitHub Actions workflow</h2>
+<p>The workflow file lives at <code>.github/workflows/publish.yml</code> in the website repository. It defines two independent jobs that run in parallel.</p>
+<section id="job-1-build-for-github-pages-build-github" class="level3">
+<h3 class="anchored" data-anchor-id="job-1-build-for-github-pages-build-github">Job 1: Build for GitHub Pages (<code>build-github</code>)</h3>
+<p>This job renders the site with the <code>github</code> Quarto profile and publishes the output to the <code>gh-pages</code> branch using the standard <code>quarto-dev/quarto-actions/publish</code> action. GitHub Pages is configured to serve from this branch, so the site becomes available at <code>https://lmu-osc.github.io/</code> as soon as the action completes.</p>
+<p>The <code>github</code> profile ensures that links, the sitemap, and other absolute URLs are generated with the GitHub Pages address (<code>https://lmu-osc.github.io/</code>).</p>
 </section>
-<section id="a-better-example-of-a-campaign" class="level3">
-<h3 class="anchored" data-anchor-id="a-better-example-of-a-campaign">A Better Example of a Campaign</h3>
-<p>Now let us look at how a well-structured campaign should be set up. Suppose the OSC is organising a workshop on research data management (RDM) and wants to promote it via email to our mailing list, as well as on LinkedIn, Bluesky, and Mastodon. A properly configured campaign would assign each parameter to the dimension it is meant to describe, like this:</p>
+<section id="job-2-build-for-production-build-production" class="level3">
+<h3 class="anchored" data-anchor-id="job-2-build-for-production-build-production">Job 2: Build for production (<code>build-production</code>)</h3>
+<p>This job renders the site with the <code>production</code> Quarto profile. Instead of using the <code>publish</code> action, it uses <code>quarto-dev/quarto-actions/render</code> to produce the static site in <code>_site/</code>, then deploys the output to the <code>prod-pages</code> branch.</p>
+<p>The <code>production</code> profile generates absolute URLs pointing to the LMU production address (e.g., <code>https://www.osc.lmu.de/...</code>). This is critical so that the sitemap, RSS feeds, social media previews, and all internal links reference the correct domain.</p>
+<blockquote class="blockquote">
+<p><strong>Why two profiles?</strong> Quarto needs to know the site URL at render time to generate correct absolute links. Since the site is served at two different addresses (GitHub Pages and the LMU production server), we use two Quarto profiles — one for each URL. Each profile is defined in <code>_quarto.yml</code> with its own <code>url</code> setting.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="github-pages-deployment" class="level2">
+<h2 class="anchored" data-anchor-id="github-pages-deployment">GitHub Pages deployment</h2>
+<p>The <code>gh-pages</code> branch is served automatically by GitHub Pages. No additional infrastructure is needed — GitHub handles the web server, TLS certificate, and CDN. This is the fastest path from merge to live (typically a few minutes) and is useful as a preview or fallback address.</p>
+<hr>
+</section>
+<section id="production-server-deployment-via-webhooks" class="level2">
+<h2 class="anchored" data-anchor-id="production-server-deployment-via-webhooks">Production server deployment (via webhooks)</h2>
+<p>Deploying to the LMU production server (<code>www.osc.lmu.de</code>) requires an additional step because the server is hosted on LRZ infrastructure, not on GitHub. This is handled by a <strong>GitHub webhook</strong> and a small <strong>Go application</strong> called the <a href="https://github.com/lmu-osc/webhook-receiver">webhook-receiver</a>.</p>
+<section id="what-is-a-webhook" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-webhook">What is a webhook?</h3>
+<p>A webhook is an HTTP callback — a message that GitHub sends to a URL when a specific event occurs. In our case, GitHub sends a POST request to our webhook receiver every time a push is made to the <code>prod-pages</code> branch. The webhook receiver then pulls the updated content and places it in the correct directory on the server.</p>
+</section>
+<section id="the-webhook-receiver-application" class="level3">
+<h3 class="anchored" data-anchor-id="the-webhook-receiver-application">The webhook-receiver application</h3>
+<p>The <a href="https://github.com/lmu-osc/webhook-receiver">webhook-receiver</a> is a Go application that runs in a Docker container on our LRZ server. It does the following:</p>
+<ol type="1">
+<li><strong>Listens</strong> for POST requests at the <code>/lmu-osc-site</code> endpoint.</li>
+<li><strong>Verifies</strong> the request signature using a shared secret (HMAC-SHA256) to ensure the request genuinely came from GitHub.</li>
+<li><strong>Checks</strong> that the event is a <code>push</code> to the <code>refs/heads/prod-pages</code> ref. If not, it ignores the request.</li>
+<li><strong>Ensures</strong> the repository is cloned locally — if no local copy exists yet, it clones <code>lmu-osc/lmu-osc.github.io</code> and checks out the <code>prod-pages</code> branch.</li>
+<li><strong>Updates</strong> the local copy by running <code>git fetch --prune origin prod-pages</code> followed by <code>git reset --hard FETCH_HEAD</code> and <code>git clean -fd</code>, which brings the working tree exactly in sync with the remote branch.</li>
+<li><strong>Responds</strong> to GitHub immediately (so the webhook delivery is marked as successful), while the update runs asynchronously.</li>
+</ol>
+<p>Key design features:</p>
 <ul>
-<li><strong>Campaign Name</strong>: <code>rdm-workshop-2026</code></li>
-<li><strong>Campaign Source</strong>: <code>email</code>, <code>linkedin</code>, <code>bsky</code>, <code>mastodon</code></li>
-<li><strong>Campaign Medium</strong>: <code>newsletter</code>, <code>social-post</code></li>
+<li><strong>Concurrency safety</strong>: If multiple webhook events arrive in quick succession, they are coalesced — only one update runs at a time, with a single additional run queued if events arrive during an active update.</li>
+<li><strong>Idempotent</strong>: The receiver simply ensures the local working tree matches the remote branch. Running it multiple times has the same effect as running it once.</li>
+<li><strong>Lightweight</strong>: The Docker image is based on Alpine Linux and is built from a multi-stage Go build, resulting in a small footprint.</li>
 </ul>
-<p>In this setup, the <strong>Campaign Name</strong> groups all traffic under a single campaign (<code>rdm-workshop-2026</code>), making it easy to see the total impact of the workshop promotion. The <strong>Campaign Source</strong> parameter cleanly separates traffic by platform, so you can compare which channel drove the most visitors. The <strong>Campaign Medium</strong> distinguishes the delivery method (a newsletter versus a social media post). Finally, <strong>Campaign Group</strong> captures which audience segment each link targeted (our mailing list versus a general audience on social media), which can be useful for understanding how different groups respond to your promotions.</p>
-<p>With this structure, your Matomo reports will immediately show you meaningful breakdowns without any manual cleanup. For example, you could quickly answer questions like: “How many visitors came from the LinkedIn post vs.&nbsp;the email newsletter?” or “Did the email newsletter drive more engagement per visitor than the social media posts?” By keeping each parameter focused on a single dimension, you ensure that your data remains clean, consistent, and easy to analyse across all future campaigns.</p>
+</section>
+<section id="how-the-webhook-is-configured" class="level3">
+<h3 class="anchored" data-anchor-id="how-the-webhook-is-configured">How the webhook is configured</h3>
+<p>The webhook is configured in the GitHub repository settings (Settings → Webhooks). The configuration includes:</p>
+<ul>
+<li><strong>Payload URL</strong>: <code>https://our-server.example.com/lmu-osc-site</code></li>
+<li><strong>Content type</strong>: <code>application/json</code></li>
+<li><strong>Secret</strong>: A long random string shared between GitHub and the webhook receiver (set as <code>WEBHOOK_SECRET</code> in the receiver’s environment)</li>
+<li><strong>Events</strong>: “Just the push event” (we only need to react to pushes)</li>
+</ul>
+<p>The receiver is routed through Nginx on the server, which terminates TLS and proxies requests to the Docker container on <code>127.0.0.1:8080</code>.</p>
+</section>
+<section id="how-the-production-site-files-are-served" class="level3">
+<h3 class="anchored" data-anchor-id="how-the-production-site-files-are-served">How the production site files are served</h3>
+<p>The Docker container mounts a host directory (configured via the <code>REPO_DIR</code> environment variable, typically <code>/var/www/your-site</code>) into the container at <code>/app/repo</code>. The webhook receiver keeps this directory updated with the contents of the <code>prod-pages</code> branch. The Nginx (or Apache) web server on the host serves this directory as the live website.</p>
+<p>This means the production site is essentially a static file server pointing at a Git working tree that is kept in sync with the <code>prod-pages</code> branch.</p>
+<hr>
+</section>
+</section>
+<section id="the-complete-flow-step-by-step" class="level2">
+<h2 class="anchored" data-anchor-id="the-complete-flow-step-by-step">The complete flow, step by step</h2>
+<ol type="1">
+<li>A contributor merges a pull request into <code>main</code> on <a href="https://github.com/lmu-osc/lmu-osc.github.io">lmu-osc/lmu-osc.github.io</a>.</li>
+<li>The <strong>GitHub Actions workflow</strong> (<code>publish.yml</code>) starts automatically.</li>
+<li>The <code>build-github</code> job renders the site with the <code>github</code> profile and publishes to <code>gh-pages</code>. GitHub Pages serves the result at <code>https://lmu-osc.github.io/</code>.</li>
+<li>Concurrently, the <code>build-production</code> job renders the site with the <code>production</code> profile and pushes the output to <code>prod-pages</code>.</li>
+<li>GitHub sends a <strong>webhook POST</strong> to the webhook receiver on the LRZ server, notifying it of the push to <code>prod-pages</code>.</li>
+<li>The <strong>webhook receiver</strong> verifies the signature, fetches the latest <code>prod-pages</code> branch, and updates the local working tree.</li>
+<li>The web server on the LRZ host serves the updated files at the LMU production address.</li>
+</ol>
+<p>Steps 5 and 6 typically complete within seconds of the workflow finishing. In total, both the GitHub Pages and production versions of the site are updated within a few minutes of a merge.</p>
+<hr>
+</section>
+<section id="troubleshooting-and-maintenance" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting-and-maintenance">Troubleshooting and maintenance</h2>
+<section id="if-the-production-site-is-not-updating" class="level3">
+<h3 class="anchored" data-anchor-id="if-the-production-site-is-not-updating">If the production site is not updating</h3>
+<ol type="1">
+<li><strong>Check the workflow run</strong>: Go to the <a href="https://github.com/lmu-osc/lmu-osc.github.io/actions">Actions tab</a> of the website repository and verify that the “Render and Publish Site” workflow completed successfully. If it failed, the <code>prod-pages</code> branch was not updated, so no webhook was sent.</li>
+<li><strong>Check the webhook receiver logs</strong>: On the LRZ server, run <code>docker compose logs --tail=200 webhook-receiver</code> in the webhook-receiver directory to see recent activity. Look for error messages.</li>
+<li><strong>Check webhook deliveries</strong>: In the GitHub repository, go to Settings → Webhooks → your webhook → Recent Deliveries. This shows every webhook request GitHub sent and the response. A <code>200</code> response means the receiver accepted it; a <code>4xx</code> or <code>5xx</code> means something went wrong.</li>
+</ol>
+</section>
+<section id="common-issues" class="level3">
+<h3 class="anchored" data-anchor-id="common-issues">Common issues</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symptom</th>
+<th>Likely cause</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Webhook delivery shows <code>401</code></td>
+<td><code>WEBHOOK_SECRET</code> in the receiver’s <code>.env</code> does not match the secret configured in GitHub. Regenerate and update both.</td>
+</tr>
+<tr class="even">
+<td>Webhook delivery shows <code>200</code> but site hasn’t changed</td>
+<td>The webhook event may have been for a different branch or event type. Check the receiver logs for “Webhook received and ignored” messages.</td>
+</tr>
+<tr class="odd">
+<td><code>prod-pages</code> branch is ahead of the local copy</td>
+<td>The receiver may have been down during a previous deployment. Either wait for the next push to <code>main</code> (which will trigger another update) or manually trigger the workflow via <code>workflow_dispatch</code>.</td>
+</tr>
+<tr class="even">
+<td>The receiver cannot clone or pull</td>
+<td>Verify that <code>REPO_URL</code> is correct and that the server has network access to GitHub. The repository is public, so no authentication is needed for read access.</td>
+</tr>
+<tr class="odd">
+<td>Files on the server are out of sync</td>
+<td>Run <code>docker compose exec webhook-receiver ls -la /app/repo</code> to inspect the current state. Compare with the <code>prod-pages</code> branch on GitHub.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="updating-the-webhook-receiver" class="level3">
+<h3 class="anchored" data-anchor-id="updating-the-webhook-receiver">Updating the webhook receiver</h3>
+<p>When the webhook-receiver code itself is updated (e.g., a new feature or bug fix), pull the latest changes on the server and rebuild the container:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> compose up <span class="at">-d</span> <span class="at">--build</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="the-webhook-is-broken-and-i-have-no-idea-why-or-what-to-do" class="level2">
+<h2 class="anchored" data-anchor-id="the-webhook-is-broken-and-i-have-no-idea-why-or-what-to-do">The Webhook is Broken and I Have No Idea Why or What to Do</h2>
+<p>If you made it here, then I am sorry and my recommendation would be to start from scratch (unless you happen to know Go and can debug the webhook-receiver code). The steps to start from scratch are:</p>
+<ol type="1">
+<li>Stop the webhook-receiver container: <code>cd /path/to/webhook-receiver &amp;&amp; docker compose down</code></li>
+<li>Copy the secret from the <code>.env</code> file to a safe place, as you will need to reconfigure the webhook in GitHub with the same secret. Alternatively, you can generate a new secret and update both the <code>.env</code> file and the GitHub webhook configuration, but using the same secret is simpler.</li>
+<li>Remove the existing local repository copy: <code>rm -rf /path/to/repo</code></li>
+<li>Start an entirely new project, likely using Python.</li>
+<li>Configure the new webhook receiver to listen for the same events and use the same secret.</li>
+<li>Set-up the project to listen for pushes to the <code>prod-pages</code> branch and update the local copy of the repository accordingly.</li>
+<li>To avoid having to make any sort of Nginx changes too, you can have the new webhook receiver listen on the same port, <code>8080</code>, as was used before. This way, the Nginx configuration can remain unchanged, and you can simply replace the old webhook receiver with the new one.</li>
+</ol>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -1054,13 +1239,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../matomo/matomo-overview-and-setup.html" class="pagination-link" aria-label="Overview and Setup">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview and Setup</span>
+      <a href="../misc-topics/our-licensing-choices.html" class="pagination-link" aria-label="Our Licensing Choices">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Our Licensing Choices</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../matomo/adding-a-new-website.html" class="pagination-link" aria-label="Adding Sites">
-        <span class="nav-page-text">Adding Sites</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../archive/index.html" class="pagination-link" aria-label="Archive">
+        <span class="nav-page-text">Archive</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1072,7 +1257,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/misc-topics/main-website-deployment.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
