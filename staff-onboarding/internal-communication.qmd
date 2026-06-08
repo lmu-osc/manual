@@ -6,7 +6,7 @@ title: "Internal Communication"
 
 These are our main communication channels.
 
-**E-Mail**
+### E-Mail
 
 **Getting an LMU.de email** Malika will submit a ticket with IT to get you an email under the lmu.de domain. Access this mailbox by going to [xmail.mwn.de](https://xmail.mwn.de).
 
@@ -18,11 +18,17 @@ Please use emails for important messages to keep in record, or for to-dos that c
 It's still fine to communicate with staff through your personal email and for using Google Workspace platforms.
 :::
 
-**Matrix**
+### Matrix
 
-Matrix is the preferred way for back and forth communication, FYIs, or for small to-dos that can be dealt with immediately.
+Matrix is an open, decentralized protocol for real-time communication. LMU hosts a Matrix server under the name **LMU Chat**, making it the central messaging platform for all university members. The recommended client app for accessing the LMU Matrix space is called **Element** — it is available for desktop (Windows, macOS, Linux) and mobile devices (iOS, Android). You can use Element to chat with anyone at LMU, join group rooms, and collaborate across departments.
 
-**LMU chat** [Click here for the detailed instructions](https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division-vi/it-service-desk/central-it-services/lmu-chat-matrix/) to install your desktop and phone apps to be able to chat with anybody from the LMU. [Click here for the direct invitation](https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de) to our workspace.
+Matrix is our preferred way for back-and-forth communication, FYIs, or small to-dos that can be dealt with immediately.
+
+#### LMU Chat (Matrix) — Getting Started
+
+For detailed step-by-step instructions on setting up your Matrix account and installing the Element app on your devices, please refer to the [official LMU documentation](https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division-vi/it-service-desk/central-it-services/lmu-chat-matrix/). Once you are set up, use the [direct invitation link](https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de) to join our OSC workspace.
+
+
 
 ## Setting up a Meeting
 
