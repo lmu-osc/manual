@@ -118,20 +118,9 @@ website:
       - section: "Authoring an OSC Tutorial"
         href: authoring-tutorials/index.qmd
         contents:
-          - href: path/file.qmd
-            text: "Introduction"
-          - href: path/file.qmd
-            text: "Tutorial Template Overview"
-          - href: path/file.qmd
-            text: "Getting Started"
-          - href: path/file.qmd
-            text: "Things You Shouldn't Change"
-          - href: path/file.qmd
-            text: "Matomo Analytics"
-          - href: path/file.qmd
-            text: "Authoring and Versions"
-          - href: path/file.qmd
-            text: "Best Practices"
+          - href: authoring-tutorials/authoring-tutorials.qmd
+            text: "Authoring Tutorials for the OSC"
+
 
       - section: "Switching a Group to Open Research Practices"
         href: path/index.qmd
