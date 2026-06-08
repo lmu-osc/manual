@@ -139,14 +139,267 @@
     ]
   },
   {
-    "objectID": "github/index.html",
-    "href": "github/index.html",
-    "title": "OSC Manual",
+    "objectID": "github/review.html",
+    "href": "github/review.html",
+    "title": "Git and GitHub Review",
     "section": "",
-    "text": "Back to top",
+    "text": "This page provides a quick overview of Git and GitHub and lays out the expectations of knowledge we assume when you start working with us. It’s not an exhaustive tutorial — there are plenty of excellent ones out there (linked below) — but it should give you a clear picture of what you need to be comfortable with and where to go if you need to brush up.\nIf you’re already confident with Git and GitHub, feel free to skip straight to the next pages in this section. If you’re newer to these tools, work through the resources listed below and come back here as a checklist to make sure you’ve covered the essentials.\nYou will also need to know how to set up an SSH connection between your computer and your GitHub account to authenticate your Git client. If you’re not familiar with this yet, don’t worry — our introductory tutorials below cover the process.",
     "crumbs": [
       "Home",
-      "OSC GitHub Organization"
+      "GitHub Organization",
+      "Git and GitHub Review"
+    ]
+  },
+  {
+    "objectID": "github/review.html#purpose-of-this-page",
+    "href": "github/review.html#purpose-of-this-page",
+    "title": "Git and GitHub Review",
+    "section": "",
+    "text": "This page provides a quick overview of Git and GitHub and lays out the expectations of knowledge we assume when you start working with us. It’s not an exhaustive tutorial — there are plenty of excellent ones out there (linked below) — but it should give you a clear picture of what you need to be comfortable with and where to go if you need to brush up.\nIf you’re already confident with Git and GitHub, feel free to skip straight to the next pages in this section. If you’re newer to these tools, work through the resources listed below and come back here as a checklist to make sure you’ve covered the essentials.\nYou will also need to know how to set up an SSH connection between your computer and your GitHub account to authenticate your Git client. If you’re not familiar with this yet, don’t worry — our introductory tutorials below cover the process.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Git and GitHub Review"
+    ]
+  },
+  {
+    "objectID": "github/review.html#learning-resources",
+    "href": "github/review.html#learning-resources",
+    "title": "Git and GitHub Review",
+    "section": "Learning resources",
+    "text": "Learning resources\n\nOSC introductory tutorials\nThese two tutorials are designed for beginners and use RStudio, which is common among OSC members:\n\nIntroduction to RStudio, Git, and GitHub — covers the very basics: creating a repository, staging, committing, pushing, and setting up SSH.\nCollaborative RStudio, Git, and GitHub — dives into collaboration: branches, pull requests, and working with others.\n\n\n\nRecommended video tutorials\n\nGit & GitHub Crash Course (Boot.dev) — a hands-on, visual walkthrough. The same content is available as an interactive tutorial on the Boot.dev website (free tier available). Consider doing the interactive version first, then watch the video to reinforce the concepts.\n\n\n\nCommit messages\n\nHow to Write a Git Commit Message by Chris Beams — the definitive guide (~15-minute read).\nThe Art of Writing Meaningful Git Commit Messages — a complementary take with practical examples.\n\n\n\nOfficial documentation\n\nGit Book — the official, comprehensive resource. Chapters 2 and 3 cover everything you need to get started.\nGitHub Docs — guides for all GitHub features, including pull requests, issues, and organisation management.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Git and GitHub Review"
+    ]
+  },
+  {
+    "objectID": "github/review.html#why-version-control-matters",
+    "href": "github/review.html#why-version-control-matters",
+    "title": "Git and GitHub Review",
+    "section": "Why version control matters",
+    "text": "Why version control matters\nVersion control is the backbone of reproducible, collaborative research software and documentation. Git tracks who changed what, when, and why, making it possible to:\n\nWork on multiple features or fixes simultaneously without stepping on each other’s toes.\nRevert mistakes without losing history.\nReview changes before they become permanent.\nTag releases and keep a clear record of your project’s evolution.\n\nGitHub builds on top of Git by providing a shared, web-based platform for hosting repositories, reviewing code, tracking work, and collaborating with others.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Git and GitHub Review"
+    ]
+  },
+  {
+    "objectID": "github/review.html#what-you-should-know-git",
+    "href": "github/review.html#what-you-should-know-git",
+    "title": "Git and GitHub Review",
+    "section": "What you should know: Git",
+    "text": "What you should know: Git\nYou should be comfortable with the following Git concepts and commands before contributing to our projects.\n\nCore workflow\n\n\n\n\n\n\n\nConcept / Command\nWhat it does\n\n\n\n\ngit init / git clone\nStart a new repository or get a local copy of an existing one.\n\n\ngit status\nCheck which files are modified, staged, or untracked.\n\n\ngit add\nStage changes for a commit.\n\n\ngit commit\nSave a snapshot of your staged changes with a message.\n\n\ngit log\nView the commit history.\n\n\ngit push\nUpload your local commits to a remote repository.\n\n\ngit pull\nFetch and integrate changes from a remote repository.\n\n\n\n\n\nBranching and merging\n\nBranches let you isolate work on different features, fixes, or experiments. The default branch is typically called main.\nCreating and switching branches: There are a few related commands worth knowing for creating and switching branches. Note: there is some overlap in functionality, and the Git community has been moving towards the newer switch command for clarity, but you’ll still see all of these in use:\n\ngit branch &lt;name&gt; — creates a new branch but does not switch to it. You’d then use git switch &lt;name&gt; (or older: git checkout &lt;name&gt;) to move onto it.\ngit switch -c &lt;name&gt; — creates a new branch and switches to it in one step. This is the modern, recommended approach.\ngit checkout -b &lt;name&gt; — does the same thing as git switch -c, but uses the older checkout syntax. You’ll still see this in many tutorials and workflows.\n\nMerging: git merge &lt;branch&gt; integrates changes from one branch into another. Knowing how to resolve merge conflicts when they arise is essential — Git will mark the conflicting regions and you’ll need to decide which changes to keep.\n\nLearning to merge is a topic of its own, but note that we generally use GitHub’s pull request interface to handle merges, which provides a more user-friendly way to review changes and resolve conflicts before merging.\n\nPull before you push: Always pull the latest changes from the remote before pushing, especially on shared branches, to minimise conflicts.\n\n\n\nRemotes\nA remote is a version of your repository hosted elsewhere (e.g., on GitHub). The default remote is usually named origin. You should understand how to:\n\ngit remote add origin &lt;url&gt; — links your local repository to a remote one so you can push and pull changes to and from it. You only need to do this once when setting up a local copy of a repository that wasn’t created by cloning.\ngit fetch — downloads new data from the remote (new branches, commits, tags) but doesn’t integrate them into your local working files. It’s a safe way to see what’s changed upstream without affecting your work-in-progress.\ngit push origin &lt;branch&gt; — uploads your local commits on the specified branch to the remote, making them available to collaborators. You’ll use this to share your work and update pull requests. (In contrast to the git push -u variant, this command does not set an upstream tracking link, so future pushes would require specifying the remote and branch name again.)\ngit push -u origin &lt;branch&gt; — same as git push, but also sets an upstream tracking link so that future pushes and pulls on this branch can be done with just git push or git pull without specifying the remote or branch name.\n\n\n\nStashing\ngit stash temporarily shelves changes you’re not ready to commit. Useful when you need to switch branches quickly. git stash pop re-applies the most recently stashed changes.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Git and GitHub Review"
+    ]
+  },
+  {
+    "objectID": "github/review.html#what-you-should-know-github",
+    "href": "github/review.html#what-you-should-know-github",
+    "title": "Git and GitHub Review",
+    "section": "What you should know: GitHub",
+    "text": "What you should know: GitHub\nGitHub is where we host our repositories and collaborate. You should be familiar with the following.\n\nRepositories\n\nA repository (or “repo”) is a project folder that contains all the files and their version history.\nRepositories can be public (visible to anyone) or private (visible only to invited collaborators). At the OSC, our content repositories are public; some internal tooling may be private.\n\n\n\nIssues\n\nIssues are used to track bugs, feature requests, tasks, and ideas.\nEach issue can have labels, assignees, milestones, and comments.\nIssues can reference each other and pull requests (e.g., “Closes #42” in a PR description).\n\n\n\nPull requests\nPull requests (PRs) are the mechanism for proposing changes to a repository. They are central to our workflow. You should understand:\n\nCreating a PR: Push a branch to GitHub and open a PR against the target branch (usually main).\nReviewing a PR: Leave comments on specific lines, approve changes, or request further work.\nMerging a PR: Once approved, the PR can be merged. Common merge strategies include:\n\nSquash and merge (combines all commits into one). This is our default and preferred approach for keeping a clean history.\nMerge commit (preserves all commits)\nRebase and merge (applies commits one by one on top of the target branch)\n\nDraft PRs: A PR can be opened as a “draft” to signal that work is still in progress.\n\n\n\nForks vs. branches\n\nBranching within a repo is the standard approach when you have write access to the repository. You create a branch, make changes, and open a PR.\nForking creates a personal copy of a repository under your own GitHub account. This is more common when contributing to projects where you don’t have write access. For OSC internal projects, we generally work within shared repositories using branches.\n\n\n\nCode reviews\nWe use PRs as an opportunity for code review — a chance for others to read, question, and improve your contributions before they become permanent. Be open to feedback, and remember that reviews are about improving the code, not criticizing the author.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Git and GitHub Review"
+    ]
+  },
+  {
+    "objectID": "github/review.html#osc-expectations-and-conventions",
+    "href": "github/review.html#osc-expectations-and-conventions",
+    "title": "Git and GitHub Review",
+    "section": "OSC expectations and conventions",
+    "text": "OSC expectations and conventions\nWhen working on OSC projects, please follow these guidelines:\n\n1. Don’t commit directly to main\nThe main branch should always be in a deployable or publishable state. As a rule, never commit directly to main. Always create a new branch for your work, and open a PR when you’re ready to merge. This allows for review and keeps the history clean. If you accidentally commit to main, don’t panic — you should look up how to revert or reset commits, and ask for help if you’re unsure.\n\n\n2. Write meaningful commit messages\nA good commit message explains why a change was made, not just what was changed. A widely-used convention is:\nShort (50 chars or less) summary of changes\n\nMore detailed explanatory text, if necessary. Wrap lines at about\n72 characters. Explain the problem this commit solves, and how.\nThe first line should be a concise summary written in the imperative mood (e.g., “Fix bug in data processing” rather than “Fixed” or “Fixes”). If the commit is part of a larger change, the body can provide additional context. This practice makes it easier for others (and your future self) to understand the history of changes and the rationale behind them. It is less important to follow this format for development branches, but the final commit message for a PR should be clear and informative.\n\n\n3. Keep PRs focused\nA pull request should address a single concern. If you find yourself fixing multiple unrelated things, split them into separate PRs. This makes reviews faster and history easier to follow.\n\n\n4. Review before merging\nAlways request at least one review before merging a PR. Even if you’re eager to get something in, a fresh pair of eyes can catch issues you’ve missed.\n\n\n5. Pull frequently, push often\nRegularly pull changes from the remote to stay up to date, and push your work-in-progress branches frequently to avoid losing work and to keep others informed of your progress.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Git and GitHub Review"
+    ]
+  },
+  {
+    "objectID": "github/review.html#self-check",
+    "href": "github/review.html#self-check",
+    "title": "Git and GitHub Review",
+    "section": "Self-check",
+    "text": "Self-check\nAfter working through the resources above, you should be able to answer “yes” to each of these:\n\nHave I set up SSH keys for authentication?\nCan I clone a repository and check its status?\nCan I create a branch, make changes, commit them, and push to GitHub?\nCan I open a pull request and request a review?\nCan I resolve a merge conflict?\nDo I understand what a good commit message looks like?\nDo I know not to commit directly to main on collaborative projects?\nDo I know ways to fix a mistake if I accidentally commit to main?\n\nIf you checked all the boxes, you’re ready to dive into the rest of this section!",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Git and GitHub Review"
+    ]
+  },
+  {
+    "objectID": "github/working-practices.html",
+    "href": "github/working-practices.html",
+    "title": "Best Working Practices for GitHub",
+    "section": "",
+    "text": "This page documents the conventions and best practices we follow when working with GitHub at the OSC. Following these guidelines ensures consistency across our repositories, makes collaboration smoother, and helps maintain a clean project history.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Working Practices"
+    ]
+  },
+  {
+    "objectID": "github/working-practices.html#creating-and-setting-up-repositories",
+    "href": "github/working-practices.html#creating-and-setting-up-repositories",
+    "title": "Best Working Practices for GitHub",
+    "section": "Creating and setting up repositories",
+    "text": "Creating and setting up repositories\nWhen setting up a new repository under the lmu-osc organization, use kebab-case for the name — lowercase letters, numbers, and hyphens only. For example, lmu-osc.github.io rather than lmu_osc.github.io, and tutorial-template rather than tutorial_template. This ensures consistency and avoids issues with case-sensitive filesystems and URL parsing.\nEvery repository must include a README.md with a clear description of its purpose, contents, and how to use it — start with a one-paragraph summary, include a table of contents for longer READMEs, document setup and usage, add a “Contributing” section, and list any dependencies. Every repository also needs a LICENSE file. For content (text, images, documentation) we use CC BY-SA 4.0; for code snippets within tutorials we use CC0 1.0. Standalone software projects should consider licenses like Apache 2.0 or AGPLv3. See the licensing page for a full explanation of our choices.\nAs for visibility, all content repositories (tutorials, documentation, the main website) should be public, aligning with our commitment to open science. Private repositories are reserved for internal tools, drafts not yet ready for public release, or configurations containing sensitive information.\nTutorials should always be created from the tutorial-template repository, which provides a consistent directory structure, Quarto configuration, and styling. For other types of repositories, check if a suitable template already exists in the organization before starting from scratch. Finally, when creating a repository, always provide a short description and relevant topic tags (e.g., tutorial, quarto, documentation) to make it discoverable.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Working Practices"
+    ]
+  },
+  {
+    "objectID": "github/working-practices.html#making-changes-to-a-repository",
+    "href": "github/working-practices.html#making-changes-to-a-repository",
+    "title": "Best Working Practices for GitHub",
+    "section": "Making changes to a repository",
+    "text": "Making changes to a repository\nThese guidelines apply to any repository with more than one contributor. Before making significant changes, create an issue to document what you plan to do. This gives others a chance to provide feedback before you invest time in implementation, creates a record of the rationale behind changes, helps avoid duplicated effort, and can attract collaborators. For very small changes (fixing a typo, updating a single number), you can skip the issue and go straight to a pull request.\nThe main branch should always be in a deployable or publishable state, so never commit directly to main. Always create a new branch for your work — even for small changes — and open a pull request when you’re ready to merge. This allows for review and keeps the history clean. If you accidentally commit to main, don’t panic. The safest option is git revert HEAD, which creates a new commit that undoes the last one and preserves history. If the commit hasn’t been pushed yet, you can use git reset --hard HEAD~1 to remove it. If it has been pushed, you’ll need git push --force-with-lease, but be careful — this rewrites history and can cause issues for others who have pulled the branch. When in doubt, ask a team member for help.\nUse descriptive branch names that make it clear what the branch is for. A good convention is fix/description for bug fixes, feature/description for new features, docs/description for documentation updates, and refactor/description for code restructuring — for example, fix/broken-link-in-readme or feature/add-search-to-website.\nA pull request should address a single concern. If you find yourself fixing multiple unrelated things, split them into separate PRs. This makes reviews faster, reduces the risk of conflicts, and keeps the project history easier to follow.\nWrite meaningful commit messages that explain why a change was made, not just what was changed. A widely-used convention is a short summary line (50 characters or less) written in the imperative mood — “Fix bug in data processing” rather than “Fixed” or “Fixes” — followed by a blank line and a more detailed body wrapped at about 72 characters. Reference any related issues (e.g., “Closes #42”). It’s less important to follow this format strictly on development branches, but the final commit message for a PR should be clear and informative. The Git and GitHub Review page has additional resources on this topic.\nAlways request at least one review before merging a PR. Even if you’re eager to get something merged, a fresh pair of eyes can catch issues you’ve missed. Reviews are about improving the code, not criticizing the author — be open to feedback and constructive in your own reviews.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Working Practices"
+    ]
+  },
+  {
+    "objectID": "github/working-practices.html#solo-projects",
+    "href": "github/working-practices.html#solo-projects",
+    "title": "Best Working Practices for GitHub",
+    "section": "Solo projects",
+    "text": "Solo projects\nFor personal projects or repositories where you are the sole contributor, you can commit directly to main if you prefer. However, it’s still worth using branches and PRs for significant changes: they keep a clear history of why changes were made, allow for review by others (collaborators, your future self, or someone who takes over the project), and serve as documentation of the development process.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Working Practices"
+    ]
+  },
+  {
+    "objectID": "github/working-practices.html#keeping-repositories-healthy",
+    "href": "github/working-practices.html#keeping-repositories-healthy",
+    "title": "Best Working Practices for GitHub",
+    "section": "Keeping repositories healthy",
+    "text": "Keeping repositories healthy\nRegularly update dependencies in your repositories. For Quarto-based projects, this means updating Quarto itself and any extensions. For software projects, keep package dependencies current and address security advisories promptly.\nEvery repository should have a .gitignore file that prevents committing build artifacts, system files (like .DS_Store), environment-specific files (.env, venv/, node_modules/), and editor/IDE files (.vscode/, .idea/). Quarto projects, for example, should generally ignore the _site/ output directory since it is generated from source files.\nIf a repository is no longer actively maintained, consider archiving it on GitHub. This makes it clear to visitors that the project is read-only, prevents new issues and pull requests from being opened, and preserves the repository for reference. Add a note to the README explaining why it was archived and, if applicable, where development has moved.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Working Practices"
+    ]
+  },
+  {
+    "objectID": "github/working-practices.html#working-with-forks",
+    "href": "github/working-practices.html#working-with-forks",
+    "title": "Best Working Practices for GitHub",
+    "section": "Working with forks",
+    "text": "Working with forks\nMost OSC work happens in shared repositories using branches (since team members have write access). However, you may occasionally need to work with forks when contributing to a project outside the OSC organization, or when an external contributor wants to contribute to our projects. When reviewing PRs from forks, be aware that external contributors may not have the same context about our conventions — provide clear, constructive guidance.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Working Practices"
+    ]
+  },
+  {
+    "objectID": "github/working-practices.html#quick-reference",
+    "href": "github/working-practices.html#quick-reference",
+    "title": "Best Working Practices for GitHub",
+    "section": "Quick reference",
+    "text": "Quick reference\n\n\n\n\n\n\n\nScenario\nRecommended workflow\n\n\n\n\nCreating a new repo\nUse kebab-case, add README + LICENSE, use a template if applicable\n\n\nMaking a small fix\nCreate a branch, commit, open a PR\n\n\nMaking a significant change\nCreate an issue first, then branch → commit → PR\n\n\nSolo project\nCan commit to main, but branches + PRs still recommended for major changes\n\n\nReviewing a PR\nBe constructive, focus on the code not the author\n\n\nRepository no longer active\nArchive it, add a note to the README",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Working Practices"
+    ]
+  },
+  {
+    "objectID": "github/our-repositories.html",
+    "href": "github/our-repositories.html",
+    "title": "Repositories of the LMU Open Science Center",
+    "section": "",
+    "text": "Our GitHub organization hosts over 50 repositories covering a diverse range of projects — from public-facing websites and tutorials to internal tooling and configuration. This page provides a structured overview of the types of repositories we maintain and details on some of our most important ones.\nEach repository should contain its own documentation (typically a README.md) describing its purpose, contents, and how to use it. This page is meant to provide broader context about how our repositories relate to each other and how they fit into our workflows.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Our Repositories"
+    ]
+  },
+  {
+    "objectID": "github/our-repositories.html#overview",
+    "href": "github/our-repositories.html#overview",
+    "title": "Repositories of the LMU Open Science Center",
+    "section": "",
+    "text": "Our GitHub organization hosts over 50 repositories covering a diverse range of projects — from public-facing websites and tutorials to internal tooling and configuration. This page provides a structured overview of the types of repositories we maintain and details on some of our most important ones.\nEach repository should contain its own documentation (typically a README.md) describing its purpose, contents, and how to use it. This page is meant to provide broader context about how our repositories relate to each other and how they fit into our workflows.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Our Repositories"
+    ]
+  },
+  {
+    "objectID": "github/our-repositories.html#repository-categories",
+    "href": "github/our-repositories.html#repository-categories",
+    "title": "Repositories of the LMU Open Science Center",
+    "section": "Repository categories",
+    "text": "Repository categories\nOur repositories generally fall into the following categories:\n\n\n\n\n\n\n\n\nCategory\nDescription\nVisibility\n\n\n\n\nOrganization configuration\nSpecial repositories that control organization-wide settings, profiles, and community health files (e.g., .github)\nUsually public, some private\n\n\nWebsite and infrastructure\nThe main OSC website, its deployment infrastructure, and related tooling\nPublic\n\n\nTutorials and educational content\nHands-on tutorials created by OSC members, built from a shared template\nPublic\n\n\nDocumentation\nManuals, guides, and reference material (like this manual)\nPublic\n\n\nInternal tools\nScripts, automation, and tooling used for internal operations\nMixed (some public, some private)\n\n\nBackup and archival\nAutomated backups of our repositories for disaster recovery\nPrivate",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Our Repositories"
+    ]
+  },
+  {
+    "objectID": "github/our-repositories.html#organization-configuration-repositories",
+    "href": "github/our-repositories.html#organization-configuration-repositories",
+    "title": "Repositories of the LMU Open Science Center",
+    "section": "Organization configuration repositories",
+    "text": "Organization configuration repositories\nThese are special, convention-based repositories that GitHub recognises automatically. They control how our organization appears to the outside world and provide default settings for all other repositories.\n\n.github — Public profile and community standards\ngithub.com/lmu-osc/.github serves two purposes:\n\nOrganization profile README — The text displayed at the top of github.com/lmu-osc. This is the first thing visitors see and should briefly explain who we are and what we do.\nDefault community health files — Templates for issues, pull requests, and a CONTRIBUTING guide that apply across all repositories in the organization. Individual repositories can override these by providing their own versions, but the defaults mean you only need to update a template in one place to affect every repo.\n\n\nWhen to update .github: If you want to change the organization-wide issue template, add a new PR checklist, or update the CONTRIBUTING guide, edit this repository. Changes take effect immediately for all repos that don’t have their own local versions of these files.\n\n\n\n.github-private — Internal-facing information\ngithub.com/lmu-osc/.github-private is the internal counterpart to .github. It is only visible to organization members and contains:\n\nAn internal-facing README with information relevant to the team but not intended for the public (e.g., internal processes, contact information).\nAny other files that should be accessible to all members but not to the outside world.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Our Repositories"
+    ]
+  },
+  {
+    "objectID": "github/our-repositories.html#website-and-infrastructure",
+    "href": "github/our-repositories.html#website-and-infrastructure",
+    "title": "Repositories of the LMU Open Science Center",
+    "section": "Website and infrastructure",
+    "text": "Website and infrastructure\n\nlmu-osc.github.io — The main OSC website\ngithub.com/lmu-osc/lmu-osc.github.io is our primary public-facing website. It is:\n\nBuilt with Quarto — The site is generated from .qmd source files using the Quarto publishing system.\nThe main hub for our public-facing documentation, resources, news, events, and people profiles.\nDeployed automatically — See the infrastructure section below for how changes flow from this repo to the live site.\n\nThe repository has three key branches:\n\n\n\n\n\n\n\nBranch\nPurpose\n\n\n\n\nmain\nSource content (.qmd files, configuration, assets). This is where all development happens.\n\n\nprod-pages\nThe rendered HTML output, automatically deployed to the live website. Never modify this branch directly.\n\n\ngh-pages\nThe rendered HTML output, automatically deployed to the GitHub Pages version of the website. Never modify this branch directly.\n\n\n\n\n\nwebhook-receiver — Deployment automation\ngithub.com/lmu-osc/webhook-receiver is a small Go application that bridges GitHub and our web server. It:\n\nListens for webhook events from the website repository — specifically, pushes to the prod-pages branch.\nPulls the updated content to our internal server, making the changes live.\n\nThis means publishing a change to the website is as simple as merging a PR into main — the Quarto rendering workflow produces the static site on prod-pages, and the webhook receiver deploys it automatically.\n\n\nosc-website-transfer — Legacy migration tooling (archived)\ngithub.com/lmu-osc/osc-website-transfer is a now-archived repository that was used during the transition from our old website to the current one. It contains scripts for:\n\nCopying all old news, events, people pages, and other content.\nStructuring that content in a format suitable for import into the new website.\n\n\nNote: The old website has been decommissioned, so the links and references in this repository are no longer functional. It is kept for reference in case similar migration work is needed in the future.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Our Repositories"
+    ]
+  },
+  {
+    "objectID": "github/our-repositories.html#tutorials-and-educational-content",
+    "href": "github/our-repositories.html#tutorials-and-educational-content",
+    "title": "Repositories of the LMU Open Science Center",
+    "section": "Tutorials and educational content",
+    "text": "Tutorials and educational content\n\ntutorial-template — Base template for tutorials\ngithub.com/lmu-osc/tutorial-template is the standard template for all OSC tutorial repositories. It provides:\n\nA consistent directory structure and styling across all tutorials.\nPre-configured Quarto settings for rendering tutorials as websites.\nA README with instructions on how to use the template.\n\nWhen to use this template:\n\n✅ Creating a new tutorial — Start from this template to ensure consistency with other OSC tutorials.\n✅ Updating an existing tutorial — If a tutorial predates the template, it should be migrated to match the template’s structure and style. Check the template’s README for migration guidance.\n\nTutorials built from this template are published at lmu-osc.github.io under their own subdomain (e.g., https://lmu-osc.github.io/tutorial-name/).",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Our Repositories"
+    ]
+  },
+  {
+    "objectID": "github/our-repositories.html#backup-and-archival",
+    "href": "github/our-repositories.html#backup-and-archival",
+    "title": "Repositories of the LMU Open Science Center",
+    "section": "Backup and archival",
+    "text": "Backup and archival\n\norganization-backup — Automated disaster recovery\ngithub.com/lmu-osc/organization-backup is a private repository that handles automated backups of all organization repositories.\n\nFrequency: Monthly.\nDestination: Our internal server.\nRetention: Backups older than 18 months are automatically deleted.\nPurpose: A precautionary measure to ensure we have a copy of our work in case of issues with GitHub, and to maintain an internal archive.\n\nThis is really a disaster recovery tool rather than a version control system, so it should not be used for regular access to historical versions of repositories. Instead, it serves as a safety net in case of emergencies. Backups are stored in folders for each month, with tarball archives of each repository at the time of the snapshot. If these are ever needed, they can be extracted and used to restore a repository to its state at the time of the backup. Felix would be the most likely point of contact for retrieving these backups.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "Our Repositories"
     ]
   },
   {
@@ -1275,32 +1528,266 @@
     ]
   },
   {
-    "objectID": "github/page1.html",
-    "href": "github/page1.html",
-    "title": "Page Title Here",
+    "objectID": "github/actions.html",
+    "href": "github/actions.html",
+    "title": "GitHub Actions",
     "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible."
+    "text": "This page introduces GitHub Actions from the ground up. If you’ve never used GitHub Actions before, you’ll learn what they are, how they work, and why they’re useful. If you already have some experience, you’ll find details on how we specifically use Actions at the OSC and what conventions we follow.\nBy the end of this chapter, you should be able to:\n\nExplain what GitHub Actions are and what problems they solve.\nUnderstand the core concepts: workflows, jobs, steps, runners, and events.\nRead and understand a simple workflow file.\nKnow where workflow files live and how to add, edit, or remove them.\nFind and interpret workflow run results.\nRecognize the common Actions we use at the OSC and what each one does.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
   },
   {
-    "objectID": "github/page1.html#level-two",
-    "href": "github/page1.html#level-two",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two\n\nL3\n\n\nL3 Again\n\n\nAnd one more time"
+    "objectID": "github/actions.html#purpose-of-this-page",
+    "href": "github/actions.html#purpose-of-this-page",
+    "title": "GitHub Actions",
+    "section": "",
+    "text": "This page introduces GitHub Actions from the ground up. If you’ve never used GitHub Actions before, you’ll learn what they are, how they work, and why they’re useful. If you already have some experience, you’ll find details on how we specifically use Actions at the OSC and what conventions we follow.\nBy the end of this chapter, you should be able to:\n\nExplain what GitHub Actions are and what problems they solve.\nUnderstand the core concepts: workflows, jobs, steps, runners, and events.\nRead and understand a simple workflow file.\nKnow where workflow files live and how to add, edit, or remove them.\nFind and interpret workflow run results.\nRecognize the common Actions we use at the OSC and what each one does.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
   },
   {
-    "objectID": "github/page1.html#another-level-two",
-    "href": "github/page1.html#another-level-two",
-    "title": "Page Title Here",
-    "section": "Another Level Two",
-    "text": "Another Level Two"
+    "objectID": "github/actions.html#what-are-github-actions",
+    "href": "github/actions.html#what-are-github-actions",
+    "title": "GitHub Actions",
+    "section": "What are GitHub Actions?",
+    "text": "What are GitHub Actions?\nGitHub Actions is a built-in automation platform that lets you run tasks—called actions—in response to events that happen in your GitHub repository. Think of it as a way to tell GitHub: “Whenever X happens, do Y.”\nCommon examples include:\n\nRunning tests automatically whenever someone opens a pull request.\nBuilding and deploying a website whenever new code is pushed to main.\nChecking for broken links or spelling mistakes on a schedule.\nFormatting code or running quality checks before merging.\n\nBefore GitHub Actions existed, you had to use separate tools (like Jenkins, Travis CI, or CircleCI) to do these things, and you often had to configure them on your own servers. GitHub Actions is integrated directly into GitHub, which means:\n\nNo separate accounts or servers to set up (for most cases).\nResults appear right inside your repository, on pull requests and in the GitHub interface.\nIt’s free for public repositories and includes a generous free tier for private ones.\n\n\nNote for beginners: If you’ve never used a CI/CD (Continuous Integration / Continuous Deployment) tool before, don’t worry. The basic idea is simple: you write a recipe (a “workflow”) that tells GitHub what to do, and GitHub follows that recipe automatically when certain things happen in your repository. The rest of this page walks you through everything you need to know.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
   },
   {
-    "objectID": "github/page1.html#level-two-1",
-    "href": "github/page1.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two"
+    "objectID": "github/actions.html#core-concepts",
+    "href": "github/actions.html#core-concepts",
+    "title": "GitHub Actions",
+    "section": "Core concepts",
+    "text": "Core concepts\nBefore we dive into examples, let’s build a mental model of the key pieces. Each term builds on the previous one.\n\nWorkflow\nA workflow is the top-level unit of automation: a complete, automated process made up of one or more jobs. Workflows are defined in YAML files (a human-readable data format, similar to a simpler version of JSON). You’ll learn the YAML syntax shortly.\nA workflow is:\n\nTriggered by one or more events (e.g., a push, a pull request, a scheduled time).\nStored in your repository inside the .github/workflows/ directory.\nNamed by the filename (e.g., deploy-website.yml).\n\n\n\nEvent\nAn event is a specific activity that triggers a workflow. Examples:\n\n\n\n\n\n\n\nEvent\nWhen it happens\n\n\n\n\npush\nCode is pushed to a branch.\n\n\npull_request\nA pull request is opened, updated, or reopened.\n\n\nworkflow_dispatch\nSomeone manually triggers the workflow from the GitHub UI.\n\n\nschedule\nA pre-defined time (using cron syntax).\n\n\nissues\nAn issue is opened, closed, or edited.\n\n\n\nA workflow can listen for multiple events.\n\n\nJob\nA job is a set of steps that execute on the same runner. A workflow can have one job or multiple jobs. Jobs can run:\n\nIn parallel (the default) — useful when jobs are independent of each other.\nSequentially — useful when one job depends on the output of another (e.g., deploy only after tests pass).\n\n\n\nStep\nA step is an individual task within a job. Steps can be:\n\nShell commands (e.g., npm install, python script.py).\nActions — reusable units of code (more on these below).\n\nSteps within a job share the same filesystem (so a file created in one step is available in the next).\n\n\nAction\nAn action is a reusable, packaged piece of code that performs a specific task. Actions are the building blocks of workflows. Instead of writing everything from scratch, you can use pre-built actions from the GitHub Marketplace or write your own.\nFor example, instead of writing a script to check out your repository, you use the official actions/checkout action. Instead of manually installing a programming language, you use actions/setup-python or r-lib/actions/setup-r.\nThink of actions as function calls for your workflow — they save you from reinventing the wheel.\n\n\nRunner\nA runner is a server that executes your workflows. There are two types:\n\nGitHub-hosted runners: Virtual machines provided by GitHub with common tools pre-installed (Ubuntu Linux, Windows, macOS). For public repositories, these are free up to a usage limit.\nSelf-hosted runners: Servers you manage yourself. We don’t currently use these at the OSC.\n\nWhen a workflow is triggered, GitHub spins up a fresh runner, runs your jobs, and then discards the runner. This means each run starts from a clean slate — no files or state carry over between runs.\n\nTip: This clean-slate design is important. If your workflow needs certain software installed, it must install it every time (or use a pre-built action that does it for you).",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "objectID": "github/actions.html#anatomy-of-a-workflow-file",
+    "href": "github/actions.html#anatomy-of-a-workflow-file",
+    "title": "GitHub Actions",
+    "section": "Anatomy of a workflow file",
+    "text": "Anatomy of a workflow file\nWorkflow files are written in YAML and stored in .github/workflows/ at the root of your repository. Let’s look at a minimal example:\n# .github/workflows/example.yml\nname: Example Workflow\n\non:\n  push:\n    branches: [main]\n  pull_request:\n    branches: [main]\n\njobs:\n  greet:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Say hello\n        run: echo \"Hello, world!\"\nLet’s break this down line by line:\n\n\n\n\n\n\n\nLine(s)\nWhat it does\n\n\n\n\nname: Example Workflow\nA human-readable name for the workflow. Appears in the GitHub UI.\n\n\non:\nDefines the triggering events. Here, the workflow runs on pushes and pull requests to main.\n\n\njobs:\nThe start of the jobs section.\n\n\ngreet:\nThe identifier for one job. You can name jobs whatever you like.\n\n\nruns-on: ubuntu-latest\nSpecifies the runner type. ubuntu-latest is GitHub’s standard Linux runner.\n\n\nsteps:\nThe list of steps this job will execute, in order.\n\n\n- name: ...\nA human-readable label for the step (optional but recommended).\n\n\nuses: actions/checkout@v4\nUses the official checkout action to clone your repository onto the runner.\n\n\nrun: echo \"Hello, world!\"\nRuns a shell command directly.\n\n\n\n\nYAML basics for workflow files\nIf you’re new to YAML, here’s what you need to know to read workflow files:\n\nIndentation matters: YAML uses spaces (not tabs) to indicate nesting. Two spaces per level is the convention.\nkey: value pairs define mappings.\nLists start with - (a hyphen followed by a space).\nComments start with #.\nStrings usually don’t need quotes, but it’s safe to use them.\n\n\n\nA more realistic example\nHere’s a workflow that installs R packages with renv and runs a script:\nname: R Check\n\non:\n  push:\n    branches: [main]\n  pull_request:\n    branches: [main]\n\njobs:\n  r-check:\n    runs-on: ubuntu-latest\n    steps:\n      - name: Check out repository\n        uses: actions/checkout@v4\n\n      - name: Set up R\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Restore renv packages\n        uses: r-lib/actions/setup-renv@v2\n\n      - name: Run R script\n        run: Rscript -e 'rmarkdown::render_site()'\nNotice how the uses keyword pulls in pre-built actions. The r-lib/actions/setup-r@v2 action installs R on the runner, and r-lib/actions/setup-renv@v2 restores the packages from your renv.lock file. You didn’t have to write any of that installation logic — the actions handle it.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "objectID": "github/actions.html#where-workflows-live",
+    "href": "github/actions.html#where-workflows-live",
+    "title": "GitHub Actions",
+    "section": "Where workflows live",
+    "text": "Where workflows live\nWorkflow files must be placed in a specific directory at the root of your repository:\nyour-repository/\n└── .github/\n    └── workflows/\n        ├── deploy-website.yml\n        ├── spellcheck.yml\n        └── url-check.yml\nThe directory name is case-sensitive: .github/workflows/ (note the dot at the start). Each .yml file in this directory defines a separate workflow. GitHub automatically discovers and activates them.\n\nAdding a workflow\nTo add a new workflow:\n\nCreate the directory .github/workflows/ if it doesn’t exist.\nCreate a new .yml file inside it (e.g., deploy-website.yml).\nWrite your workflow definition (or copy an existing one and adapt it).\nCommit and push the file to your repository.\nGitHub will automatically pick up the new workflow the next time its trigger event occurs.\n\n\n\nEditing a workflow\nSimply edit the .yml file in the .github/workflows/ directory, commit, and push. The next workflow run will use the updated version.\n\n\nRemoving a workflow\nDelete the .yml file from .github/workflows/, commit, and push. GitHub will stop triggering that workflow.\n\nTip: If you want to temporarily disable a workflow without deleting the file, you can set it to trigger on workflow_dispatch only (manual trigger), or add a if: false condition at the top of the workflow.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "objectID": "github/actions.html#viewing-and-troubleshooting-workflow-runs",
+    "href": "github/actions.html#viewing-and-troubleshooting-workflow-runs",
+    "title": "GitHub Actions",
+    "section": "Viewing and troubleshooting workflow runs",
+    "text": "Viewing and troubleshooting workflow runs\n\nFinding workflow runs\nEvery workflow run appears in your repository under the “Actions” tab (the tab with a play/stopwatch icon). From there you can:\n\nSee a list of all recent workflow runs, sorted by most recent.\nFilter by workflow name, branch, status (success, failure, cancelled), or event (push, PR, etc.).\nClick on any run to see its details.\n\n\n\nReading run results\nWhen you click into a specific workflow run, you’ll see:\n\nThe commit that triggered the run — useful for correlating code changes with workflow results.\nThe list of jobs — click on a job to expand its steps.\nEach step’s log output — click on a step to see its full console output. This is where you look when something goes wrong.\n\nGitHub also surfaces workflow results directly on pull requests: a green checkmark ✅ means all checks passed, a red ✖ means something failed, and a yellow circle means checks are still running.\n\n\nTroubleshooting common issues\nWhen a workflow fails, here’s how to diagnose it:\n\nGo to the Actions tab and find the failing run.\nClick on the run, then click on the failed job.\nLook for the step that has a red ✖ — that’s where the error occurred.\nExpand that step to read its log output. The error message is usually at the bottom.\n\nCommon failure patterns:\n\n\n\n\n\n\n\nSymptom\nLikely cause\n\n\n\n\nCommand not found\nA required tool isn’t installed — add a setup step (e.g., actions/setup-python).\n\n\nPermission denied\nThe workflow doesn’t have the right permissions. Check the workflow’s permissions setting.\n\n\nCannot find file\nThe actions/checkout step is missing or placed too late — add it early in the job.\n\n\nrenv package restore failed\nThe renv.lock file is out of sync with renv/ directory — run renv::snapshot() locally and commit the updated files.\n\n\nWorkflow didn’t run\nThe file might not be in .github/workflows/, or the trigger event doesn’t match.\n\n\n\n\nTip: You can also re-run a workflow from the Actions tab. This is useful if a failure was due to a transient issue (e.g., a network timeout). GitHub even offers a “Re-run failed jobs” option, which only re-runs the jobs that failed, saving time.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "objectID": "github/actions.html#events-and-triggers-in-more-detail",
+    "href": "github/actions.html#events-and-triggers-in-more-detail",
+    "title": "GitHub Actions",
+    "section": "Events and triggers in more detail",
+    "text": "Events and triggers in more detail\nWe touched on events earlier. Here’s a deeper look at the ones we use most frequently at the OSC.\n\npush\nTriggers the workflow whenever commits are pushed to a branch. You can narrow it to specific branches:\non:\n  push:\n    branches: [main]\nYou can also exclude branches:\non:\n  push:\n    branches-ignore:\n      - 'wip/**'\n\n\npull_request\nTriggers when a pull request is opened, synchronized (new commits are pushed), or reopened.\non:\n  pull_request:\n    branches: [main]\nA useful distinction: push runs on your branch as you work; pull_request runs on the merge result (i.e., the combination of your branch and the target branch). This means a PR check can catch merge conflicts before they land on main.\n\n\nworkflow_dispatch\nAllows you to trigger the workflow manually from the GitHub UI. This is great for workflows you only want to run on demand.\non:\n  workflow_dispatch:\nOnce this is configured, a “Run workflow” button appears on the Actions tab. You can even add inputs — parameters you can set when triggering the workflow:\non:\n  workflow_dispatch:\n    inputs:\n      environment:\n        description: 'Deployment target'\n        required: true\n        default: 'staging'\n        type: choice\n        options:\n          - staging\n          - production\n\n\nschedule\nTriggers the workflow at a scheduled time using cron syntax. This is useful for periodic checks (e.g., running a spellchecker every Monday morning).\non:\n  schedule:\n    - cron: '0 6 * * 1'   # Every Monday at 6:00 AM UTC\nCron syntax can look cryptic at first. Here’s a quick reference:\n ┌───────── minute (0-59)\n │ ┌───────── hour (0-23)\n │ │ ┌───────── day of month (1-31)\n │ │ │ ┌───────── month (1-12)\n │ │ │ │ ┌───────── day of week (0-6, Sunday=0)\n │ │ │ │ │\n * * * * *\nSome common examples:\n\n\n\nCron expression\nMeaning\n\n\n\n\n0 6 * * 1\nEvery Monday at 6:00 AM UTC\n\n\n0 0 * * *\nDaily at midnight UTC\n\n\n0 */6 * * *\nEvery 6 hours\n\n\n30 8 * * 1-5\nWeekdays at 8:30 AM UTC\n\n\n\n\nTip: You can use a site like crontab.guru to build and check cron expressions interactively.\n\n\n\nCombining events\nYou can list multiple events, and the workflow will trigger when any of them occur:\non:\n  push:\n    branches: [main]\n  pull_request:\n    branches: [main]\n  workflow_dispatch:\n  schedule:\n    - cron: '0 6 * * 1'",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "objectID": "github/actions.html#our-primary-use-cases-at-the-osc",
+    "href": "github/actions.html#our-primary-use-cases-at-the-osc",
+    "title": "GitHub Actions",
+    "section": "Our primary use cases at the OSC",
+    "text": "Our primary use cases at the OSC\nNow let’s look at how we actually use GitHub Actions in our organization. These are the workflows you’re most likely to encounter, maintain, or create as a member of the OSC.\n\n1. Restoring R packages with renv\nMany of our projects use R, and we manage package dependencies with renv. When a workflow runs on a GitHub runner, it starts with a clean environment — no R packages installed. So the first thing we need to do is restore the project’s R packages.\nWe use the r-lib/actions/setup-renv action, which:\n\nInstalls R (if not already installed via setup-r).\nReads the renv.lock file to determine which packages are needed.\nInstalls them from the R package repository (CRAN).\nCaches the installed packages so that subsequent runs are faster.\n\nThe typical pattern looks like this:\n- name: Set up R\n  uses: r-lib/actions/setup-r@v2\n\n- name: Restore renv packages\n  uses: r-lib/actions/setup-renv@v2\nThis is usually one of the first steps in any R-related workflow. Without it, subsequent steps that try to use R packages would fail.\n\nNote: Keep your renv.lock file in sync with your project’s dependencies. If you add a new package with renv::install(), run renv::snapshot() to update the lockfile, and commit the changes. Otherwise, the workflow will try to restore an outdated package set.\n\n\n\n2. Quarto website deployment\nSeveral of our projects are Quarto websites (including this manual). When changes are pushed to main, we want the website to be rebuilt and deployed automatically.\nOur deployment workflow typically:\n\nChecks out the repository.\nInstalls Quarto (using an action or the system package manager).\nInstalls R (if the project uses R-based features like engines).\nRestores renv packages (if the project depends on R packages).\nRuns quarto render to build the site.\nDeploys the output (often to GitHub Pages).\n\nA simplified version:\nname: Deploy Quarto Website\n\non:\n  push:\n    branches: [main]\n  workflow_dispatch:\n\njobs:\n  deploy:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n\n      - name: Set up Quarto\n        uses: quarto-dev/quarto-actions/setup@v2\n\n      - name: Set up R\n        uses: r-lib/actions/setup-r@v2\n\n      - name: Restore renv packages\n        uses: r-lib/actions/setup-renv@v2\n\n      - name: Render and Publish\n        uses: quarto-dev/quarto-actions/publish@v2\n        with:\n          target: gh-pages\nThe ${{ secrets.GITHUB_TOKEN }} is a special token that GitHub automatically provides to every workflow run. It allows the workflow to push to your repository without you having to create and manage a personal access token.\n\n\n3. Spellcheckers (American English and German)\nOur website content is written in both American English and German. To catch typos before they go live, we run spellchecking workflows—either on pull requests or on a schedule. This is only in use in our main website at current so please refer to the documentation in that repo for specific details.\n\n\n4. URL checkers for dead links\nBroken links undermine the credibility of our websites. We run a link checker workflow to scan for dead links and report them.\nThis runs on a schedule (e.g., weekly) and uses an action like lycheeverse/lychee-action to check all URLs in our Markdown and HTML files. This likewise is currently only in use in our main website, so please refer to the documentation in that repo for specific details.\n\n\n5. Code formatting with the R styler package\nConsistent code style makes our R code easier to read and maintain. The styler workflow automatically formats R code according to a standard style guide.\nWe use the styler workflow from the r-lib/actions repository.\nOne difference to note is that the documentation provided above uses:\n      - name: Style\n        run: styler::style_pkg()\n        shell: Rscript {0}\nHowever, we are not styling R packages but rather just a directory of files that may or may not be in a package structure. Therefore, we use:\n      - name: Style\n        run: styler::style_dir()\n        shell: Rscript {0}",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "objectID": "github/actions.html#best-practices-for-github-actions",
+    "href": "github/actions.html#best-practices-for-github-actions",
+    "title": "GitHub Actions",
+    "section": "Best practices for GitHub Actions",
+    "text": "Best practices for GitHub Actions\nHere are some guidelines to keep your workflows reliable and maintainable.\n\nUse specific action versions\nAlways pin actions to a specific version tag (e.g., @v4, @v2) rather than using @main or @master. This prevents unexpected changes from breaking your workflows when action maintainers update their code.\n# Good --- version is explicit\nuses: actions/checkout@v4\n\n# Risky --- could break when the action is updated\nuses: actions/checkout@main\n\n\nKeep workflows focused\nEach workflow should do one thing well. If you have a spellchecker and a deployment workflow, keep them in separate files. This makes it easier to:\n\nSee at a glance what automation exists.\nRe-run a single workflow without triggering others.\nUnderstand failures (a spellcheck failure shouldn’t block deployment).\n\n\n\nName your steps\nAdding name to each step makes the workflow log much easier to read, especially when a step fails:\n# Good\n- name: Install dependencies\n  run: npm install\n\n# Less helpful\n- run: npm install\n\n\nUse caching when possible\nSome GitHub Actions support caching, which speeds up subsequent runs. The setup-renv action caches R packages automatically. For other languages, look for setup-* actions that support caching (e.g., actions/setup-node with cache: 'npm').\n\n\nDon’t store secrets in the workflow file\nNever hard-code passwords, tokens, or API keys in your workflow YAML. Use GitHub Secrets instead (found under Settings → Secrets and variables → Actions in your repository). Reference them with ${{ secrets.SECRET_NAME }}.\n# Good\n- name: Deploy\n  run: deploy-script.sh\n  env:\n    API_TOKEN: ${{ secrets.DEPLOY_TOKEN }}\n\n# Bad --- don't do this\n- name: Deploy\n  run: deploy-script.sh\n  env:\n    API_TOKEN: \"my-super-secret-token\"\n\n\nTest workflow changes on a branch\nIf you’re modifying a workflow file or adding a new one, do it on a branch and open a pull request. This way, you can see the workflow run against your changes before they land on main. The workflow file itself is part of the repository, so it will be triggered by the PR that introduces it.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "objectID": "github/actions.html#security-considerations",
+    "href": "github/actions.html#security-considerations",
+    "title": "GitHub Actions",
+    "section": "Security considerations",
+    "text": "Security considerations\nWhile GitHub Actions is powerful, it’s important to use it safely:\n\nReview actions from the Marketplace: Anyone can publish an action on the GitHub Marketplace. For critical workflows, prefer actions from well-known publishers (like actions/, r-lib/, quarto-dev/).\nLimit permissions: You can set the default GITHUB_TOKEN permissions to be as restrictive as possible. In your workflow, use the permissions key to grant only what’s needed.\nBe careful with pull_request_target: This event runs workflows in the context of the target repository (not the PR), giving them access to secrets. We do not currently have any use cases for this event, and we recommend against using it unless you have a specific need and understand the security implications. We only mention it here because some users might encounter workflow templates using this event.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "objectID": "github/actions.html#self-check",
+    "href": "github/actions.html#self-check",
+    "title": "GitHub Actions",
+    "section": "Self-check",
+    "text": "Self-check\nAfter reading this page, you should be able to answer “yes” to each of these:\n\nCan I explain what GitHub Actions are and why we use them?\nDo I understand the difference between a workflow, a job, a step, and an action?\nCan I identify where workflow files are stored (.github/workflows/)?\nDo I know how to find and read a workflow run’s results on the Actions tab?\nCan I name at least three events that can trigger a workflow?\nDo I know what a runner is and why each run starts from a clean environment?\nCan I list the main ways we use GitHub Actions at the OSC (deployment, spellcheck, link checking, R package restoration, code formatting)?\nDo I know how to troubleshoot a failed workflow run?\nDo I understand why we pin action versions and avoid hard-coding secrets?\n\nIf you checked all the boxes, you’re ready to work with—and create—GitHub Actions workflows in our organization!",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "GitHub Actions"
+    ]
+  },
+  {
+    "objectID": "github/index.html",
+    "href": "github/index.html",
+    "title": "GitHub, the OSC Organization, and Repositories",
+    "section": "",
+    "text": "This chapter provides an overview of GitHub, the OSC’s GitHub organization, and how we use repositories to manage our code and content. It is essential reading for anyone contributing to our projects, as GitHub is central to how we collaborate and manage our work.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/index.html#pages-in-this-section",
+    "href": "github/index.html#pages-in-this-section",
+    "title": "GitHub, the OSC Organization, and Repositories",
+    "section": "Pages in this section",
+    "text": "Pages in this section\n\n\n\nPage\nDescription\n\n\n\n\nGit and GitHub Review\nA refresher on Git and GitHub basics, including the concepts and commands you should be comfortable with before contributing to our projects.\n\n\nThe LMU OSC GitHub Organization\nAn overview of our GitHub organization, including how permissions work, how teams are structured, and how to navigate our repositories.\n\n\nOur Repositories\nA structured overview of the repositories we maintain, categorised by type — from organization configuration and websites to tutorials, tools, and backups.\n\n\nBest Working Practices\nGuidelines for creating repositories, contributing changes, and collaborating effectively within our organization.\n\n\nGitHub Actions\nAn introduction to GitHub Actions — what they are, how they work, and how we use them at the OSC for automation.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization.html",
+    "href": "github/lmu-osc-organization.html",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "",
+    "text": "A GitHub Organization is a shared workspace where multiple people can collaborate on repositories under a single umbrella. Unlike a personal account, an organization allows you to group repositories, manage permissions with teams, and centralise billing and settings. Our organization lives at github.com/lmu-osc and is where we host all of our code, content, and documentation.\nThis page covers what you need to know about navigating our organization, how permissions work, and how to manage members and teams.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization.html#overview",
+    "href": "github/lmu-osc-organization.html#overview",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "",
+    "text": "A GitHub Organization is a shared workspace where multiple people can collaborate on repositories under a single umbrella. Unlike a personal account, an organization allows you to group repositories, manage permissions with teams, and centralise billing and settings. Our organization lives at github.com/lmu-osc and is where we host all of our code, content, and documentation.\nThis page covers what you need to know about navigating our organization, how permissions work, and how to manage members and teams.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization.html#what-is-a-github-organization",
+    "href": "github/lmu-osc-organization.html#what-is-a-github-organization",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "What is a GitHub Organization?",
+    "text": "What is a GitHub Organization?\nIf you’re new to GitHub Organizations, think of it as a shared account that multiple people can belong to. With a personal account, you own your repositories personally — if you leave a project or change roles, those repos can be tricky to transfer. With an organization, the repos belong to the group, not to any one person. This means:\n\nContinuity — Repositories aren’t lost when someone leaves the group. The organization remains the owner.\nScalable permissions — Instead of adding people to repos one by one, you can create teams with predefined permissions and simply add or remove people from those teams.\nDiscoverability — The organization provides a single place (github.com/lmu-osc) where anyone can find all our projects.\n\n\nA quick comparison\n\n\n\n\n\n\n\n\n\nPersonal account\nOrganization\n\n\n\n\nOwnership\nBelongs to one person\nBelongs to the group\n\n\nRepositories\nUnder your name\nUnder the org name\n\n\nPermissions\nSimple (collaborator or not)\nGranular (teams, roles, base permissions)\n\n\nBest for\nIndividual projects, personal work\nCollaborative projects, teams\n\n\n\n\n\nWhat you’ll see at github.com/lmu-osc\nWhen you visit github.com/lmu-osc, you’ll see:\n\nPinned repositories — A few key repos highlighted at the top (like this manual). These are our most important or most active projects.\nOrganization README — A short description of who we are, pulled from the .github repository.\nTabs — Repositories, Packages, and People are the main ones you’ll use. The Repositories tab lists everything we have (public ones are visible to everyone; private ones only if you have access).",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization.html#repositories",
+    "href": "github/lmu-osc-organization.html#repositories",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "Repositories",
+    "text": "Repositories\nOur organization contains a mix of public and private repositories.\n\nPublic repositories are visible to anyone on the internet. All of our content repositories (like this manual, our tutorials, and public-facing websites) are public. This aligns with our commitment to open science — anyone can view, clone, and learn from our work.\nPrivate repositories are only visible to members of the organization who have been granted access. We use private repositories mainly for internal tools, drafts of projects not yet ready for public release, or configurations that contain sensitive information.\n\n\nTip: If you see a repository name in a discussion or issue but can’t find it, it might be private and you may not have been granted access yet. Ask a team member to add you if you need it.\n\n\nFinding repositories\nYou can browse all repositories by clicking the “Repositories” tab on the organization’s GitHub page. From there you can:\n\nScroll through the list of all public repositories.\nUse the search bar at the top of the page to filter by repository name, description, or topic tags.\nSort by last updated, name, or number of stars.\n\nYou can also star repositories you work on frequently — they’ll be saved under your personal “Starred” tab for quick access later. This is especially useful if you regularly contribute to several different repos.\nIf you’re looking for something specific and can’t find it, ask a team member — it may be in a private repository that you don’t yet have access to, or it may be stored elsewhere.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization.html#organization-features",
+    "href": "github/lmu-osc-organization.html#organization-features",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "Organization features",
+    "text": "Organization features\nGitHub provides several features at the organization level. Here’s how we use (and don’t use) them at the OSC.\n\nTeams\nTeams are the primary way we manage permissions. Instead of adding people to individual repositories one by one, you can create a team, give that team a set of permissions across all repos (or specific ones), and then add or remove members from the team. This makes it easy to see who has access to what and to onboard or offboard people quickly.\n\nHow team permissions work\nWhen you add someone to a team, they automatically get the team’s permission level on all repositories the team has been granted access to. GitHub offers several permission levels, but the main ones you’ll encounter are:\n\n\n\n\n\n\n\nLevel\nCan…\n\n\n\n\nRead\nView and clone repositories, open issues, leave comments\n\n\nWrite\nAll of the above, plus push changes, manage issues and pull requests\n\n\nAdmin\nAll of the above, plus manage repository settings, add collaborators, configure CI/CD\n\n\nOwner\nFull control over the entire organization (billing, settings, all repos)\n\n\n\n\n\nOur current teams\n\n\n\n\n\n\n\n\nTeam Name\nWho’s in it\nWhat they can do\n\n\n\n\nosc-admin-members\nFull-time staff\nAdmin access to all repos, including managing CI/CD workflows and repository settings\n\n\nosc-research-assistants\nStudent research assistants (HiWis)\nAdmin access to all repos\n\n\n\nBoth teams currently have Admin-level access to all repositories. If you’re on either team, you can push to any branch, merge pull requests, and change repository settings.\n\n\nCreating a new team\nIf you need a new team for a specific project or group of people, feel free to create one. Before doing so, check the organization role management settings to understand what permission levels are available and appropriate. As a rule of thumb:\n\nStart with Read or Write unless there’s a clear need for Admin.\nIt’s easier to escalate permissions later than to roll them back after an accident.\nConsider the principle of least privilege: give people the minimum access they need to do their work.\n\nWe want to avoid giving out Admin permissions unnecessarily, but we also don’t want to micromanage permissions to the point where it becomes a burden. Use your judgement, and when in doubt, ask another team member.\n\n\nPractical example: onboarding a new HiWi\nWhen a new student research assistant joins, here’s roughly what happens:\n\nThey’re invited to join the organization (see “Adding new members” below).\nThey’re added to the osc-research-assistants team.\nThey automatically get Admin access to all repositories.\nWhen they leave, they’re removed from the team (and optionally the organization), and their access is revoked everywhere at once.\n\n\n\n\nAdding people to individual repositories\nSometimes you need to give someone access to just one repository without making them a full member of the organization. This is common when we contract with someone for a specific piece of work — for example, a freelance designer working on a website template.\nHow to do it:\n\nGo to the repository on GitHub.\nClick Settings (in the right sidebar).\nClick Collaborators and teams in the left menu.\nUnder “Manage access”, click Add people.\nSearch by username, full name, or email, choose their permission level (Read, Write, or Admin), and send the invite.\n\nWhen to use this approach:\n\n✅ The person only needs access to one repo.\n✅ It’s a short-term or one-off collaboration.\n❌ Avoid if you find yourself doing this repeatedly for the same person — in that case, create a team instead.\n\n\nWhy teams are usually better: If you give five people access to three different repos each via individual invitations, you now have fifteen separate permissions to track and manually revoke. With teams, you add each person to one team and give that team access to the relevant repos — much cleaner.\n\n\n\nDiscussions\nGitHub Discussions is a feature for having forum-style conversations that aren’t tied to a specific issue or pull request. It’s useful for Q&A, brainstorming, announcements, or general community engagement.\nWe haven’t actively adopted Discussions yet at the OSC, but they remain available if we ever need them. For now, we rely on Issues for tracking tasks and bugs, and pull requests for proposing and reviewing changes. If you think a topic would benefit from a discussion thread (e.g., a design proposal that doesn’t have a clear actionable issue yet), feel free to start one.\n\n\nProjects\nGitHub Projects provides a Kanban-style board for organizing and tracking work across issues and pull requests. We experimented with it for a period but found it didn’t fit our workflow well, so we don’t use it formally at the organization level.\nThat said, you’re welcome to create your own project board if you find it useful for tracking your work. For example, you could:\n\nCreate a personal board to keep track of issues you’re responsible for across multiple repositories.\nSet up a board for a specific event or project with a fixed timeline.\nUse it as a lightweight to-do list for a short-term initiative.\n\nTo create one, go to the organization’s Projects tab and click “New project”. Just keep in mind that this is for your personal productivity — there’s no expectation that others will use or maintain it.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization.html#membership-and-permissions",
+    "href": "github/lmu-osc-organization.html#membership-and-permissions",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "Membership and permissions",
+    "text": "Membership and permissions\nUnderstanding how membership works is important for both new and existing members. Here’s a quick overview of the different roles and how they relate to each other:\nOrganization Owners (full staff)\n  └─ can manage everything, including adding new owners\n      └─ Teams (e.g., osc-admin-members, osc-research-assistants)\n            └─ inherit team-level permissions on repositories\n                └─ Base members (Read permission by default)\n                      └─ can view and clone, but need explicit grants to push\n\nAdding new members\nThe most common management task is adding new people to the organization. Here’s how to do it step by step:\n\nGo to the organization’s People tab (visible only to members with sufficient permissions).\nClick the green Invite Member button.\nSearch by GitHub username, full name, or email address.\n\nUsername is the quickest way if you know it.\nEmail works too, but make sure it matches the email they use on GitHub.\n\nChoose whether to add them to a team right away (recommended) or just add them to the organization directly.\n\nAdding to a team means they’ll automatically get that team’s permissions.\nAdding them directly means they’ll only have base permissions (Read).\n\nThe invite will expire after a few days if not accepted. You can resend it if needed.\n\n\nWhat if I can’t invite someone? You need to have Owner permissions or be a team maintainer with the right privileges to invite new members. If you don’t see the option, ask an owner to do it.\n\n\n\nMember visibility\nBy default, new members are listed as Private — their membership is not visible to the public. This means no one outside the organization can see they’re a member.\nWe ask members to make themselves Public so that: - Other team members can easily find them. - External collaborators and the community can see who is part of the OSC. - It’s easier for people to know who to contact about specific projects.\nMaking your membership public is entirely optional. If you’d like to do it:\n\nGo to your organization membership page.\nFind the lmu-osc entry and change the visibility from Private to Public.\n\nGitHub also provides official documentation on this setting.\n\n\nBase permissions\nBase permissions are the default access level for all members of the organization. Ours are set to Read, which means every member can:\n\n✅ View and clone repositories.\n✅ Open issues and leave comments.\n❌ Cannot push changes to repositories.\n❌ Cannot manage issues or pull requests on repositories they haven’t been explicitly granted access to.\n\nThis is a sensible default: it lets people access the content they need without giving them unnecessary control over repositories they’re not actively working on.\n\n\nGranting additional permissions\nIf someone needs more than Read access — for example, a collaborator working on a specific project — you have two options:\n\nAdd them to an existing team with the appropriate permission level. This is the preferred approach for recurring contributors because it’s easy to manage and audit.\nGive them direct access to a specific repository via the repository’s “Collaborators” settings. This is fine for one-off contributions but can become hard to track over time.\n\nFor members who contribute to multiple repositories, consider creating a new team with the appropriate permissions (Read + Write or Admin, plus CI/CD if needed) rather than granting repo-by-repo access. This way, adding or removing their access is a single operation.\nYou can review and adjust base permissions at any time in the organization’s member privileges settings.\n\n\nOrganization owners\nAbove regular members and teams are organization owners. Owners have full control over the organization, including:\n\nManaging members and teams.\nChanging organization-wide settings (e.g., base permissions, 2FA requirements).\nAccessing and managing all repositories, including private ones.\nDeleting the organization (use with caution!).\n\nWho gets owner access: We generally grant owner permissions only to full-time staff members, not to student research assistants or other collaborators. We may further restrict this in the future for security purposes.\n\nWhy this matters: If you ever need something done that requires owner-level access (creating a new team, changing org-wide settings, adding a new owner), ask one of the full-time staff members. Normal team admins cannot do these things.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization.html#security-two-factor-authentication-2fa",
+    "href": "github/lmu-osc-organization.html#security-two-factor-authentication-2fa",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "Security: two-factor authentication (2FA)",
+    "text": "Security: two-factor authentication (2FA)\nWe are in the process of requiring two-factor authentication (2FA) for all members of the organization. This is an important security practice: even if someone’s password is compromised, a second factor (like a code from your phone) prevents unauthorized access to our repositories and code.\n\nWhat you need to do\n\nIf you already have 2FA enabled on your GitHub account, you’re all set. You should be able to access the organization without any issues.\nIf you don’t have 2FA enabled, you’ll need to set it up before you can access the organization. GitHub provides a step-by-step guide on configuring 2FA.\n\n\n\nWhich 2FA method to choose\nGitHub offers several options. Here’s what we recommend:\n\n\n\nMethod\nRecommendation\nHow it works\n\n\n\n\nTOTP app (e.g. Duo, Google Authenticator, Authy, 1Password, Microsoft Authenticator)\n✅ Recommended\nYou scan a QR code with your phone or password manager, and it generates a 6-digit code that changes every 30 seconds.\n\n\nGitHub Mobile app\n✅ Recommended\nYou can use the GitHub Mobile app as a second factor. It sends a push notification to your phone for approval.\n\n\nPasskeys (biometric or device-based)\n✅ Good option\nUses your device’s fingerprint, face recognition, or PIN. Works well if your device supports it.\n\n\nSMS text message\n❌ Not recommended\nCodes sent via SMS can be intercepted. GitHub itself advises against it.\n\n\nSecurity keys (hardware, e.g., YubiKey)\n✅ Good for extra security\nPhysical key that you plug in or tap. More expensive but very secure.\n\n\n\n\n\nSetting up a TOTP app\nIf you’re new to 2FA, a TOTP app is the easiest place to start:\n\nInstall an authenticator app on your phone (Google Authenticator, Authy, or 1Password all work well).\nGo to your GitHub security settings.\nClick “Enable two-factor authentication” and follow the prompts to scan the QR code with your app.\nSave your recovery codes somewhere safe (you’ll need them if you lose access to your phone).\n\n\nTip: When you set up 2FA, GitHub gives you a set of recovery codes. Save these somewhere secure (e.g., in your password manager). If you ever lose your phone, these codes are the only way to get back into your account.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization.html#quick-reference",
+    "href": "github/lmu-osc-organization.html#quick-reference",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "Quick reference",
+    "text": "Quick reference\n\nKey links\n\n\n\nResource\nLink\n\n\n\n\nOSC GitHub Organization\ngithub.com/lmu-osc\n\n\nOrganization role management\nSettings → Org Roles\n\n\nMember privileges settings\nSettings → Member Privileges\n\n\nYour organization memberships\ngithub.com/settings/organizations\n\n\n2FA setup guide\nGitHub Docs\n\n\nPublicising organization membership\nGitHub Docs\n\n\n\n\n\nWho to ask for help\nIf you run into any of the following, here’s who to contact:\n\n\n\nSituation\nWho to ask\n\n\n\n\nI need to be added to the organization\nAny full-time staff member (an organization owner)\n\n\nI can’t access a specific repository\nAsk the team that maintains it, or a staff member\n\n\nI need a new team created\nAn organization owner\n\n\nI’m having trouble with 2FA\nCheck the GitHub docs or ask a staff member\n\n\nI’m not sure where a project lives\nCheck the organization’s Repositories tab, or ask in the relevant Slack/Matrix channel",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
   },
   {
     "objectID": "misc-topics/our-licensing-choices.html",

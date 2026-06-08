@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GitHub, the OSC Organization, and Repositories – OSC Manual</title>
+<title>Best Working Practices for GitHub – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../github/review.html" rel="next">
-<link href="../staff-onboarding/administration.html" rel="prev">
+<link href="../github/actions.html" rel="next">
+<link href="../github/our-repositories.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li><li class="breadcrumb-item"><a href="../github/working-practices.html">Working Practices</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -216,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../github/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../github/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub Organization</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -243,7 +243,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github/working-practices.html" class="sidebar-item-text sidebar-link">
+  <a href="../github/working-practices.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Working Practices</span></a>
   </div>
 </li>
@@ -558,17 +558,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pages-in-this-section" id="toc-pages-in-this-section" class="nav-link active" data-scroll-target="#pages-in-this-section">Pages in this section</a></li>
+  <li><a href="#creating-and-setting-up-repositories" id="toc-creating-and-setting-up-repositories" class="nav-link active" data-scroll-target="#creating-and-setting-up-repositories">Creating and setting up repositories</a></li>
+  <li><a href="#making-changes-to-a-repository" id="toc-making-changes-to-a-repository" class="nav-link" data-scroll-target="#making-changes-to-a-repository">Making changes to a repository</a></li>
+  <li><a href="#solo-projects" id="toc-solo-projects" class="nav-link" data-scroll-target="#solo-projects">Solo projects</a></li>
+  <li><a href="#keeping-repositories-healthy" id="toc-keeping-repositories-healthy" class="nav-link" data-scroll-target="#keeping-repositories-healthy">Keeping repositories healthy</a></li>
+  <li><a href="#working-with-forks" id="toc-working-with-forks" class="nav-link" data-scroll-target="#working-with-forks">Working with forks</a></li>
+  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick reference</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/working-practices.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li><li class="breadcrumb-item"><a href="../github/working-practices.html">Working Practices</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">GitHub, the OSC Organization, and Repositories</h1>
-<p class="subtitle lead">How we use GitHub for collaboration and hosting our code and content</p>
+<h1 class="title">Best Working Practices for GitHub</h1>
+<p class="subtitle lead">Guidelines and conventions for using GitHub effectively in our organization</p>
 </div>
 
 
@@ -585,36 +590,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This chapter provides an overview of GitHub, the OSC’s GitHub organization, and how we use repositories to manage our code and content. It is essential reading for anyone contributing to our projects, as GitHub is central to how we collaborate and manage our work.</p>
-<section id="pages-in-this-section" class="level2">
-<h2 class="anchored" data-anchor-id="pages-in-this-section">Pages in this section</h2>
+<p>This page documents the conventions and best practices we follow when working with GitHub at the OSC. Following these guidelines ensures consistency across our repositories, makes collaboration smoother, and helps maintain a clean project history.</p>
+<hr>
+<section id="creating-and-setting-up-repositories" class="level2">
+<h2 class="anchored" data-anchor-id="creating-and-setting-up-repositories">Creating and setting up repositories</h2>
+<p>When setting up a new repository under the <a href="https://github.com/lmu-osc">lmu-osc</a> organization, use <strong>kebab-case</strong> for the name — lowercase letters, numbers, and hyphens only. For example, <code>lmu-osc.github.io</code> rather than <code>lmu_osc.github.io</code>, and <code>tutorial-template</code> rather than <code>tutorial_template</code>. This ensures consistency and avoids issues with case-sensitive filesystems and URL parsing.</p>
+<p>Every repository must include a <code>README.md</code> with a clear description of its purpose, contents, and how to use it — start with a one-paragraph summary, include a table of contents for longer READMEs, document setup and usage, add a “Contributing” section, and list any dependencies. Every repository also needs a <code>LICENSE</code> file. For content (text, images, documentation) we use <strong>CC BY-SA 4.0</strong>; for code snippets within tutorials we use <strong>CC0 1.0</strong>. Standalone software projects should consider licenses like Apache 2.0 or AGPLv3. See the <a href="../misc-topics/our-licensing-choices.html">licensing page</a> for a full explanation of our choices.</p>
+<p>As for visibility, all content repositories (tutorials, documentation, the main website) should be <strong>public</strong>, aligning with our commitment to open science. Private repositories are reserved for internal tools, drafts not yet ready for public release, or configurations containing sensitive information.</p>
+<p><strong>Tutorials</strong> should always be created from the <a href="https://github.com/lmu-osc/tutorial-template">tutorial-template</a> repository, which provides a consistent directory structure, Quarto configuration, and styling. For other types of repositories, check if a suitable template already exists in the organization before starting from scratch. Finally, when creating a repository, always provide a short description and relevant topic tags (e.g., <code>tutorial</code>, <code>quarto</code>, <code>documentation</code>) to make it discoverable.</p>
+<hr>
+</section>
+<section id="making-changes-to-a-repository" class="level2">
+<h2 class="anchored" data-anchor-id="making-changes-to-a-repository">Making changes to a repository</h2>
+<p>These guidelines apply to any repository with more than one contributor. Before making significant changes, <strong>create an issue</strong> to document what you plan to do. This gives others a chance to provide feedback before you invest time in implementation, creates a record of the rationale behind changes, helps avoid duplicated effort, and can attract collaborators. For very small changes (fixing a typo, updating a single number), you can skip the issue and go straight to a pull request.</p>
+<p>The <code>main</code> branch should always be in a deployable or publishable state, so <strong>never commit directly to <code>main</code></strong>. Always create a new branch for your work — even for small changes — and open a pull request when you’re ready to merge. This allows for review and keeps the history clean. If you accidentally commit to <code>main</code>, don’t panic. The safest option is <code>git revert HEAD</code>, which creates a new commit that undoes the last one and preserves history. If the commit hasn’t been pushed yet, you can use <code>git reset --hard HEAD~1</code> to remove it. If it has been pushed, you’ll need <code>git push --force-with-lease</code>, but be careful — this rewrites history and can cause issues for others who have pulled the branch. When in doubt, ask a team member for help.</p>
+<p>Use descriptive branch names that make it clear what the branch is for. A good convention is <code>fix/description</code> for bug fixes, <code>feature/description</code> for new features, <code>docs/description</code> for documentation updates, and <code>refactor/description</code> for code restructuring — for example, <code>fix/broken-link-in-readme</code> or <code>feature/add-search-to-website</code>.</p>
+<p>A pull request should address a <strong>single concern</strong>. If you find yourself fixing multiple unrelated things, split them into separate PRs. This makes reviews faster, reduces the risk of conflicts, and keeps the project history easier to follow.</p>
+<p>Write <strong>meaningful commit messages</strong> that explain <em>why</em> a change was made, not just <em>what</em> was changed. A widely-used convention is a short summary line (50 characters or less) written in the imperative mood — “Fix bug in data processing” rather than “Fixed” or “Fixes” — followed by a blank line and a more detailed body wrapped at about 72 characters. Reference any related issues (e.g., “Closes #42”). It’s less important to follow this format strictly on development branches, but the final commit message for a PR should be clear and informative. The <a href="../github/review.html">Git and GitHub Review</a> page has additional resources on this topic.</p>
+<p>Always request at least <strong>one review</strong> before merging a PR. Even if you’re eager to get something merged, a fresh pair of eyes can catch issues you’ve missed. Reviews are about improving the code, not criticizing the author — be open to feedback and constructive in your own reviews.</p>
+<hr>
+</section>
+<section id="solo-projects" class="level2">
+<h2 class="anchored" data-anchor-id="solo-projects">Solo projects</h2>
+<p>For personal projects or repositories where you are the sole contributor, you can commit directly to <code>main</code> if you prefer. However, it’s still worth using branches and PRs for significant changes: they keep a clear history of why changes were made, allow for review by others (collaborators, your future self, or someone who takes over the project), and serve as documentation of the development process.</p>
+<hr>
+</section>
+<section id="keeping-repositories-healthy" class="level2">
+<h2 class="anchored" data-anchor-id="keeping-repositories-healthy">Keeping repositories healthy</h2>
+<p>Regularly update dependencies in your repositories. For Quarto-based projects, this means updating Quarto itself and any extensions. For software projects, keep package dependencies current and address security advisories promptly.</p>
+<p>Every repository should have a <code>.gitignore</code> file that prevents committing build artifacts, system files (like <code>.DS_Store</code>), environment-specific files (<code>.env</code>, <code>venv/</code>, <code>node_modules/</code>), and editor/IDE files (<code>.vscode/</code>, <code>.idea/</code>). Quarto projects, for example, should generally ignore the <code>_site/</code> output directory since it is generated from source files.</p>
+<p>If a repository is no longer actively maintained, consider <strong>archiving</strong> it on GitHub. This makes it clear to visitors that the project is read-only, prevents new issues and pull requests from being opened, and preserves the repository for reference. Add a note to the README explaining why it was archived and, if applicable, where development has moved.</p>
+<hr>
+</section>
+<section id="working-with-forks" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-forks">Working with forks</h2>
+<p>Most OSC work happens in shared repositories using branches (since team members have write access). However, you may occasionally need to work with forks when contributing to a project outside the OSC organization, or when an external contributor wants to contribute to our projects. When reviewing PRs from forks, be aware that external contributors may not have the same context about our conventions — provide clear, constructive guidance.</p>
+<hr>
+</section>
+<section id="quick-reference" class="level2">
+<h2 class="anchored" data-anchor-id="quick-reference">Quick reference</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Page</th>
-<th>Description</th>
+<th>Scenario</th>
+<th>Recommended workflow</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="../github/review.html">Git and GitHub Review</a></td>
-<td>A refresher on Git and GitHub basics, including the concepts and commands you should be comfortable with before contributing to our projects.</td>
+<td>Creating a new repo</td>
+<td>Use kebab-case, add README + LICENSE, use a template if applicable</td>
 </tr>
 <tr class="even">
-<td><a href="../github/lmu-osc-organization.html">The LMU OSC GitHub Organization</a></td>
-<td>An overview of our GitHub organization, including how permissions work, how teams are structured, and how to navigate our repositories.</td>
+<td>Making a small fix</td>
+<td>Create a branch, commit, open a PR</td>
 </tr>
 <tr class="odd">
-<td><a href="../github/our-repositories.html">Our Repositories</a></td>
-<td>A structured overview of the repositories we maintain, categorised by type — from organization configuration and websites to tutorials, tools, and backups.</td>
+<td>Making a significant change</td>
+<td>Create an issue first, then branch → commit → PR</td>
 </tr>
 <tr class="even">
-<td><a href="../github/working-practices.html">Best Working Practices</a></td>
-<td>Guidelines for creating repositories, contributing changes, and collaborating effectively within our organization.</td>
+<td>Solo project</td>
+<td>Can commit to <code>main</code>, but branches + PRs still recommended for major changes</td>
 </tr>
 <tr class="odd">
-<td><a href="../github/actions.html">GitHub Actions</a></td>
-<td>An introduction to GitHub Actions — what they are, how they work, and how we use them at the OSC for automation.</td>
+<td>Reviewing a PR</td>
+<td>Be constructive, focus on the code not the author</td>
+</tr>
+<tr class="even">
+<td>Repository no longer active</td>
+<td>Archive it, add a note to the README</td>
 </tr>
 </tbody>
 </table>
@@ -1025,13 +1074,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../staff-onboarding/administration.html" class="pagination-link" aria-label="Administration">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Administration</span>
+      <a href="../github/our-repositories.html" class="pagination-link" aria-label="Our Repositories">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Our Repositories</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../github/review.html" class="pagination-link" aria-label="Git and GitHub Review">
-        <span class="nav-page-text">Git and GitHub Review</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../github/actions.html" class="pagination-link" aria-label="GitHub Actions">
+        <span class="nav-page-text">GitHub Actions</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1043,7 +1092,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/working-practices.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

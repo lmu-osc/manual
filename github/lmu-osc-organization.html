@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GitHub, the OSC Organization, and Repositories – OSC Manual</title>
+<title>The LMU OSC GitHub Organization – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../github/review.html" rel="next">
-<link href="../staff-onboarding/administration.html" rel="prev">
+<link href="../github/our-repositories.html" rel="next">
+<link href="../github/review.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li><li class="breadcrumb-item"><a href="../github/lmu-osc-organization.html">The LMU OSC GitHub Organization</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -216,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../github/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../github/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub Organization</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -231,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github/lmu-osc-organization.html" class="sidebar-item-text sidebar-link">
+  <a href="../github/lmu-osc-organization.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">The LMU OSC GitHub Organization</span></a>
   </div>
 </li>
@@ -558,17 +558,52 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pages-in-this-section" id="toc-pages-in-this-section" class="nav-link active" data-scroll-target="#pages-in-this-section">Pages in this section</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#what-is-a-github-organization" id="toc-what-is-a-github-organization" class="nav-link" data-scroll-target="#what-is-a-github-organization">What is a GitHub Organization?</a>
+  <ul class="collapse">
+  <li><a href="#a-quick-comparison" id="toc-a-quick-comparison" class="nav-link" data-scroll-target="#a-quick-comparison">A quick comparison</a></li>
+  <li><a href="#what-youll-see-at-github.comlmu-osc" id="toc-what-youll-see-at-github.comlmu-osc" class="nav-link" data-scroll-target="#what-youll-see-at-github.comlmu-osc">What you’ll see at github.com/lmu-osc</a></li>
+  </ul></li>
+  <li><a href="#repositories" id="toc-repositories" class="nav-link" data-scroll-target="#repositories">Repositories</a>
+  <ul class="collapse">
+  <li><a href="#finding-repositories" id="toc-finding-repositories" class="nav-link" data-scroll-target="#finding-repositories">Finding repositories</a></li>
+  </ul></li>
+  <li><a href="#organization-features" id="toc-organization-features" class="nav-link" data-scroll-target="#organization-features">Organization features</a>
+  <ul class="collapse">
+  <li><a href="#teams" id="toc-teams" class="nav-link" data-scroll-target="#teams">Teams</a></li>
+  <li><a href="#adding-people-to-individual-repositories" id="toc-adding-people-to-individual-repositories" class="nav-link" data-scroll-target="#adding-people-to-individual-repositories">Adding people to individual repositories</a></li>
+  <li><a href="#discussions" id="toc-discussions" class="nav-link" data-scroll-target="#discussions">Discussions</a></li>
+  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects">Projects</a></li>
+  </ul></li>
+  <li><a href="#membership-and-permissions" id="toc-membership-and-permissions" class="nav-link" data-scroll-target="#membership-and-permissions">Membership and permissions</a>
+  <ul class="collapse">
+  <li><a href="#adding-new-members" id="toc-adding-new-members" class="nav-link" data-scroll-target="#adding-new-members">Adding new members</a></li>
+  <li><a href="#member-visibility" id="toc-member-visibility" class="nav-link" data-scroll-target="#member-visibility">Member visibility</a></li>
+  <li><a href="#base-permissions" id="toc-base-permissions" class="nav-link" data-scroll-target="#base-permissions">Base permissions</a></li>
+  <li><a href="#granting-additional-permissions" id="toc-granting-additional-permissions" class="nav-link" data-scroll-target="#granting-additional-permissions">Granting additional permissions</a></li>
+  <li><a href="#organization-owners" id="toc-organization-owners" class="nav-link" data-scroll-target="#organization-owners">Organization owners</a></li>
+  </ul></li>
+  <li><a href="#security-two-factor-authentication-2fa" id="toc-security-two-factor-authentication-2fa" class="nav-link" data-scroll-target="#security-two-factor-authentication-2fa">Security: two-factor authentication (2FA)</a>
+  <ul class="collapse">
+  <li><a href="#what-you-need-to-do" id="toc-what-you-need-to-do" class="nav-link" data-scroll-target="#what-you-need-to-do">What you need to do</a></li>
+  <li><a href="#which-2fa-method-to-choose" id="toc-which-2fa-method-to-choose" class="nav-link" data-scroll-target="#which-2fa-method-to-choose">Which 2FA method to choose</a></li>
+  <li><a href="#setting-up-a-totp-app" id="toc-setting-up-a-totp-app" class="nav-link" data-scroll-target="#setting-up-a-totp-app">Setting up a TOTP app</a></li>
+  </ul></li>
+  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick reference</a>
+  <ul class="collapse">
+  <li><a href="#key-links" id="toc-key-links" class="nav-link" data-scroll-target="#key-links">Key links</a></li>
+  <li><a href="#who-to-ask-for-help" id="toc-who-to-ask-for-help" class="nav-link" data-scroll-target="#who-to-ask-for-help">Who to ask for help</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/lmu-osc-organization.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li><li class="breadcrumb-item"><a href="../github/lmu-osc-organization.html">The LMU OSC GitHub Organization</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">GitHub, the OSC Organization, and Repositories</h1>
-<p class="subtitle lead">How we use GitHub for collaboration and hosting our code and content</p>
+<h1 class="title">The LMU OSC GitHub Organization</h1>
+<p class="subtitle lead">How we use GitHub for collaboration, hosting our code and content, and management</p>
 </div>
 
 
@@ -585,41 +620,442 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This chapter provides an overview of GitHub, the OSC’s GitHub organization, and how we use repositories to manage our code and content. It is essential reading for anyone contributing to our projects, as GitHub is central to how we collaborate and manage our work.</p>
-<section id="pages-in-this-section" class="level2">
-<h2 class="anchored" data-anchor-id="pages-in-this-section">Pages in this section</h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>A <strong>GitHub Organization</strong> is a shared workspace where multiple people can collaborate on repositories under a single umbrella. Unlike a personal account, an organization allows you to group repositories, manage permissions with teams, and centralise billing and settings. Our organization lives at <a href="https://github.com/lmu-osc">github.com/lmu-osc</a> and is where we host all of our code, content, and documentation.</p>
+<p>This page covers what you need to know about navigating our organization, how permissions work, and how to manage members and teams.</p>
+<hr>
+</section>
+<section id="what-is-a-github-organization" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-github-organization">What is a GitHub Organization?</h2>
+<p>If you’re new to GitHub Organizations, think of it as a <strong>shared account</strong> that multiple people can belong to. With a personal account, you own your repositories personally — if you leave a project or change roles, those repos can be tricky to transfer. With an organization, the repos belong to the group, not to any one person. This means:</p>
+<ul>
+<li><strong>Continuity</strong> — Repositories aren’t lost when someone leaves the group. The organization remains the owner.</li>
+<li><strong>Scalable permissions</strong> — Instead of adding people to repos one by one, you can create teams with predefined permissions and simply add or remove people from those teams.</li>
+<li><strong>Discoverability</strong> — The organization provides a single place (github.com/lmu-osc) where anyone can find all our projects.</li>
+</ul>
+<section id="a-quick-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="a-quick-comparison">A quick comparison</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Page</th>
-<th>Description</th>
+<th></th>
+<th>Personal account</th>
+<th>Organization</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="../github/review.html">Git and GitHub Review</a></td>
-<td>A refresher on Git and GitHub basics, including the concepts and commands you should be comfortable with before contributing to our projects.</td>
+<td>Ownership</td>
+<td>Belongs to one person</td>
+<td>Belongs to the group</td>
 </tr>
 <tr class="even">
-<td><a href="../github/lmu-osc-organization.html">The LMU OSC GitHub Organization</a></td>
-<td>An overview of our GitHub organization, including how permissions work, how teams are structured, and how to navigate our repositories.</td>
+<td>Repositories</td>
+<td>Under your name</td>
+<td>Under the org name</td>
 </tr>
 <tr class="odd">
-<td><a href="../github/our-repositories.html">Our Repositories</a></td>
-<td>A structured overview of the repositories we maintain, categorised by type — from organization configuration and websites to tutorials, tools, and backups.</td>
+<td>Permissions</td>
+<td>Simple (collaborator or not)</td>
+<td>Granular (teams, roles, base permissions)</td>
 </tr>
 <tr class="even">
-<td><a href="../github/working-practices.html">Best Working Practices</a></td>
-<td>Guidelines for creating repositories, contributing changes, and collaborating effectively within our organization.</td>
+<td>Best for</td>
+<td>Individual projects, personal work</td>
+<td>Collaborative projects, teams</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-youll-see-at-github.comlmu-osc" class="level3">
+<h3 class="anchored" data-anchor-id="what-youll-see-at-github.comlmu-osc">What you’ll see at github.com/lmu-osc</h3>
+<p>When you visit <a href="https://github.com/lmu-osc">github.com/lmu-osc</a>, you’ll see:</p>
+<ul>
+<li><strong>Pinned repositories</strong> — A few key repos highlighted at the top (like this manual). These are our most important or most active projects.</li>
+<li><strong>Organization README</strong> — A short description of who we are, pulled from the <code>.github</code> repository.</li>
+<li><strong>Tabs</strong> — Repositories, Packages, and People are the main ones you’ll use. The Repositories tab lists everything we have (public ones are visible to everyone; private ones only if you have access).</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="repositories" class="level2">
+<h2 class="anchored" data-anchor-id="repositories">Repositories</h2>
+<p>Our organization contains a mix of <strong>public</strong> and <strong>private</strong> repositories.</p>
+<ul>
+<li><strong>Public repositories</strong> are visible to anyone on the internet. All of our content repositories (like this manual, our tutorials, and public-facing websites) are public. This aligns with our commitment to open science — anyone can view, clone, and learn from our work.</li>
+<li><strong>Private repositories</strong> are only visible to members of the organization who have been granted access. We use private repositories mainly for internal tools, drafts of projects not yet ready for public release, or configurations that contain sensitive information.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Tip:</strong> If you see a repository name in a discussion or issue but can’t find it, it might be private and you may not have been granted access yet. Ask a team member to add you if you need it.</p>
+</blockquote>
+<section id="finding-repositories" class="level3">
+<h3 class="anchored" data-anchor-id="finding-repositories">Finding repositories</h3>
+<p>You can browse all repositories by clicking the <strong>“Repositories” tab</strong> on the organization’s GitHub page. From there you can:</p>
+<ul>
+<li>Scroll through the list of all public repositories.</li>
+<li>Use the <strong>search bar</strong> at the top of the page to filter by repository name, description, or topic tags.</li>
+<li>Sort by last updated, name, or number of stars.</li>
+</ul>
+<p>You can also <strong>star</strong> repositories you work on frequently — they’ll be saved under your personal “Starred” tab for quick access later. This is especially useful if you regularly contribute to several different repos.</p>
+<p>If you’re looking for something specific and can’t find it, ask a team member — it may be in a private repository that you don’t yet have access to, or it may be stored elsewhere.</p>
+<hr>
+</section>
+</section>
+<section id="organization-features" class="level2">
+<h2 class="anchored" data-anchor-id="organization-features">Organization features</h2>
+<p>GitHub provides several features at the organization level. Here’s how we use (and don’t use) them at the OSC.</p>
+<section id="teams" class="level3">
+<h3 class="anchored" data-anchor-id="teams">Teams</h3>
+<p>Teams are the primary way we manage permissions. Instead of adding people to individual repositories one by one, you can create a team, give that team a set of permissions across all repos (or specific ones), and then add or remove members from the team. This makes it easy to see who has access to what and to onboard or offboard people quickly.</p>
+<section id="how-team-permissions-work" class="level4">
+<h4 class="anchored" data-anchor-id="how-team-permissions-work">How team permissions work</h4>
+<p>When you add someone to a team, they automatically get the team’s permission level on all repositories the team has been granted access to. GitHub offers several permission levels, but the main ones you’ll encounter are:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Can…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Read</strong></td>
+<td>View and clone repositories, open issues, leave comments</td>
+</tr>
+<tr class="even">
+<td><strong>Write</strong></td>
+<td>All of the above, plus push changes, manage issues and pull requests</td>
 </tr>
 <tr class="odd">
-<td><a href="../github/actions.html">GitHub Actions</a></td>
-<td>An introduction to GitHub Actions — what they are, how they work, and how we use them at the OSC for automation.</td>
+<td><strong>Admin</strong></td>
+<td>All of the above, plus manage repository settings, add collaborators, configure CI/CD</td>
+</tr>
+<tr class="even">
+<td><strong>Owner</strong></td>
+<td>Full control over the entire organization (billing, settings, all repos)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="our-current-teams" class="level4">
+<h4 class="anchored" data-anchor-id="our-current-teams">Our current teams</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Team Name</th>
+<th>Who’s in it</th>
+<th>What they can do</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>osc-admin-members</code></td>
+<td>Full-time staff</td>
+<td>Admin access to all repos, including managing CI/CD workflows and repository settings</td>
+</tr>
+<tr class="even">
+<td><code>osc-research-assistants</code></td>
+<td>Student research assistants (HiWis)</td>
+<td>Admin access to all repos</td>
+</tr>
+</tbody>
+</table>
+<p>Both teams currently have <strong>Admin</strong>-level access to all repositories. If you’re on either team, you can push to any branch, merge pull requests, and change repository settings.</p>
+</section>
+<section id="creating-a-new-team" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-new-team">Creating a new team</h4>
+<p>If you need a new team for a specific project or group of people, feel free to create one. Before doing so, check the <a href="https://github.com/organizations/lmu-osc/settings/org_roles">organization role management settings</a> to understand what permission levels are available and appropriate. As a rule of thumb:</p>
+<ul>
+<li><strong>Start with Read or Write</strong> unless there’s a clear need for Admin.</li>
+<li>It’s easier to <strong>escalate permissions later</strong> than to roll them back after an accident.</li>
+<li>Consider the <strong>principle of least privilege</strong>: give people the minimum access they need to do their work.</li>
+</ul>
+<p>We want to avoid giving out Admin permissions unnecessarily, but we also don’t want to micromanage permissions to the point where it becomes a burden. Use your judgement, and when in doubt, ask another team member.</p>
+</section>
+<section id="practical-example-onboarding-a-new-hiwi" class="level4">
+<h4 class="anchored" data-anchor-id="practical-example-onboarding-a-new-hiwi">Practical example: onboarding a new HiWi</h4>
+<p>When a new student research assistant joins, here’s roughly what happens:</p>
+<ol type="1">
+<li>They’re invited to join the organization (see “Adding new members” below).</li>
+<li>They’re added to the <code>osc-research-assistants</code> team.</li>
+<li>They automatically get Admin access to all repositories.</li>
+<li>When they leave, they’re removed from the team (and optionally the organization), and their access is revoked everywhere at once.</li>
+</ol>
+</section>
+</section>
+<section id="adding-people-to-individual-repositories" class="level3">
+<h3 class="anchored" data-anchor-id="adding-people-to-individual-repositories">Adding people to individual repositories</h3>
+<p>Sometimes you need to give someone access to just <strong>one repository</strong> without making them a full member of the organization. This is common when we contract with someone for a specific piece of work — for example, a freelance designer working on a website template.</p>
+<p><strong>How to do it:</strong></p>
+<ol type="1">
+<li>Go to the repository on GitHub.</li>
+<li>Click <strong>Settings</strong> (in the right sidebar).</li>
+<li>Click <strong>Collaborators and teams</strong> in the left menu.</li>
+<li>Under “Manage access”, click <strong>Add people</strong>.</li>
+<li>Search by username, full name, or email, choose their permission level (Read, Write, or Admin), and send the invite.</li>
+</ol>
+<p><strong>When to use this approach:</strong></p>
+<ul>
+<li>✅ The person only needs access to <strong>one repo</strong>.</li>
+<li>✅ It’s a <strong>short-term or one-off</strong> collaboration.</li>
+<li>❌ Avoid if you find yourself doing this repeatedly for the same person — in that case, create a team instead.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Why teams are usually better:</strong> If you give five people access to three different repos each via individual invitations, you now have fifteen separate permissions to track and manually revoke. With teams, you add each person to one team and give that team access to the relevant repos — much cleaner.</p>
+</blockquote>
+</section>
+<section id="discussions" class="level3">
+<h3 class="anchored" data-anchor-id="discussions">Discussions</h3>
+<p>GitHub Discussions is a feature for having <strong>forum-style conversations</strong> that aren’t tied to a specific issue or pull request. It’s useful for Q&amp;A, brainstorming, announcements, or general community engagement.</p>
+<p>We haven’t actively adopted Discussions yet at the OSC, but they remain available if we ever need them. For now, we rely on <strong>Issues</strong> for tracking tasks and bugs, and <strong>pull requests</strong> for proposing and reviewing changes. If you think a topic would benefit from a discussion thread (e.g., a design proposal that doesn’t have a clear actionable issue yet), feel free to start one.</p>
+</section>
+<section id="projects" class="level3">
+<h3 class="anchored" data-anchor-id="projects">Projects</h3>
+<p>GitHub Projects provides a <strong>Kanban-style board</strong> for organizing and tracking work across issues and pull requests. We experimented with it for a period but found it didn’t fit our workflow well, so we don’t use it formally at the organization level.</p>
+<p>That said, you’re <strong>welcome to create your own project board</strong> if you find it useful for tracking your work. For example, you could:</p>
+<ul>
+<li>Create a personal board to keep track of issues you’re responsible for across multiple repositories.</li>
+<li>Set up a board for a specific event or project with a fixed timeline.</li>
+<li>Use it as a lightweight to-do list for a short-term initiative.</li>
+</ul>
+<p>To create one, go to the organization’s <strong>Projects</strong> tab and click “New project”. Just keep in mind that this is for your personal productivity — there’s no expectation that others will use or maintain it.</p>
+<hr>
+</section>
+</section>
+<section id="membership-and-permissions" class="level2">
+<h2 class="anchored" data-anchor-id="membership-and-permissions">Membership and permissions</h2>
+<p>Understanding how membership works is important for both new and existing members. Here’s a quick overview of the different roles and how they relate to each other:</p>
+<pre><code>Organization Owners (full staff)
+  └─ can manage everything, including adding new owners
+      └─ Teams (e.g., osc-admin-members, osc-research-assistants)
+            └─ inherit team-level permissions on repositories
+                └─ Base members (Read permission by default)
+                      └─ can view and clone, but need explicit grants to push</code></pre>
+<section id="adding-new-members" class="level3">
+<h3 class="anchored" data-anchor-id="adding-new-members">Adding new members</h3>
+<p>The most common management task is adding new people to the organization. Here’s how to do it step by step:</p>
+<ol type="1">
+<li>Go to the organization’s <strong>People</strong> tab (visible only to members with sufficient permissions).</li>
+<li>Click the green <strong>Invite Member</strong> button.</li>
+<li>Search by <strong>GitHub username</strong>, <strong>full name</strong>, or <strong>email address</strong>.
+<ul>
+<li>Username is the quickest way if you know it.</li>
+<li>Email works too, but make sure it matches the email they use on GitHub.</li>
+</ul></li>
+<li>Choose whether to add them to a team right away (recommended) or just add them to the organization directly.
+<ul>
+<li>Adding to a team means they’ll automatically get that team’s permissions.</li>
+<li>Adding them directly means they’ll only have base permissions (Read).</li>
+</ul></li>
+<li>The invite will expire after a few days if not accepted. You can resend it if needed.</li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>What if I can’t invite someone?</strong> You need to have Owner permissions or be a team maintainer with the right privileges to invite new members. If you don’t see the option, ask an owner to do it.</p>
+</blockquote>
+</section>
+<section id="member-visibility" class="level3">
+<h3 class="anchored" data-anchor-id="member-visibility">Member visibility</h3>
+<p>By default, new members are listed as <strong>Private</strong> — their membership is not visible to the public. This means no one outside the organization can see they’re a member.</p>
+<p><strong>We ask members to make themselves Public</strong> so that: - Other team members can easily find them. - External collaborators and the community can see who is part of the OSC. - It’s easier for people to know who to contact about specific projects.</p>
+<p>Making your membership public is entirely optional. If you’d like to do it:</p>
+<ol type="1">
+<li>Go to your <a href="https://github.com/settings/organizations">organization membership page</a>.</li>
+<li>Find the lmu-osc entry and change the visibility from <strong>Private</strong> to <strong>Public</strong>.</li>
+</ol>
+<p>GitHub also provides <a href="https://docs.github.com/en/account-and-profile/how-tos/organization-membership/publicizing-or-hiding-organization-membership">official documentation on this setting</a>.</p>
+</section>
+<section id="base-permissions" class="level3">
+<h3 class="anchored" data-anchor-id="base-permissions">Base permissions</h3>
+<p>Base permissions are the default access level for <strong>all members</strong> of the organization. Ours are set to <strong>Read</strong>, which means every member can:</p>
+<ul>
+<li>✅ View and clone repositories.</li>
+<li>✅ Open issues and leave comments.</li>
+<li>❌ <strong>Cannot</strong> push changes to repositories.</li>
+<li>❌ <strong>Cannot</strong> manage issues or pull requests on repositories they haven’t been explicitly granted access to.</li>
+</ul>
+<p>This is a sensible default: it lets people access the content they need without giving them unnecessary control over repositories they’re not actively working on.</p>
+</section>
+<section id="granting-additional-permissions" class="level3">
+<h3 class="anchored" data-anchor-id="granting-additional-permissions">Granting additional permissions</h3>
+<p>If someone needs more than Read access — for example, a collaborator working on a specific project — you have two options:</p>
+<ol type="1">
+<li><strong>Add them to an existing team</strong> with the appropriate permission level. This is the preferred approach for recurring contributors because it’s easy to manage and audit.</li>
+<li><strong>Give them direct access to a specific repository</strong> via the repository’s “Collaborators” settings. This is fine for one-off contributions but can become hard to track over time.</li>
+</ol>
+<p><strong>For members who contribute to multiple repositories</strong>, consider creating a new team with the appropriate permissions (Read + Write or Admin, plus CI/CD if needed) rather than granting repo-by-repo access. This way, adding or removing their access is a single operation.</p>
+<p>You can review and adjust base permissions at any time in the <a href="https://github.com/organizations/lmu-osc/settings/member_privileges">organization’s member privileges settings</a>.</p>
+</section>
+<section id="organization-owners" class="level3">
+<h3 class="anchored" data-anchor-id="organization-owners">Organization owners</h3>
+<p>Above regular members and teams are <strong>organization owners</strong>. Owners have full control over the organization, including:</p>
+<ul>
+<li>Managing members and teams.</li>
+<li>Changing organization-wide settings (e.g., base permissions, 2FA requirements).</li>
+<li>Accessing and managing all repositories, including private ones.</li>
+<li>Deleting the organization (use with caution!).</li>
+</ul>
+<p><strong>Who gets owner access:</strong> We generally grant owner permissions only to <strong>full-time staff members</strong>, not to student research assistants or other collaborators. We may further restrict this in the future for security purposes.</p>
+<blockquote class="blockquote">
+<p><strong>Why this matters:</strong> If you ever need something done that requires owner-level access (creating a new team, changing org-wide settings, adding a new owner), ask one of the full-time staff members. Normal team admins cannot do these things.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="security-two-factor-authentication-2fa" class="level2">
+<h2 class="anchored" data-anchor-id="security-two-factor-authentication-2fa">Security: two-factor authentication (2FA)</h2>
+<p>We are in the process of <strong>requiring two-factor authentication (2FA)</strong> for all members of the organization. This is an important security practice: even if someone’s password is compromised, a second factor (like a code from your phone) prevents unauthorized access to our repositories and code.</p>
+<section id="what-you-need-to-do" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do">What you need to do</h3>
+<ul>
+<li><strong>If you already have 2FA enabled</strong> on your GitHub account, you’re all set. You should be able to access the organization without any issues.</li>
+<li><strong>If you don’t have 2FA enabled</strong>, you’ll need to set it up before you can access the organization. GitHub provides a step-by-step <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication">guide on configuring 2FA</a>.</li>
+</ul>
+</section>
+<section id="which-2fa-method-to-choose" class="level3">
+<h3 class="anchored" data-anchor-id="which-2fa-method-to-choose">Which 2FA method to choose</h3>
+<p>GitHub offers several options. Here’s what we recommend:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Recommendation</th>
+<th>How it works</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>TOTP app</strong> (e.g.&nbsp;Duo, Google Authenticator, Authy, 1Password, Microsoft Authenticator)</td>
+<td>✅ <strong>Recommended</strong></td>
+<td>You scan a QR code with your phone or password manager, and it generates a 6-digit code that changes every 30 seconds.</td>
+</tr>
+<tr class="even">
+<td><strong>GitHub Mobile app</strong></td>
+<td>✅ <strong>Recommended</strong></td>
+<td>You can use the GitHub Mobile app as a second factor. It sends a push notification to your phone for approval.</td>
+</tr>
+<tr class="odd">
+<td><strong>Passkeys</strong> (biometric or device-based)</td>
+<td>✅ Good option</td>
+<td>Uses your device’s fingerprint, face recognition, or PIN. Works well if your device supports it.</td>
+</tr>
+<tr class="even">
+<td><strong>SMS text message</strong></td>
+<td>❌ <strong>Not recommended</strong></td>
+<td>Codes sent via SMS can be intercepted. GitHub itself <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication">advises against it</a>.</td>
+</tr>
+<tr class="odd">
+<td><strong>Security keys</strong> (hardware, e.g., YubiKey)</td>
+<td>✅ Good for extra security</td>
+<td>Physical key that you plug in or tap. More expensive but very secure.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="setting-up-a-totp-app" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-a-totp-app">Setting up a TOTP app</h3>
+<p>If you’re new to 2FA, a TOTP app is the easiest place to start:</p>
+<ol type="1">
+<li>Install an authenticator app on your phone (Google Authenticator, Authy, or 1Password all work well).</li>
+<li>Go to your <a href="https://github.com/settings/security">GitHub security settings</a>.</li>
+<li>Click “Enable two-factor authentication” and follow the prompts to scan the QR code with your app.</li>
+<li>Save your recovery codes somewhere safe (you’ll need them if you lose access to your phone).</li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Tip:</strong> When you set up 2FA, GitHub gives you a set of <strong>recovery codes</strong>. Save these somewhere secure (e.g., in your password manager). If you ever lose your phone, these codes are the only way to get back into your account.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="quick-reference" class="level2">
+<h2 class="anchored" data-anchor-id="quick-reference">Quick reference</h2>
+<section id="key-links" class="level3">
+<h3 class="anchored" data-anchor-id="key-links">Key links</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Resource</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OSC GitHub Organization</td>
+<td><a href="https://github.com/lmu-osc">github.com/lmu-osc</a></td>
+</tr>
+<tr class="even">
+<td>Organization role management</td>
+<td><a href="https://github.com/organizations/lmu-osc/settings/org_roles">Settings → Org Roles</a></td>
+</tr>
+<tr class="odd">
+<td>Member privileges settings</td>
+<td><a href="https://github.com/organizations/lmu-osc/settings/member_privileges">Settings → Member Privileges</a></td>
+</tr>
+<tr class="even">
+<td>Your organization memberships</td>
+<td><a href="https://github.com/settings/organizations">github.com/settings/organizations</a></td>
+</tr>
+<tr class="odd">
+<td>2FA setup guide</td>
+<td><a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication">GitHub Docs</a></td>
+</tr>
+<tr class="even">
+<td>Publicising organization membership</td>
+<td><a href="https://docs.github.com/en/account-and-profile/how-tos/organization-membership/publicizing-or-hiding-organization-membership">GitHub Docs</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="who-to-ask-for-help" class="level3">
+<h3 class="anchored" data-anchor-id="who-to-ask-for-help">Who to ask for help</h3>
+<p>If you run into any of the following, here’s who to contact:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Who to ask</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>I need to be added to the organization</td>
+<td>Any full-time staff member (an organization owner)</td>
+</tr>
+<tr class="even">
+<td>I can’t access a specific repository</td>
+<td>Ask the team that maintains it, or a staff member</td>
+</tr>
+<tr class="odd">
+<td>I need a new team created</td>
+<td>An organization owner</td>
+</tr>
+<tr class="even">
+<td>I’m having trouble with 2FA</td>
+<td>Check the <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa">GitHub docs</a> or ask a staff member</td>
+</tr>
+<tr class="odd">
+<td>I’m not sure where a project lives</td>
+<td>Check the organization’s Repositories tab, or ask in the relevant Slack/Matrix channel</td>
 </tr>
 </tbody>
 </table>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -1025,13 +1461,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../staff-onboarding/administration.html" class="pagination-link" aria-label="Administration">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Administration</span>
+      <a href="../github/review.html" class="pagination-link" aria-label="Git and GitHub Review">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Git and GitHub Review</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../github/review.html" class="pagination-link" aria-label="Git and GitHub Review">
-        <span class="nav-page-text">Git and GitHub Review</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../github/our-repositories.html" class="pagination-link" aria-label="Our Repositories">
+        <span class="nav-page-text">Our Repositories</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1043,7 +1479,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/lmu-osc-organization.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

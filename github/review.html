@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>GitHub, the OSC Organization, and Repositories – OSC Manual</title>
+<title>Git and GitHub Review – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,8 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../github/review.html" rel="next">
-<link href="../staff-onboarding/administration.html" rel="prev">
+<link href="../github/lmu-osc-organization.html" rel="next">
+<link href="../github/index.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -136,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li><li class="breadcrumb-item"><a href="../github/review.html">Git and GitHub Review</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -216,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../github/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../github/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GitHub Organization</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -225,7 +225,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../github/review.html" class="sidebar-item-text sidebar-link">
+  <a href="../github/review.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Git and GitHub Review</span></a>
   </div>
 </li>
@@ -558,17 +558,49 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pages-in-this-section" id="toc-pages-in-this-section" class="nav-link active" data-scroll-target="#pages-in-this-section">Pages in this section</a></li>
+  <li><a href="#purpose-of-this-page" id="toc-purpose-of-this-page" class="nav-link active" data-scroll-target="#purpose-of-this-page">Purpose of this page</a></li>
+  <li><a href="#learning-resources" id="toc-learning-resources" class="nav-link" data-scroll-target="#learning-resources">Learning resources</a>
+  <ul class="collapse">
+  <li><a href="#osc-introductory-tutorials" id="toc-osc-introductory-tutorials" class="nav-link" data-scroll-target="#osc-introductory-tutorials">OSC introductory tutorials</a></li>
+  <li><a href="#recommended-video-tutorials" id="toc-recommended-video-tutorials" class="nav-link" data-scroll-target="#recommended-video-tutorials">Recommended video tutorials</a></li>
+  <li><a href="#commit-messages" id="toc-commit-messages" class="nav-link" data-scroll-target="#commit-messages">Commit messages</a></li>
+  <li><a href="#official-documentation" id="toc-official-documentation" class="nav-link" data-scroll-target="#official-documentation">Official documentation</a></li>
+  </ul></li>
+  <li><a href="#why-version-control-matters" id="toc-why-version-control-matters" class="nav-link" data-scroll-target="#why-version-control-matters">Why version control matters</a></li>
+  <li><a href="#what-you-should-know-git" id="toc-what-you-should-know-git" class="nav-link" data-scroll-target="#what-you-should-know-git">What you should know: Git</a>
+  <ul class="collapse">
+  <li><a href="#core-workflow" id="toc-core-workflow" class="nav-link" data-scroll-target="#core-workflow">Core workflow</a></li>
+  <li><a href="#branching-and-merging" id="toc-branching-and-merging" class="nav-link" data-scroll-target="#branching-and-merging">Branching and merging</a></li>
+  <li><a href="#remotes" id="toc-remotes" class="nav-link" data-scroll-target="#remotes">Remotes</a></li>
+  <li><a href="#stashing" id="toc-stashing" class="nav-link" data-scroll-target="#stashing">Stashing</a></li>
+  </ul></li>
+  <li><a href="#what-you-should-know-github" id="toc-what-you-should-know-github" class="nav-link" data-scroll-target="#what-you-should-know-github">What you should know: GitHub</a>
+  <ul class="collapse">
+  <li><a href="#repositories" id="toc-repositories" class="nav-link" data-scroll-target="#repositories">Repositories</a></li>
+  <li><a href="#issues" id="toc-issues" class="nav-link" data-scroll-target="#issues">Issues</a></li>
+  <li><a href="#pull-requests" id="toc-pull-requests" class="nav-link" data-scroll-target="#pull-requests">Pull requests</a></li>
+  <li><a href="#forks-vs.-branches" id="toc-forks-vs.-branches" class="nav-link" data-scroll-target="#forks-vs.-branches">Forks vs.&nbsp;branches</a></li>
+  <li><a href="#code-reviews" id="toc-code-reviews" class="nav-link" data-scroll-target="#code-reviews">Code reviews</a></li>
+  </ul></li>
+  <li><a href="#osc-expectations-and-conventions" id="toc-osc-expectations-and-conventions" class="nav-link" data-scroll-target="#osc-expectations-and-conventions">OSC expectations and conventions</a>
+  <ul class="collapse">
+  <li><a href="#dont-commit-directly-to-main" id="toc-dont-commit-directly-to-main" class="nav-link" data-scroll-target="#dont-commit-directly-to-main">1. Don’t commit directly to <code>main</code></a></li>
+  <li><a href="#write-meaningful-commit-messages" id="toc-write-meaningful-commit-messages" class="nav-link" data-scroll-target="#write-meaningful-commit-messages">2. Write meaningful commit messages</a></li>
+  <li><a href="#keep-prs-focused" id="toc-keep-prs-focused" class="nav-link" data-scroll-target="#keep-prs-focused">3. Keep PRs focused</a></li>
+  <li><a href="#review-before-merging" id="toc-review-before-merging" class="nav-link" data-scroll-target="#review-before-merging">4. Review before merging</a></li>
+  <li><a href="#pull-frequently-push-often" id="toc-pull-frequently-push-often" class="nav-link" data-scroll-target="#pull-frequently-push-often">5. Pull frequently, push often</a></li>
+  </ul></li>
+  <li><a href="#self-check" id="toc-self-check" class="nav-link" data-scroll-target="#self-check">Self-check</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/review.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li><li class="breadcrumb-item"><a href="../github/review.html">Git and GitHub Review</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">GitHub, the OSC Organization, and Repositories</h1>
-<p class="subtitle lead">How we use GitHub for collaboration and hosting our code and content</p>
+<h1 class="title">Git and GitHub Review</h1>
+<p class="subtitle lead">A refresher on the basics of Git and GitHub for version control and collaboration</p>
 </div>
 
 
@@ -585,39 +617,228 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This chapter provides an overview of GitHub, the OSC’s GitHub organization, and how we use repositories to manage our code and content. It is essential reading for anyone contributing to our projects, as GitHub is central to how we collaborate and manage our work.</p>
-<section id="pages-in-this-section" class="level2">
-<h2 class="anchored" data-anchor-id="pages-in-this-section">Pages in this section</h2>
+<section id="purpose-of-this-page" class="level2">
+<h2 class="anchored" data-anchor-id="purpose-of-this-page">Purpose of this page</h2>
+<p>This page provides a <strong>quick overview</strong> of Git and GitHub and lays out the <strong>expectations of knowledge</strong> we assume when you start working with us. It’s not an exhaustive tutorial — there are plenty of excellent ones out there (linked below) — but it should give you a clear picture of what you need to be comfortable with and where to go if you need to brush up.</p>
+<p>If you’re already confident with Git and GitHub, feel free to skip straight to the next pages in this section. If you’re newer to these tools, work through the resources listed below and come back here as a checklist to make sure you’ve covered the essentials.</p>
+<p>You will also need to know how to <strong>set up an SSH connection</strong> between your computer and your GitHub account to authenticate your Git client. If you’re not familiar with this yet, don’t worry — our introductory tutorials below cover the process.</p>
+<hr>
+</section>
+<section id="learning-resources" class="level2">
+<h2 class="anchored" data-anchor-id="learning-resources">Learning resources</h2>
+<section id="osc-introductory-tutorials" class="level3">
+<h3 class="anchored" data-anchor-id="osc-introductory-tutorials">OSC introductory tutorials</h3>
+<p>These two tutorials are designed for beginners and use RStudio, which is common among OSC members:</p>
+<ul>
+<li><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Introduction to RStudio, Git, and GitHub</a> — covers the very basics: creating a repository, staging, committing, pushing, and setting up SSH.</li>
+<li><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">Collaborative RStudio, Git, and GitHub</a> — dives into collaboration: branches, pull requests, and working with others.</li>
+</ul>
+</section>
+<section id="recommended-video-tutorials" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-video-tutorials">Recommended video tutorials</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=rH3zE7VlIMs">Git &amp; GitHub Crash Course (Boot.dev)</a> — a hands-on, visual walkthrough. The same content is available as an interactive tutorial on the <a href="https://boot.dev">Boot.dev</a> website (free tier available). Consider doing the interactive version first, then watch the video to reinforce the concepts.</li>
+</ul>
+</section>
+<section id="commit-messages" class="level3">
+<h3 class="anchored" data-anchor-id="commit-messages">Commit messages</h3>
+<ul>
+<li><a href="https://cbea.ms/git-commit/">How to Write a Git Commit Message</a> by Chris Beams — the definitive guide (~15-minute read).</li>
+<li><a href="https://medium.com/@iambonitheuri/the-art-of-writing-meaningful-git-commit-messages-a56887a4cb49">The Art of Writing Meaningful Git Commit Messages</a> — a complementary take with practical examples.</li>
+</ul>
+</section>
+<section id="official-documentation" class="level3">
+<h3 class="anchored" data-anchor-id="official-documentation">Official documentation</h3>
+<ul>
+<li><a href="https://git-scm.com/book/en/v2">Git Book</a> — the official, comprehensive resource. Chapters 2 and 3 cover everything you need to get started.</li>
+<li><a href="https://docs.github.com/en">GitHub Docs</a> — guides for all GitHub features, including pull requests, issues, and organisation management.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="why-version-control-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-version-control-matters">Why version control matters</h2>
+<p>Version control is the backbone of reproducible, collaborative research software and documentation. Git tracks <em>who</em> changed <em>what</em>, <em>when</em>, and <em>why</em>, making it possible to:</p>
+<ul>
+<li>Work on multiple features or fixes simultaneously without stepping on each other’s toes.</li>
+<li>Revert mistakes without losing history.</li>
+<li>Review changes before they become permanent.</li>
+<li>Tag releases and keep a clear record of your project’s evolution.</li>
+</ul>
+<p>GitHub builds on top of Git by providing a shared, web-based platform for hosting repositories, reviewing code, tracking work, and collaborating with others.</p>
+<hr>
+</section>
+<section id="what-you-should-know-git" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-should-know-git">What you should know: Git</h2>
+<p>You should be comfortable with the following Git concepts and commands before contributing to our projects.</p>
+<section id="core-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="core-workflow">Core workflow</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Page</th>
-<th>Description</th>
+<th>Concept / Command</th>
+<th>What it does</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="../github/review.html">Git and GitHub Review</a></td>
-<td>A refresher on Git and GitHub basics, including the concepts and commands you should be comfortable with before contributing to our projects.</td>
+<td><code>git init</code> / <code>git clone</code></td>
+<td>Start a new repository or get a local copy of an existing one.</td>
 </tr>
 <tr class="even">
-<td><a href="../github/lmu-osc-organization.html">The LMU OSC GitHub Organization</a></td>
-<td>An overview of our GitHub organization, including how permissions work, how teams are structured, and how to navigate our repositories.</td>
+<td><code>git status</code></td>
+<td>Check which files are modified, staged, or untracked.</td>
 </tr>
 <tr class="odd">
-<td><a href="../github/our-repositories.html">Our Repositories</a></td>
-<td>A structured overview of the repositories we maintain, categorised by type — from organization configuration and websites to tutorials, tools, and backups.</td>
+<td><code>git add</code></td>
+<td>Stage changes for a commit.</td>
 </tr>
 <tr class="even">
-<td><a href="../github/working-practices.html">Best Working Practices</a></td>
-<td>Guidelines for creating repositories, contributing changes, and collaborating effectively within our organization.</td>
+<td><code>git commit</code></td>
+<td>Save a snapshot of your staged changes with a message.</td>
 </tr>
 <tr class="odd">
-<td><a href="../github/actions.html">GitHub Actions</a></td>
-<td>An introduction to GitHub Actions — what they are, how they work, and how we use them at the OSC for automation.</td>
+<td><code>git log</code></td>
+<td>View the commit history.</td>
+</tr>
+<tr class="even">
+<td><code>git push</code></td>
+<td>Upload your local commits to a remote repository.</td>
+</tr>
+<tr class="odd">
+<td><code>git pull</code></td>
+<td>Fetch and integrate changes from a remote repository.</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="branching-and-merging" class="level3">
+<h3 class="anchored" data-anchor-id="branching-and-merging">Branching and merging</h3>
+<ul>
+<li><strong>Branches</strong> let you isolate work on different features, fixes, or experiments. The default branch is typically called <code>main</code>.</li>
+<li><strong>Creating and switching branches</strong>: There are a few related commands worth knowing for creating and switching branches. Note: there is some overlap in functionality, and the Git community has been moving towards the newer <code>switch</code> command for clarity, but you’ll still see all of these in use:
+<ul>
+<li><code>git branch &lt;name&gt;</code> — creates a new branch but <strong>does not</strong> switch to it. You’d then use <code>git switch &lt;name&gt;</code> (or older: <code>git checkout &lt;name&gt;</code>) to move onto it.</li>
+<li><code>git switch -c &lt;name&gt;</code> — creates a new branch <strong>and</strong> switches to it in one step. This is the modern, recommended approach.</li>
+<li><code>git checkout -b &lt;name&gt;</code> — does the same thing as <code>git switch -c</code>, but uses the older <code>checkout</code> syntax. You’ll still see this in many tutorials and workflows.</li>
+</ul></li>
+<li><strong>Merging</strong>: <code>git merge &lt;branch&gt;</code> integrates changes from one branch into another. Knowing how to resolve <strong>merge conflicts</strong> when they arise is essential — Git will mark the conflicting regions and you’ll need to decide which changes to keep.
+<ul>
+<li>Learning to merge is a topic of its own, but note that we generally use GitHub’s pull request interface to handle merges, which provides a more user-friendly way to review changes and resolve conflicts before merging.</li>
+</ul></li>
+<li><strong>Pull before you push</strong>: Always pull the latest changes from the remote before pushing, especially on shared branches, to minimise conflicts.</li>
+</ul>
+</section>
+<section id="remotes" class="level3">
+<h3 class="anchored" data-anchor-id="remotes">Remotes</h3>
+<p>A <strong>remote</strong> is a version of your repository hosted elsewhere (e.g., on GitHub). The default remote is usually named <code>origin</code>. You should understand how to:</p>
+<ul>
+<li><code>git remote add origin &lt;url&gt;</code> — links your local repository to a remote one so you can push and pull changes to and from it. You only need to do this once when setting up a local copy of a repository that wasn’t created by cloning.</li>
+<li><code>git fetch</code> — downloads new data from the remote (new branches, commits, tags) but doesn’t integrate them into your local working files. It’s a safe way to see what’s changed upstream without affecting your work-in-progress.</li>
+<li><code>git push origin &lt;branch&gt;</code> — uploads your local commits on the specified branch to the remote, making them available to collaborators. You’ll use this to share your work and update pull requests. (In contrast to the <code>git push -u</code> variant, this command does not set an upstream tracking link, so future pushes would require specifying the remote and branch name again.)</li>
+<li><code>git push -u origin &lt;branch&gt;</code> — same as <code>git push</code>, but also sets an upstream tracking link so that future pushes and pulls on this branch can be done with just <code>git push</code> or <code>git pull</code> without specifying the remote or branch name.</li>
+</ul>
+</section>
+<section id="stashing" class="level3">
+<h3 class="anchored" data-anchor-id="stashing">Stashing</h3>
+<p><code>git stash</code> temporarily shelves changes you’re not ready to commit. Useful when you need to switch branches quickly. <code>git stash pop</code> re-applies the most recently stashed changes.</p>
+<hr>
+</section>
+</section>
+<section id="what-you-should-know-github" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-should-know-github">What you should know: GitHub</h2>
+<p>GitHub is where we host our repositories and collaborate. You should be familiar with the following.</p>
+<section id="repositories" class="level3">
+<h3 class="anchored" data-anchor-id="repositories">Repositories</h3>
+<ul>
+<li>A <strong>repository</strong> (or “repo”) is a project folder that contains all the files and their version history.</li>
+<li>Repositories can be <strong>public</strong> (visible to anyone) or <strong>private</strong> (visible only to invited collaborators). At the OSC, our content repositories are public; some internal tooling may be private.</li>
+</ul>
+</section>
+<section id="issues" class="level3">
+<h3 class="anchored" data-anchor-id="issues">Issues</h3>
+<ul>
+<li><strong>Issues</strong> are used to track bugs, feature requests, tasks, and ideas.</li>
+<li>Each issue can have labels, assignees, milestones, and comments.</li>
+<li>Issues can reference each other and pull requests (e.g., “Closes #42” in a PR description).</li>
+</ul>
+</section>
+<section id="pull-requests" class="level3">
+<h3 class="anchored" data-anchor-id="pull-requests">Pull requests</h3>
+<p>Pull requests (PRs) are the mechanism for proposing changes to a repository. They are central to our workflow. You should understand:</p>
+<ol type="1">
+<li><strong>Creating a PR</strong>: Push a branch to GitHub and open a PR against the target branch (usually <code>main</code>).</li>
+<li><strong>Reviewing a PR</strong>: Leave comments on specific lines, approve changes, or request further work.</li>
+<li><strong>Merging a PR</strong>: Once approved, the PR can be merged. Common merge strategies include:
+<ul>
+<li><strong>Squash and merge</strong> (combines all commits into one). This is our default and preferred approach for keeping a clean history.</li>
+<li><strong>Merge commit</strong> (preserves all commits)</li>
+<li><strong>Rebase and merge</strong> (applies commits one by one on top of the target branch)</li>
+</ul></li>
+<li><strong>Draft PRs</strong>: A PR can be opened as a “draft” to signal that work is still in progress.</li>
+</ol>
+</section>
+<section id="forks-vs.-branches" class="level3">
+<h3 class="anchored" data-anchor-id="forks-vs.-branches">Forks vs.&nbsp;branches</h3>
+<ul>
+<li><strong>Branching within a repo</strong> is the standard approach when you have write access to the repository. You create a branch, make changes, and open a PR.</li>
+<li><strong>Forking</strong> creates a personal copy of a repository under your own GitHub account. This is more common when contributing to projects where you don’t have write access. For OSC internal projects, we generally work within shared repositories using branches.</li>
+</ul>
+</section>
+<section id="code-reviews" class="level3">
+<h3 class="anchored" data-anchor-id="code-reviews">Code reviews</h3>
+<p>We use PRs as an opportunity for <strong>code review</strong> — a chance for others to read, question, and improve your contributions before they become permanent. Be open to feedback, and remember that reviews are about improving the code, not criticizing the author.</p>
+<hr>
+</section>
+</section>
+<section id="osc-expectations-and-conventions" class="level2">
+<h2 class="anchored" data-anchor-id="osc-expectations-and-conventions">OSC expectations and conventions</h2>
+<p>When working on OSC projects, please follow these guidelines:</p>
+<section id="dont-commit-directly-to-main" class="level3">
+<h3 class="anchored" data-anchor-id="dont-commit-directly-to-main">1. Don’t commit directly to <code>main</code></h3>
+<p>The <code>main</code> branch should always be in a deployable or publishable state. As a rule, never commit directly to <code>main</code>. Always create a new branch for your work, and open a PR when you’re ready to merge. This allows for review and keeps the history clean. If you accidentally commit to <code>main</code>, don’t panic — you should look up how to revert or reset commits, and ask for help if you’re unsure.</p>
+</section>
+<section id="write-meaningful-commit-messages" class="level3">
+<h3 class="anchored" data-anchor-id="write-meaningful-commit-messages">2. Write meaningful commit messages</h3>
+<p>A good commit message explains <strong>why</strong> a change was made, not just <strong>what</strong> was changed. A widely-used convention is:</p>
+<pre><code>Short (50 chars or less) summary of changes
+
+More detailed explanatory text, if necessary. Wrap lines at about
+72 characters. Explain the problem this commit solves, and how.</code></pre>
+<p>The first line should be a concise summary written in the imperative mood (e.g., “Fix bug in data processing” rather than “Fixed” or “Fixes”). If the commit is part of a larger change, the body can provide additional context. This practice makes it easier for others (and your future self) to understand the history of changes and the rationale behind them. It is less important to follow this format for development branches, but the final commit message for a PR should be clear and informative.</p>
+</section>
+<section id="keep-prs-focused" class="level3">
+<h3 class="anchored" data-anchor-id="keep-prs-focused">3. Keep PRs focused</h3>
+<p>A pull request should address a single concern. If you find yourself fixing multiple unrelated things, split them into separate PRs. This makes reviews faster and history easier to follow.</p>
+</section>
+<section id="review-before-merging" class="level3">
+<h3 class="anchored" data-anchor-id="review-before-merging">4. Review before merging</h3>
+<p>Always request at least one review before merging a PR. Even if you’re eager to get something in, a fresh pair of eyes can catch issues you’ve missed.</p>
+</section>
+<section id="pull-frequently-push-often" class="level3">
+<h3 class="anchored" data-anchor-id="pull-frequently-push-often">5. Pull frequently, push often</h3>
+<p>Regularly pull changes from the remote to stay up to date, and push your work-in-progress branches frequently to avoid losing work and to keep others informed of your progress.</p>
+<hr>
+</section>
+</section>
+<section id="self-check" class="level2">
+<h2 class="anchored" data-anchor-id="self-check">Self-check</h2>
+<p>After working through the resources above, you should be able to answer “yes” to each of these:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Have I set up SSH keys for authentication?</label></li>
+<li><label><input type="checkbox">Can I clone a repository and check its status?</label></li>
+<li><label><input type="checkbox">Can I create a branch, make changes, commit them, and push to GitHub?</label></li>
+<li><label><input type="checkbox">Can I open a pull request and request a review?</label></li>
+<li><label><input type="checkbox">Can I resolve a merge conflict?</label></li>
+<li><label><input type="checkbox">Do I understand what a good commit message looks like?</label></li>
+<li><label><input type="checkbox">Do I know not to commit directly to <code>main</code> on collaborative projects?</label></li>
+<li><label><input type="checkbox">Do I know ways to fix a mistake if I accidentally commit to <code>main</code>?</label></li>
+</ul>
+<p>If you checked all the boxes, you’re ready to dive into the rest of this section!</p>
 
 
 </section>
@@ -1025,13 +1246,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../staff-onboarding/administration.html" class="pagination-link" aria-label="Administration">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Administration</span>
+      <a href="../github/index.html" class="pagination-link" aria-label="GitHub Organization">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">GitHub Organization</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../github/review.html" class="pagination-link" aria-label="Git and GitHub Review">
-        <span class="nav-page-text">Git and GitHub Review</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../github/lmu-osc-organization.html" class="pagination-link" aria-label="The LMU OSC GitHub Organization">
+        <span class="nav-page-text">The LMU OSC GitHub Organization</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1043,7 +1264,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/review.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>GitHub Actions – OSC Manual</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../updating-website/index.html" rel="next">
+<link href="../github/working-practices.html" rel="prev">
+<link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f7077b44f840da289cc25d4e0ab9faa4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<!-- See the OSC internal instructions on how to generate and include the code necessary for the Matomo Analytics tracking. -->
+
+
+<link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">OSC Manual</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../tech-overview.html"> 
+<span class="menu-text">Tech Overview</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/lmu-osc/manual">
+            Source Code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://github.com/lmu-osc/manual/issues">
+            Report a Bug
+            </a>
+          </li>
+      </ul>
+    </div>
+    <a href="https://www.osc.lmu.de" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-heart"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li><li class="breadcrumb-item"><a href="../github/actions.html">GitHub Actions</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../about/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about/page1.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TOPIC1 Page1 Title</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about/page2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TOPIC1 Page2 Title</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../staff-onboarding/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Staff Onboarding</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../staff-onboarding/internal-communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Internal Communication</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../staff-onboarding/working-envi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working Environment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../staff-onboarding/administration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Administration</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../github/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GitHub Organization</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../github/review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git and GitHub Review</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../github/lmu-osc-organization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The LMU OSC GitHub Organization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../github/our-repositories.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Our Repositories</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../github/working-practices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working Practices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../github/actions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">GitHub Actions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../updating-website/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Updating Website</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../updating-website/create-news-item.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Create a News Item</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../updating-website/create-event-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Create an Event Page</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../updating-website/create-new-members-page.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Create a Profile Page</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Edit Other Pages</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../onboarding-member/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding an OSC Member</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../onboarding-member/onboarding-osc-member.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding an OSC Member</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../osc-events/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Organizing an OSC Event</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-events/creating-program.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating a Program and Liaising with Guest Instructor</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-events/registration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Registration and OSC Event Pages</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-events/liaising-with-attendees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liaising with Attendees</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-events/additional-prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Preparation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-events/logistics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Logistics within the Event</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-events/wrapup-feedback.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wrap Up and Feedback</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../osc-outreach/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OSC Public Outreach</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-outreach/social-media.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Social Media</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-outreach/newsletter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newsletter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-outreach/flyer-design-and-images.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Flyer Design and Images</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-events/additional-prep.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mail Drafts</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../authoring-tutorials/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authoring an OSC Tutorial</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutorial Template Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Things You Shouldn’t Change</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Matomo Analytics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Authoring and Versions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Best Practices</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../path/index.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Switching a Group to Open Research Practices</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Survey</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Template Google Doc</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Feedback Form</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Additional Processes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lessons Learned and Iterative Improvements</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../matomo/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Matomo Analytics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../matomo/matomo-overview-and-setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview and Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../matomo/campaigns-and-reporting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Campaigns</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../matomo/adding-a-new-website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Adding Sites</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../misc-topics/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Miscellaneous Topics</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-11" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-11" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../misc-topics/our-licensing-choices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Our Licensing Choices</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../archive/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Archive</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-12" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../archive/using-fiona.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Fiona</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
+<p><img src="../assets/LMU_OSC_logo.svg" class="img-fluid" width="175"></p>
+</div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose-of-this-page" id="toc-purpose-of-this-page" class="nav-link active" data-scroll-target="#purpose-of-this-page">Purpose of this page</a></li>
+  <li><a href="#what-are-github-actions" id="toc-what-are-github-actions" class="nav-link" data-scroll-target="#what-are-github-actions">What are GitHub Actions?</a></li>
+  <li><a href="#core-concepts" id="toc-core-concepts" class="nav-link" data-scroll-target="#core-concepts">Core concepts</a>
+  <ul class="collapse">
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a></li>
+  <li><a href="#event" id="toc-event" class="nav-link" data-scroll-target="#event">Event</a></li>
+  <li><a href="#job" id="toc-job" class="nav-link" data-scroll-target="#job">Job</a></li>
+  <li><a href="#step" id="toc-step" class="nav-link" data-scroll-target="#step">Step</a></li>
+  <li><a href="#action" id="toc-action" class="nav-link" data-scroll-target="#action">Action</a></li>
+  <li><a href="#runner" id="toc-runner" class="nav-link" data-scroll-target="#runner">Runner</a></li>
+  </ul></li>
+  <li><a href="#anatomy-of-a-workflow-file" id="toc-anatomy-of-a-workflow-file" class="nav-link" data-scroll-target="#anatomy-of-a-workflow-file">Anatomy of a workflow file</a>
+  <ul class="collapse">
+  <li><a href="#yaml-basics-for-workflow-files" id="toc-yaml-basics-for-workflow-files" class="nav-link" data-scroll-target="#yaml-basics-for-workflow-files">YAML basics for workflow files</a></li>
+  <li><a href="#a-more-realistic-example" id="toc-a-more-realistic-example" class="nav-link" data-scroll-target="#a-more-realistic-example">A more realistic example</a></li>
+  </ul></li>
+  <li><a href="#where-workflows-live" id="toc-where-workflows-live" class="nav-link" data-scroll-target="#where-workflows-live">Where workflows live</a>
+  <ul class="collapse">
+  <li><a href="#adding-a-workflow" id="toc-adding-a-workflow" class="nav-link" data-scroll-target="#adding-a-workflow">Adding a workflow</a></li>
+  <li><a href="#editing-a-workflow" id="toc-editing-a-workflow" class="nav-link" data-scroll-target="#editing-a-workflow">Editing a workflow</a></li>
+  <li><a href="#removing-a-workflow" id="toc-removing-a-workflow" class="nav-link" data-scroll-target="#removing-a-workflow">Removing a workflow</a></li>
+  </ul></li>
+  <li><a href="#viewing-and-troubleshooting-workflow-runs" id="toc-viewing-and-troubleshooting-workflow-runs" class="nav-link" data-scroll-target="#viewing-and-troubleshooting-workflow-runs">Viewing and troubleshooting workflow runs</a>
+  <ul class="collapse">
+  <li><a href="#finding-workflow-runs" id="toc-finding-workflow-runs" class="nav-link" data-scroll-target="#finding-workflow-runs">Finding workflow runs</a></li>
+  <li><a href="#reading-run-results" id="toc-reading-run-results" class="nav-link" data-scroll-target="#reading-run-results">Reading run results</a></li>
+  <li><a href="#troubleshooting-common-issues" id="toc-troubleshooting-common-issues" class="nav-link" data-scroll-target="#troubleshooting-common-issues">Troubleshooting common issues</a></li>
+  </ul></li>
+  <li><a href="#events-and-triggers-in-more-detail" id="toc-events-and-triggers-in-more-detail" class="nav-link" data-scroll-target="#events-and-triggers-in-more-detail">Events and triggers in more detail</a>
+  <ul class="collapse">
+  <li><a href="#push" id="toc-push" class="nav-link" data-scroll-target="#push"><code>push</code></a></li>
+  <li><a href="#pull_request" id="toc-pull_request" class="nav-link" data-scroll-target="#pull_request"><code>pull_request</code></a></li>
+  <li><a href="#workflow_dispatch" id="toc-workflow_dispatch" class="nav-link" data-scroll-target="#workflow_dispatch"><code>workflow_dispatch</code></a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule"><code>schedule</code></a></li>
+  <li><a href="#combining-events" id="toc-combining-events" class="nav-link" data-scroll-target="#combining-events">Combining events</a></li>
+  </ul></li>
+  <li><a href="#our-primary-use-cases-at-the-osc" id="toc-our-primary-use-cases-at-the-osc" class="nav-link" data-scroll-target="#our-primary-use-cases-at-the-osc">Our primary use cases at the OSC</a>
+  <ul class="collapse">
+  <li><a href="#restoring-r-packages-with-renv" id="toc-restoring-r-packages-with-renv" class="nav-link" data-scroll-target="#restoring-r-packages-with-renv">1. Restoring R packages with renv</a></li>
+  <li><a href="#quarto-website-deployment" id="toc-quarto-website-deployment" class="nav-link" data-scroll-target="#quarto-website-deployment">2. Quarto website deployment</a></li>
+  <li><a href="#spellcheckers-american-english-and-german" id="toc-spellcheckers-american-english-and-german" class="nav-link" data-scroll-target="#spellcheckers-american-english-and-german">3. Spellcheckers (American English and German)</a></li>
+  <li><a href="#url-checkers-for-dead-links" id="toc-url-checkers-for-dead-links" class="nav-link" data-scroll-target="#url-checkers-for-dead-links">4. URL checkers for dead links</a></li>
+  <li><a href="#code-formatting-with-the-r-styler-package" id="toc-code-formatting-with-the-r-styler-package" class="nav-link" data-scroll-target="#code-formatting-with-the-r-styler-package">5. Code formatting with the R styler package</a></li>
+  </ul></li>
+  <li><a href="#best-practices-for-github-actions" id="toc-best-practices-for-github-actions" class="nav-link" data-scroll-target="#best-practices-for-github-actions">Best practices for GitHub Actions</a>
+  <ul class="collapse">
+  <li><a href="#use-specific-action-versions" id="toc-use-specific-action-versions" class="nav-link" data-scroll-target="#use-specific-action-versions">Use specific action versions</a></li>
+  <li><a href="#keep-workflows-focused" id="toc-keep-workflows-focused" class="nav-link" data-scroll-target="#keep-workflows-focused">Keep workflows focused</a></li>
+  <li><a href="#name-your-steps" id="toc-name-your-steps" class="nav-link" data-scroll-target="#name-your-steps">Name your steps</a></li>
+  <li><a href="#use-caching-when-possible" id="toc-use-caching-when-possible" class="nav-link" data-scroll-target="#use-caching-when-possible">Use caching when possible</a></li>
+  <li><a href="#dont-store-secrets-in-the-workflow-file" id="toc-dont-store-secrets-in-the-workflow-file" class="nav-link" data-scroll-target="#dont-store-secrets-in-the-workflow-file">Don’t store secrets in the workflow file</a></li>
+  <li><a href="#test-workflow-changes-on-a-branch" id="toc-test-workflow-changes-on-a-branch" class="nav-link" data-scroll-target="#test-workflow-changes-on-a-branch">Test workflow changes on a branch</a></li>
+  </ul></li>
+  <li><a href="#security-considerations" id="toc-security-considerations" class="nav-link" data-scroll-target="#security-considerations">Security considerations</a></li>
+  <li><a href="#self-check" id="toc-self-check" class="nav-link" data-scroll-target="#self-check">Self-check</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/actions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../github/index.html">GitHub Organization</a></li><li class="breadcrumb-item"><a href="../github/actions.html">GitHub Actions</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">GitHub Actions</h1>
+<p class="subtitle lead">What they are, how they work, and how we use them at the OSC</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="purpose-of-this-page" class="level2">
+<h2 class="anchored" data-anchor-id="purpose-of-this-page">Purpose of this page</h2>
+<p>This page introduces <strong>GitHub Actions</strong> from the ground up. If you’ve never used GitHub Actions before, you’ll learn what they are, how they work, and why they’re useful. If you already have some experience, you’ll find details on how we specifically use Actions at the OSC and what conventions we follow.</p>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>Explain what GitHub Actions are and what problems they solve.</li>
+<li>Understand the core concepts: workflows, jobs, steps, runners, and events.</li>
+<li>Read and understand a simple workflow file.</li>
+<li>Know where workflow files live and how to add, edit, or remove them.</li>
+<li>Find and interpret workflow run results.</li>
+<li>Recognize the common Actions we use at the OSC and what each one does.</li>
+</ul>
+<hr>
+</section>
+<section id="what-are-github-actions" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-github-actions">What are GitHub Actions?</h2>
+<p><strong>GitHub Actions</strong> is a built-in automation platform that lets you run tasks—called <em>actions</em>—in response to events that happen in your GitHub repository. Think of it as a way to tell GitHub: <em>“Whenever X happens, do Y.”</em></p>
+<p>Common examples include:</p>
+<ul>
+<li>Running tests automatically whenever someone opens a pull request.</li>
+<li>Building and deploying a website whenever new code is pushed to <code>main</code>.</li>
+<li>Checking for broken links or spelling mistakes on a schedule.</li>
+<li>Formatting code or running quality checks before merging.</li>
+</ul>
+<p>Before GitHub Actions existed, you had to use separate tools (like Jenkins, Travis CI, or CircleCI) to do these things, and you often had to configure them on your own servers. GitHub Actions is <strong>integrated directly into GitHub</strong>, which means:</p>
+<ul>
+<li>No separate accounts or servers to set up (for most cases).</li>
+<li>Results appear right inside your repository, on pull requests and in the GitHub interface.</li>
+<li>It’s free for public repositories and includes a generous free tier for private ones.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Note for beginners:</strong> If you’ve never used a CI/CD (Continuous Integration / Continuous Deployment) tool before, don’t worry. The basic idea is simple: you write a recipe (a “workflow”) that tells GitHub what to do, and GitHub follows that recipe automatically when certain things happen in your repository. The rest of this page walks you through everything you need to know.</p>
+</blockquote>
+<hr>
+</section>
+<section id="core-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="core-concepts">Core concepts</h2>
+<p>Before we dive into examples, let’s build a mental model of the key pieces. Each term builds on the previous one.</p>
+<section id="workflow" class="level3">
+<h3 class="anchored" data-anchor-id="workflow">Workflow</h3>
+<p>A <strong>workflow</strong> is the top-level unit of automation: a complete, automated process made up of one or more jobs. Workflows are defined in YAML files (a human-readable data format, similar to a simpler version of JSON). You’ll learn the YAML syntax shortly.</p>
+<p>A workflow is:</p>
+<ul>
+<li><strong>Triggered by one or more events</strong> (e.g., a push, a pull request, a scheduled time).</li>
+<li><strong>Stored in your repository</strong> inside the <code>.github/workflows/</code> directory.</li>
+<li><strong>Named</strong> by the filename (e.g., <code>deploy-website.yml</code>).</li>
+</ul>
+</section>
+<section id="event" class="level3">
+<h3 class="anchored" data-anchor-id="event">Event</h3>
+<p>An <strong>event</strong> is a specific activity that triggers a workflow. Examples:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Event</th>
+<th>When it happens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>push</code></td>
+<td>Code is pushed to a branch.</td>
+</tr>
+<tr class="even">
+<td><code>pull_request</code></td>
+<td>A pull request is opened, updated, or reopened.</td>
+</tr>
+<tr class="odd">
+<td><code>workflow_dispatch</code></td>
+<td>Someone manually triggers the workflow from the GitHub UI.</td>
+</tr>
+<tr class="even">
+<td><code>schedule</code></td>
+<td>A pre-defined time (using cron syntax).</td>
+</tr>
+<tr class="odd">
+<td><code>issues</code></td>
+<td>An issue is opened, closed, or edited.</td>
+</tr>
+</tbody>
+</table>
+<p>A workflow can listen for multiple events.</p>
+</section>
+<section id="job" class="level3">
+<h3 class="anchored" data-anchor-id="job">Job</h3>
+<p>A <strong>job</strong> is a set of steps that execute on the same runner. A workflow can have one job or multiple jobs. Jobs can run:</p>
+<ul>
+<li><strong>In parallel</strong> (the default) — useful when jobs are independent of each other.</li>
+<li><strong>Sequentially</strong> — useful when one job depends on the output of another (e.g., deploy only after tests pass).</li>
+</ul>
+</section>
+<section id="step" class="level3">
+<h3 class="anchored" data-anchor-id="step">Step</h3>
+<p>A <strong>step</strong> is an individual task within a job. Steps can be:</p>
+<ul>
+<li><strong>Shell commands</strong> (e.g., <code>npm install</code>, <code>python script.py</code>).</li>
+<li><strong>Actions</strong> — reusable units of code (more on these below).</li>
+</ul>
+<p>Steps within a job share the same filesystem (so a file created in one step is available in the next).</p>
+</section>
+<section id="action" class="level3">
+<h3 class="anchored" data-anchor-id="action">Action</h3>
+<p>An <strong>action</strong> is a reusable, packaged piece of code that performs a specific task. Actions are the building blocks of workflows. Instead of writing everything from scratch, you can use pre-built actions from the <a href="https://github.com/marketplace?type=actions">GitHub Marketplace</a> or write your own.</p>
+<p>For example, instead of writing a script to check out your repository, you use the official <code>actions/checkout</code> action. Instead of manually installing a programming language, you use <code>actions/setup-python</code> or <code>r-lib/actions/setup-r</code>.</p>
+<p>Think of actions as <strong>function calls</strong> for your workflow — they save you from reinventing the wheel.</p>
+</section>
+<section id="runner" class="level3">
+<h3 class="anchored" data-anchor-id="runner">Runner</h3>
+<p>A <strong>runner</strong> is a server that executes your workflows. There are two types:</p>
+<ul>
+<li><strong>GitHub-hosted runners</strong>: Virtual machines provided by GitHub with common tools pre-installed (Ubuntu Linux, Windows, macOS). For public repositories, these are free up to a usage limit.</li>
+<li><strong>Self-hosted runners</strong>: Servers you manage yourself. We don’t currently use these at the OSC.</li>
+</ul>
+<p>When a workflow is triggered, GitHub spins up a fresh runner, runs your jobs, and then discards the runner. This means each run starts from a clean slate — no files or state carry over between runs.</p>
+<blockquote class="blockquote">
+<p><strong>Tip:</strong> This clean-slate design is important. If your workflow needs certain software installed, it must install it every time (or use a pre-built action that does it for you).</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="anatomy-of-a-workflow-file" class="level2">
+<h2 class="anchored" data-anchor-id="anatomy-of-a-workflow-file">Anatomy of a workflow file</h2>
+<p>Workflow files are written in <strong>YAML</strong> and stored in <code>.github/workflows/</code> at the root of your repository. Let’s look at a minimal example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># .github/workflows/example.yml</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Example Workflow</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pull_request</span><span class="kw">:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">greet</span><span class="kw">:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Say hello</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> echo "Hello, world!"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Let’s break this down line by line:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Line(s)</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>name: Example Workflow</code></td>
+<td>A human-readable name for the workflow. Appears in the GitHub UI.</td>
+</tr>
+<tr class="even">
+<td><code>on:</code></td>
+<td>Defines the <strong>triggering events</strong>. Here, the workflow runs on pushes and pull requests to <code>main</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>jobs:</code></td>
+<td>The start of the jobs section.</td>
+</tr>
+<tr class="even">
+<td><code>greet:</code></td>
+<td>The <strong>identifier</strong> for one job. You can name jobs whatever you like.</td>
+</tr>
+<tr class="odd">
+<td><code>runs-on: ubuntu-latest</code></td>
+<td>Specifies the <strong>runner</strong> type. <code>ubuntu-latest</code> is GitHub’s standard Linux runner.</td>
+</tr>
+<tr class="even">
+<td><code>steps:</code></td>
+<td>The list of steps this job will execute, in order.</td>
+</tr>
+<tr class="odd">
+<td><code>- name: ...</code></td>
+<td>A human-readable label for the step (optional but recommended).</td>
+</tr>
+<tr class="even">
+<td><code>uses: actions/checkout@v4</code></td>
+<td>Uses the official <code>checkout</code> action to clone your repository onto the runner.</td>
+</tr>
+<tr class="odd">
+<td><code>run: echo "Hello, world!"</code></td>
+<td>Runs a shell command directly.</td>
+</tr>
+</tbody>
+</table>
+<section id="yaml-basics-for-workflow-files" class="level3">
+<h3 class="anchored" data-anchor-id="yaml-basics-for-workflow-files">YAML basics for workflow files</h3>
+<p>If you’re new to YAML, here’s what you need to know to read workflow files:</p>
+<ul>
+<li><strong>Indentation matters</strong>: YAML uses spaces (not tabs) to indicate nesting. Two spaces per level is the convention.</li>
+<li><strong><code>key: value</code></strong> pairs define mappings.</li>
+<li><strong>Lists</strong> start with <code>-</code> (a hyphen followed by a space).</li>
+<li><strong>Comments</strong> start with <code>#</code>.</li>
+<li><strong>Strings</strong> usually don’t need quotes, but it’s safe to use them.</li>
+</ul>
+</section>
+<section id="a-more-realistic-example" class="level3">
+<h3 class="anchored" data-anchor-id="a-more-realistic-example">A more realistic example</h3>
+<p>Here’s a workflow that installs R packages with renv and runs a script:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> R Check</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pull_request</span><span class="kw">:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">r-check</span><span class="kw">:</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Check out repository</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up R</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> r-lib/actions/setup-r@v2</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Restore renv packages</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> r-lib/actions/setup-renv@v2</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run R script</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> Rscript -e 'rmarkdown::render_site()'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Notice how the <code>uses</code> keyword pulls in pre-built actions. The <code>r-lib/actions/setup-r@v2</code> action installs R on the runner, and <code>r-lib/actions/setup-renv@v2</code> restores the packages from your <code>renv.lock</code> file. You didn’t have to write any of that installation logic — the actions handle it.</p>
+<hr>
+</section>
+</section>
+<section id="where-workflows-live" class="level2">
+<h2 class="anchored" data-anchor-id="where-workflows-live">Where workflows live</h2>
+<p>Workflow files must be placed in a specific directory at the root of your repository:</p>
+<pre><code>your-repository/
+└── .github/
+    └── workflows/
+        ├── deploy-website.yml
+        ├── spellcheck.yml
+        └── url-check.yml</code></pre>
+<p>The directory name is case-sensitive: <code>.github/workflows/</code> (note the dot at the start). Each <code>.yml</code> file in this directory defines a separate workflow. GitHub automatically discovers and activates them.</p>
+<section id="adding-a-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="adding-a-workflow">Adding a workflow</h3>
+<p>To add a new workflow:</p>
+<ol type="1">
+<li>Create the directory <code>.github/workflows/</code> if it doesn’t exist.</li>
+<li>Create a new <code>.yml</code> file inside it (e.g., <code>deploy-website.yml</code>).</li>
+<li>Write your workflow definition (or copy an existing one and adapt it).</li>
+<li>Commit and push the file to your repository.</li>
+<li>GitHub will automatically pick up the new workflow the next time its trigger event occurs.</li>
+</ol>
+</section>
+<section id="editing-a-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="editing-a-workflow">Editing a workflow</h3>
+<p>Simply edit the <code>.yml</code> file in the <code>.github/workflows/</code> directory, commit, and push. The next workflow run will use the updated version.</p>
+</section>
+<section id="removing-a-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="removing-a-workflow">Removing a workflow</h3>
+<p>Delete the <code>.yml</code> file from <code>.github/workflows/</code>, commit, and push. GitHub will stop triggering that workflow.</p>
+<blockquote class="blockquote">
+<p><strong>Tip:</strong> If you want to temporarily disable a workflow without deleting the file, you can set it to trigger on <code>workflow_dispatch</code> only (manual trigger), or add a <code>if: false</code> condition at the top of the workflow.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="viewing-and-troubleshooting-workflow-runs" class="level2">
+<h2 class="anchored" data-anchor-id="viewing-and-troubleshooting-workflow-runs">Viewing and troubleshooting workflow runs</h2>
+<section id="finding-workflow-runs" class="level3">
+<h3 class="anchored" data-anchor-id="finding-workflow-runs">Finding workflow runs</h3>
+<p>Every workflow run appears in your repository under the <strong>“Actions” tab</strong> (the tab with a play/stopwatch icon). From there you can:</p>
+<ul>
+<li>See a list of all recent workflow runs, sorted by most recent.</li>
+<li>Filter by workflow name, branch, status (success, failure, cancelled), or event (push, PR, etc.).</li>
+<li>Click on any run to see its details.</li>
+</ul>
+</section>
+<section id="reading-run-results" class="level3">
+<h3 class="anchored" data-anchor-id="reading-run-results">Reading run results</h3>
+<p>When you click into a specific workflow run, you’ll see:</p>
+<ol type="1">
+<li><strong>The commit that triggered the run</strong> — useful for correlating code changes with workflow results.</li>
+<li><strong>The list of jobs</strong> — click on a job to expand its steps.</li>
+<li><strong>Each step’s log output</strong> — click on a step to see its full console output. This is where you look when something goes wrong.</li>
+</ol>
+<p>GitHub also surfaces workflow results directly on pull requests: a green checkmark ✅ means all checks passed, a red ✖ means something failed, and a yellow circle means checks are still running.</p>
+</section>
+<section id="troubleshooting-common-issues" class="level3">
+<h3 class="anchored" data-anchor-id="troubleshooting-common-issues">Troubleshooting common issues</h3>
+<p>When a workflow fails, here’s how to diagnose it:</p>
+<ol type="1">
+<li><strong>Go to the Actions tab</strong> and find the failing run.</li>
+<li><strong>Click on the run</strong>, then click on the failed job.</li>
+<li><strong>Look for the step that has a red ✖</strong> — that’s where the error occurred.</li>
+<li><strong>Expand that step</strong> to read its log output. The error message is usually at the bottom.</li>
+</ol>
+<p>Common failure patterns:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symptom</th>
+<th>Likely cause</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Command not found</code></td>
+<td>A required tool isn’t installed — add a setup step (e.g., <code>actions/setup-python</code>).</td>
+</tr>
+<tr class="even">
+<td><code>Permission denied</code></td>
+<td>The workflow doesn’t have the right permissions. Check the workflow’s <code>permissions</code> setting.</td>
+</tr>
+<tr class="odd">
+<td><code>Cannot find file</code></td>
+<td>The <code>actions/checkout</code> step is missing or placed too late — add it early in the job.</td>
+</tr>
+<tr class="even">
+<td><code>renv package restore failed</code></td>
+<td>The <code>renv.lock</code> file is out of sync with <code>renv/</code> directory — run <code>renv::snapshot()</code> locally and commit the updated files.</td>
+</tr>
+<tr class="odd">
+<td>Workflow didn’t run</td>
+<td>The file might not be in <code>.github/workflows/</code>, or the trigger event doesn’t match.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><strong>Tip:</strong> You can also re-run a workflow from the Actions tab. This is useful if a failure was due to a transient issue (e.g., a network timeout). GitHub even offers a “Re-run failed jobs” option, which only re-runs the jobs that failed, saving time.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="events-and-triggers-in-more-detail" class="level2">
+<h2 class="anchored" data-anchor-id="events-and-triggers-in-more-detail">Events and triggers in more detail</h2>
+<p>We touched on events earlier. Here’s a deeper look at the ones we use most frequently at the OSC.</p>
+<section id="push" class="level3">
+<h3 class="anchored" data-anchor-id="push"><code>push</code></h3>
+<p>Triggers the workflow whenever commits are pushed to a branch. You can narrow it to specific branches:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You can also exclude branches:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches-ignore</span><span class="kw">:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="st">'wip/**'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="pull_request" class="level3">
+<h3 class="anchored" data-anchor-id="pull_request"><code>pull_request</code></h3>
+<p>Triggers when a pull request is opened, synchronized (new commits are pushed), or reopened.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pull_request</span><span class="kw">:</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A useful distinction: <code>push</code> runs on your branch as you work; <code>pull_request</code> runs on the <strong>merge result</strong> (i.e., the combination of your branch and the target branch). This means a PR check can catch merge conflicts before they land on <code>main</code>.</p>
+</section>
+<section id="workflow_dispatch" class="level3">
+<h3 class="anchored" data-anchor-id="workflow_dispatch"><code>workflow_dispatch</code></h3>
+<p>Allows you to trigger the workflow <strong>manually</strong> from the GitHub UI. This is great for workflows you only want to run on demand.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Once this is configured, a “Run workflow” button appears on the Actions tab. You can even add <strong>inputs</strong> — parameters you can set when triggering the workflow:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">inputs</span><span class="kw">:</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">environment</span><span class="kw">:</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">'Deployment target'</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">required</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">default</span><span class="kw">:</span><span class="at"> </span><span class="st">'staging'</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">type</span><span class="kw">:</span><span class="at"> choice</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">options</span><span class="kw">:</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> staging</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="kw">-</span><span class="at"> production</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="schedule" class="level3">
+<h3 class="anchored" data-anchor-id="schedule"><code>schedule</code></h3>
+<p>Triggers the workflow at a scheduled time using <strong>cron syntax</strong>. This is useful for periodic checks (e.g., running a spellchecker every Monday morning).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">schedule</span><span class="kw">:</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">cron</span><span class="kw">:</span><span class="at"> </span><span class="st">'0 6 * * 1'</span><span class="co">   # Every Monday at 6:00 AM UTC</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Cron syntax can look cryptic at first. Here’s a quick reference:</p>
+<pre><code> ┌───────── minute (0-59)
+ │ ┌───────── hour (0-23)
+ │ │ ┌───────── day of month (1-31)
+ │ │ │ ┌───────── month (1-12)
+ │ │ │ │ ┌───────── day of week (0-6, Sunday=0)
+ │ │ │ │ │
+ * * * * *</code></pre>
+<p>Some common examples:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Cron expression</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>0 6 * * 1</code></td>
+<td>Every Monday at 6:00 AM UTC</td>
+</tr>
+<tr class="even">
+<td><code>0 0 * * *</code></td>
+<td>Daily at midnight UTC</td>
+</tr>
+<tr class="odd">
+<td><code>0 */6 * * *</code></td>
+<td>Every 6 hours</td>
+</tr>
+<tr class="even">
+<td><code>30 8 * * 1-5</code></td>
+<td>Weekdays at 8:30 AM UTC</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="blockquote">
+<p><strong>Tip:</strong> You can use a site like <a href="https://crontab.guru/">crontab.guru</a> to build and check cron expressions interactively.</p>
+</blockquote>
+</section>
+<section id="combining-events" class="level3">
+<h3 class="anchored" data-anchor-id="combining-events">Combining events</h3>
+<p>You can list multiple events, and the workflow will trigger when <em>any</em> of them occur:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pull_request</span><span class="kw">:</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">schedule</span><span class="kw">:</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">cron</span><span class="kw">:</span><span class="at"> </span><span class="st">'0 6 * * 1'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="our-primary-use-cases-at-the-osc" class="level2">
+<h2 class="anchored" data-anchor-id="our-primary-use-cases-at-the-osc">Our primary use cases at the OSC</h2>
+<p>Now let’s look at how we actually use GitHub Actions in our organization. These are the workflows you’re most likely to encounter, maintain, or create as a member of the OSC.</p>
+<section id="restoring-r-packages-with-renv" class="level3">
+<h3 class="anchored" data-anchor-id="restoring-r-packages-with-renv">1. Restoring R packages with renv</h3>
+<p>Many of our projects use R, and we manage package dependencies with <strong>renv</strong>. When a workflow runs on a GitHub runner, it starts with a clean environment — no R packages installed. So the first thing we need to do is restore the project’s R packages.</p>
+<p>We use the <code>r-lib/actions/setup-renv</code> action, which:</p>
+<ol type="1">
+<li>Installs R (if not already installed via <code>setup-r</code>).</li>
+<li>Reads the <code>renv.lock</code> file to determine which packages are needed.</li>
+<li>Installs them from the R package repository (CRAN).</li>
+<li>Caches the installed packages so that subsequent runs are faster.</li>
+</ol>
+<p>The typical pattern looks like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up R</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> r-lib/actions/setup-r@v2</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Restore renv packages</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> r-lib/actions/setup-renv@v2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This is usually one of the first steps in any R-related workflow. Without it, subsequent steps that try to use R packages would fail.</p>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> Keep your <code>renv.lock</code> file in sync with your project’s dependencies. If you add a new package with <code>renv::install()</code>, run <code>renv::snapshot()</code> to update the lockfile, and commit the changes. Otherwise, the workflow will try to restore an outdated package set.</p>
+</blockquote>
+</section>
+<section id="quarto-website-deployment" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-website-deployment">2. Quarto website deployment</h3>
+<p>Several of our projects are <strong>Quarto websites</strong> (including this manual). When changes are pushed to <code>main</code>, we want the website to be rebuilt and deployed automatically.</p>
+<p>Our deployment workflow typically:</p>
+<ol type="1">
+<li>Checks out the repository.</li>
+<li>Installs Quarto (using an action or the system package manager).</li>
+<li>Installs R (if the project uses R-based features like <code>engines</code>).</li>
+<li>Restores renv packages (if the project depends on R packages).</li>
+<li>Runs <code>quarto render</code> to build the site.</li>
+<li>Deploys the output (often to GitHub Pages).</li>
+</ol>
+<p>A simplified version:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy Quarto Website</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">deploy</span><span class="kw">:</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Quarto</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/setup@v2</span></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up R</span></span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> r-lib/actions/setup-r@v2</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Restore renv packages</span></span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> r-lib/actions/setup-renv@v2</span></span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and Publish</span></span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
+<span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The <code>${{ secrets.GITHUB_TOKEN }}</code> is a special token that GitHub automatically provides to every workflow run. It allows the workflow to push to your repository without you having to create and manage a personal access token.</p>
+</section>
+<section id="spellcheckers-american-english-and-german" class="level3">
+<h3 class="anchored" data-anchor-id="spellcheckers-american-english-and-german">3. Spellcheckers (American English and German)</h3>
+<p>Our website content is written in both <strong>American English</strong> and <strong>German</strong>. To catch typos before they go live, we run spellchecking workflows—either on pull requests or on a schedule. This is only in use in our main website at current so please refer to the documentation in that repo for specific details.</p>
+</section>
+<section id="url-checkers-for-dead-links" class="level3">
+<h3 class="anchored" data-anchor-id="url-checkers-for-dead-links">4. URL checkers for dead links</h3>
+<p>Broken links undermine the credibility of our websites. We run a <strong>link checker</strong> workflow to scan for dead links and report them.</p>
+<p>This runs on a schedule (e.g., weekly) and uses an action like <code>lycheeverse/lychee-action</code> to check all URLs in our Markdown and HTML files. This likewise is currently only in use in our main website, so please refer to the documentation in that repo for specific details.</p>
+</section>
+<section id="code-formatting-with-the-r-styler-package" class="level3">
+<h3 class="anchored" data-anchor-id="code-formatting-with-the-r-styler-package">5. Code formatting with the R styler package</h3>
+<p>Consistent code style makes our R code easier to read and maintain. The <strong>styler</strong> workflow automatically formats R code according to a standard style guide.</p>
+<p>We use the <a href="https://github.com/r-lib/actions/tree/v2-branch/examples#style-package">styler workflow</a> from the <code>r-lib/actions</code> repository.</p>
+<p>One difference to note is that the documentation provided above uses:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Style</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> styler::style_pkg()</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>However, we are not styling R packages but rather just a directory of files that may or may not be in a package structure. Therefore, we use:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Style</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> styler::style_dir()</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="best-practices-for-github-actions" class="level2">
+<h2 class="anchored" data-anchor-id="best-practices-for-github-actions">Best practices for GitHub Actions</h2>
+<p>Here are some guidelines to keep your workflows reliable and maintainable.</p>
+<section id="use-specific-action-versions" class="level3">
+<h3 class="anchored" data-anchor-id="use-specific-action-versions">Use specific action versions</h3>
+<p>Always pin actions to a specific version tag (e.g., <code>@v4</code>, <code>@v2</code>) rather than using <code>@main</code> or <code>@master</code>. This prevents unexpected changes from breaking your workflows when action maintainers update their code.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Good --- version is explicit</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Risky --- could break when the action is updated</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@main</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="keep-workflows-focused" class="level3">
+<h3 class="anchored" data-anchor-id="keep-workflows-focused">Keep workflows focused</h3>
+<p>Each workflow should do one thing well. If you have a spellchecker and a deployment workflow, keep them in separate files. This makes it easier to:</p>
+<ul>
+<li>See at a glance what automation exists.</li>
+<li>Re-run a single workflow without triggering others.</li>
+<li>Understand failures (a spellcheck failure shouldn’t block deployment).</li>
+</ul>
+</section>
+<section id="name-your-steps" class="level3">
+<h3 class="anchored" data-anchor-id="name-your-steps">Name your steps</h3>
+<p>Adding <code>name</code> to each step makes the workflow log much easier to read, especially when a step fails:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Good</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install dependencies</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm install</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Less helpful</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm install</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="use-caching-when-possible" class="level3">
+<h3 class="anchored" data-anchor-id="use-caching-when-possible">Use caching when possible</h3>
+<p>Some GitHub Actions support caching, which speeds up subsequent runs. The <code>setup-renv</code> action caches R packages automatically. For other languages, look for <code>setup-*</code> actions that support caching (e.g., <code>actions/setup-node</code> with <code>cache: 'npm'</code>).</p>
+</section>
+<section id="dont-store-secrets-in-the-workflow-file" class="level3">
+<h3 class="anchored" data-anchor-id="dont-store-secrets-in-the-workflow-file">Don’t store secrets in the workflow file</h3>
+<p>Never hard-code passwords, tokens, or API keys in your workflow YAML. Use <strong>GitHub Secrets</strong> instead (found under Settings → Secrets and variables → Actions in your repository). Reference them with <code>${{ secrets.SECRET_NAME }}</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Good</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">run</span><span class="kw">:</span><span class="at"> deploy-script.sh</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">API_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.DEPLOY_TOKEN }}</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Bad --- don't do this</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">run</span><span class="kw">:</span><span class="at"> deploy-script.sh</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">API_TOKEN</span><span class="kw">:</span><span class="at"> </span><span class="st">"my-super-secret-token"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="test-workflow-changes-on-a-branch" class="level3">
+<h3 class="anchored" data-anchor-id="test-workflow-changes-on-a-branch">Test workflow changes on a branch</h3>
+<p>If you’re modifying a workflow file or adding a new one, do it on a branch and open a pull request. This way, you can see the workflow run against your changes before they land on <code>main</code>. The workflow file itself is part of the repository, so it will be triggered by the PR that introduces it.</p>
+<hr>
+</section>
+</section>
+<section id="security-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="security-considerations">Security considerations</h2>
+<p>While GitHub Actions is powerful, it’s important to use it safely:</p>
+<ul>
+<li><strong>Review actions from the Marketplace</strong>: Anyone can publish an action on the GitHub Marketplace. For critical workflows, prefer actions from well-known publishers (like <code>actions/</code>, <code>r-lib/</code>, <code>quarto-dev/</code>).</li>
+<li><strong>Limit permissions</strong>: You can set the default <code>GITHUB_TOKEN</code> permissions to be as restrictive as possible. In your workflow, use the <code>permissions</code> key to grant only what’s needed.</li>
+<li><strong>Be careful with <code>pull_request_target</code></strong>: This event runs workflows in the context of the target repository (not the PR), giving them access to secrets. <em>We do not currently have any use cases for this event, and we recommend against using it unless you have a specific need and understand the security implications. We only mention it here because some users might encounter workflow templates using this event.</em></li>
+</ul>
+<hr>
+</section>
+<section id="self-check" class="level2">
+<h2 class="anchored" data-anchor-id="self-check">Self-check</h2>
+<p>After reading this page, you should be able to answer “yes” to each of these:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Can I explain what GitHub Actions are and why we use them?</label></li>
+<li><label><input type="checkbox">Do I understand the difference between a workflow, a job, a step, and an action?</label></li>
+<li><label><input type="checkbox">Can I identify where workflow files are stored (<code>.github/workflows/</code>)?</label></li>
+<li><label><input type="checkbox">Do I know how to find and read a workflow run’s results on the Actions tab?</label></li>
+<li><label><input type="checkbox">Can I name at least three events that can trigger a workflow?</label></li>
+<li><label><input type="checkbox">Do I know what a runner is and why each run starts from a clean environment?</label></li>
+<li><label><input type="checkbox">Can I list the main ways we use GitHub Actions at the OSC (deployment, spellcheck, link checking, R package restoration, code formatting)?</label></li>
+<li><label><input type="checkbox">Do I know how to troubleshoot a failed workflow run?</label></li>
+<li><label><input type="checkbox">Do I understand why we pin action versions and avoid hard-coding secrets?</label></li>
+</ul>
+<p>If you checked all the boxes, you’re ready to work with—and create—GitHub Actions workflows in our organization!</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/manual\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../github/working-practices.html" class="pagination-link" aria-label="Working Practices">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Working Practices</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../updating-website/index.html" class="pagination-link" aria-label="Updating Website">
+        <span class="nav-page-text">Updating Website</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Copyright, 2024 Open Science Center at LMU Munich</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/github/actions.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
