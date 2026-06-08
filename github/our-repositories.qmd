@@ -66,6 +66,7 @@ The repository has three key branches:
 | `prod-pages` | The rendered HTML output, automatically deployed to the live website. **Never modify this branch directly.** |
 | `gh-pages` | The rendered HTML output, automatically deployed to the GitHub Pages version of the website. **Never modify this branch directly.** |
 
+
 ### `webhook-receiver` --- Deployment automation
 
 **[github.com/lmu-osc/webhook-receiver](https://github.com/lmu-osc/webhook-receiver)** is a small Go application that bridges GitHub and our web server. It:
@@ -74,6 +75,8 @@ The repository has three key branches:
 2. **Pulls the updated content** to our internal server, making the changes live.
 
 This means publishing a change to the website is as simple as merging a PR into `main` --- the Quarto rendering workflow produces the static site on `prod-pages`, and the webhook receiver deploys it automatically.
+
+For detailed information on the deployment pipeline, see the [Main Website Deployment Details](/misc-topics/main-website-deployment.qmd) page.
 
 ### `osc-website-transfer` --- Legacy migration tooling (archived)
 
