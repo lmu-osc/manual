@@ -1,0 +1,182 @@
+---
+title: Git and GitHub Review
+subtitle: A refresher on the basics of Git and GitHub for version control and collaboration
+---
+
+## Purpose of this page
+
+This page provides a **quick overview** of Git and GitHub and lays out the **expectations of knowledge** we assume when you start working with us. It's not an exhaustive tutorial --- there are plenty of excellent ones out there (linked below) --- but it should give you a clear picture of what you need to be comfortable with and where to go if you need to brush up.
+
+If you're already confident with Git and GitHub, feel free to skip straight to the next pages in this section. If you're newer to these tools, work through the resources listed below and come back here as a checklist to make sure you've covered the essentials.
+
+You will also need to know how to **set up an SSH connection** between your computer and your GitHub account to authenticate your Git client. If you're not familiar with this yet, don't worry --- our introductory tutorials below cover the process.
+
+---
+
+## Learning resources
+
+### OSC introductory tutorials
+
+These two tutorials are designed for beginners and use RStudio, which is common among OSC members:
+
+- [Introduction to RStudio, Git, and GitHub](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) --- covers the very basics: creating a repository, staging, committing, pushing, and setting up SSH.
+- [Collaborative RStudio, Git, and GitHub](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/) --- dives into collaboration: branches, pull requests, and working with others.
+
+### Recommended video tutorials
+
+- [Git & GitHub Crash Course (Boot.dev)](https://www.youtube.com/watch?v=rH3zE7VlIMs) --- a hands-on, visual walkthrough. The same content is available as an interactive tutorial on the [Boot.dev](https://boot.dev) website (free tier available). Consider doing the interactive version first, then watch the video to reinforce the concepts.
+
+### Commit messages
+
+- [How to Write a Git Commit Message](https://cbea.ms/git-commit/) by Chris Beams --- the definitive guide (~15-minute read).
+- [The Art of Writing Meaningful Git Commit Messages](https://medium.com/@iambonitheuri/the-art-of-writing-meaningful-git-commit-messages-a56887a4cb49) --- a complementary take with practical examples.
+
+### Official documentation
+
+- [Git Book](https://git-scm.com/book/en/v2) --- the official, comprehensive resource. Chapters 2 and 3 cover everything you need to get started.
+- [GitHub Docs](https://docs.github.com/en) --- guides for all GitHub features, including pull requests, issues, and organisation management.
+
+---
+
+## Why version control matters
+
+Version control is the backbone of reproducible, collaborative research software and documentation. Git tracks *who* changed *what*, *when*, and *why*, making it possible to:
+
+- Work on multiple features or fixes simultaneously without stepping on each other's toes.
+- Revert mistakes without losing history.
+- Review changes before they become permanent.
+- Tag releases and keep a clear record of your project's evolution.
+
+GitHub builds on top of Git by providing a shared, web-based platform for hosting repositories, reviewing code, tracking work, and collaborating with others.
+
+---
+
+## What you should know: Git
+
+You should be comfortable with the following Git concepts and commands before contributing to our projects.
+
+### Core workflow
+
+| Concept / Command | What it does |
+|---|---|
+| `git init` / `git clone` | Start a new repository or get a local copy of an existing one. |
+| `git status` | Check which files are modified, staged, or untracked. |
+| `git add` | Stage changes for a commit. |
+| `git commit` | Save a snapshot of your staged changes with a message. |
+| `git log` | View the commit history. |
+| `git push` | Upload your local commits to a remote repository. |
+| `git pull` | Fetch and integrate changes from a remote repository. |
+
+### Branching and merging
+
+- **Branches** let you isolate work on different features, fixes, or experiments. The default branch is typically called `main`.
+- **Creating and switching branches**: There are a few related commands worth knowing for creating and switching branches. Note: there is some overlap in functionality, and the Git community has been moving towards the newer `switch` command for clarity, but you'll still see all of these in use:
+  - `git branch <name>` --- creates a new branch but **does not** switch to it. You'd then use `git switch <name>` (or older: `git checkout <name>`) to move onto it.
+  - `git switch -c <name>` --- creates a new branch **and** switches to it in one step. This is the modern, recommended approach.
+  - `git checkout -b <name>` --- does the same thing as `git switch -c`, but uses the older `checkout` syntax. You'll still see this in many tutorials and workflows.
+- **Merging**: `git merge <branch>` integrates changes from one branch into another. Knowing how to resolve **merge conflicts** when they arise is essential --- Git will mark the conflicting regions and you'll need to decide which changes to keep.
+    - Learning to merge is a topic of its own, but note that we generally use GitHub's pull request interface to handle merges, which provides a more user-friendly way to review changes and resolve conflicts before merging.
+- **Pull before you push**: Always pull the latest changes from the remote before pushing, especially on shared branches, to minimise conflicts.
+
+### Remotes
+
+A **remote** is a version of your repository hosted elsewhere (e.g., on GitHub). The default remote is usually named `origin`. You should understand how to:
+
+- `git remote add origin <url>` --- links your local repository to a remote one so you can push and pull changes to and from it. You only need to do this once when setting up a local copy of a repository that wasn't created by cloning.
+- `git fetch` --- downloads new data from the remote (new branches, commits, tags) but doesn't integrate them into your local working files. It's a safe way to see what's changed upstream without affecting your work-in-progress.
+- `git push origin <branch>` --- uploads your local commits on the specified branch to the remote, making them available to collaborators. You'll use this to share your work and update pull requests. (In contrast to the `git push -u` variant, this command does not set an upstream tracking link, so future pushes would require specifying the remote and branch name again.)
+- `git push -u origin <branch>` --- same as `git push`, but also sets an upstream tracking link so that future pushes and pulls on this branch can be done with just `git push` or `git pull` without specifying the remote or branch name.
+
+### Stashing
+
+`git stash` temporarily shelves changes you're not ready to commit. Useful when you need to switch branches quickly. `git stash pop` re-applies the most recently stashed changes.
+
+---
+
+## What you should know: GitHub
+
+GitHub is where we host our repositories and collaborate. You should be familiar with the following.
+
+### Repositories
+
+- A **repository** (or "repo") is a project folder that contains all the files and their version history.
+- Repositories can be **public** (visible to anyone) or **private** (visible only to invited collaborators). At the OSC, our content repositories are public; some internal tooling may be private.
+
+### Issues
+
+- **Issues** are used to track bugs, feature requests, tasks, and ideas.
+- Each issue can have labels, assignees, milestones, and comments.
+- Issues can reference each other and pull requests (e.g., "Closes #42" in a PR description).
+
+### Pull requests
+
+Pull requests (PRs) are the mechanism for proposing changes to a repository. They are central to our workflow. You should understand:
+
+1. **Creating a PR**: Push a branch to GitHub and open a PR against the target branch (usually `main`).
+2. **Reviewing a PR**: Leave comments on specific lines, approve changes, or request further work.
+3. **Merging a PR**: Once approved, the PR can be merged. Common merge strategies include:
+   - **Squash and merge** (combines all commits into one). This is our default and preferred approach for keeping a clean history.
+   - **Merge commit** (preserves all commits)
+   - **Rebase and merge** (applies commits one by one on top of the target branch)
+4. **Draft PRs**: A PR can be opened as a "draft" to signal that work is still in progress.
+
+### Forks vs. branches
+
+- **Branching within a repo** is the standard approach when you have write access to the repository. You create a branch, make changes, and open a PR.
+- **Forking** creates a personal copy of a repository under your own GitHub account. This is more common when contributing to projects where you don't have write access. For OSC internal projects, we generally work within shared repositories using branches.
+
+### Code reviews
+
+We use PRs as an opportunity for **code review** --- a chance for others to read, question, and improve your contributions before they become permanent. Be open to feedback, and remember that reviews are about improving the code, not criticizing the author.
+
+---
+
+## OSC expectations and conventions
+
+When working on OSC projects, please follow these guidelines:
+
+### 1. Don't commit directly to `main`
+
+The `main` branch should always be in a deployable or publishable state. As a rule, never commit directly to `main`. Always create a new branch for your work, and open a PR when you're ready to merge. This allows for review and keeps the history clean. If you accidentally commit to `main`, don't panic --- you should look up how to revert or reset commits, and ask for help if you're unsure.
+
+### 2. Write meaningful commit messages
+
+A good commit message explains **why** a change was made, not just **what** was changed. A widely-used convention is:
+
+```
+Short (50 chars or less) summary of changes
+
+More detailed explanatory text, if necessary. Wrap lines at about
+72 characters. Explain the problem this commit solves, and how.
+```
+
+The first line should be a concise summary written in the imperative mood (e.g., "Fix bug in data processing" rather than "Fixed" or "Fixes"). If the commit is part of a larger change, the body can provide additional context. This practice makes it easier for others (and your future self) to understand the history of changes and the rationale behind them. It is less important to follow this format for development branches, but the final commit message for a PR should be clear and informative.
+
+### 3. Keep PRs focused
+
+A pull request should address a single concern. If you find yourself fixing multiple unrelated things, split them into separate PRs. This makes reviews faster and history easier to follow.
+
+### 4. Review before merging
+
+Always request at least one review before merging a PR. Even if you're eager to get something in, a fresh pair of eyes can catch issues you've missed.
+
+### 5. Pull frequently, push often
+
+Regularly pull changes from the remote to stay up to date, and push your work-in-progress branches frequently to avoid losing work and to keep others informed of your progress.
+
+---
+
+## Self-check
+
+After working through the resources above, you should be able to answer "yes" to each of these:
+
+- [ ] Have I set up SSH keys for authentication?
+- [ ] Can I clone a repository and check its status?
+- [ ] Can I create a branch, make changes, commit them, and push to GitHub?
+- [ ] Can I open a pull request and request a review?
+- [ ] Can I resolve a merge conflict?
+- [ ] Do I understand what a good commit message looks like?
+- [ ] Do I know not to commit directly to `main` on collaborative projects?
+- [ ] Do I know ways to fix a mistake if I accidentally commit to `main`?
+
+If you checked all the boxes, you're ready to dive into the rest of this section!

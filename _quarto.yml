@@ -62,25 +62,20 @@ website:
           - href: staff-onboarding/administration.qmd
             text: "Administration"
 
-      - section: "OSC GitHub Organization"
+      - section: "GitHub Organization"
         href: github/index.qmd
         contents:
-          - href: path/file.qmd
-            text: "About GitHub Organization"
-          - href: path/file.qmd
-            text: "Essential Git Skills"
-          - href: path/file.qmd
-            text: "Repository Overview"
-          - href: path/file.qmd
-            text: "Resource Repos"
-          - href: path/file.qmd
-            text: "What are GitHub Actions?"
-          - href: path/file.qmd
-            text: "Pull Requests and Issues"
-          - href: path/file.qmd
-            text: "Zenodo Integration"
-          - href: path/file.qmd
-            text: "Citations and Licenses"
+          - href: github/review.qmd
+            text: Git and GitHub Review
+          - href: github/lmu-osc-organization.qmd
+            text: "The LMU OSC GitHub Organization"
+          - href: github/our-repositories.qmd
+            text: "Our Repositories"
+          - href: github/working-practices.qmd
+            text: "Working Practices"
+          - href: github/actions.qmd
+            text: "GitHub Actions"
+          
 
       - section: "Updating Website"
         href: updating-website/index.qmd
