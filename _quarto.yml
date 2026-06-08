@@ -171,6 +171,8 @@ website:
         contents:
           - href: misc-topics/our-licensing-choices.qmd
             text: "Our Licensing Choices"
+          - href: misc-topics/main-website-deployment.qmd
+            text: Main Website Deployment Details
 
       - section: Archive
         href: archive/index.qmd
