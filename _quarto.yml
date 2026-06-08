@@ -44,14 +44,6 @@ website:
       - text: "Home"
         href: index.qmd
 
-      - section: "About"
-        href: about/index.qmd
-        contents:
-          - href: about/page1.qmd
-            text: "TOPIC1 Page1 Title"
-          - href: about/page2.qmd
-            text: "TOPIC1 Page2 Title"
-
       - section: "Staff Onboarding"
         href: staff-onboarding/index.qmd
         contents:
