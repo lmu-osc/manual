@@ -159,6 +159,8 @@ website:
             text: "Our Licensing Choices"
           - href: misc-topics/main-website-deployment.qmd
             text: Main Website Deployment Details
+          - href: misc-topics/meeting-rooms.qmd
+            text: Meeting Rooms
 
       - section: Archive
         href: archive/index.qmd
