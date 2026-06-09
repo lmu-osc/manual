@@ -3,4 +3,8 @@ title: Authoring Tutorials for the OSC
 subtitle: A technical guide to using Quarto and the `tutorial-template` for authoring tutorials for the OSC
 ---
 
-* This ...
+* This section covers technical aspects of authoring tutorials for the OSC, including how to use Quarto and the `tutorial-template` repository. It is intended for OSC staff who are responsible for creating and maintaining tutorials on our website.
+* We do not prescribe here how or what you should write, but rather provide an overview of the tools and processes we use to create and publish tutorials. 
+* First, we provide a very brief overview of Quarto and how we use it to create our website. This chapter also contains a number of shortcuts and tips for working with Quarto that may be helpful to new authors.
+* Then, we provide a more detailed walkthrough of the `tutorial-template` repository, which is the starting point for all of our tutorials. This section covers how to set up the template, how to create new tutorials from it, and how to publish those tutorials on our website.
+* Finally, we provide final steps for publishing your tutorial, namely clean-up, submission for review, some of the CI/CD pipelines that can be run, and so on.
