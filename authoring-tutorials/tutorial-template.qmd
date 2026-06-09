@@ -1,0 +1,14 @@
+---
+title: Our Tutorial Template
+subtitle: Structure, how to use it, and how to create new tutorials from it
+---
+
+
+* template found at https://github.com/lmu-osc/tutorial-template
+* can create a new repo based on this template by clicking the "Use this template" button on GitHub and then Create a new repository from the template. The default will be to create a new repository in your personal GitHub account, but you can change this to create the new repository in the LMU Open Science Center organization if you have permissions to do so. If you do not have permission, please ask Felix or Malika to create the new repository for you, or you can create the new repository in your personal account and then transfer it to the LMU Open Science Center organization (again, you may need to ask Felix or Malika to do this for you if you do not have permissions).
+* CLone and open the project on your local machine, and check that rendering the project with `quarto render` works correctly before making any changes.
+
+* Let's take an overview of the contents of the tutorial template repo...
+    * (Access the https://github.com/lmu-osc/tutorial-template repo, and provide a walkthrough of the file structure and contents, including the purpose of each file and directory. Highlight important files such as `_quarto.yml`, `index.qmd`, and the `assets` directory, and explain how they are used in the tutorial creation process.)
+    * Indicate that thate `topic-one` and `topic-two` directories are examples of how to structure content for different topics within a tutorial, and that they can be modified or removed as needed for new tutorials. Specifically, they contain an `index.qmd` file that serves as the main page for that topic, and additional content files (e.g., `content.qmd`) that can be used to organize the tutorial content into manageable sections. The structure of these directories can be adapted to fit the specific needs of each tutorial, allowing for flexibility in how the content is organized and presented.
+    
