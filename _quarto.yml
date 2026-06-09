@@ -14,6 +14,7 @@ website:
   back-to-top-navigation: true
   page-navigation: true
   favicon: assets/LMU_OSC_favicon.jpg
+  llms-txt: true
   margin-header: |
     ![](/assets/LMU_OSC_logo.svg){width="175"}
 
@@ -118,20 +119,13 @@ website:
       - section: "Authoring an OSC Tutorial"
         href: authoring-tutorials/index.qmd
         contents:
-          - href: path/file.qmd
-            text: "Introduction"
-          - href: path/file.qmd
-            text: "Tutorial Template Overview"
-          - href: path/file.qmd
-            text: "Getting Started"
-          - href: path/file.qmd
-            text: "Things You Shouldn't Change"
-          - href: path/file.qmd
-            text: "Matomo Analytics"
-          - href: path/file.qmd
-            text: "Authoring and Versions"
-          - href: path/file.qmd
-            text: "Best Practices"
+          - href: authoring-tutorials/quarto-overview.qmd
+            text: "Quarto Overview and Tips"
+          - href: authoring-tutorials/tutorial-template.qmd
+            text: "Tutorial Template Walkthrough"
+          - href: authoring-tutorials/finalization-and-publishing.qmd
+            text: "Finalization and Publishing"
+
 
       - section: "Switching a Group to Open Research Practices"
         href: path/index.qmd
