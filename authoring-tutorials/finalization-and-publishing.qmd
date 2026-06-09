@@ -1,0 +1,200 @@
+---
+title: Finalizing and Publishing Your Tutorial
+subtitle: Final steps for cleaning up, submitting for review, and publishing your tutorial via the OSC GitHub Org
+---
+
+## Overview
+
+Once you have created your tutorial content and are ready to publish, there are a few important steps to take to ensure your tutorial is polished, properly licensed, and ready for public consumption. This chapter covers everything you need to do to go from a draft tutorial to a live, citable publication on the OSC website. It includes:
+
+- A **review process** overview for getting feedback on your content
+- A **pre-publication checklist** of tasks to complete before publishing
+- Instructions for **making your tutorial live** on the website
+- Guidance on **setting up a DOI** via Zenodo and GitHub releases
+
+This chapter is intended primarily for OSC staff who are responsible for creating and maintaining tutorials, though much of the information will also be relevant to external contributors.
+
+---
+
+## The Review Process
+
+Before a tutorial is published, it goes through a review period with OSC staff (and optionally with other stakeholders). This ensures the content meets our quality standards and is consistent with the rest of the website.
+
+### How review typically works
+
+1. **Share your draft.** Make your tutorial repository accessible to reviewers (either within the `lmu-osc` organization or by inviting collaborators).
+2. **Collect feedback.** Reviewers provide feedback by opening **GitHub issues** or **pull requests** in your tutorial repository. This keeps the entire process transparent and documented.
+3. **Discuss and revise.** Work through the feedback, make revisions, and discuss any open questions directly in the issues or PRs.
+4. **Get approval.** Once all parties are satisfied, the tutorial is approved for publication.
+
+::: {.callout-important}
+#### Establish a clear review process early
+
+The exact review workflow may vary depending on the tutorial and the preferences of the people involved. What matters is that you and your reviewers agree on a process upfront and **document it in the repository** — for example in the `README.md` or in a `CONTRIBUTING.md` file. This avoids confusion about how feedback should be submitted and who is responsible for what.
+:::
+
+---
+
+## Pre-Publication Checklist
+
+Before your tutorial can go live, work through the following tasks. Some are required in all cases; others are only necessary if your tutorial uses R code.
+
+### 1. Update the `CITATION.cff` file
+
+The `CITATION.cff` file contains machine-readable citation metadata for your tutorial. It allows others to cite your work correctly and can be automatically imported into reference managers like Zotero or EndNote.
+
+Edit this file to include:
+
+- **Author names** — list all contributors who should be credited
+- **ORCID iDs** — unique researcher identifiers (see [orcid.org](https://orcid.org))
+- **Affiliations** — institutional affiliations for each author
+- **Version number** — should match the version tag you will use for your GitHub release (see [Zenodo Integration](#zenodo-integration-and-dois) below)
+
+If you are unsure about the format, refer to the [official CITATION.cff documentation](https://citation-file-format.github.io/) for guidance and examples.
+
+::: {.callout-tip}
+The template repository includes a `CITATION.cff` file with placeholder values. Start by editing that file rather than creating one from scratch.
+:::
+
+### 2. Check your Quarto project (useful if using code chunks)
+
+If your tutorial includes **R code chunks**, you need to take two additional steps to ensure your code will build correctly in the deployment pipeline.
+
+#### a) Run `quarto check`
+
+This command validates your Quarto project and checks that all code chunks are properly formatted. It helps catch errors early, before they cause build failures during deployment.
+
+```bash
+quarto check
+```
+
+#### b) Set up `renv` for reproducible R environments
+
+The deployment pipeline relies on `renv` to restore the exact R package versions used in your tutorial. This ensures your code remains reproducible even as packages are updated over time.
+
+Open an R session in your project directory and run:
+
+```r
+renv::init()
+renv::snapshot()
+```
+
+This will create a lockfile (`renv.lock`) that captures the precise versions of all R packages your tutorial depends on. Commit this file to your repository.
+
+::: {.callout-info}
+If your tutorial does **not** contain any R code chunks, you can skip this step entirely. The deployment pipeline will still work without `renv` for Python- or Markdown-only tutorials.
+:::
+
+### 3. Activate GitHub Pages (one-time setup)
+
+The OSC website is built and deployed using GitHub Actions. Before the automated deployment can work, you need to activate GitHub Pages for your repository by running a one-time command.
+
+From your local project folder, run:
+
+```bash
+quarto publish gh-pages
+```
+
+This command does three things:
+
+1. **Renders** the entire site locally using Quarto
+2. **Creates** a `gh-pages` branch in your repository (this branch contains the static HTML files that GitHub Pages serves)
+3. **Pushes** that branch to GitHub
+
+Once the `gh-pages` branch exists on GitHub, the **Render Quarto Site** workflow (included in the template) will automatically deploy your tutorial whenever changes are merged into the `main` branch.
+
+::: {.callout-tip}
+#### Do this early!
+
+We recommend running `quarto publish gh-pages` at the **start** of your project, not at the end. This lets you verify that the site is rendering correctly on the live URL as you develop, rather than discovering issues only at publication time.
+:::
+
+::: {.callout-warning}
+If you are unsure about this step or run into errors, reach out to an OSC staff member for assistance. Also note that GitHub Pages **cannot** be activated for private repositories — your repository must be public.
+:::
+
+---
+
+## Making the Site Live
+
+Once you have completed the checklist above and your tutorial has been approved through the review process, it is time to publish.
+
+### Merging into the tutorials repository
+
+Currently, all published OSC tutorials live in the [`tutorials`](https://github.com/lmu-osc/tutorials) repository. Your tutorial repository must be merged into `tutorials` for it to appear on the live website. An OSC staff member can help coordinate this merge.
+
+### Automated deployment
+
+After the merge, every push to the `main` branch of the `tutorials` repository automatically triggers the **Render Quarto Site** GitHub Actions workflow, which:
+
+1. Checks out the latest code
+2. Restores the R environment (if using `renv`)
+3. Renders the site with Quarto
+4. Deploys the output to GitHub Pages
+
+Your tutorial will then be live on the OSC website.
+
+::: {.callout-info}
+You can monitor the progress of any workflow run in the **Actions** tab of your repository on GitHub. If a step fails, inspect the logs — they often include helpful error messages. If you are unsure what to do after a failure, open an issue in your repository and paste the error or a screenshot.
+:::
+
+---
+
+## Zenodo Integration and DOIs
+
+We strongly recommend generating a **DOI** (Digital Object Identifier) for your tutorial. DOIs make your tutorial easier to cite and allow you to track its impact through citation metrics. We use **Zenodo** for this purpose.
+
+### What is Zenodo?
+
+[Zenodo](https://zenodo.org) is a free, open-access repository for research outputs — including datasets, software, and publications — developed and maintained by CERN. It provides a simple way to share and preserve research outputs and generates DOIs for every deposit.
+
+### What is a GitHub release?
+
+A **GitHub release** is a way to package and distribute a specific version of your code or content. When you create a release, you can:
+
+- Include **release notes** describing what changed
+- Attach **binary files** (if needed)
+- Generate a **tag** that points to a specific commit in your repository
+
+When a GitHub repository is connected to Zenodo, creating a new release automatically sends the repository contents to Zenodo, which then generates a DOI for that release.
+
+### Setting up the connection
+
+To connect your GitHub repository to Zenodo, an OSC staff member with ownership rights over the **OSC Zenodo organization** needs to:
+
+1. Log in to [Zenodo](https://zenodo.org)
+2. Go to the **GitHub** section in their account settings
+3. Link the **OSC GitHub organization** to the **OSC Zenodo account**
+
+::: {.callout-important}
+This step requires **admin-level access** to the OSC Zenodo organization. If you need this set up, notify a member of OSC staff who can coordinate it.
+:::
+
+Once the connection is active, follow these steps to generate a DOI:
+
+1. **Update `CITATION.cff`** — make sure the version number in `CITATION.cff` matches the release tag you plan to use
+2. **Create a new release** on GitHub — go to your repository's **Releases** page, click **"Draft a new release"**, set a version tag (e.g., `v1.0.0`), add release notes, and publish
+3. **Wait for Zenodo** — within a few minutes, Zenodo will automatically create a new record and assign a DOI
+
+::: {.callout-note}
+While we recommend keeping the `CITATION.cff` version number and the release tag in sync, this is not strictly required for the DOI to be generated. Zenodo will create a DOI regardless, but matching the numbers avoids confusion for anyone citing your work.
+:::
+
+---
+
+## Summary
+
+Here is the complete workflow from draft to published tutorial:
+
+| Step | Description |
+|------|-------------|
+| **1. Review** | Share your repository with reviewers and work through feedback via issues and PRs |
+| **2. Update `CITATION.cff`** | Add author names, ORCIDs, and affiliations |
+| **3. `quarto check`** | (Only if using code chunks) Validate code chunks |
+| **4. `renv::init()`** | (Only if using R) Create a reproducible R environment |
+| **5. `quarto publish gh-pages`** | Activate GitHub Pages (do this early!) |
+| **6. Merge into `tutorials`** | Coordinate with OSC staff to merge your repository into the main tutorials repo |
+| **7. Set up Zenodo** | Ask OSC staff to link the GitHub organization to Zenodo |
+| **8. Create a GitHub release** | Generate a DOI for your tutorial |
+
+If you get stuck at any point, do not hesitate to reach out to a colleague or open an issue in your repository for help.
