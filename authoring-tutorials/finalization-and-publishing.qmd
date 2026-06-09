@@ -158,6 +158,16 @@ A **GitHub release** is a way to package and distribute a specific version of yo
 
 When a GitHub repository is connected to Zenodo, creating a new release automatically sends the repository contents to Zenodo, which then generates a DOI for that release.
 
+#### Versioning with semantic versioning
+
+We use **[semantic versioning](https://semver.org)** (SemVer) for all tutorial releases. Semantic versioning uses a three-part label in the format `MAJOR.MINOR.PATCH` — for example, `v0.3.0`. Here is what each number means:
+
+- **MAJOR** — incremented when you make incompatible or breaking changes (e.g., restructuring the entire tutorial)
+- **MINOR** — incremented when you add functionality or content in a backwards-compatible manner (e.g., adding a new section)
+- **PATCH** — incremented when you make backwards-compatible bug fixes or minor corrections (e.g., fixing a typo or a broken link)
+
+When creating a new release on GitHub, use a tag like `v0.3.0` (with the `v` prefix followed by the three-part version number). Start with `v0.1.0` for the first release and increment from there. This consistent labeling helps users and citation tools understand the significance of each release at a glance. When you are ready to publish the final version of your tutorial, you can use a tag like `v1.0.0` to indicate that it is the first major release.
+
 ### Setting up the connection
 
 To connect your GitHub repository to Zenodo, an OSC staff member with ownership rights over the **OSC Zenodo organization** needs to:
