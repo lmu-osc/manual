@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorial Template Repo – OSC Manual</title>
+<title>Tutorial Template Walkthrough – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -68,6 +68,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../authoring-tutorials/finalization-and-publishing.html" rel="next">
+<link href="../authoring-tutorials/quarto-overview.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -167,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tutorial Template Repo</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring-tutorials/index.html">Authoring an OSC Tutorial</a></li><li class="breadcrumb-item"><a href="../authoring-tutorials/tutorial-template.html">Tutorial Template Walkthrough</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -401,51 +403,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../authoring-tutorials/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Authoring an OSC Tutorial</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+  <a href="../authoring-tutorials/quarto-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Overview and Tips</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tutorial Template Overview</span></a>
+  <a href="../authoring-tutorials/tutorial-template.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Tutorial Template Walkthrough</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Getting Started</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Things You Shouldn’t Change</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Matomo Analytics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Authoring and Versions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Best Practices</span></a>
+  <a href="../authoring-tutorials/finalization-and-publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Finalization and Publishing</span></a>
   </div>
 </li>
       </ul>
@@ -572,26 +550,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#tutorial-template-overview" id="toc-tutorial-template-overview" class="nav-link" data-scroll-target="#tutorial-template-overview"><code>tutorial-template</code> Overview</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#creating-a-new-tutorial-from-the-template" id="toc-creating-a-new-tutorial-from-the-template" class="nav-link" data-scroll-target="#creating-a-new-tutorial-from-the-template">Creating a New Tutorial from the Template</a>
   <ul class="collapse">
-  <li><a href="#quick-overview" id="toc-quick-overview" class="nav-link" data-scroll-target="#quick-overview">Quick Overview</a></li>
-  <li><a href="#structure-overview" id="toc-structure-overview" class="nav-link" data-scroll-target="#structure-overview">Structure Overview</a></li>
-  <li><a href="#adapting-the-template" id="toc-adapting-the-template" class="nav-link" data-scroll-target="#adapting-the-template">Adapting the Template</a>
+  <li><a href="#create-a-copy-of-the-template" id="toc-create-a-copy-of-the-template" class="nav-link" data-scroll-target="#create-a-copy-of-the-template">1. Create a copy of the template</a></li>
+  <li><a href="#clone-the-repository-and-verify-it-works" id="toc-clone-the-repository-and-verify-it-works" class="nav-link" data-scroll-target="#clone-the-repository-and-verify-it-works">2. Clone the repository and verify it works</a></li>
+  <li><a href="#start-editing" id="toc-start-editing" class="nav-link" data-scroll-target="#start-editing">3. Start editing</a></li>
+  </ul></li>
+  <li><a href="#repository-structure-file-by-file" id="toc-repository-structure-file-by-file" class="nav-link" data-scroll-target="#repository-structure-file-by-file">Repository Structure — File by File</a>
   <ul class="collapse">
-  <li><a href="#automation" id="toc-automation" class="nav-link" data-scroll-target="#automation">GitHub Actions Automation</a></li>
+  <li><a href="#site-configuration" id="toc-site-configuration" class="nav-link" data-scroll-target="#site-configuration">Site Configuration</a></li>
+  <li><a href="#content-pages" id="toc-content-pages" class="nav-link" data-scroll-target="#content-pages">Content Pages</a></li>
+  <li><a href="#styling-and-branding" id="toc-styling-and-branding" class="nav-link" data-scroll-target="#styling-and-branding">Styling and Branding</a></li>
+  <li><a href="#licensing" id="toc-licensing" class="nav-link" data-scroll-target="#licensing">Licensing</a></li>
+  <li><a href="#other-files" id="toc-other-files" class="nav-link" data-scroll-target="#other-files">Other Files</a></li>
+  <li><a href="#directories" id="toc-directories" class="nav-link" data-scroll-target="#directories">Directories</a></li>
   </ul></li>
-  <li><a href="#conventions" id="toc-conventions" class="nav-link" data-scroll-target="#conventions">Conventions</a></li>
+  <li><a href="#github-actions-workflows" id="toc-github-actions-workflows" class="nav-link" data-scroll-target="#github-actions-workflows">GitHub Actions Workflows</a>
+  <ul class="collapse">
+  <li><a href="#available-workflows" id="toc-available-workflows" class="nav-link" data-scroll-target="#available-workflows">Available Workflows</a></li>
+  <li><a href="#how-to-run-a-workflow-manually" id="toc-how-to-run-a-workflow-manually" class="nav-link" data-scroll-target="#how-to-run-a-workflow-manually">How to Run a Workflow Manually</a></li>
   </ul></li>
+  <li><a href="#step-by-step-adapting-the-template" id="toc-step-by-step-adapting-the-template" class="nav-link" data-scroll-target="#step-by-step-adapting-the-template">Step-by-Step: Adapting the Template</a>
+  <ul class="collapse">
+  <li><a href="#update-_quarto.yml" id="toc-update-_quarto.yml" class="nav-link" data-scroll-target="#update-_quarto.yml">1. Update <code>_quarto.yml</code></a></li>
+  <li><a href="#edit-the-homepage-index.qmd" id="toc-edit-the-homepage-index.qmd" class="nav-link" data-scroll-target="#edit-the-homepage-index.qmd">2. Edit the homepage (<code>index.qmd</code>)</a></li>
+  <li><a href="#edit-the-about-page-about.qmd" id="toc-edit-the-about-page-about.qmd" class="nav-link" data-scroll-target="#edit-the-about-page-about.qmd">3. Edit the about page (<code>about.qmd</code>)</a></li>
+  <li><a href="#rename-or-replace-the-example-topic-folders" id="toc-rename-or-replace-the-example-topic-folders" class="nav-link" data-scroll-target="#rename-or-replace-the-example-topic-folders">4. Rename or replace the example topic folders</a></li>
+  <li><a href="#update-citation.cff" id="toc-update-citation.cff" class="nav-link" data-scroll-target="#update-citation.cff">5. Update <code>CITATION.cff</code></a></li>
+  <li><a href="#update-readme.md" id="toc-update-readme.md" class="nav-link" data-scroll-target="#update-readme.md">6. Update <code>README.md</code></a></li>
+  <li><a href="#add-images-and-files" id="toc-add-images-and-files" class="nav-link" data-scroll-target="#add-images-and-files">7. Add images and files</a></li>
+  <li><a href="#update-_quarto.yml-navigation" id="toc-update-_quarto.yml-navigation" class="nav-link" data-scroll-target="#update-_quarto.yml-navigation">8. Update <code>_quarto.yml</code> navigation</a></li>
+  <li><a href="#preview-locally" id="toc-preview-locally" class="nav-link" data-scroll-target="#preview-locally">9. Preview locally</a></li>
+  <li><a href="#publish" id="toc-publish" class="nav-link" data-scroll-target="#publish">10. Publish</a></li>
+  </ul></li>
+  <li><a href="#common-pitfalls-and-how-to-avoid-them" id="toc-common-pitfalls-and-how-to-avoid-them" class="nav-link" data-scroll-target="#common-pitfalls-and-how-to-avoid-them">Common Pitfalls and How to Avoid Them</a></li>
+  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting Help</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/tutorial-template-repo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/tutorial-template.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring-tutorials/index.html">Authoring an OSC Tutorial</a></li><li class="breadcrumb-item"><a href="../authoring-tutorials/tutorial-template.html">Tutorial Template Walkthrough</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Tutorial Template Repo</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Tutorial Template Walkthrough</h1>
+<p class="subtitle lead">A thorough overview of the <code>tutorial-template</code> repository — how to navigate it, adapt it, and avoid common pitfalls</p>
 </div>
 
 
@@ -608,28 +612,80 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="background" class="level1">
-<h1>Background</h1>
-<p>One of the primary objectives of the OSC is to braoden both knowledge and practice of open science, and the online tutorials we offer are a cornerstone of this initiative. In that regard, some tutorials were brought over by our staff members from previous research institutions, and several more were commissioned between approximately 2021 and 2025.</p>
-<p>While the content from these tutorials was designed and/or adapted to fit in with the other tutorials to create a logical learning flow, the tutorials were not <em>technically</em> standardized. That is, the licenses, HTML/CSS formatting, citation styles, and so on were not consistent between projects. Towards the end of 2024 and through 2025 we worked to align our existing tutorials as much as possible on these issues, but this was a significant amount of work.</p>
-<p>Wanting to avoid a repeat of this process in the future, we established a templated GitHub repository, <a href="https://github.com/lmu-osc/tutorial-template"><code>lmu-osc/tutorial-template</code></a> with all of the default settings and files we wish to have applied to our projects going forward. The core contents of this repo are generally intended to be prescriptive when creating new tutorials, outside of deciding what content should be included in the tutorial itself. Let’s explore this in more detail below.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>The <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code></a> repository is the standard starting point for all OSC tutorials. It is a lightweight <a href="https://quarto.org">Quarto</a> website project pre-configured with our branding, navigation structure, and automated workflows. Its purpose is to let you focus on writing content without worrying about setup, styling, or deployment.</p>
+<p>This page walks you through every file and directory in the template, explains what each one does, what you should (and should not) change, and how to work with the built-in GitHub Actions workflows.</p>
+<hr>
 </section>
-<section id="tutorial-template-overview" class="level1">
-<h1><code>tutorial-template</code> Overview</h1>
-<p>Primary documentation for the <code>tutorial-template</code> repo is available in the <code>README.md</code> file in the repository itself, but we will also provide a quick overview here to help orient you to the structure and contents of the template.</p>
-<section id="quick-overview" class="level2">
-<h2 class="anchored" data-anchor-id="quick-overview">Quick Overview</h2>
+<section id="creating-a-new-tutorial-from-the-template" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-new-tutorial-from-the-template">Creating a New Tutorial from the Template</h2>
+<section id="create-a-copy-of-the-template" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-copy-of-the-template">1. Create a copy of the template</h3>
+<p>Navigate to the <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code> repository on GitHub</a> and click the green <strong>“Use this template”</strong> button, then choose <strong>“Create a new repository”</strong>. You will be asked to name your new repository and choose its owner:</p>
 <ul>
-<li><strong>Purpose:</strong> A lightweight <a href="https://quarto.org/">Quarto</a> site template pre-configured for OSC tutorials. It provides a simple, accessible structure that can be copied and adapted to publish a small course or tutorial website.</li>
-<li><strong>Who it’s for:</strong> Team members, contractors, and others who want a quick and easy way to create a tutorial website that follows OSC standards for licensing, citation, and formatting.</li>
-<li><strong>License:</strong> Content is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a>; code is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a>.</li>
-<li><strong>Live example:</strong> <a href="https://lmu-osc.github.io/data-anonymization/" class="uri">https://lmu-osc.github.io/data-anonymization/</a></li>
+<li>If you have permissions to create repositories in the <code>lmu-osc</code> organization, you can create it there directly.</li>
+<li>Otherwise, create it in your personal GitHub account. You (or another OSC member with permissions) can later transfer it to the organization.</li>
+<li>If you need help, ask Felix or Malika to create the repository for you.</li>
 </ul>
 </section>
-<section id="structure-overview" class="level2">
-<h2 class="anchored" data-anchor-id="structure-overview">Structure Overview</h2>
-<p>The top-level files and directories you will commonly interact with are:</p>
+<section id="clone-the-repository-and-verify-it-works" class="level3">
+<h3 class="anchored" data-anchor-id="clone-the-repository-and-verify-it-works">2. Clone the repository and verify it works</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/lmu-osc/YOUR-TUTORIAL-NAME.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> YOUR-TUTORIAL-NAME</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This should complete without errors and generate a <code>_site/</code> directory with the rendered website. If it fails, make sure you have <a href="https://quarto.org/docs/get-started/">Quarto installed</a> on your machine.</p>
+</section>
+<section id="start-editing" class="level3">
+<h3 class="anchored" data-anchor-id="start-editing">3. Start editing</h3>
+<p>Open the project folder in your editor (VS Code, Positron, RStudio — any will work). <strong>Be sure to open the folder itself</strong>, not individual files, so your editor recognizes the project structure and Quarto commands work with the correct working directory.</p>
+<hr>
+</section>
+</section>
+<section id="repository-structure-file-by-file" class="level2">
+<h2 class="anchored" data-anchor-id="repository-structure-file-by-file">Repository Structure — File by File</h2>
+<p>Below is a complete overview of every file and directory in the template. Files are grouped by their role.</p>
+<section id="site-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="site-configuration">Site Configuration</h3>
 <table class="caption-top table">
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Purpose</th>
+<th>Do you need to edit it?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>_quarto.yml</code></td>
+<td>The master configuration file for the Quarto project. Controls the site title, navigation sidebar, navbar links, theme, output settings, and repository URLs.</td>
+<td><strong>Yes</strong> — update <code>title:</code>, <code>repo-url:</code>, and the GitHub URLs under <code>navbar &gt; tools</code> to match your repository.</td>
+</tr>
+<tr class="even">
+<td><code>index.qmd</code></td>
+<td>The homepage / landing page of your tutorial. This is the first thing visitors see.</td>
+<td><strong>Yes</strong> — replace the welcome message, tutorial overview, and software prerequisites. <strong>Do not rename or delete this file.</strong></td>
+</tr>
+<tr class="odd">
+<td><code>about.qmd</code></td>
+<td>An example about page containing license, citation, and contributor information.</td>
+<td><strong>Yes</strong> — fill in author names, affiliations, ORCIDs, DOI, and the date.</td>
+</tr>
+<tr class="even">
+<td><code>CITATION.cff</code></td>
+<td>Citation metadata in a machine-readable format. Allows others to cite your tutorial properly.</td>
+<td><strong>Yes</strong> — update with author names, affiliations, and ORCIDs. See the <a href="https://citation-file-format.github.io/">CITATION.cff documentation</a> for details.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="content-pages" class="level3">
+<h3 class="anchored" data-anchor-id="content-pages">Content Pages</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 66%">
+<col style="width: 33%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>File / Directory</th>
@@ -638,134 +694,359 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>_quarto.yml</code></td>
-<td>Site configuration (title, navigation, output settings, theme). Update the <code>title:</code>, <code>repo-url:</code>, and navigation links to match your tutorial.</td>
+<td><code>topic-one/</code></td>
+<td>Example section directory. Contains an <code>index.qmd</code> (section landing page) and sub-pages like <code>page-one.qmd</code>, <code>page-two.qmd</code>.</td>
 </tr>
 <tr class="even">
-<td><code>index.qmd</code></td>
-<td>The site homepage / landing page. Contains a tutorial overview, estimated time to complete, and links to sections.</td>
+<td><code>topic-one/index.qmd</code></td>
+<td>Landing page for the first major topic. Has YAML front matter with a title but no H1 heading (the title serves as the H1).</td>
 </tr>
 <tr class="odd">
-<td><code>about.qmd</code></td>
-<td>About page with license, citation, and contributor information.</td>
+<td><code>topic-one/page-one.qmd</code></td>
+<td>Example sub-page demonstrating good practices: starts with H2 headings (not H1), includes a note about the table of contents.</td>
 </tr>
 <tr class="even">
-<td><code>CITATION.cff</code></td>
-<td>Citation metadata (authors, affiliations, ORCIDs) in a machine-readable format.</td>
-</tr>
-<tr class="odd">
-<td><code>LICENSE.md</code> / <code>LICENSE-CODE.md</code></td>
-<td>License texts for content (CC-BY-SA 4.0) and code (CC0 1.0 Universal) respectively.</td>
-</tr>
-<tr class="even">
-<td><code>lmu-osc-custom.scss</code></td>
-<td>Site-wide SCSS tweaks for branding and visual changes (e.g., navbar color <code>#00883A</code>).</td>
-</tr>
-<tr class="odd">
-<td><code>styles.css</code></td>
-<td>Additional CSS classes for page-level content styling (e.g., <code>.center</code>, <code>.img-border</code>).</td>
-</tr>
-<tr class="even">
-<td><code>matomo-analytics.html</code></td>
-<td>Analytics snippet for visitor tracking. Managed by OSC staff; do not edit unless instructed.</td>
-</tr>
-<tr class="odd">
-<td><code>assets/</code></td>
-<td>Directory for images, downloads, and other static files.</td>
-</tr>
-<tr class="even">
-<td><code>topic-one/</code>, <code>topic-two/</code></td>
-<td>Example topic folders, each containing <code>.qmd</code> pages. Replace or rename these to match your tutorial sections.</td>
-</tr>
-<tr class="odd">
-<td><code>.github/workflows/</code></td>
-<td>GitHub Actions automation workflows (see <a href="#automation">Automation</a> below).</td>
-</tr>
-<tr class="even">
-<td><code>_site/</code></td>
-<td>Generated output site files. Do not edit directly — this is produced when the site is built.</td>
-</tr>
-<tr class="odd">
-<td><code>.filenameignore</code></td>
-<td>Patterns ignored by the automated filename check workflow.</td>
-</tr>
-<tr class="even">
-<td><code>.gitignore</code></td>
-<td>Files and directories ignored by Git.</td>
+<td><code>topic-two/</code></td>
+<td>Another example section, with an <code>index.qmd</code> and three sub-pages (<code>page-one.qmd</code>, <code>page-two.qmd</code>, <code>page-three.qmd</code>).</td>
 </tr>
 </tbody>
 </table>
-<p>Navigation is controlled through the <code>sidebar:</code> and <code>navbar:</code> sections in <code>_quarto.yml</code>.</p>
+<p><strong>You should rename or replace these example folders.</strong> For a two-section tutorial, you might rename <code>topic-one/</code> → <code>data-preparation/</code> and <code>topic-two/</code> → <code>analysis/</code>. For a single-page tutorial, you can delete the example folders entirely and put all content in <code>index.qmd</code>.</p>
+<p>Each section’s <code>index.qmd</code> acts as a chapter landing page. Additional <code>.qmd</code> files in the same folder become sub-pages within that section. If you don’t need sub-pages, just use the <code>index.qmd</code> alone.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Important conventions for content pages
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Do not use H1 (<code>#</code>) headings</strong> in your content pages. The page title from the YAML front matter is automatically rendered as an H1. Using additional H1s can break the table of contents and is discouraged by Quarto. Start with H2 (<code>##</code>) headings instead.</li>
+<li>Use <strong>lowercase, kebab-case</strong> for file and directory names (e.g., <code>my-topic/my-page.qmd</code>), not spaces or camelCase. This keeps URLs clean and avoids issues with the filename-checking workflow.</li>
+<li>Each <code>.qmd</code> file should have <strong>YAML front matter</strong> with at least a <code>title:</code> field.</li>
+<li>When referencing images, assets, or other files, use <strong>absolute paths</strong> from the root of the project (e.g., <code>![](/assets/images/my-figure.png)</code>) rather than relative paths. This ensures links work correctly regardless of the page’s location in the directory structure.</li>
+</ul>
+</div>
+</div>
 </section>
-<section id="adapting-the-template" class="level2">
-<h2 class="anchored" data-anchor-id="adapting-the-template">Adapting the Template</h2>
-<p>The template is designed to be forked via GitHub’s <strong>“Use this template”</strong> button. Once copied, the typical adaptation workflow is:</p>
-<ol type="1">
-<li><strong>Update <code>_quarto.yml</code></strong> — Change the site title, repository URL, and navigation links to point to your new repository.</li>
-<li><strong>Edit <code>index.qmd</code></strong> — Write your welcome message, tutorial overview, and any software prerequisites.</li>
-<li><strong>Edit <code>about.qmd</code></strong> — Add author/contributor names, acknowledgements, and set the citation metadata.</li>
-<li><strong>Replace topic folders</strong> — Rename or replace <code>topic-one/</code> and <code>topic-two/</code> with sections matching your tutorial content. Each section folder should contain an <code>index.qmd</code> as a landing page and additional <code>.qmd</code> files for individual chapters.</li>
-<li><strong>Add images and files</strong> — Place them in <code>assets/</code> and reference with relative paths (e.g., <code>![](/assets/images/logo.png)</code>).</li>
-<li><strong>Adjust styling</strong> — Modify <code>lmu-osc-custom.scss</code> for site-wide changes or <code>styles.css</code> for page-level CSS classes.</li>
-<li><strong>Update <code>CITATION.cff</code></strong> — Fill in author names, ORCIDs, and affiliations so your tutorial can be properly cited.</li>
-<li><strong>Preview locally</strong> (optional) — Run <code>quarto preview</code> in the project directory after installing <a href="https://quarto.org/docs/get-started/">Quarto</a>.</li>
-<li><strong>Publish</strong> — Run <code>quarto publish gh-pages</code> to activate the GitHub Pages deployment pipeline. After this initial setup, changes pushed to the <code>main</code> branch are automatically rendered and published.</li>
-</ol>
-<section id="automation" class="level3">
-<h3 class="anchored" data-anchor-id="automation">GitHub Actions Automation</h3>
-<p>The template includes several automated workflows located in <code>.github/workflows/</code>:</p>
+<section id="styling-and-branding" class="level3">
+<h3 class="anchored" data-anchor-id="styling-and-branding">Styling and Branding</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 15%">
+<col style="width: 23%">
+<col style="width: 61%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Workflow</th>
+<th>File</th>
 <th>Purpose</th>
-<th>Triggers</th>
+<th>Do you need to edit it?</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>publish.yaml</strong></td>
-<td>Renders the Quarto site and publishes it to the <code>gh-pages</code> branch (i.e., the live website).</td>
-<td>Push to <code>main</code>, weekly schedule, or manual</td>
+<td><code>lmu-osc-custom.scss</code></td>
+<td>Site-wide SCSS overrides for colors, fonts, and layout. Sets the navbar background, link colors, and sidebar highlight to OSC green.</td>
+<td>Only if you want to change branding colors or site-wide layout. See notes below.</td>
 </tr>
 <tr class="even">
-<td><strong>citation-check.yml</strong></td>
-<td>Validates <code>CITATION.cff</code> to ensure metadata is well-formed.</td>
-<td>Push to <code>main</code> (when <code>CITATION.cff</code> changes) or manual</td>
-</tr>
-<tr class="odd">
-<td><strong>filename-check.yml</strong></td>
-<td>Enforces filename rules (length, depth, allowed extensions).</td>
-<td>Push to <code>main</code>, pull requests, or manual</td>
-</tr>
-<tr class="even">
-<td><strong>style.yaml</strong></td>
-<td>Formats R and Quarto/R Markdown code using <code>styler</code>.</td>
-<td>Manual only (<code>workflow_dispatch</code>)</td>
+<td><code>styles.css</code></td>
+<td>Additional CSS classes for content-level styling (e.g., <code>.center</code>, <code>.img-border</code>, <code>.output-overflow</code>).</td>
+<td>Only if you need custom styling for specific page elements. The pre-defined classes cover common use cases.</td>
 </tr>
 </tbody>
 </table>
-<p>To run a workflow manually: open the repository on GitHub → <strong>Actions</strong> tab → select the workflow → click <strong>Run workflow</strong>.</p>
-</section>
-</section>
-<section id="conventions" class="level2">
-<h2 class="anchored" data-anchor-id="conventions">Conventions</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Styling: what NOT to do
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><strong>File names:</strong> Lowercase and kebab-case (e.g., <code>my-topic/my-page.qmd</code>).</li>
-<li><strong>Content:</strong> Use plain text and simple Markdown/Quarto. Avoid embedding complex web widgets unless needed.</li>
-<li><strong>Collaboration:</strong> Edit content on GitHub using branches and pull requests so teammates can review changes.</li>
-<li><strong>Licensing:</strong> All new tutorials should use the same dual-license model (CC-BY-SA 4.0 for content, CC0 1.0 for code) unless a specific exception is approved.</li>
+<li><strong>Do not modify <code>lmu-osc-custom.scss</code> or <code>styles.css</code> unless you are comfortable with CSS/SCSS.</strong> The default styles are designed to match the OSC branding. If you need a visual change you cannot achieve yourself, ask a web-savvy colleague or open an issue.</li>
+<li><strong>Do not edit the <code>_site/</code> directory.</strong> The <code>_site/</code> folder is generated automatically by Quarto when you render the site. Any changes you make there will be overwritten the next time you run <code>quarto render</code> or <code>quarto preview</code>.</li>
 </ul>
-
-
-<!-- -->
-
+</div>
+</div>
 </section>
+<section id="licensing" class="level3">
+<h3 class="anchored" data-anchor-id="licensing">Licensing</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 23%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Purpose</th>
+<th>Do you need to edit it?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>LICENSE.md</code></td>
+<td>The full text of the <strong>CC BY-SA 4.0</strong> license, which covers the tutorial content (narrative text, images, etc.).</td>
+<td>Please do not without explicit permission.</td>
+</tr>
+<tr class="even">
+<td><code>LICENSE-CODE.md</code></td>
+<td>The full text of the <strong>CC0 1.0 Universal</strong> license, which covers code snippets and configuration files.</td>
+<td>Please do not without explicit permission.</td>
+</tr>
+</tbody>
+</table>
+<p>We use a dual-licensing model: the narrative content is CC BY-SA 4.0 (share-alike, requires attribution), while code and configuration files are CC0 1.0 (public domain, no restrictions). This is a common practice for educational websites and is explained in the <code>about.qmd</code> page.</p>
+</section>
+<section id="other-files" class="level3">
+<h3 class="anchored" data-anchor-id="other-files">Other Files</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 23%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Purpose</th>
+<th>Do you need to edit it?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>README.md</code></td>
+<td>The GitHub repository README. Contains the quick overview, structure overview, step-by-step adaptation instructions, and information about GitHub Actions.</td>
+<td><strong>Yes</strong> — update it to describe your specific tutorial.</td>
+</tr>
+<tr class="even">
+<td><code>404.qmd</code></td>
+<td>Custom 404 error page shown when visitors try to access a page that does not exist.</td>
+<td>Optional — you can customize the message or leave it as-is.</td>
+</tr>
+<tr class="odd">
+<td><code>matomo-analytics.html</code></td>
+<td>Matomo Analytics tracking snippet, included in the page header via <code>_quarto.yml</code>.</td>
+<td><strong>Please ask an OSC staff member to include this for you.</strong></td>
+</tr>
+<tr class="even">
+<td><code>.gitignore</code></td>
+<td>Lists files and directories that Git should ignore (e.g., <code>.Rproj.user</code>, <code>_site/</code>, <code>/.quarto/</code>).</td>
+<td>Only if your project generates new temporary files that should not be tracked.</td>
+</tr>
+<tr class="odd">
+<td><code>.filenameignore</code></td>
+<td>Patterns that the automated filename-check workflow should ignore.</td>
+<td>Only if the filename-check workflow flags files that you intentionally want to keep.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="directories" class="level3">
+<h3 class="anchored" data-anchor-id="directories">Directories</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Directory</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>assets/</code></td>
+<td>Place static files here: images, downloadable files, videos, etc. Reference them in your pages with paths like <code>![](/assets/images/my-figure.png)</code>.</td>
+</tr>
+<tr class="even">
+<td><code>_site/</code></td>
+<td><strong>Auto-generated.</strong> Contains the rendered HTML output. Do not edit manually.</td>
+</tr>
+<tr class="odd">
+<td><code>.github/workflows/</code></td>
+<td>Contains GitHub Actions workflow files (see next section).</td>
+</tr>
+<tr class="even">
+<td><code>renv/</code></td>
+<td>(Optional) R package environment directory. Only relevant if you use R and <code>renv</code> for dependency management.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="github-actions-workflows" class="level2">
+<h2 class="anchored" data-anchor-id="github-actions-workflows">GitHub Actions Workflows</h2>
+<p>The template includes several automated workflows in <code>.github/workflows/</code>. These run automatically on GitHub when you push changes, and some can also be triggered manually. Understanding them helps you avoid surprises.</p>
+<section id="available-workflows" class="level3">
+<h3 class="anchored" data-anchor-id="available-workflows">Available Workflows</h3>
+<ol type="1">
+<li><p><strong>Render Quarto Site</strong> — Renders the Quarto project and publishes the output to GitHub Pages. This is the workflow that makes your tutorial live on the web. It triggers on pushes to the <code>main</code> branch and can also be run manually from the Actions tab.</p></li>
+<li><p><strong>Check CITATION.cff</strong> — Validates that your <code>CITATION.cff</code> file is correctly formatted. Runs on every push. If this workflow fails, check that your <code>CITATION.cff</code> follows the <a href="https://citation-file-format.github.io/">specification</a>.</p></li>
+<li><p><strong>Filename Checks</strong> — Ensures all file and directory names follow our conventions (lowercase, kebab-case, no spaces). Runs on every push. If it flags files you intentionally want to keep (e.g., third-party assets with uppercase names), add them to <code>.filenameignore</code>.</p></li>
+<li><p><strong>Tidyverse Style Formatting</strong> — Checks code formatting for R code files using the <a href="https://styler.r-lib.org/">styler</a> package. Only relevant if your tutorial includes R code.</p></li>
+</ol>
+</section>
+<section id="how-to-run-a-workflow-manually" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-run-a-workflow-manually">How to Run a Workflow Manually</h3>
+<ol type="1">
+<li>Go to your repository on GitHub and click the <strong>Actions</strong> tab.</li>
+<li>Select the workflow you want to run from the left sidebar.</li>
+<li>Click the <strong>“Run workflow”</strong> button.</li>
+<li>Choose the branch you want to run it on from the dropdown, then click <strong>“Run workflow”</strong> again.</li>
+</ol>
+<p>You can monitor the progress of any workflow run by clicking on it. If a step fails, inspect the logs to understand why — they often include helpful error messages. If you are unsure what to do after a failure, open a GitHub issue in your repository and paste the error or screenshot.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Key things to know about the workflows
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The <strong>Render Quarto Site</strong> workflow must be activated once for a new repository by running <code>quarto publish gh-pages</code> locally. After that, every push to <code>main</code> automatically triggers a re-render and updates the live site.</li>
+<li>If your repository is <strong>private</strong>, GitHub Pages cannot be activated, and the publishing workflow will not work.</li>
+<li>Workflows that trigger on <code>push</code> (like the CITATION.cff check and filename check) run automatically. You do not need to manually start them.</li>
+<li>For the <strong>Tidyverse Style Formatting</strong> workflow: it pushes formatting fixes back to your branch. Always pull those changes before making further edits.</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="step-by-step-adapting-the-template" class="level2">
+<h2 class="anchored" data-anchor-id="step-by-step-adapting-the-template">Step-by-Step: Adapting the Template</h2>
+<p>Here is the recommended order of operations when creating a new tutorial:</p>
+<section id="update-_quarto.yml" class="level3">
+<h3 class="anchored" data-anchor-id="update-_quarto.yml">1. Update <code>_quarto.yml</code></h3>
+<p>Change these values: - <code>title:</code> — set to your tutorial’s name - <code>repo-url:</code> — point to your new repository - The GitHub URLs under <code>navbar &gt; tools</code> — update to your repository’s URL</p>
+<p>Optionally, adjust the <code>sidebar:</code> and <code>navbar:</code> sections to reflect your tutorial’s structure. The sidebar controls the left navigation menu; the navbar controls the top bar.</p>
+</section>
+<section id="edit-the-homepage-index.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="edit-the-homepage-index.qmd">2. Edit the homepage (<code>index.qmd</code>)</h3>
+<p>Replace the placeholder text with: - A welcome message - A tutorial overview (topics covered, estimated time) - Prerequisites / recommended software - A table of contents linking to each section</p>
+</section>
+<section id="edit-the-about-page-about.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="edit-the-about-page-about.qmd">3. Edit the about page (<code>about.qmd</code>)</h3>
+<p>Fill in: - Author names, affiliations, ORCIDs - The date and DOI - Contributor acknowledgements</p>
+</section>
+<section id="rename-or-replace-the-example-topic-folders" class="level3">
+<h3 class="anchored" data-anchor-id="rename-or-replace-the-example-topic-folders">4. Rename or replace the example topic folders</h3>
+<ul>
+<li>Rename <code>topic-one/</code> and <code>topic-two/</code> to match your section names.</li>
+<li>Within each folder, rename or replace the example <code>.qmd</code> files.</li>
+<li>Update the <code>sidebar:</code> section in <code>_quarto.yml</code> to reflect the new folder and page names (see next section).</li>
+</ul>
+</section>
+<section id="update-citation.cff" class="level3">
+<h3 class="anchored" data-anchor-id="update-citation.cff">5. Update <code>CITATION.cff</code></h3>
+<p>Add your author names, affiliations, and ORCIDs. This file allows others to cite your tutorial.</p>
+</section>
+<section id="update-readme.md" class="level3">
+<h3 class="anchored" data-anchor-id="update-readme.md">6. Update <code>README.md</code></h3>
+<p>Replace the template’s README with information about your specific tutorial.</p>
+</section>
+<section id="add-images-and-files" class="level3">
+<h3 class="anchored" data-anchor-id="add-images-and-files">7. Add images and files</h3>
+<p>Place images in <code>assets/images/</code> (or a subdirectory of <code>assets/</code>). Reference them in your pages with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Descriptive caption](/assets/images/my-image.png)</span>{width=80%}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="update-_quarto.yml-navigation" class="level3">
+<h3 class="anchored" data-anchor-id="update-_quarto.yml-navigation">8. Update <code>_quarto.yml</code> navigation</h3>
+<p>After renaming folders and pages, you <strong>must</strong> update the <code>sidebar:</code> section in <code>_quarto.yml</code> so the navigation menu matches your new structure. For example, if you renamed <code>topic-one/</code> to <code>data-preparation/</code> and have two sub-pages, the sidebar entry would look like:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">"Data Preparation"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> data-preparation/index.qmd</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> data-preparation/cleaning.qmd</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Data Cleaning"</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> data-preparation/transformation.qmd</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">"Data Transformation"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="preview-locally" class="level3">
+<h3 class="anchored" data-anchor-id="preview-locally">9. Preview locally</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This starts a local web server and opens your default browser. Changes you make are reflected automatically as you save files.</p>
+</section>
+<section id="publish" class="level3">
+<h3 class="anchored" data-anchor-id="publish">10. Publish</h3>
+<p>Activate GitHub Pages by running this command <strong>once</strong> from your local project folder:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This may take several minutes. You can check progress in the Actions tab of your repository. After this initial setup, every push to <code>main</code> will automatically re-render and deploy the site.</p>
+<hr>
+</section>
+</section>
+<section id="common-pitfalls-and-how-to-avoid-them" class="level2">
+<h2 class="anchored" data-anchor-id="common-pitfalls-and-how-to-avoid-them">Common Pitfalls and How to Avoid Them</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pitfall</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Using H1 (<code>#</code>) headings in content pages</td>
+<td>Use H2 (<code>##</code>) headings instead. The page title from YAML front matter is already an H1.</td>
+</tr>
+<tr class="even">
+<td>Renaming or deleting <code>index.qmd</code></td>
+<td>The Quarto project expects an <code>index.qmd</code> at the root. Rename other files, not this one.</td>
+</tr>
+<tr class="odd">
+<td>Editing <code>_site/</code> directly</td>
+<td>Never edit <code>_site/</code>. It is regenerated from source files every time you render.</td>
+</tr>
+<tr class="even">
+<td>Spaces in file or directory names</td>
+<td>Use lowercase kebab-case: <code>my-section/my-page.qmd</code> instead of <code>My Section/My Page.qmd</code>.</td>
+</tr>
+<tr class="odd">
+<td>Forgetting to update <code>_quarto.yml</code> after renaming pages</td>
+<td>The sidebar navigation in <code>_quarto.yml</code> must match your actual file structure.</td>
+</tr>
+<tr class="even">
+<td>Using <code>quarto render</code> instead of <code>quarto preview</code> during editing</td>
+<td><code>quarto preview</code> gives you a live-updating preview. Use <code>quarto render</code> only for final builds or debugging.</td>
+</tr>
+<tr class="odd">
+<td>Not pulling after the Tidyverse Style workflow runs</td>
+<td>If the formatting workflow runs, it may push changes to your branch. Pull those changes before continuing to edit.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="getting-help" class="level2">
+<h2 class="anchored" data-anchor-id="getting-help">Getting Help</h2>
+<p>If you get stuck or need assistance:</p>
+<ul>
+<li><strong>Open a GitHub issue</strong> in your repository describing what you want to change. Someone from OSC or your team can help.</li>
+<li><strong>Ask a colleague</strong> — other OSC members have experience with the template and can offer guidance.</li>
+<li><strong>Check the official <a href="https://quarto.org/docs/">Quarto documentation</a></strong> for questions about Quarto itself (theming, navigation, cross-references, etc.).</li>
+</ul>
+<p>The template is designed to be as simple as possible, but if something is unclear, do not hesitate to reach out.</p>
+
+
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -839,57 +1120,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -1219,93 +1449,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Tutorial Template Repo"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">echo:</span><span class="co"> false</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    code-summary: "Show the code"</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu"># Background</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>One of the primary objectives of the OSC is to braoden both knowledge and practice of open science, and the online tutorials we offer are a cornerstone of this initiative. In that regard, some tutorials were brought over by our staff members from previous research institutions, and several more were commissioned between approximately 2021 and 2025. </span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>While the content from these tutorials was designed and/or adapted to fit in with the other tutorials to create a logical learning flow, the tutorials were not *technically* standardized. That is, the licenses, HTML/CSS formatting, citation styles, and so on were not consistent between projects. Towards the end of 2024 and through 2025 we worked to align our existing tutorials as much as possible on these issues, but this was a significant amount of work.</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>Wanting to avoid a repeat of this process in the future, we established a templated GitHub repository, <span class="co">[</span><span class="ot">`lmu-osc/tutorial-template`</span><span class="co">](https://github.com/lmu-osc/tutorial-template)</span> with all of the default settings and files we wish to have applied to our projects going forward. The core contents of this repo are generally intended to be prescriptive when creating new tutorials, outside of deciding what content should be included in the tutorial itself. Let's explore this in more detail below.</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu"># `tutorial-template` Overview</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Primary documentation for the <span class="in">`tutorial-template`</span> repo is available in the <span class="in">`README.md`</span> file in the repository itself, but we will also provide a quick overview here to help orient you to the structure and contents of the template.</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Quick Overview</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Purpose:** A lightweight <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org/)</span> site template pre-configured for OSC tutorials. It provides a simple, accessible structure that can be copied and adapted to publish a small course or tutorial website.</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Who it's for:** Team members, contractors, and others who want a quick and easy way to create a tutorial website that follows OSC standards for licensing, citation, and formatting.</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**License:** Content is licensed under <span class="co">[</span><span class="ot">CC-BY-SA 4.0</span><span class="co">](https://creativecommons.org/licenses/by-sa/4.0/)</span>; code is licensed under <span class="co">[</span><span class="ot">CC0 1.0 Universal</span><span class="co">](https://creativecommons.org/publicdomain/zero/1.0/)</span>.</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Live example:** <span class="ot">&lt;https://lmu-osc.github.io/data-anonymization/&gt;</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Structure Overview</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>The top-level files and directories you will commonly interact with are:</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> File / Directory <span class="pp">|</span> Purpose <span class="pp">|</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`_quarto.yml`</span> <span class="pp">|</span> Site configuration (title, navigation, output settings, theme). Update the <span class="in">`title:`</span>, <span class="in">`repo-url:`</span>, and navigation links to match your tutorial. <span class="pp">|</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`index.qmd`</span> <span class="pp">|</span> The site homepage / landing page. Contains a tutorial overview, estimated time to complete, and links to sections. <span class="pp">|</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`about.qmd`</span> <span class="pp">|</span> About page with license, citation, and contributor information. <span class="pp">|</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`CITATION.cff`</span> <span class="pp">|</span> Citation metadata (authors, affiliations, ORCIDs) in a machine-readable format. <span class="pp">|</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`LICENSE.md`</span> / <span class="in">`LICENSE-CODE.md`</span> <span class="pp">|</span> License texts for content (CC-BY-SA 4.0) and code (CC0 1.0 Universal) respectively. <span class="pp">|</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`lmu-osc-custom.scss`</span> <span class="pp">|</span> Site-wide SCSS tweaks for branding and visual changes (e.g., navbar color <span class="in">`#00883A`</span>). <span class="pp">|</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`styles.css`</span> <span class="pp">|</span> Additional CSS classes for page-level content styling (e.g., <span class="in">`.center`</span>, <span class="in">`.img-border`</span>). <span class="pp">|</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`matomo-analytics.html`</span> <span class="pp">|</span> Analytics snippet for visitor tracking. Managed by OSC staff; do not edit unless instructed. <span class="pp">|</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`assets/`</span> <span class="pp">|</span> Directory for images, downloads, and other static files. <span class="pp">|</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`topic-one/`</span>, <span class="in">`topic-two/`</span> <span class="pp">|</span> Example topic folders, each containing <span class="in">`.qmd`</span> pages. Replace or rename these to match your tutorial sections. <span class="pp">|</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`.github/workflows/`</span> <span class="pp">|</span> GitHub Actions automation workflows (see <span class="co">[</span><span class="ot">Automation</span><span class="co">](#automation)</span> below). <span class="pp">|</span></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`_site/`</span> <span class="pp">|</span> Generated output site files. Do not edit directly — this is produced when the site is built. <span class="pp">|</span></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`.filenameignore`</span> <span class="pp">|</span> Patterns ignored by the automated filename check workflow. <span class="pp">|</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`.gitignore`</span> <span class="pp">|</span> Files and directories ignored by Git. <span class="pp">|</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Navigation is controlled through the <span class="in">`sidebar:`</span> and <span class="in">`navbar:`</span> sections in <span class="in">`_quarto.yml`</span>.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adapting the Template</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>The template is designed to be forked via GitHub's **"Use this template"** button. Once copied, the typical adaptation workflow is:</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Update `_quarto.yml`** — Change the site title, repository URL, and navigation links to point to your new repository.</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Edit `index.qmd`** — Write your welcome message, tutorial overview, and any software prerequisites.</span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Edit `about.qmd`** — Add author/contributor names, acknowledgements, and set the citation metadata.</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Replace topic folders** — Rename or replace <span class="in">`topic-one/`</span> and <span class="in">`topic-two/`</span> with sections matching your tutorial content. Each section folder should contain an <span class="in">`index.qmd`</span> as a landing page and additional <span class="in">`.qmd`</span> files for individual chapters.</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Add images and files** — Place them in <span class="in">`assets/`</span> and reference with relative paths (e.g., <span class="in">`![](/assets/images/logo.png)`</span>).</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**Adjust styling** — Modify <span class="in">`lmu-osc-custom.scss`</span> for site-wide changes or <span class="in">`styles.css`</span> for page-level CSS classes.</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>**Update `CITATION.cff`** — Fill in author names, ORCIDs, and affiliations so your tutorial can be properly cited.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>**Preview locally** (optional) — Run <span class="in">`quarto preview`</span> in the project directory after installing <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org/docs/get-started/)</span>.</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">9. </span>**Publish** — Run <span class="in">`quarto publish gh-pages`</span> to activate the GitHub Pages deployment pipeline. After this initial setup, changes pushed to the <span class="in">`main`</span> branch are automatically rendered and published.</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="fu">### GitHub Actions Automation {#automation}</span></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>The template includes several automated workflows located in <span class="in">`.github/workflows/`</span>:</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Workflow <span class="pp">|</span> Purpose <span class="pp">|</span> Triggers <span class="pp">|</span></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **publish.yaml** <span class="pp">|</span> Renders the Quarto site and publishes it to the <span class="in">`gh-pages`</span> branch (i.e., the live website). <span class="pp">|</span> Push to <span class="in">`main`</span>, weekly schedule, or manual <span class="pp">|</span></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **citation-check.yml** <span class="pp">|</span> Validates <span class="in">`CITATION.cff`</span> to ensure metadata is well-formed. <span class="pp">|</span> Push to <span class="in">`main`</span> (when <span class="in">`CITATION.cff`</span> changes) or manual <span class="pp">|</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **filename-check.yml** <span class="pp">|</span> Enforces filename rules (length, depth, allowed extensions). <span class="pp">|</span> Push to <span class="in">`main`</span>, pull requests, or manual <span class="pp">|</span></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **style.yaml** <span class="pp">|</span> Formats R and Quarto/R Markdown code using <span class="in">`styler`</span>. <span class="pp">|</span> Manual only (<span class="in">`workflow_dispatch`</span>) <span class="pp">|</span></span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>To run a workflow manually: open the repository on GitHub → **Actions** tab → select the workflow → click **Run workflow**.</span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conventions</span></span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**File names:** Lowercase and kebab-case (e.g., <span class="in">`my-topic/my-page.qmd`</span>).</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Content:** Use plain text and simple Markdown/Quarto. Avoid embedding complex web widgets unless needed.</span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Collaboration:** Edit content on GitHub using branches and pull requests so teammates can review changes.</span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Licensing:** All new tutorials should use the same dual-license model (CC-BY-SA 4.0 for content, CC0 1.0 for code) unless a specific exception is approved.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div>
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../authoring-tutorials/quarto-overview.html" class="pagination-link" aria-label="Quarto Overview and Tips">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Quarto Overview and Tips</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../authoring-tutorials/finalization-and-publishing.html" class="pagination-link" aria-label="Finalization and Publishing">
+        <span class="nav-page-text">Finalization and Publishing</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1314,7 +1470,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/tutorial-template-repo.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/tutorial-template.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

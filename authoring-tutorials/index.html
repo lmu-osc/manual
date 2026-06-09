@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – OSC Manual</title>
+<title>Authoring Tutorials for the OSC – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../path/file.qmd" rel="next">
+<link href="../authoring-tutorials/quarto-overview.html" rel="next">
 <link href="../osc-outreach/flyer-design-and-images.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -375,44 +375,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+  <a href="../authoring-tutorials/quarto-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Overview and Tips</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tutorial Template Overview</span></a>
+  <a href="../authoring-tutorials/tutorial-template.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutorial Template Walkthrough</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Getting Started</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Things You Shouldn’t Change</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Matomo Analytics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Authoring and Versions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Best Practices</span></a>
+  <a href="../authoring-tutorials/finalization-and-publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Finalization and Publishing</span></a>
   </div>
 </li>
       </ul>
@@ -535,16 +511,119 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><img src="../assets/LMU_OSC_logo.svg" class="img-fluid" width="175"></p>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#what-you-will-learn" id="toc-what-you-will-learn" class="nav-link" data-scroll-target="#what-you-will-learn">What You Will Learn</a>
+  <ul class="collapse">
+  <li><a href="#quarto-overview-and-tips" id="toc-quarto-overview-and-tips" class="nav-link" data-scroll-target="#quarto-overview-and-tips">1. Quarto Overview and Tips</a></li>
+  <li><a href="#tutorial-template-walkthrough" id="toc-tutorial-template-walkthrough" class="nav-link" data-scroll-target="#tutorial-template-walkthrough">2. Tutorial Template Walkthrough</a></li>
+  <li><a href="#finalization-and-publishing" id="toc-finalization-and-publishing" class="nav-link" data-scroll-target="#finalization-and-publishing">3. Finalization and Publishing</a></li>
+  </ul></li>
+  <li><a href="#quick-start" id="toc-quick-start" class="nav-link" data-scroll-target="#quick-start">Quick Start</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Authoring Tutorials for the OSC</h1>
+<p class="subtitle lead">A technical guide to using Quarto and the <code>tutorial-template</code> for authoring tutorials for the OSC</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
+
+<section id="welcome" class="level2">
+<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
+<p>Welcome to the <strong>Authoring Tutorials</strong> section of the OSC Manual. This guide is for anyone who needs to create or maintain tutorials for the Open Science Center website — whether you are a new staff member creating your first tutorial, or an experienced contributor looking for a refresher on our tooling and processes.</p>
+<p>This section covers the <strong>technical aspects</strong> of authoring tutorials: how we use <a href="https://quarto.org">Quarto</a> to build our tutorial websites, how to work with the <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code></a> repository, and what steps are required to get a tutorial from a draft to a published, citable resource.</p>
+<p>We do not prescribe <em>what</em> you should write or how you should structure your content pedagogically. Instead, we provide an overview of the <strong>tools and workflows</strong> we use, so you can focus on writing great tutorials without worrying about the technical setup.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Who is this for?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This guide is intended primarily for <strong>OSC staff</strong> or other individuals who are responsible for creating and maintaining tutorials. However, much of the advice here is applicable to any Quarto project. Even if you are using a different setup, the tips and best practices covered in these pages are recommended reading for anyone interested in learning more about how our websites are built and/or who wishes to contribute to the OSC web presence.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="what-you-will-learn" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-will-learn">What You Will Learn</h2>
+<p>This section is organized into three chapters, meant to be read in order:</p>
+<section id="quarto-overview-and-tips" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-overview-and-tips">1. <a href="../authoring-tutorials/quarto-overview.html">Quarto Overview and Tips</a></h3>
+<p>If you are new to Quarto, start here. This chapter provides a brief introduction to what Quarto is and how we use it to create our website. It covers:</p>
+<ul>
+<li>The <code>.qmd</code> file format (YAML front matter, Markdown content, and code chunks)</li>
+<li>Quarto projects vs.&nbsp;standalone documents</li>
+<li>Installing Quarto and essential commands (<code>quarto preview</code>, <code>quarto render</code>, <code>quarto publish</code>)</li>
+<li>A typical authoring workflow</li>
+<li>Common Quarto features you will use frequently: figures, cross-references, callout blocks, code chunks, and tables</li>
+<li>Shortcuts and tips for working efficiently</li>
+</ul>
+</section>
+<section id="tutorial-template-walkthrough" class="level3">
+<h3 class="anchored" data-anchor-id="tutorial-template-walkthrough">2. <a href="../authoring-tutorials/tutorial-template.html">Tutorial Template Walkthrough</a></h3>
+<p>This chapter provides a detailed, file-by-file walkthrough of the <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code></a> repository — the standardized starting point for all of our tutorials. It covers:</p>
+<ul>
+<li>How to create a new tutorial from the template (step-by-step)</li>
+<li>What each file and directory in the template does, and which ones you need to edit</li>
+<li>The built-in <strong>GitHub Actions workflows</strong> and what they do</li>
+<li>A recommended order of operations for adapting the template to your tutorial</li>
+<li>Common pitfalls and what <em>not</em> to do</li>
+</ul>
+</section>
+<section id="finalization-and-publishing" class="level3">
+<h3 class="anchored" data-anchor-id="finalization-and-publishing">3. <a href="../authoring-tutorials/finalization-and-publishing.html">Finalization and Publishing</a></h3>
+<p>Once your tutorial content is ready, this chapter walks you through everything needed to go from a draft to a live, citable publication. It covers:</p>
+<ul>
+<li>The review process (how feedback is collected and resolved via GitHub issues and pull requests)</li>
+<li>A pre-publication checklist (verifying content, updating <code>CITATION.cff</code>, running <code>quarto check</code>, setting up <code>renv</code>)</li>
+<li>Activating GitHub Pages (the one-time <code>quarto publish gh-pages</code> command)</li>
+<li>Making the site live (merging into the tutorials repository and automated deployment)</li>
+<li>Setting up a DOI via Zenodo and GitHub releases</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="quick-start" class="level2">
+<h2 class="anchored" data-anchor-id="quick-start">Quick Start</h2>
+<p>If you are an experienced author who just needs a reminder of the key steps, here is the condensed workflow:</p>
+<ol type="1">
+<li><strong>Create a new repository</strong> from the <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code></a> using the “Use this template” button on GitHub.</li>
+<li><strong>Clone your new repository</strong> and open the folder in your editor.</li>
+<li><strong>Update <code>_quarto.yml</code></strong> with your tutorial’s title, repository URL, and navigation structure.</li>
+<li><strong>Write your content</strong> in <code>.qmd</code> files, previewing with <code>quarto preview</code>.</li>
+<li><strong>Run the pre-publication checklist</strong> (verify content, update <code>CITATION.cff</code>, activate GitHub Pages).</li>
+<li><strong>Submit for review</strong> and iterate on feedback.</li>
+<li><strong>Merge and publish</strong> — your tutorial goes live automatically.</li>
+</ol>
+<p>For full details on each step, follow the chapters above in order. If you get stuck or have questions, reach out to an OSC staff member or <a href="https://github.com/lmu-osc/manual/issues">open an issue</a> in the OSC Manual repository.</p>
+
+
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -954,8 +1033,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../path/file.qmd" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text">Introduction</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../authoring-tutorials/quarto-overview.html" class="pagination-link" aria-label="Quarto Overview and Tips">
+        <span class="nav-page-text">Quarto Overview and Tips</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -967,7 +1046,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

@@ -1,0 +1,21 @@
+# LRZ GitLab
+
+The LMU Open Science Center’s LRZ GitLab Group
+
+## Overview
+
+The LRZ (Leibniz Supercomputing Centre) hosts an instance of GitLab for LMU and several other member institutions in Munich. The LMU Open Science Center maintains a group on this instance where we host code and documentation repositories that are primarily related to our server infrastructure.
+
+## What’s Hosted Here
+
+The group contains repositories for the **OSC Bibliometrics project** as well as a **server-admin-howto** repository that documents the setup and maintenance of our Nginx and Pretix configurations. Since the LRZ GitLab is not public-facing — only logged-in members can view its contents — most of this content is intended for internal use and is not relevant to the public.
+
+## Access
+
+You will likely only need to access this GitLab instance if you are working on the services covered in the `server-admin-howto` repo or contributing to the Bibliometrics project. If you need access, please ask Felix or Malika to add you to the group with at least **Developer** permissions (or **Owner** permissions if you need to manage the repositories).
+
+You can log in using your LMU SSO credentials at the following URL:
+
+<https://gitlab.lrz.de/lmu-open-science-center/>
+
+Back to top

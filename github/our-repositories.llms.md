@@ -1,0 +1,124 @@
+# Repositories of the LMU Open Science Center
+
+An overview of the repositories maintained by the LMU Open Science Center, including categorisation, key examples, and conventions for creating and managing repositories
+
+## Overview
+
+Our GitHub organization hosts **over 50 repositories** covering a diverse range of projects — from public-facing websites and tutorials to internal tooling and configuration. This page provides a structured overview of the types of repositories we maintain and details on some of our most important ones.
+
+Each repository should contain its own documentation (typically a `README.md`) describing its purpose, contents, and how to use it. This page is meant to provide broader context about how our repositories relate to each other and how they fit into our workflows.
+
+------------------------------------------------------------------------
+
+## Repository categories
+
+Our repositories generally fall into the following categories:
+
+| Category | Description | Visibility |
+|----|----|----|
+| **Organization configuration** | Special repositories that control organization-wide settings, profiles, and community health files (e.g., `.github`) | Usually public, some private |
+| **Website and infrastructure** | The main OSC website, its deployment infrastructure, and related tooling | Public |
+| **Tutorials and educational content** | Hands-on tutorials created by OSC members, built from a shared template | Public |
+| **Documentation** | Manuals, guides, and reference material (like this manual) | Public |
+| **Internal tools** | Scripts, automation, and tooling used for internal operations | Mixed (some public, some private) |
+| **Backup and archival** | Automated backups of our repositories for disaster recovery | Private |
+
+------------------------------------------------------------------------
+
+## Organization configuration repositories
+
+These are special, convention-based repositories that GitHub recognises automatically. They control how our organization appears to the outside world and provide default settings for all other repositories.
+
+### `.github` — Public profile and community standards
+
+**[github.com/lmu-osc/.github](https://github.com/lmu-osc/.github)** serves two purposes:
+
+1.  **Organization profile README** — The text displayed at the top of [github.com/lmu-osc](https://github.com/lmu-osc). This is the first thing visitors see and should briefly explain who we are and what we do.
+2.  **Default community health files** — Templates for issues, pull requests, and a `CONTRIBUTING` guide that apply across **all** repositories in the organization. Individual repositories can override these by providing their own versions, but the defaults mean you only need to update a template in one place to affect every repo.
+
+> **When to update `.github`:** If you want to change the organization-wide issue template, add a new PR checklist, or update the `CONTRIBUTING` guide, edit this repository. Changes take effect immediately for all repos that don’t have their own local versions of these files.
+
+### `.github-private` — Internal-facing information
+
+**[github.com/lmu-osc/.github-private](https://github.com/lmu-osc/.github-private)** is the internal counterpart to `.github`. It is only visible to organization members and contains:
+
+- An **internal-facing README** with information relevant to the team but not intended for the public (e.g., internal processes, contact information).
+- Any other files that should be accessible to all members but not to the outside world.
+
+------------------------------------------------------------------------
+
+## Website and infrastructure
+
+### `lmu-osc.github.io` — The main OSC website
+
+**[github.com/lmu-osc/lmu-osc.github.io](https://github.com/lmu-osc/lmu-osc.github.io)** is our primary public-facing website. It is:
+
+- **Built with Quarto** — The site is generated from `.qmd` source files using the [Quarto](https://quarto.org/) publishing system.
+- **The main hub** for our public-facing documentation, resources, news, events, and people profiles.
+- **Deployed automatically** — See the infrastructure section below for how changes flow from this repo to the live site.
+
+The repository has three key branches:
+
+| Branch | Purpose |
+|----|----|
+| `main` | Source content (`.qmd` files, configuration, assets). This is where all development happens. |
+| `prod-pages` | The rendered HTML output, automatically deployed to the live website. **Never modify this branch directly.** |
+| `gh-pages` | The rendered HTML output, automatically deployed to the GitHub Pages version of the website. **Never modify this branch directly.** |
+
+### `webhook-receiver` — Deployment automation
+
+**[github.com/lmu-osc/webhook-receiver](https://github.com/lmu-osc/webhook-receiver)** is a small Go application that bridges GitHub and our web server. It:
+
+1.  **Listens for webhook events** from the website repository — specifically, pushes to the `prod-pages` branch.
+2.  **Pulls the updated content** to our internal server, making the changes live.
+
+This means publishing a change to the website is as simple as merging a PR into `main` — the Quarto rendering workflow produces the static site on `prod-pages`, and the webhook receiver deploys it automatically.
+
+For detailed information on the deployment pipeline, see the [Main Website Deployment Details](../misc-topics/main-website-deployment.llms.md) page.
+
+### `osc-website-transfer` — Legacy migration tooling (archived)
+
+**[github.com/lmu-osc/osc-website-transfer](https://github.com/lmu-osc/osc-website-transfer)** is a now-archived repository that was used during the transition from our old website to the current one. It contains scripts for:
+
+- Copying all old news, events, people pages, and other content.
+- Structuring that content in a format suitable for import into the new website.
+
+> **Note:** The old website has been decommissioned, so the links and references in this repository are no longer functional. It is kept for reference in case similar migration work is needed in the future.
+
+------------------------------------------------------------------------
+
+## Tutorials and educational content
+
+### `tutorial-template` — Base template for tutorials
+
+**[github.com/lmu-osc/tutorial-template](https://github.com/lmu-osc/tutorial-template)** is the standard template for all OSC tutorial repositories. It provides:
+
+- A consistent **directory structure** and **styling** across all tutorials.
+- Pre-configured **Quarto settings** for rendering tutorials as websites.
+- A `README` with instructions on how to use the template.
+
+**When to use this template:**
+
+- ✅ **Creating a new tutorial** — Start from this template to ensure consistency with other OSC tutorials.
+- ✅ **Updating an existing tutorial** — If a tutorial predates the template, it should be migrated to match the template’s structure and style. Check the template’s README for migration guidance.
+
+Tutorials built from this template are published at [lmu-osc.github.io](https://lmu-osc.github.io/) under their own subdomain (e.g., `https://lmu-osc.github.io/tutorial-name/`).
+
+------------------------------------------------------------------------
+
+## Backup and archival
+
+### `organization-backup` — Automated disaster recovery
+
+**[github.com/lmu-osc/organization-backup](https://github.com/lmu-osc/organization-backup)** is a private repository that handles automated backups of all organization repositories.
+
+- **Frequency:** Monthly.
+- **Destination:** Our internal server.
+- **Retention:** Backups older than 18 months are automatically deleted.
+- **Purpose:** A precautionary measure to ensure we have a copy of our work in case of issues with GitHub, and to maintain an internal archive.
+
+This is really a disaster recovery tool rather than a version control system, so it should not be used for regular access to historical versions of repositories. Instead, it serves as a safety net in case of emergencies. Backups are stored in folders for each month, with tarball archives of each repository at the time of the snapshot. If these are ever needed, they can be extracted and used to restore a repository to its state at the time of the backup. Felix would be the most likely point of contact for retrieving these backups.
+
+------------------------------------------------------------------------
+
+Back to top

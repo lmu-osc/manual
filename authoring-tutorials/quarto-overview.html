@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Getting Started – OSC Manual</title>
+<title>Quarto Overview – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -68,6 +68,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../authoring-tutorials/tutorial-template.html" rel="next">
+<link href="../authoring-tutorials/index.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -79,8 +81,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-f7077b44f840da289cc25d4e0ab9faa4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -169,7 +169,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Getting Started</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring-tutorials/index.html">Authoring an OSC Tutorial</a></li><li class="breadcrumb-item"><a href="../authoring-tutorials/quarto-overview.html">Quarto Overview and Tips</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -403,51 +403,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="sidebar-item-container"> 
             <a href="../authoring-tutorials/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Authoring an OSC Tutorial</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+  <a href="../authoring-tutorials/quarto-overview.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Quarto Overview and Tips</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tutorial Template Overview</span></a>
+  <a href="../authoring-tutorials/tutorial-template.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutorial Template Walkthrough</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Getting Started</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Things You Shouldn’t Change</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Matomo Analytics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Authoring and Versions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Best Practices</span></a>
+  <a href="../authoring-tutorials/finalization-and-publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Finalization and Publishing</span></a>
   </div>
 </li>
       </ul>
@@ -574,28 +550,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#create-a-new-github-repo" id="toc-create-a-new-github-repo" class="nav-link active" data-scroll-target="#create-a-new-github-repo">Create a New GitHub Repo</a></li>
-  <li><a href="#local-set-up" id="toc-local-set-up" class="nav-link" data-scroll-target="#local-set-up">Local Set-up</a>
+  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link active" data-scroll-target="#what-is-quarto">What is Quarto?</a>
   <ul class="collapse">
-  <li><a href="#pages-deployment" id="toc-pages-deployment" class="nav-link" data-scroll-target="#pages-deployment">Pages Deployment</a></li>
-  <li><a href="#zenodo-preparation" id="toc-zenodo-preparation" class="nav-link" data-scroll-target="#zenodo-preparation">Zenodo Preparation</a>
-  <ul class="collapse">
-  <li><a href="#enable-zenodo-extension" id="toc-enable-zenodo-extension" class="nav-link" data-scroll-target="#enable-zenodo-extension">Enable Zenodo Extension</a></li>
-  <li><a href="#citation-file" id="toc-citation-file" class="nav-link" data-scroll-target="#citation-file">CITATION File</a></li>
-  <li><a href="#about.qmd" id="toc-about.qmd" class="nav-link" data-scroll-target="#about.qmd">About.qmd</a></li>
-  <li><a href="#readme" id="toc-readme" class="nav-link" data-scroll-target="#readme">README</a></li>
+  <li><a href="#the-.qmd-file-format" id="toc-the-.qmd-file-format" class="nav-link" data-scroll-target="#the-.qmd-file-format">The <code>.qmd</code> file format</a></li>
+  <li><a href="#quarto-projects-vs.-standalone-documents" id="toc-quarto-projects-vs.-standalone-documents" class="nav-link" data-scroll-target="#quarto-projects-vs.-standalone-documents">Quarto projects vs.&nbsp;standalone documents</a></li>
   </ul></li>
-  <li><a href="#zenodo-connection" id="toc-zenodo-connection" class="nav-link" data-scroll-target="#zenodo-connection">Zenodo Connection</a></li>
+  <li><a href="#working-with-quarto" id="toc-working-with-quarto" class="nav-link" data-scroll-target="#working-with-quarto">Working with Quarto</a>
+  <ul class="collapse">
+  <li><a href="#the-tutorial-template-repository" id="toc-the-tutorial-template-repository" class="nav-link" data-scroll-target="#the-tutorial-template-repository">The <code>tutorial-template</code> repository</a></li>
+  <li><a href="#installing-quarto" id="toc-installing-quarto" class="nav-link" data-scroll-target="#installing-quarto">Installing Quarto</a></li>
+  <li><a href="#typical-workflow" id="toc-typical-workflow" class="nav-link" data-scroll-target="#typical-workflow">Typical workflow</a></li>
+  </ul></li>
+  <li><a href="#common-quarto-features" id="toc-common-quarto-features" class="nav-link" data-scroll-target="#common-quarto-features">Common Quarto Features</a>
+  <ul class="collapse">
+  <li><a href="#figures-and-images" id="toc-figures-and-images" class="nav-link" data-scroll-target="#figures-and-images">Figures and images</a></li>
+  <li><a href="#cross-referencing" id="toc-cross-referencing" class="nav-link" data-scroll-target="#cross-referencing">Cross-referencing</a></li>
+  <li><a href="#callout-blocks" id="toc-callout-blocks" class="nav-link" data-scroll-target="#callout-blocks">Callout blocks</a></li>
+  <li><a href="#code-chunks" id="toc-code-chunks" class="nav-link" data-scroll-target="#code-chunks">Code chunks</a></li>
+  <li><a href="#tables" id="toc-tables" class="nav-link" data-scroll-target="#tables">Tables</a></li>
+  <li><a href="#further-exploration" id="toc-further-exploration" class="nav-link" data-scroll-target="#further-exploration">Further exploration</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/getting-started.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/quarto-overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring-tutorials/index.html">Authoring an OSC Tutorial</a></li><li class="breadcrumb-item"><a href="../authoring-tutorials/quarto-overview.html">Quarto Overview and Tips</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Getting Started</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title">Quarto Overview</h1>
+<p class="subtitle lead">A brief overview of Quarto and how we use it to create our website</p>
 </div>
 
 
@@ -612,138 +596,204 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This chapter introduces how to make a tutorial based off of our template at <code>lmu-osc/tutorial-template</code>, and establishes much of the technical details that need to be set up before some of the later chapter. Additionally, we assume you are familiar with the structure of the tutorial template repo after reading the previous chapter.</p>
-<div class="callout callout-style-default callout-important callout-titled">
+<section id="what-is-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h2>
+<p><a href="https://quarto.org">Quarto</a> is an open-source scientific and technical publishing system built on <a href="https://pandoc.org">Pandoc</a>. It allows you to create documents, presentations, websites, books, and more using straightforward Markdown syntax. We use Quarto to build our websites because it provides a powerful and flexible way to manage content and publish it in a variety of formats. For example, we can write our tutorials in Markdown and then use Quarto to generate HTML pages for our website, as well as PDF, PowerPoint, and Word documents for sharing, printing, and repurposing.</p>
+<p>Quarto is the successor to RMarkdown and is designed to be more flexible and powerful than its predecessor. It also has a growing ecosystem of extensions and plugins that allow you to customize your documents and add new features. If you come from a Python background, the Markdown syntax and other features of Quarto should feel familiar — you can use Python code chunks in your documents just like you would in Jupyter notebooks.</p>
+<section id="the-.qmd-file-format" class="level3">
+<h3 class="anchored" data-anchor-id="the-.qmd-file-format">The <code>.qmd</code> file format</h3>
+<p>A Quarto document (<code>.qmd</code>) is essentially a plain-text file that combines three elements:</p>
+<ol type="1">
+<li><strong>YAML front matter</strong> — An optional block of metadata at the very top of the file, enclosed between <code>---</code> lines, where you set the title, author, date, output format, and various rendering options.</li>
+<li><strong>Markdown content</strong> — The body of your document, written in <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc-flavored Markdown</a>, which supports headings, lists, links, images, tables, math equations, and more.</li>
+<li><strong>Code chunks</strong> — Executable code blocks fenced with <code>```{language}</code> that can be written in R, Python, Julia, or <a href="https://quarto.org/docs/interactive/ojs/">Observable JS</a>. Code chunks can be run during rendering so their outputs (plots, tables, printed results) are included directly in the final document.</li>
+</ol>
+<p>This combination makes <code>.qmd</code> files an example of <em>literate programming</em>: your narrative and your code live in the same file, making your analysis more transparent, reproducible, and easier to maintain.</p>
+</section>
+<section id="quarto-projects-vs.-standalone-documents" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-projects-vs.-standalone-documents">Quarto projects vs.&nbsp;standalone documents</h3>
+<p>Quarto can render individual <code>.qmd</code> files in isolation, but for a project like a tutorial series or a website, you will typically work with a <strong>Quarto project</strong> — a folder containing a <code>_quarto.yml</code> configuration file alongside your <code>.qmd</code> files, images, and other assets. The <code>_quarto.yml</code> file controls:</p>
+<ul>
+<li>The <strong>project type</strong> (e.g.&nbsp;<code>website</code>, <code>book</code>, <code>manuscript</code>)</li>
+<li><strong>Navigation</strong> — how pages are linked and ordered in the menu</li>
+<li><strong>Global defaults</strong> for rendering options, applied across all pages</li>
+<li><strong>Output directory</strong> — where the rendered files are placed</li>
+</ul>
+<p>When it comes to formatting and styling your documents, Quarto provides many options for customizing the appearance of your content. You can use CSS to style your HTML output, and you can also use YAML front matter to specify options for your documents, such as the title, author, date, and more.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Development Practices &amp; gitflow
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>It is strongly encouraged that you develop your tutorial by using git branches, issues, and pull requests on GitHub.</strong></p>
-<p>This helps us clearly see what content has been added when, by whom, and (thanks to some features of GitHub pull requests) easily create lists of changes from one version of the tutorial to the next. Moreover, you can tag other team members directly to request feedback or review of your content in a more manageable approach by doing this.</p>
+<p>For a more detailed introduction, check out the <a href="https://quarto.org/docs/">official Quarto documentation</a>. There is also an extensive <a href="https://quarto.org/docs/guide/">Quarto Guide</a> with reference material on all aspects of the system.</p>
 </div>
-</div>
-<section id="create-a-new-github-repo" class="level1">
-<h1>Create a New GitHub Repo</h1>
-<ol type="1">
-<li>If you are not already a member of the LMU OSC GitHub organization, request to be added to the organization by any of the admins.</li>
-<li>Navigate to the “Repositories” section of our organization, and click “New Repository”</li>
-<li>Under the “Repository template” section, select the <code>lmu-osc/tutorial-template</code> option.</li>
-<li>Create an informative, but short, repository name
-<ul>
-<li><strong>Please only use dashes <code>-</code> to separate words e.g.&nbsp;<code>tutorial-template</code> or <code>introduction-to-renv</code></strong></li>
-</ul></li>
-<li>Add a brief description. This can be updated later.</li>
-<li>Set the repository to Public.
-<ul>
-<li>We do not have a GitHub Enterprise account so we cannot host GitHub Pages from private repositories.</li>
-</ul></li>
-</ol>
-<div class="column" style="width:100%;">
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../assets/videos/create_new_tutorial_repo_from_template.mp4"></video></div>
 </div>
 </section>
-<section id="local-set-up" class="level1">
-<h1>Local Set-up</h1>
-<section id="pages-deployment" class="level2">
-<h2 class="anchored" data-anchor-id="pages-deployment">Pages Deployment</h2>
-<div class="callout callout-style-default callout-tip callout-titled" title="Heads up!">
+</section>
+<section id="working-with-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="working-with-quarto">Working with Quarto</h2>
+<section id="the-tutorial-template-repository" class="level3">
+<h3 class="anchored" data-anchor-id="the-tutorial-template-repository">The <code>tutorial-template</code> repository</h3>
+<p>We developed the <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code></a> repository to provide a standardized starting point for all of our tutorials. This template includes a basic structure for a Quarto project, as well as pre-configured settings and styles that we use across all tutorials. When you create a new tutorial, you can simply clone the repository and start editing the content.</p>
+<p>The goal of the template is to make it quick and easy to create new tutorials without having to worry about the technical details of setting up a Quarto project from scratch. By providing a standardized template, we ensure that all tutorials have a consistent look and feel, and we make it easier for new authors to get started creating content for our website.</p>
+</section>
+<section id="installing-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="installing-quarto">Installing Quarto</h3>
+<p>We assume you can download and install Quarto on your local machine. If you have any issues, please reach out and we can help you get set up. Once Quarto is installed, you can use it by running the <code>quarto</code> command in your terminal. See the <a href="https://quarto.org/docs/cli/">command reference</a> for a full list of available commands.</p>
+<p>You will only need a handful of commands on a regular basis:</p>
+<ul>
+<li><strong><code>quarto preview</code></strong> — preview the project locally (the command you will use most often)</li>
+<li><strong><code>quarto add</code></strong> — add extensions to your project</li>
+<li><strong><code>quarto publish</code></strong> — publish your project to GitHub Pages (discussed in more detail in the following chapters)</li>
+</ul>
+</section>
+<section id="typical-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="typical-workflow">Typical workflow</h3>
+<p>Here is how we generally expect authors to work with a Quarto project:</p>
+<ol type="1">
+<li><p><strong>Create a new project.</strong> In the context of the <code>tutorial-template</code>, this simply means cloning the repository and opening it in your code editor.</p></li>
+<li><p><strong>Open the project properly.</strong> Use your preferred text editor (e.g.&nbsp;VS Code, Positron, RStudio). Be sure to open the <em>folder</em> containing the project files, not just individual files. This allows your editor to recognize the project structure and provide features like syntax highlighting and file navigation. The terminal will also be set to the project directory, which is important for running Quarto commands and other scripts that rely on relative file paths.</p></li>
+<li><p><strong>Edit the content.</strong> For the <code>tutorial-template</code>, this primarily means creating and editing <code>.qmd</code> files and including them in the <code>_quarto.yml</code> file so they appear in the website navigation. Each <code>.qmd</code> file can have its own YAML front matter to set the title, subtitle, and other page-specific options. You can also edit other files such as CSS for styling or YAML files for configuration.</p>
+<p>Inside a <code>.qmd</code> file, you can:</p>
+<ul>
+<li>Write richly formatted text using Markdown (headings, lists, links, images, tables)</li>
+<li>Include executable code chunks for R, Python, Julia, or Observable JS</li>
+<li>Add callout blocks, cross-references, figures, and other Quarto-specific elements</li>
+<li>Set per-page options in the YAML front matter (e.g.&nbsp;a different page title or a custom sidebar)</li>
+</ul></li>
+<li><p><strong>Preview your changes.</strong> Run <code>quarto preview</code> in the terminal. This starts a local web server and opens your default browser to display the website. As you save changes, the preview automatically updates to reflect them.</p>
+<blockquote class="blockquote">
+<p><strong>Important:</strong> Do not use the “Render” button in RStudio or the “Run” button in VS Code to preview Quarto documents. These may not render the website correctly and can lead to confusion. Always use <code>quarto preview</code> in the terminal.</p>
+</blockquote></li>
+<li><p><strong>Use version control.</strong> Work on a dedicated git branch, make regular commits with descriptive messages, and push your changes to GitHub frequently. This helps you keep track of your changes and makes it easier to collaborate with others. See the <a href="../tech-overview.html">Tech Overview</a> and the <a href="../github/review.html">GitHub Review</a> pages for more information on working with git and GitHub.</p></li>
+</ol>
+</section>
+</section>
+<section id="common-quarto-features" class="level2">
+<h2 class="anchored" data-anchor-id="common-quarto-features">Common Quarto Features</h2>
+<p>Here are some of the most commonly used Quarto features that you will encounter when creating tutorials:</p>
+<section id="figures-and-images" class="level3">
+<h3 class="anchored" data-anchor-id="figures-and-images">Figures and images</h3>
+<p>Quarto provides flexible options for adding images to your documents. You can include local images from your <code>images/</code> folder or link to external images. Images can be given captions, cross-references, and custom sizing:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Caption for the image](images/my-figure.png)</span>{#fig-example width=80%}</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>See @fig-example for an illustration of the concept.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>See the <a href="https://quarto.org/docs/authoring/figures.html">figures documentation</a> for details.</p>
+</section>
+<section id="cross-referencing" class="level3">
+<h3 class="anchored" data-anchor-id="cross-referencing">Cross-referencing</h3>
+<p>Cross-referencing is highly recommended for tutorials with multiple pages. It allows you to easily link to other pages, sections, figures, tables, or equations in your tutorial and ensures those links stay up-to-date, even if you change the structure later on. To cross-reference a heading, add an identifier with the <code>{#my-id}</code> syntax:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Preparation {#sec-data-prep}</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>As discussed in @sec-data-prep, you should clean your data first.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Learn more about <a href="https://quarto.org/docs/authoring/cross-references.html">cross-references in Quarto</a>.</p>
+</section>
+<section id="callout-blocks" class="level3">
+<h3 class="anchored" data-anchor-id="callout-blocks">Callout blocks</h3>
+<p>Callout blocks are a great way to highlight important information, provide tips, warnings, and more. They make your content more engaging and easier to read. Quarto supports several callout types:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>This is a note — useful for general information.</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>This is a warning — draw attention to potential pitfalls.</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>This highlights something critical that readers must not miss.</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>See the <a href="https://quarto.org/docs/authoring/callouts.html">callouts documentation</a> for usage instructions.</p>
+</section>
+<section id="code-chunks" class="level3">
+<h3 class="anchored" data-anchor-id="code-chunks">Code chunks</h3>
+<p>Code chunks let you include executable code in your tutorial. The code runs when the document is rendered, and its output (plots, tables, console output) is inserted directly into the page. You can control chunk behavior with options such as:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(mtcars<span class="sc">$</span>mpg, mtcars<span class="sc">$</span>hp)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="quarto-overview_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>My plot</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Quarto supports R, Python, Julia, and Observable JS code chunks. See the <a href="https://quarto.org/docs/computation/">code execution documentation</a> for more details.</p>
+</section>
+<section id="tables" class="level3">
+<h3 class="anchored" data-anchor-id="tables">Tables</h3>
+<p>You can create both plain Markdown tables and more advanced formatted tables with captions and cross-references:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Method      <span class="pp">|</span> Description                  <span class="pp">|</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------------|------------------------------|</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`qmd`</span>       <span class="pp">|</span> Quarto document file         <span class="pp">|</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`yml`</span>       <span class="pp">|</span> Configuration file           <span class="pp">|</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> <span class="in">`css`</span>       <span class="pp">|</span> Custom stylesheet            <span class="pp">|</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>: Supported file types {#tbl-filetypes}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>And the resulting table will look like this:</p>
+<div id="tbl-filetypes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-filetypes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Supported file types
+</figcaption>
+<div aria-describedby="tbl-filetypes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>qmd</code></td>
+<td>Quarto document file</td>
+</tr>
+<tr class="even">
+<td><code>yml</code></td>
+<td>Configuration file</td>
+</tr>
+<tr class="odd">
+<td><code>css</code></td>
+<td>Custom stylesheet</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The table here is even cross-referencable with <code>@tbl-filetypes</code>: <a href="#tbl-filetypes" class="quarto-xref">Table&nbsp;1</a>. Learn more about <a href="https://quarto.org/docs/authoring/tables.html">tables in Quarto</a>.</p>
+</section>
+<section id="further-exploration" class="level3">
+<h3 class="anchored" data-anchor-id="further-exploration">Further exploration</h3>
+<p>There is much more to discover in the <a href="https://quarto.org/docs/authoring/">Authoring</a> and <a href="https://quarto.org/docs/websites/">Websites</a> sections of the Quarto guide. A few other useful features worth exploring:</p>
+<ul>
+<li><strong>Divs and spans</strong> — Apply custom CSS classes or attributes to blocks of content or inline text</li>
+<li><strong>Citations and bibliographies</strong> — Reference academic papers and generate a reference list automatically</li>
+<li><strong>Video embedding</strong> — Include videos from YouTube, Vimeo, or local files</li>
+<li><strong>Math equations</strong> — Write LaTeX math rendered with MathJax or KaTeX</li>
+<li><strong>Interactive documents</strong> — Use Observable JS, Shiny, or Dash for interactive elements</li>
+</ul>
+<p>Feel free to explore these resources, ask your favorite LLM, or reach out to other OSC members for recommendations on useful Quarto features.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Heads up!
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In Step 3: if your terminal becomes stuck on the message “<em>Deploying gh-pages branch to website (this may take a few minutes)</em>” and if your deployment wasn’t successful, then you have probably not made the repository public. In the GitHub repo for your project, navigate to the Visibility option in the settings, and change to public. Then, repeat Step 3.</p>
+<p>The features listed above are some of the most commonly used in our tutorials and are a good starting point for new authors. Take the time to familiarize yourself with them and consider how they can enhance your tutorials before you start creating content.</p>
 </div>
 </div>
-<ol type="1">
-<li>Clone the new repository</li>
-<li>If you are going to use RStudio with your project, create a new RStudio project while on the main branch. Commit this <code>.RProj</code> file and push to GitHub immediately.</li>
-<li>Run the command <code>quarto publish gh-pages</code> at the terminal, and agree to publish the site.
-<ul>
-<li>This will automatically activate GitHub Pages on the repo, and set the site to be deployed from the <code>gh-pages</code> branch on GitHub.</li>
-</ul></li>
-<li>Remove the <code>gh-pages</code> branch from your local computer with <code>git branch -D gh-pages</code>. You should not be making direct edits to this branch as it is updated by the CI/CD pipeline for publishing.</li>
-</ol>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>You can check the status of the website deployment by navigating to Actions in the repo. A green checkbox indicates succesful deployment. Your terminal may or may not continue to display “Deploying gh-pages branch to website (this may take a few minutes).” If your deloyment was successful, you can simply use “Cmd+C” to exit the loop.</p>
-</div>
-</div>
-</section>
-<section id="zenodo-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="zenodo-preparation">Zenodo Preparation</h2>
-<p>We use Zenodo for the generation of our repository DOIs, and the steps below outline a number of requirements or best practices we aim to follow when making our first Zenodo submission.</p>
-<section id="enable-zenodo-extension" class="level3">
-<h3 class="anchored" data-anchor-id="enable-zenodo-extension">Enable Zenodo Extension</h3>
-<ol type="1">
-<li>Fellow the 5 GitHub steps for <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#issuing-a-persistent-identifier-for-your-repository-with-zenodo">linking Zenodo with GitHub</a>.</li>
-<li>If you don’t want to connect these accounts or you are otherwise unable to authorize the repo on Zenodo, notify one of the admin members of the OSC GitHub organization. They should have the admin rights necessary to enable your new GitHub repo.</li>
-<li>If you’re waiting on Step 2, you can still move forward through the rest of this Zenodo Preparation section.</li>
-</ol>
-</section>
-<section id="citation-file" class="level3">
-<h3 class="anchored" data-anchor-id="citation-file">CITATION File</h3>
-<p>Zenodo in particular looks for a Citation File Format citation file so that it can auto-generate a citation on the Zenodo website. GitHub can also use this file for creating a formatted citation.</p>
-<ol type="1">
-<li>Open the CITATION.cff file, and complete it to the best of your ability/knowledge of what the tutorial will be named, who the authors will be, etc. See the <a href="https://github.com/citation-file-format/citation-file-format/blob/main/README.md">project’s documentation page</a> if any fields are unclear, or open an issue in your repo and assign it to another OSC member.</li>
-<li>Remove the DOI field for now. This will be added back after we generate a DOI from Zenodo.</li>
-</ol>
-</section>
-<section id="about.qmd" class="level3">
-<h3 class="anchored" data-anchor-id="about.qmd">About.qmd</h3>
-<p>In addition to the CITATION file, we include citation information direcrtly in the tutorial in the About pages.</p>
-<ol type="1">
-<li>Open the about.qmd file, and complete the <code>yaml</code> header with essentially the same citation information as above, filling out the fields to the best of your ability.</li>
-</ol>
-</section>
-<section id="readme" class="level3">
-<h3 class="anchored" data-anchor-id="readme">README</h3>
-<ol type="1">
-<li>Open the README file, and add a basic description of the project. This does not need to be more than a few basic sentences for now.</li>
-</ol>
-</section>
-</section>
-<section id="zenodo-connection" class="level2">
-<h2 class="anchored" data-anchor-id="zenodo-connection">Zenodo Connection</h2>
-<p>After the connection between the repository and Zenodo has been confirmed, it is now possible to trigger the connection by having a GitHub “release.”</p>
-<ol type="1">
-<li>From the GitHub repo page, press the “Create a new release” link on the right hand side.</li>
-<li>You must enter a tag, a release title, and a description.
-<ul>
-<li>The tag should be the semantic version prefixed with “v” e.g.&nbsp;<code>v0.0.1</code> for the first release</li>
-<li>The title can be something like “Tutorial repo begin” or similar.</li>
-<li>The description can be very basic info about the repo/project. Later releases will use the “Generate release notes” button to create this description information.</li>
-</ul></li>
-<li>Press “Publish release.” The repo will now be sent to Zenodo, and a DOI should be generated.
-<ul>
-<li>However, this may fail if the CITATION file has errors. You should receive a notice about this ahead of time from the GitHub Action that checks the CITATION file so make sure to fix any mistakes in advance.</li>
-</ul></li>
-<li>Navigate to Zenodo.org, log-in, press on your user-name in the top right corner, and click on GitHub. Under the enabled repositories, you should see the name of your repo.</li>
-<li>Click the DOI badge. This should open a pop-up with different options for copying the text of the badge. Copy the Markdown option.</li>
-<li>Paste the code for the DOI Markdown badge at the top of the README file.</li>
-<li>Add the DOI to the CITATION file.</li>
-</ol>
-<p>Congrats! Your tutorial now has the infrastructure for automated deployments to GitHub Pages, and additional releases on GitHub will update the DOI + content of your project on Zenodo.</p>
 
-
-<!-- -->
 
 </section>
 </section>
@@ -819,57 +869,6 @@ Note
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -1199,111 +1198,19 @@ Note
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Getting Started"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-summary: "Show the code"</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This chapter introduces how to make a tutorial based off of our template at <span class="in">`lmu-osc/tutorial-template`</span>, and establishes much of the technical details that need to be set up before some of the later chapter. Additionally, we assume you are familiar with the structure of the tutorial template repo after reading the previous chapter.</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Development Practices &amp; gitflow</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>**It is strongly encouraged that you develop your tutorial by using git branches, issues, and pull requests on GitHub.**</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>This helps us clearly see what content has been added when, by whom, and (thanks to some features of GitHub pull requests) easily create lists of changes from one version of the tutorial to the next. Moreover, you can tag other team members directly to request feedback or review of your content in a more manageable approach by doing this.</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu"># Create a New GitHub Repo</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>If you are not already a member of the LMU OSC GitHub organization, request to be added to the organization by any of the admins.</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Navigate to the "Repositories" section of our organization, and click "New Repository"</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Under the "Repository template" section, select the <span class="in">`lmu-osc/tutorial-template`</span> option.</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Create an informative, but short, repository name</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>**Please only use dashes `-` to separate words e.g. `tutorial-template` or `introduction-to-renv`**</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Add a brief description. This can be updated later.</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Set the repository to Public.</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>We do not have a GitHub Enterprise account so we cannot host GitHub Pages from private repositories.</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>::: {.column width=100%}</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>{{&lt; video ../assets/videos/create_new_tutorial_repo_from_template.mp4 &gt;}}</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu"># Local Set-up</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Pages Deployment</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip title="Heads up!"}</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>In Step 3: if your terminal becomes stuck on the message "*Deploying gh-pages branch to website (this may take a few minutes)*" and if your deployment wasn't successful, then you have probably not made the repository public. In the GitHub repo for your project, navigate to the Visibility option in the settings, and change to public. Then, repeat Step 3.</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Clone the new repository</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>If you are going to use RStudio with your project, create a new RStudio project while on the main branch. Commit this <span class="in">`.RProj`</span> file and push to GitHub immediately.</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Run the command <span class="in">`quarto publish gh-pages`</span> at the terminal, and agree to publish the site.</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>This will automatically activate GitHub Pages on the repo, and set the site to be deployed from the <span class="in">`gh-pages`</span> branch on GitHub.</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Remove the <span class="in">`gh-pages`</span> branch from your local computer with <span class="in">`git branch -D gh-pages`</span>. You should not be making direct edits to this branch as it is updated by the CI/CD pipeline for publishing.</span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>You can check the status of the website deployment by navigating to Actions in the repo. A green checkbox indicates succesful deployment. Your terminal may or may not continue to display "Deploying gh-pages branch to website (this may take a few minutes)." If your deloyment was successful, you can simply use "Cmd+C" to exit the loop.</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zenodo Preparation</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>We use Zenodo for the generation of our repository DOIs, and the steps below outline a number of requirements or best practices we aim to follow when making our first Zenodo submission.</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">### Enable Zenodo Extension</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Fellow the 5 GitHub steps for <span class="co">[</span><span class="ot">linking Zenodo with GitHub</span><span class="co">](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#issuing-a-persistent-identifier-for-your-repository-with-zenodo)</span>.</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>If you don't want to connect these accounts or you are otherwise unable to authorize the repo on Zenodo, notify one of the admin members of the OSC GitHub organization. They should have the admin rights necessary to enable your new GitHub repo.</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>If you're waiting on Step 2, you can still move forward through the rest of this Zenodo Preparation section.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="fu">### CITATION File</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Zenodo in particular looks for a Citation File Format citation file so that it can auto-generate a citation on the Zenodo website. GitHub can also use this file for creating a formatted citation.</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Open the CITATION.cff file, and complete it to the best of your ability/knowledge of what the tutorial will be named, who the authors will be, etc. See the <span class="co">[</span><span class="ot">project's documentation page</span><span class="co">](https://github.com/citation-file-format/citation-file-format/blob/main/README.md)</span> if any fields are unclear, or open an issue in your repo and assign it to another OSC member.</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Remove the DOI field for now. This will be added back after we generate a DOI from Zenodo.</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="fu">### About.qmd</span></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>In addition to the CITATION file, we include citation information direcrtly in the tutorial in the About pages.</span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Open the about.qmd file, and complete the <span class="in">`yaml`</span> header with essentially the same citation information as above, filling out the fields to the best of your ability.</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a><span class="fu">### README</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Open the README file, and add a basic description of the project. This does not need to be more than a few basic sentences for now.</span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a><span class="fu">## Zenodo Connection</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>After the connection between the repository and Zenodo has been confirmed, it is now possible to trigger the connection by having a GitHub "release."</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>From the GitHub repo page, press the "Create a new release" link on the right hand side.</span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>You must enter a tag, a release title, and a description.</span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>The tag should be the semantic version prefixed with "v" e.g. <span class="in">`v0.0.1`</span> for the first release</span>
-<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>The title can be something like "Tutorial repo begin" or similar.</span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>The description can be very basic info about the repo/project. Later releases will use the "Generate release notes" button to create this description information.</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Press "Publish release." The repo will now be sent to Zenodo, and a DOI should be generated.</span>
-<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>However, this may fail if the CITATION file has errors. You should receive a notice about this ahead of time from the GitHub Action that checks the CITATION file so make sure to fix any mistakes in advance.</span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Navigate to Zenodo.org, log-in, press on your user-name in the top right corner, and click on GitHub. Under the enabled repositories, you should see the name of your repo.</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Click the DOI badge. This should open a pop-up with different options for copying the text of the badge. Copy the Markdown option.</span>
-<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Paste the code for the DOI Markdown badge at the top of the README file.</span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>Add the DOI to the CITATION file.</span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a>Congrats! Your tutorial now has the infrastructure for automated deployments to GitHub Pages, and additional releases on GitHub will update the DOI + content of your project on Zenodo.</span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div>
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../authoring-tutorials/index.html" class="pagination-link" aria-label="Authoring an OSC Tutorial">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Authoring an OSC Tutorial</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../authoring-tutorials/tutorial-template.html" class="pagination-link" aria-label="Tutorial Template Walkthrough">
+        <span class="nav-page-text">Tutorial Template Walkthrough</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1312,13 +1219,12 @@ Note
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/getting-started.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/quarto-overview.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Things You Shouldn’t Change – OSC Manual</title>
+<title>Finalizing and Publishing Your Tutorial – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -33,6 +68,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../path/index.qmd" rel="next">
+<link href="../authoring-tutorials/tutorial-template.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -132,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Things You Shouldn’t Change</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring-tutorials/index.html">Authoring an OSC Tutorial</a></li><li class="breadcrumb-item"><a href="../authoring-tutorials/finalization-and-publishing.html">Finalization and Publishing</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -366,51 +403,27 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../authoring-tutorials/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Authoring an OSC Tutorial</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+  <a href="../authoring-tutorials/quarto-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quarto Overview and Tips</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tutorial Template Overview</span></a>
+  <a href="../authoring-tutorials/tutorial-template.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tutorial Template Walkthrough</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Getting Started</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Things You Shouldn’t Change</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Matomo Analytics</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Authoring and Versions</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Best Practices</span></a>
+  <a href="../authoring-tutorials/finalization-and-publishing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Finalization and Publishing</span></a>
   </div>
 </li>
       </ul>
@@ -537,21 +550,45 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-github-action-files" id="toc-the-github-action-files" class="nav-link active" data-scroll-target="#the-github-action-files">The GitHub Action Files</a></li>
-  <li><a href="#the-.gitignore" id="toc-the-.gitignore" class="nav-link" data-scroll-target="#the-.gitignore">The .gitignore</a></li>
-  <li><a href="#the-_quarto.yml-file" id="toc-the-_quarto.yml-file" class="nav-link" data-scroll-target="#the-_quarto.yml-file">The <code>_quarto.yml</code> File</a></li>
-  <li><a href="#the-license-files" id="toc-the-license-files" class="nav-link" data-scroll-target="#the-license-files">The LICENSE Files</a></li>
-  <li><a href="#the-citation-file" id="toc-the-citation-file" class="nav-link" data-scroll-target="#the-citation-file">The CITATION File</a></li>
-  <li><a href="#the-about-page" id="toc-the-about-page" class="nav-link" data-scroll-target="#the-about-page">The About Page</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#the-review-process" id="toc-the-review-process" class="nav-link" data-scroll-target="#the-review-process">The Review Process</a>
+  <ul class="collapse">
+  <li><a href="#how-review-typically-works" id="toc-how-review-typically-works" class="nav-link" data-scroll-target="#how-review-typically-works">How review typically works</a></li>
+  </ul></li>
+  <li><a href="#pre-publication-checklist" id="toc-pre-publication-checklist" class="nav-link" data-scroll-target="#pre-publication-checklist">Pre-Publication Checklist</a>
+  <ul class="collapse">
+  <li><a href="#verify-your-content" id="toc-verify-your-content" class="nav-link" data-scroll-target="#verify-your-content">0. Verify your content</a></li>
+  <li><a href="#update-the-citation.cff-file" id="toc-update-the-citation.cff-file" class="nav-link" data-scroll-target="#update-the-citation.cff-file">1. Update the <code>CITATION.cff</code> file</a></li>
+  <li><a href="#check-your-quarto-project-useful-if-using-code-chunks" id="toc-check-your-quarto-project-useful-if-using-code-chunks" class="nav-link" data-scroll-target="#check-your-quarto-project-useful-if-using-code-chunks">2. Check your Quarto project (useful if using code chunks)</a></li>
+  <li><a href="#understand-the-built-in-cicd-workflows" id="toc-understand-the-built-in-cicd-workflows" class="nav-link" data-scroll-target="#understand-the-built-in-cicd-workflows">3. Understand the built-in CI/CD workflows</a></li>
+  <li><a href="#activate-github-pages-one-time-setup" id="toc-activate-github-pages-one-time-setup" class="nav-link" data-scroll-target="#activate-github-pages-one-time-setup">4. Activate GitHub Pages (one-time setup)</a></li>
+  </ul></li>
+  <li><a href="#making-the-site-live" id="toc-making-the-site-live" class="nav-link" data-scroll-target="#making-the-site-live">Making the Site Live</a>
+  <ul class="collapse">
+  <li><a href="#final-checks-before-merging" id="toc-final-checks-before-merging" class="nav-link" data-scroll-target="#final-checks-before-merging">Final checks before merging</a></li>
+  <li><a href="#merging-into-the-tutorials-repository" id="toc-merging-into-the-tutorials-repository" class="nav-link" data-scroll-target="#merging-into-the-tutorials-repository">Merging into the tutorials repository</a></li>
+  <li><a href="#automated-deployment" id="toc-automated-deployment" class="nav-link" data-scroll-target="#automated-deployment">Automated deployment</a></li>
+  </ul></li>
+  <li><a href="#zenodo-integration-and-dois" id="toc-zenodo-integration-and-dois" class="nav-link" data-scroll-target="#zenodo-integration-and-dois">Zenodo Integration and DOIs</a>
+  <ul class="collapse">
+  <li><a href="#what-is-zenodo" id="toc-what-is-zenodo" class="nav-link" data-scroll-target="#what-is-zenodo">What is Zenodo?</a></li>
+  <li><a href="#what-is-a-github-release" id="toc-what-is-a-github-release" class="nav-link" data-scroll-target="#what-is-a-github-release">What is a GitHub release?</a></li>
+  <li><a href="#setting-up-the-connection" id="toc-setting-up-the-connection" class="nav-link" data-scroll-target="#setting-up-the-connection">Setting up the connection</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a>
+  <ul class="collapse">
+  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting help</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/things-you-should-not-change.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/finalization-and-publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../authoring-tutorials/index.html">Authoring an OSC Tutorial</a></li><li class="breadcrumb-item"><a href="../authoring-tutorials/finalization-and-publishing.html">Finalization and Publishing</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Things You Shouldn’t Change</h1>
+<h1 class="title">Finalizing and Publishing Your Tutorial</h1>
+<p class="subtitle lead">Final steps for cleaning up, submitting for review, and publishing your tutorial via the OSC GitHub Org</p>
 </div>
 
 
@@ -568,36 +605,398 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A more accurate title for this page would be “<strong>Things You Shouldn’t Change Without a Good Reason</strong>.” The following are some of the things you should be careful about changing in the project:</p>
-<section id="the-github-action-files" class="level1">
-<h1>The GitHub Action Files</h1>
-<p>The publishing workflow <em>should</em> work out of the box for Quarto projects, and for projects that are combined with R (with or without {renv}–but <strong>please do use {renv} if your project uses R</strong>). If you need to change this workflow file, it should only be because there is genuinely an issue with the configuration or if a dependency is not installed.</p>
-<p>Missing system dependencies may particularly be a problem for now because, at the time of writing this in early 2025, GitHub recently changed their latest Ubuntu image to 24.04 and stripped away some dependencies that they included in the 22.02 image.</p>
-<p>You’re welcome to adjust or create your own publish workflow if needed, or you can contact staff at the OSC for help.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Once you have created your tutorial content (using the <a href="../authoring-tutorials/tutorial-template.html"><code>tutorial-template</code></a> as described in the previous chapter) and are ready to publish, there are a few important steps to take to ensure your tutorial is polished, properly licensed, and ready for public consumption. This chapter covers everything you need to do to go from a draft tutorial to a live, citable publication on the OSC website. It includes:</p>
+<ul>
+<li>A <strong>review process</strong> overview for getting feedback on your content</li>
+<li>A <strong>pre-publication checklist</strong> of tasks to complete before publishing</li>
+<li>Instructions for <strong>making your tutorial live</strong> on the website</li>
+<li>Guidance on <strong>setting up a DOI</strong> via Zenodo and GitHub releases</li>
+</ul>
+<p>This chapter is intended primarily for OSC staff who are responsible for creating and maintaining tutorials, though much of the information will also be relevant to external contributors.</p>
+<hr>
 </section>
-<section id="the-.gitignore" class="level1">
-<h1>The .gitignore</h1>
-<p>This has been set-up to ignore annoying or unneeded components of R projects/packages, Quarto projects, and files that are commonly included in repositories even though they <strong>should not</strong> be. Feel free to add more files to the <code>.gitignore</code> if something specific needs to be blocked or ignored, but, in general, you should not delete items from this file.</p>
+<section id="the-review-process" class="level2">
+<h2 class="anchored" data-anchor-id="the-review-process">The Review Process</h2>
+<p>Before a tutorial is published, it goes through a review period with OSC staff (and optionally with other stakeholders). This ensures the content meets our quality standards and is consistent with the rest of the website.</p>
+<section id="how-review-typically-works" class="level3">
+<h3 class="anchored" data-anchor-id="how-review-typically-works">How review typically works</h3>
+<ol type="1">
+<li><strong>Share your draft.</strong> Make your tutorial repository accessible to reviewers (either within the <code>lmu-osc</code> organization or by inviting collaborators).</li>
+<li><strong>Collect feedback.</strong> Reviewers provide feedback by opening <strong>GitHub issues</strong> or <strong>pull requests</strong> in your tutorial repository. This keeps the entire process transparent and documented.</li>
+<li><strong>Discuss and revise.</strong> Work through the feedback, make revisions, and discuss any open questions directly in the issues or PRs.</li>
+<li><strong>Get approval.</strong> Once all parties are satisfied, the tutorial is approved for publication.</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Establish a clear review process early
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The exact review workflow may vary depending on the tutorial and the preferences of the people involved. What matters is that you and your reviewers agree on a process upfront and <strong>document it in the repository</strong> — for example in the <code>README.md</code> or in a <code>CONTRIBUTING.md</code> file. This avoids confusion about how feedback should be submitted and who is responsible for what.</p>
+<p>At minimum, your documented process should specify:</p>
+<ul>
+<li><strong>Who</strong> the reviewers will be (e.g., one other OSC staff member, or the entire team)</li>
+<li><strong>How</strong> feedback should be submitted (GitHub issues, PRs, or both)</li>
+<li><strong>Timeline</strong> — how long reviewers have to provide feedback (e.g., two weeks)</li>
+<li><strong>Definition of done</strong> — what constitutes approval (e.g., all issues resolved, or a formal sign-off)</li>
+</ul>
+</div>
+</div>
+<hr>
 </section>
-<section id="the-_quarto.yml-file" class="level1">
-<h1>The <code>_quarto.yml</code> File</h1>
-<p>We aim for our tutorials to have a standard look and feel, and the <code>_quarto.yml</code> file is a big part of that. If you need to change this file beyond the required adjustments mentioned in previous chapters, please contact staff at the OSC for help. We’re always open for improvements to the design, but we do want to make sure any changes get applied across all tutorials.</p>
 </section>
-<section id="the-license-files" class="level1">
-<h1>The LICENSE Files</h1>
-<p>The license files are there to protect the intellectual property of the authors and the OSC, and should not be changed unless there are legal reasons or extenuating circumstances to do so. If you have questions about the license, please contact staff at the OSC. We’re currently working on documentation that outlines our licensing decisions in greater detail.</p>
+<section id="pre-publication-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="pre-publication-checklist">Pre-Publication Checklist</h2>
+<p>Before your tutorial can go live, work through the following tasks. Some are required in all cases; others are only necessary if your tutorial uses R code. Checking off these items will help ensure a smooth publication process.</p>
+<section id="verify-your-content" class="level3">
+<h3 class="anchored" data-anchor-id="verify-your-content">0. Verify your content</h3>
+<p>Before diving into the technical checklist, do a final review of your tutorial content itself:</p>
+<ul>
+<li><strong>Read through the entire tutorial</strong> as if you were a learner. Are there any gaps, unclear instructions, or broken flow?</li>
+<li><strong>Check all links</strong> — internal links (to other pages within your tutorial) and external links (to websites, documentation, etc.). Broken links frustrate readers and undermine credibility.</li>
+<li><strong>Verify images and figures</strong> — do all images load correctly? Are the file paths correct? (Remember: use <strong>absolute paths</strong> from the project root, e.g., <code>/assets/images/my-figure.png</code>.)</li>
+<li><strong>Test code chunks</strong> — if your tutorial includes code, run all code chunks fresh (clear your environment and re-execute) to confirm they produce the expected output without errors.</li>
+<li><strong>Check spelling and grammar</strong> — consider using a spell-checker or reading your text aloud to catch awkward phrasing.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Quarto’s built-in preview is your friend here. Run <code>quarto preview</code> in your project directory and navigate through the rendered site as a visitor would. This catches many issues that are invisible when looking at the raw <code>.qmd</code> files.</p>
+</div>
+</div>
 </section>
-<section id="the-citation-file" class="level1">
-<h1>The CITATION File</h1>
-<p>The CITATION file is there to help others cite your work, and we have tried to select useful fields provided by the Citation File Format. As with the <code>_quarto.yml</code> file, we’re open to suggestions if more fields should be added, but please contact staff at the OSC before making changes.</p>
+<section id="update-the-citation.cff-file" class="level3">
+<h3 class="anchored" data-anchor-id="update-the-citation.cff-file">1. Update the <code>CITATION.cff</code> file</h3>
+<p>The <code>CITATION.cff</code> file contains machine-readable citation metadata for your tutorial. It allows others to cite your work correctly and can be automatically imported into reference managers like Zotero or EndNote.</p>
+<p>Edit this file to include:</p>
+<ul>
+<li><strong>Author names</strong> — list all contributors who should be credited, in the order you want them to appear in the citation</li>
+<li><strong>ORCID iDs</strong> — unique researcher identifiers (see <a href="https://orcid.org">orcid.org</a>). If an author does not have an ORCID, you can leave this field out or note “none”</li>
+<li><strong>Affiliations</strong> — institutional affiliations for each author (e.g., “Open Science Center, LMU Munich”)</li>
+<li><strong>Version number</strong> — should match the version tag you will use for your GitHub release (see <a href="#zenodo-integration-and-dois">Zenodo Integration</a> below)</li>
+<li><strong>Title</strong> — make sure the title matches your tutorial’s title as shown on the website</li>
+<li><strong>License</strong> — the template defaults to <code>CC-BY-SA-4.0</code> for content and <code>CC0-1.0</code> for code; only change these if you have a specific reason</li>
+</ul>
+<p>If you are unsure about the format, refer to the <a href="https://citation-file-format.github.io/">official CITATION.cff documentation</a> for guidance and examples.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The template repository includes a <code>CITATION.cff</code> file with placeholder values. Start by editing that file rather than creating one from scratch. Pay attention to the YAML formatting — indentation matters, and incorrect indentation can cause the file to be unreadable by citation tools.</p>
+</div>
+</div>
 </section>
-<section id="the-about-page" class="level1">
-<h1>The About Page</h1>
-<p>The <code>yaml</code> header in the About page is also standardized to approximately align with the CITATION file, but Quarto does not align exactly with CFF so you cannot simply copy/paste the CITATION file contents to this section.</p>
-<p>The main content of the About page can be altered to add contributors notes and any other relevant authoring information that cannot be included as metadata in the <code>yaml</code> field. Please do not remove or change the notes about licensing on this page.</p>
-<p>If you have cited other sources in your tutorial and created a bibliography, please reference the bibliography in the <code>yaml</code> header of this page with e.g.&nbsp;<code>bibliography: your_bib_file.bib</code></p>
+<section id="check-your-quarto-project-useful-if-using-code-chunks" class="level3">
+<h3 class="anchored" data-anchor-id="check-your-quarto-project-useful-if-using-code-chunks">2. Check your Quarto project (useful if using code chunks)</h3>
+<p>If your tutorial includes <strong>R code chunks</strong>, you need to take two additional steps to ensure your code will build correctly in the deployment pipeline.</p>
+<section id="a-run-quarto-check" class="level4">
+<h4 class="anchored" data-anchor-id="a-run-quarto-check">a) Run <code>quarto check</code></h4>
+<p>This command validates your Quarto project and checks that all code chunks are properly formatted. It helps catch errors early, before they cause build failures during deployment.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> check</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="b-set-up-renv-for-reproducible-r-environments" class="level4">
+<h4 class="anchored" data-anchor-id="b-set-up-renv-for-reproducible-r-environments">b) Set up <code>renv</code> for reproducible R environments</h4>
+<p>The deployment pipeline relies on <code>renv</code> to restore the exact R package versions used in your tutorial. This ensures your code remains reproducible even as packages are updated over time.</p>
+<p>Open an R session in your project directory and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">init</span>()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>renv<span class="sc">::</span><span class="fu">snapshot</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This will create a lockfile (<code>renv.lock</code>) that captures the precise versions of all R packages your tutorial depends on. Commit this file to your repository.</p>
+<div class="callout-info">
+<p>If your tutorial does <strong>not</strong> contain any R code chunks, you can skip this step entirely. The deployment pipeline will still work without <code>renv</code> for Python- or Markdown-only tutorials.</p>
+</div>
+</section>
+</section>
+<section id="understand-the-built-in-cicd-workflows" class="level3">
+<h3 class="anchored" data-anchor-id="understand-the-built-in-cicd-workflows">3. Understand the built-in CI/CD workflows</h3>
+<p>The tutorial template comes with several <strong>GitHub Actions workflows</strong> that automate quality checks and deployment. Understanding what these do will help you interpret build results and troubleshoot issues.</p>
+<p>The key workflows included in the template are:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 32%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Workflow</th>
+<th>Trigger</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Render Quarto Site</strong></td>
+<td>Push to <code>main</code></td>
+<td>Builds the site with Quarto and deploys to GitHub Pages</td>
+</tr>
+<tr class="even">
+<td><strong>Check for Broken Links</strong></td>
+<td>Push to any branch</td>
+<td>Scans all pages for broken internal and external links</td>
+</tr>
+<tr class="odd">
+<td><strong>Check File Names</strong></td>
+<td>Push to any branch</td>
+<td>Validates that all file and directory names use lowercase kebab-case</td>
+</tr>
+</tbody>
+</table>
+<p>These workflows run automatically on GitHub when you push changes. You can monitor them in the <strong>Actions</strong> tab of your repository on GitHub. If a workflow fails, click on the failed run to inspect the logs — they usually include a clear description of what went wrong.</p>
+<p>For a more detailed explanation of each workflow, refer to the <a href="../authoring-tutorials/tutorial-template.html">Tutorial Template Walkthrough</a>.</p>
+</section>
+<section id="activate-github-pages-one-time-setup" class="level3">
+<h3 class="anchored" data-anchor-id="activate-github-pages-one-time-setup">4. Activate GitHub Pages (one-time setup)</h3>
+<p>The OSC website is built and deployed using GitHub Pages via the <strong>Render Quarto Site</strong> workflow mentioned above. Before the automated deployment can work, you need to activate GitHub Pages for your repository by running a one-time command.</p>
+<p>From your local project folder, run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish gh-pages</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This command does three things:</p>
+<ol type="1">
+<li><strong>Renders</strong> the entire site locally using Quarto</li>
+<li><strong>Creates</strong> a <code>gh-pages</code> branch in your repository (this branch contains the static HTML files that GitHub Pages serves)</li>
+<li><strong>Pushes</strong> that branch to GitHub</li>
+</ol>
+<p>Once the <code>gh-pages</code> branch exists on GitHub, the <strong>Render Quarto Site</strong> workflow (included in the template) will automatically deploy your tutorial whenever changes are merged into the <code>main</code> branch.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Do this early!
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We recommend running <code>quarto publish gh-pages</code> at the <strong>start</strong> of your project, not at the end. This lets you verify that the site is rendering correctly on the live URL as you develop, rather than discovering issues only at publication time.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you are unsure about this step or run into errors, reach out to an OSC staff member for assistance. Also note that GitHub Pages <strong>cannot</strong> be activated for private repositories — your repository must be public.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="making-the-site-live" class="level2">
+<h2 class="anchored" data-anchor-id="making-the-site-live">Making the Site Live</h2>
+<p>Once you have completed the checklist above and your tutorial has been approved through the review process, it is time to publish.</p>
+<section id="final-checks-before-merging" class="level3">
+<h3 class="anchored" data-anchor-id="final-checks-before-merging">Final checks before merging</h3>
+<p>Before your tutorial is merged into the main tutorials repository, take a moment to confirm the following:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">All review feedback has been addressed and the corresponding issues/PRs are closed</label></li>
+<li><label><input type="checkbox">The <code>CITATION.cff</code> file has accurate author information</label></li>
+<li><label><input type="checkbox"><code>quarto render</code> completes without errors in your local environment</label></li>
+<li><label><input type="checkbox">The <code>gh-pages</code> branch exists on GitHub (from running <code>quarto publish gh-pages</code>)</label></li>
+<li><label><input type="checkbox">All files use lowercase kebab-case names (the <strong>Check File Names</strong> workflow will verify this)</label></li>
+<li><label><input type="checkbox">No broken links remain</label></li>
+<li><label><input type="checkbox">The repository is <strong>public</strong> (GitHub Pages does not work with private repositories)</label></li>
+</ul>
+</section>
+<section id="merging-into-the-tutorials-repository" class="level3">
+<h3 class="anchored" data-anchor-id="merging-into-the-tutorials-repository">Merging into the tutorials repository</h3>
+<p>Currently, all published OSC tutorials live in the <a href="https://github.com/lmu-osc/tutorials"><code>tutorials</code></a> repository. Your tutorial repository must be merged into <code>tutorials</code> for it to appear on the live website. An OSC staff member can help coordinate this merge.</p>
+</section>
+<section id="automated-deployment" class="level3">
+<h3 class="anchored" data-anchor-id="automated-deployment">Automated deployment</h3>
+<p>After the merge, every push to the <code>main</code> branch of the <code>tutorials</code> repository automatically triggers the <strong>Render Quarto Site</strong> GitHub Actions workflow, which:</p>
+<ol type="1">
+<li>Checks out the latest code</li>
+<li>Restores the R environment (if using <code>renv</code>)</li>
+<li>Renders the site with Quarto</li>
+<li>Deploys the output to GitHub Pages</li>
+</ol>
+<p>Your tutorial will then be live.</p>
+<div class="callout-info">
+<p>You can monitor the progress of any workflow run in the <strong>Actions</strong> tab of your repository on GitHub. If a step fails, inspect the logs — they often include helpful error messages. If you are unsure what to do after a failure, open an issue in your repository and paste the error or a screenshot.</p>
+</div>
+<hr>
+</section>
+</section>
+<section id="zenodo-integration-and-dois" class="level2">
+<h2 class="anchored" data-anchor-id="zenodo-integration-and-dois">Zenodo Integration and DOIs</h2>
+<p>We strongly recommend generating a <strong>DOI</strong> (Digital Object Identifier) for your tutorial. DOIs make your tutorial easier to cite and allow you to track its impact through citation metrics. We use <strong>Zenodo</strong> for this purpose.</p>
+<section id="what-is-zenodo" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-zenodo">What is Zenodo?</h3>
+<p><a href="https://zenodo.org">Zenodo</a> is a free, open-access repository for research outputs — including datasets, software, and publications — developed and maintained by CERN. It provides a simple way to share and preserve research outputs and generates DOIs for every deposit.</p>
+</section>
+<section id="what-is-a-github-release" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-github-release">What is a GitHub release?</h3>
+<p>A <strong>GitHub release</strong> is a way to package and distribute a specific version of your code or content. When you create a release, you can:</p>
+<ul>
+<li>Include <strong>release notes</strong> describing what changed</li>
+<li>Attach <strong>binary files</strong> (if needed)</li>
+<li>Generate a <strong>tag</strong> that points to a specific commit in your repository</li>
+</ul>
+<p>When a GitHub repository is connected to Zenodo, creating a new release automatically sends the repository contents to Zenodo, which then generates a DOI for that release.</p>
+<section id="versioning-with-semantic-versioning" class="level4">
+<h4 class="anchored" data-anchor-id="versioning-with-semantic-versioning">Versioning with semantic versioning</h4>
+<p>We use <strong><a href="https://semver.org">semantic versioning</a></strong> (SemVer) for all tutorial releases. Semantic versioning uses a three-part label in the format <code>MAJOR.MINOR.PATCH</code> — for example, <code>v0.3.0</code>. Here is what each number means:</p>
+<ul>
+<li><strong>MAJOR</strong> — incremented when you make incompatible or breaking changes (e.g., restructuring the entire tutorial)</li>
+<li><strong>MINOR</strong> — incremented when you add functionality or content in a backwards-compatible manner (e.g., adding a new section)</li>
+<li><strong>PATCH</strong> — incremented when you make backwards-compatible bug fixes or minor corrections (e.g., fixing a typo or a broken link)</li>
+</ul>
+<p>When creating a new release on GitHub, use a tag like <code>v0.3.0</code> (with the <code>v</code> prefix followed by the three-part version number). Start with <code>v0.1.0</code> for the first release and increment from there. This consistent labeling helps users and citation tools understand the significance of each release at a glance. When you are ready to publish the final version of your tutorial, you can use a tag like <code>v1.0.0</code> to indicate that it is the first major release.</p>
+</section>
+</section>
+<section id="setting-up-the-connection" class="level3">
+<h3 class="anchored" data-anchor-id="setting-up-the-connection">Setting up the connection</h3>
+<p>To connect your GitHub repository to Zenodo, an OSC staff member with ownership rights over the <strong>OSC Zenodo organization</strong> needs to:</p>
+<ol type="1">
+<li>Log in to <a href="https://zenodo.org">Zenodo</a></li>
+<li>Go to the <strong>GitHub</strong> section in their account settings</li>
+<li>Link the <strong>OSC GitHub organization</strong> to the <strong>OSC Zenodo account</strong></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This step requires <strong>admin-level access</strong> to the OSC Zenodo organization. If you need this set up, notify a member of OSC staff who can coordinate it.</p>
+</div>
+</div>
+<p>Once the connection is active, follow these steps to generate a DOI:</p>
+<ol type="1">
+<li><strong>Update <code>CITATION.cff</code></strong> — make sure the version number in <code>CITATION.cff</code> matches the release tag you plan to use</li>
+<li><strong>Create a new release</strong> on GitHub — go to your repository’s <strong>Releases</strong> page, click <strong>“Draft a new release”</strong>, set a version tag (e.g., <code>v1.0.0</code>), add release notes, and publish</li>
+<li><strong>Wait for Zenodo</strong> — within a few minutes, Zenodo will automatically create a new record and assign a DOI</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>While we recommend keeping the <code>CITATION.cff</code> version number and the release tag in sync, this is not strictly required for the DOI to be generated. Zenodo will create a DOI regardless, but matching the numbers avoids confusion for anyone citing your work.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Here is the complete workflow from draft to published tutorial. Use this as a quick reference to track your progress:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 43%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Description</th>
+<th>Required?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>0. Verify content</strong></td>
+<td>Review your tutorial for errors, test code, check links</td>
+<td>✅ Always</td>
+</tr>
+<tr class="even">
+<td><strong>1. Update <code>CITATION.cff</code></strong></td>
+<td>Add author names, ORCIDs, affiliations, and version</td>
+<td>✅ Always</td>
+</tr>
+<tr class="odd">
+<td><strong>2. <code>quarto check</code></strong></td>
+<td>Validate Quarto project and code chunks</td>
+<td>Only if using code</td>
+</tr>
+<tr class="even">
+<td><strong>3. Set up <code>renv</code></strong></td>
+<td>Create reproducible R environment with <code>renv::init()</code></td>
+<td>Only if using R</td>
+</tr>
+<tr class="odd">
+<td><strong>4. Understand CI/CD</strong></td>
+<td>Familiarize yourself with the built-in GitHub Actions workflows</td>
+<td>✅ Always</td>
+</tr>
+<tr class="even">
+<td><strong>5. <code>quarto publish gh-pages</code></strong></td>
+<td>Activate GitHub Pages (do this early!)</td>
+<td>✅ Always</td>
+</tr>
+<tr class="odd">
+<td><strong>6. Submit for review</strong></td>
+<td>Share repository with reviewers, collect feedback via issues/PRs</td>
+<td>✅ Always</td>
+</tr>
+<tr class="even">
+<td><strong>7. Final pre-merge checks</strong></td>
+<td>Confirm all checklist items before merging</td>
+<td>✅ Always</td>
+</tr>
+<tr class="odd">
+<td><strong>8. Merge into <code>tutorials</code></strong></td>
+<td>Coordinate with OSC staff to merge into the main tutorials repo</td>
+<td>✅ Always</td>
+</tr>
+<tr class="even">
+<td><strong>9. Set up Zenodo</strong></td>
+<td>Ask OSC staff to link the GitHub organization to Zenodo</td>
+<td>Recommended</td>
+</tr>
+<tr class="odd">
+<td><strong>10. Create a GitHub release</strong></td>
+<td>Tag a version (e.g., <code>v1.0.0</code>) and publish to generate a DOI</td>
+<td>Recommended</td>
+</tr>
+</tbody>
+</table>
+<section id="getting-help" class="level3">
+<h3 class="anchored" data-anchor-id="getting-help">Getting help</h3>
+<p>If you get stuck at any point, do not hesitate to:</p>
+<ul>
+<li><strong>Ask a colleague</strong> — other OSC staff have been through this process before</li>
+<li><strong>Open an issue</strong> in your tutorial repository and tag someone for help</li>
+<li><strong>Refer to the <a href="../authoring-tutorials/tutorial-template.html">Tutorial Template Walkthrough</a></strong> for detailed explanations of the template structure and workflows</li>
+<li><strong>Check the workflow logs</strong> in the <strong>Actions</strong> tab of your repository on GitHub — error messages often point directly to the problem</li>
+</ul>
+<p>Remember: the goal of this process is not just to publish a tutorial, but to ensure it is <strong>maintainable</strong>, <strong>citable</strong>, and <strong>useful</strong> to the community. Taking the time to do it carefully benefits both you and your readers.</p>
 
 
+</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -1001,6 +1400,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../authoring-tutorials/tutorial-template.html" class="pagination-link" aria-label="Tutorial Template Walkthrough">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tutorial Template Walkthrough</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../path/index.qmd" class="pagination-link" aria-label="Switching a Group to Open Research Practices">
+        <span class="nav-page-text">Switching a Group to Open Research Practices</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1009,7 +1420,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright, 2024 Open Science Center at LMU Munich</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/things-you-should-not-change.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/authoring-tutorials/finalization-and-publishing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

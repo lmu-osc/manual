@@ -1,0 +1,27 @@
+# Our Content Licensing Choices
+
+Why we chose the licenses we did for our content and code
+
+> **TIP:**
+>
+> **TL;DR**: OSC tutorials use **CC BY-SA 4.0 for content and CC0 1.0 for code**, allowing free reuse with minimal restrictions. CC BY-SA 4.0 requires attribution for content, while CC0 1.0 places no restrictions on code. For larger software projects, we recommend licenses like Apache 2.0 or AGPLv3.
+
+The tutorials developed by the OSC should be licensed uniformly to simplify reuse. Therefore, OSC staff releases their contributions to the tutorials under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); all code without any narrative text is also made available under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). This license choice meets the following requirements:
+
+1.  The license should be a known (unmodified) “boilerplate” license so that others can recognize it and don’t need to consult with lawyers before reusing the material.
+2.  The license should make the material free in the sense that it “can be freely studied, applied, copied and/or modified, by anyone, for any purpose” ([Möller et al., 2015](https://freedomdefined.org/Definition/1.1)).
+3.  The license should fit the type of material and likely use cases.
+4.  The license should be maximally copyleft (to protect the commons) or maximally permissive (to facilitate reuse and reject copyright law).
+5.  The license should require attribution to the authors.
+
+The requirements are met by the indicated license choice for the following reasons:
+
+1.  Creative Commons licenses fit this requirement, as they are known internationally and have been [tested in courts](https://legaldb.creativecommons.org/) (at least a little).
+2.  CC0 1.0 allows all of that. CC BY-SA 4.0 allows all of that provided certain conditions are met. These particular conditions are generally seen as “[permissible restrictions](https://freedomdefined.org/Permissible_restrictions)”.
+3.  The tutorials are mainly composed of text and images, for which Creative Commons licenses were primarily developed. The flexible attribution requirements of CC BY-SA 4.0 make it possible to reuse the material in various use cases. In particular, the license does not require that its full text is provided together with any copy of the material (which is the case, for example, with the MIT license) – rather it only requires that the license is indicated by name (and possibly link). Also, it is one-way compatible with GPLv3. The tutorials also contain code (behind the scenes as part of their technical implementation and explicitly as examples for the reader). Creative Commons licenses should generally not be used for software/code. The exception is CC0 1.0, which *can* be applied to code (although it should only be used for small portions of code due to its disclaimer of patent rights).
+4.  CC BY-SA 4.0 is a copyleft license. CC0 1.0 is maximally permissive, as it places no restrictions upon reuse.
+5.  CC BY-SA 4.0 requires attribution. CC0 1.0 does not require it, but since code is not the primary output of OSC tutorials, this should be fine (and requiring attribution for insignificant portions of code is bad practice).
+
+Note that significant portions of code (e.g., software that lives in its own repository) should be licensed under a proper free/open software license (e.g., Apache 2.0, AGPLv3).
+
+Back to top
