@@ -1152,7 +1152,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="spellcheckers-american-english-and-german" class="level3">
 <h3 class="anchored" data-anchor-id="spellcheckers-american-english-and-german">3. Spellcheckers (American English and German)</h3>
-<p>Our website content is written in both <strong>American English</strong> and <strong>German</strong>. To catch typos before they go live, we run spellchecking workflows—either on pull requests or on a schedule. This is only in use in our main website at current so please refer to the documentation in that repo for specific details.</p>
+<p>Our website content is written in both <strong>American English</strong> and <strong>German</strong>. To catch typos before they go live, we run spellchecking workflows—either on pull requests or on a schedule. This is only in use in our main website at current, but will likely be expanded to other repositories in the future.</p>
+<p>In short, the workflow we use looks for a folder called <code>config</code> in the root of the repository which contains a <a href="https://github.com/lmu-osc/lmu-osc.github.io/tree/main/config">README</a> file with details that you should absolutely read if you want to understand how the spellcheckers work. There is also a <code>config/cspell</code> folder containing files to be ignored (<code>ignore-paths.yaml</code>) and several <code>.txt</code> files containing words to be excepted from the spellcheck (e.g., technical terms, proper nouns, some British spellings of (proper) nouns, etc.). The workflow uses the <a href="https://github.com/marketplace/actions/cspell-action"><code>cspell</code> action</a> to run the spellcheck and report any issues.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>TL;DR</strong>: if the spell checker workflow fails due to supposed misspellings, first check the PR. The “misspelled” word(s) will be flagged. Fix the misspelling or typo if it is indeed a mistake.</p>
+<p>If the spelling is correct but just not in the dictionary, add it to the appropriate <code>.txt</code> file in <code>config/cspell/</code> and commit the change. This will prevent the workflow from flagging that word as a misspelling in the future.</p>
+</div>
+</div>
 </section>
 <section id="url-checkers-for-dead-links" class="level3">
 <h3 class="anchored" data-anchor-id="url-checkers-for-dead-links">4. URL checkers for dead links</h3>
