@@ -1,34 +1,55 @@
 ---
 title: "About"
-date: YYYY-MM-DD
+date: 2026-06-10
 citation:
   type: "webpage"
-  title: "TITLE HERE"
+  title: "LMU Open Science Center Manual of Operations"
   container-title: "LMU Open Science Center"
-  url: https://lmu-osc.github.io/introduction-to-renv
-  doi: "DOI HERE"
+  url: https://lmu-osc.github.io/manual
+  # doi: "DOI HERE"
 author:
-  - name: AUTHOR 1
-    affiliation: "LMU Open Science Center, OTHER AFFILIATIONS"
-    orcid: 0000-0000-0000-0000
-  - name: AUTHOR 2
-    affiliation: "LMU Open Science Center, OTHER AFFILIATIONS"
-    orcid: 0000-0000-0000-0000
+  - name:
+      given: Pat
+      family: Callahan
+      degrees: MSc
+    orcid: 0000-0003-1769-7580
+    affiliations:
+      - id: lmu-osc
+        name: LMU Open Science Center
+        url: https://www.osc.lmu.de
+  - name:
+      given: Malika
+      family: Ihle
+      degrees: PhD
+    affiliations:
+      - id: lmu-osc
+        name: LMU Open Science Center
+        url: https://www.osc.lmu.de
+    orcid: 0000-0002-3242-5981
+  - name:
+      given: Elizabeth
+      family: Waterfield
+      degrees: BA
+    affiliations:
+      - id: lmu-osc
+        name: LMU Open Science Center
+        url: https://www.osc.lmu.de
+    orcid: 0009-0006-3725-6730
 # google-scholar: true
 ---
 
 
-# Contributors
+## Contributors
 
-This site was authored by AUTHORS, and edits/contributions were made by EDITORS/AUTHORS.
+No additional contributor information at this time.
 
-# Licenses
+## Licenses
 
 The overall project is licensed under the **[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)** license found at [LICENSE](LICENSE.md); all code snippets are additionally licensed under the **[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)** license found at [LICENSE-CODE](LICENSE-CODE.md).
 
 Why two licenses? The CC BY-SA 4.0 license is for the content of the website, while the CC0 1.0 Universal license is for the code and configuration files. This is a common practice for websites that include code snippets and other content that may be reused in other projects, particularly because the CC BY-SA 4.0 license is not intended to be used with software.
 
-# Notes
+## Notes
 
-This tutorial was primarily written in YYYY using SOFTWARE-NAME SOFTWARE-VERSION. Major changes to the SOFTWARE-NAME can be found at the [package's website](SOFTWARE-URL) for the most up-to-date information, and to confirm that our tutorial is not out-of-date. 
+This manual was primarily written across 2025 and 2026, and is a living document that will be updated as needed. If you have suggestions for improvements or additions, please open an issue or pull request in the [manual repository](https://github.com/lmu-osc/manual)
 
