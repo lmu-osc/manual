@@ -161,6 +161,8 @@ website:
             text: Main Website Deployment Details
           - href: misc-topics/meeting-rooms.qmd
             text: Meeting Rooms
+          - href: misc-topics/zenodo.qmd
+            text: Zenodo Community
 
       - section: Archive
         href: archive/index.qmd
