@@ -5,7 +5,7 @@ project:
 website:
   title: "OSC Manual"
   page-footer:
-    center: "Copyright, 2024 Open Science Center at LMU Munich"
+    center: © 2026 Pat Callahan, Malika Ihle, Elizabeth Waterfield. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
     border: false
   search:
     location: sidebar
