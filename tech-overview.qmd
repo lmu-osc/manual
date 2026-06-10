@@ -25,6 +25,9 @@ These are the tools almost everyone at the OSC uses daily.
 - **GitHub** — Platform for hosting repositories, managing contributions, and collaborating via pull requests and issues. See the [GitHub Organization](github/index.qmd) section for more.
 - **Pandoc Markdown** — The markup language used across our tutorials and documentation. You don't necessarily need to know the details here, but understand that Quarto uses Pandoc Markdown as its underlying format, which allows for a lot of flexibility in how we write content. (And if you do want to know the details, the [Pandoc documentation](https://pandoc.org/MANUAL.html#pandocs-markdown) is a great resource.)
 - **Quarto** (basic) — Publishing system built on Pandoc that we use for all of our websites and tutorials. See the [Authoring Tutorials](authoring-tutorials/index.qmd) section for details.
+- **Semantic Versioning** - A popular versioning scheme for software and other digital products. We use it for our tutorials and other content to help track changes and manage releases. See [Semver](https://semver.org/) for more.
+- **File Naming Conventions** - We use lowercase kebab-case for all file and directory names in our repositories. This means using only lowercase letters, numbers, and hyphens (e.g., `my-tutorial-file.qmd`). Numbers, however, should really only be used for dates in the format YYYY-MM-DD, and only if truly needed. This convention helps ensure compatibility across different operating systems and avoids issues with case sensitivity. [Read more about the topic from Harvard's Research Data Management group.](https://datamanagement.hms.harvard.edu/plan-design/file-naming-conventions)
+
 
 ::: callout-tip
 ## New to these tools?
@@ -40,6 +43,7 @@ These technologies become relevant as you start working on our website and more 
 - **Bootstrap** — The underlying CSS framework for our Quarto websites. Understanding how it works can help with customizing our site templates.
 - **Python** — Used alongside R for various data processing and automation tasks. We don't use this directly for our tutorials (currently), but it emerges in some of the Carpentries lessons we use and in some of our internal tools.
 - **GitHub Actions** (high-level understanding) — CI/CD pipelines for automating builds, tests, and deployments. See the [GitHub Organization](github/index.qmd) section for more.
+- **Linux Command Line** — Basic familiarity with navigating the command line and running scripts can be helpful, especially for troubleshooting and working with GitHub Actions logs. https://linuxjourney.com/
 
 ## Advanced
 
@@ -49,6 +53,7 @@ If you are taking on a development or maintenance role, these tools will become 
 - **In-depth Quarto** — Advanced configuration, custom formats, Lua filters, EJS templates, and extension development.
 - **Docker** — Containerization for reproducible environments and deployment.
 - **GitHub Actions** (troubleshooting and development) — Writing and debugging custom workflow files.
+- **SSH** — A protocol for securely connecting to remote servers, or in the case of GitHub, for securely pushing and pulling code from repositories. You should understand how to set up SSH keys and use them for authentication.
 
 ## Out of Scope
 
