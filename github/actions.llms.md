@@ -461,9 +461,26 @@ In short, the workflow we use looks for a folder called `config` in the root of 
 
 ### 4. URL checkers for dead links
 
-Broken links undermine the credibility of our websites. We run a **link checker** workflow to scan for dead links and report them.
+Broken links undermine the credibility of our websites. We run **link checker** workflows to scan for dead links and report them. We currently have two different link checker setups:
 
-This runs on a schedule (e.g., weekly) and uses an action like `lycheeverse/lychee-action` to check all URLs in our Markdown and HTML files. This likewise is currently only in use in our main website, so please refer to the documentation in that repo for specific details.
+#### Main website: `lycheeverse/lychee-action`
+
+The [main OSC website](https://github.com/lmu-osc/lmu-osc.github.io) uses [`lycheeverse/lychee-action`](https://github.com/lycheeverse/lychee-action) to scan the Markdown and HTML files in the repository for broken links. It runs on a weekly schedule. For specific details, refer to the documentation in that repository.
+
+Note: the main difference between this link checker and the one used in the tutorial template is that this one is more complex and customizable, allowing us to exclude certain files, folders, and external domains from the check.
+
+#### Tutorial template: `filiph/linkcheck`
+
+The [tutorial template](https://github.com/lmu-osc/tutorial-template) uses a different, simpler link checker built around [`filiph/linkcheck`](https://github.com/filiph/linkcheck). Rather than scanning repository files, this action checks the **live deployed website** — it navigates the published site and reports any broken links it encounters. The workflow can be found at `.github/workflows/link-checker.yml` in the tutorial template repository.
+
+Key characteristics of the tutorial template link checker:
+
+- **Scheduling**: Runs on the first day of every month at midnight (`cron: '0 0 1 * *'`). It can also be triggered manually via `workflow_dispatch`.
+- **Scope**: Checks the entire website with no exclusions for specific files, folders, or external domains.
+- **Reporting**: If broken links are found, the workflow automatically creates a GitHub issue (labeled `link-checker`) with a detailed report. It will not create duplicate issues if one is already open.
+- **Why a simpler approach?**: Tutorials typically have fewer outbound links than the main website, and virtually all links should always be functional (or replaced when a linked site goes down). A straightforward link checker that scans the live site is therefore sufficient — there is no need for complex exclusion patterns or file-level filtering.
+
+> **Note:** Because this checker scans the *live* website, updates pushed shortly before a run might not yet be reflected in the deployed site. That said, the monthly schedule means the checker will naturally catch any broken links soon enough.
 
 ### 5. Code formatting with the R styler package
 
