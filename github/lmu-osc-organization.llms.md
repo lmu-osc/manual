@@ -149,18 +149,70 @@ To create one, go to the organization’s **Projects** tab and click “New proj
 
 ## Membership and permissions
 
-Understanding how membership works is important for both new and existing members. Here’s a quick overview of the different roles and how they relate to each other:
+Understanding how membership works is important for both new and existing members. Here are the main membership types and how they relate to each other.
 
-    Organization Owners (full staff)
-      └─ can manage everything, including adding new owners
-          └─ Teams (e.g., osc-admin-members, osc-research-assistants)
-                └─ inherit team-level permissions on repositories
-                    └─ Base members (Read permission by default)
-                          └─ can view and clone, but need explicit grants to push
+### Membership types
+
+- **Member**: A normal organization member. Members belong to the organization, appear in the member list, and count toward any license seats for GitHub Team/Enterprise.
+- **Owner**: A member with full control over the organization. Owners can manage members and teams, change organization-wide settings, and access all repositories. We generally reserve owner access for full-time staff.
+- **Outside Collaborator**: Not a member of the organization. Outside collaborators can be granted access to specific repositories only, and they do not appear in the org member list.
+
+### How members are different from outside collaborators
+
+| Aspect | Members | Outside collaborators |
+|----|----|----|
+| Belong to the organization | Yes | No |
+| Appear in organization member list | Yes | No |
+| Can be added to teams | Yes | No |
+| Access management | Usually via teams and org roles | Direct repository-level access only |
+| Can access multiple repos through teams | Yes | No |
+| Count toward license seats (GitHub Team/Enterprise) | Usually yes | Depends on plan and permissions |
+| Visibility into organization | More organizational visibility | Limited to assigned repositories |
+| Best for | Employees, long-term contributors | Contractors, vendors, external partners |
+
+### Base member permissions
+
+Base permissions are the default access level for **all members** of the organization. Ours are set to **Read**, which means every member can:
+
+- ✅ View and clone repositories.
+- ✅ Open issues and leave comments.
+- ❌ **Cannot** push changes to repositories.
+- ❌ **Cannot** manage issues or pull requests on repositories they haven’t been explicitly granted access to.
+
+This is a sensible default: it lets people access the content they need without giving them unnecessary control over repositories they’re not actively working on.
+
+### Teams and elevated permissions
+
+Teams are the primary way we give members additional permissions across one or more repositories.
+
+- Members can have their base permissions elevated by being added to a team.
+- The best way to manage permissions is usually with teams, not one repository at a time.
+- Teams let you grant the same access level to a group of people and then manage that access from one place.
+
+#### Our current team structure
+
+| Team Name | Who’s in it | What they can do |
+|----|----|----|
+| `osc-admin-members` | Full-time staff | Admin access to all repos, including managing CI/CD workflows and repository settings |
+| `osc-research-assistants` | Student research assistants (HiWis) | Admin access to all repos |
+| `osc-trusted-members` | Non-staff OSC members | Maintenance access to all repos |
+
+> Note: The `osc-admin-members` team is currently used by full-time staff. In the future, we may want to keep the number of actual Owners small and give staff their repo permissions via a team instead.
+
+The `osc-trusted-members` team is used for non-staff and non-HiWi OSC members who should have maintenance access to all of our repositories. Maintenance is a step down from admin, but in practice it is often sufficient for reviewing code, managing issues, and coordinating releases.
+
+#### Practical example: onboarding a new HiWi
+
+When a new student research assistant joins, here’s roughly what happens:
+
+1.  They’re invited to join the organization (see “Adding new members” below).
+2.  They’re added to the `osc-research-assistants` team.
+3.  They automatically get Admin access to the repositories that team covers.
+4.  When they leave, they’re removed from the team (and optionally the organization), and their access is revoked everywhere at once.
 
 ### Adding new members
 
-The most common management task is adding new people to the organization. Here’s how to do it step by step:
+The most common management task is inviting new people to the organization. Here’s how to do it step by step:
 
 1.  Go to the organization’s **People** tab (visible only to members with sufficient permissions).
 2.  Click the green **Invite Member** button.
@@ -173,6 +225,26 @@ The most common management task is adding new people to the organization. Here�
 5.  The invite will expire after a few days if not accepted. You can resend it if needed.
 
 > **What if I can’t invite someone?** You need to have Owner permissions or be a team maintainer with the right privileges to invite new members. If you don’t see the option, ask an owner to do it.
+
+### Adding outside collaborators to a repository
+
+If someone only needs access to one repository and should not be an organization member, grant them access as an outside collaborator.
+
+**How to do it:**
+
+1.  Go to the repository on GitHub.
+2.  Click **Settings** (in the right sidebar).
+3.  Click **Collaborators and teams** in the left menu.
+4.  Under “Manage access”, click **Add people**.
+5.  Search by username, full name, or email, choose their permission level (Read, Write, or Admin), and send the invite.
+
+**When to use this approach:**
+
+- ✅ The person only needs access to **one repo**.
+- ✅ It’s a **short-term or one-off** collaboration.
+- ❌ Avoid if you find yourself doing this repeatedly for the same person — in that case, add them as a member instead, and consider adding them to the `osc-trusted-members` team or creating a new team with the necessary permissions.
+
+> **Why teams are usually better:** If you give five people access to three different repos each via individual invitations, you now have fifteen separate permissions to track and manually revoke. With teams, you add each person to one team and give that team access to the relevant repos — much cleaner.
 
 ### Member visibility
 
@@ -187,28 +259,6 @@ Making your membership public is entirely optional. If you’d like to do it:
 
 GitHub also provides [official documentation on this setting](https://docs.github.com/en/account-and-profile/how-tos/organization-membership/publicizing-or-hiding-organization-membership).
 
-### Base permissions
-
-Base permissions are the default access level for **all members** of the organization. Ours are set to **Read**, which means every member can:
-
-- ✅ View and clone repositories.
-- ✅ Open issues and leave comments.
-- ❌ **Cannot** push changes to repositories.
-- ❌ **Cannot** manage issues or pull requests on repositories they haven’t been explicitly granted access to.
-
-This is a sensible default: it lets people access the content they need without giving them unnecessary control over repositories they’re not actively working on.
-
-### Granting additional permissions
-
-If someone needs more than Read access — for example, a collaborator working on a specific project — you have two options:
-
-1.  **Add them to an existing team** with the appropriate permission level. This is the preferred approach for recurring contributors because it’s easy to manage and audit.
-2.  **Give them direct access to a specific repository** via the repository’s “Collaborators” settings. This is fine for one-off contributions but can become hard to track over time.
-
-**For members who contribute to multiple repositories**, consider creating a new team with the appropriate permissions (Read + Write or Admin, plus CI/CD if needed) rather than granting repo-by-repo access. This way, adding or removing their access is a single operation.
-
-You can review and adjust base permissions at any time in the [organization’s member privileges settings](https://github.com/organizations/lmu-osc/settings/member_privileges).
-
 ### Organization owners
 
 Above regular members and teams are **organization owners**. Owners have full control over the organization, including:
@@ -221,6 +271,8 @@ Above regular members and teams are **organization owners**. Owners have full co
 **Who gets owner access:** We generally grant owner permissions only to **full-time staff members**, not to student research assistants or other collaborators. We may further restrict this in the future for security purposes.
 
 > **Why this matters:** If you ever need something done that requires owner-level access (creating a new team, changing org-wide settings, adding a new owner), ask one of the full-time staff members. Normal team admins cannot do these things.
+
+You can review and adjust base permissions at any time in the [organization’s member privileges settings](https://github.com/organizations/lmu-osc/settings/member_privileges).
 
 ------------------------------------------------------------------------
 
