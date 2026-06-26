@@ -3,61 +3,113 @@ title: "Create a News Item"
 format: html
 ---
 
-[Follow this link](https://www.osc.lmu.de/news/) to see where the News Items are on the LMU OSC Website.
+News items are published on the OSC website to communicate important information to the Open Science community and to document OSC activities.
 
-News Items are about:
+You can view all OSC news items here:
 
--   Any upcoming events,
--   The latest Open Science related information,
--   Members of the OSC receiving an award, etc.
+- [OSC News Page](https://www.osc.lmu.de/news/)
 
-**How will you know when to make a 'News' item?**
+## What Are News Items Used For?
 
-Malika will write to you when you have to create a news item about something and she will also provide you all important information that needs to be included,
+News items are typically created to:
 
-**Creating a new news item**
+- Advertise upcoming events
+- Share the latest Open Science-related developments and initiatives
+- Highlight awards, recognition, or achievements of OSC members
+- Announce new publications
+- Introduce new OSC members
+- Share job advertisements or funding opportunities
+- Report on past events and OSC activities
 
+::: {.callout-note}
+## How Will You Know When to Create a News Item?
 
-1. Using the [GitHub workflow](path/file), create an **issue** (if Malika already hasn't) in the **lmu-osc.github.io** repo, title it "Add News Item *title of news item*", and use it to create a new branch. 
-2. In your local copy, switch to this branch 
-3. Navigate to `news → news → templates` folder **(!!!NOTE: there is no template .qmd - to ask Pat about)**
-4. Make a copy of the `_news_template.qmd` file and follow the instructions to fill it out according to the News item details 
-5. Change the name of the new .qmd file by following this format: YYYY-MM-DD-short-slug
+Malika will usually contact you when a new news item needs to be created. She will also provide all relevant information that should be included in the article.
+:::
 
-**Full Instructions**
+## Creating a New News Item
 
-Full and detailed instructions of how to add a new member using the `_news_template.qmd` can be found in the README in the first `news` folder. 
+### Step 1: Create a GitHub Issue
 
-Or [click here to view the New Event README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/news).
+Using the [GitHub workflow](../github/working-practices.qmd), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one).
+
+Use the following naming convention:
+
+> `Add News Item: <title of news item>`
+
+Create a new branch from this issue.
+
+### Step 2: Switch to the New Branch
+
+In your local copy of the repository, switch to the newly created branch.
+
+### Step 3: Locate the News Template
+
+Navigate to:
+
+```text
+news → news → templates
+```
+
+> **Note:** The `_news_template.qmd` file may currently not be located in this folder. Ask Pat about this.
+
+### Step 4: Create a New News File
+
+Create a copy of the `_news_template.qmd` file.
+
+Fill in the template using the information provided for the news item.
+
+### Step 5: Rename the File
+
+Rename the newly created `.qmd` file using the following format:
+
+```text
+YYYY-MM-DD-short-slug.qmd
+```
+
+For example:
+
+```text
+2026-09-01-open-science-summer-school.qmd
+```
+
+## Detailed Instructions
+
+Detailed instructions for creating news items using the `_news_template.qmd` file can be found in the README located in the first `news` folder.
+
+Alternatively, you can access the README directly here:
+
+- [News README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/news)
 
 ## News Categories
 
-### Announcement
-Use this category for important organizational updates, major changes, launches, partnerships, or general news that does not fit into a more specific category.
+Choose the category that best describes the news item.
 
-### Awards/Recognition
-Use this category to highlight awards, honours, grants, nominations, or other forms of recognition received by OSC members or affiliated projects.
+| Category | Description |
+|-----------|-------------|
+| **Announcement** | Important organizational updates, major changes, launches, partnerships, or general news that does not fit into a more specific category. |
+| **Awards/Recognition** | Awards, honors, grants, nominations, or other forms of recognition received by OSC members or affiliated projects. |
+| **Call for Application** | Opportunities requiring applications, such as training programs, workshops, summer schools, fellowships, or other initiatives with registration or application deadlines. |
+| **Event Highlights** | Recap posts about past events hosted, attended, or supported by the OSC. These posts should focus on key takeaways, outcomes, and reflections rather than event promotion. |
+| **Interviews** | Featured interviews, Q&A pieces, or spotlight conversations with OSC members, collaborators, or guests. |
+| **Job Ads** | Job openings, internships, student assistant roles, fellowships, or other employment opportunities related to the OSC or partner organizations. |
+| **New Members** | Announcements introducing new OSC members, including individual members, institutional members, or affiliated collaborators. |
+| **Newsletters** | Newsletter releases, updates, or archived newsletter announcements. |
+| **Publications** | Newly published papers, reports, preprints, books, or other scholarly outputs from OSC members. |
+| **Reports** | Formal reports, annual summaries, project reports, evaluation reports, or documents summarizing findings, progress, or institutional activities. |
 
-### Call for Application
-Use this category for opportunities that require applications, such as training programs, workshops, summer schools, fellowships, or other initiatives with registration/application deadlines.
+## Writing Recommendations
 
-### Event Highlights
-Use this category for recap posts about past events hosted, attended, or supported by the OSC. These posts should focus on key takeaways, outcomes, or reflections—not event promotion.
+When drafting a news item:
 
-### Interviews
-Use this category for featured interviews, Q&As, or spotlight conversations with OSC members, collaborators, or guests.
+- Use clear, concise, and accessible language.
+- Ensure that all links and contact information are correct.
+- Include relevant images where possible.
+- Consider whether the content should also be promoted through the OSC newsletter or social media channels.
+- Proofread the text before committing and publishing it.
 
-### Job Ads
-Use this category for job openings, internships, student assistant roles, fellowships, or other employment opportunities related to the OSC or partner organizations.
+::: {.callout-tip}
+## Recommendation
 
-### New Members
-Use this category to announce and introduce new OSC members, including individual members, institutional members, or affiliated collaborators.
-
-### Newsletters
-Use this category for newsletter releases, updates, or archived newsletter announcements.
-
-### Publications
-Use this category to highlight newly published papers, reports, preprints, books, or other scholarly outputs from OSC members.
-
-### Reports
-Use this category for formal reports, annual summaries, project reports, evaluation reports, or documents that summarize findings, progress, or institutional activities.
+News items often serve as long-term documentation of OSC activities. When appropriate, include links to event materials, publications, recordings, or external resources so that visitors can continue to benefit from the content after the original event or announcement.
+:::

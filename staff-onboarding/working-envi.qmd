@@ -2,67 +2,154 @@
 title: "Working Environment"
 ---
 
-We use several platforms that allow us to share our work and collaborate on projects.
+The OSC uses several platforms that support collaboration, communication, file sharing, and project management.
 
-## Google Drive
+If you are not already familiar with the following programs and platforms, the OSC offers self paced tutorials on some of them: [OSC Tutorials](https://github.com/lmu-osc?view_as=public).
 
-We have multiple documents and sheets that you would need to regularly retrieve and work with. So, knowing how to properly organize your files in Google Drive will be useful. 
+For an overview of all technologies used at the OSC, see the [Technology Overview](../tech-overview.qmd).
 
-1. First step is to make a new folder in **your** Google Drive so you have a designated location for the OSC files.
-2. For each folder shared with you, create a shortcut to the designated folder in **your** Google Drive.
+# R and RStudio
 
-::: callout-tip
-## Making shortcuts in Google Drive
-Click the 3 dots or right-click on the folder → hover over “Organize” → click on “Add shortcut” → Select your folder
+**R** is the primary programming language used for many OSC projects, particularly for data analysis, reproducible research, and the development of training materials. **RStudio** is the integrated development environment (IDE) that we use to write, run, and manage most of our R code.
+
+# Quarto
+
+**Quarto** is an open-source scientific and technical publishing system used extensively at the OSC. We use Quarto to create and maintain the OSC website, develop instructional materials for the Train-the-Trainer program, and produce other reports, tutorials, and documentation.
+
+# Google Drive
+
+Google Drive is a cloud-based storage platform used for storing, organizing, sharing, and collaboratively editing files.
+
+Because many OSC documents, spreadsheets, and other resources are stored in Google Drive, it is important to maintain a well-organized folder structure.
+
+## Initial Setup
+
+When starting at the OSC, you should:
+
+1. Create a dedicated folder in **your own Google Drive** for OSC-related work.
+2. For each OSC folder shared with you, create a shortcut inside this folder.
+
+::: {.callout-tip}
+## Creating Shortcuts in Google Drive
+
+Click the three dots or right-click on the folder → hover over **Organize** → select **Add shortcut** → choose your OSC folder.
+
 :::
 
-**Folder structure of the OSC**:
+## Important OSC Folders
 
-- Onboarding Hiwis: here you can find the Onboarding document for each new Hiwi with tasks to be completed
-- Templates: a folder for all kind of templates we use (designs, mail drafts, social media drafts, website drafts, consent forms)
-- Credentials: This folder is not shared publicly and contains credentials like passwords, certificates etc.
+| Folder | Description |
+|---------|-------------|
+| **Onboarding Hiwis** | Contains onboarding documents and tasks for new student assistants. |
+| **Templates** | Contains frequently used templates, including designs, email drafts, social media drafts, website drafts, and consent forms. |
+| **Credentials** | Contains sensitive information such as passwords, certificates, and access credentials. This folder is not publicly shared. |
 
-### Google Docs
+# Google Docs
 
-Using Google Docs allows multiple people to work on and edit the same document. This makes them useful for:
+Google Docs is a web-based word processing platform that allows multiple users to collaboratively create and edit documents in real time.
 
-- Drafts (news items, social media posts, etc.)
-- Meeting notes and agendas
-- Central document for events
+Google Docs are frequently used at the OSC for:
 
-::: callout-tip
-## Draft in Docs
+- Drafting news items and website content
+- Drafting social media posts
+- Taking meeting notes and creating agendas
+- Maintaining central documents for events
+- Collaborative editing and reviewing
 
-Even when making an item for the website (e.g. a News post), it's easier to collaboratively make & edit the draft in a Google Doc first, then transfer it to a Quarto document for the website.
+::: {.callout-tip}
+## Draft in Google Docs First
+
+Even when creating content for the website (e.g., a news item), it is usually easier to collaboratively draft and revise the content in a Google Doc first, and only later transfer it to a Quarto document.
+
 :::
 
-Always create the Google Doc in the [Work with Assistants](https://drive.google.com/drive/folders/1WxLB_xM4eN8GsSdGrfw6DnW8QqlZ33av) folder. 
+## Creating New Google Docs
 
-If you create Google Docs, please make them 'anyone with the link can comment', add the OSC team (Malika and assistants) as editors, and transfer ownership to Malika so it can stay within the LMU OSC - Work with Assistants folder.
+All new Google Docs should be created in the following folder:
 
-Please share the link of the document you created here:
+- [Work with Assistants Folder](https://drive.google.com/drive/folders/1WxLB_xM4eN8GsSdGrfw6DnW8QqlZ33av)
 
-- At the top of each relevant section in the todo
-- In the task table
-- In the right folder
+When creating a document:
 
+1. Set the sharing permissions to **Anyone with the link can comment**.
+2. Add the OSC team (Malika and assistants) as editors.
+3. Transfer ownership of the document to Malika.
 
-## Github
+This ensures that documents remain accessible within the OSC and stay within the shared workspace.
 
-These are links relevant to the GitHub workspace:
+## Document Organization
 
-- [All repositories of the OSC](https://github.com/orgs/lmu-osc/repositories)
-- [OSC repository on Github](https://github.com/lmu-osc)
-- [The website for organizing all the OSC’s resources on Github](https://github.com/lmu-osc/lmu-osc.github.io)
+Whenever you create a new document, make sure to share the document link in the following places:
 
-## LRZ sync and Share
+- At the top of the relevant section in the ToDo document.
+- In the task table.
+- In the appropriate Google Drive folder.
 
-We will use **LRZ Sync and Share** for Sensitive info such as:
+# GitHub
 
-- Job application files
-- Letter of support for grant applicants
+GitHub is a platform for version control and collaborative software development. It allows users to store, manage, track, and collaboratively edit code and other project files.
+
+The OSC uses GitHub for collaborative work on:
+
+- The OSC website
+- Train-the-Trainer materials
+- OSC tutorials
+- Documentation
+- Other collaborative projects
+
+Detailed instructions on using GitHub at the OSC can be found here:
+
+- [GitHub Manual](../github/index.qmd)
+
+## Useful GitHub Links
+
+- [All OSC Repositories](https://github.com/orgs/lmu-osc/repositories)
+- [OSC GitHub Organization](https://github.com/lmu-osc)
+- [OSC Website Repository](https://github.com/lmu-osc/lmu-osc.github.io)
+
+# LRZ Sync and Share
+
+LRZ Sync and Share is a secure cloud storage and file-sharing service provided by the Leibniz Supercomputing Centre (LRZ).
+
+It is primarily used for storing and sharing sensitive files.
+
+Examples include:
+
+- Job application documents
+- Letters of support for grant applications
 - Financial records
+- Other confidential documents
 
-## Gitlab 
+::: {.callout-important}
+## Sensitive Information
 
-private repositories
+Sensitive documents should generally be stored in LRZ Sync and Share rather than Google Drive whenever confidentiality or data protection is required.
+:::
+
+# LRZ GitLab
+
+LRZ GitLab is occasionally used for projects involving private repositories.
+
+Unlike GitHub, GitLab repositories may contain materials that should not be publicly accessible.
+
+Specific instructions regarding GitLab usage will be provided on a project-by-project basis.
+
+More information about the use and purpose of GitLab can be found here:
+
+- [LRZ GitLab](../lrz-gitlab/index.qmd)
+
+# Pretix and formR
+
+**Pretix** is an open-source event management and registration platform, while **formR** is a web-based framework for creating surveys and longitudinal studies. At the OSC, these platforms are primarily used for event registration, participant management, and collecting pre- and post-event information such as applications and feedback.
+
+For detailed information on how the OSC uses these platforms, see:
+
+- [Registration and OSC Event Pages](../osc-events/registration.qmd)
+
+# BeeFree
+
+**BeeFree** is an online drag-and-drop email editor used by the OSC to design and prepare newsletters for distribution.
+
+Detailed instructions for creating and managing OSC newsletters can be found here:
+
+- [OSC Newsletter](../osc-outreach/newsletter.qmd)

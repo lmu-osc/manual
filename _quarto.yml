@@ -68,7 +68,7 @@ website:
             text: "Working Practices"
           - href: github/actions.qmd
             text: "GitHub Actions"
-          
+
 
       - section: "Updating Website"
         href: updating-website/index.qmd
@@ -82,21 +82,19 @@ website:
           - href: .qmd
             text: "Edit Other Pages"
 
-      - section: "Onboarding an OSC Member"
-        href: onboarding-member/index.qmd
-        contents:
-          - href: onboarding-member/onboarding-osc-member.qmd
-            text: "Onboarding an OSC Member"
+      - contents:
+        href: onboarding-member.qmd
+        text: "Onboarding an OSC Member"
 
       - section: "Organizing an OSC Event"
         href: osc-events/index.qmd
         contents:
           - href: osc-events/creating-program.qmd
-            text: "Creating a Program and Liaising with Guest Instructor"
+            text: "Creating a Program"
           - href: osc-events/registration.qmd
             text: "Registration and OSC Event Pages"
-          - href: osc-events/liaising-with-attendees.qmd
-            text: "Liaising with Attendees"
+          - href: osc-events/communication.qmd
+            text: "Communication"
           - href: osc-events/additional-prep.qmd
             text: "Additional Preparation"
           - href: osc-events/logistics.qmd
@@ -113,8 +111,8 @@ website:
             text: "Newsletter"
           - href: osc-outreach/flyer-design-and-images.qmd
             text: "Flyer Design and Images"
-          - href: osc-events/additional-prep.qmd
-            text: "Mail Drafts"
+          - href: osc-events/responding-requests.qmd
+            text: "Responding to Requests"
 
       - section: "Authoring an OSC Tutorial"
         href: authoring-tutorials/index.qmd
@@ -140,6 +138,9 @@ website:
             text: "Additional Processes"
           - href: path/file.qmd
             text: "Lessons Learned and Iterative Improvements"
+
+      - section: "Train-the-Trainer"
+        href: train-the-trainer/index.qmd
 
       - section: Matomo Analytics
         href: matomo/index.qmd

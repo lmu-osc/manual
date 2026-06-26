@@ -2,5 +2,25 @@
 title: "Lab Manual"
 ---
 
-This website serves as the lab manual for the LMU Open Science Center
+This website serves as the lab manual for the LMU Open Science Center. 
+
+### For Hiwis
+
+Different Hiwis support different OSC activities. Use the sections below to quickly find the parts of the manual most relevant to your work.
+
+- If you are involved in **public outreach, social media management, newsletter preparation, or content creation**, see the [Public Outreach](osc-outreach/index.qmd) chapter.
+
+- If you are working on the **Train-the-Trainer** team, see the [Train-the-Trainer](path/link.qmd) chapter.
+
+- If you are helping Malika respond to inquiries frequently received by the OSC, see the [Responding to Requests](osc-events/responding-requests.qmd) section for templates and examples of typical responses.
+
+- If you are assisting with the planning and organization of OSC events, see the [OSC Events](osc-events/index.qmd) chapter.
+
+- If you are responsible for updating or maintaining the OSC website, see the [Updating the Website](updating-website/index.qmd) chapter.
+
+::: {.callout-tip}
+## New to the OSC? Don't know where to start?
+
+If you are new to the OSC, we recommend first reading the **Working Environment** and **Technology Overview** chapters to become familiar with the tools and workflows used at the OSC.
+:::
 

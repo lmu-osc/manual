@@ -3,42 +3,168 @@ title: "Create a New Members Profile Page"
 format: html
 ---
 
-[Follow this link](https://www.osc.lmu.de/people/members.html) to see where the Members page is on the LMU OSC Website.
+Member profile pages are used to introduce members of the LMU Open Science Center and provide information about their research interests, expertise, and contact details.
 
-## Individual Members 
+## Individual Members
 
-**How will you know when to add a member to the page?**
+You can view all individual member profiles here:
 
-Malika will send you an email containing all the relevant information from the person themselves. If any information is missing, let Malika know and she will either get the information or give further instructions. 
+- [OSC Members Page](https://www.osc.lmu.de/people/members.html)
 
-**How to add a new individual member to the page?**
+**How Will You Know When to Add a New Member?**
 
-1. Using the [GitHub workflow](path/file), create an **issue** (if Malika already hasn't) in the **lmu-osc.github.io** repo, title it "Add New Member *firstname lastname*", and use it to create a new branch. 
-2. In your local copy, switch to this branch 
-3. Navigate to `people → people → templates` folder
-4. Make a copy of the `_people_template.qmd` file and follow the instructions to fill it out according to the person's information 
-5. Change the name of the new .qmd file by following this format: firstname-lastname
+Malika will typically send you an email containing all the information required to create the member profile.
 
-**Adding the new member's profile picture**
+If any information is missing, notify Malika. She will either obtain the missing information from the new member or provide further instructions.
 
-1. Save either the picture sent by the new member during their application OR a public picture of them (for e.g. the picture used for their profile on the official LMU Website)
-2. Navigate to `people → people → images` folder
-3. Add the picture to this foler and change the name following this format: lastname-firstname
+### Creating a New Individual Member Profile
 
-::: callout-note
-## Adding the Profile Picture
+#### Step 1: Create a GitHub Issue
 
-There will be a designated place in the `_people_template.qmd` to put the path to the picture.
+Using the [GitHub workflow](../github/working-practices.qmd), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one).
+
+Use the following naming convention:
+
+> `Add New Member: <firstname lastname>`
+
+Create a new branch from this issue.
+
+#### Step 2: Switch to the New Branch
+
+In your local copy of the repository, switch to the newly created branch.
+
+#### Step 3: Locate the Member Template
+
+Navigate to:
+
+```text
+people → people → templates
+```
+
+#### Step 4: Create a New Member File
+
+Create a copy of the `_people_template.qmd` file.
+
+Complete the template using the information provided by the new member.
+
+#### Step 5: Rename the File
+
+Rename the newly created `.qmd` file using the following format:
+
+```text
+firstname-lastname.qmd
+```
+
+For example:
+
+```text
+malika-ihle.qmd
+```
+
+### Adding the Member's Profile Picture
+
+Each member profile should include a profile picture. Use either:
+
+- the picture provided by the member during their application; or
+- a **publicly available** picture (e.g., the profile picture from the official LMU website).
+
+#### Adding the Image
+
+1. Navigate to:
+
+```text
+people → people → images
+```
+
+2. Add the image to this folder.
+
+3. Rename the image file using the following format:
+
+```text
+lastname-firstname
+```
+
+For example:
+
+```text
+ihle-malika.jpg
+```
+
+::: {.callout-note}
+## Adding the Profile Picture to the Template
+
+The `_people_template.qmd` file contains a designated field where the path to the profile picture should be specified.
+
+Make sure that the filename and path exactly match the image stored in the `images` folder.
 :::
 
-**Full Instructions**
+### Detailed Instructions
 
-Full and detailed instructions of how to add a new member using the `_people_template.qmd` can be found in the README in the first `people` folder. 
+Detailed instructions for creating member profile pages using the `_people_template.qmd` file can be found in the README located in the first `people` folder.
 
-Or [click here to view the New Member README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/people).
+Alternatively, you can access the README directly here:
 
-Any questions or missing information, please ask Malika.
+- [New Member README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/people)
+
+If you have questions or if information is missing, contact Malika.
 
 ## Institutional Members
 
-what can i say here? what's different in the process?
+Institutional members are managed differently from individual members.
+
+You can view institutional members here:
+
+- [Institutional Members Page](https://www.osc.lmu.de/partners/institutional-members.html)
+
+Institutional members can belong to one of two categories:
+
+- **Funding Institutional Members**
+- **Affiliate Institutional Members**
+
+### Adding a New Institutional Member
+
+#### Step 1: Obtain the Information
+
+Malika will provide:
+
+- the institutional member's information;
+- a statement describing the institution and its motivation for joining the OSC; and
+- any relevant links, contacts, or images.
+
+#### Step 2: Open the Appropriate File
+
+Navigate to:
+
+```text
+partners
+```
+
+Then edit one of the following files:
+
+- `affiliate-institutional-members.qmd`
+- `funding-institutional-members.qmd`
+
+Choose the file corresponding to the type of institutional membership.
+
+#### Step 3: Add the New Institutional Member
+
+Add the new institution to the existing YAML list using the following format:
+
+```yaml
+- name: "Faculty of Business Administration - Munich School of Management"
+  image_url: "images/som.png"
+  contact:
+    - name: "Prof. Dr. Ralf Elsas"
+      link: "/people/people/ralf-elsas.qmd"
+  website_url: "https://www.som.lmu.de/en/"
+  description: |
+    The LMU Munich School of Management is committed to advancing the principles of open science and research transparency. By becoming an institutional member of the LMU's Open Science Center, we aim to foster a culture of openness, collaboration, and integrity in our research community. We believe that promoting open access to data, methodologies, and findings will enhance the quality and reproducibility of research in business studies, ultimately contributing to innovative and impactful solutions for global business challenges.
+```
+
+::: {.callout-warning}
+## Important
+
+When editing institutional members, ensure that you remain within the YAML block enclosed by the green `---` lines.
+
+Do **not** add content below the closing `---`, as this may break the page.
+:::

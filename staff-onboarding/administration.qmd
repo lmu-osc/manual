@@ -15,6 +15,21 @@ title: "Administration"
 
 ### Transponder
 
+::: {.callout-tip}
+## Transponder Issues
+
+If your transponder stops working or is lost, you can either request a replacement from Malika or visit the **Schliessmedien Office**:
+
+**Address:**  
+Geschwister-Scholl-Platz 1, Room EZ 008
+
+**Opening hours:**  
+Tuesday–Thursday, 08:00–11:30
+
+If confirmation is required for issuing a transponder, contact Lilia, who can provide the necessary confirmation as a PDF.
+
+:::
+
 ### Logging Hours
 
 **Working Times**

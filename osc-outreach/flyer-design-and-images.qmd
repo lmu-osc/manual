@@ -3,65 +3,151 @@ title: "Flyer Design and Images"
 format: html
 ---
 
-[Here is the template for a flyer](https://docs.google.com/presentation/d/188QPtIdl2IjIXbJcthXYj3QCBCJURbqJ/edit?slide=id.p1#slide=id.p1).
+This page provides resources and recommendations for creating promotional materials for the OSC, including flyers, posters, social media graphics, and other visual content.
 
-## Printing Service
+## Flyer Templates
 
-**Ricoh Deutschland GmbH Printcenter LMU**
+The OSC maintains a PowerPoint template that can be used as a starting point for designing flyers and promotional materials.
 
-The printing service for the LMU is: Hausdruckerei (Ricoh Deutschland GmbH Printcenter LMU)
+- [OSC Flyer Template](https://docs.google.com/presentation/d/188QPtIdl2IjIXbJcthXYj3QCBCJURbqJ/edit?slide=id.p1#slide=id.p1)
 
-You can find [all information here](https://www.serviceportal.verwaltung.uni-muenchen.de/services/beschaffung/ausstatt_rahmenvertr_dienstlst/hausdruckerei/index.html) (price list, formulars, etc).  
+## Printing Services
 
-**Responsible Person**: Thomas <br>
-**Address**: Ricoh Deutschland GmbH, Hausdruckerei der LMU, Ludwig-Maximilians-Universität München Leopoldstr. 3, 80802 München <br>
-**Phone**:  089/2180-3669
+### LMU In-House Printing Service
 
-Current opening hours of the in-house print shop: <br>
-Monday to Thursday from 9:00 AM to 3:00 PM <br>
-Friday: CLOSED
+The official printing service for LMU is the **Hausdruckerei (Ricoh Deutschland GmbH Printcenter LMU)**.
 
-If you want to print something, (e.g flyers) write a mail to `hausdruckerei@lmu.de` or call them and you can talk to them about your preferences.
+You can find additional information, including price lists and forms, on the LMU Service Portal:
 
-**Printy**
+- [LMU In-House Printing Service Information](https://www.serviceportal.verwaltung.uni-muenchen.de/services/beschaffung/ausstatt_rahmenvertr_dienstlst/hausdruckerei/index.html)
 
-An affordable external option for printing (especially for posters) is [Printy](https://printy.de/en/homepage-english-2/)
+| Information | Details |
+|------------|---------|
+| Responsible person | Thomas |
+| Address | Ricoh Deutschland GmbH, Hausdruckerei der LMU, Ludwig-Maximilians-Universität München, Leopoldstr. 3, 80802 München |
+| Phone | 089/2180-3669 |
 
-Location: near TUM Main Campus, Luisenstraße 49, 80333 Munich <br>
-Opening hours: Monday-Friday 9:30 AM – 5:00 PM
+### Opening Hours
 
-Typical process with Printy:
+| Day | Opening Hours |
+|------|---------------|
+| Monday–Thursday | 9:00 AM – 3:00 PM |
+| Friday | Closed |
 
-- On their website, go to "Price calculators" → "large poster calculator".
-- Leave the default settings that are automatically chosen (A0 format, 
-145 gr. silkmatt in & outdoor presentations, pickup Luisenstr.49, receipt).
-- Click "Request Order" which will open an email window with pre-drafted text containing your order details.
-- Upload a PDF version of your poster in this email and edit/add to the email where necessary.
-- Send the email and expect a reply (usually within the same day) to collect your poster.
+To print materials (e.g., flyers or posters), contact the print shop by email or phone to discuss your requirements.
 
-For reference, an A0 poster here costs around €15,00
+- Email: `hausdruckerei@lmu.de`
+
+### External Printing Option: Printy
+
+An affordable external option for printing, particularly for large posters, is **Printy**.
+
+- Website: [Printy](https://printy.de/en/homepage-english-2/)
+
+| Information | Details |
+|------------|---------|
+| Location | Luisenstraße 49, 80333 Munich |
+| Nearby landmark | Near the TUM Main Campus |
+| Opening hours | Monday–Friday, 9:30 AM – 5:00 PM |
+
+#### Typical Printing Workflow with Printy
+
+1. Visit the Printy website.
+2. Go to **Price Calculators → Large Poster Calculator**.
+3. Keep the default settings:
+   - A0 format
+   - 145 g silk matt paper
+   - Indoor/outdoor presentation
+   - Pickup at Luisenstraße 49
+   - Receipt
+4. Click **Request Order**.
+5. An email window containing the order details will open automatically.
+6. Attach a PDF version of your poster.
+7. Edit the email if necessary and send it.
+8. Wait for confirmation (usually within the same day) and collect the poster.
+
+::: {.callout-note}
+## Approximate Cost
+
+For reference, printing an A0 poster at Printy typically costs around **€15.00**.
+:::
 
 ## Canva
 
-Canva is a free-to-use online graphic design platform that helps to create content, even without any design experience. Whether you want to make social media posts, presentations, posters, logos, or videos, Canva offers an easy drag-and-drop many customizable templates.
+**Canva** is a free-to-use online graphic design platform that can be used to create social media posts, presentations, posters, logos, videos, and other visual content.
 
-[Click here to go to the Canva website](https://www.canva.com/de_de/) <br>
-[Click here for some instructions on how to use Canva](https://www.canva.com/learn/how-to-canva-beginners-guide/)
+- [Canva Website](https://www.canva.com/de_de/)
+- [Beginner's Guide to Canva](https://www.canva.com/learn/how-to-canva-beginners-guide/)
 
-## PowerPoint
+When creating on Canva, either get access to OSC's Canva account or use your own personal account and invite the OSC as a collaborator. The design created on Canva should remain accessible to the OSC. 
 
-**Using Microsoft PowerPoint for Image Creation** 
+Here are some examples of flyers made on Canva:
 
-We often use PowerPoint to create images or logos for various uses.  Here are some helpful tips:
+### Examples of Flyers Created in Canva
 
--	It is possible to resize the page by going to the Design tab → click on “Slide Size” → set the size with “Custom Slide Size...” 
--	When importing images onto the slide, changing the color of that image may not always work perfectly (the color can be slightly off from what you select). The best format to get the most accurate color change is SVG. There are many websites with free-to-use icons that can be exported as SVG images, such as <https://iamvector.com/>. First, save the image as an SVG on your device, then import it into the slides. 
--	SVG is the best format for maintaining high-quality images on the website. Even with multiple slides, you can save a specific slide as an SVG image. 
+::: {.panel-tabset}
 
-::: callout-tip
-## Saving a PPT slide as .svg
+## Announcement flyer for the Open Science Summer School 2026
 
-Make sure you are on the slide you want to save → go to the File tab → click on “Save As” → change the format from .pptx to Scalable Vector Graphics Format (.svg) → click “Save” → a dialogue box will pop up, and you should select “Just This One”.
+![](images/osss26_flyer.png){width="60%"}
+
+## Conference poster
+
+![](images/osc_poster.png){width="60%"}
+
+## Announcement flyer for the Public Lectures 2026
+
+![](images/osss26_public_lectures.png){width="60%"}
+
 :::
 
+## Microsoft PowerPoint
 
+### Using PowerPoint for Image Creation
+
+PowerPoint is frequently used within the OSC to create flyers, social media graphics, logos, and other visual materials.
+
+### Helpful Tips
+
+#### Adjusting Slide Dimensions
+
+To change the dimensions of a slide:
+
+1. Go to the **Design** tab.
+2. Click **Slide Size**.
+3. Select **Custom Slide Size**.
+4. Enter the desired dimensions.
+
+#### Working with Images
+
+When importing images into PowerPoint, color changes may not always appear exactly as expected. For the most accurate color reproduction, use images in **SVG format**.
+
+Many websites provide free SVG icons, for example:
+
+- <https://iamvector.com/>
+
+Recommended workflow:
+
+1. Download the icon as an SVG file.
+2. Save it locally.
+3. Insert the SVG into PowerPoint.
+
+### Why Use SVG?
+
+SVG images are recommended because they:
+
+- preserve image quality at all sizes;
+- can be recolored more accurately in PowerPoint;
+- are ideal for use on websites and in digital materials.
+
+::: {.callout-tip}
+## Saving a PowerPoint Slide as an SVG
+
+1. Navigate to the slide you want to export.
+2. Click **File → Save As**.
+3. Change the file format from `.pptx` to **Scalable Vector Graphics Format (.svg)**.
+4. Click **Save**.
+5. When prompted, select **Just This One**.
+
+This will export only the current slide as an SVG image.
+:::
