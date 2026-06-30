@@ -31,7 +31,7 @@ The lists below can be used as a starting point when creating an event-specific 
 - [ ] Kandao from seminar room 3322 (ask Malika for the code)
 - [ ] 2 UB Owls
 - [ ] Headphones (Malika's headphones and your own personal headphones, if available)
-- [ ] Malika's headphone cable (to charge the table microphone during use if needed)
+- [ ] Cable to charge the table microphone during use (if needed)
 
 ## Cables and Connectivity
 

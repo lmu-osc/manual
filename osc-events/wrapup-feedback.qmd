@@ -5,28 +5,28 @@ format: html
 
 After an event, there are several important follow-up tasks to complete. These include sharing event materials, collecting feedback from participants, and communicating relevant information to instructors.
 
-## Post-Event Checklist
+# Post-Event Checklist
 
-### Communication with Participants
+## Communication with Participants
 
 - [ ] Send the feedback survey (usually a formr survey) to all registrants and ask them to complete it within one week.
 - [ ] Include a link to the event materials repository (e.g., recordings, slides, handouts).
 - [ ] Provide information about upcoming OSC and OSIP events.
 
-### Dissemination of Event Materials
+## Dissemination of Event Materials
 
 - [ ] Upload event materials (e.g., slides, recordings, handouts) to the appropriate repository.
 - [ ] If consent to record was obtained in advance, make recordings publicly available.
 - [ ] Advertise the event materials and recordings on OSC social media channels, if appropriate.
 
-### Communication with Instructors
+## Communication with Instructors
 
 - [ ] Send the feedback report (generated from formr) to instructors.
 - [ ] Share participant feedback and relevant event statistics with instructors if requested.
 
-## Email Templates
+# Email Templates
 
-### Email to Participants
+## Email to Participants
 
 The following examples can be adapted depending on the event, language, and available materials.
 
@@ -88,12 +88,33 @@ Malika
 
 :::
 
-## Feedback Reports
+# Feedback Reports
 
 Feedback reports are typically generated in formr and should be shared with instructors once the survey period has ended.
+
+Before sending any wrap-up communication, ensure that all relevant event materials (e.g., slides, recordings, handouts) have been uploaded and made accessible to participants.
+
+## Typical Post-Event Workflow
+
+1. Publish the event materials (e.g., slides, recordings, repositories).
+2. Send the formr feedback questionnaire to attendees and contributors.
+3. Keep the survey open for approximately one week.
+4. Generate the feedback report in formr once the survey period has ended.
+5. Share the report with instructors and other relevant contributors.
+6. Send certificates of completion, if applicable.
 
 ::: {.callout-tip}
 ## Recommendation
 
 When sending feedback requests, keep the survey open for approximately one week and send the email as soon as possible after the event while participants' impressions are still fresh.
 :::
+
+# Certificates
+
+Some OSC events (e.g., Carpentry workshops, Summer Schools, or instructor training programs) may require certificates of completion.
+
+Find templates for event certificates in the Google Drive folder here:
+
+- [Templates Folder](https://drive.google.com/drive/folders/1HFmT0RPz6s7Z2DB13rbgREuWatF6I6-J?usp=drive_link)
+
+Certificate templates should be adapted to the specific event, exported as PDF files, and sent to eligible participants after the event.

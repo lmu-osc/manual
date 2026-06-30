@@ -7,7 +7,13 @@ This page will be relevant for you if you are be responsible for creating, sched
 
 Create personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages. 
 
-If you don’t want this, you can also log in with the OSC account and we only indicate your name in the profile page of this account (for accountability). 
+If you don’t want this, you can also log in with the OSC account and we only indicate your name in the profile page of this account (for accountability).
+
+::: {.callout-important}
+## Except LinkedIn!
+
+For LinkedIn, you do need to have a **personal account** to then be given access to the OSC LinkedIn organization account.
+:::
 
 ## Social Media Accounts
 

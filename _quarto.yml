@@ -79,7 +79,9 @@ website:
             text: "Create an Event Page"
           - href: updating-website/create-new-members-page.qmd
             text: "Create a Profile Page"
-          - href: .qmd
+          - href: updating-website/new-institutional-member.qmd
+            text: "Adding a New Institutional Member"
+          - href: edit-other-pages.qmd
             text: "Edit Other Pages"
 
       - contents:
@@ -91,16 +93,22 @@ website:
         contents:
           - href: osc-events/creating-program.qmd
             text: "Creating a Program"
+          - href: osc-events/liaising-with-presenters.qmd
+            text: "Liaising with Presenters"
           - href: osc-events/registration.qmd
-            text: "Registration and OSC Event Pages"
-          - href: osc-events/communication.qmd
-            text: "Communication"
+            text: "Registration"
+          - href: osc-events/application.qmd
+            text: "Applications"
+          - href: osc-events/liaising-with-attendees.qmd
+            text: "Liaising with Attendees"
           - href: osc-events/additional-prep.qmd
             text: "Additional Preparation"
           - href: osc-events/logistics.qmd
             text: "Logistics within the Event"
           - href: osc-events/wrapup-feedback.qmd
             text: "Wrap Up and Feedback"
+          - href: osc-events/event-evaluation.qmd
+            text: "Event Evaluation"
 
       - section: "OSC Public Outreach"
         href: osc-outreach/index.qmd

@@ -4,7 +4,7 @@ title: "Working Environment"
 
 The OSC uses several platforms that support collaboration, communication, file sharing, and project management.
 
-If you are not already familiar with the following programs and platforms, the OSC offers self paced tutorials on some of them: [OSC Tutorials](https://github.com/lmu-osc?view_as=public).
+If you are not already familiar with the following programs and platforms, the OSC offers many self paced tutorials: [OSC Tutorials](https://www.osc.lmu.de/training/self-learning.html).
 
 For an overview of all technologies used at the OSC, see the [Technology Overview](../tech-overview.qmd).
 
@@ -12,15 +12,21 @@ For an overview of all technologies used at the OSC, see the [Technology Overvie
 
 **R** is the primary programming language used for many OSC projects, particularly for data analysis, reproducible research, and the development of training materials. **RStudio** is the integrated development environment (IDE) that we use to write, run, and manage most of our R code.
 
+[Click here for self-paced tutorials on R](https://www.osc.lmu.de/training/self-learning.html#category=R) 
+
 # Quarto
 
 **Quarto** is an open-source scientific and technical publishing system used extensively at the OSC. We use Quarto to create and maintain the OSC website, develop instructional materials for the Train-the-Trainer program, and produce other reports, tutorials, and documentation.
+
+[Click here for self-paced tutorials on Quarto](https://www.osc.lmu.de/training/self-learning.html#category=Quarto)
 
 # Google Drive
 
 Google Drive is a cloud-based storage platform used for storing, organizing, sharing, and collaboratively editing files.
 
 Because many OSC documents, spreadsheets, and other resources are stored in Google Drive, it is important to maintain a well-organized folder structure.
+
+[Click here to go to the OSC Google Drive](https://drive.google.com/drive/folders/1mGDWgM7ekqP9gZ1u6Q6BlM-wcrZav8gG?usp=drive_link)
 
 ## Initial Setup
 
@@ -103,13 +109,14 @@ Detailed instructions on using GitHub at the OSC can be found here:
 
 ## Useful GitHub Links
 
+- [Self-paced tutorials on GitHub](https://www.osc.lmu.de/training/self-learning.html#category=GitHub)
 - [All OSC Repositories](https://github.com/orgs/lmu-osc/repositories)
 - [OSC GitHub Organization](https://github.com/lmu-osc)
 - [OSC Website Repository](https://github.com/lmu-osc/lmu-osc.github.io)
 
 # LRZ Sync and Share
 
-LRZ Sync and Share is a secure cloud storage and file-sharing service provided by the Leibniz Supercomputing Centre (LRZ).
+[LRZ Sync and Share](https://syncandshare.lrz.de/login) is a secure cloud storage and file-sharing service provided by the Leibniz Supercomputing Centre (LRZ).
 
 It is primarily used for storing and sharing sensitive files.
 
@@ -142,9 +149,10 @@ More information about the use and purpose of GitLab can be found here:
 
 **Pretix** is an open-source event management and registration platform, while **formR** is a web-based framework for creating surveys and longitudinal studies. At the OSC, these platforms are primarily used for event registration, participant management, and collecting pre- and post-event information such as applications and feedback.
 
-For detailed information on how the OSC uses these platforms, see:
+For more on how the OSC uses these platforms, see:
 
-- [Registration and OSC Event Pages](../osc-events/registration.qmd)
+- [Registration](../osc-events/registration.qmd) for detailed information on **pretix**
+- [Applications](../osc-events/application.qmd) for detailed information on **formr**
 
 # BeeFree
 

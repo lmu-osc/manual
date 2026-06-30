@@ -1,17 +1,15 @@
 ---
-title: "Registration and OSC Event Pages"
+title: "Registration"
 format: html
 ---
 
 We create registration pages or other registration avenues for our events for several reasons. Registration helps us keep track of participant numbers, ensure that trainings reach the intended and most relevant audiences through screening procedures, and collect important information from participants ahead of the event (e.g. attendance mode, preferences, or accessibility needs).
 
-To manage registrations and collect pre-event information, we use several platforms, primarily **Pretix**, **Google Forms**, and **formR**. This section will guide you through the process of setting up registration pages and forms across these platforms.
+# Registering Event on Pretix
 
-## Registering Event on Pretix
+To manage registrations and collect pre-event information, we mainly use the platform: **Pretix**. This section will guide you through the process of setting up registration pages and forms across this platform.
 
-**Pretix** is our management system to create registration pages for events (e.g. workshops, discussions, etc.). 
-
-### Administration
+## Administration
 
 Malika will add new team members to the Pretix LMU OSC organization on the OSC server so you can create registration pages for OSC events. 
 
@@ -23,9 +21,9 @@ The following section walks you through the setup process for creating a new eve
 
 A useful starting point is to **clone an existing event** and then update the relevant details.
 
-### Event Setup
+## Event Setup
 
-#### Create a New Event
+### Create a New Event
 
 | Field | Recommendation |
 |---|---|
@@ -34,7 +32,7 @@ A useful starting point is to **clone an existing event** and then update the re
 | Contact address | Use the official OSC email address as the event organizer contact: `osc@lmu.de` |
 | Imprint URL | Use the OSC imprint page shown at the bottom of the ticket page. |
 
-#### General Settings
+### General Settings
 
 | Setting | Recommendation |
 |---|---|
@@ -44,7 +42,7 @@ A useful starting point is to **clone an existing event** and then update the re
 | Phone number | Do not ask. |
 | Attendee names | Ask by default. |
 
-#### Texts
+### Texts
 
 Usually, we do **not** use presale text, voucher text, or confirmation text.
 
@@ -74,16 +72,16 @@ To participate in the hands-on sessions, please create an account for DataWiz if
 *Logistics*: This event will be held online.
 :::
 
-### Event Appearance and Display
+## Event Appearance and Display
 
-#### Shop Design
+### Shop Design
 
 | Setting | Recommendation |
 |---|---|
 | Logo | Always use the OSC logo. |
 | Colors | Usually preconfigured by Malika, but can be changed in the organization settings if necessary. |
 
-#### Timeline
+### Timeline
 
 | Setting | Recommendation |
 |---|---|
@@ -92,7 +90,7 @@ To participate in the hands-on sessions, please create an account for DataWiz if
 | Show number of check-ins | No |
 | Allow modifications | No |
 
-#### Display
+### Display
 
 Show all information except the following:
 
@@ -108,51 +106,51 @@ Additional display settings:
 | Hide sold-out products | No |
 | Show number of tickets left | Usually no, unless specifically needed for the event. |
 
-#### Cart
+### Cart
 
 | Setting | Recommendation |
 |---|---|
 | Directly proceed to cart | Yes |
 | Maximum items per order | Usually set to **1**, unless otherwise specified. |
 
-#### Waiting List
+### Waiting List
 
 | Setting | Recommendation |
 |---|---|
 | Enable waiting list | Yes |
 
-### Payments, Tickets, and Technical Settings
+## Payments, Tickets, and Technical Settings
 
-#### Payment, Tax Rules, and Invoicing
+### Payment, Tax Rules, and Invoicing
 
 Nothing needs to be changed if the event is free.
 
-#### Available Plugins
+### Available Plugins
 
 If copied from another event, usually nothing needs to be changed here.
 
-#### Features
+### Features
 
 | Feature | Status |
 |---|---|
 | Emails | Enabled |
 | Statistics | Enabled |
 
-#### Payment
+### Payment
 
 Not needed for free events.
 
-#### PDF Ticket
+### PDF Ticket
 
 | Setting | Recommendation |
 |---|---|
 | PDF ticket output | Keep active, even if no PDF ticket is sent in the end, as disabling it can cause problems later. |
 
-#### API
+### API
 
 Not needed, as all bookings are handled through Pretix.
 
-#### Tickets
+### Tickets
 
 Usually, nothing needs to be changed here. We generally use the system standard.
 
@@ -161,9 +159,9 @@ Usually, nothing needs to be changed here. We generally use the system standard.
 | Confirmation | Required |
 | PDF ticket | Not sent |
 
-### E-Mail Settings
+## E-Mail Settings
 
-#### General
+### General
 
 | Setting | Recommendation |
 |---|---|
@@ -171,7 +169,7 @@ Usually, nothing needs to be changed here. We generally use the system standard.
 | Attach ticket files | No, because we do not send PDFs as tickets. |
 | Sender name, signature, and BCC | Usually leave empty unless specified otherwise. Malika’s email will still be indicated. |
 
-#### Calendar Invites
+### Calendar Invites
 
 | Setting | Recommendation |
 |---|---|
@@ -191,11 +189,11 @@ Best wishes
 Malika (malika.ihle@lmu.de)
 :::
 
-#### E-Mail Design
+### E-Mail Design
 
 Use the simple design with logo.
 
-#### E-Mail Content
+### E-Mail Content
 
 Add Zoom links to the free order email where appropriate. The exact emails that need to be changed depend on the type of event. For example, some events may require changes to the order approval process.
 
@@ -248,13 +246,13 @@ Malika
 PS: You can change your order details and view the status of your order at {url}
 :::
 
-### Cancellation Settings
+## Cancellation Settings
 
-#### Unpaid or Free Orders
+### Unpaid or Free Orders
 
 Free orders can always be cancelled. Since current OSC events are free of charge, the other cancellation settings are usually not relevant.
 
-### Products
+## Products
 
 This section controls which ticket types are available.
 
@@ -267,7 +265,7 @@ Typical ticket types include:
 - In-person ticket – LMU member
 - In-person ticket – non-LMU member
 
-#### General Product Settings
+### General Product Settings
 
 | Setting | Recommendation |
 |---|---|
@@ -275,13 +273,13 @@ Typical ticket types include:
 | Name | Use a concise ticket name, such as the examples above. |
 | Product type | Always use an **Admission** product for all groups. |
 
-#### Price
+### Price
 
 | Setting | Recommendation |
 |---|---|
 | Price | 0 € |
 
-#### Availability
+### Availability
 
 | Setting | Recommendation |
 |---|---|
@@ -290,11 +288,11 @@ Typical ticket types include:
 | Allow product to be cancelled or changed | Yes |
 | Show waiting list for this ticket | Yes |
 
-#### Add-ons
+### Add-ons
 
 Add-ons are not needed for OSC events.
 
-#### Additional Settings
+### Additional Settings
 
 | Setting | Recommendation |
 |---|---|
@@ -308,7 +306,7 @@ If many tickets are left, do not show the number. If only a few tickets are left
 
 For more complex events, such as the Summer School, we use **formR**.
 
-#### Quotas
+### Quotas
 
 Quotas define how many tickets of each type are available.
 
@@ -320,11 +318,11 @@ Quotas define how many tickets of each type are available.
 
 For some events, non-LMU tickets are initially set as “to be approved” with their own unlimited quota. Malika may then approve selected registrations, such as TUM or Munich-based participants, and manually adjust the LMU quota. Two to three days before the event, the LMU and non-LMU quotas may be merged.
 
-#### Categories
+### Categories
 
 Only use categories for large events with complex ticket structures. Franka is currently the only person who has used this.
 
-#### Questions
+### Questions
 
 Copy the general questions from the previous event.
 
@@ -343,7 +341,7 @@ If requested by the presenter, add those specific questions here too.
 
 Which questions are mandatory depends on the event. Usually, only the first few questions are required.
 
-#### Adding Conditional Subquestions
+### Adding Conditional Subquestions
 
 To add conditional subquestions:
 
@@ -352,13 +350,13 @@ To add conditional subquestions:
 3. Click **Question dependency**.
 4. Choose the answer from a previous question that should trigger the subquestion.
 
-### Orders
+## Orders
 
-#### All Orders
+### All Orders
 
 Tickets that need to be approved appear here.
 
-#### Export
+### Export
 
 Order data can be downloaded as a sheet if needed, for example to send emails from a personal email account.
 
@@ -368,25 +366,25 @@ Order data can be downloaded as a sheet if needed, for example to send emails fr
 Delete downloaded data if it is no longer needed or if you are not allowed to keep it.
 :::
 
-#### Check-in
+### Check-in
 
 Not needed.
 
-#### Send Out Emails
+### Send Out Emails
 
 If personalised emails need to be sent, Malika usually sends them manually.
 
-### Going Online with the Event
+## Going Online with the Event
 
 Before publishing, always test the design and send test emails to yourself.
 
-#### Enable Test Mode
+### Enable Test Mode
 
 Go to:
 
 **Dashboard → “Your ticket shop is [status]” → “Click here to change” → Enable test mode**
 
-#### Test Mode Checklist
+### Test Mode Checklist
 
 - [ ] Go to **Go to Shop**.
 - [ ] Try out all possible ticket types. 
@@ -398,7 +396,7 @@ Go to:
 
 When testing, check the emails you receive, including the email text and calendar invite. Malika will usually test again, give feedback, or approve the event to go online.
 
-#### Testing Email Notifications
+### Testing Email Notifications
 
 To test emails:
 
@@ -406,12 +404,10 @@ To test emails:
 
 Enable **New order placed** to receive emails during testing.
 
-#### Setting the Event Online or Offline
+### Setting the Event Online or Offline
 
 New projects can be found in the dashboard/shop status. From there, you can test them or set them online/offline once everything else is complete.
 
-### Other Resources
+## Other Resources
 
 [Click here for information on how Pretix emails work](https://docs.pretix.eu/en/latest/user/events/email.html#e-mail-content)
-
-## FormR 

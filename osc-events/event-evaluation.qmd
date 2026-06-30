@@ -1,0 +1,37 @@
+---
+title: "Evaluation of Event"
+---
+
+Post-event evaluation is an important part of the OSC event workflow. After an event, feedback should be collected from attendees and contributors, and key event metrics should be documented to support annual reporting and continuous improvement.
+
+This page provides guidance on collecting feedback, sharing evaluation reports with contributors, and documenting event impact.
+
+# Event Reach Summary Statistics
+
+All OSC events should be documented in the **Event Reach Summary Statistics** sheet.
+
+- [Event Reach Summary Statistics](https://docs.google.com/spreadsheets/d/1lGhs2hECEUope2v742ixGrFZ4vITeYW-K_60uuv6b-k/edit?gid=0#gid=0)
+
+The information recorded in this sheet is used to produce the OSC's yearly impact and activity reports.
+
+# Collecting Feedback
+
+Feedback should be collected from both attendees and event contributors whenever appropriate.
+
+Templates for feedback forms are available in **formr**: <https://formr.osc.lmu.de/>
+
+Typical feedback recipients include:
+
+- Event attendees
+- Instructors
+- Guest speakers
+- Panelists
+- Other contributors
+
+These data contribute to the OSC's yearly evaluation and impact reporting.
+
+::: {.callout-note}
+## Automation
+
+Malika plans to publish template R scripts on GitLab to automate parts of the post-event evaluation workflow: to analyse the formr feedback form template (one for workshop, one for symposium, one for summer school). 
+:::

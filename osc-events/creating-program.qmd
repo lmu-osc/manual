@@ -5,16 +5,18 @@ format: html
 
 This page outlines the main steps involved in creating a new OSC program, from the initial idea to the final logistical preparations.
 
-## Useful Resources
+# Useful Resources
 
 Before creating a new program, consult the following resources:
 
 - [List of OSC trainings offered to organizations](https://docs.google.com/document/d/14nbHY5JwGYXs0r8tzOpGzaOLzOpkdo_D/edit?usp=drive_link&ouid=112987352614073849735&rtpof=true&sd=true)
 - [Checklist for organizing a Carpentry workshop](https://docs.google.com/document/d/1vh34ziAVGYErtco_8tNhfyOJo29x_BBk7g9UH08kzZU/edit?usp=drive_link)
+- [Spreadsheet of possible events](https://docs.google.com/spreadsheets/d/1GmN8q05mflk-Q-hMwnYgXEH9bRIcc0lKSYFOSiLCi1g/edit?gid=0#gid=0)
+- [Edges of Open Science series of possible events](https://docs.google.com/spreadsheets/d/1sKrHzi9YQQSWC4TSK12ENoj689Yhg6P9rRnGJjxRYy8/edit?gid=0#gid=0)
 
-## Program Development
+# Program Development
 
-### Define the Program
+## Define the Program
 
 - [ ] Create a tentative program.
 - [ ] Conduct background research.
@@ -25,7 +27,7 @@ Before creating a new program, consult the following resources:
   - Online only
   - One or several concurrent sessions
 
-### Invite Presenters
+## Invite Presenters
 
 - [ ] Identify potential presenters.
 - [ ] Invite presenters approximately **3 months in advance**.
@@ -34,7 +36,9 @@ Before creating a new program, consult the following resources:
 - [ ] If the event is in person, ask presenters to provide several possible date options.
 - [ ] Send follow-up emails as needed.
 
-### Coordinate Program Content
+More details and example emails can be found in this section: [Liaising with Presenters](liaising-with-presenters.qmd)
+
+## Coordinate Program Content
 
 - [ ] Meet with workshop co-instructors to coordinate content.
 - [ ] Collect all information required for the final program.
@@ -53,9 +57,9 @@ The final program should include:
 | Custom registration questions | Questions for registrants (e.g., prior knowledge) |
 | Maximum number of participants | Participant cap, if applicable |
 
-## Communication and Promotion
+# Communication and Promotion
 
-### Website and Advertising
+## Website and Advertising
 
 - [ ] Create a webpage for advertising the event on the OSC website.
   - Include the abstract, instructor profile, requirements, and other relevant information.
@@ -63,9 +67,9 @@ The final program should include:
 - [ ] Draft a flyer.
 - [ ] Draft newsletter items.
 
-## Logistics
+# Logistics
 
-### Room Booking
+## Room Booking
 
 For a list of frequently used meeting and teaching rooms, including room capacities and locations, consult the [Meeting Rooms](../misc-topics/meeting-rooms.qmd) page of this manual.
 
@@ -79,11 +83,12 @@ Only Malika currently has access to the LMU LSF room booking system.
 Rooms are often difficult to secure during the semester. Therefore, room bookings should be initiated as early as possible and ideally with several potential dates to maximize the chances of finding an available room.
 :::
 
-### Calendar Invitations and Zoom Setup
+## Calendar Invitations and Zoom Setup
 
 - [ ] Send calendar invitations to all instructors and facilitators.
 
 Include:
+
   - The Zoom link for online or hybrid events.
   - The in-person location, if applicable.
 
@@ -95,14 +100,14 @@ For online and hybrid events, Zoom links should be configured so that **sign-in 
 Always assign at least one **alternative host** (e.g., another OSC team member). Alternative hosts can be added using their `@lmu.de` email addresses.
 :::
 
-## Presenter Agreements and Administration
+# Presenter Agreements and Administration
 
-### Permissions and Recording
+## Permissions and Recording
 
 - [ ] Ask presenters whether they agree to an open license for their materials.
 - [ ] Ask presenters for consent to record the session, if applicable.
 
-### Payments and Reimbursements
+## Payments and Reimbursements
 
 - [ ] Request instructors' bank details for payment.
 - [ ] Prepare all reimbursement and administrative forms.

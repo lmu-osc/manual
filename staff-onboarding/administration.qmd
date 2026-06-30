@@ -2,56 +2,81 @@
 title: "Administration"
 ---
 
-## Contract 
+::: {.callout-important}
+## to-do
 
-### Contract Creation
-
-1. Lessons learned from Sarah and Sara Lil
-2. Getting LRZ credentials
+1. Lessons learned from Sarah and Sara Lil 
+2. Getting LRZ credentials 
 3. Getting Psy email
-4. Getting zoom pro account with webinar extension
-
-### Contract Renewal 
-
-### Transponder
-
-::: {.callout-tip}
-## Transponder Issues
-
-If your transponder stops working or is lost, you can either request a replacement from Malika or visit the **Schliessmedien Office**:
-
-**Address:**  
-Geschwister-Scholl-Platz 1, Room EZ 008
-
-**Opening hours:**  
-Tuesday–Thursday, 08:00–11:30
-
-If confirmation is required for issuing a transponder, contact Lilia, who can provide the necessary confirmation as a PDF.
-
 :::
 
-### Logging Hours
+This page contains practical information related to employment at the OSC, including contract administration, office access, and working hour procedures.
 
-**Working Times**
-You are free to work at the most suitable time for you. Please try and answer within 2 days whether you can or cannot take on an assigned task, providing a timeline if you can take it on.
+# Contract
 
-**Tracking Hours**
-Please use [this Google Sheet template](https://docs.google.com/spreadsheets/d/14mOZh3M0XvYzte4neq2CknvnU29HckUL/edit?rtpof=true&sd=true&gid=853702177#gid=853702177) in the [Logging working hours folder](https://drive.google.com/drive/folders/15R3RZ4DiHdWOtbbj2w7dd1W2E2N_XkR_?usp=sharing) to log your hours. 
+## Contract Creation
 
-Follow this steps: 
+...
 
-- Make a copy of this template
-- Save the template offline for your usage
-- Be responsible in entering your working hours 
+## Contract Renewal (HiWis)
 
-::: callout-important
-## Meetings 
+For student assistants (HiWis), preparations for contract renewals should begin **at least 6–8 weeks before the current contract expires**.
 
-Times when we meet count towards your working hours.
+You should provide the following information:
+
+- The number of hours you are available to work per week during the new contract period.
+- Whether you speak German.
+- Details of your residence permit (if applicable), including the expiration date.
+
+::: {.callout-important}
+## The earlier, the better
+
+Please provide the required information as early as possible to avoid delays in the contract renewal process.
 :::
 
-You can also use this to:
+# Transponder Issues
 
-- Mark out unavailable times 
-- Calculate how much time some tasks take for future planning purposes 
-- Add in possible deadlines
+If your transponder stops working or is lost, you can either request a replacement from Malika or visit the **Schliessmedien Office**.
+
+| Information | Details |
+|-------------|---------|
+| Address | Geschwister-Scholl-Platz 1, Room EZ 008 |
+| Opening hours | Tuesday–Thursday, 08:00–11:30 |
+
+If confirmation is required before a new transponder can be issued, contact **Lilia**, who can provide the necessary confirmation as a PDF.
+
+# Logging Working Hours
+
+You are generally free to work at the times that are most suitable for you.
+
+However, when assigned a task, please respond within **two days** indicating whether or not you are able to take it on. If you can take on the task, please also provide an estimated timeline for completion.
+
+## Tracking Hours
+
+Use the following template to track your working hours:
+
+- [Working Hours Template](https://docs.google.com/spreadsheets/d/14mOZh3M0XvYzte4neq2CknvnU29HckUL/edit?rtpof=true&sd=true&gid=853702177#gid=853702177)
+
+The template is located in the:
+
+- [Logging Working Hours Folder](https://drive.google.com/drive/folders/15R3RZ4DiHdWOtbbj2w7dd1W2E2N_XkR_?usp=sharing)
+
+### Getting Started
+
+1. Make a copy of the template.
+2. Save the copy for your own use.
+3. Keep your timesheet up to date and accurately record your hours.
+
+::: {.callout-important}
+## Meetings Count as Working Time
+
+Time spent attending OSC meetings counts toward your working hours.
+:::
+
+### Additional Uses of the Timesheet
+
+You may also use your timesheet to:
+
+- Mark periods when you are unavailable.
+- Estimate how long recurring tasks take for future planning purposes.
+- Record important deadlines and milestones.
