@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Mail Drafts – OSC Manual</title>
+<title>Adding a New Institutional Member – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -33,6 +68,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../edit-other-pages.qmd" rel="next">
+<link href="../updating-website/create-new-members-page.html" rel="prev">
 <link href="../assets/LMU_OSC_favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -132,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Mail Drafts</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../updating-website/index.html">Updating Website</a></li><li class="breadcrumb-item"><a href="../updating-website/new-institutional-member.html">Adding a New Institutional Member</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -232,11 +269,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../updating-website/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Updating Website</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../updating-website/create-news-item.html" class="sidebar-item-text sidebar-link">
@@ -257,16 +294,28 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../.qmd" class="sidebar-item-text sidebar-link">
+  <a href="../updating-website/new-institutional-member.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Adding a New Institutional Member</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../edit-other-pages.qmd" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Edit Other Pages</span></a>
   </div>
 </li>
       </ul>
   </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../onboarding-member.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Onboarding an OSC Member</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../onboarding-member/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Onboarding an OSC Member</span></a>
+            <a href="../osc-events/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Organizing an OSC Event</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -274,31 +323,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../onboarding-member/onboarding-osc-member.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Onboarding an OSC Member</span></a>
+  <a href="../osc-events/creating-program.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating a Program</span></a>
   </div>
 </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../osc-events/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Organizing an OSC Event</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../osc-events/creating-program.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Creating a Program and Liaising with Guest Instructor</span></a>
+  <a href="../osc-events/liaising-with-presenters.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liaising with Presenters</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../osc-events/registration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Registration and OSC Event Pages</span></a>
+ <span class="menu-text">Registration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-events/application.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Applications</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -325,17 +369,23 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Wrap Up and Feedback</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../osc-events/event-evaluation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Event Evaluation</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../osc-outreach/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">OSC Public Outreach</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../osc-outreach/social-media.html" class="sidebar-item-text sidebar-link">
@@ -356,8 +406,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../osc-events/additional-prep.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mail Drafts</span></a>
+  <a href="../osc-events/responding-requests.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Responding to Requests</span></a>
   </div>
 </li>
       </ul>
@@ -366,11 +416,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../authoring-tutorials/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Authoring an OSC Tutorial</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../authoring-tutorials/quarto-overview.html" class="sidebar-item-text sidebar-link">
@@ -395,11 +445,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../path/index.qmd" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Switching a Group to Open Research Practices</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../path/file.qmd" class="sidebar-item-text sidebar-link">
@@ -431,6 +481,10 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
       </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Train-the-Trainer</span></span>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
@@ -521,14 +575,22 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><img src="../assets/LMU_OSC_logo.svg" class="img-fluid" width="175"></p>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#step-1-obtain-the-information" id="toc-step-1-obtain-the-information" class="nav-link active" data-scroll-target="#step-1-obtain-the-information">Step 1: Obtain the Information</a></li>
+  <li><a href="#step-2-open-the-appropriate-file" id="toc-step-2-open-the-appropriate-file" class="nav-link" data-scroll-target="#step-2-open-the-appropriate-file">Step 2: Open the Appropriate File</a></li>
+  <li><a href="#step-3-add-the-new-institutional-member" id="toc-step-3-add-the-new-institutional-member" class="nav-link" data-scroll-target="#step-3-add-the-new-institutional-member">Step 3: Add the New Institutional Member</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/updating-website/new-institutional-member.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../updating-website/index.html">Updating Website</a></li><li class="breadcrumb-item"><a href="../updating-website/new-institutional-member.html">Adding a New Institutional Member</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Mail Drafts</h1>
+<h1 class="title">Adding a New Institutional Member</h1>
 </div>
 
 
@@ -545,8 +607,65 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>An institutional member of the OSC is a research unit, department, collaborative project, or other organization affiliated with the LMU that formally partners with and supports the OSC in promoting Open Science practices within its community.</p>
+<p>You can view institutional members here:</p>
+<ul>
+<li><a href="https://www.osc.lmu.de/partners/institutional-members.html">Institutional Members Page</a></li>
+</ul>
+<p>Institutional members can belong to one of two categories:</p>
+<ul>
+<li>Funding Institutional Members</li>
+<li>Affiliate Institutional Members</li>
+</ul>
+<p><strong>Institutional members are managed differently from individual members.</strong></p>
+<section id="step-1-obtain-the-information" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-obtain-the-information">Step 1: Obtain the Information</h2>
+<p>Malika will provide:</p>
+<ul>
+<li>the institutional member’s information;</li>
+<li>a statement describing the institution and its motivation for joining the OSC; and</li>
+<li>any relevant links, contacts, or images.</li>
+</ul>
+</section>
+<section id="step-2-open-the-appropriate-file" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-open-the-appropriate-file">Step 2: Open the Appropriate File</h2>
+<p>Navigate to:</p>
+<pre class="text"><code>partners</code></pre>
+<p>Then edit one of the following files:</p>
+<ul>
+<li><code>affiliate-institutional-members.qmd</code></li>
+<li><code>funding-institutional-members.qmd</code></li>
+</ul>
+<p>Choose the file corresponding to the type of institutional membership.</p>
+</section>
+<section id="step-3-add-the-new-institutional-member" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-add-the-new-institutional-member">Step 3: Add the New Institutional Member</h2>
+<p>Add the new institution to the existing YAML list using the following format:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">"Faculty of Business Administration - Munich School of Management"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">image_url</span><span class="kw">:</span><span class="at"> </span><span class="st">"images/som.png"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">contact</span><span class="kw">:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> </span><span class="st">"Prof. Dr. Ralf Elsas"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">link</span><span class="kw">:</span><span class="at"> </span><span class="st">"/people/people/ralf-elsas.qmd"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">website_url</span><span class="kw">:</span><span class="at"> </span><span class="st">"https://www.som.lmu.de/en/"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">  description</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    The LMU Munich School of Management is committed to advancing the principles of open science and research transparency. By becoming an institutional member of the LMU's Open Science Center, we aim to foster a culture of openness, collaboration, and integrity in our research community. We believe that promoting open access to data, methodologies, and findings will enhance the quality and reproducibility of research in business studies, ultimately contributing to innovative and impactful solutions for global business challenges.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When editing institutional members, ensure that you remain within the YAML block enclosed by the green <code>---</code> lines.</p>
+<p>Do <strong>not</strong> add content below the closing <code>---</code>, as this may break the page.</p>
+</div>
+</div>
 
 
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -949,6 +1068,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../updating-website/create-new-members-page.html" class="pagination-link" aria-label="Create a Profile Page">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Create a Profile Page</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../edit-other-pages.qmd" class="pagination-link" aria-label="Edit Other Pages">
+        <span class="nav-page-text">Edit Other Pages</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -957,7 +1088,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
 <p>© 2026 Pat Callahan, Malika Ihle, Elizabeth Waterfield. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/osc-outreach/mail-drafts.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/updating-website/new-institutional-member.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

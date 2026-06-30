@@ -1,3 +1,5 @@
+# Staff Onboarding
+
 This chapter is about getting you started with working at the OSC. Use the sections here to familiarize yourself with how the staff communicates, which platforms are useful for specific tasks, and general administrative topics that may come up throughout your time at the OSC.
 
 ## Pages in this section

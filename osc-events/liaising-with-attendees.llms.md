@@ -1,58 +1,123 @@
 # Liaising with Attendees
 
-Here’s a useful checklist of things to do and consider when commmunicating with the attendees for an event:
+Throughout the lifecycle of an OSC event, attendees may need to receive different types of information, ranging from registration confirmations and logistical details before the event, to technical support and announcements during the event, and follow-up communication, materials, and feedback requests after the event.
 
-Create registration page for public part of the event (several tickets, e.g. in person, online, waiting list for non-member – on for each session or for the whole course only).
+Here are useful checklists of things to do and consider:
 
-If the registrant needs to apply to attend specific sessions (e.g. hands on workshop with limited number of seats), then develop rubrics to score applications.
+# Before Event
 
-For **in-person reception**: secure venue, catering, & prepare registration form
+## Registration & Applications
 
-Advertise event to relevant channels, e.g.
+**Registration & Applications**
 
-- graduate center
-- Infodienst
-- OSC
-- BlueSky/Mastodon/LinkedIn
-- UB University of Munich - Central Library
-- List of comms officers per departments
-- Follow up list of comm officers
+Find detailed instructions here: [Registration](../osc-events/registration.llms.md) and [Applications](../osc-events/application.llms.md)
 
-Send an email and forms to applicants
+Create **registration page** for the public part of the event (e.g. in-person, online, waiting list for non-members; decide whether registration is per session or for the whole course).
 
-Confirm attendance (Google form with name; email; “I confirm and will inform if need to cancel”; confirm mode of attendance and R/Julia) + Google form for their PI to approve; waiting list- confirm desire to be on waiting list (Google form) + registration page to attend public part of event
+If applicants need to apply for specific sessions (e.g. hands-on workshops with limited seats), develop rubrics to score applications.
 
-Check that registration numbers are normal, and check that the registrants bought the right tickets etc.
+Send registration information and forms to applicants via email.
 
-- Accept Klinikum, if their tickets need approval.
-- TUM in person ticket also to approve.
-- The rest may need approval depending on whether there are seats remaining- email them minimally two days in advance. (Suggestion: email the top 3 on waiting list to ask whether they are still interested to be invited last minute or not)
+Confirm attendance:
 
-Inform local attendees of in-person reception they need to register for
+Google Form with name, email, confirmation of attendance, attendance mode, and R/Julia preference.
 
-print signage for in person venue
+Google Form for PI approval (if required).
 
-Send participants’ info to instructors who requested it
+Confirm whether applicants wish to remain on the waiting list.
 
-Have the registration platform or manually send reminder to registrants/applicants with relevant info (e.g. Zoom link, abstracts)
+Create registration page for attendees joining only the public part of the event.
 
-Possibly create online workspace for attendees + share CoC + share password protected webpage (e.g. with Zoom link, or private repository) - invite LMU participants to LMU chat OSC space
+Check that registration numbers are reasonable and that registrants selected the correct tickets.
 
-Email reminder to registrants either when fully booked or 4 days in advance (whichever comes first)
+Accept Klinikum registrations if ticket approval is required.
 
-*Mail draft if fully booked:*
+Approve TUM in-person tickets.
 
-Dear registrants of the FIXME title (linked),
+Approve additional registrations depending on seat availability.
 
-The in-person seats of this event are now booked out and there are already people on the waiting list.  
-Please cancel your seat reservation if you can no longer attend in person by emailing me back or directly on Pretix.  
-Your participation will remain possible online: FIXME zoom link
+Email applicants at least two days in advance.
 
-Meeting ID: FIXME  
-Passcode: FIXME  
+Email the top three people on the waiting list to check whether they are still interested in a last-minute invitation.
 
-We are looking forward to discussing with you soon!
+## Venue & Logistics
 
-Send participants’ info to instructors who requested it
+**Venue & Logistics**
+
+Inform local attendees about the in-person reception and registration requirements.
+
+Print signage for the in-person venue.
+
+## Communication & Promotion
+
+**Communication & Promotion**
+
+Advertise the event through relevant channels, e.g.:
+
+Graduate Center
+
+Infodienst
+
+OSC channels
+
+BlueSky/Mastodon/LinkedIn
+
+UB University of Munich – Central Library
+
+Departmental communication officers mailing list
+
+Follow-up list of communication officers
+
+Create an online workspace for attendees (if applicable).
+
+Share the Code of Conduct.
+
+Share password-protected webpages (e.g. Zoom links, private repositories).
+
+Invite LMU participants to the LMU OSC chat space.
+
+Send reminder emails to registrants:
+
+When the event becomes fully booked, or
+
+Four days before the event (whichever comes first).
+
+Use the registration platform or manually send reminders with relevant information (e.g. Zoom link, abstracts).
+
+> **IMPORTANT:**
+>
+> *If the event is fully booked, it is advisable that you communicate that to still interested persons. Here is an email template that you can adapt:*
+>
+> Dear registrants of the *XX title of event XX*,
+>
+> The in-person seats of this event are now booked out and there are already people on the waiting list. Please cancel your seat reservation if you can no longer attend in person by emailing me back or directly on Pretix.
+>
+> Your participation will remain possible online: *XX zoom link XX*
+>
+> Meeting ID: *XX* Passcode: *XX*
+>
+> We are looking forward to discussing with you soon!
+>
+> Sincerely, *XX*
+
+# During Event
+
+Manage attendee check-in and registration (if applicable).
+
+Ensure signage is displayed appropriately.
+
+Monitor attendance and manage any last-minute changes or waiting list admissions.
+
+Provide logistical or technical support to participants as needed.
+
+Ensure participants have access to online workspaces, Zoom links, and other required resources.
+
+# After Event
+
+Follow up with attendees as needed.
+
+Send certificates.
+
+See this section for more information: [Wrap Up and and Feedback](../osc-events/wrapup-feedback.llms.md)
 
 Back to top

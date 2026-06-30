@@ -1,292 +1,467 @@
 # Logistics within the Event
 
-Logistics within an event includes the equipment that you may need to use/bring, the technical and physical set ups, guidelines for setting up presentations, and text prompts for speaking.
+This section covers the logistical and technical aspects of running OSC events. It includes information on equipment, event setup, technical support responsibilities, and practical resources to help ensure that events run smoothly.
+
+You can always refer to the [Template Folder](https://drive.google.com/drive/folders/1HFmT0RPz6s7Z2DB13rbgREuWatF6I6-J?usp=drive_link) in the Google Drive for items like certificates of participation, attendance sheets, and more.
 
 ## Equipment
 
-Equipment and other materials are usually stored in the grey cabinet in the office or may sometimes be outsourced in advance. The keys for the cabinet are in the top drawer of Malika’s desk.
+Equipment and other materials are usually stored in the gray cabinet in the office, although some items may need to be borrowed or reserved in advance. The keys for the cabinet are located in the top drawer of Malika’s desk.
 
-As an assistant, you will need to learn how to:
+As an OSC assistant, you should become familiar with:
 
-- Use the 360 web conference cameras
-- use Zoom in conjunction with external camera, microphones, and handheld microphones that amplify speakers to the room loudspeakers but is still connected to Zoom ([prototype instructions here](https://docs.google.com/document/d/1W1c0KCm-r26OZ39ep02sMT8HCtAL_V1TeKGW-F1-b00/edit?tab=t.0))
-- Be the technical support and online facilitator (welcome people, be available, and be inclusive)
-- Create name tags with Word template merged with Excel Sheet list
-- Help create formR surveys (application or feedback survey), contact/reserve restaurants, translate announcements, etc.
+- Using the 360° web conference cameras.
+- Using Zoom in conjunction with external cameras, microphones, and handheld microphones that amplify speakers through the room loudspeakers while remaining connected to Zoom (see the [prototype instructions](https://docs.google.com/document/d/1W1c0KCm-r26OZ39ep02sMT8HCtAL_V1TeKGW-F1-b00/edit?tab=t.0)).
+- Providing technical support and acting as the online facilitator (e.g., welcoming participants, monitoring the chat, being available to answer questions, and ensuring that online participants are included).
+- Creating name badges using a Word template and an Excel participant list.
+- Assisting with formr surveys (e.g., application and feedback surveys), contacting or reserving restaurants, translating announcements, and other logistical tasks.
 
-Here is a list of equipment that you can use to build a checklist for your event:
+The lists below can be used as a starting point when creating an event-specific equipment checklist.
 
-> **NOTE:**
->
-> - 4 OSC 360 web conference cameras
->   - Kandao
->   - Kandao pro
->   - Owl + extension mic
->   - Kandao from seminar room 3322 (ask Malika for code)
-> - 2 UB owls
-> - very long HDMI cable (from Malika’s desk) + smaller HDMI cable
-> - station adapter
-> - OSC laptop
-> - Malika’s laptop
-> - USB stick
-> - headphones (Malika’s & your own personal headphones, if you have)
-> - Malika’s headphone cable to charge table microphone live if needed
-> - 2 tripods
-> - at least 8 long extension cords with 4 outlets + at least 2 long cords rolled up
-> - OSC poster
-> - badges for in person & mixed participants (attendees and presenters and assistants)
-> - flyers for the signage in Fak 13
-> - suitcase (to transport the equipment to another building)
-> - computer mouse
-> - long internet cable for presenter in case (Malika’s desk)
-> - red and green stickers
-> - your own personal laptop for the hybrid networking event and install necessary software like [barco](https://www.barco.com/na-en/product/clickshare-extension-pack) and [owl labs](https://resources.owllabs.com/app-download) just in case
-> - external battery
-> - huge back pack usually for snacks
-> - phone charger + external battery
-> - tape for cable and also for extension mic package
-> - second internet cable
+## Cameras and Audio
 
-## Hybrid Events
+Kandao
 
-Equipment for these events include:
+Kandao Pro
 
-Owl or Kandao
+Owl + extension microphone
 
-- If do not need a presenter focus mode: Kandao from 3322 can be used; however,
-- If you need a presenter focus mode: you should use Kandao Pro + power cord + cable to laptop + compact adapter (these are usually in a plastic purple bag)
+Kandao from seminar room 3322 (ask Malika for the code)
 
-table speaker
+2 UB Owls
 
-long HDMI cable
+Headphones (Malika’s headphones and your own personal headphones, if available)
 
-station/adapter
+Cable to charge the table microphone during use (if needed)
 
-presenter laptop
+## Cables and Connectivity
 
-suitcase
+Very long HDMI cable (stored on Malika’s desk)
+
+Additional short HDMI cable
+
+Station adapter
+
+Long internet cable for presenters (stored on Malika’s desk)
+
+Second internet cable
+
+At least 8 long extension cords with four outlets each
+
+At least 2 additional long extension cords (rolled up)
+
+Tape for securing cables and extension microphone packages
+
+## Computers and Devices
+
+OSC laptop
+
+Malika’s laptop
 
 USB stick
 
-headphones
+Computer mouse
 
-(recommendation) a little box for raising camera (20 cm)
+Your own personal laptop for hybrid networking events
+
+### Recommended Software
+
+Install the following software in advance:
+
+- [Barco ClickShare Extension Pack](https://www.barco.com/na-en/product/clickshare-extension-pack)
+- [Owl Labs App](https://resources.owllabs.com/app-download)
+
+### Other Devices
+
+External battery
+
+Phone charger + external battery pack
+
+## Event Materials
+
+2 tripods
+
+OSC poster
+
+Badges for attendees, presenters, and assistants
+
+Flyers/signage for Fak 13
+
+Red and green stickers
+
+Suitcase for transporting equipment
+
+Large backpack for snacks
+
+# Event-Specific Logistics
+
+This section provides logistical guidance for specific event formats commonly organized by the OSC.
+
+## Hybrid Events
+
+### Recommended Equipment
+
+Use the following checklist as a starting point when preparing a hybrid event.
+
+Owl or Kandao camera
+
+- If presenter focus mode is **not** required, the Kandao from room 3322 can be used.
+- If presenter focus mode **is** required, use the **Kandao Pro** together with:
+  - power cord
+  - cable to laptop
+  - compact adapter
+  - plastic purple accessory bag
+
+Table speaker
+
+Long HDMI cable
+
+Station/adapter
+
+Presenter laptop
+
+Suitcase
+
+USB stick
+
+Headphones
+
+Camera riser (recommended; approximately 20 cm)
+
+### Setup Procedure
+
+#### Step 1: Set Up Equipment
+
+Connect the Kandao or Owl to power and to the presenter laptop.
+
+Turn on the beamer and connect the laptop.
+
+If using the Kandao Pro, turn it on using the button on the device.
+
+Open Zoom (usually accessible through the calendar invitation or reminder email).
+
+#### Step 2: Configure Zoom
+
+Verify that both audio and video are set to the Kandao/Owl device.
+
+Decide whether to use a duplicated or extended display.
 
 > **NOTE:**
 >
-> Connect Kandao or Owl to power and to presenter laptop
+> ### Extended Display
 >
-> Turn the beamer on and connect the laptop to it
+> Use extended display if you would like to:
 >
-> If Kandao Pro, then turn it on (button on the device)
+> - share only the projected screen in Zoom;
+> - view presenter notes;
+> - monitor chat and participants;
+> - manage videos and other applications on the laptop screen.
 >
-> Open Zoom (link is likely in your calendar invite or last email reminder to registrants)
+> ### Duplicated Display
 >
-> Make sure sound and video in Zoom are *set* to Kandao
+> Use duplicated display if:
 >
-> Decide whether to have a duplicated or extended display (laptop display setting).
->
-> - **extended display**: can share the projected screen in Zoom, and transfer there what the participants in the room and online need to see, while seeing other things on the laptop screen (e.g. PowerPoint presenter notes, chat, participants, videos from other participants)
-> - **duplicated display**: what you see on your laptop screen is what everybody sees (e.g. chat and other participants video). This is useful when the in person and online participants should interact and you want to see it e.g. questions on your laptop screen and not just on the projected screen.
->
-> Test sound for online participants
->
-> - Ask an online participants if they can hear you and people furthest in the room, otherwise bring in-person participants and Kandao closer to each other
-> - Ask an online participant to speak and possibly adjust the Kandao volume (button on device)
-> - **If another person in the room is the online tester**, they should wear headphones or get outside of the room. If they keep checking the online audio during the event, they should wear headphones and, if they stay in the zoom room without headphones, they should mute their laptop (in addition to muting zoom).
->
-> Decide on Kandao camera view or ‘mode’ (button on device, and on the remote for Kandao Pro)
->
-> - use presenter focus mode for presentation and recording (Kandao Pro)
-> - keep 2x180° view for Q&A and interactive parts
+> - the room and online participants should see exactly the same content;
+> - interaction between in-person and online participants is expected;
+> - you want to monitor questions directly on your laptop screen.
 
-**In-Person Speaker Logistics**:
+#### Step 3: Test Audio
 
-- Tech Laptop
-  - Unmute microphone
-  - Pin “Kandao” window as spotlight for everyone.
-  - Turn off speaker (i.e., mute the device in the system settings) to avoid feedback loop (different from unmuting the microphone).
-- Local settings
-  - Presenters should use the small room microphone.
+Ask an online participant whether they can hear you and participants sitting furthest away.
 
-**Remote/Online Speaker Logistics**:
+If necessary, move participants and the camera closer together.
 
-- Tech Laptop
-  - Pin “presenting” window as spotlight for everyone.
-  - Mute microphone
-- Send Zoom window to the beamer; make Zoom window fullscreen
-- Turn on the Jabra speaker volume (so that the in-person audience can hear the online panelists); i.e. unmute the laptop, not the microphone
-
-## Summer School
-
-The **Open Science Summer School** is an annual week-long program put on by the OSC to teach participants about open science and open research topics, practices, tools, and more! Let’s break down the preparation for this event:
-
-## Room Set Up
-
-table in classroom style for 26 attendees
-
-table microphone (1 per 6 people)
-
-high chair and high table for the presenter (instead of or together with the podium)
-
-high chairs and high table in the back
-
-tea, coffee, snacks, napkins, trash in kitchen
-
-cabinet in the front for badges, box/bag for attendees to give money
-
-## Electronics Set Up
-
-switch on system creston - `anlage ein` & `projektor ein`
-
-connect 360 web conference cameras (Owl for lectures, Kandao Pro for workshops) on tripod to laptop
-
-click-and-share device to laptop. Make sure the laptop has the necessary software ([Barco-clickshare-extension](https://www.barco.com/na-en/product/clickshare-extension-pack) and [Owl App](https://resources.owllabs.com/app-download) on the presenters laptop.
-
-set up table mic for presenter
-
-Sharing Screen to Beamer
-
-- duplicate or extended display (in laptop setting-display-multiplay displays)
-- click on “extend these displays”
-
-Powerpoint: set to presenter view
-
-- in power point presenter mode, click show taskbar to see the other apps
-- =\> not sharing powerpoint, but share second screen in Zoom
-
-In case the screen is not projected (e.g. after changing from duplicated to extended display) - click again on the click and share button. Possibly, you need to unplug the click and share and plug it back in. If it still doesn’t work, change outlet for the click and share (try USB, or usbc from laptop).
-
-## Zoom Set Up
-
-make OSC assistant the Co Host always
-
-in `participant tab`, click on ellipsis for the following settings:
-
-- Untick play sound when someone joins or leaves
-- allow participants to raise hand (in webinar)
-- allow panelist to share video (in webinar)
-- attendees view follow host view (in webinar)
-
-in `Q&A tab`:
-
-- allow attendees to view all question
-- tick for upvote and comment
-- tick for ask anonymous questions
-
-for the `chat`:
-
-- everybody can chat with everybody
-
-when sharing screen in zoom, click ‘more’ to see the option to hide floating meeting controls (to make them return, click `Esc` (key top left of keyboard))
-
-may sometimes require the option: “Doppelmonitore”/”dual screens” found in the Zoom account, profile setting
-
-## Lectures Set Up
-
-*Use Kandao Pro for lectures*
-
-**In-Person Presenter**
-
-tell them to always speak facing the microphone, not the projected screen, and point to the screen only using the mouse and not a pointer on the projected screen.
-
-ask them if they prefer *duplicated* (which they’ll likely need if they’re using a PDF instead of PowerPoint, or during workshop if they share their screen often) or *extended* screen (needed for presenter mode of PowerPoint)
-
-ask if they need to share their sound when sharing their screen (if they want to play a video, for e.g.). For this, the Zoom sharing window selection has a tick box at the bottom to say ‘`optimize for video/sound sharing`’
-
-in Zoom: use Owl or Kandao Pro as camera (on presenter mode in settings during the presentation; focus mode + 360° view for the Q&A. Ensure the presenter is pinned/spotlight for everyone in Zoom),
-
-test the speaker (which would be the room speaker) and microphone (which would be the table microphone)
-
-- click and share, room audio, crestron
-
-**Online Presenter**
-
-check audio: crestron for Zoom (mute microphone)
-
-- when changing audio, follow these steps: Crestron -\> Audio -\> Barco (volume) (you can test it on Zoom using “Testing mic speaker” feature)
-
-view (top right corner in Zoom): use `side by side speaker` and pin/spotlight the speaker for everyone
-
-sharing screen: set Zoom window on second display, view, full screen (to exit full screen click esc (top left key on keyboard) (?)
-
-zoom: mouse on zoom (for using shortcuts) (?)
-
-- OSC assistant should pin Malika’s video and the online presenter when she introduces them (Ellipsis on the video feed -\> pin), then spotlight the presenter for everyone during their presentation
-- Then again pin both the video for the room and the presenter for the Q&A.
-- The view of the room should be focus presenter mode when introduction (as it is recorded), then 2x180° on the Kandao Pro during Q&A (not recorded)- this can be changed clicking ‘mode’ on the remote (after the remote is turned on).
-
-make sure audio in the room has the right volume
-
-## Workshop Set Up
-
-Kandao setting/mode: 2x180°
-
-prepare Zoom breakout rooms if needed with appropriate names and settings
-
-**In-Person Instructor**
-
-connect their laptop (reminder, they need the necessary software [Barco-clickshare-extension](https://www.barco.com/na-en/product/clickshare-extension-pack) and [Owl App](https://resources.owllabs.com/app-download) depending on what camera or projector they will use).
-
-If discussion based, project the Zoom windows with online participants (dual monitor can be helpful here)
-
-online instructor present at the venue (?) set them up in the small back room? need headphones
-
-**Webinars/Lectures**  
-During Each Session:
-
-- START RECORDING before Malika introduce presenters
-- STOP RECORDING when presentation is done, before Q&A
-  - Upload the recording and slides right after the lectures on a subrepository of the grassroot initiative organizing the workshop (e.g. OSIP: https://osf.io/mgwk8/ ; OSC: https://osf.io/zjrhu/)
-  - consent from the presenter should have been obtained beforehand using this [written consent form](https://docs.google.com/document/d/1vtK-TFtcf-bpKdA7YD9b6WxTYPzhTGPb/edit)
-- If any app crashes, use: `strg + alt + entf OR Ctrl + Alt + Del -> task manager -> end task` (especially for Zoom) then rejoin the meeting and take it slow
-- check if you are the co-host
-- rename to “OSC Assistant”
-- pin Malika when introducing presenters as well as online presenter - then spotlight presenter for everyone
-- May sometimes send messages like:
-  - “If there is any logistical problem please let us know!”
-  - “Please feel free to ask and upvote questions in the Q&A box!”
-- one assistant to check sound (in headphones) and visuals for the online audience at all times using the OSC laptop or personal laptop. Their laptop speakers must be turned off.
-- collect resources shared in the chat and add them to the Summer School central doc
+Ask an online participant to speak and adjust the Kandao volume if necessary.
 
 > **WARNING:**
 >
-> Do not share this link in the `webinar` (lectures) Zoom room but you can share it in the `meeting` (workshops) Zoom room
+> If someone in the room is testing the online audio:
+>
+> - they should wear headphones or leave the room;
+> - if they remain connected during the event, they must wear headphones;
+> - if they stay in the Zoom room without headphones, mute the laptop speakers in addition to muting Zoom.
 
-- Take attendance using the Google Sheet with selected applicants list for each session
-  - make note of total number of attendance (and range)
+#### Step 4: Select Camera Mode
 
-End of Each Session:
+Choose the appropriate camera mode:
 
-- Send a message in the group chat saying:
-  - when the next public lecture will be
-  - what the next session of the Summer School will be and when
-  - whether the next session is for registered participants
-- Pre-write all the texts for the days so you can copy and paste them in the chat.
+- **Presenter focus mode** → presentations and recordings (Kandao Pro)
+- **2×180° mode** → discussions, Q&A, and interactive activities
+
+------------------------------------------------------------------------
+
+### Presenter Logistics
+
+#### In-Person Presenter
+
+##### Tech Laptop
+
+Unmute microphone.
+
+Pin and spotlight the Kandao window for everyone.
+
+Mute laptop speakers in the system settings to avoid feedback loops.
+
+##### Presenter Instructions
+
+Ask presenters to use the room microphone.
+
+#### Remote Presenter
+
+##### Tech Laptop
+
+Pin and spotlight the presenting window.
+
+Mute the room microphone if appropriate.
+
+##### Room Setup
+
+Send the Zoom window to the beamer.
+
+Make the Zoom window fullscreen.
+
+Unmute the room speakers (e.g., Jabra speaker) so that in-person participants can hear online speakers.
+
+------------------------------------------------------------------------
+
+## Carpentry Workshops
+
+A Carpentry workshop is a hands-on training workshop organized by the OSC.
+
+For a detailed step-by-step guide on planning and organizing a carpentry workshop, consult the dedicated Carpentry workshop checklist:
+
+- [Carpentry Workshop Checklist](https://docs.google.com/document/d/1vh34ziAVGYErtco_8tNhfyOJo29x_BBk7g9UH08kzZU/edit?usp=drive_link)
+
+The complete Carpentry folder, containing additional resources, templates, attendance lists, and documentation from previous Carpentry workshops, can be found here:
+
+- [Carpentry Workshop Folder](https://drive.google.com/drive/folders/1eXI1oBgiGbGz58MTx1f56cwCXz2EyQvV?usp=drive_link)
+
+> **TIP:**
+>
+> Before organizing a new Carpentry workshop, review documentation and materials from previous workshops. This can provide useful examples and help ensure consistency across events.
+
+### Certificates of Completion
+
+Participants who successfully complete a Carpentry workshop typically receive a certificate of completion.
+
+The certificate template can be found here:
+
+- [Certificate of Completion Template](https://docs.google.com/document/d/1nzakf9bprvTJfXwuyarpZosJ1-nWnhnOafeiNl1Jrvc/edit?usp=drive_link)
+
+**Preparing and Sending Certificates**:
+
+1.  Open the certificate template.
+2.  Adjust the content as necessary for the specific workshop (e.g., workshop title, dates, participant name, instructors).
+3.  Generate one certificate for each participant who completed the workshop.
+4.  Save each certificate as a **PDF** before sending it to participants.
+5.  Send the certificates to participants using the email addresses from the attendance list.
 
 > **NOTE:**
 >
-> *Welcome:*  
-> Welcome! The presentation is recorded (not the Q&A). Feel free to say hi and where you are joining us from, and to share resources in the chat (which we will collect). Please ask and upvote questions in the Q&A box!
+> You will receive an attendance list containing the names and email addresses of participants who successfully completed the workshop.
 >
-> Welcome to this workshop! If you have any questions about the content of the workshop, feel free to post them in the Q&A box.
+> Only participants who completed the workshop should receive certificates.
+
+### Additional Resources
+
+The Carpentry folder may also contain:
+
+- Attendance list templates
+- Communication templates
+- Registration information
+- Feedback materials
+- Previous workshop programs and schedules
+- Examples from past Carpentry workshops
+
+Consult these materials when preparing a new Carpentry event.
+
+# Open Science Summer School
+
+The Open Science Summer School is an annual week-long program organized by the OSC. Due to its scale, it requires additional preparation.
+
+## Room Setup
+
+Arrange tables in classroom style for approximately 26 participants.
+
+Set up one table microphone for every six participants.
+
+Set up a high table and high chair for the presenter.
+
+Set up additional high tables and chairs at the back of the room.
+
+Prepare tea, coffee, snacks, napkins, and trash facilities.
+
+Prepare the front cabinet for badges and participant payments.
+
+## Electronics Setup
+
+Turn on the Crestron system:
+
+- `anlage ein`
+- `projektor ein`
+
+Connect conference cameras to the laptop:
+
+- Owl for lectures
+- Kandao Pro for workshops
+
+Connect the ClickShare device.
+
+Verify that the presenter laptop has:
+
+- [Barco ClickShare Extension Pack](https://www.barco.com/na-en/product/clickshare-extension-pack)
+- [Owl App](https://resources.owllabs.com/app-download)
+
+Set up table microphone.
+
+### Screen Sharing
+
+Choose duplicated or extended display.
+
+Select **“Extend these displays”** if presenter mode is required.
+
+### PowerPoint
+
+Use presenter view.
+
+In presenter mode, click **Show Taskbar** to access other applications.
+
+Share the second display in Zoom instead of sharing PowerPoint directly.
+
+> **TIP:**
 >
-> *Questions:*  
+> If the screen is not projected:
+>
+> 1.  Click the ClickShare button again.
+> 2.  Unplug and reconnect ClickShare.
+> 3.  Try another USB/USB-C port.
+
+## Zoom Setup
+
+### Participant Settings
+
+Under the participant tab:
+
+Disable sounds when participants join or leave.
+
+Allow participants to raise hands.
+
+Allow panelists to share video.
+
+Enable “attendees follow host view”.
+
+### Q&A Settings
+
+Allow participants to view all questions.
+
+Enable upvoting and comments.
+
+Enable anonymous questions.
+
+### Chat Settings
+
+Allow everyone to chat with everyone.
+
+### Additional Settings
+
+Hide floating meeting controls when sharing screen.
+
+Enable dual monitors if needed.
+
+## Lecture Setup
+
+### In-Person Presenter
+
+Ask presenters to speak toward the microphone.
+
+Ask whether they prefer duplicated or extended display.
+
+Ask whether they need sound sharing.
+
+Use presenter focus mode during presentations.
+
+Switch to 360° mode during Q&A.
+
+Test microphone and room speakers.
+
+### Online Presenter
+
+Verify audio settings.
+
+Use side-by-side speaker view.
+
+Spotlight presenter for everyone.
+
+Ensure room audio volume is appropriate.
+
+## Workshop Setup
+
+Use 2×180° camera mode.
+
+Prepare breakout rooms if required.
+
+### In-Person Instructor
+
+Connect instructor laptop.
+
+Verify that required software is installed.
+
+Project Zoom windows if workshop discussions involve online participants.
+
+## Each Session
+
+### Before the Session
+
+Start recording before introductions.
+
+Verify that you are the co-host.
+
+Rename yourself to **OSC Assistant**.
+
+### During the Session
+
+Spotlight presenters appropriately.
+
+Monitor sound and visuals for online participants.
+
+Collect resources shared in chat.
+
+Record attendance.
+
+#### Example Messages
+
+> **NOTE:**
+>
+> ### Welcome
+>
+> Welcome! The presentation is recorded (not the Q&A). Feel free to introduce yourself in the chat and share resources. Please ask and upvote questions in the Q&A box.
+>
+> ### Workshop Welcome
+>
+> Welcome to this workshop! If you have questions about the content, please post them in the Q&A box.
+>
+> ### Questions
+>
 > If you have any questions, feel free to post them in the Q&A box.
 >
-> *Goodbye:*  
-> Thank you for your attendance. We will continue with our talk on credible research in 10 minutes (11:00 am CEST) on the same Zoom link.
+> ### Goodbye
+>
+> Thank you for your attendance. We will continue with our next session in 10 minutes on the same Zoom link.
 
-**At the End of Each Day**
+> **WARNING:**
+>
+> Do not share the central document link in webinar rooms. It may be shared in workshop meetings.
 
-bring all table mics to be charged
+## End of Each Day
 
-charge headphones
+Charge all table microphones.
 
-turn off the system
+Charge headphones.
 
-clean up snack table and trash
+Turn off all systems.
 
-fill up and run dishwasher
+Clean the snack table and dispose of trash.
+
+Fill and run the dishwasher.
 
 Back to top

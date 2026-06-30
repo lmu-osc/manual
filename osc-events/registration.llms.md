@@ -1,144 +1,217 @@
-# Registration and OSC Event Pages
+# Registration
 
-## Registering Event on Pretix
+We create registration pages or other registration avenues for our events for several reasons. Registration helps us keep track of participant numbers, ensure that trainings reach the intended and most relevant audiences through screening procedures, and collect important information from participants ahead of the event (e.g. attendance mode, preferences, or accessibility needs).
 
-Pretix is our management system to create registration pages for events (e.g. workshops, discussions, etc.).
+# Registering Event on Pretix
 
-### Administration
+To manage registrations and collect pre-event information, we mainly use the platform: **Pretix**. This section will guide you through the process of setting up registration pages and forms across this platform.
 
-Malika will add new team members to the Pretix LMU OSC organisation on the OSC server so you can create registration pages for OSC events.
+## Administration
+
+Malika will add new team members to the Pretix LMU OSC organization on the OSC server so you can create registration pages for OSC events.
 
 To login on [the server](http://www.pretix.osc.lmu.de/control/), the default login username will be your LMU campus email.
 
-### Using Pretix
+## Using Pretix
 
-The following will take you through the entire set up process of a new event using Pretix, including general rules to follow regarding the settings as we as text examples for Mails.
+The following section walks you through the setup process for creating a new event in Pretix, including general settings, ticket setup, email settings, testing, and example text for event pages and emails.
 
-**Create a new page**  
-A suggestion is to clone an event and then change the necessary details.
+A useful starting point is to **clone an existing event** and then update the relevant details.
 
-- Basics: if copied, everything is the same
-- Short form will be in URL *(change this)*
-- Contact address -\> Malika’s (=content event organiser)
-- Imprint URL -\> page on the (=bottom of the ticket page)
+## Event Setup
 
-**Settings**
+### Create a New Event
 
-- Available language: typically, German/English but change to whatever is specified.
-- Customer and attendee info: if copied from another ticket, usually remains unchanged
-- Email twice
-- No phone number
-- Names of the attendees asked by default
+| Field | Recommendation |
+|----|----|
+| Basics | If copied from another event, most settings can remain unchanged. |
+| Short form | **Change this**, as it appears in the event URL. |
+| Contact address | Use the official OSC email address as the event organizer contact: `osc@lmu.de` |
+| Imprint URL | Use the OSC imprint page shown at the bottom of the ticket page. |
 
-**Texts**  
-Usually no presale/no voucher/no confirmation
+### General Settings
 
-Frontpage Text *needs to be changed* and should include: Instructors, Abstract, Target Audience, Prerequisites, Logistics (ie. Where / online / hybrid)
+| Setting | Recommendation |
+|----|----|
+| Available languages | Usually German and English, unless otherwise specified. |
+| Customer and attendee information | Usually remains unchanged if copied from another event. |
+| Email address | Ask twice. |
+| Phone number | Do not ask. |
+| Attendee names | Ask by default. |
+
+### Texts
+
+Usually, we do **not** use presale text, voucher text, or confirmation text.
+
+The **Frontpage Text** must be changed and should include:
+
+| Section | What to include |
+|----|----|
+| Instructors | Names and affiliations of instructors. |
+| Abstract | Short description of the event. |
+| Target audience | Who the event is intended for. |
+| Prerequisites | Required prior knowledge, accounts, or software. |
+| Logistics | Whether the event is online, in person, or hybrid; include room or Zoom details where appropriate. |
 
 > **NOTE:**
 >
 > *Instructors*:  
 > *Dr. Katarina Blask*, Leibniz Institute for Psychology (ZPID)
 >
-> *Abstract*: Transparency and openness in the research process are becoming increasingly important in all scientific fields - including psychology. Accordingly, researchers should not only make research results freely available, for example in the form of scientific articles (open access), but also provide research data, analysis scripts and study materials. However, the reusability of the data made available requires comprehensive research data management (RDM) on the part of the researchers. In particular, research data should be made available in accordance with the FAIR principles, meaning that research data should be Findable, Accessible, and usable (Interoperable and Reusable). In this workshop, you will learn about FAIR data management in psychology by using the data management assistance system DataWiz, which allows you to plan, create and publish FAIR data objects. Specifically, you will 1) get an introduction to FAIR data documentation, 2) create a data management plan, and 3) learn how to organize your data.  
-> *Target audience*: PhD students and post-docs from psychology.  
+> *Abstract*: Transparency and openness in the research process are becoming increasingly important in all scientific fields - including psychology. Accordingly, researchers should not only make research results freely available, for example in the form of scientific articles (open access), but also provide research data, analysis scripts and study materials. However, the reusability of the data made available requires comprehensive research data management (RDM) on the part of the researchers. In particular, research data should be made available in accordance with the FAIR principles, meaning that research data should be Findable, Accessible, and usable (Interoperable and Reusable). In this workshop, you will learn about FAIR data management in psychology by using the data management assistance system DataWiz, which allows you to plan, create and publish FAIR data objects. Specifically, you will 1) get an introduction to FAIR data documentation, 2) create a data management plan, and 3) learn how to organize your data.
+>
+> *Target audience*: PhD students and post-docs from psychology.
+>
 > *Prerequisites*: There is no prior knowledge required on research data management or the implementation of the FAIR principles.  
-> To participate in the hands-on sessions, please create an account for DataWiz if you do not already have one.  
+> To participate in the hands-on sessions, please create an account for DataWiz if you do not already have one.
+>
 > *Logistics*: This event will be held online.
 
-**Shop Design**
+## Event Appearance and Display
 
-- Logo is always the OSC logo
-- The colours are already set by Malika (but are changeable in the organisation part)
+### Shop Design
 
-**Timeline**
+| Setting | Recommendation |
+|----|----|
+| Logo | Always use the OSC logo. |
+| Colors | Usually preconfigured by Malika, but can be changed in the organization settings if necessary. |
 
-- Start: put nothing in here
-- End: when the event happens
-- Show number of check ins/ Allow modifications -\> *No*
+### Timeline
 
-**Display**
+| Setting                  | Recommendation         |
+|--------------------------|------------------------|
+| Start                    | Leave empty.           |
+| End                      | Set to the event date. |
+| Show number of check-ins | No                     |
+| Allow modifications      | No                     |
 
-- Show everything except the following:
-  - Price (as our events are for free)
-  - Product variations
+### Display
 
-Don’t hide sold out products  
-Show numbers of tickets left not shown (if number of seats is very large or limited) (?)
+Show all information except the following:
 
-**Cart**  
-Check the box to go directly to the cart.  
-Set the maximum of items people can choose to buy to “1” (if nothing else is specified)
+| Hide               | Reason               |
+|--------------------|----------------------|
+| Price              | OSC events are free. |
+| Product variations | Not needed.          |
 
-**Waiting list**  
-Enable waiting list.
+Additional display settings:
 
-### Payment, Tax Rules, Invoicing
+| Setting | Recommendation |
+|----|----|
+| Hide sold-out products | No |
+| Show number of tickets left | Usually no, unless specifically needed for the event. |
 
-Nothing to change here if we don’t charge for our events.
+### Cart
 
-**Available plugins**  
+| Setting | Recommendation |
+|----|----|
+| Directly proceed to cart | Yes |
+| Maximum items per order | Usually set to **1**, unless otherwise specified. |
+
+### Waiting List
+
+| Setting             | Recommendation |
+|---------------------|----------------|
+| Enable waiting list | Yes            |
+
+## Payments, Tickets, and Technical Settings
+
+### Payment, Tax Rules, and Invoicing
+
+Nothing needs to be changed if the event is free.
+
+### Available Plugins
+
 If copied from another event, usually nothing needs to be changed here.
 
-**Features**  
-We have Emails and statistics enabled.
+### Features
 
-**Payment**  
-Not needed if for free
+| Feature    | Status  |
+|------------|---------|
+| Emails     | Enabled |
+| Statistics | Enabled |
 
-**PDF Ticket**  
-PDF Ticket output active (even if we don’t want a pdf in the end, you can keep it active as it could lead to problems if we switch at some point)
+### Payment
 
-**API**  
-Not needed as we do all the booking via pretix
+Not needed for free events.
+
+### PDF Ticket
+
+| Setting | Recommendation |
+|----|----|
+| PDF ticket output | Keep active, even if no PDF ticket is sent in the end, as disabling it can cause problems later. |
+
+### API
+
+Not needed, as all bookings are handled through Pretix.
 
 ### Tickets
 
-Usually nothing needs to be changed here. We’re basically using the System standard.
+Usually, nothing needs to be changed here. We generally use the system standard.
 
-Only confirmation needed, no PDF.
+| Setting      | Recommendation |
+|--------------|----------------|
+| Confirmation | Required       |
+| PDF ticket   | Not sent       |
 
-### E-Mail setting
+## E-Mail Settings
 
-**General**
+### General
 
-- Subject prefix: *change this* depending on the kind of Event (e.g. “OSC workshop”)
-- Don’t attach ticket files (as we don’t send PDFs as tickets)
-- (If not specified otherwise) Sender name, Signature and Bcc can be left out (as Malika’s Email will still be indicated)
+| Setting | Recommendation |
+|----|----|
+| Subject prefix | **Change this** depending on the event, e.g. “OSC workshop”. |
+| Attach ticket files | No, because we do not send PDFs as tickets. |
+| Sender name, signature, and BCC | Usually leave empty unless specified otherwise. Malika’s email will still be indicated. |
 
-**Calendar Invites**
+### Calendar Invites
 
-- Attach calendar files only if the spot and payment is confirmed (i.e. calendar invite goes to all orders, even those that need approving)
-  - that’s why the text should say “if you got a confirmation, approval,… you can join here”
-- Event description: *Change text* according to event and check if it has the correct zoom link/address in it.
+| Setting | Recommendation |
+|----|----|
+| Attach calendar files | Only attach calendar files if the spot/payment is confirmed. |
+| Event description | **Change the text** according to the event and check whether it includes the correct Zoom link or address. |
+
+The calendar invite text should make clear that participants can only join if their order was confirmed or approved.
 
 > **NOTE:**
 >
-> Hello!  
-> If your order was approved (automatically, or by the organiser if you are not a member of the LMU), you can join in person in X room in X address.
+> Hello!
+>
+> If your order was approved (automatically, or by the organizer if you are not a member of the LMU), you can join in person in X room in X address.
 >
 > Best wishes  
 > Malika (malika.ihle@lmu.de)
 
-**E-Mail design**  
-Simple with logo
+### E-Mail Design
 
-**Email content**:
+Use the simple design with logo.
 
-- Add zoom links to the free order. Depends on the kind of event. Check free order + text for approved free order for zoom links.
-- Depending on the kind of event you need to *change* other ones (e.g order approval process)
+### E-Mail Content
 
-*When do I need to change which emails?*
+Add Zoom links to the free order email where appropriate. The exact emails that need to be changed depend on the type of event. For example, some events may require changes to the order approval process.
 
-- If event is free: free order, resend link, order changed, waiting list notification, order canceled, order approval
+For free events, check and update the following emails:
+
+| Email Type                | Action |
+|---------------------------|--------|
+| Free order                | Update |
+| Resend link               | Update |
+| Order changed             | Update |
+| Waiting list notification | Update |
+| Order canceled            | Update |
+| Order approval            | Update |
 
 > **NOTE:**
 >
-> Hello,  
-> your order for X (event) was successful.  
-> You can join in person in room FIXME in FIXME or on Zoom: FIXME  
+> Hello,
+>
+> your order for X (event) was successful.
+>
+> You can join in person in room FIXME in FIXME or on Zoom:  
+> FIXME
+>
 > Meeting ID: FIXME  
-> Passcode: FIXME  
+> Passcode: FIXME
 >
 > Best wishes,  
 > Malika
@@ -147,131 +220,185 @@ Simple with logo
 
 > **NOTE:**
 >
-> Hello,  
-> we approved your order for X (event) and will be happy to welcome you at our event.  
-> You can join in person in room FIXME in FIXME Munich or on Zoom: https://lmu-munich.zoom-x.de/j/FIXME  
+> Hello,
+>
+> we approved your order for X (event) and will be happy to welcome you at our event.
+>
+> You can join in person in room FIXME in FIXME Munich or on Zoom:  
+> https://lmu-munich.zoom-x.de/j/FIXME
+>
 > Meeting ID: FIXME  
-> Passcode: FIXME  
+> Passcode: FIXME
 >
 > Best wishes,  
 > Malika
 >
 > PS: You can change your order details and view the status of your order at {url}
 
-### Cancellation Settings
+## Cancellation Settings
 
-**Unpaid or Free Orders**  
-You can always cancel (as all our current events are free of charge the other settings don’t matter)
+### Unpaid or Free Orders
 
-### Products
+Free orders can always be cancelled. Since current OSC events are free of charge, the other cancellation settings are usually not relevant.
 
-Here you select which types of ticket exist. These usually are:
+## Products
 
-- Online ticket - member of a LMU Unit sponsoring the Open Science Center (Psychology, Business Administration, Biology)
-- Online ticket - LMU member
-- Online ticket - non-LMU member
-- In-person ticket - member of a LMU Unit sponsoring the Open Science Center (Psychology, Business Administration, Biology)
-- In-person ticket - LMU member
-- In-person ticket - non-LMU member
+This section controls which ticket types are available.
 
-**General**
+Typical ticket types include:
 
-- Active
-- Give it a concise name (as in the examples above)
-- Always an *Admission* product for all groups
+- Online ticket – member of an LMU unit sponsoring the OSC
+- Online ticket – LMU member
+- Online ticket – non-LMU member
+- In-person ticket – member of an LMU unit sponsoring the OSC
+- In-person ticket – LMU member
+- In-person ticket – non-LMU member
 
-**Price**  
-Price = zero
+### General Product Settings
 
-**Availability**
+| Setting      | Recommendation                                         |
+|--------------|--------------------------------------------------------|
+| Active       | Yes                                                    |
+| Name         | Use a concise ticket name, such as the examples above. |
+| Product type | Always use an **Admission** product for all groups.    |
 
-- Most of the dates can just be taken from:
-  - Waiting list depending on event
-  - Sale channel: online shop
-- Allow product to be cancelled or changed is ticked here (this seems similar to the one in general settings. Even if the first one is not, this still works)
-- Show waiting list for this ticket = yes
+### Price
 
-**Add ons**  
-Not needed for our events
+| Setting | Recommendation |
+|---------|----------------|
+| Price   | 0 €            |
 
-**Additional Settings**  
-Show the number of tickets left depending on event; Default setting is that it’s not shown but this is manually adjusted by Mailka when the event is online.
+### Availability
+
+| Setting                                  | Recommendation        |
+|------------------------------------------|-----------------------|
+| Waiting list                             | Depends on the event. |
+| Sale channel                             | Online shop           |
+| Allow product to be cancelled or changed | Yes                   |
+| Show waiting list for this ticket        | Yes                   |
+
+### Add-ons
+
+Add-ons are not needed for OSC events.
+
+### Additional Settings
+
+| Setting | Recommendation |
+|----|----|
+| Show number of tickets left | Depends on the event. Default is not shown, but this may be manually adjusted by Malika. |
 
 > **TIP:**
 >
-> If a lot of tickets left: don’t show, if only a few left: click show (The manual approval process of Tickets also plays into this)
+> If many tickets are left, do not show the number. If only a few tickets are left, consider showing the number. The manual approval process for tickets may also affect this decision.
 
-Generally not a lot needs to be done here. For more complex events such as the Summer School, we use *FormR*.
+For more complex events, such as the Summer School, we use **formR**.
 
-**Quota**  
-How many tickets of which kind are up for sale?
+### Quotas
 
-- Add kind of tickets (in person/ online)
-- Add the number of tickets
-- When to hide tickets and when not to add Info (e.g. for non LMU members)
+Quotas define how many tickets of each type are available.
 
-At first, it’s only a ‘to be approved ticket’ for non LMU, with its own quota (unlimited) then Malika starts to accept some (e.g. TUM, or Munich based) and changes the LMU quota manually. Then two-three days before the event, she merges the quotas of both LMU and non LMU tickets.
+| Task | Notes |
+|----|----|
+| Add ticket types | Add ticket types such as in-person and online. |
+| Add ticket numbers | Set how many tickets are available. |
+| Hide tickets or add information | Use this when some ticket types should not be visible or need extra information, e.g. non-LMU tickets. |
 
-**Categories**  
-Only use it if it is a large event with a complex ticket structure. Franka is the only person to have used this yet.
+For some events, non-LMU tickets are initially set as “to be approved” with their own unlimited quota. Malika may then approve selected registrations, such as TUM or Munich-based participants, and manually adjust the LMU quota. Two to three days before the event, the LMU and non-LMU quotas may be merged.
 
-**Questions**  
-Copy general ones from the last event.
+### Categories
 
-These are:
+Only use categories for large events with complex ticket structures. Franka is currently the only person who has used this.
 
-- Attendee name (system \<- as ask for attendee name is ticked in general settings)
-- What organization are you from? (list)
-- What faculty are you from? (list)
-- Please specify: (text)
+### Questions
 
-*Everyone should receive these questions*.
+Copy the general questions from the previous event.
+
+| Question                        | Type            | Applies to |
+|---------------------------------|-----------------|------------|
+| Attendee name                   | System question | Everyone   |
+| What organization are you from? | List            | Everyone   |
+| What faculty are you from?      | List            | Everyone   |
+| Please specify                  | Text            | Everyone   |
 
 > **IMPORTANT:**
 >
 > If requested by the presenter, add those specific questions here too.
 
-Which questions are mandatory depends on the event. Generally only the first few questions are required.
+Which questions are mandatory depends on the event. Usually, only the first few questions are required.
 
-**Adding conditional subquestions**  
-Add new question \> then go to “Advanced” settings \> click on “Question dependency” \> choose from the previous question the answer
+### Adding Conditional Subquestions
 
-### Orders
+To add conditional subquestions:
 
-**All Orders**  
-If tickets need to be approved they are here
+1.  Add a new question.
+2.  Go to **Advanced** settings.
+3.  Click **Question dependency**.
+4.  Choose the answer from a previous question that should trigger the subquestion.
 
-**Export**  
-Order data: download the sheet to do something With it (Malika uses this to send mails from her personal email)
+## Orders
 
-*DELETE DATA IF EVEN ALLOWED TO DOWNLOAD IT*
+### All Orders
 
-**Check in**  
+Tickets that need to be approved appear here.
+
+### Export
+
+Order data can be downloaded as a sheet if needed, for example to send emails from a personal email account.
+
+> **IMPORTANT:**
+>
+> Delete downloaded data if it is no longer needed or if you are not allowed to keep it.
+
+### Check-in
+
 Not needed.
 
-**Send out emails**  
-If personalised emails are supposed to be sent, Malika usually does that manually.
+### Send Out Emails
 
-### Going Online with the Event
+If personalised emails need to be sent, Malika usually sends them manually.
 
-Please also test the design and send some of the Mails to yourself by following this: *Dashboard-\> “your ticket shop is \[status\]” - “click here to change” \> enable test mode*
+## Going Online with the Event
 
-**For Test Mode**:
+Before publishing, always test the design and send test emails to yourself.
 
-- Go to “Go to Shop” (right at the beginning of the page)
-- Try out all possible tickets
-- Then go to back to the Dashboard (View backend) \> “Test mode” \> click “Disable test mode”
+### Enable Test Mode
 
-In dashboard, you see ‘your ticket shop is’ then email test mode, then fake all the possible kind of orders check the emails you receive (text in email, calendar invite).  
-When all is good, disable test mode and delete all fake tickets (a tick box in the page to disable test mode) and check with Malika that you didn’t forget anything important. She will test again, give feedback or go online.
+Go to:
 
-To test mails go to Arrow top left (account and organisation -\> settings) user settings: *turn on/off notifications* (New order placed -\> receive emails during testing)
+**Dashboard → “Your ticket shop is \[status\]” → “Click here to change” → Enable test mode**
 
-You can find new projects are in the Dashboard/shop status and you can test them or set them on and offline once everything else is done.
+### Test Mode Checklist
 
-**Other resources**  
-[Click here for information on how the mails work](https://docs.pretix.eu/en/latest/user/events/email.html#e-mail-content)
+Go to **Go to Shop**.
 
-## FormR
+Try out all possible ticket types.
+
+Return to the Dashboard.
+
+Go to **Test mode** and click **Disable test mode**.
+
+Review all test emails and calendar invites.
+
+Delete all fake tickets.
+
+Check with Malika that nothing important was missed.
+
+When testing, check the emails you receive, including the email text and calendar invite. Malika will usually test again, give feedback, or approve the event to go online.
+
+### Testing Email Notifications
+
+To test emails:
+
+**Arrow top left → Account and Organization → Settings → User Settings → Turn notifications on/off**
+
+Enable **New order placed** to receive emails during testing.
+
+### Setting the Event Online or Offline
+
+New projects can be found in the dashboard/shop status. From there, you can test them or set them online/offline once everything else is complete.
+
+## Other Resources
+
+[Click here for information on how Pretix emails work](https://docs.pretix.eu/en/latest/user/events/email.html#e-mail-content)
 
 Back to top

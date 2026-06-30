@@ -1,104 +1,125 @@
-# Creating a Program and Liaising with Guest Instructor
+# Creating a Program
 
-## Creating a Program
+This page outlines the main steps involved in creating a new OSC program, from the initial idea to the final logistical preparations.
 
-Here’s a useful checklist of things to do to when creating a program:
+# Useful Resources
 
-Create a tentative program, do some research, define the target audience
+Before creating a new program, consult the following resources:
 
-Decide on format (e.g hybrid participants and/or hybrid presenters; one or several concurrent sessions)
+- [List of OSC trainings offered to organizations](https://docs.google.com/document/d/14nbHY5JwGYXs0r8tzOpGzaOLzOpkdo_D/edit?usp=drive_link&ouid=112987352614073849735&rtpof=true&sd=true)
+- [Checklist for organizing a Carpentry workshop](https://docs.google.com/document/d/1vh34ziAVGYErtco_8tNhfyOJo29x_BBk7g9UH08kzZU/edit?usp=drive_link)
+- [Spreadsheet of possible events](https://docs.google.com/spreadsheets/d/1GmN8q05mflk-Q-hMwnYgXEH9bRIcc0lKSYFOSiLCi1g/edit?gid=0#gid=0)
+- [Edges of Open Science series of possible events](https://docs.google.com/spreadsheets/d/1sKrHzi9YQQSWC4TSK12ENoj689Yhg6P9rRnGJjxRYy8/edit?gid=0#gid=0)
 
-Invite potential presenters 3 months in advance, give them a 2 weeks deadline to reply, offer range of date for possible event and ask them to provide several possible options if in person, send follow up email
+# Program Development
 
-Create a webpage for advertisement (abstract, profile, requirement, etc) for the OSC website - see section [create news item](updating-website/Create%20a%20News%20Item.qmd).
+## Define the Program
 
-Draft a flyer and newsletter items
+Create a tentative program.
 
-Meet with workshop co-instructors to coordinate content
+Conduct background research.
 
-Collect content for final program
+Define the target audience.
 
-- Title
-- Abstract
-- Instructor short bio
-- Target audience (e.g. field, career stage, dept, interdisciplinary, country)
-- Prerequisite (e.g. prior knowledge necessary, software installed)
-- Format (e.g. hybrid, in person, online)
-- Language (english or german)
-- Custom question(s) to ask registrants (e.g. prior knowledge)
-- Max number of participants
+Decide on the event format:
 
-Book room as soon as you have possible dates - only Malika has access to the LSF booking system of the LMU. It is hard to find room available within the semester so this step needs to be done as much in advance as possible and with several possible date to maximize chances of finding a room for one of the dates.
+- Hybrid participants and/or hybrid presenters
+- In-person only
+- Online only
+- One or several concurrent sessions
 
-Send a calendar invitation to all instructors and facilitators with a Zoom link if hybrid or online and/or the in person location. The Zoom link should be ‘no sign in required,’ with an alternative host (e.g., another member of the team)- to add them, use their @lmu.de emails.
+## Invite Presenters
 
-Ask presenters for an open license, consent to record, etc.
+Identify potential presenters.
 
-Ask instructors bank details for payment / prepare all admin forms for reimbursement and collect handwritten signatures during event
+Invite presenters approximately **3 months in advance**.
 
-## Liaising with Guest Instructor
+Give presenters a **2-week deadline** to reply.
 
-Here are some email templates for communication with a potential **guest instructor**:
+Offer a range of possible dates.
 
-## First Email
+If the event is in person, ask presenters to provide several possible date options.
 
-*this is a mixture of several emails - one needs to pick and choose the appropriate sentences*
+Send follow-up emails as needed.
 
-Dear Prof Dr X
+More details and example emails can be found in this section: [Liaising with Presenters](../osc-events/liaising-with-presenters.llms.md)
 
-My name is Malika, I am the coordinator of the LMU Open Science Center (if they know Felix: whose managing director is Felix Schönbrodt).
+## Coordinate Program Content
 
-Based on your work XX, we were wondering if you would be willing and available to give a workshop on X sometimes in XXMonthsXX
+Meet with workshop co-instructors to coordinate content.
 
-I think XX what would be interesting for our community and why XX . Usually, PhD students and post docs across many disciplines constitute the core of the audience, but we can limit it to a certain type of research and specify prerequisites if more appropriate.
+Collect all information required for the final program.
 
-Would that be of interest to you? Please feel free to suggest any alternative topics. I’m available for a brief Zoom call to define a more precise topic if easier!
+The final program should include:
 
-We usually run all our events in a hybrid format, with the presenter in person and with me facilitating the online participation. However, solely in person or online events are also possible. Should you be able to come to Munich, we would of course cover your travel and accommodation expenses. We can also cover the travel expense of an additional person you would like to bring to facilitate the workshop with you.
+| Item | Description |
+|----|----|
+| Title | Title of the event |
+| Abstract | Short description of the event |
+| Instructor bio | Short biography of each instructor |
+| Target audience | Field, career stage, department, interdisciplinarity, country, etc. |
+| Prerequisites | Prior knowledge, software installation requirements, etc. |
+| Format | Hybrid, in-person, or online |
+| Language | English or German |
+| Custom registration questions | Questions for registrants (e.g., prior knowledge) |
+| Maximum number of participants | Participant cap, if applicable |
 
-// Though all is possible, our workshops are preferentially offered in a hybrid format (I can help with online facilitation) with the presenter in person. If interested, would you be able to come in person? We would pay for your transport and accommodation of course.
+# Communication and Promotion
 
-A possible time for this event could be XX-XX. from XX monthXX
+## Website and Advertising
 
-I would be grateful if you would let me know either way before XX two weeks later XX and if interested, if you could please suggest a few suitable dates!
+Create a webpage for advertising the event on the OSC website.
 
-Thanks and best wishes Malika
+- Include the abstract, instructor profile, requirements, and other relevant information.
+- See the section: [Create an Event Page](../updating-website/create-event-page.llms.md).
 
-## Second Email
+Draft a flyer.
 
-*In this email, confirm specific details*:
+Draft newsletter items.
 
-- set a date
-- ask if they need hotel, if then for what night, we can book it
-- let them know they need to book their own train and send us the e-tickets
-- ask them for their bank info and address in a specific form to be returned as a Word document
+# Logistics
 
-*Get the following information at least one month prior to the event*.
+## Room Booking
 
-- Title
-- Abstract
-- Instructor short bio
-- Target audience (e.g. field, career stage, dept, interdisciplinary, country)
-- Prerequisite (e.g. prior knowledge necessary, software installed)
-- Format (e.g. hybrid, in person, online)
-- Language (english or german)
-- Custom question(s) to ask registrants (e.g. prior knowledge)
-- Max number of participants
-- Further emails
+For a list of frequently used meeting and teaching rooms, including room capacities and locations, consult the [Meeting Rooms](../misc-topics/meeting-rooms.llms.md) page of this manual.
 
-Forward them the hotel booking, usually:
+Book a room as soon as possible once potential dates are available.
 
-Hotel Carlton MunichFürstenstraße 12  
-80333 Munich  
-Tel.: +49 (89) 380 33 76 00  
-welcome@hotel-carlton.de
+> **IMPORTANT:**
+>
+> Only Malika currently has access to the LMU LSF room booking system.
+>
+> Rooms are often difficult to secure during the semester. Therefore, room bookings should be initiated as early as possible and ideally with several potential dates to maximize the chances of finding an available room.
 
-We need an invoice from the hotel with the LMU address and VAT number as found in the credential file…
+## Calendar Invitations and Zoom Setup
 
-LMU Open Science Center  
-Ludwig-Maximilians-Universität München  
-Department Psychologie  
-Leopoldstr. 13, 80802 München  
-VAT: DE811205325
+Send calendar invitations to all instructors and facilitators.
+
+Include:
+
+- The Zoom link for online or hybrid events.
+- The in-person location, if applicable.
+
+> **NOTE:**
+>
+> For online and hybrid events, Zoom links should be configured so that **sign-in is not required**.
+>
+> Always assign at least one **alternative host** (e.g., another OSC team member). Alternative hosts can be added using their `@lmu.de` email addresses.
+
+# Presenter Agreements and Administration
+
+## Permissions and Recording
+
+Ask presenters whether they agree to an open license for their materials.
+
+Ask presenters for consent to record the session, if applicable.
+
+## Payments and Reimbursements
+
+Request instructors’ bank details for payment.
+
+Prepare all reimbursement and administrative forms.
+
+Collect handwritten signatures during the event, if required.
 
 Back to top

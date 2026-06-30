@@ -1,0 +1,204 @@
+# Responding to Requests
+
+The OSC regularly receives inquiries from researchers, research groups, and external organizations. This page provides examples and templates that can be adapted when responding to common requests.
+
+# Common Types of Requests
+
+Typical inquiries received by the OSC include:
+
+- Requests for letters of support for grant applications
+- Requests for training or workshops
+- Requests to advertise events, opportunities, or announcements through OSC communication channels (e.g. the mailing list)
+- Requests to become an OSC member
+- General inquiries about OSC activities and services
+
+# Response Templates
+
+The templates below can be adapted depending on the specific request and context.
+
+## Letters of Support
+
+A **letter of support request** is usually made by researchers preparing grant applications who would like the OSC to formally support or collaborate on their proposed project.
+
+## English
+
+Dear *XX*,
+
+Applicants can refer to the LMU Open Science Center in a general sense as a *feature* of the university. For example, we offer symposia, workshops, and summer schools that doctoral researchers and project leaders can attend. This does not constitute a formal collaboration, but it signals that within LMU’s broader research environment there is an institution dedicated to Open Science, reproducibility, and related topics. No letter of support from the OSC is required for this.
+
+A closer collaboration could take the following form:
+
+- Review of the Open Science implementation section of a proposal and recommendations for structured collaboration with the OSC.
+- “Priority seats” in OSC events (which have so far always been fully booked) in return for financial support of the OSC.
+- A predefined number of consulting hours (e.g., on data management plans).
+- Structured coaching for an entire research group to support the implementation of reproducible research workflows.
+
+As the OSC currently operates without dedicated funding for its services, activities generally need to be co-financed by being included in proposal budgets.
+
+Please note that the OSC’s current funding runs until the end of 2027. Discussions regarding future funding are currently ongoing with university leadership. Therefore, it is possible that the OSC may no longer exist in its current form by the time a proposed project begins.
+
+## German
+
+Lieber *XX*,
+
+Antragsteller können das LMU Open Science Center ganz allgemein als „Feature” der Universität nennen. Wir bieten beispielsweise Symposien, Workshops und Sommerschulen an, an denen Doktorandinnen, Doktoranden und Projektleitende teilnehmen können. Dies stellt keine formale Kooperation dar, signalisiert jedoch, dass es im Forschungsumfeld der LMU eine Institution gibt, die sich mit Open Science, Reproduzierbarkeit und verwandten Themen beschäftigt. Hierfür ist kein Unterstützungsschreiben des OSC erforderlich.
+
+Eine engere Zusammenarbeit könnte folgendermaßen aussehen:
+
+- Begutachtung des Open-Science-Abschnitts eines Förderantrags und Entwicklung eines Vorschlags für eine strukturierte Zusammenarbeit mit dem OSC.
+- „Priority Seats” in OSC-Veranstaltungen gegen finanzielle Unterstützung des OSC.
+- Ein Kontingent an Beratungsstunden zu bestimmten Themen (z. B. Präregistrierungen).
+- Strukturiertes Coaching einer gesamten Arbeitsgruppe hin zu einem reproduzierbaren Workflow.
+
+Da wir nach wie vor keine dauerhafte Finanzierung für unsere Services haben, müssen unsere Aktivitäten in Förderanträgen mitfinanziert werden.
+
+Als Caveat gilt, dass unsere derzeitige Finanzierung Ende 2027 ausläuft. Derzeit laufen Gespräche mit der Hochschulleitung über eine mögliche zukünftige Finanzierung. Es besteht daher die Möglichkeit, dass das OSC in seiner derzeitigen Form künftig nicht mehr existiert.
+
+## Training Requests from Research Organizations
+
+For an overview of the workshops and services offered by the OSC, consult the following document:
+
+- [OSC Training Portfolio for Organizations](https://docs.google.com/document/d/14nbHY5JwGYXs0r8tzOpGzaOLzOpkdo_D/edit?usp=drive_link&ouid=112987352614073849735&rtpof=true&sd=true)
+
+The following is a response using the annual Summer School as a suggestion for training that is offered by the OSC:
+
+------------------------------------------------------------------------
+
+Dear *XX*,
+
+In September, the OSC offers its yearly **Open Science Summer School**, which is particularly suitable for incoming and current LMU PhD students and postdoctoral researchers. The Summer School provides comprehensive training in essential Open Science practices.
+
+**Open Science Summer School, including instructor training track – September 7–15 – Munich and Zoom**
+
+The LMU Open Science Center invites PhD students from all scientific disciplines to strengthen the reliability, computational reproducibility, and credibility of their research. For the second year running, we also offer an instructor training track to empower participants to become certified Open Science instructors.
+
+Apply before July 6 or register at any time to attend the public lectures online.
+
+More information: *XX summer school website XX*
+
+Alternatively, the OSC may be able to deliver a customized course for the research group.
+
+Typical options include:
+
+1.  A two-hour interactive introductory lecture covering key Open Science topics together with references to self-learning materials and tutorials.
+
+2.  Commissioned workshops (e.g., preregistration, R programming, Git version control) charged by invoice (approximately €150 per hour for preparation and delivery).
+
+3.  Institutional membership of the OSC, allowing members priority access to training opportunities, consultations, and additional services.
+
+For more information on institutional memberships:
+
+https://www.osc.lmu.de/partners/becoming-institutional-members.html
+
+------------------------------------------------------------------------
+
+## Requests to Advertise through OSC Communication Channels
+
+Here’s an example of an email of responding to a request to advertise an online event through our OSC mailing list:
+
+------------------------------------------------------------------------
+
+Dear *XX*
+
+It is always a bit tricky to decide whether or not to send an email to our mailing list. Almost every email sent leads to some people unsubscribing, and I’m seeing advertisement of multiple interesting events per day.
+
+Our general rules are to advertise:
+
+our own events, events from / featuring our members, events from our direct collaborators (e.g. GRN), events in the Munich area, events on topics for which we have no expertise or current offer and for which I have received demand for. This one doesn’t seem to fall in any of these categories. I suggest you request for it to be circulated within e.g. META-REP? Sorry to not be able to provide a positive answer on this occasion…
+
+Best wishes, Malika
+
+------------------------------------------------------------------------
+
+## Requests to Become an OSC Member
+
+We often get requests to become an OSC Member and, once approved, there is a standard email response that they receive to collect the information needed to begin their onboarding process.
+
+*Note*: The following email template includes links that should be **hyperlinked** in the actual email, but is included as is for easy copy-and-pasting.
+
+Standard Response to OSC Member Application:
+
+------------------------------------------------------------------------
+
+Dear *XX*,
+
+Thanks for your interest and reaching out! You are welcome to become a member of the OSC! There are no requirements, I just need a 2-3 sentence statement for your profile page on our website! See the full onboarding email below:
+
+**What does becoming a LMU OSC Member mean?**
+
+- If you were not part of it already, we would add you to the *LMU OSC announcement mailing list* (<https://lists.lrz.de/mailman3/lists/lmu-osc.lists.lrz.de/>) or ‘community list’ so you could stay informed about our activities. We expect you to disseminate information as relevant to your networks.
+- We would add you to our dedicated **member’s mailing list**, notably to invite you to our **annual member’s meeting**.
+- You will have a **profile page** on the OSC website, and people may contact you for specific advice (e.g. if they want to know of resources in your field, or collaborate on creating an initiative, etc.)
+- You will have the opportunity to sign up yourself on a *database of experts* (<https://docs.google.com/spreadsheets/d/11GNb9bEpdDFTCKHwIqRbj460HRyR5ec6s-Tr9P-amyU/edit?gid=1958342259#gid=1958342259>) in which you can find out (a) who among us is available in principle as a speaker for lectures/workshops/panel discussions, and (b) on which special topics you could be invited. We occasionally get requests, and then we could simply refer to the overview list in the future.
+- Overall, members are expected to express that they actively **support the goals of the OSC** (e.g. in their profile page statement). Beyond this, we encourage members to become ‘ambassadors’ of open research practices in whatever capacity they find suitable, e.g. contribute in delivering training events or seminar (even informally within their group), or contribute in community building (organize or join various meet ups around open research), or get involved in meta-research projects, and/or liaise with stakeholders to inform on the design of incentives and policies.
+
+**What to do if you are interested?**
+
+- Provide us with **information for your profile page** (you do not have to share all information to be welcomed as a member, but a complete profile would be appreciated. Please explicitly mention ‘not provided’ so we know nothing is missing by mistake)
+  1.  Name
+  2.  Title (e.g. Prof. Dr., PD. Dr.; Dr.)
+  3.  Position (e.g. Head of Department, Chair, Research Group Leader, Researcher, etc.)
+  4.  Email
+  5.  Affiliations (Faculty + Department/Institution + Unit/Chair)
+  6.  Picture to be used as your Display Picture
+  7.  Website URL
+  8.  Short personal statement in which you can describe e.g. why you find Open Science important, e.g. what you may already be implementing, where you see the most important areas of work, etc. A few sentences are sufficient. You can see the statements of *current members* (<https://www.osc.lmu.de/people/members>) as a guide.
+- Let us know the type of **contribution(s)**, if any, you would be interested in providing to the OSC. Is there a topic (or topics) that would be of particular interest to you, and on which you could make some contribution (e.g. to co-instruct a workshop, participate in the creation of guidelines, provide a short demonstration or presentation. etc.) ?
+- Let us know in which area(s) you could most imagine getting involved in your field or at the OSC (we then try to connect people together based on areas of interest). The three pillars of our work are **Education, Meta-Research, and Policy/Incentive Structures**.
+
+Feel free to then also request a 20 min **onboarding meeting** with me and/or the managing director Prof Felix Schönbrodt, if you are interested and have time, so we can discuss your interests/remits, and see how we can best support you in your ‘ambassador role’.
+
+Please let us know what your questions are, and if you are still interested or were expecting something else!
+
+Best wishes, Malika
+
+------------------------------------------------------------------------
+
+## Becoming an OSC Fellow
+
+Becoming an OSC fellow follows a different process than applications to becoming an OSC member.
+
+Standard Response to OSC Fellow Application:
+
+------------------------------------------------------------------------
+
+Dear *XX*
+
+Thanks for your interest in a *XX* workshop! That would be great.
+
+If useful, I have power point slides for such workshop (e.g. <https://osf.io/x639j/files/osfstorage> - files named credible science and preregistration) with a PhD student audience in mind.
+
+You’re free to prepare your own material of course, or adapt our material which is openly licensed. If you plan on something for November, you could perhaps test adapting and delivering our new slides made for students, that’d be quite useful for us, I think!
+
+Once you make a contribution (e.g. start planning such workshop concretely), we will also create a profile page for you. We will mostly need a picture (if you want) and a 2-3 sentences statement. See the official onboarding information below:
+
+**What does becoming a LMU OSC Fellow mean?**
+
+1.  If you are not, I will add you to the **LMU OSC announcement mailing list** (<https://lists.lrz.de/mailman3/lists/lmu-osc.lists.lrz.de/>) so you can stay informed about our activities. We expect you to disseminate information as relevant to your networks.
+2.  You will have a **profile page** on the OSC website, and people may contact you for specific advice (e.g. if they wanted to replicate your initiative or help with yours)
+3.  I will add you to a **OSC Fellow mailing list** where we can all exchange opportunities and requests (e.g. call for applications for train-the-trainer trainings, requests for presenters/co-instructors on a specific topic, calls for contribution on opinion pieces or reports to stakeholders ; if you are unsure about what to post, you can always contact me at malika.ihle@lmu.de)
+4.  You will have the **opportunity to connect** with other Fellows during networking events organized by the OSC (e.g. dinners, informal and irregular meetings to reflect on your initiatives)
+
+**What to do if you are interested?**
+
+- Provide us with **information for your profile page** (you do not have to share all information to be welcomed as a member, but a complete profile would be appreciated. Please explicitly mention ‘not provided’ so we know nothing is missing by mistake)
+  1.  Name
+  2.  Title (e.g. Prof. Dr., PD. Dr.; Dr.)
+  3.  Position (e.g. Head of Department, Chair, Research Group Leader, Researcher, etc.)
+  4.  Email
+  5.  Affiliations (Faculty + Department/Institution + Unit/Chair)
+  6.  Picture to be used as your Display Picture
+  7.  Website URL
+  8.  Short personal statement in which you can describe e.g. why you find Open Science important, e.g. what you may already be implementing, where you see the most important areas of work, etc. A few sentences are sufficient. You can see the statements of *current members* (<https://www.osc.lmu.de/people/members>) as a guide.
+- Let us know the type of **contribution(s)**, if any, you would be interested in providing to the OSC. Is there a topic (or topics) that would be of particular interest to you, and on which you could make some contribution (e.g. to co-instruct a workshop, participate in the creation of guidelines, provide a short demonstration or presentation. etc.) ?
+- Let us know in which area(s) you could most imagine getting involved in your field or at the OSC (we then try to connect people together based on areas of interest). The three pillars of our work are **Education, Meta-Research, and Policy/Incentive Structures**.
+
+Feel free to then also request a 20 min **onboarding meeting** with me and/or the managing director Prof Felix Schönbrodt, if you are interested and have time, so we can discuss your interests/remits, and see how we can best support you in your ‘ambassador role’.
+
+Please let us know what your questions are, and if you are still interested or were expecting something else!
+
+Best wishes, Malika
+
+------------------------------------------------------------------------
+
+Back to top

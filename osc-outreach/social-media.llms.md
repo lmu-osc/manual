@@ -1,29 +1,76 @@
 # Social Media
 
-## Administration
+This page will be relevant for you if you are be responsible for creating, scheduling, and publishing social media content on behalf of the OSC.
 
 Create personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages.
 
 If you don’t want this, you can also log in with the OSC account and we only indicate your name in the profile page of this account (for accountability).
 
-Ask Malika to give you access to the credentials for the following OSC accounts:
+> **IMPORTANT:**
+>
+> For LinkedIn, you do need to have a **personal account** to then be given access to the OSC LinkedIn organization account.
 
-- LinkedIn (lim: 3000): https://www.linkedin.com/company/91742131/admin/feed/posts/
-- Bluesky (lim: 300): https://bsky.app/profile/lmu-osc.bsky.social/post/3kbhybwivz22q
-- Mastodon (lim: 500): https://scicomm.xyz/home
-- X is deactivated
+## Social Media Accounts
 
-The OSC publishes different **categories of posts** on social media:
+Ask Malika for access credentials to the following OSC accounts:
 
-- Research work from members (e.g. articles)
-- Information about various aspects of open science
-- Upcoming events for open science community
-- Campaigns for making open science topics more visible
+| Platform | Character Limit | Link |
+|----|----|----|
+| LinkedIn | 3,000 characters | <https://www.linkedin.com/company/91742131/admin/feed/posts/> |
+| BlueSky | 300 characters | <https://bsky.app/profile/lmu-osc.bsky.social> |
+| Mastodon | 500 characters | <https://scicomm.xyz/home> |
+| X (Twitter) | Deactivated | N/A |
 
-Your main ideas and plans when to publish any campaigns will get into the [main Social Media doc](https://docs.google.com/document/u/0/d/18aIg0UEzhhkycSRIPZLNTflnXUX-H0kaBzMa-dC3V_8/edit)
+> **TIP:**
+>
+> - Keep in mind that LinkedIn automatically changes the links posted to the platform to unique links that only work within LinkedIn, they look something like this: `https://lnkd.in/ddkYVsEM`. Avoid using these LinkedIn-specific links in other platforms- always go back to the original and copy that.
+> - As an employee, avoid interacting with the LinkedIn posts from your personal LinkedIn profile in the first couple hours of posting as this can interfere with how the algorithm promotes the post to others.
+> - The best times to post are Monday-Friday at either 12:00 or 18:00.
 
-When you create longer texts or campaigns, create a separate Google doc for that and work in there (?)
+> **TIP:**
+>
+> - Since the character count per post is limited, try to include all the most important information in that first post of the thread.
+> - If there’s a link (e.g. to the materials, registration link, informational site, etc.), make sure to include this in the first post as it’s the one that most likely to be re-posted and shared.
 
-Use insights from social media (especially LinkedIn) to scope for new potential members (e.g. view the follower list, see those who liked and commented)
+> **TIP:**
+>
+> - Use minimal emojis as this can cause the algorithm to flag the post as “AI Slop”
+
+## Types of Social Media Posts
+
+The OSC regularly publishes several categories of content:
+
+- Research outputs from OSC members (e.g., publications, preprints, and articles)
+- Information about various aspects of Open Science
+- Announcements and advertisements for upcoming events
+- Awareness campaigns aimed at increasing the visibility of Open Science topics
+- News and updates related to the OSC and its members
+
+## Planning Social Media Content
+
+Ideas and plans for future campaigns and major social media activities should be documented in the [main Social Media planning document](https://docs.google.com/document/u/0/d/18aIg0UEzhhkycSRIPZLNTflnXUX-H0kaBzMa-dC3V_8/edit).
+
+> **NOTE:**
+>
+> When refering to the organisation in written form (i.e. in social media posts), please use the correct name and spelling in American Standard English: **LMU Open Science Center** or the correct abbreviation: **OSC**.
+
+When preparing longer texts, campaigns, or multi-post series, create a separate Google Doc and draft the content there before publishing.
+
+For **larger campaigns or complex posts**, draft the text in a separate Google Doc first. This facilitates collaborative editing and allows feedback from other OSC members before publication.
+
+## Community Engagement and Outreach
+
+Social media platforms can also be used to identify potential new OSC members and collaborators.
+
+Useful strategies include:
+
+- Reviewing the follower lists of OSC accounts
+- Looking at users who frequently like, repost, or comment on OSC posts
+- Identifying researchers who regularly engage with Open Science content
+- Following up with researchers who may be interested in joining the OSC or participating in OSC activities
+
+> **NOTE:**
+>
+> Regularly monitor comments, replies, and direct messages across platforms to ensure timely responses and maintain community engagement.
 
 Back to top
