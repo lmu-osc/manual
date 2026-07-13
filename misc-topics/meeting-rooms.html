@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../misc-topics/zenodo.html" rel="next">
+<link href="../misc-topics/main-website-deployment.html" rel="prev">
 <link href="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -45,22 +47,21 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e7c471939560e2f6eb964f999844d0dd.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b2972977213b5e97a3715b1d04bf8d2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8258b3ccb4a73dd5a660358d8286ec8d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-b2972977213b5e97a3715b1d04bf8d2d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-12bec176d9035efdf014a2187fa156a5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c861a48f61176d2dc817edbb3bee2616.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-12bec176d9035efdf014a2187fa156a5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -268,7 +269,6 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">OSC Manual</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -306,6 +306,11 @@ ul.task-list li input[type="checkbox"] {
     </div>
     <a href="https://www.osc.lmu.de" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-house-heart"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -317,6 +322,9 @@ ul.task-list li input[type="checkbox"] {
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../misc-topics/index.html">Miscellaneous Topics</a></li><li class="breadcrumb-item"><a href="../misc-topics/meeting-rooms.html">Meeting Rooms</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
     </div>
   </nav>
 </header>
@@ -330,6 +338,11 @@ ul.task-list li input[type="checkbox"] {
       <img src="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-logo-dark.svg" alt="LMU Open Science Center logo" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
       </a>
       </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -755,8 +768,8 @@ Table&nbsp;1
 </figcaption>
 <div aria-describedby="tbl-rooms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-488d411b5ef5d835ff7a" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-488d411b5ef5d835ff7a">{"x":{"filter":"none","vertical":false,"caption":"<caption>Common meeting rooms used by the OSC.<\/caption>","data":[["Room 3322","Philologikum Veranstaltungsraum","Philologikum Multifunktionsraum"],["Leopoldstr. 13, Haus 3, 3rd floor","Ground floor, Philologikum library","Ground floor, Philologikum library"],["15 (round table)","24 (classroom)","~15 (round table)"],["Team meetings, small-group workshops","Summer school, Carpentry workshop","Workshops"],["Click &amp; Share, TV screen, ceiling cameras, room audio, podium","Click &amp; Share, front room camera, room audio","Room audio, power outlets per participant"],["Contact Lilia or Malika","via UB (Martin Spenger, Laura Meier)","via UB (Martin Spenger, Laura Meier)"],["Shared meeting room with other chairs; elevator accessible; staff kitchen on same floor","Own kitchen, whiteboard, high tables, podium","Great breakout room for summer schools"]],"container":"<table class=\"display compact\">\n  <thead>\n    <tr>\n      <th>Room Name<\/th>\n      <th>Location<\/th>\n      <th>Capacity<\/th>\n      <th>Best For<\/th>\n      <th>Equipment<\/th>\n      <th>Booking Info<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":50,"scrollX":true,"autoWidth":true,"columnDefs":[{"width":"200px","targets":[3,4,5,6]},{"name":"Room Name","targets":0},{"name":"Location","targets":1},{"name":"Capacity","targets":2},{"name":"Best For","targets":3},{"name":"Equipment","targets":4},{"name":"Booking Info","targets":5},{"name":"Notes","targets":6}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-07993d4238e9129f1e9b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-07993d4238e9129f1e9b">{"x":{"filter":"none","vertical":false,"caption":"<caption>Common meeting rooms used by the OSC.<\/caption>","data":[["Room 3322","Philologikum Veranstaltungsraum","Philologikum Multifunktionsraum"],["Leopoldstr. 13, Haus 3, 3rd floor","Ground floor, Philologikum library","Ground floor, Philologikum library"],["15 (round table)","24 (classroom)","~15 (round table)"],["Team meetings, small-group workshops","Summer school, Carpentry workshop","Workshops"],["Click &amp; Share, TV screen, ceiling cameras, room audio, podium","Click &amp; Share, front room camera, room audio","Room audio, power outlets per participant"],["Contact Lilia or Malika","via UB (Martin Spenger, Laura Meier)","via UB (Martin Spenger, Laura Meier)"],["Shared meeting room with other chairs; elevator accessible; staff kitchen on same floor","Own kitchen, whiteboard, high tables, podium","Great breakout room for summer schools"]],"container":"<table class=\"display compact\">\n  <thead>\n    <tr>\n      <th>Room Name<\/th>\n      <th>Location<\/th>\n      <th>Capacity<\/th>\n      <th>Best For<\/th>\n      <th>Equipment<\/th>\n      <th>Booking Info<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":50,"scrollX":true,"autoWidth":true,"columnDefs":[{"width":"200px","targets":[3,4,5,6]},{"name":"Room Name","targets":0},{"name":"Location","targets":1},{"name":"Capacity","targets":2},{"name":"Best For","targets":3},{"name":"Equipment","targets":4},{"name":"Booking Info","targets":5},{"name":"Notes","targets":6}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
@@ -796,7 +809,7 @@ Table&nbsp;1
 
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
@@ -1210,6 +1223,18 @@ Table&nbsp;1
     }
   });
   </script>
+<nav class="page-navigation column-page-right">
+  <div class="nav-page nav-page-previous">
+      <a href="../misc-topics/main-website-deployment.html" class="pagination-link" aria-label="Main Website Deployment Details">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Main Website Deployment Details</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../misc-topics/zenodo.html" class="pagination-link" aria-label="Zenodo Community">
+        <span class="nav-page-text">Zenodo Community</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -1218,7 +1243,7 @@ Table&nbsp;1
     </div>   
     <div class="nav-footer-center">
 <p>© 2026 Pat Callahan, Malika Ihle, Elizabeth Waterfield. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.</p>
-</div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/misc-topics/meeting-rooms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/blob/main/misc-topics/meeting-rooms.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

@@ -7,3 +7,5 @@ Additionally, this site is hosted on the webhosting service GitHub Pages (<https
 #### Matomo Tracking Opt-Out
 
 This opt-out is only for the Matomo web analytics tool in use directly the LMU Open Science Center website. It does not affect any other tracking or analytics tools that may be in use on this site, including those used by GitHub Pages.
+
+Back to top

@@ -19,3 +19,5 @@ You will likely only need to access this GitLab instance if you are working on t
 You can log in using your LMU SSO credentials at the following URL:
 
 <https://gitlab.lrz.de/lmu-open-science-center/>
+
+Back to top

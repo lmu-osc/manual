@@ -127,3 +127,5 @@ The office contains important OSC equipment, including:
 Most equipment is stored in the **gray locker**.
 
 The key to the locker can usually be found in Malika’s desk drawer.
+
+Back to top

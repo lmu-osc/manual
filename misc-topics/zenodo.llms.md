@@ -79,3 +79,5 @@ If you have questions about our Zenodo community or need assistance with a submi
 - **Reach out to an OSC staff member** — they can help with access, permissions, and troubleshooting.
 - **Consult the official [Zenodo Documentation](https://help.zenodo.org/)** for detailed guidance on uploading, versioning, and managing records.
 - **See the [Finalization and Publishing](../authoring-tutorials/finalization-and-publishing.llms.md)** chapter of this manual for information on how our GitHub repositories integrate with Zenodo to automatically generate DOIs.
+
+Back to top

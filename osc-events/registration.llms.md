@@ -402,3 +402,5 @@ New projects can be found in the dashboard/shop status. From there, you can test
 ## Other Resources
 
 [Click here for information on how Pretix emails work](https://docs.pretix.eu/en/latest/user/events/email.html#e-mail-content)
+
+Back to top

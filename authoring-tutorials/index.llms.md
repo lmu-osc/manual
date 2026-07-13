@@ -68,3 +68,5 @@ If you are an experienced author who just needs a reminder of the key steps, her
 7.  **Merge and publish** — your tutorial goes live automatically.
 
 For full details on each step, follow the chapters above in order. If you get stuck or have questions, reach out to an OSC staff member or [open an issue](https://github.com/lmu-osc/manual/issues) in the OSC Manual repository.
+
+Back to top

@@ -107,3 +107,5 @@ Find templates for event certificates in the Google Drive folder here:
 - [Templates Folder](https://drive.google.com/drive/folders/1HFmT0RPz6s7Z2DB13rbgREuWatF6I6-J?usp=drive_link)
 
 Certificate templates should be adapted to the specific event, exported as PDF files, and sent to eligible participants after the event.
+
+Back to top

@@ -40,6 +40,8 @@ This manual was primarily written across 2025 and 2026, and is a living document
 
 This manual was written using the [`lmu-osc/tutorial-template`](https://github.com/lmu-osc/tutorial-template) Quarto extension ([Callahan 2026](#ref-callahan2026)).
 
+Back to top
+
 ## References
 
 Callahan, Patrick. 2026. *LMU Open Science Center Tutorial Template: A Quarto Extension*. <https://doi.org/10.5281/zenodo.21263721>.

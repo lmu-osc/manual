@@ -122,3 +122,5 @@ Tutorials built from this template are published at [lmu-osc.github.io](https://
 This is really a disaster recovery tool rather than a version control system, so it should not be used for regular access to historical versions of repositories. Instead, it serves as a safety net in case of emergencies. Backups are stored in folders for each month, with tarball archives of each repository at the time of the snapshot. If these are ever needed, they can be extracted and used to restore a repository to its state at the time of the backup. Felix would be the most likely point of contact for retrieving these backups.
 
 ------------------------------------------------------------------------
+
+Back to top

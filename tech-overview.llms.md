@@ -60,3 +60,5 @@ These are technologies used in specific projects but are **not necessary** for m
 > **NOTE:**
 >
 > Many of these technologies are covered in detail elsewhere in this manual. Use the sidebar navigation to find the relevant sections, or open an issue on [GitHub](https://github.com/lmu-osc/manual/issues) if you have questions.
+
+Back to top

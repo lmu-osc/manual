@@ -142,3 +142,5 @@ SVG images are recommended because they:
 > 5.  When prompted, select **Just This One**.
 >
 > This will export only the current slide as an SVG image.
+
+Back to top

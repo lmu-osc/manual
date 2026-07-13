@@ -243,3 +243,5 @@ If you get stuck or need assistance:
 - **Check the official [Quarto documentation](https://quarto.org/docs/)** for questions about Quarto itself (theming, navigation, cross-references, etc.).
 
 The template is designed to be as simple as possible, but if something is unclear, do not hesitate to reach out.
+
+Back to top

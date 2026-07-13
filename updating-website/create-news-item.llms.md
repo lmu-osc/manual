@@ -108,3 +108,5 @@ When drafting a news item:
 > **TIP:**
 >
 > News items often serve as long-term documentation of OSC activities. When appropriate, include links to event materials, publications, recordings, or external resources so that visitors can continue to benefit from the content after the original event or announcement.
+
+Back to top
