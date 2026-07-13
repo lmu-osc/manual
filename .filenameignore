@@ -17,3 +17,6 @@ CITATION.cff
 CITATION-template.cff
 _quarto.yml
 404.qmd
+
+# opt to ignore the image names and hope people follow convention
+assets/images
