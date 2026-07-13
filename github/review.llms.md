@@ -186,5 +186,3 @@ Do I know not to commit directly to `main` on collaborative projects?
 Do I know ways to fix a mistake if I accidentally commit to `main`?
 
 If you checked all the boxes, you’re ready to dive into the rest of this section!
-
-Back to top

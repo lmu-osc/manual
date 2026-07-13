@@ -82,15 +82,15 @@ Here are some examples of flyers made on Canva:
 
 ## Announcement flyer for the Open Science Summer School 2026
 
-![](images/osss26_flyer.png)
+![](../assets/images/osss26-flyer.png)
 
 ## Conference poster
 
-![](images/osc_poster.png)
+![](../assets/images/osc-poster.png)
 
 ## Announcement flyer for the Public Lectures 2026
 
-![](images/osss26_public_lectures.png)
+![](../assets/images/osss26-public-lectures.png)
 
 ## Microsoft PowerPoint
 
@@ -140,5 +140,3 @@ SVG images are recommended because they:
 > 5.  When prompted, select **Just This One**.
 >
 > This will export only the current slide as an SVG image.
-
-Back to top

@@ -47,5 +47,3 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 You can look at any of our existing website repositories to see how this is implemented in practice. For example, the `matomo-analytics.html` file in the root directory of the `lmu-osc.github.io` repository, together with its corresponding `_quarto.yml`, provides a working reference. The main difference between repositories is the `site_id` variable in the tracking code (e.g. `_paq.push(['setSiteId', '3']);`), because each website has a unique site ID in Matomo. The rest of the code should remain the same across all of our websites.
 
 Note that the OSC website is a partial exception: it sends data to both our OSC Matomo instance and the LMU Matomo instance. As a result, the tracking code on the OSC website contains two sets of tracking instructions instead of one. The principle is the same, however—you are simply repeating the pattern for a second Matomo instance.
-
-Back to top

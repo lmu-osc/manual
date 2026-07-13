@@ -270,5 +270,3 @@ If you get stuck at any point, do not hesitate to:
 - **Check the workflow logs** in the **Actions** tab of your repository on GitHub — error messages often point directly to the problem
 
 Remember: the goal of this process is not just to publish a tutorial, but to ensure it is **maintainable**, **citable**, and **useful** to the community. Taking the time to do it carefully benefits both you and your readers.
-
-Back to top

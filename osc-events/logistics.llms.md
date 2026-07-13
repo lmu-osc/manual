@@ -463,5 +463,3 @@ Turn off all systems.
 Clean the snack table and dispose of trash.
 
 Fill and run the dishwasher.
-
-Back to top

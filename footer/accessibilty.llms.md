@@ -72,5 +72,3 @@ Email:<service@geodaten.bayern.de>
 Students with disabilities are supported by the [Beratungsstelle für Studierende mit Behinderung und chronischer Erkrankung](https://www.lmu.de/de/workspace-fuer-studierende/support-angebote/studieren-mit-beeintraechtigung/) (Counselling Center for Students with Disabilities and Chronic Illnesses).
 
 The [Schwerbehindertenvertretung (Representative for Disabled Persons)](https://login.lmu.de/idp/profile/SAML2/Redirect/SSO?execution=e3s1) (access protected on the service portal) can support employees.
-
-Back to top

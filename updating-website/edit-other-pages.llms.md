@@ -51,5 +51,3 @@ Examples include:
 - modifying other YAML configurations required for the page to appear correctly on the website.
 
 Always preview the website locally after making changes to ensure that the page appears in the correct location and that navigation links work as expected.
-
-Back to top

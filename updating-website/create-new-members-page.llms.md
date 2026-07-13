@@ -102,5 +102,3 @@ Alternatively, you can access the README directly here:
 - [New Member README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/people)
 
 If you have questions or if information is missing, contact Malika.
-
-Back to top

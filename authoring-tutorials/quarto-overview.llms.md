@@ -179,5 +179,3 @@ Feel free to explore these resources, ask your favorite LLM, or reach out to oth
 > **TIP:**
 >
 > The features listed above are some of the most commonly used in our tutorials and are a good starting point for new authors. Take the time to familiarize yourself with them and consider how they can enhance your tutorials before you start creating content.
-
-Back to top

@@ -72,7 +72,7 @@ To schedule a meeting using the Zoom desktop application:
 2.  Select the **Home** tab.
 3.  Click **Schedule**.
 
-![](../images/01_Zoom_Schedule.png)
+![](../assets/images/01-zoom-schedule.png)
 
 This opens the **New Event** window.
 
@@ -127,5 +127,3 @@ The office contains important OSC equipment, including:
 Most equipment is stored in the **gray locker**.
 
 The key to the locker can usually be found in Malika’s desk drawer.
-
-Back to top

@@ -76,5 +76,3 @@ docker-compose up -d
 ```
 
 The `docker-compose pull` command fetches the latest versions of both the Matomo application image and the MariaDB image. The `docker-compose up -d` command then recreates and restarts the containers with these updated images. As with any infrastructure change, it is advisable to review the release notes for the new Matomo version beforehand and to verify that everything is working correctly after the update.
-
-Back to top

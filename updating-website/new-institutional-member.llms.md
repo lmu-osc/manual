@@ -58,5 +58,3 @@ Add the new institution to the existing YAML list using the following format:
 > When editing institutional members, ensure that you remain within the YAML block enclosed by the green `---` lines.
 >
 > Do **not** add content below the closing `---`, as this may break the page.
-
-Back to top

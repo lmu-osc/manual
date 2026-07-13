@@ -336,5 +336,3 @@ If you run into any of the following, here’s who to contact:
 | I need a new team created | An organization owner |
 | I’m having trouble with 2FA | Check the [GitHub docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa) or ask a staff member |
 | I’m not sure where a project lives | Check the organization’s Repositories tab, or ask in the relevant Slack/Matrix channel |
-
-Back to top

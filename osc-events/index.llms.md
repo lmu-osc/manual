@@ -17,5 +17,3 @@ This section provides information and instructions on the preparation, execution
 | [Logistics within the Event](../osc-events/logistics.llms.md) | This section outlines the logistical procedures for different OSC event formats, including hybrid events and the Open Science Summer School. It covers equipment, room and Zoom setup, presenter support, and session facilitation. |
 | [Wrap up and Feedback](../osc-events/wrapup-feedback.llms.md) | This section outlines the post-event tasks required after an OSC event, including collecting feedback, sharing event materials, and communicating with participants and instructors. It also provides reusable email templates for common follow-up communications. |
 | [Event Evaluation](../osc-events/event-evaluation.llms.md) | Guidance on post-event evaluation, including feedback collection and updating event reach and impact statistics. |
-
-Back to top

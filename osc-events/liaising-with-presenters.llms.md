@@ -81,5 +81,3 @@ Here’s a list of some additional things you may want to communicate to the ins
 - Ensure instructors have access to required resources (e.g. Zoom links, online workspaces, participant lists).
 - Communicate any last-minute changes, cancellations, or waiting list admissions to instructors.
 - Support instructors with logistical or technical issues during the event.
-
-Back to top

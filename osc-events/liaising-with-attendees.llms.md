@@ -121,5 +121,3 @@ Follow up with attendees as needed.
 Send certificates.
 
 See this section for more information: [Wrap Up and and Feedback](../osc-events/wrapup-feedback.llms.md)
-
-Back to top

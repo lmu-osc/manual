@@ -15,5 +15,3 @@ Provide internet access to guests if they can’t access eduroam
 Prepare hybrid networking with specified group numbers
 
 Print badges
-
-Back to top

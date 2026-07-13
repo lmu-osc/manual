@@ -33,5 +33,3 @@ These data contribute to the OSC’s yearly evaluation and impact reporting.
 > **NOTE:**
 >
 > Malika plans to publish template R scripts on GitLab to automate parts of the post-event evaluation workflow: to analyse the formr feedback form template (one for workshop, one for symposium, one for summer school).
-
-Back to top

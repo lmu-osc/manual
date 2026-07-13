@@ -103,5 +103,3 @@ Choose the category that best describes the event.
 > - Repurposing old hardware into data rescue nodes
 > - Improving documentation
 > - Developing one-click installation scripts to simplify deployment
-
-Back to top

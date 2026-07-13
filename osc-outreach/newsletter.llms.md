@@ -23,5 +23,3 @@ Things to standardize:
 - Amounts of money (e.g. 500.000 € vs other formats)
 - Event info, order and type of info.
 - Check links are all working
-
-Back to top

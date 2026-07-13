@@ -606,5 +606,3 @@ Do I know how to troubleshoot a failed workflow run?
 Do I understand why we pin action versions and avoid hard-coding secrets?
 
 If you checked all the boxes, you’re ready to work with—and create—GitHub Actions workflows in our organization!
-
-Back to top

@@ -25,5 +25,3 @@ The requirements are met by the indicated license choice for the following reaso
 5.  CC BY-SA 4.0 requires attribution. CC0 1.0 does not require it, but since code is not the primary output of OSC tutorials, this should be fine (and requiring attribution for insignificant portions of code is bad practice).
 
 Note that significant portions of code (e.g., software that lives in its own repository) should be licensed under a proper free/open software license (e.g., Apache 2.0, AGPLv3).
-
-Back to top

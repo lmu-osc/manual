@@ -68,5 +68,3 @@ Most OSC work happens in shared repositories using branches (since team members 
 | Solo project | Can commit to `main`, but branches + PRs still recommended for major changes |
 | Reviewing a PR | Be constructive, focus on the code not the author |
 | Repository no longer active | Archive it, add a note to the README |
-
-Back to top

@@ -15,5 +15,3 @@ This chapter provides an overview of GitHub, the OSC’s GitHub organization, an
 | [Our Repositories](../github/our-repositories.llms.md) | A structured overview of the repositories we maintain, categorised by type — from organization configuration and websites to tutorials, tools, and backups. |
 | [Best Working Practices](../github/working-practices.llms.md) | Guidelines for creating repositories, contributing changes, and collaborating effectively within our organization. |
 | [GitHub Actions](../github/actions.llms.md) | An introduction to GitHub Actions — what they are, how they work, and how we use them at the OSC for automation. |
-
-Back to top

@@ -44,5 +44,3 @@ When creating a new application form, start by identifying an existing applicati
 > **TIP:**
 >
 > Before creating a new application from scratch, review previous application forms and reuse existing templates whenever possible. This helps ensure consistency across OSC programs and reduces setup time.
-
-Back to top

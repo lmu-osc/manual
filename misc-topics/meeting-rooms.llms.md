@@ -34,5 +34,3 @@ If you use a room that should be added to this list, please open an issue or pul
 - Equipment
 - Booking Info
 - Notes
-
-Back to top

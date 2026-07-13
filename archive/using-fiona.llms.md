@@ -173,5 +173,3 @@ If you don’t want to copy and paste an existing page, let’s go through what 
 - Newsletter
 - Symposium
 - (not applicable): e.g. award, paper releases, job ad,…
-
-Back to top

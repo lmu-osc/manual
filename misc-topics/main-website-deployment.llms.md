@@ -171,5 +171,3 @@ If you made it here, then I am sorry and my recommendation would be to start fro
 5.  Configure the new webhook receiver to listen for the same events and use the same secret.
 6.  Set-up the project to listen for pushes to the `prod-pages` branch and update the local copy of the repository accordingly.
 7.  To avoid having to make any sort of Nginx changes too, you can have the new webhook receiver listen on the same port, `8080`, as was used before. This way, the Nginx configuration can remain unchanged, and you can simply replace the old webhook receiver with the new one.
-
-Back to top

@@ -35,5 +35,3 @@ Different Hiwis support different OSC activities. Use the sections below to quic
 > **TIP:**
 >
 > If you are new to the OSC, we recommend first reading the [Working Environment](staff-onboarding/working-envi.llms.md) and [Technology Overview](tech-overview.llms.md) chapters to become familiar with the tools and workflows used at the OSC.
-
-Back to top

@@ -10,5 +10,3 @@ Various topics worth documenting, but don’t fit into the other sections, are t
   - Notes on our internal processes that don’t fit into the other sections.
   - Miscellaneous tips and tricks for working with our tools and infrastructure.
 - Topics can start here, and then may grow organically into their own sections if they become large enough or if we find that we have multiple related topics that fit together.
-
-Back to top
