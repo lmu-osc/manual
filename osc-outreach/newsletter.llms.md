@@ -1,5 +1,7 @@
 # Newsletter
 
+Code
+
 For newsletter creation we use **Beefree**
 
 ## Administration

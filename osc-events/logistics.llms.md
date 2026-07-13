@@ -1,5 +1,7 @@
 # Logistics within the Event
 
+Code
+
 This section covers the logistical and technical aspects of running OSC events. It includes information on equipment, event setup, technical support responsibilities, and practical resources to help ensure that events run smoothly.
 
 You can always refer to the [Template Folder](https://drive.google.com/drive/folders/1HFmT0RPz6s7Z2DB13rbgREuWatF6I6-J?usp=drive_link) in the Google Drive for items like certificates of participation, attendance sheets, and more.

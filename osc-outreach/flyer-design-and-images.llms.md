@@ -1,5 +1,7 @@
 # Flyer Design and Images
 
+Code
+
 This page provides resources and recommendations for creating promotional materials for the OSC, including flyers, posters, social media graphics, and other visual content.
 
 ## Flyer Templates

@@ -1,5 +1,7 @@
 # Create a News Item
 
+Code
+
 News items are published on the OSC website to communicate important information to the Open Science community and to document OSC activities.
 
 You can view all OSC news items here:

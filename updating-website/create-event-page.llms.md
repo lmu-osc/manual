@@ -1,5 +1,7 @@
 # Create an Event Page
 
+Code
+
 Event pages on the OSC website serve several purposes:
 
 - They advertise upcoming events to the Open Science community.

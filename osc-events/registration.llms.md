@@ -1,5 +1,7 @@
 # Registration
 
+Code
+
 We create registration pages or other registration avenues for our events for several reasons. Registration helps us keep track of participant numbers, ensure that trainings reach the intended and most relevant audiences through screening procedures, and collect important information from participants ahead of the event (e.g. attendance mode, preferences, or accessibility needs).
 
 # Registering Event on Pretix

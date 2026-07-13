@@ -1,5 +1,7 @@
 # Additional Preparation
 
+Code
+
 Here is a checklist of additional items to do and consider during prepapration for the event.
 
 **If fully or partly online**: test platform with e.g. multiple channels (several per workshops), recordings, transcript, and captioning, guest account for instructors, webinar add-on for lectures

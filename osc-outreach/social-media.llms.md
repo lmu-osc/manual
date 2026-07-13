@@ -1,5 +1,7 @@
 # Social Media
 
+Code
+
 This page will be relevant for you if you are be responsible for creating, scheduling, and publishing social media content on behalf of the OSC.
 
 Create personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages.
