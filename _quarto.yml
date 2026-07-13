@@ -1,5 +1,5 @@
 project:
-  type: website
+  type: tutorial-template
 
 website:
   title: "OSC Manual"
