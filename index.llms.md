@@ -1,5 +1,7 @@
 # Lab Manual
 
+Code
+
 This website serves as the lab manual for the LMU Open Science Center.
 
 ## For Management

@@ -1,5 +1,7 @@
 # Quarto Overview
 
+Code
+
 A brief overview of Quarto and how we use it to create our website
 
 ## What is Quarto?

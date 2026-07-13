@@ -1,5 +1,7 @@
 # Best Working Practices for GitHub
 
+Code
+
 Guidelines and conventions for using GitHub effectively in our organization
 
 This page documents the conventions and best practices we follow when working with GitHub at the OSC. Following these guidelines ensures consistency across our repositories, makes collaboration smoother, and helps maintain a clean project history.

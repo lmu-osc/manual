@@ -1,5 +1,7 @@
 # Git and GitHub Review
 
+Code
+
 A refresher on the basics of Git and GitHub for version control and collaboration
 
 ## Purpose of this page

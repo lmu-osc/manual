@@ -1,5 +1,7 @@
 # Internal Communication
 
+Code
+
 # Communication and Administration
 
 This section provides information about the main communication channels, meeting organization, Zoom access, and office logistics used at the OSC.
@@ -10,7 +12,7 @@ The OSC primarily uses **email** and **LMU Chat (Matrix)** for communication.
 
 ### Email
 
-You will receive an **@lmu.de email account**. Malika will submit a ticket to the IT department to initiate the account creation process.
+You will receive an **([**lmu.de?**](#ref-lmu.de)) email account**. Malika will submit a ticket to the IT department to initiate the account creation process.
 
 You can access your mailbox via <https://xmail.mwn.de>
 

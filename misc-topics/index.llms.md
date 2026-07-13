@@ -1,5 +1,7 @@
 # Miscellaneous Topics
 
+Code
+
 Various topics worth documenting, but don’t fit into the other sections, are too small to warrant their own section, or are just generally miscellaneous.
 
 - This section is a bit of a catch-all for topics that don’t fit neatly into the other sections.

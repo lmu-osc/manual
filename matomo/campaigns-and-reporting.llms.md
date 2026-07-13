@@ -1,5 +1,7 @@
 # Campaigns and Reporting Analytics
 
+Code
+
 This chapter discusses how to use the campaign tracking features of Matomo, and how to use the data from Matomo to understand your audience and improve your website.
 
 ## What Are Campaigns?

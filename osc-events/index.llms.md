@@ -1,5 +1,7 @@
 # Organizing an OSC Event
 
+Code
+
 This section provides information and instructions on the preparation, execution, and follow-up involved in OSC events such as workshops, Summer Schools, Webinars, and more.
 
 ## Pages in this section

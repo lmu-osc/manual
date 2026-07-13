@@ -1,5 +1,7 @@
 # Updating the OSC Website
 
+Code
+
 This chapter contains information and instructions on how to update and add to different sections of the OSC website: <https://www.osc.lmu.de/>
 
 ## Pages in this section

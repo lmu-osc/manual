@@ -1,5 +1,7 @@
 # Our Content Licensing Choices
 
+Code
+
 Why we chose the licenses we did for our content and code
 
 > **TIP:**

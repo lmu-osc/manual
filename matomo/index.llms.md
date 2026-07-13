@@ -1,5 +1,7 @@
 # Matomo Analytics
 
+Code
+
 Matomo is a free and open-source web analytics platform that we self-host on our own infrastructure. Unlike many analytics services, Matomo gives us full control over our data — no third-party tracking, no data sharing — while still providing powerful insights into how our websites are used.
 
 This chapter is divided into four sections:

@@ -1,5 +1,7 @@
 # Tutorial Template Walkthrough
 
+Code
+
 A thorough overview of the `tutorial-template` repository — how to navigate it, adapt it, and avoid common pitfalls
 
 ## Overview

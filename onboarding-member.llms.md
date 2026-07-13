@@ -1,5 +1,7 @@
 # Onboarding a New OSC Member
 
+Code
+
 After a new member has been accepted to the OSC, several administrative tasks must be completed to fully onboard them.
 
 The onboarding process goes beyond creating the member’s profile page on the website and ensures that the member is integrated into OSC records, communication channels, and bibliometric tracking systems.

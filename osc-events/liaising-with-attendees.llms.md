@@ -1,5 +1,7 @@
 # Liaising with Attendees
 
+Code
+
 Throughout the lifecycle of an OSC event, attendees may need to receive different types of information, ranging from registration confirmations and logistical details before the event, to technical support and announcements during the event, and follow-up communication, materials, and feedback requests after the event.
 
 Here are useful checklists of things to do and consider:

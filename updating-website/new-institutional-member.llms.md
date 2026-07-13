@@ -1,5 +1,7 @@
 # Adding a New Institutional Member
 
+Code
+
 An institutional member of the OSC is a research unit, department, collaborative project, or other organization affiliated with the LMU that formally partners with and supports the OSC in promoting Open Science practices within its community.
 
 You can view institutional members here:

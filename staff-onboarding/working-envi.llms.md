@@ -1,5 +1,7 @@
 # Working Environment
 
+Code
+
 The OSC uses several platforms that support collaboration, communication, file sharing, and project management.
 
 If you are not already familiar with the following programs and platforms, the OSC offers many self paced tutorials: [OSC Tutorials](https://www.osc.lmu.de/training/self-learning.html).

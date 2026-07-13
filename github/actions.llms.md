@@ -1,5 +1,7 @@
 # GitHub Actions
 
+Code
+
 What they are, how they work, and how we use them at the OSC
 
 ## Purpose of this page

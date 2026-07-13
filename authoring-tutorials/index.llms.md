@@ -1,5 +1,7 @@
 # Authoring Tutorials for the OSC
 
+Code
+
 A technical guide to using Quarto and the `tutorial-template` for authoring tutorials for the OSC
 
 ## Welcome

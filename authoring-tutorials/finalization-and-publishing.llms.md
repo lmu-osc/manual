@@ -1,5 +1,7 @@
 # Finalizing and Publishing Your Tutorial
 
+Code
+
 Final steps for cleaning up, submitting for review, and publishing your tutorial via the OSC GitHub Org
 
 ## Overview

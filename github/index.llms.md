@@ -1,5 +1,7 @@
 # GitHub, the OSC Organization, and Repositories
 
+Code
+
 How we use GitHub for collaboration and hosting our code and content
 
 This chapter provides an overview of GitHub, the OSC’s GitHub organization, and how we use repositories to manage our code and content. It is essential reading for anyone contributing to our projects, as GitHub is central to how we collaborate and manage our work.

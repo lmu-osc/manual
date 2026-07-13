@@ -1,5 +1,7 @@
 # Responding to Requests
 
+Code
+
 The OSC regularly receives inquiries from researchers, research groups, and external organizations. This page provides examples and templates that can be adapted when responding to common requests.
 
 # Common Types of Requests

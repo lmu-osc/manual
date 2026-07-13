@@ -1,5 +1,7 @@
 # The LMU OSC GitHub Organization
 
+Code
+
 How we use GitHub for collaboration, hosting our code and content, and management
 
 ## Overview

@@ -1,5 +1,7 @@
 # Main Website Deployment
 
+Code
+
 Technical details of how we deploy our main website using GitHub, Quarto, and Webhooks
 
 This page describes the automated deployment pipeline for the [main OSC website](https://lmu-osc.github.io/) (repository: [lmu-osc/lmu-osc.github.io](https://github.com/lmu-osc/lmu-osc.github.io)). When changes are pushed to the `main` branch, the site is automatically rendered and deployed to two destinations: **GitHub Pages** (for the `lmu-osc.github.io` address) and our **production server** at the LMU web address. This page covers how both paths work, from commit to live site.

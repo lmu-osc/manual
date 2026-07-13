@@ -1,5 +1,7 @@
 # Applications
 
+Code
+
 Some OSC events require an **application process** rather than simple registration. Unlike standard registration, applications involve collecting additional information from applicants and screening submissions to determine eligibility or prioritize participation.
 
 Examples of events that may require applications include:

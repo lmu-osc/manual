@@ -1,5 +1,7 @@
 # Adding a New Website to Matomo
 
+Code
+
 This chapter describes how to add a new website to Matomo and how to set up the tracking code on your website so that you can begin collecting data.
 
 ## Adding a New Website

@@ -1,5 +1,7 @@
 # Matomo Overview and Our Server Setup
 
+Code
+
 ## What is Matomo?
 
 Web analytics is an essential part of managing any modern website. By understanding how visitors find, navigate, and interact with a site, you can make informed decisions about content, layout, and outreach. Matomo (formerly known as Piwik) is a free and open-source web analytics platform designed to provide exactly this kind of insight. Originally created as a privacy-respecting alternative to proprietary tools like Google Analytics, Matomo has grown into a mature, full-featured platform that gives website operators complete ownership and control over their analytics data.

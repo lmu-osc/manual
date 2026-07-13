@@ -1,5 +1,7 @@
 # Editing Other Pages
 
+Code
+
 Detailed instructions for updating important page types such as [Members](../updating-website/create-new-members-page.llms.md), [Events](../updating-website/create-event-page.llms.md), and [News](../updating-website/create-news-item.llms.md) are already provided. This section provides general guidance for editing all other pages on the OSC website.
 
 # General Workflow

@@ -1,5 +1,7 @@
 # Liaising with Presenters
 
+Code
+
 Clear and effective communication is an important part of organizing OSC events. Throughout the planning process, you may need to communicate with a range of contributors, including guest instructors, lecturers, invited speakers, panelists, moderators, facilitators, and other subject-matter experts. This section aims to make this task easier by providing information, general guidelines, and reusable templates for crafting emails, messages, and other forms of communication when liaising with presenters and attendees of OSC events.
 
 # Liaising with Guest Instructor
