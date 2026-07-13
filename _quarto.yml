@@ -1,7 +1,6 @@
 project:
   type: website
 
-
 website:
   title: "OSC Manual"
   page-footer:
@@ -18,7 +17,6 @@ website:
   margin-header: |
     ![](/assets/LMU_OSC_logo.svg){width="175"}
 
-
   navbar:
     left:
       - href: index.qmd
@@ -31,12 +29,11 @@ website:
       - icon: github
         menu:
           - text: Source Code
-            url:  https://github.com/lmu-osc/manual
+            url: https://github.com/lmu-osc/manual
           - text: Report a Bug
-            url:  https://github.com/lmu-osc/manual/issues
+            url: https://github.com/lmu-osc/manual/issues
       - icon: house-heart
         url: https://www.osc.lmu.de
-
 
   sidebar:
     style: "docked"
@@ -69,7 +66,6 @@ website:
           - href: github/actions.qmd
             text: "GitHub Actions"
 
-
       - section: "Updating Website"
         href: updating-website/index.qmd
         contents:
@@ -81,7 +77,7 @@ website:
             text: "Create a Profile Page"
           - href: updating-website/new-institutional-member.qmd
             text: "Adding a New Institutional Member"
-          - href: edit-other-pages.qmd
+          - href: updating-website/edit-other-pages.qmd
             text: "Edit Other Pages"
 
       - contents:
@@ -132,7 +128,6 @@ website:
           - href: authoring-tutorials/finalization-and-publishing.qmd
             text: "Finalization and Publishing"
 
-
       - section: "Switching a Group to Open Research Practices"
         href: path/index.qmd
         contents:
@@ -153,13 +148,12 @@ website:
       - section: Matomo Analytics
         href: matomo/index.qmd
         contents:
-            - text: Overview and Setup
-              href: matomo/matomo-overview-and-setup.qmd
-            - text: Campaigns
-              href: matomo/campaigns-and-reporting.qmd
-            - text: Adding Sites
-              href: matomo/adding-a-new-website.qmd
-
+          - text: Overview and Setup
+            href: matomo/matomo-overview-and-setup.qmd
+          - text: Campaigns
+            href: matomo/campaigns-and-reporting.qmd
+          - text: Adding Sites
+            href: matomo/adding-a-new-website.qmd
 
       - section: Miscellaneous Topics
         href: misc-topics/index.qmd
@@ -179,20 +173,20 @@ website:
           - href: archive/using-fiona.qmd
             text: "Using Fiona"
 
+# Begin Includes
+include-in-header:
+  - file: matomo-analytics.html
+include-after-body:
+  - file: footer/footer.html
+# End Includes
 
+# Begin Format
+# use only if needed. the default format for `tutorial-template` projects is tutorial-template-html+tutorial
+# we recommend just extending the definition below if you need to make format changes
 format:
-  html:
-    theme:
-      - cosmo
-      # - lmu-osc-custom.scss
+  tutorial-template-html+tutorial:
     css:
-      - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-styles.css
-    toc: true
-    fontsize: 13pt
-    code-overflow: wrap
-    grid:
-      sidebar-width: 300px
-    include-in-header:
-      - file: matomo-analytics.html
+      - footer/footer-style.css
 
 editor: source
+bibliography: references.bib
