@@ -1,6 +1,6 @@
 ---
 title: "Create a News Item"
-format: html
+
 ---
 
 News items are published on the OSC website to communicate important information to the Open Science community and to document OSC activities.

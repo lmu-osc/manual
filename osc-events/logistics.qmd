@@ -1,6 +1,6 @@
 ---
 title: "Logistics within the Event"
-format: html
+
 ---
 
 This section covers the logistical and technical aspects of running OSC events. It includes information on equipment, event setup, technical support responsibilities, and practical resources to help ensure that events run smoothly.

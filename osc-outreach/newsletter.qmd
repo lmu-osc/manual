@@ -1,6 +1,6 @@
 ---
 title: "Newsletter"
-format: html
+
 ---
 
 For newsletter creation we use **Beefree**

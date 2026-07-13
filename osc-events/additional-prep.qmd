@@ -1,6 +1,6 @@
 ---
 title: "Additional Preparation"
-format: html
+
 ---
 
 Here is a checklist of additional items to do and consider during prepapration for the event.

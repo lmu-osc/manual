@@ -1,6 +1,6 @@
 ---
 title: "Create an Event Page"
-format: html
+
 ---
 
 Event pages on the OSC website serve several purposes:
