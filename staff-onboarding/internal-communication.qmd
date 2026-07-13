@@ -75,7 +75,7 @@ To schedule a meeting using the Zoom desktop application:
 2. Select the **Home** tab.
 3. Click **Schedule**.
 
-![](/images/01_Zoom_Schedule.png){width="50"}
+![](/assets/images/01-zoom-schedule.png){width="50"}
 
 This opens the **New Event** window.
 

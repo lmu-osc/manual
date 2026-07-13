@@ -89,15 +89,15 @@ Here are some examples of flyers made on Canva:
 
 ## Announcement flyer for the Open Science Summer School 2026
 
-![](images/osss26_flyer.png){width="60%"}
+![](/assets/images/osss26-flyer.png){width="60%"}
 
 ## Conference poster
 
-![](images/osc_poster.png){width="60%"}
+![](/assets/images/osc-poster.png){width="60%"}
 
 ## Announcement flyer for the Public Lectures 2026
 
-![](images/osss26_public_lectures.png){width="60%"}
+![](/assets/images/osss26-public-lectures.png){width="60%"}
 
 :::
 

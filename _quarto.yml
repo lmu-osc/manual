@@ -6,16 +6,8 @@ website:
   page-footer:
     center: © 2026 Pat Callahan, Malika Ihle, Elizabeth Waterfield. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
     border: false
-  search:
-    location: sidebar
   repo-url: https://github.com/lmu-osc/manual
-  repo-actions: [edit, issue]
-  back-to-top-navigation: true
-  page-navigation: true
-  favicon: assets/LMU_OSC_favicon.jpg
   llms-txt: true
-  margin-header: |
-    ![](/assets/LMU_OSC_logo.svg){width="175"}
 
   navbar:
     left:
