@@ -23,8 +23,3 @@ git clone git@github.com:lmu-osc/manual.git
 cd manual
 quarto preview
 ```
-
-
-## License
-
-The content of this manual is licensed under [CC BY 4.0](LICENSE.md). Code is licensed under the [MIT License](LICENSE-CODE.md).
