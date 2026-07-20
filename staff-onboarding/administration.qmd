@@ -16,17 +16,19 @@ This page contains practical information related to employment at the OSC, inclu
 
 ## Contract Creation
 
-...
+The secretary of Felix's Chair, Lilia Meier, is in charge of creating contracts and liaise with the Department of Psychology's administration. it can require up to 3 months to create a new contract and this requires lots of documentation. She needs to know:
+
+- the number of hours per week
+- the date at which to start the contract
+- the contract duration (and justification if contract requested is less than a year)
+- the OSC funding account
+- what university degrees the employee has
+- the ending date of their residence permit (if applicable)
+- the language they speak (english or german). 
 
 ## Contract Renewal (HiWis)
 
-For student assistants (HiWis), preparations for contract renewals should begin **at least 6–8 weeks before the current contract expires**.
-
-You should provide the following information:
-
-- The number of hours you are available to work per week during the new contract period.
-- Whether you speak German.
-- Details of your residence permit (if applicable), including the expiration date.
+For student assistants (HiWis), preparations for contract renewals should begin **at least 6–8 weeks before the current contract expires**. The same information as above need to be provided.
 
 ::: {.callout-important}
 ## The earlier, the better
@@ -44,6 +46,8 @@ If your transponder stops working or is lost, you can either request a replaceme
 | Opening hours | Tuesday–Thursday, 08:00–11:30 |
 
 If confirmation is required before a new transponder can be issued, contact **Lilia**, who can provide the necessary confirmation as a PDF.
+
+If you lose your tranponder, you will have to pay for a new one as specified in the form signed upon handing over.
 
 # Logging Working Hours
 

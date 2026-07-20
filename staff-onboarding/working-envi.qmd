@@ -14,6 +14,29 @@ For an overview of all technologies used at the OSC, see the [Technology Overvie
 
 [Click here for self-paced tutorials on R](https://www.osc.lmu.de/training/self-learning.html#category=R) 
 
+# GitHub
+
+GitHub is a platform for version control and collaborative software development. It allows users to store, manage, track, and collaboratively edit code and other project files.
+
+The OSC uses GitHub for collaborative work on:
+
+- The OSC website
+- Train-the-Trainer materials
+- OSC tutorials
+- Documentation
+- Other collaborative projects
+
+Detailed instructions on using GitHub at the OSC can be found here:
+
+- [GitHub Manual](../github/index.qmd)
+
+## Useful GitHub Links
+
+- [Self-paced tutorials on GitHub](https://www.osc.lmu.de/training/self-learning.html#category=GitHub)
+- [All OSC Repositories](https://github.com/orgs/lmu-osc/repositories)
+- [OSC GitHub Organization](https://github.com/lmu-osc)
+- [OSC Website Repository](https://github.com/lmu-osc/lmu-osc.github.io)
+
 # Quarto
 
 **Quarto** is an open-source scientific and technical publishing system used extensively at the OSC. We use Quarto to create and maintain the OSC website, develop instructional materials for the Train-the-Trainer program, and produce other reports, tutorials, and documentation.
@@ -54,7 +77,7 @@ Click the three dots or right-click on the folder â†’ hover over **Organize** â†
 |---------|-------------|
 | **Onboarding Hiwis** | Contains onboarding documents and tasks for new student assistants. |
 | **Templates** | Contains frequently used templates, including designs, email drafts, social media drafts, website drafts, and consent forms. |
-| **Credentials** | Contains sensitive information such as passwords, certificates, and access credentials. This folder is not publicly shared. |
+| **Events** | Contains all documents, forms, sheets, central organizational documents for previous events |
 
 # Google Docs
 
@@ -93,32 +116,10 @@ This ensures that documents remain accessible within the OSC and stay within the
 
 Whenever you create a new document, make sure to share the document link in the following places:
 
-- At the top of the relevant section in the ToDo document.
+- At the top of the relevant section in the ToDo overview document.
 - In the task table.
-- In the appropriate Google Drive folder.
+- As a shortcut in the appropriate Google Drive folder.
 
-# GitHub
-
-GitHub is a platform for version control and collaborative software development. It allows users to store, manage, track, and collaboratively edit code and other project files.
-
-The OSC uses GitHub for collaborative work on:
-
-- The OSC website
-- Train-the-Trainer materials
-- OSC tutorials
-- Documentation
-- Other collaborative projects
-
-Detailed instructions on using GitHub at the OSC can be found here:
-
-- [GitHub Manual](../github/index.qmd)
-
-## Useful GitHub Links
-
-- [Self-paced tutorials on GitHub](https://www.osc.lmu.de/training/self-learning.html#category=GitHub)
-- [All OSC Repositories](https://github.com/orgs/lmu-osc/repositories)
-- [OSC GitHub Organization](https://github.com/lmu-osc)
-- [OSC Website Repository](https://github.com/lmu-osc/lmu-osc.github.io)
 
 # LRZ Sync and Share
 
@@ -131,6 +132,7 @@ Examples include:
 - Job application documents
 - Letters of support for grant applications
 - Financial records
+- OSC accounts credentials (e.g. social media)
 - Other confidential documents
 
 ::: {.callout-important}
@@ -153,7 +155,7 @@ More information about the use and purpose of GitLab can be found here:
 
 # Pretix and formR
 
-**Pretix** is an open-source event management and registration platform, while **formR** is a web-based framework for creating surveys and longitudinal studies. At the OSC, these platforms are primarily used for event registration, participant management, and collecting pre- and post-event information such as applications and feedback.
+**Pretix** is an open-source event management and registration platform, while **formR** is a web-based framework for creating surveys and longitudinal studies. At the OSC, these platforms are primarily used for event registration and participant management (pretix), and collecting pre- and post-event information such as applications and feedback (formR).
 
 For more on how the OSC uses these platforms, see:
 
