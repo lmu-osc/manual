@@ -90,7 +90,7 @@ Typical options include:
 
 For more information on institutional memberships:
 
-https://www.osc.lmu.de/partners/becoming-institutional-members.html
+<https://www.osc.lmu.de/partners/becoming-institutional-members.html>
 
 ------------------------------------------------------------------------
 

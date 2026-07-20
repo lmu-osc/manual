@@ -73,6 +73,8 @@ Useful strategies include:
 
 > **NOTE:**
 >
-> Regularly monitor comments, replies, and direct messages across platforms to ensure timely responses and maintain community engagement.
+> Always keep your eye out for potential posts and reposts that might be of interest to the OSC or works involving OSC members. Send this to the Hiwi to make a draft and then the HiWi sends this draft to Malika for approval.
+>
+> The HiWi should regularly monitor comments, replies, and direct messages across platforms to ensure timely responses and maintain community engagement.
 
 Back to top

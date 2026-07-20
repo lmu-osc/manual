@@ -20,6 +20,10 @@ For an overview of all technologies used at the OSC, see the [Technology Overvie
 
 [Click here for self-paced tutorials on Quarto](https://www.osc.lmu.de/training/self-learning.html#category=Quarto)
 
+> **TIP:**
+>
+> No. There are many, many things you can learn to do with Quarto. But, specifically for non-technical HiWis, focus on the [Computations](https://quarto.org/docs/get-started/computations/rstudio.html) and [Authoring](https://quarto.org/docs/get-started/authoring/rstudio.html) parts of the tutorials.
+
 # Google Drive
 
 Google Drive is a cloud-based storage platform used for storing, organizing, sharing, and collaboratively editing files.
@@ -146,9 +150,9 @@ For more on how the OSC uses these platforms, see:
 - [Registration](../osc-events/registration.llms.md) for detailed information on **pretix**
 - [Applications](../osc-events/application.llms.md) for detailed information on **formr**
 
-# BeeFree
+# ReallyGoodEmails
 
-**BeeFree** is an online drag-and-drop email editor used by the OSC to design and prepare newsletters for distribution.
+**ReallyGoodEmails** (formally known as **BeeFree**) is an online drag-and-drop email editor used by the OSC to design and prepare newsletters for distribution.
 
 Detailed instructions for creating and managing OSC newsletters can be found here:
 

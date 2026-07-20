@@ -58,7 +58,8 @@ Thanks and best wishes Malika
 
 Forward them the hotel booking, usually:
 
-Hotel Carlton MunichFürstenstraße 12  
+Hotel Carlton Munich  
+Fürstenstraße 12,  
 80333 Munich  
 Tel.: +49 (89) 380 33 76 00  
 welcome@hotel-carlton.de
