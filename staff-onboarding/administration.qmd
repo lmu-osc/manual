@@ -36,24 +36,19 @@ For student assistants (HiWis), preparations for contract renewals should begin 
 Please provide the required information as early as possible to avoid delays in the contract renewal process.
 :::
 
-# Transponder Issues
+# Holidays, working remotely, and flexible working hours
 
-If your transponder stops working or is lost, you can either request a replacement from Malika or visit the **Schliessmedien Office**.
+Holidays need to be requested in advance so they don't fall in crucial times (e.g. summer school preparation or delivery)
 
-| Information | Details |
-|-------------|---------|
-| Address | Geschwister-Scholl-Platz 1, Room EZ 008 |
-| Opening hours | Tuesday–Thursday, 08:00–11:30 |
+Your hours can be reduced for some weeks, and increased in others to accommodate your other commitments but this needs to be communicated in advance so the team can organise task allocation accordingly to still meet deadlines.
 
-If confirmation is required before a new transponder can be issued, contact **Lilia**, who can provide the necessary confirmation as a PDF.
-
-If you lose your tranponder, you will have to pay for a new one as specified in the form signed upon handing over.
+There is no restriction to work from home or from abroad, apart from scheduled in-person events. 
 
 # Logging Working Hours
 
-You are generally free to work at the times that are most suitable for you.
+You are generally free to work at the times that are most suitable for you. However, for synchronous communication with the team (e.g. on LMU Chat) and quick feedback turn around, it is preferable to work during week days between 8:00 and 18:00.
 
-However, when assigned a task, please respond within **two days** indicating whether or not you are able to take it on. If you can take on the task, please also provide an estimated timeline for completion.
+Wen assigned a task, please respond within **two days** indicating whether or not you are able to take it on. If you can take on the task, please also provide an estimated timeline for completion.
 
 ## Tracking Hours
 
@@ -84,3 +79,16 @@ You may also use your timesheet to:
 - Mark periods when you are unavailable.
 - Estimate how long recurring tasks take for future planning purposes.
 - Record important deadlines and milestones.
+
+# Transponder Issues
+
+If your transponder stops working or is lost, you can either request a replacement from Malika or visit the **Schliessmedien Office**.
+
+| Information | Details |
+|-------------|---------|
+| Address | Geschwister-Scholl-Platz 1, Room EZ 008 |
+| Opening hours | Tuesday–Thursday, 08:00–11:30 |
+
+If confirmation is required before a new transponder can be issued, contact **Lilia**, who can provide the necessary confirmation as a PDF.
+
+If you lose your transponder, you will have to pay for a new one as specified in the form signed upon handing over.
