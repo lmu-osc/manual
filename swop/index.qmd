@@ -1,0 +1,16 @@
+---
+title: "Switching a Group to Open Research Practices"
+format: html
+---
+
+This chapter ...
+
+## Pages in this section
+
+| Page | Description |
+|---|---|
+| [Survey](swop-survey.qmd) | description. |
+| [Template Google Doc](template-google-doc.qmd) | description. |
+| [Feedback Form](swop-feedback-form.qmd) | description. |
+| [Additional Processes](swop-additional-processes.qmd) | description. |
+| [Lessons Learned and Iterative Improvements](lessons-and-improvements.qmd) | description. |

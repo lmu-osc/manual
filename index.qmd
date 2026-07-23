@@ -6,13 +6,13 @@ This website serves as the lab manual for the LMU Open Science Center.
 
 ## For Management
 
-- For templates and examples of **responses to inquiries** frequently received by the OSC, see the [Responding to Requests](osc-outreach/responding-requests.qmd).
+- For templates and examples of **responses to inquiries** frequently received by the OSC, see the [Responding to Requests](responding-to-requests.qmd).
 
 ## For Staff
 
 - For general **administration** information and protocols, go to the [Administration](staff-onboarding/administration.qmd) section. 
 
-- For templates and examples of **responses to inquiries** frequently received by the OSC, see the [Responding to Requests](osc-outreach/responding-requests.qmd).
+- For templates and examples of **responses to inquiries** frequently received by the OSC, see the [Responding to Requests](responding-to-requests.qmd).
 
 ## For Hiwis
 

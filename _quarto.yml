@@ -110,6 +110,10 @@ website:
           - href: osc-events/responding-requests.qmd
             text: "Responding to Requests"
 
+      - contents:
+        href: responding-to-requests.qmd
+        text: "Responding to Requests"
+
       - section: "Authoring an OSC Tutorial"
         href: authoring-tutorials/index.qmd
         contents:
@@ -121,17 +125,17 @@ website:
             text: "Finalization and Publishing"
 
       - section: "Switching a Group to Open Research Practices"
-        href: path/index.qmd
+        href: swop/index.qmd
         contents:
-          - href: path/file.qmd
+          - href: swop/swop-survey.qmd
             text: "Survey"
-          - href: path/file.qmd
+          - href: swop/template-google-doc.qmd
             text: "Template Google Doc"
-          - href: path/file.qmd
+          - href: swop/swop-feedback-form.qmd
             text: "Feedback Form"
-          - href: path/file.qmd
+          - href: swop/swop-additional-processes.qmd
             text: "Additional Processes"
-          - href: path/file.qmd
+          - href: swop/lessons-and-improvements.qmd
             text: "Lessons Learned and Iterative Improvements"
 
       - section: "Train-the-Trainer"

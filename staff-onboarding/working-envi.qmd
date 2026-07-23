@@ -55,7 +55,7 @@ Google Drive is a cloud-based storage platform used for storing, organizing, sha
 
 Because many OSC documents, spreadsheets, and other resources are stored in Google Drive, it is important to maintain a well-organized folder structure.
 
-[Click here to go to the OSC Google Drive](https://drive.google.com/drive/folders/1mGDWgM7ekqP9gZ1u6Q6BlM-wcrZav8gG?usp=drive_link)
+[Click here to go to the OSC Google Drive](https://drive.google.com/drive/folders/0B3guf1IgoPEmbzV2YVk3TzMxYW8?resourcekey=0-lWwzvQDw6Hoe9SlbuY1vVA&usp=drive_link)
 
 ## Initial Setup
 
