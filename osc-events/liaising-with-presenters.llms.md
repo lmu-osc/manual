@@ -58,18 +58,18 @@ Thanks and best wishes Malika
 
 Forward them the hotel booking, usually:
 
-Hotel Carlton Munich  
-Fürstenstraße 12,  
-80333 Munich  
-Tel.: +49 (89) 380 33 76 00  
+Hotel Carlton Munich\
+Fürstenstraße 12,\
+80333 Munich\
+Tel.: +49 (89) 380 33 76 00\
 welcome@hotel-carlton.de
 
 We need an invoice from the hotel with the LMU address and VAT number as found in the credential file…
 
-LMU Open Science Center  
-Ludwig-Maximilians-Universität München  
-Department Psychologie  
-Leopoldstr. 13, 80802 München  
+LMU Open Science Center\
+Ludwig-Maximilians-Universität München\
+Department Psychologie\
+Leopoldstr. 13, 80802 München\
 VAT: DE811205325
 
 # Additional Considerations

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,14 +45,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e7c471939560e2f6eb964f999844d0dd.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-07c2cd2d1550bacde3abce9b2c0779ae.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e7c471939560e2f6eb964f999844d0dd.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3c3f1368ed8db972a012dae01a8e5220.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-97e28f47ad423cfcb72627c3f906fd98.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3c3f1368ed8db972a012dae01a8e5220.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ac5a7559d3cb4277e05c47fb65623406.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-4c0d785a9d182aabd77489a1dfbcbb99.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-ac5a7559d3cb4277e05c47fb65623406.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3a7a5e891ac480bad659f92b0de409a7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-845f2109ff1d72e7ccbdc17d3f33760c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-3a7a5e891ac480bad659f92b0de409a7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -768,8 +771,8 @@ Table&nbsp;1
 </figcaption>
 <div aria-describedby="tbl-rooms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-edb36071d9e7421fe434" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-edb36071d9e7421fe434">{"x":{"filter":"none","vertical":false,"caption":"<caption>Common meeting rooms used by the OSC.<\/caption>","data":[["Room 3322","Philologikum Veranstaltungsraum","Philologikum Multifunktionsraum"],["Leopoldstr. 13, Haus 3, 3rd floor","Ground floor, Philologikum library","Ground floor, Philologikum library"],["15 (round table)","24 (classroom)","~15 (round table)"],["Team meetings, small-group workshops","Summer school, Carpentry workshop","Workshops"],["Click &amp; Share, TV screen, ceiling cameras, room audio, podium","Click &amp; Share, front room camera, room audio","Room audio, power outlets per participant"],["Contact Lilia or Malika","via UB (Martin Spenger, Laura Meier)","via UB (Martin Spenger, Laura Meier)"],["Shared meeting room with other chairs; elevator accessible; staff kitchen on same floor","Own kitchen, whiteboard, high tables, podium","Great breakout room for summer schools"]],"container":"<table class=\"display compact\">\n  <thead>\n    <tr>\n      <th>Room Name<\/th>\n      <th>Location<\/th>\n      <th>Capacity<\/th>\n      <th>Best For<\/th>\n      <th>Equipment<\/th>\n      <th>Booking Info<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":50,"scrollX":true,"autoWidth":true,"columnDefs":[{"width":"200px","targets":[3,4,5,6]},{"name":"Room Name","targets":0},{"name":"Location","targets":1},{"name":"Capacity","targets":2},{"name":"Best For","targets":3},{"name":"Equipment","targets":4},{"name":"Booking Info","targets":5},{"name":"Notes","targets":6}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-5b597a1f214de01cf2f0" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-5b597a1f214de01cf2f0">{"x":{"filter":"none","vertical":false,"caption":"<caption>Common meeting rooms used by the OSC.<\/caption>","data":[["Room 3322","Philologikum Veranstaltungsraum","Philologikum Multifunktionsraum"],["Leopoldstr. 13, Haus 3, 3rd floor","Ground floor, Philologikum library","Ground floor, Philologikum library"],["15 (round table)","24 (classroom)","~15 (round table)"],["Team meetings, small-group workshops","Summer school, Carpentry workshop","Workshops"],["Click &amp; Share, TV screen, ceiling cameras, room audio, podium","Click &amp; Share, front room camera, room audio","Room audio, power outlets per participant"],["Contact Lilia or Malika","via UB (Martin Spenger, Laura Meier)","via UB (Martin Spenger, Laura Meier)"],["Shared meeting room with other chairs; elevator accessible; staff kitchen on same floor","Own kitchen, whiteboard, high tables, podium","Great breakout room for summer schools"]],"container":"<table class=\"display compact\">\n  <thead>\n    <tr>\n      <th>Room Name<\/th>\n      <th>Location<\/th>\n      <th>Capacity<\/th>\n      <th>Best For<\/th>\n      <th>Equipment<\/th>\n      <th>Booking Info<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":50,"scrollX":true,"autoWidth":true,"columnDefs":[{"width":"200px","targets":[3,4,5,6]},{"name":"Room Name","targets":0},{"name":"Location","targets":1},{"name":"Capacity","targets":2},{"name":"Best For","targets":3},{"name":"Equipment","targets":4},{"name":"Booking Info","targets":5},{"name":"Notes","targets":6}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>

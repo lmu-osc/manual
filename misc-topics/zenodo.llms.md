@@ -61,13 +61,13 @@ During the submission process, select **“LMU Open Science Center”** as the t
 
 ## Frequently Asked Questions
 
-**Do I need to be a Zenodo member to access our community’s content?**  
+**Do I need to be a Zenodo member to access our community’s content?**\
 No. Anyone can view and download records from our community without a Zenodo account.
 
-**What types of content can I submit?**  
+**What types of content can I submit?**\
 While we primarily use the community for tutorials, you can also submit datasets, software, presentations, posters, and other research outputs.
 
-**Can I update a record after it has been published?**  
+**Can I update a record after it has been published?**\
 Yes. Zenodo allows you to upload new versions of a record. Each version gets its own DOI, but the previous version remains accessible.
 
 ------------------------------------------------------------------------

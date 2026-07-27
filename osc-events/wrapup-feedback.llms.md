@@ -44,7 +44,7 @@ Das Material zum Workshop finden Sie hier: FIXME Link zu den Materialien
 
 Eine Liste aller zukünftigen OSIP- und OSC-Veranstaltungen finden Sie hier: https://www.osc.lmu.de/events/
 
-Herzliche Grüße,  
+Herzliche Grüße,\
 Malika
 
 ## German Wrap-Up Email Example 2
@@ -63,7 +63,7 @@ Die Folien haben eine CC-BY-Lizenz und können gerne nachgenutzt werden.
 
 🤝 **Mitglied werden**: Als LMU-Angehörige können Sie sich auch aktiv an unseren Aktivitäten beteiligen, indem Sie Mitglied werden.
 
-Viele Grüße,  
+Viele Grüße,\
 Felix Schönbrodt
 
 ## English Wrap-Up Email Example 1
@@ -76,7 +76,7 @@ You can find the workshop materials here: FIXME link to the materials
 
 A list of all upcoming OSIP and OSC events can be found here: https://www.osc.lmu.de/events/
 
-Best regards,  
+Best regards,\
 Malika
 
 # Feedback Reports

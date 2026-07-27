@@ -57,14 +57,14 @@ The **Frontpage Text** must be changed and should include:
 
 > **NOTE:**
 >
-> *Instructors*:  
+> *Instructors*:\
 > *Dr. Katarina Blask*, Leibniz Institute for Psychology (ZPID)
 >
 > *Abstract*: Transparency and openness in the research process are becoming increasingly important in all scientific fields - including psychology. Accordingly, researchers should not only make research results freely available, for example in the form of scientific articles (open access), but also provide research data, analysis scripts and study materials. However, the reusability of the data made available requires comprehensive research data management (RDM) on the part of the researchers. In particular, research data should be made available in accordance with the FAIR principles, meaning that research data should be Findable, Accessible, and usable (Interoperable and Reusable). In this workshop, you will learn about FAIR data management in psychology by using the data management assistance system DataWiz, which allows you to plan, create and publish FAIR data objects. Specifically, you will 1) get an introduction to FAIR data documentation, 2) create a data management plan, and 3) learn how to organize your data.
 >
 > *Target audience*: PhD students and post-docs from psychology.
 >
-> *Prerequisites*: There is no prior knowledge required on research data management or the implementation of the FAIR principles.  
+> *Prerequisites*: There is no prior knowledge required on research data management or the implementation of the FAIR principles.\
 > To participate in the hands-on sessions, please create an account for DataWiz if you do not already have one.
 >
 > *Logistics*: This event will be held online.
@@ -181,7 +181,7 @@ The calendar invite text should make clear that participants can only join if th
 >
 > If your order was approved (automatically, or by the organizer if you are not a member of the LMU), you can join in person in X room in X address.
 >
-> Best wishes  
+> Best wishes\
 > Malika (malika.ihle@lmu.de)
 
 ### E-Mail Design
@@ -209,13 +209,13 @@ For free events, check and update the following emails:
 >
 > your order for X (event) was successful.
 >
-> You can join in person in room FIXME in FIXME or on Zoom:  
+> You can join in person in room FIXME in FIXME or on Zoom:\
 > FIXME
 >
-> Meeting ID: FIXME  
+> Meeting ID: FIXME\
 > Passcode: FIXME
 >
-> Best wishes,  
+> Best wishes,\
 > Malika
 >
 > PS: You can change your order details at {url}
@@ -226,13 +226,13 @@ For free events, check and update the following emails:
 >
 > we approved your order for X (event) and will be happy to welcome you at our event.
 >
-> You can join in person in room FIXME in FIXME Munich or on Zoom:  
+> You can join in person in room FIXME in FIXME Munich or on Zoom:\
 > https://lmu-munich.zoom-x.de/j/FIXME
 >
-> Meeting ID: FIXME  
+> Meeting ID: FIXME\
 > Passcode: FIXME
 >
-> Best wishes,  
+> Best wishes,\
 > Malika
 >
 > PS: You can change your order details and view the status of your order at {url}

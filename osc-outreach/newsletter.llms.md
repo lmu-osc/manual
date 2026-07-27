@@ -6,8 +6,8 @@ For newsletter creation we use **ReallyGoodEmails** (formally known as **Beefree
 
 ## Administration
 
-!!!REVISE Link for Login: https://beefree.io  
-Login with this mail: osc@psy.lmu.de  
+!!!REVISE Link for Login: https://beefree.io\
+Login with this mail: osc@psy.lmu.de\
 Project for the Newsletter is called “OSC organization”
 
 ## Create a Newsletter
