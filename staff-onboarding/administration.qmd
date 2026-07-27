@@ -2,14 +2,6 @@
 title: "Administration"
 ---
 
-::: {.callout-important}
-## to-do
-
-1. Lessons learned from Sarah and Sara Lil 
-2. Getting LRZ credentials 
-3. Getting Psy email
-:::
-
 This page contains practical information related to employment at the OSC, including contract administration, office access, and working hour procedures.
 
 # Contract
@@ -25,6 +17,8 @@ The secretary of Felix's Chair, Lilia Meier, is in charge of creating contracts 
 - what university degrees the employee has
 - the ending date of their residence permit (if applicable)
 - the language they speak (english or german). 
+
+Upon contract creation, for new LMU members, Lilia will also request LRZ SSO. SHould we want a psy email, we need to ask her to make that request too.
 
 ## Contract Renewal (HiWis)
 
