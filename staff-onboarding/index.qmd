@@ -4,6 +4,8 @@ title: "Staff Onboarding"
 
 This chapter is about getting you started with working at the OSC. Use the sections here to familiarize yourself with how the staff communicates, which platforms are useful for specific tasks, and general administrative topics that may come up throughout your time at the OSC. 
 
+In addition to this documentation, you will receive a tailored checklist for your onboarding based on this template [onboarding checklist](https://docs.google.com/document/d/1xDexSCKIPXQShoWx5sJFug0x4L9SNY4oJi-qIywrxRM/edit?usp=sharing). 
+
 ## Pages in this section
 
 | Page | Description |
