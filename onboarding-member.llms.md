@@ -171,7 +171,7 @@ Members should be added to the members mailing list, fellows to the fellow maili
 
 #### Custom welcome emails
 
-In the old mailing list system, we use to have custom welcome messages, some including link to onboarding surveys. The new mailing list system (since January 2026) doesn’t have this feature. For record the custom messages are provided here in case that feature is reinstated (the formR survey would also need to be reactivated).
+In the old mailing list system, we use to have custom welcome messages, some including link to onboarding surveys. The new mailing list system didn’t transfer them so there were no custom onboarding message between January and August 2026. For references, the custom messages are provided here (excluding active link to OSC onboarding survey).
 
 ## Community
 
@@ -179,7 +179,7 @@ Dear new OSC community member
 
 Please take 5 min to fill out this onboarding survey to let us know your preferred mode of participation and type of activities:
 
-https://surveys.osc.lmu.de/OSC-onboarding
+https://surveys.osc.lmu.de/OSC-onboarding-survey-link (NOTE: this is not the real link)
 
 In addition to receiving announcements on this mailing list, if you are a member of the LMU, you are also invited to join the Open Science Center workspace on LMU chat (Matrix-Element) to introduce yourself to the community, ask questions, request help, or post announcements.
 
