@@ -147,7 +147,7 @@ Example:
 
 ## Adding the Member to Mailing Lists
 
-To add the new member to all relevant OSC mailing lists, one needs to be an administrator of those lists. Currently, only Felix and Malika are administrators. 
+To add the new member to all relevant OSC mailing lists, one needs to be an administrator of those lists. Currently, only Felix and Malika are administrators. To become an adminsitrator, one first need to create an account at https://doku.lrz.de/mailman-3-2281340989.html?showLanguage=en_GB.
 
 ### Current mailing lists a member may need to be added to
 
