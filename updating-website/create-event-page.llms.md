@@ -28,7 +28,7 @@ Events are grouped by:
 
 ### Step 1: Create a GitHub Issue
 
-Using the [GitHub workflow](../github/working-practices.llms.md), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one).
+Following our classic [GitHub workflow](../github/working-practices.llms.md), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one and linked it in your to do table).
 
 Use the following naming convention:
 
@@ -85,7 +85,7 @@ Choose the category that best describes the event.
 | Category | Description |
 |----|----|
 | **Conference** | Large academic or professional gatherings focused on a specific theme where researchers, practitioners, or organizations present work, share ideas, and network. |
-| **Discussion** | Informal or semi-structured conversations centered around a specific Open Science topic, issue, or challenge. Includes panel discussions, roundtables, and community conversations. |
+| **Discussion** | Informal or semi-structured conversations centered around a specific Open Science topic, issue, or challenge. Includes roundtables, and community conversations. |
 | **Event** | General category for activities that do not fit clearly into another category, such as networking events, launches, celebrations, or public engagement activities (e.g., Love Data Week). |
 | **Hackathon** | Collaborative, project-based events where participants work intensively over a short period to solve problems, build tools, or develop ideas related to Open Science or research infrastructure. |
 | **Hacky Hour** | Informal coding or troubleshooting sessions where participants work on technical challenges, share solutions, and collaborate in a relaxed setting. Sessions are typically organized around a specific topic or tool. |
@@ -93,7 +93,7 @@ Choose the category that best describes the event.
 | **OSIM Meetup** | Events specifically organized for the Open Science Initiative Munich (OSIM) community, including networking and collaborative gatherings. |
 | **ReproducibiliTea Journal Club** | Journal club sessions following the ReproducibiliTea format, where participants discuss research papers and topics related to reproducibility, transparency, and Open Science. |
 | **Summer School** | Multi-day training events designed to provide participants with structured learning experiences, workshops, and practical skill development. This category is typically reserved for the annual Open Science Summer School. |
-| **Symposium** | Academic events that bring together multiple speakers or presentations centered around a shared research theme. |
+| **Symposium** | Academic events that bring together multiple speakers or presentations centered around a shared research theme. This typically includes short presentations / impulses from guests presenters followed by a panel discussion amongst all guests |
 | **Workshop** | Interactive, hands-on training sessions in which participants actively develop skills, complete activities, or engage with practical tools and methods. |
 
 > **NOTE:**

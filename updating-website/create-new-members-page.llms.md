@@ -1,4 +1,4 @@
-# Create a New Members Profile Page
+# Create a New Member’s Profile Page
 
 Code
 
@@ -14,13 +14,13 @@ You can view all individual member profiles here:
 
 Malika will typically send you an email containing all the information required to create the member profile.
 
-If any information is missing, notify Malika. She will either obtain the missing information from the new member or provide further instructions.
+If any information is missing, notify Malika. She will either obtain the missing information from the new member or provide further instructions. Typically, Profs provide the minimum information (i.e. their statement) and we find all the other information on their LMU page (e.g. picture, website link, ect.)
 
 # Creating a New Individual Member Profile
 
 ## Step 1: Create a GitHub Issue
 
-Using the [GitHub workflow](../github/working-practices.llms.md), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one).
+Following our classic [GitHub workflow](../github/working-practices.llms.md), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one and linked it in your to do table).
 
 Use the following naming convention:
 
@@ -62,10 +62,13 @@ malika-ihle.qmd
 
 # Adding the Member’s Profile Picture
 
-Each member profile should include a profile picture. Use either:
+Each member profile should include a profile picture unless they specified they didn’t want to share one. Use either:
 
 - the picture provided by the member during their application; or
-- a **publicly available** picture (e.g., the profile picture from the official LMU website).
+- the profile picture from the official LMU website
+- the profile picture of their main professional website
+
+Do not use profile pictures from any other sources without their consent.
 
 ## Adding the Image
 
@@ -102,7 +105,5 @@ Detailed instructions for creating member profile pages using the `_people_templ
 Alternatively, you can access the README directly here:
 
 - [New Member README](https://github.com/lmu-osc/lmu-osc.github.io/tree/main/people)
-
-If you have questions or if information is missing, contact Malika.
 
 Back to top

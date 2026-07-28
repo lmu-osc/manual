@@ -1350,7 +1350,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
 <span id="cb13-25"><a href="#cb13-25" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
 <span id="cb13-26"><a href="#cb13-26" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The <code>${{ secrets.GITHUB_TOKEN }}</code> is a special token that GitHub automatically provides to every workflow run. It allows the workflow to push to your repository without you having to create and manage a personal access token.</p>
 </section>
 <section id="spellcheckers-american-english-and-german" class="level3">
 <h3 class="anchored" data-anchor-id="spellcheckers-american-english-and-german">3. Spellcheckers (American English and German)</h3>
@@ -1467,7 +1466,7 @@ Tip
 </section>
 <section id="security-considerations" class="level2">
 <h2 class="anchored" data-anchor-id="security-considerations">Security considerations</h2>
-<p>While GitHub Actions is powerful, it’s important to use it safely:</p>
+<p>While the GitHub Actions tool is powerful, it’s important to use it safely:</p>
 <ul>
 <li><strong>Review actions from the Marketplace</strong>: Anyone can publish an action on the GitHub Marketplace. For critical workflows, prefer actions from well-known publishers (like <code>actions/</code>, <code>r-lib/</code>, <code>quarto-dev/</code>).</li>
 <li><strong>Limit permissions</strong>: You can set the default <code>GITHUB_TOKEN</code> permissions to be as restrictive as possible. In your workflow, use the <code>permissions</code> key to grant only what’s needed.</li>
@@ -2432,7 +2431,7 @@ Tip
 <span id="cb19-450"><a href="#cb19-450" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
 <span id="cb19-451"><a href="#cb19-451" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb19-452"><a href="#cb19-452" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-453"><a href="#cb19-453" aria-hidden="true" tabindex="-1"></a>The <span class="in">`${{ secrets.GITHUB_TOKEN }}`</span> is a special token that GitHub automatically provides to every workflow run. It allows the workflow to push to your repository without you having to create and manage a personal access token.</span>
+<span id="cb19-453"><a href="#cb19-453" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-454"><a href="#cb19-454" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-455"><a href="#cb19-455" aria-hidden="true" tabindex="-1"></a><span class="fu">### 3. Spellcheckers (American English and German)</span></span>
 <span id="cb19-456"><a href="#cb19-456" aria-hidden="true" tabindex="-1"></a></span>
@@ -2564,7 +2563,7 @@ Tip
 <span id="cb19-582"><a href="#cb19-582" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-583"><a href="#cb19-583" aria-hidden="true" tabindex="-1"></a><span class="fu">## Security considerations</span></span>
 <span id="cb19-584"><a href="#cb19-584" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-585"><a href="#cb19-585" aria-hidden="true" tabindex="-1"></a>While GitHub Actions is powerful, it's important to use it safely:</span>
+<span id="cb19-585"><a href="#cb19-585" aria-hidden="true" tabindex="-1"></a>While the GitHub Actions tool is powerful, it's important to use it safely:</span>
 <span id="cb19-586"><a href="#cb19-586" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-587"><a href="#cb19-587" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Review actions from the Marketplace**: Anyone can publish an action on the GitHub Marketplace. For critical workflows, prefer actions from well-known publishers (like <span class="in">`actions/`</span>, <span class="in">`r-lib/`</span>, <span class="in">`quarto-dev/`</span>).</span>
 <span id="cb19-588"><a href="#cb19-588" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Limit permissions**: You can set the default <span class="in">`GITHUB_TOKEN`</span> permissions to be as restrictive as possible. In your workflow, use the <span class="in">`permissions`</span> key to grant only what's needed.</span>

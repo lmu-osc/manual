@@ -447,8 +447,6 @@ jobs:
           target: gh-pages
 ```
 
-The `${{ secrets.GITHUB_TOKEN }}` is a special token that GitHub automatically provides to every workflow run. It allows the workflow to push to your repository without you having to create and manage a personal access token.
-
 ### 3. Spellcheckers (American English and German)
 
 Our website content is written in both **American English** and **German**. To catch typos before they go live, we run spellchecking workflows—either on pull requests or on a schedule. This is only in use in our main website at current, but will likely be expanded to other repositories in the future.
@@ -575,7 +573,7 @@ If you’re modifying a workflow file or adding a new one, do it on a branch and
 
 ## Security considerations
 
-While GitHub Actions is powerful, it’s important to use it safely:
+While the GitHub Actions tool is powerful, it’s important to use it safely:
 
 - **Review actions from the Marketplace**: Anyone can publish an action on the GitHub Marketplace. For critical workflows, prefer actions from well-known publishers (like `actions/`, `r-lib/`, `quarto-dev/`).
 - **Limit permissions**: You can set the default `GITHUB_TOKEN` permissions to be as restrictive as possible. In your workflow, use the `permissions` key to grant only what’s needed.

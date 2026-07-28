@@ -12,7 +12,6 @@ You can view all OSC news items here:
 
 News items are typically created to:
 
-- Advertise upcoming events
 - Share the latest Open Science-related developments and initiatives
 - Highlight awards, recognition, or achievements of OSC members
 - Announce new publications
@@ -22,13 +21,13 @@ News items are typically created to:
 
 > **NOTE:**
 >
-> Malika will usually contact you when a new news item needs to be created. She will also provide all relevant information that should be included in the article.
+> Malika will usually contact you when a new idea for a news item to be created. She will also provide relevant information that should be included in the article. Make a draft on a temporary google doc so she can edit it quickly before you create the quarto file.
 
 ## Creating a New News Item
 
 ### Step 1: Create a GitHub Issue
 
-Using the [GitHub workflow](../github/working-practices.llms.md), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one).
+Following our classic [GitHub workflow](../github/working-practices.llms.md), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one and linked it in your to do table).
 
 Use the following naming convention:
 
@@ -67,7 +66,7 @@ YYYY-MM-DD-short-slug.qmd
 For example:
 
 ``` text
-2026-09-01-open-science-summer-school.qmd
+2026-09-01-call-HiWi-application.qmd
 ```
 
 ## Detailed Instructions

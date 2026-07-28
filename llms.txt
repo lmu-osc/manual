@@ -38,7 +38,7 @@
 - [Adding a New Institutional Member](https://lmu-osc.github.io/manual/updating-website/new-institutional-member.llms.md)
 - [Using Fiona](https://lmu-osc.github.io/manual/updating-website/using-fiona.llms.md)
 - [Editing Other Pages](https://lmu-osc.github.io/manual/updating-website/edit-other-pages.llms.md)
-- [Create a New Members Profile Page](https://lmu-osc.github.io/manual/updating-website/create-new-members-page.llms.md)
+- [Create a New Member's Profile Page](https://lmu-osc.github.io/manual/updating-website/create-new-members-page.llms.md)
 - [Tutorial Template Walkthrough](https://lmu-osc.github.io/manual/authoring-tutorials/tutorial-template.llms.md)
 - [Finalizing and Publishing Your Tutorial](https://lmu-osc.github.io/manual/authoring-tutorials/finalization-and-publishing.llms.md)
 - [Accessibility](https://lmu-osc.github.io/manual/footer/accessibilty.llms.md)
