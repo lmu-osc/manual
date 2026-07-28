@@ -52,9 +52,7 @@ When a member leaves the OSC:
 ::: {.callout-important}
 ## Addition to the Newsletter
 
-Take note of all newly added members in the OSC assistants document under the **Newsletter** section.
-
-"New Members & Fellows" is a recurring category in the OSC Newsletter.
+It is important to indicate the date of onboarding in the Member Management sheet so we can know who are the new memebrs and fellows to introduce in the next newsletter (typically sent bi-annually). "New Members & Fellows" is a recurring category in the OSC Newsletter.
 :::
 
 ## Updating the Members Publications (Bibliometrics) Sheet
