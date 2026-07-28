@@ -18,15 +18,6 @@ author:
         name: LMU Open Science Center
         url: https://www.osc.lmu.de
   - name:
-      given: Malika
-      family: Ihle
-      degrees: PhD
-    affiliations:
-      - id: lmu-osc
-        name: LMU Open Science Center
-        url: https://www.osc.lmu.de
-    orcid: 0000-0002-3242-5981
-  - name:
       given: Elizabeth
       family: Waterfield
       degrees: BA
@@ -35,13 +26,22 @@ author:
         name: LMU Open Science Center
         url: https://www.osc.lmu.de
     orcid: 0009-0006-3725-6730
+  - name:
+      given: Malika
+      family: Ihle
+      degrees: PhD
+    affiliations:
+      - id: lmu-osc
+        name: LMU Open Science Center
+        url: https://www.osc.lmu.de
+    orcid: 0000-0002-3242-5981
 # google-scholar: true
 ---
 
 
 ## Contributors
 
-No additional contributor information at this time.
+Former research assistants Gracia Prüm, Dejana Damjanovic, and Martin Wiehr contributed to writing earlier documentation forming the basis of some of the chapter describing typical HiWi tasks.
 
 ## Licenses
 

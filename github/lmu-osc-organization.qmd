@@ -253,6 +253,7 @@ If someone only needs access to one repository and should not be an organization
 By default, new members are listed as **Private** --- their membership is not visible to the public. This means no one outside the organization can see they're a member.
 
 **We ask members to make themselves Public** so that:
+
 - Other team members can easily find them.
 - External collaborators and the community can see who is part of the OSC.
 - It's easier for people to know who to contact about specific projects.
@@ -338,4 +339,4 @@ If you run into any of the following, here's who to contact:
 | I can't access a specific repository | Ask the team that maintains it, or a staff member |
 | I need a new team created | An organization owner |
 | I'm having trouble with 2FA | Check the [GitHub docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa) or ask a staff member |
-| I'm not sure where a project lives | Check the organization's Repositories tab, or ask in the relevant Slack/Matrix channel |
+| I'm not sure where a project lives | Check the organization's Repositories tab, or ask in the relevant Matrix channel |
