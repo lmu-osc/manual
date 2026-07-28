@@ -133,7 +133,7 @@ Sometimes you need to give someone access to just **one repository** without mak
 
 GitHub Discussions is a feature for having **forum-style conversations** that aren't tied to a specific issue or pull request. It's useful for Q&A, brainstorming, announcements, or general community engagement.
 
-We haven't actively adopted Discussions yet at the OSC, but they remain available if we ever need them. For now, we rely on **Issues** for tracking tasks and bugs, and **pull requests** for proposing and reviewing changes. If you think a topic would benefit from a discussion thread (e.g., a design proposal that doesn't have a clear actionable issue yet), feel free to start one.
+So far, we have only adopted [Discussions for the main OSC website](https://lmu-osc.github.io/manual/github/lmu-osc-organization.html#discussions), which contain a backlog of ideas to implement for the website. Mostly, we rely on **Issues** for tracking tasks and bugs, and **pull requests** for proposing and reviewing changes. If you think a topic would benefit from a discussion thread (e.g., a design proposal that doesn't have a clear actionable issue yet), feel free to start one.
 
 ### Projects
 
