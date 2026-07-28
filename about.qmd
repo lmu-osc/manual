@@ -41,7 +41,7 @@ author:
 
 ## Contributors
 
-No additional contributor information at this time.
+Former research assistants Gracia Prüm, Dejana Damjanovic, and Martin Wiehr contributed to writing earlier documentation forming the basis of some of the chapter describing typical HiWi tasks.
 
 ## Licenses
 
