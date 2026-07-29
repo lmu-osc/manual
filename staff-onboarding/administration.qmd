@@ -74,7 +74,9 @@ You may also use your timesheet to:
 - Estimate how long recurring tasks take for future planning purposes.
 - Record important deadlines and milestones.
 
-# Transponder Issues
+# Transponder
+
+You can be given a transponder to access the office space on Leopoldstr 13, room 3320. For this, you need to sign a form. If you lose your transponder, you will have to pay for a new one. Line manager: add the transponder ID, date of delivery and return in our [google sheet](https://docs.google.com/spreadsheets/d/1cexk9LQYYLYFPA8I-d4RoTmvLMr56Ir7ljW-YVteZss/edit?gid=1610301947#gid=1610301947) (restricted access)
 
 If your transponder stops working or is lost, you can either request a replacement from Malika or visit the **Schliessmedien Office**.
 
@@ -85,4 +87,3 @@ If your transponder stops working or is lost, you can either request a replaceme
 
 If confirmation is required before a new transponder can be issued, contact **Lilia**, who can provide the necessary confirmation as a PDF.
 
-If you lose your transponder, you will have to pay for a new one as specified in the form signed upon handing over.
