@@ -109,20 +109,18 @@ Dear *XX*
 
 It is always a bit tricky to decide whether or not to send an email to our mailing list. Almost every email sent leads to some people unsubscribing, and I’m seeing advertisement of multiple interesting events per day.
 
-Our general rules are to advertise:
+Our general rules is to advertise:
 
-our own events,
-events from / featuring our members,
-events from our direct collaborators (e.g. GRN),
-events in the Munich area,
-events on topics for which we have no expertise or current offer and for which I have received demand for.
-This one doesn’t seem to fall in any of these categories. I suggest you request for it to be circulated within e.g. META-REP?
-Sorry to not be able to provide a positive answer on this occasion…
+- our own events,
+- events from / featuring our members,
+- events from our direct collaborators (e.g. GRN),
+- events in the Munich area,
+- events on topics for which we have no expertise or current offer and for which I have received demand for.
 
-Best wishes,
-Malika
- 
----
+The advertisement you requested to circulate doesn’t seem to fall in any of these categories. I suggest you request for it to be circulated within e.g. XXX.
+
+Sorry to not be able to provide a positive answer on this occasion.
+
 
 ## Requests to Become an OSC Member
 
@@ -171,7 +169,7 @@ Malika
 
 ## Becoming an OSC Fellow
 
-Becoming an OSC fellow follows a different process than applications to becoming an OSC member.
+Becoming an OSC fellow (for LMU researchers without a PhD) follows a different process than applications to becoming an OSC member. They need to contribute an event, co-lead a grassroot initiative, co-instruct or help on the delivery of a course or workshop. 
 
 Standard Response to OSC Fellow Application:
 
@@ -179,13 +177,7 @@ Standard Response to OSC Fellow Application:
 
 Dear *XX*
 
-Thanks for your interest in a *XX* workshop! That would be great.
-
-If useful, I have power point slides for such workshop (e.g. <https://osf.io/x639j/files/osfstorage> - files named credible science and preregistration) with a PhD student audience in mind.
- 
-You’re free to prepare your own material of course, or adapt our material which is openly licensed. If you plan on something for November, you could perhaps test adapting and delivering our new slides made for students, that’d be quite useful for us, I think!
- 
-Once you make a contribution (e.g. start planning such workshop concretely), we will also create a profile page for you. We will mostly need a picture (if you want) and a 2-3 sentences statement. See the official onboarding information below:
+Thanks for your volunteer contributions to the goals and efforts of the LMU Open Science Center. You are welcome to become a OSC fellow.
  
 **What does becoming a LMU OSC Fellow mean?**
 
