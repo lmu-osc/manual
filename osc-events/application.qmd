@@ -19,7 +19,7 @@ You can access the OSC formr instance here: <https://formr.osc.lmu.de/>. the OSC
 
 ::: {.callout-note}
 ## Adding a new formR user to our instance
-To add a new account, have them sign up here: https://formr.osc.lmu.de/admin/account/register/ <!--TODO how to generate a token -->. Then study-admin rights can be given to users: Advanced --> Manage Admins --> write "1" into column "Admin" --> press the pointing finger.
+To add a new account, have them sign up here: https://formr.osc.lmu.de/admin/account/register/ with the referral token that can be found in the credentials file in the root of the lRZ Sync and Share folder of the LMU Open Science Center. Then study-admin rights can be given to users: Advanced --> Manage Admins --> write "1" into column "Admin" --> press the pointing finger.
 :::
 
 To learn more about formr and how it works, consult the official documentation: <https://formr.org/documentation>
