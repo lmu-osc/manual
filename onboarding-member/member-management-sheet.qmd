@@ -1,0 +1,35 @@
+---
+title: "Updating Member Management Sheet"
+---
+
+Here is the Google Sheet used to collect and store the information on each OSC member:
+
+- [Member Management Sheet](https://docs.google.com/spreadsheets/d/1dKGtEoSAh0xFkoDdnFUXjjz8ZgFzNSCIsR3q2imuXek/edit?usp=sharing)
+
+To add to the spreadsheet, follow these steps:
+
+1. Select the appropriate worksheet:
+   - **OSC-Mitglieder** for LMU and associated members.
+   - **Fellows** for OSC fellows.
+
+2. Insert a new row in alphabetical order according to the member's last name.
+
+3. Enter information in columns **A–C**.
+
+4. Copy the formula in **column D** from the member directly above by dragging the cell down.
+
+5. Complete the remaining columns using the information provided in the onboarding email.
+
+### Past Members
+
+When a member leaves the OSC:
+
+1. Remove their entry from the **OSC-Mitglieder** sheet.
+
+2. Add the member to the **Past Members** sheet.
+
+::: {.callout-important}
+## Addition to the Newsletter
+
+It is important to indicate the date of onboarding in the Member Management sheet so we can know who are the new memebrs and fellows to introduce in the next newsletter (typically sent bi-annually). "New Members & Fellows" is a recurring category in the OSC Newsletter.
+:::
