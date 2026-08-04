@@ -2,7 +2,9 @@
 title: "Advertisement"
 ---
 
-## Channels
+## Channels 
+
+<!--TODO Beth/Sarah/-->
 
 - [ ] Advertise the event through relevant channels, e.g.:
   - [ ] Graduate Center --> email X
@@ -23,4 +25,8 @@ Level of granularity to create campaigns, how to automtically create link, and i
 
 ### Using Mail Merge in Microsoft Office
 
+<!-- MI TO DO -->
+
 ### Using R, LMU VPN, LRZ credentials
+
+<!-- MI TO DO -->

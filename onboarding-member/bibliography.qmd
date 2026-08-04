@@ -93,6 +93,6 @@ Example:
 
 ### What happens next?
 
-Felix renders the LRZ GitLab repository https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics around once or twice a year to create the website https://www.resources.osc.lmu.de/bibliography/ 
+Felix renders the LRZ GitLab repository [https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics](https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics) around once or twice a year to create the website [https://www.resources.osc.lmu.de/bibliography/](https://www.resources.osc.lmu.de/bibliography/) currently only linked in the main website through the About Page [https://www.osc.lmu.de/about/#meta-research-hub](https://www.osc.lmu.de/about/#meta-research-hub).
 
 <!-- FS TODO -->

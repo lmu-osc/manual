@@ -12,7 +12,7 @@ Here is a checklist of additional items to do and consider during preparation of
 - [ ] Prepare hybrid networking with specified group numbers
 - [ ] Print badges / name tags
 
-## how to print name badges
+## How to Print Name Badges
 
 We have precut paper Avery_C32010, LMU lanyards, and plastic cases in the office. 
 

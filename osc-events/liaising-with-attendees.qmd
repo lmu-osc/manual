@@ -21,9 +21,9 @@ Find detailed instructions here: [Registration](registration.qmd) and [Applicati
 - [ ] Use the registration platform or manually send reminders with relevant information (e.g. Zoom link, abstracts).
 - [ ] If **applicants** need to apply for specific sessions (e.g. hands-on workshops with limited seats), develop rubrics to score applications.
 - [ ] Send registration information and forms to applicants via email.
-- [ ] Confirm attendance for large events with application (e.g. OSS):
-- [ ] Google Form with name, email, confirmation of attendance, attendance mode, and preference for of two parallel sessions (if applicable).
-- [ ] Google Form for PI approval of participation and later adoption of open research practices(if required).
+- [ ] Confirm attendance for large events with application (e.g. OSS) through:
+  - [ ]  Google Form with name, email, confirmation of attendance, attendance mode, and preference for of two parallel sessions (if applicable).
+  - [ ] Google Form for PI approval of participation and later adoption of open research practices (if required).
 - [ ] Confirm whether applicants wish to remain on the waiting list.
 - [ ] When the event becomes **fully booked**, or four days before the event (whichever comes first), email the top three people on the waiting list to check whether they are still interested in a last-minute invitation.
 
