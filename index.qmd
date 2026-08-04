@@ -8,11 +8,17 @@ This website serves as the lab manual for the LMU Open Science Center.
 
 - For templates and examples of **responses to inquiries** frequently received by the OSC, see the [Responding to Requests](osc-outreach/responding-requests.qmd).
 
+- For **financial administrative procedures** such as paying or issuing invoices, see [Financial Procedures](financial-procedures/index.qmd).
+
 ## For Staff
 
-- For general **administration** information and protocols, go to the [Administration](staff-onboarding/administration.qmd) section. 
+- For general **administration** information and protocols regarding contracts, go to the [Staff onboarding administration](staff-onboarding/administration.qmd) section. 
 
 - For templates and examples of **responses to inquiries** frequently received by the OSC, see the [Responding to Requests](osc-outreach/responding-requests.qmd).
+
+- For guidance on using **formR** for surveys / applications or **pretix** for registrations, see the [OSC Events](osc-events/index.qmd) chapter.
+
+- For an overview of our **mailing lists**, see the chapter on [Onboarding a New Member](onboarding-member/mailing-lists.qmd)
 
 ## For Hiwis
 
