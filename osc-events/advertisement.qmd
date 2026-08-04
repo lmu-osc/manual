@@ -1,0 +1,26 @@
+---
+title: "Advertisement"
+---
+
+## Channels
+
+- [ ] Advertise the event through relevant channels, e.g.:
+  - [ ] Graduate Center --> email X
+  - [ ] Infodienst --> weblink
+  - [ ] OSC channels --> maling lists
+  - [ ] BlueSky/Mastodon/LinkedIn --> see social media page
+  - [ ] UB University of Munich – Central Library --> Martin Spenger
+  - [ ] Departmental communication officers mailing list --> where to find?
+  - [ ] Follow-up list of communication officers --> ?
+  - [ ] All the mailing lists we have access to / are subscribed to related to OS -> lists?
+  - [ ] Send notification to Karabulut Seyhan <Seyhan.Karabulut@Verwaltung.Uni-Muenchen.DE>  working for Riesche Barbara <Barbara.Riesche@Verwaltung.Uni-Muenchen.DE> if relevant for post doc across several disciplines to get on Excellerate website
+
+## Matomo campaigns
+
+Level of granularity to create campaigns, how to automtically create link, and insert automatically in relevant communication. <!--TODO Beth/Sarah/Pat-->
+
+## Mass personalized emails
+
+### Using Mail Merge in Microsoft Office
+
+### Using R, LMU VPN, LRZ credentials
