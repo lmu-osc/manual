@@ -16,8 +16,6 @@ As an OSC assistant, you should become familiar with:
 - Using the 360° web conference cameras.
 - Using Zoom in conjunction with external cameras, microphones, and handheld microphones that amplify speakers through the room loudspeakers while remaining connected to Zoom (see the [prototype instructions](https://docs.google.com/document/d/1W1c0KCm-r26OZ39ep02sMT8HCtAL_V1TeKGW-F1-b00/edit?tab=t.0)).
 - Providing technical support and acting as the online facilitator (e.g., welcoming participants, monitoring the chat, being available to answer questions, and ensuring that online participants are included).
-- Creating name badges using a Word template and an Excel participant list.
-- Assisting with formr surveys (e.g., application and feedback surveys), contacting or reserving restaurants, translating announcements, and other logistical tasks.
 
 The lists below can be used as a starting point when creating an event-specific equipment checklist.
 
@@ -31,7 +29,7 @@ The lists below can be used as a starting point when creating an event-specific 
 - [ ] Kandao from seminar room 3322 (ask Malika for the code)
 - [ ] 2 UB Owls
 - [ ] Headphones (Malika's headphones and your own personal headphones, if available)
-- [ ] Cable to charge the table microphone during use (if needed)
+- [ ] Cable to charge the table microphone during use (if venue is Philologikum library which comes with table microphones)
 
 ## Cables and Connectivity
 
@@ -42,7 +40,7 @@ The lists below can be used as a starting point when creating an event-specific 
 - [ ] Second internet cable
 - [ ] At least 8 long extension cords with four outlets each
 - [ ] At least 2 additional long extension cords (rolled up)
-- [ ] Tape for securing cables and extension microphone packages
+- [ ] Gaffer tape for securing cables
 
 ## Computers and Devices
 
@@ -52,27 +50,24 @@ The lists below can be used as a starting point when creating an event-specific 
 - [ ] Computer mouse
 - [ ] Your own personal laptop for hybrid networking events
 
-### Recommended Software
+## Recommended Software
 
 Install the following software in advance:
 
-- [Barco ClickShare Extension Pack](https://www.barco.com/na-en/product/clickshare-extension-pack)
+- [Barco ClickShare Extension Pack](https://www.barco.com/na-en/product/clickshare-extension-pack) to allow extended screen with the Click-and-Share device
 - [Owl Labs App](https://resources.owllabs.com/app-download)
-
-### Other Devices
-
-- [ ] External battery
-- [ ] Phone charger + external battery pack
 
 ## Event Materials
 
-- [ ] 2 tripods
+- [ ] 2 camera tripods
 - [ ] OSC poster
 - [ ] Badges for attendees, presenters, and assistants
-- [ ] Flyers/signage for Fak 13
-- [ ] Red and green stickers
+- [ ] Flyers/signage
+- [ ] Red and green sticker notes
 - [ ] Suitcase for transporting equipment
 - [ ] Large backpack for snacks
+- [ ] External battery if need electricity without power outlet
+- [ ] Phone charger + external battery pack
 
 :::
 
@@ -193,22 +188,15 @@ Choose the appropriate camera mode:
 
 ## Carpentry Workshops
 
-A Carpentry workshop is a hands-on training workshop organized by the OSC.
+A Carpentry workshop is a hands-on computing skills training using live coding as a mode of teaching.
 
-For a detailed step-by-step guide on planning and organizing a carpentry workshop, consult the dedicated Carpentry workshop checklist:
+For a detailed step-by-step guide on planning and organizing a carpentry workshop, consult and make a copy of the dedicated Carpentry workshop checklist to prepare your own workshop:
 
 - [Carpentry Workshop Checklist](https://docs.google.com/document/d/1vh34ziAVGYErtco_8tNhfyOJo29x_BBk7g9UH08kzZU/edit?usp=drive_link)
 
-The complete Carpentry folder, containing additional resources, templates, attendance lists, and documentation from previous Carpentry workshops, can be found here:
+The complete Carpentry folder, containing additional resources, lists of available instructor and backgrounds, and documentation from previous Carpentry workshops, can be found here:
 
 - [Carpentry Workshop Folder](https://drive.google.com/drive/folders/1eXI1oBgiGbGz58MTx1f56cwCXz2EyQvV?usp=drive_link)
-
-::: {.callout-tip}
-## Recommendation
-
-Before organizing a new Carpentry workshop, review documentation and materials from previous workshops. This can provide useful examples and help ensure consistency across events.
-
-:::
 
 ### Certificates of Completion
 
@@ -234,22 +222,13 @@ You will receive an attendance list containing the names and email addresses of 
 Only participants who completed the workshop should receive certificates.
 :::
 
-### Additional Resources
-
-The Carpentry folder may also contain:
-
-- Attendance list templates
-- Communication templates
-- Registration information
-- Feedback materials
-- Previous workshop programs and schedules
-- Examples from past Carpentry workshops
-
-Consult these materials when preparing a new Carpentry event.
 
 # Open Science Summer School
 
 The Open Science Summer School is an annual week-long program organized by the OSC. Due to its scale, it requires additional preparation.
+
+Each year, we create a folder based on the previous year's summer school (e.g. [OSSS26 folder](https://drive.google.com/drive/folders/1LuXEtEtUHbPJ93jmR5x1atSUouH7tpCm)): update all forms and tempplates for everything. We have one organizational Gdoc with several tabs (e.g. [OSSS26](https://docs.google.com/document/d/1Yw2l7OfeoPa3-tM_jPdSxfHgp54ko-ZkKdaIJ0hSc0I/edit?tab=t.0)) going through all subchapter of this Event chapter, with templates for everything (forms, emails, checklists).
+
 
 ::: {.panel-tabset}
 

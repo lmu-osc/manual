@@ -12,19 +12,19 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: "Home"
       - href: tech-overview.qmd
-        text: Tech Overview
+        text: "Tech Overview"
       - href: about.qmd
-        text: About This Manual
+        text: "About This Manual"
     tools:
       - icon: github
         menu:
-          - text: Source Code
+          - text: "Source Code"
             url: https://github.com/lmu-osc/manual
-          - text: Report a Bug
+          - text: "Report a Bug"
             url: https://github.com/lmu-osc/manual/issues
-      - icon: house-heart
+      - icon: "house-heart"
         url: https://www.osc.lmu.de
 
   sidebar:
@@ -48,7 +48,7 @@ website:
         href: github/index.qmd
         contents:
           - href: github/review.qmd
-            text: Git and GitHub Review
+            text: "Git and GitHub Review"
           - href: github/lmu-osc-organization.qmd
             text: "The LMU OSC GitHub Organization"
           - href: github/our-repositories.qmd
@@ -72,9 +72,17 @@ website:
           - href: updating-website/edit-other-pages.qmd
             text: "Edit Other Pages"
 
-      - contents:
-        href: onboarding-member.qmd
-        text: "Onboarding an OSC Member"
+      - section: "Onboarding an OSC Member"
+        href: onboarding-member/index.qmd
+        contents:
+          - href: onboarding-member/member-management-sheet.qmd
+            text: "Member Management Sheet"
+          - href: onboarding-member/bibliography.qmd
+            text: "Bibliography"
+          - href: onboarding-member/mailing-lists.qmd
+            text: "Mailing Lists"
+          - href: onboarding-member/profile-page.qmd
+            text: "Profile Page"
 
       - section: "Organizing an OSC Event"
         href: osc-events/index.qmd
@@ -83,6 +91,8 @@ website:
             text: "Creating a Program"
           - href: osc-events/liaising-with-presenters.qmd
             text: "Liaising with Presenters"
+          - href: osc-events/advertisement.qmd
+            text: "Advertisement"
           - href: osc-events/registration.qmd
             text: "Registration"
           - href: osc-events/application.qmd
@@ -128,14 +138,14 @@ website:
         href: train-the-trainer/index.qmd
         text: "Train-the-Trainer"
 
-      - section: Matomo Analytics
+      - section: "Matomo Analytics"
         href: matomo/index.qmd
         contents:
-          - text: Overview and Setup
+          - text: "Overview and Setup"
             href: matomo/matomo-overview-and-setup.qmd
-          - text: Campaigns
+          - text: "Campaigns"
             href: matomo/campaigns-and-reporting.qmd
-          - text: Adding Sites
+          - text: "Adding Sites"
             href: matomo/adding-a-new-website.qmd
 
       - section: Miscellaneous Topics
@@ -144,11 +154,30 @@ website:
           - href: misc-topics/our-licensing-choices.qmd
             text: "Our Licensing Choices"
           - href: misc-topics/main-website-deployment.qmd
-            text: Main Website Deployment Details
+            text: "Main Website Deployment Details"
           - href: misc-topics/meeting-rooms.qmd
-            text: Meeting Rooms
+            text: "Meeting Rooms"
           - href: misc-topics/zenodo.qmd
-            text: Zenodo Community
+            text: "Zenodo Community"
+
+
+      - section: Financial procedures
+        href: financial-procedures/index.qmd
+        contents:
+          - href: financial-procedures/general.qmd
+            text: "General Principles"
+          - href: financial-procedures/organizing-event.qmd 
+            text: "Organizing an Event"
+          - href: financial-procedures/business-travel.qmd 
+            text: "Business Travel"
+          - href: financial-procedures/purchasing.qmd 
+            text: "Purchasing"
+          - href: financial-procedures/income.qmd 
+            text: "Income"
+          - href: financial-procedures/balance.qmd
+            text: "Checking balance"
+          - href: financial-procedures/forms-and-contacts.qmd 
+            text: "Frequent Forms and Contacts"
 
       - section: Archive
         href: archive/index.qmd

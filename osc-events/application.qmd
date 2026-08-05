@@ -15,24 +15,30 @@ The OSC uses **formr** to create and manage application forms and surveys.
 
 Formr is a web-based framework for creating surveys, longitudinal studies, and application forms.
 
-You can access the OSC formr instance here: <https://formr.osc.lmu.de/>
+You can access the OSC formr instance here: <https://formr.osc.lmu.de/>. the OSC account credentials can be shared by Malika (they are saved in the root of the LRZ Sync an Share folder 'LMU Open Science Center'). Felix can also invite you to create your own account on our instance.
 
-To learn more about formr and how it works, consult the official documentation: <https://formr.org/documentation>
+::: {.callout-note}
+## Adding a new formR user to our instance
+To add a new account, have them sign up here: https://formr.osc.lmu.de/admin/account/register/ with the referral token that can be found in the credentials file in the root of the lRZ Sync and Share folder of the LMU Open Science Center. Then study-admin rights can be given to users: Advanced --> Manage Admins --> write "1" into column "Admin" --> press the pointing finger.
+:::
+
+To learn more about formr and how it works, consult the official documentation: <https://formr.org/documentation> including a simple [toy example](https://docs.google.com/spreadsheets/d/1vXJ8sbkh0p4pM5xNqOelRUmslcq2IHnY9o52RmQLKFw/edit?gid=1611481919#gid=1611481919).
+Questions can be asked here to the community and developers here: https://github.com/rubenarslan/formr.org/discussions
+
+
+# Creating Application Forms
+
+Application forms in formr are generated from Google Sheets.
 
 ::: {.callout-note}
 ## formr at the OSC
 
-At the OSC, formr is primarily used for:
+At the OSC, formr is also used for:
 
-- Event applications
-- Screening applicants
-- Pre-event surveys
-- Post-event feedback surveys
+- Event applications e.g. [OSSS26 application form](https://docs.google.com/spreadsheets/d/1a0vZuQWblnodOty1ZpvfBqaepfsyvpA7u8ErifTlQyQ/edit)
+- Post-event feedback forms (e.g. [lectures](https://docs.google.com/spreadsheets/d/1V96I79yGgxIr4nLdyzr0s4JWHGWWo5LKSXt8vMde_Gc/edit?gid=2110598566#gid=2110598566), [workshops or symposia](https://drive.google.com/drive/folders/1jrBRX6GLYdkQVerpMJIOsyrHhc0d6HWC))
+- survey (e.g. [onboarding to OSC](https://docs.google.com/spreadsheets/d/1_L3NNvjaS5P9yJYKLn4BWmNkTxTqz0xwrpwweGriFys/edit?usp=drive_web&ouid=102642624428239377646), [University-wide survey on open science](https://drive.google.com/drive/folders/1mKpHv_HY1BaK6-PjZiqMwPjcmH1UV0El), [onboarding and offboarding to the Switch to Open Program](https://drive.google.com/drive/folders/1HChwuaE9-ZiqZM0AwQGpVcfHXquHmU89))
 :::
-
-# Creating Application Forms
-
-Application forms in formr are generated from Google Sheets templates found in the [Google Drive](https://drive.google.com/drive/folders/1mGDWgM7ekqP9gZ1u6Q6BlM-wcrZav8gG?usp=drive_link).
 
 The Google Sheets define:
 
@@ -40,8 +46,6 @@ The Google Sheets define:
 - response options;
 - survey flow; and
 - other application settings.
-
-When creating a new application form, start by identifying an existing application template that is similar to the event you are organizing and adapt it as necessary.
 
 ::: {.callout-tip}
 ## Recommendation
