@@ -5,24 +5,45 @@ title: "Wrap Up and Feedback"
 
 After an event, there are several important follow-up tasks to complete. These include sharing event materials, collecting feedback from participants, and communicating relevant information to instructors.
 
-# Post-Event Checklist
+# Typical Post-Event Workflow
 
-## Communication with Participants
+1. Publish the event materials (e.g., slides, recordings, repositories).
+2. Send the formr feedback questionnaire to attendees and contributors.
+3. Keep the survey open for approximately one week.
+4. Generate the feedback report in formr once the survey period has ended.
+5. Share the report with instructors and other relevant contributors.
+6. Send certificates of completion, if applicable.
 
-- [ ] Send the feedback survey (usually a formr survey) to all registrants and ask them to complete it within one week.
-- [ ] Include a link to the event materials repository (e.g., recordings, slides, handouts).
-- [ ] Provide information about upcoming OSC and OSIP events.
+::: {.callout-tip}
+## Recommendation
+
+When sending feedback requests, keep the survey open for approximately one week and send the email as soon as possible after the event while participants' impressions are still fresh.
+:::
+
 
 ## Dissemination of Event Materials
 
-- [ ] Upload event materials (e.g., slides, recordings, handouts) to the appropriate repository.
+- [ ] Upload event materials (e.g., slides, recordings, handouts) to the appropriate repository, typically a subcomponent of the OSF repository "[Open Science Workshop Materials of the LMU Open Science Center](https://osf.io/zjrhu/overview)"
 - [ ] If consent to record was obtained in advance, make recordings publicly available.
-- [ ] Advertise the event materials and recordings on OSC social media channels, if appropriate.
+- [ ] Advertise the event materials and recordings on OSC mailing lists and social media channels, if appropriate (typically for large events like summer school).
+
+## Creating feedback forms
+
+Feedback should be collected from both attendees (quantitative) and event contributors (qualitative) whenever appropriate.
+
+Templates for feedback forms are available as Gsheet in our Gdrive (e.g. [lectures](https://docs.google.com/spreadsheets/d/1V96I79yGgxIr4nLdyzr0s4JWHGWWo5LKSXt8vMde_Gc/edit?gid=2110598566#gid=2110598566), [workshops or symposia](https://drive.google.com/drive/folders/1jrBRX6GLYdkQVerpMJIOsyrHhc0d6HWC)) to be used in **formr**: <https://formr.osc.lmu.de/>. See the [application chapter](application.qmd) to learn more about formr.
+
+
+## Communication with Participants
+
+- [ ] Send the feedback survey (usually a formr survey, see the [application chapter](application.qmd) to learn about formr and find some of our templates) to all registrants and ask them to complete it within one week.
+- [ ] Include a link to the event materials repository (e.g., recordings, slides, handouts).
+- [ ] Provide information about upcoming OSC and co-host events.
 
 ## Communication with Instructors
 
-- [ ] Send the feedback report (generated from formr) to instructors.
-- [ ] Share participant feedback and relevant event statistics with instructors if requested.
+- [ ] Ask for qualitative feedback or a debrief call with all co-instructors 
+- [ ] Send the feedback report (generated from the formr survey, see [event evaluation chapter](event-evaluation.qmd)) to instructors.
 
 # Email Templates
 
@@ -88,26 +109,6 @@ Malika
 
 :::
 
-# Feedback Reports
-
-Feedback reports are typically generated in formr and should be shared with instructors once the survey period has ended.
-
-Before sending any wrap-up communication, ensure that all relevant event materials (e.g., slides, recordings, handouts) have been uploaded and made accessible to participants.
-
-## Typical Post-Event Workflow
-
-1. Publish the event materials (e.g., slides, recordings, repositories).
-2. Send the formr feedback questionnaire to attendees and contributors.
-3. Keep the survey open for approximately one week.
-4. Generate the feedback report in formr once the survey period has ended.
-5. Share the report with instructors and other relevant contributors.
-6. Send certificates of completion, if applicable.
-
-::: {.callout-tip}
-## Recommendation
-
-When sending feedback requests, keep the survey open for approximately one week and send the email as soon as possible after the event while participants' impressions are still fresh.
-:::
 
 # Certificates
 
