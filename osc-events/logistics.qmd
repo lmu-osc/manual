@@ -227,7 +227,7 @@ Only participants who completed the workshop should receive certificates.
 
 The Open Science Summer School is an annual week-long program organized by the OSC. Due to its scale, it requires additional preparation.
 
-Each year, we create a folder based on the previous year's summer school (e.g. [OSSS26 folder](https://drive.google.com/drive/folders/1LuXEtEtUHbPJ93jmR5x1atSUouH7tpCm)): update all forms and tempplates for everything. We have one organizational Gdoc with several tabs (e.g. [OSSS26](https://docs.google.com/document/d/1Yw2l7OfeoPa3-tM_jPdSxfHgp54ko-ZkKdaIJ0hSc0I/edit?tab=t.0))
+Each year, we create a folder based on the previous year's summer school (e.g. [OSSS26 folder](https://drive.google.com/drive/folders/1LuXEtEtUHbPJ93jmR5x1atSUouH7tpCm)): update all forms and tempplates for everything. We have one organizational Gdoc with several tabs (e.g. [OSSS26](https://docs.google.com/document/d/1Yw2l7OfeoPa3-tM_jPdSxfHgp54ko-ZkKdaIJ0hSc0I/edit?tab=t.0)) going through all subchapter of this Event chapter, with templates for everything (forms, emails, checklists).
 
 
 ::: {.panel-tabset}

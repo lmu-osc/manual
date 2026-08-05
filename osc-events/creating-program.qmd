@@ -110,5 +110,5 @@ Always assign at least one **alternative host** (e.g., another OSC team member).
 ## Payments and Reimbursements
 
 - [ ] Request instructors' bank details for payment.
-- [ ] Prepare all reimbursement and administrative forms.
+- [ ] Prepare all reimbursement and administrative forms (see [Financial Procedures](../financial-procedures/index.qmd))
 - [ ] Collect handwritten signatures during the event, if required.
