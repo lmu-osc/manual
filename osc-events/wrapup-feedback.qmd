@@ -107,6 +107,31 @@ A list of all upcoming OSIP and OSC events can be found here: https://www.osc.lm
 Best regards,  
 Malika
 
+## Carpentry workshop Wrap up email
+
+Subject: Certificate of Participation Software Carpentry
+
+
+Dear <<Attendee>>,
+Thank you for participating in the recent Software Carpentry Workshop. We appreciate your engagement and contributions during the sessions, and we hope the workshop has provided you with valuable insights and skills.
+Attached to this email, you’ll find your certificate of participation.
+Additionally, we would like to invite you to explore more self-paced tutorials offered by the LMU Open Science Center. These tutorials are designed to help you continue developing your computing skills and can be reused for your own teaching:
+Introduction to R: https://lmu-osc.github.io/introduction-to-R/ 
+Version control with Git within RStudio:  https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/ &  https://lmu-osc.github.io/Collaborative-RStudio-GitHub/ 
+Quarto: https://lmu-osc.github.io/introduction-to-Quarto/ 
+Introduction to simulation of data analyses in R: https://lmu-osc.github.io/Introduction-Simulations-in-R/ 
+Simulations for advanced power analysis in R: https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/  
+FAIR data management: https://lmu-osc.github.io/FAIR-Data-Management/  
+Code publishing: https://lmu-osc.github.io/code-publishing/    
+ 
+and more, on the LMU Open Science Center GitHub organisation:
+https://github.com/lmu-osc 
+
+
+To receive announcements of future workshops and symposia organised by the LMU Open Science Center (see list of events here: https://www.osc.uni-muenchen.de/events/index.html), please subscribe to the mailing list here:
+https://lists.lrz.de/mailman/listinfo/lmu-osc 
+
+
 :::
 
 
