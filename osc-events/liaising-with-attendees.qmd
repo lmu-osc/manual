@@ -54,7 +54,7 @@ Sincerely,
 
 **Communication amongst participants**
 
-- [ ] Create an online workspace for attendees (if applicable).
+- [ ] Create an online workspace for attendees (if applicable), i.e. the so-called 'Central Document' for the summer schools (e.g. [OSSS26 central document](https://docs.google.com/document/d/1StyJ17bTv7DW1Cc_nB13EM_HwF0fRNYxN3xK9wqnqog/edit?tab=t.10bbj89lp2l#heading=h.zbnw0kng2tmi))
 - [ ] Share the Code of Conduct.
 - [ ] Share password-protected webpages (e.g. Zoom links, private repositories).
 - [ ] Invite LMU participants to the OSC chat space.
