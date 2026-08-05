@@ -2,13 +2,11 @@
 
 Code
 
-For newsletter creation we use **ReallyGoodEmails** (formally known as **Beefree**)
+For newsletter creation we use **ReallyGoodEmails** (formally known as **Beefree**).
 
-## Administration
+## Logging in
 
-!!!REVISE Link for Login: https://beefree.io\
-Login with this mail: osc@psy.lmu.de\
-Project for the Newsletter is called “OSC organization”
+Our project called “OSC organization” with our past newsletters can be found here https://reallygoodemails.com/app/1394029/1380596/projects and accessed through credentials share by Malika or Felix (store in LRZ Sync & Share LMU OPen Science Center folder root). Alternatively, Malika can make a copy of a previous newsletter so it is owned by the organization, and add your private account to the organization for you to keep working on it.
 
 ## Create a Newsletter
 
@@ -148,5 +146,23 @@ Once uploaded, select the desired image and insert it into the newsletter.
 ![](images/upload-images-newsletter.png)
 
 Following this folder structure helps keep the image library organised and simplifies future updates or revisions.
+
+## Sending the newsletter
+
+To test the email formatting, spot final mistakes, send a test email to yourself:
+
+![](images/send-test-email.png)
+
+When a final version is ready to be sent out to our community mailing list, send a test email to Malika. She will then forwarded it to the list.
+
+## Posting the newsletter on the OSC website
+
+Export the newsletter as a html and image download.
+
+![](images/export.png) ![](images/html-download.png)
+
+Then extract the html and image folder from the zip file downloaded and open the html file (which will open in your browser). FInally, use the print to pdf function of your browser (removing headers and footers) to create a news item on the main website for record (see [Create news item](../updating-website/create-news-item.llms.md)).
+
+![](images/print-as-pdf.png)
 
 Back to top

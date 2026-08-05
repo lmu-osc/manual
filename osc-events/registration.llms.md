@@ -2,7 +2,7 @@
 
 Code
 
-We create registration pages or other registration avenues for our events for several reasons. Registration helps us keep track of participant numbers, ensure that trainings reach the intended and most relevant audiences through screening procedures, and collect important information from participants ahead of the event (e.g. attendance mode, preferences, or accessibility needs).
+We create registration pages or other registration avenues for our events for several reasons. Registration helps us keep track of participant numbers for reporting purposes, ensure that trainings reach the intended and most relevant audiences through screening procedures, and collect important information from participants ahead of the event (e.g. attendance mode, preferences, or accessibility needs).
 
 # Registering Event on Pretix
 
@@ -10,7 +10,7 @@ To manage registrations and collect pre-event information, we mainly use the pla
 
 ## Administration
 
-Malika will add new team members to the Pretix LMU OSC organization on the OSC server so you can create registration pages for OSC events.
+Malika will add new team members to the Pretix OSC organization on the OSC server so you can create registration pages for OSC events.
 
 To login on [the server](http://www.pretix.osc.lmu.de/control/), the default login username will be your LMU campus email.
 
@@ -173,11 +173,11 @@ Usually, nothing needs to be changed here. We generally use the system standard.
 | Attach calendar files | Only attach calendar files if the spot/payment is confirmed. |
 | Event description | **Change the text** according to the event and check whether it includes the correct Zoom link or address. |
 
-The calendar invite text should make clear that participants can only join if their order was confirmed or approved.
+The calendar invite text should make clear that participants can only join if their order was confirmed or approved. Given our tickets are free, the calender invitation is automatically sent out, but in some cases we have limited seats in person and unlimited seat online, but only one calendar invitation for all ticket types can be sent so we sometimes need to specify that they can only join in person if that in person seat was approved.
 
 > **NOTE:**
 >
-> Hello!
+> Hello
 >
 > If your order was approved (automatically, or by the organizer if you are not a member of the LMU), you can join in person in X room in X address.
 >
@@ -293,8 +293,6 @@ Add-ons are not needed for OSC events.
 >
 > If many tickets are left, do not show the number. If only a few tickets are left, consider showing the number. The manual approval process for tickets may also affect this decision.
 
-For more complex events, such as the Summer School, we use **formR**.
-
 ### Quotas
 
 Quotas define how many tickets of each type are available.
@@ -309,11 +307,11 @@ For some events, non-LMU tickets are initially set as “to be approved” with 
 
 ### Categories
 
-Only use categories for large events with complex ticket structures. Franka is currently the only person who has used this.
+Only use categories for large events with complex ticket structures.
 
 ### Questions
 
-Copy the general questions from the previous event.
+Copy the general questions from the previous event if you cloned an event type.
 
 | Question                        | Type            | Applies to |
 |---------------------------------|-----------------|------------|
@@ -322,11 +320,45 @@ Copy the general questions from the previous event.
 | What faculty are you from?      | List            | Everyone   |
 | Please specify                  | Text            | Everyone   |
 
+If you are creating a new kind of event from scratch and need to recreate the questions, the lists are in the callout box below.
+
+> **NOTE:**
+>
+> | Organizations             |
+> |---------------------------|
+> | LMU                       |
+> | LMU Klinikum              |
+> | TUM                       |
+> | Helmholtz Zentrum München |
+> | Other                     |
+>
+> | LMU Faculties                                         |
+> |-------------------------------------------------------|
+> | Central University Administration                     |
+> | Catholic Theology                                     |
+> | Protestant Theology                                   |
+> | Law                                                   |
+> | Business Administration                               |
+> | Economics                                             |
+> | Medicine                                              |
+> | Veterinary Medicine                                   |
+> | History and Arts                                      |
+> | Philosophy, Philosophy of Science & Religious Studies |
+> | Psychology & Education                                |
+> | Study of Culture                                      |
+> | Language & Literatures                                |
+> | Social Sciences                                       |
+> | Mathematics, Informatics & Statistics                 |
+> | Physics                                               |
+> | Chemistry and Pharmacy                                |
+> | Biology                                               |
+> | Geosciences                                           |
+
 > **IMPORTANT:**
 >
-> If requested by the presenter, add those specific questions here too.
+> If requested by the presenter, add those specific questions here too. Examples are operating system for computing skills workshops, data type used for RDM workshops, etc.
 
-Which questions are mandatory depends on the event. Usually, only the first few questions are required.
+Which questions are mandatory depends on the event. Usually, only the first few questions on affiliation are required for statistical purposes.
 
 ### Adding Conditional Subquestions
 
@@ -349,7 +381,7 @@ Order data can be downloaded as a sheet if needed, for example to send emails fr
 
 > **IMPORTANT:**
 >
-> Delete downloaded data if it is no longer needed or if you are not allowed to keep it.
+> Delete downloaded data as soon as it is no longer needed. You are not allowed to keep people’s name and email addresses on your laptop or to use them for ny other purposes than this event. If you anticipate the need to send them follow up emails, this needs to be an optional questions in the form - a box people can tick to state that they wish to receive emails beyond the purpose of this event.
 
 ### Check-in
 
@@ -357,7 +389,11 @@ Not needed.
 
 ### Send Out Emails
 
-If personalised emails need to be sent, Malika usually sends them manually.
+If personalized emails need to be sent, they can be specified in the pretix system.
+
+[Click here for information on how Pretix emails work](https://docs.pretix.eu/en/latest/user/events/email.html#e-mail-content)
+
+However, Malika usually sends them manually from her personal work email so as to establish connection with participants and facilitate their emailing back should they have any question or need to cancel their participation.
 
 ## Going Online with the Event
 
@@ -375,32 +411,30 @@ Go to **Go to Shop**.
 
 Try out all possible ticket types.
 
+Review all test emails and calendar invites carefully.
+
 Return to the Dashboard.
 
 Go to **Test mode** and click **Disable test mode**.
 
-Review all test emails and calendar invites.
-
 Delete all fake tickets.
 
-Check with Malika that nothing important was missed.
+check in with Malika: she will usually test again, give feedback, or approve the event to go online.
 
-When testing, check the emails you receive, including the email text and calendar invite. Malika will usually test again, give feedback, or approve the event to go online.
+> **IMPORTANT:**
+>
+> Do NOT test the system without enabling the test mode (which can still be activated if the shop is live). We cannot delete test tickets that were created as real tickets and this affects our statistics.
 
-### Testing Email Notifications
+### Receiving Email Notifications
 
-To test emails:
+You can receive notification of **New order placed** and ticket cancellation via emails during testing or during the duration of the events.
 
 **Arrow top left → Account and Organization → Settings → User Settings → Turn notifications on/off**
 
-Enable **New order placed** to receive emails during testing.
+Receiving those notifications helps monitoring waves of registrations upon advertisement, and planning for further dissemination if needed.
 
 ### Setting the Event Online or Offline
 
 New projects can be found in the dashboard/shop status. From there, you can test them or set them online/offline once everything else is complete.
-
-## Other Resources
-
-[Click here for information on how Pretix emails work](https://docs.pretix.eu/en/latest/user/events/email.html#e-mail-content)
 
 Back to top

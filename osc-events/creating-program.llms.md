@@ -114,13 +114,13 @@ Include:
 
 Ask presenters whether they agree to an open license for their materials.
 
-Ask presenters for consent to record the session, if applicable.
+Ask presenters for consent to record the session, if applicable, using this [template for consent to record](https://docs.google.com/document/d/1_JG2UtRdlqTLD94qFIjGrTEXI9PnHdC0/edit?usp=sharing&ouid=102642624428239377646&rtpof=true&sd=true).
 
 ## Payments and Reimbursements
 
 Request instructors’ bank details for payment.
 
-Prepare all reimbursement and administrative forms.
+Prepare all reimbursement and administrative forms (see [Financial Procedures](../financial-procedures/index.llms.md))
 
 Collect handwritten signatures during the event, if required.
 

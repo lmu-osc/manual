@@ -64,7 +64,7 @@ Fürstenstraße 12,\
 Tel.: +49 (89) 380 33 76 00\
 welcome@hotel-carlton.de
 
-We need an invoice from the hotel with the LMU address and VAT number as found in the credential file…
+We need an invoice from the hotel with the LMU address and VAT number:
 
 LMU Open Science Center\
 Ludwig-Maximilians-Universität München\

@@ -30,7 +30,7 @@ For student assistants (HiWis), preparations for contract renewals should begin 
 
 # Holidays, working remotely, and flexible working hours
 
-Holidays need to be requested in advance so they don’t fall in crucial times (e.g. summer school preparation or delivery)
+Holidays need to be requested in advance so they don’t fall in crucial times (e.g. summer school preparation or delivery). Staff need to fill Muster 41 (see [LMU service portal](LMU%20service%20portal%20https://www.serviceportal.verwaltung.uni-muenchen.de/services/_formularcenter/index.llms.md)) and have it signed by Malika and Felix and submitted to Lilia. HiWi only need to discuss with their line manager.
 
 Your hours can be reduced for some weeks, and increased in others to accommodate your other commitments but this needs to be communicated in advance so the team can organise task allocation accordingly to still meet deadlines.
 
@@ -70,7 +70,9 @@ You may also use your timesheet to:
 - Estimate how long recurring tasks take for future planning purposes.
 - Record important deadlines and milestones.
 
-# Transponder Issues
+# Transponder
+
+You can be given a transponder to access the office space on Leopoldstr 13, room 3320. For this, you need to sign a form. If you lose your transponder, you will have to pay for a new one. Line manager: add the transponder ID, date of delivery and return in our [google sheet](https://docs.google.com/spreadsheets/d/1cexk9LQYYLYFPA8I-d4RoTmvLMr56Ir7ljW-YVteZss/edit?gid=1610301947#gid=1610301947) (restricted access).
 
 If your transponder stops working or is lost, you can either request a replacement from Malika or visit the **Schliessmedien Office**.
 
@@ -80,7 +82,5 @@ If your transponder stops working or is lost, you can either request a replaceme
 | Opening hours | Tuesday–Thursday, 08:00–11:30           |
 
 If confirmation is required before a new transponder can be issued, contact **Lilia**, who can provide the necessary confirmation as a PDF.
-
-If you lose your transponder, you will have to pay for a new one as specified in the form signed upon handing over.
 
 Back to top

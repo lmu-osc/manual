@@ -17,12 +17,12 @@ Code
 - Memorundum of understanding, structure interview, table of homewwork and all spaces needed for working through the consultations: [SwOP working doc template](https://docs.google.com/document/d/18ngK4SIJE_YFgGk_A9HSpI5Wd_AW2ggdqUm3BASOC6o/edit?usp=sharing)
 - onboarding survey: a GitLab repository to which SwOP group members are invited (to see results and quarto report) - template tba
 - PI onboarding presentation: google slides - template tba
-- offboarding session: google slides, mural board, prints of the research cycle to work on
+- offboarding session: google slides, mural board, prints of the research cycle to work on - template tba
 - feedback survey: a GitLab repository - template tba
 
 ## Lessons Learned and Iterative Improvements
 
-- PI typically knows not much about teh concept of these practices and typically nothing at all about their implementation + they needs support to lead their team -\> added PI onboarding
-- Team need support assigning who is responsible for what and who can take decisions -\> added SOP session for each chapters
+- PI typically does not know much about the concept of these practices and typically nothing at all about their implementation + they needs support to lead their team -\> added PI onboarding
+- Team needs support assigning who is responsible for what and who can take decisions -\> added SOP sessions for each chapters
 
 Back to top

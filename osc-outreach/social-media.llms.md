@@ -4,9 +4,7 @@ Code
 
 This page will be relevant for you if you are be responsible for creating, scheduling, and publishing social media content on behalf of the OSC.
 
-Create personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages.
-
-If you don’t want this, you can also log in with the OSC account and we only indicate your name in the profile page of this account (for accountability).
+Please first create a personal profile on BlueSky, Mastodon, LinkedIn to be linked in the OSC profile pages. Alternatively, if you do not want to have an account on this platform, you can log in with the OSC account and we only indicate your name in the profile page of this account (for accountability).
 
 > **IMPORTANT:**
 >
@@ -14,7 +12,7 @@ If you don’t want this, you can also log in with the OSC account and we only i
 
 ## Social Media Accounts
 
-Ask Malika for access credentials to the following OSC accounts:
+Ask Malika or Felix for access credentials to the following OSC accounts which are stored in the root of the LRZ Sync & Share LMU Open Science Center folder:
 
 | Platform | Character Limit | Link |
 |----|----|----|
@@ -54,11 +52,9 @@ Ideas and plans for future campaigns and major social media activities should be
 
 > **NOTE:**
 >
-> When refering to the organisation in written form (i.e. in social media posts), please use the correct name and spelling in American Standard English: **LMU Open Science Center** or the correct abbreviation: **OSC**.
+> When referring to the organization in written form (i.e. in social media posts), please use the correct name and spelling in American Standard English: **LMU Open Science Center** or the correct abbreviation: **OSC**.
 
-When preparing longer texts, campaigns, or multi-post series, create a separate Google Doc and draft the content there before publishing.
-
-For **larger campaigns or complex posts**, draft the text in a separate Google Doc first. This facilitates collaborative editing and allows feedback from other OSC members before publication.
+When preparing longer texts, campaigns, or multi-post series, create a section in this Google Doc using proper header formatting (so you get a direct link to that section to share) and draft the content there. Alternatively, draft the text in a separate Google Doc. This facilitates collaborative editing and allows feedback from other OSC members before publication.
 
 ## Community Engagement and Outreach
 
@@ -75,6 +71,6 @@ Useful strategies include:
 >
 > Always keep your eye out for potential posts and reposts that might be of interest to the OSC or works involving OSC members. Send this to the Hiwi to make a draft and then the HiWi sends this draft to Malika for approval.
 >
-> The HiWi should regularly monitor comments, replies, and direct messages across platforms to ensure timely responses and maintain community engagement.
+> The HiWi should regularly monitor comments, replies, and direct messages across platforms to ensure timely responses and maintain community engagement. Inform Malika of these interactions so you can provide replies.
 
 Back to top

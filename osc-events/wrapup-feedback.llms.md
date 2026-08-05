@@ -4,29 +4,46 @@ Code
 
 After an event, there are several important follow-up tasks to complete. These include sharing event materials, collecting feedback from participants, and communicating relevant information to instructors.
 
-# Post-Event Checklist
+# Typical Post-Event Workflow
 
-## Communication with Participants
+1.  Publish the event materials (e.g., slides, recordings, repositories).
+2.  Send the formr feedback questionnaire to attendees and contributors.
+3.  Keep the survey open for approximately one week.
+4.  Generate the feedback report in formr once the survey period has ended.
+5.  Share the report with instructors and other relevant contributors.
+6.  Send certificates of completion, if applicable.
 
-Send the feedback survey (usually a formr survey) to all registrants and ask them to complete it within one week.
-
-Include a link to the event materials repository (e.g., recordings, slides, handouts).
-
-Provide information about upcoming OSC and OSIP events.
+> **TIP:**
+>
+> When sending feedback requests, keep the survey open for approximately one week and send the email as soon as possible after the event while participants’ impressions are still fresh.
 
 ## Dissemination of Event Materials
 
-Upload event materials (e.g., slides, recordings, handouts) to the appropriate repository.
+Upload event materials (e.g., slides, recordings, handouts) to the appropriate repository, typically a subcomponent of the OSF repository “[Open Science Workshop Materials of the LMU Open Science Center](https://osf.io/zjrhu/overview)”
 
 If consent to record was obtained in advance, make recordings publicly available.
 
-Advertise the event materials and recordings on OSC social media channels, if appropriate.
+Advertise the event materials and recordings on OSC mailing lists and social media channels, if appropriate (typically for large events like summer school).
+
+## Creating feedback forms
+
+Feedback should be collected from both attendees (quantitative) and event contributors (qualitative) whenever appropriate.
+
+Templates for feedback forms are available as Gsheet in our Gdrive (e.g. [lectures](https://docs.google.com/spreadsheets/d/1V96I79yGgxIr4nLdyzr0s4JWHGWWo5LKSXt8vMde_Gc/edit?gid=2110598566#gid=2110598566), [workshops or symposia](https://drive.google.com/drive/folders/1jrBRX6GLYdkQVerpMJIOsyrHhc0d6HWC)) to be used in **formr**: <https://formr.osc.lmu.de/>. See the [application chapter](../osc-events/application.llms.md) to learn more about formr.
+
+## Communication with Participants
+
+Send the feedback survey (usually a formr survey, see the [application chapter](../osc-events/application.llms.md) to learn about formr and find some of our templates) to all registrants and ask them to complete it within one week.
+
+Include a link to the event materials repository (e.g., recordings, slides, handouts).
+
+Provide information about upcoming OSC and co-host events.
 
 ## Communication with Instructors
 
-Send the feedback report (generated from formr) to instructors.
+Ask for qualitative feedback or a debrief call with all co-instructors
 
-Share participant feedback and relevant event statistics with instructors if requested.
+Send the feedback report (generated from the formr survey, see [event evaluation chapter](../osc-events/event-evaluation.llms.md)) to instructors.
 
 # Email Templates
 
@@ -79,24 +96,17 @@ A list of all upcoming OSIP and OSC events can be found here: https://www.osc.lm
 Best regards,\
 Malika
 
-# Feedback Reports
+## Carpentry workshop Wrap up email
 
-Feedback reports are typically generated in formr and should be shared with instructors once the survey period has ended.
+Subject: Certificate of Participation Software Carpentry
 
-Before sending any wrap-up communication, ensure that all relevant event materials (e.g., slides, recordings, handouts) have been uploaded and made accessible to participants.
+Dear \<\>, Thank you for participating in the recent Software Carpentry Workshop. We appreciate your engagement and contributions during the sessions, and we hope the workshop has provided you with valuable insights and skills. Attached to this email, you’ll find your certificate of participation. Additionally, we would like to invite you to explore more self-paced tutorials offered by the LMU Open Science Center. These tutorials are designed to help you continue developing your computing skills and can be reused for your own teaching: Introduction to R: https://lmu-osc.github.io/introduction-to-R/ Version control with Git within RStudio: https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/ & https://lmu-osc.github.io/Collaborative-RStudio-GitHub/ Quarto: https://lmu-osc.github.io/introduction-to-Quarto/ Introduction to simulation of data analyses in R: https://lmu-osc.github.io/Introduction-Simulations-in-R/ Simulations for advanced power analysis in R: https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/\
+FAIR data management: https://lmu-osc.github.io/FAIR-Data-Management/\
+Code publishing: https://lmu-osc.github.io/code-publishing/
 
-## Typical Post-Event Workflow
+and more, on the LMU Open Science Center GitHub organisation: https://github.com/lmu-osc
 
-1.  Publish the event materials (e.g., slides, recordings, repositories).
-2.  Send the formr feedback questionnaire to attendees and contributors.
-3.  Keep the survey open for approximately one week.
-4.  Generate the feedback report in formr once the survey period has ended.
-5.  Share the report with instructors and other relevant contributors.
-6.  Send certificates of completion, if applicable.
-
-> **TIP:**
->
-> When sending feedback requests, keep the survey open for approximately one week and send the email as soon as possible after the event while participants’ impressions are still fresh.
+To receive announcements of future workshops and symposia organised by the LMU Open Science Center (see list of events here: https://www.osc.uni-muenchen.de/events/index.html), please subscribe to the mailing list here: https://lists.lrz.de/mailman/listinfo/lmu-osc
 
 # Certificates
 

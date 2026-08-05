@@ -14,24 +14,10 @@ All OSC events should be documented in the **Event Reach Summary Statistics** sh
 
 The information recorded in this sheet is used to produce the OSC’s yearly impact and activity reports.
 
-# Collecting Feedback
+# Analysing Feedback
 
-Feedback should be collected from both attendees and event contributors whenever appropriate.
-
-Templates for feedback forms are available in **formr**: <https://formr.osc.lmu.de/>
-
-Typical feedback recipients include:
-
-- Event attendees
-- Instructors
-- Guest speakers
-- Panelists
-- Other contributors
+R scripts to analyses our template feedback report (for lectures, workshops, symposium, summer school), can be found in this LRZ GitLab repository: <https://gitlab.lrz.de/lmu-open-science-center/osc-event-feedback>
 
 These data contribute to the OSC’s yearly evaluation and impact reporting.
-
-> **NOTE:**
->
-> Malika plans to publish template R scripts on GitLab to automate parts of the post-event evaluation workflow: to analyse the formr feedback form template (one for workshop, one for symposium, one for summer school).
 
 Back to top

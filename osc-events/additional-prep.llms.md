@@ -2,11 +2,9 @@
 
 Code
 
-Here is a checklist of additional items to do and consider during prepapration for the event.
+Here is a checklist of additional items to do and consider during preparation of an event.
 
 **If fully or partly online**: test platform with e.g. multiple channels (several per workshops), recordings, transcript, and captioning, guest account for instructors, webinar add-on for lectures
-
-Send notification to Karabulut Seyhan <Seyhan.Karabulut@Verwaltung.Uni-Muenchen.DE> working for Riesche Barbara <Barbara.Riesche@Verwaltung.Uni-Muenchen.DE> if relevant for post doc across several disciplines to get on Excellerate website
 
 Prepare ‘welcome’ and ‘logistics’ speech as well as ‘welcome’ slides, if relevant
 
@@ -16,6 +14,18 @@ Provide internet access to guests if they can’t access eduroam
 
 Prepare hybrid networking with specified group numbers
 
-Print badges
+Print badges / name tags
+
+## How to Print Name Badges
+
+We have precut paper Avery_C32010, LMU lanyards, and plastic cases in the office.
+
+Use an excel sheet to list the information you want to appear on the name tag (e.g. [attendees_list_track1](https://docs.google.com/spreadsheets/d/13r3DolR6Jfgq4HIGwWxX5_6cn2nLMAu-/edit?gid=607360641#gid=607360641)), and a template name badge design in Word (e.g. [Avery_C32010_Modele_Word - Track 1](https://docs.google.com/document/d/1FK4s7HxRAcb3CLiuZh3GXjKEIIw5nmmL/edit)).
+
+These need to be local xlsx and doc (the template is indeed not a docx -\> refuse the conversion if prompted). When opening the doc, the question whether to run the query appears, click yes. Then an error message get thrown: this is because it doesn’t find the link to the new location of the excel sheet. Delete the data source to be prompted to enter a new one and navigate to the location of the excel sheet the word doc needs to be linked to.
+
+Use the Mail Merge function of word (Mailing –\> Start Mail Merge –\> Step by step wizard), calling on the information in the spreadsheet to create all badges automatically.
+
+Save the edited badge sheet to pdf before printing. Make sure the printer and label design are on a A4 format.
 
 Back to top

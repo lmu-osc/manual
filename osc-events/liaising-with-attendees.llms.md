@@ -8,87 +8,41 @@ Here are useful checklists of things to do and consider:
 
 # Before Event
 
-## Registration & Applications
-
 **Registration & Applications**
 
 Find detailed instructions here: [Registration](../osc-events/registration.llms.md) and [Applications](../osc-events/application.llms.md)
 
 Create **registration page** for the public part of the event (e.g. in-person, online, waiting list for non-members; decide whether registration is per session or for the whole course).
 
-If applicants need to apply for specific sessions (e.g. hands-on workshops with limited seats), develop rubrics to score applications.
+Check that registration numbers are reasonable.
 
-Send registration information and forms to applicants via email.
+Accept Klinikum registrations if ticket approval is required as if they were from LMU itself.
 
-Confirm attendance:
-
-Google Form with name, email, confirmation of attendance, attendance mode, and R/Julia preference.
-
-Google Form for PI approval (if required).
-
-Confirm whether applicants wish to remain on the waiting list.
-
-Create registration page for attendees joining only the public part of the event.
-
-Check that registration numbers are reasonable and that registrants selected the correct tickets.
-
-Accept Klinikum registrations if ticket approval is required.
-
-Approve TUM in-person tickets.
+Approve TUM tickets in case of Carpentry training (whose membership was paid by MCML, a LMU-TUM collaboration)
 
 Approve additional registrations depending on seat availability.
 
-Email applicants at least two days in advance.
-
-Email the top three people on the waiting list to check whether they are still interested in a last-minute invitation.
-
-## Venue & Logistics
-
-**Venue & Logistics**
-
-Inform local attendees about the in-person reception and registration requirements.
-
-Print signage for the in-person venue.
-
-## Communication & Promotion
-
-**Communication & Promotion**
-
-Advertise the event through relevant channels, e.g.:
-
-Graduate Center
-
-Infodienst
-
-OSC channels
-
-BlueSky/Mastodon/LinkedIn
-
-UB University of Munich – Central Library
-
-Departmental communication officers mailing list
-
-Follow-up list of communication officers
-
-Create an online workspace for attendees (if applicable).
-
-Share the Code of Conduct.
-
-Share password-protected webpages (e.g. Zoom links, private repositories).
-
-Invite LMU participants to the LMU OSC chat space.
-
-Send reminder emails to registrants:
-
-When the event becomes fully booked, or
-
-Four days before the event (whichever comes first).
+Email registrants at least two days in advance.
 
 Use the registration platform or manually send reminders with relevant information (e.g. Zoom link, abstracts).
 
+If **applicants** need to apply for specific sessions (e.g. hands-on workshops with limited seats), develop rubrics to score applications.
+
+Send registration information and forms to applicants via email.
+
+Confirm attendance for large events with application (e.g. OSS) through:
+
+Google Form with name, email, confirmation of attendance, attendance mode, and preference for of two parallel sessions (if applicable).
+
+Google Form for PI approval of participation and later adoption of open research practices (if required).
+
+Confirm whether applicants wish to remain on the waiting list.
+
+When the event becomes **fully booked**, or four days before the event (whichever comes first), email the top three people on the waiting list to check whether they are still interested in a last-minute invitation.
+
 > **IMPORTANT:**
 >
-> *If the event is fully booked, it is advisable that you communicate that to still interested persons. Here is an email template that you can adapt:*
+> *If the event is fully booked, it is advisable that you communicate that to accepted participants in case they no longer plan to come. Here is an email template that you can adapt:*
 >
 > Dear registrants of the *XX title of event XX*,
 >
@@ -101,6 +55,22 @@ Use the registration platform or manually send reminders with relevant informati
 > We are looking forward to discussing with you soon!
 >
 > Sincerely, *XX*
+
+**Venue & Logistics**
+
+Inform local attendees about the in-person reception and registration requirements.
+
+Print signage for the in-person venue.
+
+**Communication amongst participants**
+
+Create an online workspace for attendees (if applicable), i.e. the so-called ‘Central Document’ for the summer schools (e.g. [OSSS26 central document](https://docs.google.com/document/d/1StyJ17bTv7DW1Cc_nB13EM_HwF0fRNYxN3xK9wqnqog/edit?tab=t.10bbj89lp2l#heading=h.zbnw0kng2tmi))
+
+Share the Code of Conduct.
+
+Share password-protected webpages (e.g. Zoom links, private repositories).
+
+Invite LMU participants to the OSC chat space.
 
 # During Event
 
@@ -116,9 +86,9 @@ Ensure participants have access to online workspaces, Zoom links, and other requ
 
 # After Event
 
-Follow up with attendees as needed.
+Follow up with attendees with materials and feedback forms.
 
-Send certificates.
+Send certificates of attendance.
 
 See this section for more information: [Wrap Up and and Feedback](../osc-events/wrapup-feedback.llms.md)
 
