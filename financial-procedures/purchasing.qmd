@@ -2,3 +2,24 @@
 title: "Purchasing Goods or Services"
 ---
 
+This page outlines the main requirements when purchasing goods or services for the OSC.
+
+## Paying an Invoice
+
+Before submitting an invoice for payment, make sure:
+
+- the invoice is addressed to **LMU**
+- the **LMU VAT ID (DE811205325)** is included
+- the invoice is stamped with the **OSC account**
+
+## International Purchases
+
+Additional documentation may be required for international purchases.
+
+**Goods Purchased from an EU Country:**
+
+- Complete the required **Intrastat documentation**.
+
+**Invoices from Outside Germany:**
+
+- Complete **Muster 35**.

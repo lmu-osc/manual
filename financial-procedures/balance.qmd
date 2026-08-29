@@ -2,3 +2,31 @@
 title: "Checking Account Balances"
 ---
 
+Every month, **Lilia** sends **Malika** the account information and salary sheets (**HÜL file**) for the previous month.
+
+## Monthly checks
+
+Malika checks that the records received from Lilia match the OSC's records in the [OSC_Finances](https://docs.google.com/spreadsheets/d/1cexk9LQYYLYFPA8I-d4RoTmvLMr56Ir7ljW-YVteZss/edit?usp=sharing) document.
+
+::: {.callout-note}
+# Private document
+
+The **OSC_Finances** document is only accessible to OSC staff.
+:::
+
+## OSC_Finances sheet
+
+The document contains:
+
+- **One sheet per account**, including:
+  - individual grants
+  - Haushalt
+  - internal and external income
+  - expenses account
+  - other relevant accounts
+- **One sheet for HiWi contracts**, including their duration and costs.
+- **One sheet for grants**, listing:
+  - grants applied for
+  - amount received
+  - deadline to spend the funds
+- **One sheet for transponders**, including the transponder ID provided to each HiWi and the date of return.

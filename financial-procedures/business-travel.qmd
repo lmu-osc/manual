@@ -1,4 +1,33 @@
 ---
-title: "Reimbursement of Business Travel Expenses for OSC Staff"
+title: "Reimbursement of Business Travel for OSC Staff"
 ---
 
+This page outlines the documents required for reimbursement of business travel by OSC staff.
+
+## Required Documents
+
+For reimbursement of business travel, complete and submit:
+
+- **Muster 70**
+- **Muster 71**
+- all relevant **receipts and proof of payment**
+
+# Comparative Calculation
+
+A **comparative calculation** is also required if:
+
+- you do not depart from your regular workplace; or
+- the business trip is combined with a **private stay**.
+
+The comparative calculation should show what the travel would have cost if the trip had been made directly from the workplace and without the private stay.
+
+## Payment Information
+
+For travel expenses:
+
+- **Buchungsstelle:** 428 (if the staff member has a contract)
+- **Kostenart:** 68519 (LMU employees)
+
+::: {.callout-note}
+After reimbursement is processed, scan and archive the relevant documents in `LRZ Sync & Share → OSC Back Office` and submit the original paperwork to the relevant person or department.
+:::
