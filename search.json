@@ -406,7 +406,7 @@
     "href": "staff-onboarding/administration.html#contract-creation",
     "title": "Administration",
     "section": "Contract Creation",
-    "text": "Contract Creation\nThe secretary of Felix’s Chair, Lilia Meier, is in charge of creating contracts and liaise with the Department of Psychology’s administration. it can require up to 3 months to create a new contract and this requires lots of documentation. She needs to know:\n\nthe number of hours per week\nthe date at which to start the contract\nthe contract duration (and justification if contract requested is less than a year)\nthe OSC funding account\nwhat university degrees the employee has\nthe ending date of their residence permit (if applicable)\nthe language they speak (english or german).\n\nUpon contract creation, for new LMU members, Lilia will also request LRZ SSO. SHould we want a psy email, we need to ask her to make that request too.",
+    "text": "Contract Creation\nThe secretary of Felix’s Chair, Lilia Meier, is in charge of creating contracts and liaise with the Department of Psychology’s administration. it can require up to 3 months to create a new contract and this requires lots of documentation. She needs to know the following information:\n\nthe number of hours per week\nthe date at which to start the contract\nthe contract duration (and justification if contract requested is less than a year)\nthe OSC funding account\nwhat university degrees the employee has\nthe ending date of their residence permit (if applicable)\nthe language they speak (English or German).\n\nUpon contract creation, for new LMU members, Lilia will also request LRZ SSO. Should we want a psy email, we need to ask her to make that request too.",
     "crumbs": [
       "Home",
       "Staff Onboarding",
@@ -418,7 +418,7 @@
     "href": "staff-onboarding/administration.html#contract-renewal-hiwis",
     "title": "Administration",
     "section": "Contract Renewal (HiWis)",
-    "text": "Contract Renewal (HiWis)\nFor student assistants (HiWis), preparations for contract renewals should begin at least 6–8 weeks before the current contract expires. The same information as above need to be provided.\n\n\n\n\n\n\nImportantThe earlier, the better\n\n\n\nPlease provide the required information as early as possible to avoid delays in the contract renewal process.",
+    "text": "Contract Renewal (HiWis)\nFor student assistants (HiWis), please provide the same information as listed above. Preparations for contract renewals should begin at least 6–8 weeks before the current contract expires.\n\n\n\n\n\n\nImportantThe earlier, the better\n\n\n\nPlease provide the required information as early as possible to avoid delays in the contract renewal process.",
     "crumbs": [
       "Home",
       "Staff Onboarding",
@@ -1030,13 +1030,37 @@
   {
     "objectID": "financial-procedures/forms-and-contacts.html",
     "href": "financial-procedures/forms-and-contacts.html",
-    "title": "Frequent Forms and Contacts",
+    "title": "Frequently Used Forms and Contacts",
     "section": "",
-    "text": "Back to top",
+    "text": "This page provides a quick reference to forms and contacts frequently used for OSC administrative processes.",
     "crumbs": [
       "Home",
       "Financial procedures",
-      "Frequent Forms and Contacts"
+      "Frequently used Forms and Contacts"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/forms-and-contacts.html#frequently-used-forms",
+    "href": "financial-procedures/forms-and-contacts.html#frequently-used-forms",
+    "title": "Frequently Used Forms and Contacts",
+    "section": "Frequently Used Forms",
+    "text": "Frequently Used Forms\nThe latest versions of LMU forms can be found in the LMU Service Portal (SSO required).\nThe following forms are provided by the Geschäftsstelle (GS) Psychology and can be obtained through Lilia Meier:\n\nMuster Auslagenerstattung 2024\ndokumentationsbl-bewirtungen.docx\nReisekostenerstattung_Externe.doc\n\n\n\n\n\n\n\n\nForm\nPurpose\n\n\n\n\nMuster 01\nIncoming payments\n\n\nMuster 30\nOne-off payments (German bank account)\n\n\nMuster Auslagenerstattung 2024\nOne-off payments to OSC employees (German bank account)\n\n\nMuster 35\nForeign payments\n\n\nReisekostenerstattung_Externe.doc\nForm for guest presenters\n\n\ndokumentationsbl-bewirtungen.docx\nForm to get catering costs back\n\n\nMuster 70\nTravel authorisation\n\n\nMuster 71\nTravel reimbursement",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Frequently used Forms and Contacts"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/forms-and-contacts.html#frequently-used-contacts",
+    "href": "financial-procedures/forms-and-contacts.html#frequently-used-contacts",
+    "title": "Frequently Used Forms and Contacts",
+    "section": "Frequently Used Contacts",
+    "text": "Frequently Used Contacts\n\n\n\nTopic\nName\nContact\n\n\n\n\nIT purchases\nChristine Mayer\nit.shop@verwaltung.uni-muenchen.de\n\n\nOSC administration\nLilia Meier\nLMU Contact Page\n\n\nIncome accounts\nDaniela Rabl\n@verwaltung.uni-muenchen.de\n\n\n\n****is the last email incomplete?\n\n\n\n\n\n\nNoteUpdating any changes\n\n\n\nThe contact information provided here should be updated if responsibilities or contact persons change.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Frequently used Forms and Contacts"
     ]
   },
   {
@@ -1044,7 +1068,43 @@
     "href": "financial-procedures/general.html",
     "title": "General Principles",
     "section": "",
-    "text": "Back to top",
+    "text": "This page outlines the general administrative and payment principles that should be followed when completing processes for the OSC.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "General Principles"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/general.html#after-every-process",
+    "href": "financial-procedures/general.html#after-every-process",
+    "title": "General Principles",
+    "section": "After Every Process",
+    "text": "After Every Process\nAfter completing any administrative or financial process:\n\nScan all relevant documents, including forms, invoices, receipts, and emails where relevant.\nArchive the documents in LRZ Sync & Share → OSC Back Office\nSubmit original paperwork to:\n\n\nLilia Meier, secretary of Markus Buehner’s chair,\nthe Geschäftsstelle (GS),\nor the relevant department for processing\n\n\nStore all bank account and salary details in Kontoauszuege_Bankaccount_information:\n\nLRZ Sync & Share → OSC Back Office → Finanzen-Finances → Finanzuebersicht-Financial_Overview → Kontoauszuege_Bankaccount_information\n\nStore invoices and other official documents in their respective folders.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "General Principles"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/general.html#general-payment-rules",
+    "href": "financial-procedures/general.html#general-payment-rules",
+    "title": "General Principles",
+    "section": "General Payment Rules",
+    "text": "General Payment Rules\n\nAlways use the official LMU billing address.\nAlways include the LMU VAT ID: DE811205325.\nInvoices with a personal address cannot be reimbursed.\nInclude proof of payment whenever reimbursement is requested.\nIf OSC pays directly, stamp the invoice with the OSC account information.\nAll payments require two authorised signatures from Felix, Malika, Lilia, or Markus.\nIf a staff member (Malika or Felix) is being reimbursed, two different authorised persons must sign.\nIf a staff member is being reimbursed, use the simplified form Muster Auslagenerstattung 2024 instead of Muster 30.\n\n\nBuchungsstelle\n\n428 — if the person being reimbursed has a contract\n547 — if outgoing\n\n\n\nKostenart for Travel Expenses\n\n66121 — guests\n68519 — LMU employees",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "General Principles"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/general.html#international-invoices",
+    "href": "financial-procedures/general.html#international-invoices",
+    "title": "General Principles",
+    "section": "International Invoices",
+    "text": "International Invoices\nThe LMU VAT ID must always be included on international invoices so that LMU is recognised as a business and the correct invoice is issued.\nWithout the VAT ID, international invoices may include value-added tax. Since LMU must remit German VAT separately for international invoices, posting or reimbursing an international invoice that already includes VAT could result in double payment:\n\nVAT according to the invoicer’s country; plus\nGerman VAT.\n\nSuch double payment is not permitted under the principles of economic efficiency and cost-effectiveness.\n\n\n\n\n\n\nImportantInternational payments in another currency\n\n\n\nIf reimbursement involves another currency, attach an exchange-rate screenshot (e.g. OANDA) showing the exchange rate on the payment date.",
     "crumbs": [
       "Home",
       "Financial procedures",
@@ -1054,9 +1114,33 @@
   {
     "objectID": "financial-procedures/income.html",
     "href": "financial-procedures/income.html",
-    "title": "Incomes",
+    "title": "Income",
     "section": "",
-    "text": "Back to top",
+    "text": "This page outlines the main procedures for invoicing OSC services and receiving institutional membership fees.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Income"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/income.html#invoice-for-osc-services",
+    "href": "financial-procedures/income.html#invoice-for-osc-services",
+    "title": "Income",
+    "section": "Invoice for OSC Services",
+    "text": "Invoice for OSC Services\nWhen invoicing for the services provided by the OSC:\n\nObtain a BKZ Number\n\nObtain a BKZ number from:\nOSC Back Office → Finanzuebersicht-Financial_Overview → BKZ\n\nCreate the Invoice\n\nUse the OSC invoice template.\nThe invoice must include:\n\nVAT number\nRechnung number\nBKZ number\nthe appropriate OSC income account:\n\nChoose the appropriate account depending on where the payment will come from.\n\nWithin LMUExternal Organisation\n\n\nIf the payment will be received from an LMU account, use:\nOSC-Einnahmen_LMU\nKapitel: 1507  TG: 41  AOst: 8000812  Kostenstelle: 110600\n\n\nFor services provided to an external organisation, use:\nOSC-Einnahmen-Ust\nKapitel: 1507  TG: 77  AOst: 805095-7  Kostenstelle: 11060200\n\n\n\n\nSubmit the Documentation\n\n\nComplete Muster 01 on red paper.\nSubmit Muster 01 to the Geschäftsstelle (GS) after sending the invoice.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Income"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/income.html#institutional-membership-fees",
+    "href": "financial-procedures/income.html#institutional-membership-fees",
+    "title": "Income",
+    "section": "Institutional Membership Fees",
+    "text": "Institutional Membership Fees\nRequest payment through an invoice, except for Business Administration, where a transfer of funds is used.\nUse the following account:\nHaushalt OSC\nKapitel: 1507  TG: 40  AOst: 1106641  Kostenstelle: 11060200",
     "crumbs": [
       "Home",
       "Financial procedures",
@@ -1068,7 +1152,31 @@
     "href": "financial-procedures/purchasing.html",
     "title": "Purchasing Goods or Services",
     "section": "",
-    "text": "Back to top",
+    "text": "This page outlines the main requirements when purchasing goods or services for the OSC.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Purchasing"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/purchasing.html#paying-an-invoice",
+    "href": "financial-procedures/purchasing.html#paying-an-invoice",
+    "title": "Purchasing Goods or Services",
+    "section": "Paying an Invoice",
+    "text": "Paying an Invoice\nBefore submitting an invoice for payment, make sure:\n\nthe invoice is addressed to LMU\nthe LMU VAT ID (DE811205325) is included\nthe invoice is stamped with the OSC account",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Purchasing"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/purchasing.html#international-purchases",
+    "href": "financial-procedures/purchasing.html#international-purchases",
+    "title": "Purchasing Goods or Services",
+    "section": "International Purchases",
+    "text": "International Purchases\nAdditional documentation may be required for international purchases.\nGoods Purchased from an EU Country:\n\nComplete the required Intrastat documentation.\n\nInvoices from Outside Germany:\n\nComplete Muster 35.",
     "crumbs": [
       "Home",
       "Financial procedures",
@@ -1890,9 +1998,33 @@
   {
     "objectID": "financial-procedures/business-travel.html",
     "href": "financial-procedures/business-travel.html",
-    "title": "Reimbursement of Business Travel Expenses for OSC Staff",
+    "title": "Reimbursement of Business Travel for OSC Staff",
     "section": "",
-    "text": "Back to top",
+    "text": "This page outlines the documents required for reimbursement of business travel by OSC staff.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Business Travel"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/business-travel.html#required-documents",
+    "href": "financial-procedures/business-travel.html#required-documents",
+    "title": "Reimbursement of Business Travel for OSC Staff",
+    "section": "Required Documents",
+    "text": "Required Documents\nFor reimbursement of business travel, complete and submit:\n\nMuster 70\nMuster 71\nall relevant receipts and proof of payment",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Business Travel"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/business-travel.html#payment-information",
+    "href": "financial-procedures/business-travel.html#payment-information",
+    "title": "Reimbursement of Business Travel for OSC Staff",
+    "section": "Payment Information",
+    "text": "Payment Information\nFor travel expenses:\n\nBuchungsstelle: 428 (if the staff member has a contract)\nKostenart: 68519 (LMU employees)\n\n\n\n\n\n\n\nNote\n\n\n\nAfter reimbursement is processed, scan and archive the relevant documents in LRZ Sync & Share → OSC Back Office and submit the original paperwork to the relevant person or department.",
     "crumbs": [
       "Home",
       "Financial procedures",
@@ -1902,9 +2034,69 @@
   {
     "objectID": "financial-procedures/organizing-event.html",
     "href": "financial-procedures/organizing-event.html",
-    "title": "Organizing events",
+    "title": "Organizing an Event",
     "section": "",
-    "text": "Back to top",
+    "text": "This page outlines the main administrative procedures for organizing OSC events involving guest presenters, travel reimbursement, meals, and honoraria.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Organizing an Event"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/organizing-event.html#guest-presenters",
+    "href": "financial-procedures/organizing-event.html#guest-presenters",
+    "title": "Organizing an Event",
+    "section": "Guest Presenters",
+    "text": "Guest Presenters\n\nBefore the Visit\nBefore the guest’s visit:\n\nPrint the invitation letter or event programme.\nAsk the guest to complete Reisekostenerstattung_Externe.doc.\nDetermine whether the guest will receive:\n\ntravel reimbursement\nhotel\nmeal\nhonorarium\n\n\nGuests receiving payments require either:\n\na German Tax ID (or application); or\nthe relevant tax documentation.\n\n\n\n\n\n\n\nNoteGerman Tax ID waived\n\n\n\nIn the future, we expect that the registration or application for a German Tax ID and date of birth can be waived if the expected total payment to the person within a calendar year is less than €3,000.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Organizing an Event"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/organizing-event.html#hotel",
+    "href": "financial-procedures/organizing-event.html#hotel",
+    "title": "Organizing an Event",
+    "section": "Hotel",
+    "text": "Hotel\n\nObtain an invoice addressed to:\n\nLMU Open Science Center\nLudwig-Maximilians-Universität München\nDepartment Psychologie\nLeopoldstr. 13, Room 3320\nPostfach 03\n80802 München\nVAT: DE811205325\n\nComplete Muster 30.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Organizing an Event"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/organizing-event.html#guest-travel-reimbursement",
+    "href": "financial-procedures/organizing-event.html#guest-travel-reimbursement",
+    "title": "Organizing an Event",
+    "section": "Guest Travel Reimbursement",
+    "text": "Guest Travel Reimbursement\nTo issue the reimburse for travel expenses to either a German or foreign bank account, see the following:\n\nGerman Bank AccountForeign Bank Account\n\n\n\nGuest completes Muster 30, fields 7–14.\nPrint the form and have the guest sign it in person.\nBuchungsstelle: 547.\n\n\n\n\nComplete Muster 35.\nIf another currency was used, attach an exchange-rate screenshot. Make sure the exchange rate is from the day of payment.\nPrint the form and have it signed in person.\nBuchungsstelle: 547.\n\n\n\n\nFor both types of bank accounts, attach:\n\ntickets\nproof of payment\nguest’s German Tax ID",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Organizing an Event"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/organizing-event.html#meals",
+    "href": "financial-procedures/organizing-event.html#meals",
+    "title": "Organizing an Event",
+    "section": "Meals",
+    "text": "Meals\n\n\n\n\n\n\nImportantWhen are meals permitted?\n\n\n\nMeals can be legally permitted if at least 50% of attendees are non-LMU guests.\n\n\nFor meal reimbursement:\n\nPrint the invitation or programme.\nObtain a detailed restaurant invoice (Bewirtungsbeleg).\nAnnotate the receipt with:\n\nwho\nwhy\namount\n\nScan and print the annotated receipt again.\nComplete the Bewirtungsformular.\nKeep the participant list in case of an audit.\nComplete Muster 30.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Organizing an Event"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/organizing-event.html#honoraria",
+    "href": "financial-procedures/organizing-event.html#honoraria",
+    "title": "Organizing an Event",
+    "section": "Honoraria",
+    "text": "Honoraria\nThe invoice must contain:\n\nthe official LMU billing address\nthe LMU VAT ID\nthe speaker’s tax number, or their university’s official address and VAT information\na statement concerning VAT\n\nThe VAT statement should either:\n\nidentify the respective VAT; or\nstate the applicable VAT exemption, for example:\n\nKleinunternehmerregelung gemäß §19 UStG\n\"Vortrags- und Unterrichtsleistungen\" (§ 4 Nr. 21 b Doppelbuchst. aa)\n\n\n\n\n\n\n\n\nImportant\n\n\n\nIf a VAT exemption is used, each guest speaker must carefully check in advance whether the exemption applies to them.\n\n\nThe guest speaker can use the following text:\n“As a result of the application of the small business scheme under § 19 of the UStG, there is no liability for VAT, I assure you that I am not employed at LMU Munich and that I will take care of the taxation of the income.”",
     "crumbs": [
       "Home",
       "Financial procedures",
@@ -1916,7 +2108,18 @@
     "href": "financial-procedures/index.html",
     "title": "Financial Procedures",
     "section": "",
-    "text": "some tables linking all subchapters.\n\n\n\n\n\n Back to top",
+    "text": "This section provides guidance on the main financial and administrative procedures used by the OSC, including payments, reimbursements, income, account management, and commonly used forms.",
+    "crumbs": [
+      "Home",
+      "Financial procedures"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/index.html#pages-in-this-section",
+    "href": "financial-procedures/index.html#pages-in-this-section",
+    "title": "Financial Procedures",
+    "section": "Pages in this section",
+    "text": "Pages in this section\n\n\n\nPage\nDescription\n\n\n\n\nGeneral Principles\nThis page gives general rules for payments, documentation, and international invoices.\n\n\nOrganizing an Event\nSee here for procedures regarding guest presenters, travel reimbursement, meals, hotels, and honoraria.\n\n\nBusiness Travel\nInformation and procedure instructions for reimbursement for business travel by OSC staff.\n\n\nPurchasing\nThis page details procedures for purchasing goods and services and processing invoices.\n\n\nIncome\nFind here information and instructions for invoicing OSC services and receiving institutional membership fees.\n\n\nChecking Balance\nThis page contains information on monthly procedures for checking account balances and financial records.\n\n\nFrequently used Forms and Contacts\nThis is a quick reference for commonly used forms and administrative contacts regarding relevant financial procedures.",
     "crumbs": [
       "Home",
       "Financial procedures"
@@ -1927,11 +2130,35 @@
     "href": "financial-procedures/balance.html",
     "title": "Checking Account Balances",
     "section": "",
-    "text": "Back to top",
+    "text": "Every month, Lilia sends Malika the account information and salary sheets (HÜL file) for the previous month.",
     "crumbs": [
       "Home",
       "Financial procedures",
-      "Checking balance"
+      "Checking Balance"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/balance.html#monthly-checks",
+    "href": "financial-procedures/balance.html#monthly-checks",
+    "title": "Checking Account Balances",
+    "section": "Monthly checks",
+    "text": "Monthly checks\nMalika checks that the records received from Lilia match the OSC’s records in the OSC_Finances document.\n\n\n\n\n\n\nNotePrivate document\n\n\n\nThe OSC_Finances document is only accessible to OSC staff.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Checking Balance"
+    ]
+  },
+  {
+    "objectID": "financial-procedures/balance.html#osc_finances-sheet",
+    "href": "financial-procedures/balance.html#osc_finances-sheet",
+    "title": "Checking Account Balances",
+    "section": "OSC_Finances sheet",
+    "text": "OSC_Finances sheet\nThe document contains:\n\nOne sheet per account, including:\n\nindividual grants\nHaushalt\ninternal and external income\nexpenses account\nother relevant accounts\n\nOne sheet for HiWi contracts, including their duration and costs.\nOne sheet for grants, listing:\n\ngrants applied for\namount received\ndeadline to spend the funds\n\nOne sheet for transponders, including the transponder ID provided to each HiWi and the date of return.",
+    "crumbs": [
+      "Home",
+      "Financial procedures",
+      "Checking Balance"
     ]
   },
   {
@@ -2212,7 +2439,7 @@
     "href": "osc-events/index.html#pages-in-this-section",
     "title": "Organizing an OSC Event",
     "section": "Pages in this section",
-    "text": "Pages in this section\n\n\n\nPage\nDescription\n\n\n\n\nCreating a Program\nThis section provides guidance on designing and planning new OSC programs. It covers the entire process, from defining the target audience and inviting presenters to coordinating logistics, communication, and administrative tasks.\n\n\nLiaising with Presenters\nProvides guidelines and reusable templates for communicating with instructors, guest speakers, panelists, and other event contributors throughout the planning and delivery of OSC events.\n\n\nRegistration\nThis section explains how to set up and manage registrations for OSC events. It includes guidance on creating registration pages, managing participants and waiting lists, and collecting relevant pre-event information. Here, you will find specific information for navigating Pretix.\n\n\nApplications\nSee here to find information and instructions for setting up application pages for events that require you to screen applicants before accepting them as participants. Included in this section is specific details for navigating formR.\n\n\nAdvertisement\nSee here to find information about our advertisement outlets, and instructions for setting up matomo campaign and writing mass personalized emails.\n\n\nLiaising with Attendees\nSee this page for useful information, templates, and examples for liaising with attendees before, during, and after OSC events, including registration, logistics, event updates, and follow-up communication.\n\n\nAdditional Preparation\nSee here for a checklist of additional tasks and considerations for event preparation, including technical testing, logistical planning, participant support, and final preparations before the event.\n\n\nLogistics within the Event\nThis section outlines the logistical procedures for different OSC event formats, including hybrid events and the Open Science Summer School. It covers equipment, room and Zoom setup, presenter support, and session facilitation.\n\n\nWrap up and Feedback\nThis section outlines the post-event tasks required after an OSC event, including collecting feedback, sharing event materials, and communicating with participants and instructors. It also provides reusable email templates for common follow-up communications.\n\n\nEvent Evaluation\nGuidance on post-event evaluation, including feedback collection and updating event reach and impact statistics.",
+    "text": "Pages in this section\n\n\n\nPage\nDescription\n\n\n\n\nCreating a Program\nGuidance on designing and planning new OSC programs, covering the entire process from defining the target audience and inviting presenters to coordinating logistics, communication, and administrative tasks.\n\n\nLiaising with Presenters\nGuidelines and reusable templates for communicating with instructors, guest speakers, panelists, and other event contributors.\n\n\nRegistration\nExplanations on how to set up and manage registrations for OSC events, including how to create registration pages, manage participants and waiting lists, and collect relevant pre-event information (specific information for navigating Pretix).\n\n\nApplications\nInformation for setting up application pages for events that require you to screen applicants first (specific details for navigating formR).\n\n\nAdvertisement\nSee here for information about our advertisement outlets, instructions for setting up Matomo campaigns and writing mass personalized emails.\n\n\nLiaising with Attendees\nUuseful information, templates, and examples for liaising with attendees before, during, and after OSC events, including registration, logistics, event updates, and follow-up communication.\n\n\nAdditional Preparation\nA checklist of additional tasks and considerations for event preparation, including technical testing, logistical planning, participant support, and final preparations before the event.\n\n\nLogistics within the Event\nOutline of the logistical procedures for OSC event formats, including hybrid events and the Open Science Summer School (equipment, room and Zoom setup, presenter support, and session facilitation).\n\n\nWrap up and Feedback\nInstructions and templates for post-event tasks, including collecting feedback, sharing event materials, and communicating with participants and instructors.\n\n\nEvent Evaluation\nGuidance on post-event evaluation, including feedback collection and updating event reach and impact statistics.",
     "crumbs": [
       "Home",
       "Organizing an OSC Event"
