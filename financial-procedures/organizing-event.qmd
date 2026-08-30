@@ -1,4 +1,117 @@
 ---
-title: "Organizing events"
+title: "Organizing an Event"
 ---
 
+This page outlines the main administrative procedures for organizing OSC events involving guest presenters, travel reimbursement, meals, and honoraria.
+
+## Guest Presenters
+
+### Before the Visit
+
+Before the guest's visit:
+
+1. Print the **invitation letter or event programme**.
+2. Ask the guest to complete `Reisekostenerstattung_Externe.doc`.
+3. Determine whether the guest will receive:
+   - travel reimbursement
+   - hotel
+   - meal
+   - honorarium
+
+Guests receiving payments require either:
+
+- a **German Tax ID** (or application); or
+- the relevant tax documentation.
+
+::: {.callout-note}
+# German Tax ID waived
+
+In the future, we expect that the registration or application for a German Tax ID and date of birth can be waived if the expected total payment to the person within a calendar year is **less than €3,000**.
+:::
+
+## Hotel
+
+1. Obtain an invoice addressed to:
+
+```text
+LMU Open Science Center
+Ludwig-Maximilians-Universität München
+Department Psychologie
+Leopoldstr. 13, Room 3320
+Postfach 03
+80802 München
+VAT: DE811205325
+```
+
+2. Complete **Muster 30**.
+
+## Guest Travel Reimbursement
+
+To issue the reimburse for travel expenses to either a German or foreign bank account, see the following:
+
+::: {.panel-tabset}
+
+## German Bank Account
+
+- Guest completes **Muster 30**, fields 7–14.
+- Print the form and have the guest **sign it in person**.
+- **Buchungsstelle:** 547.
+
+## Foreign Bank Account
+
+- Complete **Muster 35**.
+- If another currency was used, attach an **exchange-rate screenshot**. Make sure the exchange rate is from the **day of payment**.
+- Print the form and have it **signed in person**.
+- **Buchungsstelle:** 547.
+:::
+
+For both types of bank accounts, attach:
+
+- tickets
+- proof of payment
+- guest's German Tax ID
+
+## Meals
+
+::: {.callout-important}
+# When are meals permitted? 
+
+Meals can be legally permitted if **at least 50% of attendees are non-LMU guests**.
+:::
+
+For meal reimbursement:
+
+1. Print the **invitation or programme**.
+2. Obtain a detailed restaurant invoice (**Bewirtungsbeleg**).
+3. Annotate the receipt with:
+   - who
+   - why
+   - amount
+4. Scan and print the annotated receipt again.
+5. Complete the **Bewirtungsformular**.
+6. Keep the **participant list** in case of an audit.
+7. Complete **Muster 30**.
+
+## Honoraria
+
+The invoice must contain:
+
+- the **official LMU billing address**
+- the **LMU VAT ID**
+- the speaker's **tax number**, or their university's official address and VAT information
+- a statement concerning VAT
+
+The **VAT statement** should either:
+
+- identify the respective VAT; or
+- state the applicable VAT exemption, for example:
+  - `Kleinunternehmerregelung gemäß §19 UStG`
+  - `"Vortrags- und Unterrichtsleistungen" (§ 4 Nr. 21 b Doppelbuchst. aa)`
+
+::: {.callout-important}
+If a VAT exemption is used, each guest speaker must carefully check in advance whether the exemption applies to them.
+:::
+
+The guest speaker can use the following text:
+
+"As a result of the application of the small business scheme under § 19 of the UStG, there is no liability for VAT, I assure you that I am not employed at LMU Munich and that I will take care of the taxation of the income."

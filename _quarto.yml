@@ -134,7 +134,7 @@ website:
         href: swop/index.qmd
         text: "Switch to Open Program"
 
-      - contents: 
+      - contents:
         href: train-the-trainer/index.qmd
         text: "Train-the-Trainer"
 
@@ -166,18 +166,18 @@ website:
         contents:
           - href: financial-procedures/general.qmd
             text: "General Principles"
-          - href: financial-procedures/organizing-event.qmd 
+          - href: financial-procedures/organizing-event.qmd
             text: "Organizing an Event"
-          - href: financial-procedures/business-travel.qmd 
+          - href: financial-procedures/business-travel.qmd
             text: "Business Travel"
-          - href: financial-procedures/purchasing.qmd 
+          - href: financial-procedures/purchasing.qmd
             text: "Purchasing"
-          - href: financial-procedures/income.qmd 
+          - href: financial-procedures/income.qmd
             text: "Income"
           - href: financial-procedures/balance.qmd
-            text: "Checking balance"
-          - href: financial-procedures/forms-and-contacts.qmd 
-            text: "Frequent Forms and Contacts"
+            text: "Checking Balance"
+          - href: financial-procedures/forms-and-contacts.qmd
+            text: "Frequently used Forms and Contacts"
 
       - section: Archive
         href: archive/index.qmd
