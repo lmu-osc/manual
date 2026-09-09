@@ -1,10 +1,12 @@
 # Imprint and Disclaimer
 
+Code
+
 Information pursuant to § 5 Telemedia Law and § 18 Abs. 2 Medienstaatsvertrag (MStV)
 
 Ludwig-Maximilians-Universität München is a state institution of the Free State of Bavaria and a legal entity under public law (Art. 4 (1) sentence 1 BayHIG). It is legally represented by its President, Professor Dr. med. Dr. h.c. Matthias H. Tschöp.
 
-#### Address
+## Address
 
 Ludwig-Maximilians-Universität München\
 Geschwister-Scholl-Platz 1\
@@ -15,11 +17,11 @@ Web presence: <https://www.lmu.de/de/index.html>\
 Contact: <poststelle@verwaltung.uni-muenchen.de>\
 [Addition contact information](https://www.lmu.de/en/index.html)
 
-#### Notices for encrypted communication
+## Notices for encrypted communication
 
 In the event that you wish to send us an encrypted message, please use the following public X509-certificate for encryption of your message.
 
-#### Authorized Oversight Agency
+## Authorized Oversight Agency
 
 Bavarian State Ministry for Science and Art\
 Salvatorstraße 2\
@@ -27,22 +29,22 @@ Salvatorstraße 2\
 
 Internet: <https://www.stmwk.bayern.de>
 
-#### Sales Tax ID Number of the LMU
+## Sales Tax ID Number of the LMU
 
 Sales tax ID number pursuant to § 27 a Sales Tax Law:\
 DE 811205325
 
-#### Responsible for content according to § 18 para. 2 MStV
+## Responsible for content according to § 18 para. 2 MStV
 
 Ludwig-Maximilians-Universität München\
 Felix Schönbrodt\
 Email: <felix.schoenbrodt@psy.lmu.de>
 
-#### Responsible party for technical implementation
+## Responsible party for technical implementation
 
 The webmaster of the facility is responsible for technical implementation. Technical implementation is handled by the Content Management System Fiona by [Infopark AG](https://www.lmu.de/en/index.html).
 
-#### Statement of Release
+## Statement of Release
 
 The information herein is correct to the best of our knowledge, however, error cannot be avoided with absolute certainty. Solely the specifications in the pertinent legal bases (laws, orders, statutes) are legally binding.
 
@@ -52,7 +54,7 @@ We are not liable for damages caused by the use of this internet offer. This exc
 
 This exclusion of liability does not apply to information that falls within the scope of the Order (EU) 2016/679 of the European Parliament and of the Council dated 27 April 2016 (General Data Protection Regulation). The accuracy and currency of this information is guaranteed.
 
-#### Disclaimer
+## Disclaimer
 
 The information offered by the LMU contains cross-references (“links”) to other internet offers by the LMU or by external, third-parties. Basically the internet pages will open automatically in a new window.
 
