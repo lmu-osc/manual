@@ -842,7 +842,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <div class="quarto-title-block"><div><h1 class="title">Authoring Tutorials for the OSC</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-<p class="subtitle lead">A technical guide to using Quarto and the <code>tutorial-template</code> for authoring tutorials for the OSC</p>
+<p class="subtitle lead">A technical guide to using Quarto and the <code>tutorial-template</code> extension for authoring tutorials for the OSC</p>
 </div>
 
 
@@ -862,9 +862,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="welcome" class="level2">
 <h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
 <p>Welcome to the <strong>Authoring Tutorials</strong> section of the OSC Manual. This guide is for anyone who needs to create or maintain tutorials for the Open Science Center website — whether you are a new staff member creating your first tutorial, or an experienced contributor looking for a refresher on our tooling and processes.</p>
-<p>This section covers the <strong>technical aspects</strong> of authoring tutorials: how we use <a href="https://quarto.org">Quarto</a> to build our tutorial websites, how to work with the <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code></a> repository, and what steps are required to get a tutorial from a draft to a published, citable resource.</p>
+<p>This section covers the <strong>technical aspects</strong> of authoring tutorials: how we use <a href="https://quarto.org">Quarto</a> to build our tutorial websites, how to work with the <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code></a> repository and Quarto extension, and what steps are required to get a tutorial from a draft to a published, citable resource.</p>
 <p>We do not prescribe <em>what</em> you should write or how you should structure your content pedagogically. Instead, we provide an overview of the <strong>tools and workflows</strong> we use, so you can focus on writing great tutorials without worrying about the technical setup.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note callout-titled" title="Who is this for?">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -887,8 +887,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>If you are new to Quarto, start here. This chapter provides a brief introduction to what Quarto is and how we use it to create our website. It covers:</p>
 <ul>
 <li>The <code>.qmd</code> file format (YAML front matter, Markdown content, and code chunks)</li>
-<li>Quarto projects vs.&nbsp;standalone documents</li>
-<li>Installing Quarto and essential commands (<code>quarto preview</code>, <code>quarto render</code>, <code>quarto publish</code>)</li>
+<li>Quarto projects vs.&nbsp;standalone documents, and what the <code>tutorial-template</code> project type adds</li>
+<li>Installing Quarto and essential commands (<code>quarto preview</code>, <code>quarto use template</code>, <code>quarto update</code>, <code>quarto publish</code>)</li>
 <li>A typical authoring workflow</li>
 <li>Common Quarto features you will use frequently: figures, cross-references, callout blocks, code chunks, and tables</li>
 <li>Shortcuts and tips for working efficiently</li>
@@ -898,8 +898,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="tutorial-template-walkthrough">2. <a href="../authoring-tutorials/tutorial-template.html">Tutorial Template Walkthrough</a></h3>
 <p>This chapter provides a detailed, file-by-file walkthrough of the <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code></a> repository — the standardized starting point for all of our tutorials. It covers:</p>
 <ul>
-<li>How to create a new tutorial from the template (step-by-step)</li>
+<li>How to create a new tutorial from the template with <code>quarto use template</code> (step-by-step)</li>
 <li>What each file and directory in the template does, and which ones you need to edit</li>
+<li>How the <code>tutorial-template</code> Quarto extension handles theming, branding, and the page footer</li>
 <li>The built-in <strong>GitHub Actions workflows</strong> and what they do</li>
 <li>A recommended order of operations for adapting the template to your tutorial</li>
 <li>Common pitfalls and what <em>not</em> to do</li>
@@ -910,9 +911,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Once your tutorial content is ready, this chapter walks you through everything needed to go from a draft to a live, citable publication. It covers:</p>
 <ul>
 <li>The review process (how feedback is collected and resolved via GitHub issues and pull requests)</li>
-<li>A pre-publication checklist (verifying content, updating <code>CITATION.cff</code>, running <code>quarto check</code>, setting up <code>renv</code>)</li>
+<li>A pre-publication checklist (verifying content, updating <code>CITATION.cff</code>, running <code>quarto check</code>, setting up <code>renv</code> if you use R)</li>
 <li>Activating GitHub Pages (the one-time <code>quarto publish gh-pages</code> command)</li>
 <li>Making the site live (merging into the tutorials repository and automated deployment)</li>
+<li>Keeping the <code>tutorial-template</code> extension up to date</li>
 <li>Setting up a DOI via Zenodo and GitHub releases</li>
 </ul>
 <hr>
@@ -922,11 +924,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="quick-start">Quick Start</h2>
 <p>If you are an experienced author who just needs a reminder of the key steps, here is the condensed workflow:</p>
 <ol type="1">
-<li><strong>Create a new repository</strong> from the <a href="https://github.com/lmu-osc/tutorial-template"><code>tutorial-template</code></a> using the “Use this template” button on GitHub.</li>
-<li><strong>Clone your new repository</strong> and open the folder in your editor.</li>
+<li><strong>Create your project from the template</strong> with <code>quarto use template lmu-osc/tutorial-template</code> — this copies the starter files and installs the extension in one step.</li>
+<li><strong>Create a repository</strong> for your tutorial in the <code>lmu-osc</code> organization (an OSC staff member can create it for you if you do not have permission) and push your project to it.</li>
 <li><strong>Update <code>_quarto.yml</code></strong> with your tutorial’s title, repository URL, and navigation structure.</li>
 <li><strong>Write your content</strong> in <code>.qmd</code> files, previewing with <code>quarto preview</code>.</li>
-<li><strong>Run the pre-publication checklist</strong> (verify content, update <code>CITATION.cff</code>, activate GitHub Pages).</li>
+<li><strong>Pre-publication checks</strong>: verify your content, update <code>CITATION.cff</code>, activate GitHub Pages with <code>quarto publish gh-pages</code></li>
 <li><strong>Submit for review</strong> and iterate on feedback.</li>
 <li><strong>Merge and publish</strong> — your tutorial goes live automatically.</li>
 </ol>
@@ -1423,46 +1425,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Authoring Tutorials for the OSC</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> A technical guide to using Quarto and the `tutorial-template` for authoring tutorials for the OSC</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> A technical guide to using Quarto and the `tutorial-template` extension for authoring tutorials for the OSC</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">## Welcome</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Welcome to the **Authoring Tutorials** section of the OSC Manual. This guide is for anyone who needs to create or maintain tutorials for the Open Science Center website — whether you are a new staff member creating your first tutorial, or an experienced contributor looking for a refresher on our tooling and processes.</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This section covers the **technical aspects** of authoring tutorials: how we use <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org)</span> to build our tutorial websites, how to work with the <span class="co">[</span><span class="ot">`tutorial-template`</span><span class="co">](https://github.com/lmu-osc/tutorial-template)</span> repository, and what steps are required to get a tutorial from a draft to a published, citable resource.</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This section covers the **technical aspects** of authoring tutorials: how we use <span class="co">[</span><span class="ot">Quarto</span><span class="co">](https://quarto.org)</span> to build our tutorial websites, how to work with the <span class="co">[</span><span class="ot">`tutorial-template`</span><span class="co">](https://github.com/lmu-osc/tutorial-template)</span> repository and Quarto extension, and what steps are required to get a tutorial from a draft to a published, citable resource.</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>We do not prescribe *what* you should write or how you should structure your content pedagogically. Instead, we provide an overview of the **tools and workflows** we use, so you can focus on writing great tutorials without worrying about the technical setup.</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Who is this for?</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>This guide is intended primarily for **OSC staff** or other individuals who are responsible for creating and maintaining tutorials. However, much of the advice here is applicable to any Quarto project. Even if you are using a different setup, the tips and best practices covered in these pages are recommended reading for anyone interested in learning more about how our websites are built and/or who wishes to contribute to the OSC web presence.</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## What You Will Learn</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>This section is organized into three chapters, meant to be read in order:</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. [Quarto Overview and Tips](quarto-overview.qmd)</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>If you are new to Quarto, start here. This chapter provides a brief introduction to what Quarto is and how we use it to create our website. It covers:</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The <span class="in">`.qmd`</span> file format (YAML front matter, Markdown content, and code chunks)</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quarto projects vs. standalone documents</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Installing Quarto and essential commands (<span class="in">`quarto preview`</span>, <span class="in">`quarto render`</span>, <span class="in">`quarto publish`</span>)</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A typical authoring workflow</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Common Quarto features you will use frequently: figures, cross-references, callout blocks, code chunks, and tables</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Shortcuts and tips for working efficiently</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. [Tutorial Template Walkthrough](tutorial-template.qmd)</span></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>This chapter provides a detailed, file-by-file walkthrough of the <span class="co">[</span><span class="ot">`tutorial-template`</span><span class="co">](https://github.com/lmu-osc/tutorial-template)</span> repository — the standardized starting point for all of our tutorials. It covers:</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How to create a new tutorial from the template (step-by-step)</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What each file and directory in the template does, and which ones you need to edit</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>::: {.callout-note title="Who is this for?"}</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>This guide is intended primarily for **OSC staff** or other individuals who are responsible for creating and maintaining tutorials. However, much of the advice here is applicable to any Quarto project. Even if you are using a different setup, the tips and best practices covered in these pages are recommended reading for anyone interested in learning more about how our websites are built and/or who wishes to contribute to the OSC web presence.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## What You Will Learn</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>This section is organized into three chapters, meant to be read in order:</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. [Quarto Overview and Tips](quarto-overview.qmd)</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>If you are new to Quarto, start here. This chapter provides a brief introduction to what Quarto is and how we use it to create our website. It covers:</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The <span class="in">`.qmd`</span> file format (YAML front matter, Markdown content, and code chunks)</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Quarto projects vs. standalone documents, and what the <span class="in">`tutorial-template`</span> project type adds</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Installing Quarto and essential commands (<span class="in">`quarto preview`</span>, <span class="in">`quarto use template`</span>, <span class="in">`quarto update`</span>, <span class="in">`quarto publish`</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A typical authoring workflow</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Common Quarto features you will use frequently: figures, cross-references, callout blocks, code chunks, and tables</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Shortcuts and tips for working efficiently</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. [Tutorial Template Walkthrough](tutorial-template.qmd)</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>This chapter provides a detailed, file-by-file walkthrough of the <span class="co">[</span><span class="ot">`tutorial-template`</span><span class="co">](https://github.com/lmu-osc/tutorial-template)</span> repository — the standardized starting point for all of our tutorials. It covers:</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How to create a new tutorial from the template with <span class="in">`quarto use template`</span> (step-by-step)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>What each file and directory in the template does, and which ones you need to edit</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>How the <span class="in">`tutorial-template`</span> Quarto extension handles theming, branding, and the page footer</span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The built-in **GitHub Actions workflows** and what they do</span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A recommended order of operations for adapting the template to your tutorial</span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Common pitfalls and what *not* to do</span>
@@ -1472,26 +1474,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>Once your tutorial content is ready, this chapter walks you through everything needed to go from a draft to a live, citable publication. It covers:</span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The review process (how feedback is collected and resolved via GitHub issues and pull requests)</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A pre-publication checklist (verifying content, updating <span class="in">`CITATION.cff`</span>, running <span class="in">`quarto check`</span>, setting up <span class="in">`renv`</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>A pre-publication checklist (verifying content, updating <span class="in">`CITATION.cff`</span>, running <span class="in">`quarto check`</span>, setting up <span class="in">`renv`</span> if you use R)</span>
 <span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Activating GitHub Pages (the one-time <span class="in">`quarto publish gh-pages`</span> command)</span>
 <span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Making the site live (merging into the tutorials repository and automated deployment)</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Setting up a DOI via Zenodo and GitHub releases</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## Quick Start</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>If you are an experienced author who just needs a reminder of the key steps, here is the condensed workflow:</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Create a new repository** from the <span class="co">[</span><span class="ot">`tutorial-template`</span><span class="co">](https://github.com/lmu-osc/tutorial-template)</span> using the "Use this template" button on GitHub.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Clone your new repository** and open the folder in your editor.</span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Update `_quarto.yml`** with your tutorial's title, repository URL, and navigation structure.</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Write your content** in <span class="in">`.qmd`</span> files, previewing with <span class="in">`quarto preview`</span>.</span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Run the pre-publication checklist** (verify content, update <span class="in">`CITATION.cff`</span>, activate GitHub Pages).</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**Submit for review** and iterate on feedback.</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>**Merge and publish** — your tutorial goes live automatically.</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>For full details on each step, follow the chapters above in order. If you get stuck or have questions, reach out to an OSC staff member or <span class="co">[</span><span class="ot">open an issue</span><span class="co">](https://github.com/lmu-osc/manual/issues)</span> in the OSC Manual repository.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Keeping the <span class="in">`tutorial-template`</span> extension up to date</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Setting up a DOI via Zenodo and GitHub releases</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu">## Quick Start</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>If you are an experienced author who just needs a reminder of the key steps, here is the condensed workflow:</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Create your project from the template** with <span class="in">`quarto use template lmu-osc/tutorial-template`</span> — this copies the starter files and installs the extension in one step.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Create a repository** for your tutorial in the <span class="in">`lmu-osc`</span> organization (an OSC staff member can create it for you if you do not have permission) and push your project to it.</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Update `_quarto.yml`** with your tutorial's title, repository URL, and navigation structure.</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Write your content** in <span class="in">`.qmd`</span> files, previewing with <span class="in">`quarto preview`</span>.</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>**Pre-publication checks**: verify your content, update <span class="in">`CITATION.cff`</span>, activate GitHub Pages with <span class="in">`quarto publish gh-pages`</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>**Submit for review** and iterate on feedback.</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>**Merge and publish** — your tutorial goes live automatically.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>For full details on each step, follow the chapters above in order. If you get stuck or have questions, reach out to an OSC staff member or <span class="co">[</span><span class="ot">open an issue</span><span class="co">](https://github.com/lmu-osc/manual/issues)</span> in the OSC Manual repository.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

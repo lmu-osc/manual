@@ -2,13 +2,13 @@
 
 Code
 
-A technical guide to using Quarto and the `tutorial-template` for authoring tutorials for the OSC
+A technical guide to using Quarto and the `tutorial-template` extension for authoring tutorials for the OSC
 
 ## Welcome
 
 Welcome to the **Authoring Tutorials** section of the OSC Manual. This guide is for anyone who needs to create or maintain tutorials for the Open Science Center website — whether you are a new staff member creating your first tutorial, or an experienced contributor looking for a refresher on our tooling and processes.
 
-This section covers the **technical aspects** of authoring tutorials: how we use [Quarto](https://quarto.org) to build our tutorial websites, how to work with the [`tutorial-template`](https://github.com/lmu-osc/tutorial-template) repository, and what steps are required to get a tutorial from a draft to a published, citable resource.
+This section covers the **technical aspects** of authoring tutorials: how we use [Quarto](https://quarto.org) to build our tutorial websites, how to work with the [`tutorial-template`](https://github.com/lmu-osc/tutorial-template) repository and Quarto extension, and what steps are required to get a tutorial from a draft to a published, citable resource.
 
 We do not prescribe *what* you should write or how you should structure your content pedagogically. Instead, we provide an overview of the **tools and workflows** we use, so you can focus on writing great tutorials without worrying about the technical setup.
 
@@ -27,8 +27,8 @@ This section is organized into three chapters, meant to be read in order:
 If you are new to Quarto, start here. This chapter provides a brief introduction to what Quarto is and how we use it to create our website. It covers:
 
 - The `.qmd` file format (YAML front matter, Markdown content, and code chunks)
-- Quarto projects vs. standalone documents
-- Installing Quarto and essential commands (`quarto preview`, `quarto render`, `quarto publish`)
+- Quarto projects vs. standalone documents, and what the `tutorial-template` project type adds
+- Installing Quarto and essential commands (`quarto preview`, `quarto use template`, `quarto update`, `quarto publish`)
 - A typical authoring workflow
 - Common Quarto features you will use frequently: figures, cross-references, callout blocks, code chunks, and tables
 - Shortcuts and tips for working efficiently
@@ -37,8 +37,9 @@ If you are new to Quarto, start here. This chapter provides a brief introduction
 
 This chapter provides a detailed, file-by-file walkthrough of the [`tutorial-template`](https://github.com/lmu-osc/tutorial-template) repository — the standardized starting point for all of our tutorials. It covers:
 
-- How to create a new tutorial from the template (step-by-step)
+- How to create a new tutorial from the template with `quarto use template` (step-by-step)
 - What each file and directory in the template does, and which ones you need to edit
+- How the `tutorial-template` Quarto extension handles theming, branding, and the page footer
 - The built-in **GitHub Actions workflows** and what they do
 - A recommended order of operations for adapting the template to your tutorial
 - Common pitfalls and what *not* to do
@@ -48,9 +49,10 @@ This chapter provides a detailed, file-by-file walkthrough of the [`tutorial-tem
 Once your tutorial content is ready, this chapter walks you through everything needed to go from a draft to a live, citable publication. It covers:
 
 - The review process (how feedback is collected and resolved via GitHub issues and pull requests)
-- A pre-publication checklist (verifying content, updating `CITATION.cff`, running `quarto check`, setting up `renv`)
+- A pre-publication checklist (verifying content, updating `CITATION.cff`, running `quarto check`, setting up `renv` if you use R)
 - Activating GitHub Pages (the one-time `quarto publish gh-pages` command)
 - Making the site live (merging into the tutorials repository and automated deployment)
+- Keeping the `tutorial-template` extension up to date
 - Setting up a DOI via Zenodo and GitHub releases
 
 ------------------------------------------------------------------------
@@ -59,11 +61,11 @@ Once your tutorial content is ready, this chapter walks you through everything n
 
 If you are an experienced author who just needs a reminder of the key steps, here is the condensed workflow:
 
-1.  **Create a new repository** from the [`tutorial-template`](https://github.com/lmu-osc/tutorial-template) using the “Use this template” button on GitHub.
-2.  **Clone your new repository** and open the folder in your editor.
+1.  **Create your project from the template** with `quarto use template lmu-osc/tutorial-template` — this copies the starter files and installs the extension in one step.
+2.  **Create a repository** for your tutorial in the `lmu-osc` organization (an OSC staff member can create it for you if you do not have permission) and push your project to it.
 3.  **Update `_quarto.yml`** with your tutorial’s title, repository URL, and navigation structure.
 4.  **Write your content** in `.qmd` files, previewing with `quarto preview`.
-5.  **Run the pre-publication checklist** (verify content, update `CITATION.cff`, activate GitHub Pages).
+5.  **Pre-publication checks**: verify your content, update `CITATION.cff`, activate GitHub Pages with `quarto publish gh-pages`
 6.  **Submit for review** and iterate on feedback.
 7.  **Merge and publish** — your tutorial goes live automatically.
 
