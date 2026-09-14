@@ -113,13 +113,13 @@ If you are unsure about this step or run into errors, reach out to an OSC staff 
 
 ---
 
-## Making the Site Live
+## Live Tutorial Sites
 
-Once you have completed the checklist above and your tutorial has been approved through the review process, it is time to publish.
+Once you have completed the checklist above and your tutorial has been approved through the review process and you have run `quarto publish gh-pages`, your tutorial will be live on the OSC website. The URL will follow the pattern: `https://lmu-osc.github.io/<tutorial-name>/`.
 
-### Final checks before merging
+However, you should still run some additional checks to ensure everything is working as expected before beginning to advertise your tutorial to the public. See the next section for a final checklist of items to verify before merging your tutorial into the main tutorials repository.
 
-Before your tutorial is merged into the main tutorials repository, take a moment to confirm the following:
+### Final Checks Before Advertising
 
 - [ ] All review feedback has been addressed and the corresponding issues/PRs are closed
 - [ ] The placeholder files have been renamed (`CITATION.cff`, `README.md`)
@@ -130,26 +130,6 @@ Before your tutorial is merged into the main tutorials repository, take a moment
 - [ ] No broken links remain
 - [ ] The repository is **public** (GitHub Pages does not work with private repositories)
 
-### Merging into the tutorials repository
-
-Currently, all published OSC tutorials live in the [`tutorials`](https://github.com/lmu-osc/tutorials) repository. Your tutorial repository must be merged into `tutorials` for it to appear on the live website. An OSC staff member can help coordinate this merge.
-
-### Automated deployment
-
-After the merge, every push to the `main` branch of the `tutorials` repository automatically triggers the **Render Quarto Site** GitHub Actions workflow, which:
-
-1. Checks out the latest code
-2. Restores the R environment (if using `renv`)
-3. Renders the site with Quarto
-4. Deploys the output to GitHub Pages
-
-Your tutorial will then be live.
-
-::: {.callout-info}
-You can monitor the progress of any workflow run in the **Actions** tab of your repository on GitHub. If a step fails, inspect the logs — they often include helpful error messages. If you are unsure what to do after a failure, open an issue in your repository and paste the error or a screenshot.
-:::
-
----
 
 ## Zenodo Integration and DOIs
 
@@ -194,7 +174,7 @@ This step requires **admin-level access** to the OSC Zenodo organization. If you
 Once the connection is active, follow these steps to generate a DOI:
 
 1. **Update `CITATION.cff`** — make sure the version number in `CITATION.cff` matches the release tag you plan to use
-2. **Create a new release** on GitHub — go to your repository's **Releases** page, click **"Draft a new release"**, set a version tag (e.g., `v1.0.0`), add release notes, and publish
+2. **Create a new release** on GitHub — go to your repository's **Releases** page, click **"Draft a new release"**, set a version tag (e.g., `v0.1.0`), add release notes, and publish
 3. **Wait for Zenodo** — within a few minutes, Zenodo will automatically create a new record and assign a DOI
 4. **Add the DOI back into your project** — once generated, add it to `CITATION.cff` and to the `citation:` block in `about.qmd` so it appears on the site
 
