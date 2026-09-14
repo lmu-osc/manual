@@ -851,28 +851,44 @@
     "href": "lrz-gitlab/index.html",
     "title": "LRZ GitLab",
     "section": "",
-    "text": "The LRZ (Leibniz Supercomputing Centre) hosts an instance of GitLab for LMU and several other member institutions in Munich. The LMU Open Science Center maintains a group on this instance where we host code and documentation repositories that are primarily related to our server infrastructure."
+    "text": "The LRZ (Leibniz Supercomputing Centre) hosts an instance of GitLab for LMU and several other member institutions in Munich. The LMU Open Science Center maintains a group on this instance where we host code and documentation repositories that are primarily related to our server infrastructure.",
+    "crumbs": [
+      "Home",
+      "LRZ GitLab"
+    ]
   },
   {
     "objectID": "lrz-gitlab/index.html#overview",
     "href": "lrz-gitlab/index.html#overview",
     "title": "LRZ GitLab",
     "section": "",
-    "text": "The LRZ (Leibniz Supercomputing Centre) hosts an instance of GitLab for LMU and several other member institutions in Munich. The LMU Open Science Center maintains a group on this instance where we host code and documentation repositories that are primarily related to our server infrastructure."
+    "text": "The LRZ (Leibniz Supercomputing Centre) hosts an instance of GitLab for LMU and several other member institutions in Munich. The LMU Open Science Center maintains a group on this instance where we host code and documentation repositories that are primarily related to our server infrastructure.",
+    "crumbs": [
+      "Home",
+      "LRZ GitLab"
+    ]
   },
   {
     "objectID": "lrz-gitlab/index.html#whats-hosted-here",
     "href": "lrz-gitlab/index.html#whats-hosted-here",
     "title": "LRZ GitLab",
     "section": "What’s Hosted Here",
-    "text": "What’s Hosted Here\nThe group contains repositories for the OSC Bibliometrics project as well as a server-admin-howto repository that documents the setup and maintenance of our Nginx and Pretix configurations. Since the LRZ GitLab is not public-facing — only logged-in members can view its contents — most of this content is intended for internal use and is not relevant to the public."
+    "text": "What’s Hosted Here\nThe group contains repositories for the OSC Bibliometrics project as well as a server-admin-howto repository that documents the setup and maintenance of our Nginx and Pretix configurations. Since the LRZ GitLab is not public-facing — only logged-in members can view its contents — most of this content is intended for internal use and is not relevant to the public.",
+    "crumbs": [
+      "Home",
+      "LRZ GitLab"
+    ]
   },
   {
     "objectID": "lrz-gitlab/index.html#access",
     "href": "lrz-gitlab/index.html#access",
     "title": "LRZ GitLab",
     "section": "Access",
-    "text": "Access\nYou will likely only need to access this GitLab instance if you are working on the services covered in the server-admin-howto repo or contributing to the Bibliometrics project. If you need access, please ask Felix or Malika to add you to the group with at least Developer permissions (or Owner permissions if you need to manage the repositories).\nYou can log in using your LMU SSO credentials at the following URL:\nhttps://gitlab.lrz.de/lmu-open-science-center/"
+    "text": "Access\nYou will likely only need to access this GitLab instance if you are working on the services covered in the server-admin-howto repo or contributing to the Bibliometrics project. If you need access, please ask Felix or Malika to add you to the group with at least Developer permissions (or Owner permissions if you need to manage the repositories).\nYou can log in using your LMU SSO credentials at the following URL:\nhttps://gitlab.lrz.de/lmu-open-science-center/",
+    "crumbs": [
+      "Home",
+      "LRZ GitLab"
+    ]
   },
   {
     "objectID": "osc-outreach/newsletter.html",
@@ -1918,7 +1934,7 @@
     "href": "github/lmu-osc-organization.html#repositories",
     "title": "The LMU OSC GitHub Organization",
     "section": "Repositories",
-    "text": "Repositories\nOur organization contains a mix of public and private repositories.\n\nPublic repositories are visible to anyone on the internet. All of our content repositories (like this manual, our tutorials, and public-facing websites) are public. This aligns with our commitment to open science — anyone can view, clone, and learn from our work.\nPrivate repositories are only visible to members of the organization who have been granted access. We use private repositories mainly for internal tools, drafts of projects not yet ready for public release, or configurations that contain sensitive information.\n\n\nTip: If you see a repository name in a discussion or issue but can’t find it, it might be private and you may not have been granted access yet. Ask a team member to add you if you need it.\n\n\nFinding repositories\nYou can browse all repositories by clicking the “Repositories” tab on the organization’s GitHub page. From there you can:\n\nScroll through the list of all public repositories.\nUse the search bar at the top of the page to filter by repository name, description, or topic tags.\nSort by last updated, name, or number of stars.\n\nYou can also star repositories you work on frequently — they’ll be saved under your personal “Starred” tab for quick access later. This is especially useful if you regularly contribute to several different repos.\nIf you’re looking for something specific and can’t find it, ask a team member — it may be in a private repository that you don’t yet have access to, or it may be stored elsewhere.",
+    "text": "Repositories\nOur organization contains a mix of public and private repositories.\n\nPublic repositories are visible to anyone on the internet. All of our content repositories (like this manual, our tutorials, and public-facing websites) are public. This aligns with our commitment to open science — anyone can view, clone, and learn from our work.\nPrivate repositories are only visible to members of the organization who have been granted access. We use private repositories mainly for internal tools, drafts of projects not yet ready for public release, or configurations that contain sensitive information.\n\nBeyond our GitHub organization, we also have an organization on the LRZ GitLab instance for internal server administration and other private work/repositories that should not be in the shared GitHub organization. See LRZ GitLab for more information.\n\nTip: If you see a repository name in a discussion or issue but can’t find it, it might be private and you may not have been granted access yet. Ask a team member to add you if you need it.\n\n\nFinding repositories\nYou can browse all repositories by clicking the “Repositories” tab on the organization’s GitHub page. From there you can:\n\nScroll through the list of all public repositories.\nUse the search bar at the top of the page to filter by repository name, description, or topic tags.\nSort by last updated, name, or number of stars.\n\nYou can also star repositories you work on frequently — they’ll be saved under your personal “Starred” tab for quick access later. This is especially useful if you regularly contribute to several different repos.\nIf you’re looking for something specific and can’t find it, ask a team member — it may be in a private repository that you don’t yet have access to, or it may be stored elsewhere.",
     "crumbs": [
       "Home",
       "GitHub Organization",
