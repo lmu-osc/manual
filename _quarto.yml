@@ -58,6 +58,10 @@ website:
           - href: github/actions.qmd
             text: "GitHub Actions"
 
+      - contents:
+        href: lrz-gitlab/index.qmd
+        text: "LRZ GitLab"
+
       - section: "Updating Website"
         href: updating-website/index.qmd
         contents:

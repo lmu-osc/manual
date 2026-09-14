@@ -45,6 +45,8 @@ Our organization contains a mix of **public** and **private** repositories.
 - **Public repositories** are visible to anyone on the internet. All of our content repositories (like this manual, our tutorials, and public-facing websites) are public. This aligns with our commitment to open science --- anyone can view, clone, and learn from our work.
 - **Private repositories** are only visible to members of the organization who have been granted access. We use private repositories mainly for internal tools, drafts of projects not yet ready for public release, or configurations that contain sensitive information.
 
+Beyond our GitHub organization, we also have an organization on the LRZ GitLab instance for internal server administration and other private work/repositories that should not be in the shared GitHub organization. See [LRZ GitLab](/lrz-gitlab/index.qmd) for more information.
+
 > **Tip:** If you see a repository name in a discussion or issue but can't find it, it might be private and you may not have been granted access yet. Ask a team member to add you if you need it.
 
 
