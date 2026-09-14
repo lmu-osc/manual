@@ -1,0 +1,144 @@
+---
+title: "Tutorial Template Easy Start"
+subtitle: "Step by step guide for creating a new tutorial from the template"
+format:
+  revealjs: default
+---
+
+## 1. Create the project
+
+Run:
+
+```bash
+quarto use template lmu-osc/tutorial-template
+```
+
+This copies the starter files and installs the `tutorial-template` extension.
+
+## 1. Push to a new repository
+
+Create a new GitHub repo (ideally in the lmu-osc organization) and push your project to it:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit from tutorial-template"
+git branch -M main
+git remote add origin https://github.com/lmu-osc/YOUR-REPO-NAME.git
+git push -u origin main
+```
+
+## 1. Rename the placeholders
+
+The template files for CITATION.cff and README.md should be renamed:
+
+```bash
+mv CITATION-template.cff CITATION.cff
+mv README-template.md README.md
+```
+
+See [Creating a New Tutorial from the Template](tutorial-template.qmd#creating-a-new-tutorial-from-the-template) for the details.
+
+## 2. Update `_quarto.yml`
+
+Change these values:
+
+- `website > title:` — set to your tutorial's name
+- `repo-url:` — point to your new repository
+- The GitHub URLs under `navbar > tools` — update to your repository's URL
+- The `page-footer > center` line — update the copyright and author names
+
+The navigation structure (`sidebar:` and `navbar:`) is covered in step 8.
+
+## 3. Edit the homepage (`index.qmd`)
+
+Replace the placeholder text with:
+
+- A welcome message
+- A tutorial overview (topics covered, estimated time)
+- Prerequisites / recommended software
+- A table of contents linking to each section
+
+## 3. Keep the hidden chunk and callouts
+
+- Keep the hidden R chunk that loads `downlit` and `xml2`.
+- Keep the two callout-tips — the one supporting the OSC and the one pointing to the About page.
+
+## 4. Edit the about page (`about.qmd`)
+
+Fill in:
+
+- Author names, affiliations, and ORCIDs — in both the body text **and** the `author:` block of the YAML front matter
+- The date and DOI in the `citation:` block
+- Contributor acknowledgements
+
+## 5. Rename or replace the example topic folders
+
+- The `topic-one/` and `topic-two/` are just placeholder folders--rename or delete them
+- Within each folder, rename or replace the example `.qmd` files.
+- The new folder and page names must be reflected in `_quarto.yml` (see step 8).
+
+## 6. Update `CITATION.cff`
+
+- Add your author names, affiliations, and ORCIDs.
+- Set the version using semantic versioning (e.g. 0.1.5) and the DOI (when available)
+
+This file allows others to cite your tutorial.
+
+## 7. Update `README.md`
+
+Replace the template README with information about your specific tutorial.
+
+## 8. Update `_quarto.yml` navigation
+
+After renaming folders and pages, you **must** update the `sidebar:` section in `_quarto.yml` so the navigation menu matches your new structure.
+
+- `sidebar:` controls the left navigation menu
+- `navbar:` controls the top bar
+
+Example follows in the next section.
+
+## 8. Example sidebar
+
+If you renamed `topic-one/` to `data-preparation/` and have two sub-pages:
+
+```yaml
+sidebar:
+  style: "docked"
+  contents:
+    - text: "Overview"
+      href: index.qmd
+    - section: "Data Preparation"
+      href: data-preparation/index.qmd
+      contents:
+        - href: data-preparation/cleaning.qmd
+          text: "Data Cleaning"
+        - href: data-preparation/transformation.qmd
+          text: "Data Transformation"
+```
+
+## 9. Add images and files
+
+Place images in `assets/` (or a subdirectory of `assets/`). Reference them in your pages with absolute paths:
+
+```markdown
+![Descriptive caption](/assets/images/my-image.png){width=80%}
+```
+
+## 10. Preview locally
+
+```bash
+quarto preview
+```
+
+This starts a local web server and opens your default browser. Changes you make are reflected automatically as you save files.
+
+## 11. Publish
+
+Activate GitHub Pages by running this command **once** from your local project folder:
+
+```bash
+quarto publish gh-pages
+```
+
+This may take several minutes. Check progress in the Actions tab of your repository. After this initial setup, every push to `main` will automatically re-render and deploy the site.
