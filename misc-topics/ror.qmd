@@ -1,0 +1,79 @@
+---
+title: LMU Open Science Center's ROR ID
+subtitle: Our identifier in the Research Organization Registry
+---
+
+::: {.callout-tip}
+**TL;DR**: Our ROR ID is <https://ror.org/029e6qe04>. Use it whenever we need to be identified as an organization rather than as an unstructured string of text — for example in a manuscript submission system, an ORCID record, or a Zenodo deposit. The ID is permanent; our name, acronyms, and website URL can and do change around it.
+:::
+
+---
+
+## What Is ROR?
+
+[ROR](https://ror.org) (the Research Organization Registry) is a global, community-led registry of open persistent identifiers for research organizations. Every organization in the registry is assigned a **ROR ID** — a URL of the form `https://ror.org/xxxxxxxxx` — that refers to that organization and nothing else. ROR is operated as a collaborative initiative by the California Digital Library, Crossref, and DataCite, and it is committed to the [Principles of Open Scholarly Infrastructure](https://openscholarlyinfrastructure.org). All ROR data is available under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) via a free REST API and a public data dump.
+
+ROR serves the same purpose for organizations that [ORCID](https://orcid.org) iDs serve for people and DOIs serve for research outputs. Crucially, it is the default identifier supported in **Crossref DOI metadata**, **DataCite DOI metadata**, and **ORCID records**, so it is the natural way to record an affiliation across most of the scholarly infrastructure we interact with.
+
+### What it is for
+
+Organizations change their names, merge, and move to new web addresses, which makes it hard to reliably connect an institution to its outputs. A ROR ID stays fixed while all of that changes. Use it to:
+
+- Disambiguate our organization from others with similar names — there are many "Open Science Centers".
+- Link our tutorials, software, datasets, and publications back to us as an organization.
+- Keep affiliations meaningful across our own renaming: our domain moved from `uni-muenchen.de` to `lmu.de`, and our name appears in several variations in the wild (see below).
+
+The main thing to avoid is supplying our affiliation only as free text. Wherever a system offers a ROR ID field, use it.
+
+---
+
+## Our ROR Record
+
+Our record is **<https://ror.org/029e6qe04>**, and it is in `active` status.
+
+"LMU Open Science Center" is the registry's **display name** for us, i.e. the preferred label. The other names listed are recognized aliases and acronyms, so a search for any of them should surface our record. Where a system has both a name field and a ROR ID field, entering our display name plus the ROR ID is the most useful combination.
+
+::: {.callout-note}
+#### Ours or LMU München's?
+
+We are an organizational unit of LMU München, so our record is a child of the [LMU München record](https://ror.org/05591te55). Use **our** ROR ID when the Open Science Center itself is the responsible organization — for our tutorials, our software, and our own events. Use the **LMU München** ROR ID when the relevant organization is the university as a whole. 
+:::
+
+---
+
+## Open Items
+
+### Website link is out of date
+
+The record still points to `https://www.osc.uni-muenchen.de`, but our site now lives at <https://www.osc.lmu.de>. We opened an update request in June 2026:
+
+- [ror-updates issue #35540](https://github.com/ror-community/ror-updates/issues/35540) — modify the organization website to `https://www.osc.lmu.de/`. Opened 10 June 2026; still open as of September 2026.
+
+
+### ROR is not yet usable in CITATION.cff
+
+There is no way to record our ROR ID in a `CITATION.cff` file today. As of September 2026 the current released version of the Citation File Format, **CFF 1.2.0** (released August 2021), has no `ror` field for entities — confirmed against the [1.2.0 schema](https://github.com/citation-file-format/citation-file-format/blob/1.2.0/schema.json).
+
+The capability has been merged into CFF's `develop` branch, and ROR documents [how to add ROR iDs to CFF](https://ror.readme.io/v2/docs/add-ror-ids-to-cff), but it will only be released with **CFF 1.3.0**. The maintainers have said they cannot estimate a release date due to restricted resources, and the [1.3.0 milestone](https://github.com/citation-file-format/citation-file-format/milestone/8) remains open. Relevant discussions: [issue #484](https://github.com/citation-file-format/citation-file-format/issues/484) (add a `ror` key for entities) and [issue #548](https://github.com/citation-file-format/citation-file-format/issues/548) (document that `ror` iDs will be supported).
+
+If CFF 1.3.0 lands, our [CITATION.cff](../CITATION.cff) is a candidate for an update so that the OSC can be credited as an organizational author with a machine-readable identifier rather than a plain name string. Until then there is nothing to add.
+
+---
+
+## History of Our Record
+
+| Date | Event |
+|----|----|
+| 11 February 2025 | [Request opened](https://github.com/ror-community/ror-updates/issues/17722) to add LMU Open Science Center to ROR |
+| 26 February 2025 | Record created and published as <https://ror.org/029e6qe04> |
+| 10 June 2026 | [Request opened](https://github.com/ror-community/ror-updates/issues/35540) to update the website link (still pending) |
+
+If a change to our record is ever needed, submit it through the [ROR curation request form](https://curation-request.ror.org) or as an issue in the [ror-updates repository](https://github.com/ror-community/ror-updates). Requests are reviewed by ROR's curation team, so expect a wait.
+
+---
+
+## Further Reading
+
+- [ROR website](https://ror.org) and [ROR documentation](https://ror.readme.io/)
+- [Our record](https://ror.org/029e6qe04) — also available as JSON from <https://api.ror.org/v2/organizations/029e6qe04>, which is handy for scripted lookups
+- [ROR integrations list](https://bit.ly/ror-integrations) — who is consuming ROR IDs, and where
