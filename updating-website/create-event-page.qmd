@@ -84,7 +84,7 @@ Alternatively, you can access the README directly here:
 Choose the category that best describes the event.
 
 | Category | Description |
-|-----------|-------------|
+|---|-------------|
 | **Conference** | Large academic or professional gatherings focused on a specific theme where researchers, practitioners, or organizations present work, share ideas, and network. |
 | **Discussion** | Informal or semi-structured conversations centered around a specific Open Science topic, issue, or challenge. Includes roundtables, and community conversations. |
 | **Event** | General category for activities that do not fit clearly into another category, such as networking events, launches, celebrations, or public engagement activities (e.g., Love Data Week). |

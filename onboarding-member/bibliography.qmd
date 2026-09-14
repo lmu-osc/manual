@@ -33,7 +33,7 @@ https://openalex.org/authors/A5061123357
 The following cells must be updated:
 
 | Column | Information |
-|---------|-------------|
+|---|-------------|
 | A | Enter `1` |
 | B | Enter `1` |
 | C | Enter the `osc_id` |

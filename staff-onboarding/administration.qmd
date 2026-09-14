@@ -82,7 +82,7 @@ You can be given a transponder to access the office space on Leopoldstr 13, room
 If your transponder stops working or is lost, you can either request a replacement from Malika or visit the **Schliessmedien Office**.
 
 | Information | Details |
-|-------------|---------|
+|----|---------|
 | Address | Geschwister-Scholl-Platz 1, Room EZ 008 |
 | Opening hours | Tuesday–Thursday, 08:00–11:30 |
 | Email address | schliessmedien.stammgelaende@verwaltung.uni-muenchen.de |

@@ -120,6 +120,9 @@ The key workflows included in the template are:
 | **Check for Broken Links** | Push to any branch | Scans all pages for broken internal and external links |
 | **Check File Names** | Push to any branch | Validates that all file and directory names use lowercase kebab-case |
 
+: {tbl-colwidths="[25,75]"}
+
+
 These workflows run automatically on GitHub when you push changes. You can monitor them in the **Actions** tab of your repository on GitHub. If a workflow fails, click on the failed run to inspect the logs — they usually include a clear description of what went wrong.
 
 For a more detailed explanation of each workflow, refer to the [Tutorial Template Walkthrough](tutorial-template.qmd).

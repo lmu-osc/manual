@@ -85,7 +85,7 @@ Alternatively, you can access the README directly here:
 Choose the category that best describes the news item.
 
 | Category | Description |
-|-----------|-------------|
+|---|-------------|
 | **Announcement** | Important organizational updates, major changes, launches, partnerships, or general news that does not fit into a more specific category. |
 | **Awards/Recognition** | Awards, honors, grants, nominations, or other forms of recognition received by OSC members or affiliated projects. |
 | **Call for Application** | Opportunities requiring applications, such as training programs, workshops, summer schools, fellowships, or other initiatives with registration or application deadlines. |
