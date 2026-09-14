@@ -4,7 +4,7 @@ project:
 website:
   title: "OSC Manual"
   page-footer:
-    center: © 2026 Pat Callahan, Malika Ihle, Elizabeth Waterfield. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
+    center: © 2026 Pat Callahan, Elizabeth Waterfield, Malika Ihle. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
     border: false
   repo-url: https://github.com/lmu-osc/manual
   llms-txt: true
@@ -159,7 +159,6 @@ website:
             text: "Meeting Rooms"
           - href: misc-topics/zenodo.qmd
             text: "Zenodo Community"
-
 
       - section: Financial procedures
         href: financial-procedures/index.qmd
