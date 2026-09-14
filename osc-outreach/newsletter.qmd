@@ -174,6 +174,6 @@ Export the newsletter as a html and image download.
 ![](images/export.png)
 ![](images/html-download.png)
 
-Then extract the html and image folder from the zip file downloaded and open the html file (which will open in your browser). FInally, use the print to pdf function of your browser (removing headers and footers) to create a news item on the main website for record (see [Create news item](../updating-website/create-news-item.qmd)).
+Then extract the html and image folder from the zip file downloaded and open the html file (which will open in your browser). FInally, use the print to pdf function of your browser (removing headers and footers) to create a news item on the main website for record (see [Create news item](/updating-website/create-news-item.qmd)).
 
 ![](images/print-as-pdf.png)

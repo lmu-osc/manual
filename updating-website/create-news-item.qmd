@@ -30,7 +30,7 @@ Malika will usually contact you when a new idea for a news item to be created. S
 
 ### Step 1: Create a GitHub Issue
 
-Following our classic [GitHub workflow](../github/working-practices.qmd), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one and linked it in your to do table).
+Following our classic [GitHub workflow](/github/working-practices.qmd), create an **issue** in the `lmu-osc.github.io` repository (unless Malika has already created one and linked it in your to do table).
 
 Use the following naming convention:
 

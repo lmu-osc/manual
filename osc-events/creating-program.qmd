@@ -63,7 +63,7 @@ The final program should include:
 
 - [ ] Create a webpage for advertising the event on the OSC website.
   - Include the abstract, instructor profile, requirements, and other relevant information.
-  - See the section: [Create an Event Page](../updating-website/create-event-page.qmd).
+  - See the section: [Create an Event Page](/updating-website/create-event-page.qmd).
 - [ ] Draft a flyer.
 - [ ] Draft newsletter items.
 
@@ -71,7 +71,7 @@ The final program should include:
 
 ## Room Booking
 
-For a list of frequently used meeting and teaching rooms, including room capacities and locations, consult the [Meeting Rooms](../misc-topics/meeting-rooms.qmd) page of this manual.
+For a list of frequently used meeting and teaching rooms, including room capacities and locations, consult the [Meeting Rooms](/misc-topics/meeting-rooms.qmd) page of this manual.
 
 - [ ] Book a room as soon as possible once potential dates are available.
 
@@ -110,5 +110,5 @@ Always assign at least one **alternative host** (e.g., another OSC team member).
 ## Payments and Reimbursements
 
 - [ ] Request instructors' bank details for payment.
-- [ ] Prepare all reimbursement and administrative forms (see [Financial Procedures](../financial-procedures/index.qmd))
+- [ ] Prepare all reimbursement and administrative forms (see [Financial Procedures](/financial-procedures/index.qmd))
 - [ ] Collect handwritten signatures during the event, if required.

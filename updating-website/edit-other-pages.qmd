@@ -10,7 +10,7 @@ Detailed instructions for updating important page types such as [Members](create
 
 Before making any changes to the website, follow the standard GitHub workflow described here:
 
-- [GitHub Working Practices](../github/working-practices.qmd)
+- [GitHub Working Practices](/github/working-practices.qmd)
 
 This includes creating an issue, creating a branch, making your changes, and submitting a pull request.
 
