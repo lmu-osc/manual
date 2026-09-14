@@ -2,6 +2,13 @@
 title: "Lab Manual"
 ---
 
+```{r}
+#| echo: false
+
+library(downlit)
+library(xml2)
+```
+
 This website serves as the lab manual for the LMU Open Science Center.
 
 ## For Management
