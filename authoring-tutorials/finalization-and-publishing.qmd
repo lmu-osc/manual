@@ -14,44 +14,17 @@ Once you have created your tutorial content (using the [`tutorial-template`](tut
 
 This chapter is intended primarily for OSC staff who are responsible for creating and maintaining tutorials, though much of the information will also be relevant to external contributors.
 
----
-
-## The Review Process
-
-Before a tutorial is published, it goes through a review period with OSC staff (and optionally with other stakeholders). This ensures the content meets our quality standards and is consistent with the rest of the website.
-
-### How review typically works
-
-1. **Share your draft.** Make your tutorial repository accessible to reviewers (either within the `lmu-osc` organization or by inviting collaborators).
-2. **Collect feedback.** Reviewers provide feedback by opening **GitHub issues** or **pull requests** in your tutorial repository. This keeps the entire process transparent and documented.
-3. **Discuss and revise.** Work through the feedback, make revisions, and discuss any open questions directly in the issues or PRs.
-4. **Get approval.** Once all parties are satisfied, the tutorial is approved for publication.
-
-::: {.callout-important}
-#### Establish a clear review process early
-
-The exact review workflow may vary depending on the tutorial and the preferences of the people involved. What matters is that you and your reviewers agree on a process upfront and **document it in the repository** — for example in the `README.md` or in a `CONTRIBUTING.md` file. This avoids confusion about how feedback should be submitted and who is responsible for what.
-
-At minimum, your documented process should specify:
-
-- **Who** the reviewers will be (e.g., one other OSC staff member, or the entire team)
-- **How** feedback should be submitted (GitHub issues, PRs, or both)
-- **Timeline** — how long reviewers have to provide feedback (e.g., two weeks)
-- **Definition of done** — what constitutes approval (e.g., all issues resolved, or a formal sign-off)
-:::
-
----
 
 ## Pre-Publication Checklist
 
-Before your tutorial can go live, work through the following tasks. Some are required in all cases; others are only necessary if your tutorial uses R code. Checking off these items will help ensure a smooth publication process.
+Before your tutorial goes live, work through the following tasks. Some are required in all cases; others are only necessary if your tutorial uses R code. Checking off these items will help ensure a smooth publication process.
 
 ### 0. Verify your content
 
 Before diving into the technical checklist, do a final review of your tutorial content itself:
 
 - **Read through the entire tutorial** as if you were a learner. Are there any gaps, unclear instructions, or broken flow?
-- **Check all links** — internal links (to other pages within your tutorial) and external links (to websites, documentation, etc.). Broken links frustrate readers and undermine credibility.
+- **Check all links** — internal links (to other pages within your tutorial) and external links (to websites, documentation, etc.). Broken links frustrate readers and undermine credibility. The **Link Checker** workflow will also catch these on the published site.
 - **Verify images and figures** — do all images load correctly? Are the file paths correct? (Remember: use **absolute paths** from the project root, e.g., `/assets/images/my-figure.png`.)
 - **Test code chunks** — if your tutorial includes code, run all code chunks fresh (clear your environment and re-execute) to confirm they produce the expected output without errors.
 - **Check spelling and grammar** — consider using a spell-checker or reading your text aloud to catch awkward phrasing.
@@ -60,9 +33,19 @@ Before diving into the technical checklist, do a final review of your tutorial c
 Quarto's built-in preview is your friend here. Run `quarto preview` in your project directory and navigate through the rendered site as a visitor would. This catches many issues that are invisible when looking at the raw `.qmd` files.
 :::
 
-### 1. Update the `CITATION.cff` file
+### 1. Confirm the template setup was completed
 
-The `CITATION.cff` file contains machine-readable citation metadata for your tutorial. It allows others to cite your work correctly and can be automatically imported into reference managers like Zotero or EndNote.
+Before anything else, make sure you finished the setup steps from the [Tutorial Template Walkthrough](tutorial-template.qmd):
+
+- The placeholder files have been renamed: `CITATION-template.cff` → `CITATION.cff` and `README-template.md` → `README.md`.
+- `_quarto.yml` declares `project: type: tutorial-template` and points `repo-url:` (and the navbar GitHub links) at your repository, not the template's.
+- The `page-footer` copyright line names your authors.
+- The example `topic-one/` / `topic-two/` folders have been renamed or removed, and the `sidebar:` matches your actual structure.
+- The template's demonstration page (renamed to match your project directory, e.g. `my-tutorial.qmd`) has been deleted or is intentionally kept.
+
+### 2. Update the `CITATION.cff` file
+
+The `CITATION.cff` file contains machine-readable citation metadata for your tutorial. It allows others to cite your work correctly and can be automatically imported into reference managers like Zotero or EndNote. The **Check CITATION.cff is Valid** workflow validates it on every push once it exists.
 
 Edit this file to include:
 
@@ -73,15 +56,12 @@ Edit this file to include:
 - **Title** — make sure the title matches your tutorial's title as shown on the website
 - **License** — the template defaults to `CC-BY-SA-4.0` for content and `CC0-1.0` for code; only change these if you have a specific reason
 
-If you are unsure about the format, refer to the [official CITATION.cff documentation](https://citation-file-format.github.io/) for guidance and examples.
+If you are unsure about the format, refer to the [official CITATION.cff documentation](https://citation-file-format.github.io/) for guidance and examples. You can also spot-check the file in R with `cffr::cff_validate()`.
 
-::: {.callout-tip}
-The template repository includes a `CITATION.cff` file with placeholder values. Start by editing that file rather than creating one from scratch. Pay attention to the YAML formatting — indentation matters, and incorrect indentation can cause the file to be unreadable by citation tools.
-:::
 
-### 2. Check your Quarto project (useful if using code chunks)
+### 3. Check your Quarto project (useful if using code chunks)
 
-If your tutorial includes **R code chunks**, you need to take two additional steps to ensure your code will build correctly in the deployment pipeline.
+If your tutorial includes **R code chunks**, there are two additional steps to ensure your code will build correctly in the deployment pipeline.
 
 #### a) Run `quarto check`
 
@@ -105,27 +85,9 @@ renv::snapshot()
 This will create a lockfile (`renv.lock`) that captures the precise versions of all R packages your tutorial depends on. Commit this file to your repository.
 
 ::: {.callout-info}
-If your tutorial does **not** contain any R code chunks, you can skip this step entirely. The deployment pipeline will still work without `renv` for Python- or Markdown-only tutorials.
+If your tutorial does **not** contain any R code chunks, you can skip this step entirely. The **Render Quarto Site** workflow installs the latest R and infers dependencies from your files when no `renv.lock` is present, so Python- or Markdown-only tutorials build fine without one.
 :::
 
-### 3. Understand the built-in CI/CD workflows
-
-The tutorial template comes with several **GitHub Actions workflows** that automate quality checks and deployment. Understanding what these do will help you interpret build results and troubleshoot issues.
-
-The key workflows included in the template are:
-
-| Workflow | Trigger | Purpose |
-|----------|---------|---------|
-| **Render Quarto Site** | Push to `main` | Builds the site with Quarto and deploys to GitHub Pages |
-| **Check for Broken Links** | Push to any branch | Scans all pages for broken internal and external links |
-| **Check File Names** | Push to any branch | Validates that all file and directory names use lowercase kebab-case |
-
-: {tbl-colwidths="[25,75]"}
-
-
-These workflows run automatically on GitHub when you push changes. You can monitor them in the **Actions** tab of your repository on GitHub. If a workflow fails, click on the failed run to inspect the logs — they usually include a clear description of what went wrong.
-
-For a more detailed explanation of each workflow, refer to the [Tutorial Template Walkthrough](tutorial-template.qmd).
 
 ### 4. Activate GitHub Pages (one-time setup)
 
@@ -145,12 +107,6 @@ This command does three things:
 
 Once the `gh-pages` branch exists on GitHub, the **Render Quarto Site** workflow (included in the template) will automatically deploy your tutorial whenever changes are merged into the `main` branch.
 
-::: {.callout-tip}
-#### Do this early!
-
-We recommend running `quarto publish gh-pages` at the **start** of your project, not at the end. This lets you verify that the site is rendering correctly on the live URL as you develop, rather than discovering issues only at publication time.
-:::
-
 ::: {.callout-warning}
 If you are unsure about this step or run into errors, reach out to an OSC staff member for assistance. Also note that GitHub Pages **cannot** be activated for private repositories — your repository must be public.
 :::
@@ -166,10 +122,11 @@ Once you have completed the checklist above and your tutorial has been approved 
 Before your tutorial is merged into the main tutorials repository, take a moment to confirm the following:
 
 - [ ] All review feedback has been addressed and the corresponding issues/PRs are closed
+- [ ] The placeholder files have been renamed (`CITATION.cff`, `README.md`)
 - [ ] The `CITATION.cff` file has accurate author information
 - [ ] `quarto render` completes without errors in your local environment
 - [ ] The `gh-pages` branch exists on GitHub (from running `quarto publish gh-pages`)
-- [ ] All files use lowercase kebab-case names (the **Check File Names** workflow will verify this)
+- [ ] All files use lowercase kebab-case names (the **Filename Checks** workflow will verify this)
 - [ ] No broken links remain
 - [ ] The repository is **public** (GitHub Pages does not work with private repositories)
 
@@ -239,32 +196,15 @@ Once the connection is active, follow these steps to generate a DOI:
 1. **Update `CITATION.cff`** — make sure the version number in `CITATION.cff` matches the release tag you plan to use
 2. **Create a new release** on GitHub — go to your repository's **Releases** page, click **"Draft a new release"**, set a version tag (e.g., `v1.0.0`), add release notes, and publish
 3. **Wait for Zenodo** — within a few minutes, Zenodo will automatically create a new record and assign a DOI
+4. **Add the DOI back into your project** — once generated, add it to `CITATION.cff` and to the `citation:` block in `about.qmd` so it appears on the site
 
 ::: {.callout-note}
 While we recommend keeping the `CITATION.cff` version number and the release tag in sync, this is not strictly required for the DOI to be generated. Zenodo will create a DOI regardless, but matching the numbers avoids confusion for anyone citing your work.
 :::
 
----
 
-## Summary
 
-Here is the complete workflow from draft to published tutorial. Use this as a quick reference to track your progress:
-
-| Step | Description | Required? |
-|------|-------------|-----------|
-| **0. Verify content** | Review your tutorial for errors, test code, check links | ✅ Always |
-| **1. Update `CITATION.cff`** | Add author names, ORCIDs, affiliations, and version | ✅ Always |
-| **2. `quarto check`** | Validate Quarto project and code chunks | Only if using code |
-| **3. Set up `renv`** | Create reproducible R environment with `renv::init()` | Only if using R |
-| **4. Understand CI/CD** | Familiarize yourself with the built-in GitHub Actions workflows | ✅ Always |
-| **5. `quarto publish gh-pages`** | Activate GitHub Pages (do this early!) | ✅ Always |
-| **6. Submit for review** | Share repository with reviewers, collect feedback via issues/PRs | ✅ Always |
-| **7. Final pre-merge checks** | Confirm all checklist items before merging | ✅ Always |
-| **8. Merge into `tutorials`** | Coordinate with OSC staff to merge into the main tutorials repo | ✅ Always |
-| **9. Set up Zenodo** | Ask OSC staff to link the GitHub organization to Zenodo | Recommended |
-| **10. Create a GitHub release** | Tag a version (e.g., `v1.0.0`) and publish to generate a DOI | Recommended |
-
-### Getting help
+## Getting help
 
 If you get stuck at any point, do not hesitate to:
 
