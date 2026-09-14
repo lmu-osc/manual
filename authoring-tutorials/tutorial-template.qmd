@@ -50,10 +50,11 @@ Below is a complete overview of every file and directory in the template. Files 
 | `about.qmd` | An example about page containing license, citation, and contributor information. | **Yes** — fill in author names, affiliations, ORCIDs, DOI, and the date. |
 | `CITATION.cff` | Citation metadata in a machine-readable format. Allows others to cite your tutorial properly. | **Yes** — update with author names, affiliations, and ORCIDs. See the [CITATION.cff documentation](https://citation-file-format.github.io/) for details. |
 
+
 ### Content Pages
 
 | File / Directory | Purpose |
-|------------------|---------|
+|---|---------|
 | `topic-one/` | Example section directory. Contains an `index.qmd` (section landing page) and sub-pages like `page-one.qmd`, `page-two.qmd`. |
 | `topic-one/index.qmd` | Landing page for the first major topic. Has YAML front matter with a title but no H1 heading (the title serves as the H1). |
 | `topic-one/page-one.qmd` | Example sub-page demonstrating good practices: starts with H2 headings (not H1), includes a note about the table of contents. |
@@ -75,7 +76,7 @@ Each section's `index.qmd` acts as a chapter landing page. Additional `.qmd` fil
 ### Styling and Branding
 
 | File | Purpose | Do you need to edit it? |
-|------|---------|------------------------|
+|------|---------------|----------|
 | `lmu-osc-custom.scss` | Site-wide SCSS overrides for colors, fonts, and layout. Sets the navbar background, link colors, and sidebar highlight to OSC green. | Only if you want to change branding colors or site-wide layout. See notes below. |
 | `styles.css` | Additional CSS classes for content-level styling (e.g., `.center`, `.img-border`, `.output-overflow`). | Only if you need custom styling for specific page elements. The pre-defined classes cover common use cases. |
 
@@ -89,7 +90,7 @@ Each section's `index.qmd` acts as a chapter landing page. Additional `.qmd` fil
 ### Licensing
 
 | File | Purpose | Do you need to edit it? |
-|------|---------|------------------------|
+|------|---------------|----------|
 | `LICENSE.md` | The full text of the **CC BY-SA 4.0** license, which covers the tutorial content (narrative text, images, etc.). | Please do not without explicit permission. |
 | `LICENSE-CODE.md` | The full text of the **CC0 1.0 Universal** license, which covers code snippets and configuration files. | Please do not without explicit permission. |
 
@@ -98,7 +99,7 @@ We use a dual-licensing model: the narrative content is CC BY-SA 4.0 (share-alik
 ### Other Files
 
 | File | Purpose | Do you need to edit it? |
-|------|---------|------------------------|
+|------|---------------|----------|
 | `README.md` | The GitHub repository README. Contains the quick overview, structure overview, step-by-step adaptation instructions, and information about GitHub Actions. | **Yes** — update it to describe your specific tutorial. |
 | `404.qmd` | Custom 404 error page shown when visitors try to access a page that does not exist. | Optional — you can customize the message or leave it as-is. |
 | `matomo-analytics.html` | Matomo Analytics tracking snippet, included in the page header via `_quarto.yml`. | **Please ask an OSC staff member to include this for you.** |
@@ -108,7 +109,7 @@ We use a dual-licensing model: the narrative content is CC BY-SA 4.0 (share-alik
 ### Directories
 
 | Directory | Purpose |
-|-----------|---------|
+|---|---------|
 | `assets/` | Place static files here: images, downloadable files, videos, etc. Reference them in your pages with paths like `![](/assets/images/my-figure.png)`. |
 | `_site/` | **Auto-generated.** Contains the rendered HTML output. Do not edit manually. |
 | `.github/workflows/` | Contains GitHub Actions workflow files (see next section). |

@@ -32,7 +32,7 @@ For a detailed walkthrough of how our GitHub repositories automatically archive 
 Only members of the Zenodo community can submit records to it. The community supports four permission levels, each with different capabilities:
 
 | Permission Level | Description | Best suited for |
-|-----------------|-------------|-----------------|
+|----|-------------|-----------------|
 | **Reader** | Can view restricted records but cannot submit new content. | Anyone who wants to browse not-yet-released content. |
 | **Curator** | Can view and curate submissions (approve/reject). | Contributors who need to approve submissions but not manage the community itself. |
 | **Manager** | Can manage community settings, members, and submissions. | Staff who help administer the community day-to-day. |

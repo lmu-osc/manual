@@ -18,7 +18,7 @@ For LinkedIn, you do need to have a **personal account** to then be given access
 Ask Malika or Felix for access credentials to the following OSC accounts which are stored in the root of the LRZ Sync & Share LMU Open Science Center folder:
 
 | Platform | Character Limit | Link |
-|-----------|----------------|------|
+|----|----------|---------|
 | LinkedIn | 3,000 characters | <https://www.linkedin.com/company/91742131/admin/feed/posts/> |
 | BlueSky | 300 characters | <https://bsky.app/profile/lmu-osc.bsky.social> |
 | Mastodon | 500 characters | <https://scicomm.xyz/home> |

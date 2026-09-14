@@ -14,7 +14,9 @@ This section provides information and instructions on the preparation, execution
 | [Applications](application.qmd) | Information for setting up application pages for events that require you to screen applicants first (specific details for navigating **formR**). |
 | [Advertisement](advertisement.qmd) | See here for information about our advertisement outlets, instructions for setting up Matomo campaigns and writing mass personalized emails. |
 | [Liaising with Attendees](liaising-with-attendees.qmd) | Uuseful information, templates, and examples for liaising with attendees before, during, and after OSC events, including registration, logistics, event updates, and follow-up communication. |
-| [Additional Preparation](addtional-prep.qmd) | A checklist of additional tasks and considerations for event preparation, including technical testing, logistical planning, participant support, and final preparations before the event. |
+| [Additional Preparation](additional-prep.qmd) | A checklist of additional tasks and considerations for event preparation, including technical testing, logistical planning, participant support, and final preparations before the event. |
 | [Logistics within the Event](logistics.qmd) | Outline of the logistical procedures for OSC event formats, including hybrid events and the Open Science Summer School (equipment, room and Zoom setup, presenter support, and session facilitation). |
 | [Wrap up and Feedback](wrapup-feedback.qmd) | Instructions and templates for post-event tasks, including collecting feedback, sharing event materials, and communicating with participants and instructors. |
 | [Event Evaluation](event-evaluation.qmd) | Guidance on post-event evaluation, including feedback collection and updating event reach and impact statistics. |
+
+: {tbl-colwidths="[25,75]"}
