@@ -11,7 +11,7 @@ To future staff members: feel free to rearrange, edit, and update content as you
 ## Tech Stack
 
 - [Quarto](https://quarto.org/) for website generation
-- HTML/CSS with [Cosmo theme](https://bootswatch.com/cosmo/)
+- HTML/CSS themed by the [`lmu-osc/tutorial-template`](https://github.com/lmu-osc/tutorial-template) Quarto extension
 - Hosted via GitHub Pages
 
 ## Local Development

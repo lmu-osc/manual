@@ -7,6 +7,7 @@ citation:
   container-title: "LMU Open Science Center"
   url: https://lmu-osc.github.io/manual
   # doi: "DOI HERE"
+  version: 0.0.1
 author:
   - name:
       given: Pat
@@ -56,4 +57,11 @@ This manual was primarily written across 2025 and 2026, and is a living document
 ## Tutorial Template Quarto Extension
 
 This manual was written using the [`lmu-osc/tutorial-template`](https://github.com/lmu-osc/tutorial-template) Quarto extension [@callahan2026].
+
+::: {#refs}
+:::
+
+## How to Cite
+
+**To cite this manual, please refer to the project's [CITATION.cff](CITATION.cff) file or use the BibTeX citation provided in the appendix below.**
 

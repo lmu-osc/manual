@@ -1,6 +1,8 @@
 project:
   type: tutorial-template
 
+repo-url: https://github.com/lmu-osc/manual
+
 website:
   title: "OSC Manual"
   page-footer:
@@ -159,6 +161,8 @@ website:
             text: "Our Licensing Choices"
           - href: misc-topics/main-website-deployment.qmd
             text: "Main Website Deployment Details"
+          - href: misc-topics/osc-server.qmd
+            text: "OSC Server"
           - href: misc-topics/meeting-rooms.qmd
             text: "Meeting Rooms"
           - href: misc-topics/zenodo.qmd
