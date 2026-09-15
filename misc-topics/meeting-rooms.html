@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../misc-topics/zenodo.html" rel="next">
-<link href="../misc-topics/main-website-deployment.html" rel="prev">
+<link href="../misc-topics/osc-server.html" rel="prev">
 <link href="../site_libs/quarto-contrib/quarto-project/lmu-osc/tutorial-template/_extensions/lmu-osc/osc-brand/lmu-osc-favicon.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -91,6 +91,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 
 <!-- See the OSC internal instructions on how to generate and include the code necessary for the Matomo Analytics tracking. -->
+
+
+<!-- Matomo -->
+<script>
+if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+
+}
+</script>
+<!-- End Matomo Code -->
 
 
 </head>
@@ -705,6 +714,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../misc-topics/osc-server.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">OSC Server</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../misc-topics/meeting-rooms.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Meeting Rooms</span></a>
   </div>
@@ -838,8 +853,8 @@ Table&nbsp;1
 </figcaption>
 <div aria-describedby="tbl-rooms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-cc0f5bd2a610e71a8c65" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-cc0f5bd2a610e71a8c65">{"x":{"filter":"none","vertical":false,"caption":"<caption>Common meeting rooms used by the OSC.<\/caption>","data":[["Room 3322","Philologikum Veranstaltungsraum","Philologikum Multifunktionsraum"],["Leopoldstr. 13, Haus 3, 3rd floor","Ground floor, Philologikum library","Ground floor, Philologikum library"],["15 (round table)","24 (classroom)","~15 (round table)"],["Team meetings, small-group workshops","Summer school, Carpentry workshop","Workshops"],["Click &amp; Share, TV screen, ceiling cameras, room audio, podium","Click &amp; Share, front room camera, room audio","Room audio, power outlets per participant"],["Contact Lilia or Malika","via UB (Martin Spenger, Laura Meier)","via UB (Martin Spenger, Laura Meier)"],["Shared meeting room with other chairs; elevator accessible; staff kitchen on same floor","Own kitchen, whiteboard, high tables, podium","Great breakout room for summer schools"]],"container":"<table class=\"display compact\">\n  <thead>\n    <tr>\n      <th>Room Name<\/th>\n      <th>Location<\/th>\n      <th>Capacity<\/th>\n      <th>Best For<\/th>\n      <th>Equipment<\/th>\n      <th>Booking Info<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":50,"scrollX":true,"autoWidth":true,"columnDefs":[{"width":"200px","targets":[3,4,5,6]},{"name":"Room Name","targets":0},{"name":"Location","targets":1},{"name":"Capacity","targets":2},{"name":"Best For","targets":3},{"name":"Equipment","targets":4},{"name":"Booking Info","targets":5},{"name":"Notes","targets":6}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-a6cfe92ebc1b20e4a8d3" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a6cfe92ebc1b20e4a8d3">{"x":{"filter":"none","vertical":false,"caption":"<caption>Common meeting rooms used by the OSC.<\/caption>","data":[["Room 3322","Philologikum Veranstaltungsraum","Philologikum Multifunktionsraum"],["Leopoldstr. 13, Haus 3, 3rd floor","Ground floor, Philologikum library","Ground floor, Philologikum library"],["15 (round table)","24 (classroom)","~15 (round table)"],["Team meetings, small-group workshops","Summer school, Carpentry workshop","Workshops"],["Click &amp; Share, TV screen, ceiling cameras, room audio, podium","Click &amp; Share, front room camera, room audio","Room audio, power outlets per participant"],["Contact Lilia or Malika","via UB (Martin Spenger, Laura Meier)","via UB (Martin Spenger, Laura Meier)"],["Shared meeting room with other chairs; elevator accessible; staff kitchen on same floor","Own kitchen, whiteboard, high tables, podium","Great breakout room for summer schools"]],"container":"<table class=\"display compact\">\n  <thead>\n    <tr>\n      <th>Room Name<\/th>\n      <th>Location<\/th>\n      <th>Capacity<\/th>\n      <th>Best For<\/th>\n      <th>Equipment<\/th>\n      <th>Booking Info<\/th>\n      <th>Notes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":50,"scrollX":true,"autoWidth":true,"columnDefs":[{"width":"200px","targets":[3,4,5,6]},{"name":"Room Name","targets":0},{"name":"Location","targets":1},{"name":"Capacity","targets":2},{"name":"Best For","targets":3},{"name":"Equipment","targets":4},{"name":"Booking Info","targets":5},{"name":"Notes","targets":6}],"order":[],"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
@@ -1295,8 +1310,8 @@ Table&nbsp;1
   </script>
 <nav class="page-navigation column-page-right">
   <div class="nav-page nav-page-previous">
-      <a href="../misc-topics/main-website-deployment.html" class="pagination-link" aria-label="Main Website Deployment Details">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Main Website Deployment Details</span>
+      <a href="../misc-topics/osc-server.html" class="pagination-link" aria-label="OSC Server">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">OSC Server</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

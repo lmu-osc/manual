@@ -26,7 +26,7 @@ Different Hiwis support different OSC activities. Use the sections below to quic
 
 - If you are involved in **public outreach, social media management, newsletter preparation, or content creation**, see the [Public Outreach](osc-outreach/index.llms.md) chapter.
 
-- If you are working on the **Train-the-Trainer** team, see the [Train-the-Trainer](path/link.qmd) chapter.
+- If you are working on the **Train-the-Trainer** team, see the [Train-the-Trainer](train-the-trainer/index.llms.md) chapter.
 
 - If you are assisting with the planning and organization of OSC events, see the [OSC Events](osc-events/index.llms.md) chapter.
 
@@ -41,5 +41,13 @@ Different Hiwis support different OSC activities. Use the sections below to quic
 > **TIP:**
 >
 > If you are new to the OSC, we recommend first reading the [Working Environment](staff-onboarding/working-envi.llms.md) and [Technology Overview](tech-overview.llms.md) chapters to become familiar with the tools and workflows used at the OSC.
+
+> **TIP:**
+>
+> **Like this manual? Be sure to give [the repository](https://github.com/lmu-osc/manual) a star and [follow us on GitHub](https://github.com/lmu-osc)!**
+
+> **TIP:**
+>
+> **If you have questions about this manual, please take a look at the [About](about.llms.md) page.**
 
 Back to top
