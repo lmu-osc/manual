@@ -9,7 +9,7 @@ Our GitHub organization hosts **over 50 repositories** covering a diverse range 
 
 Each repository should contain its own documentation (typically a `README.md`) describing its purpose, contents, and how to use it. This page is meant to provide broader context about how our repositories relate to each other and how they fit into our workflows.
 
-For the conventions that apply to every repository --- visibility, creating a new one, access and roles, and retiring one --- see [Repositories](/github/lmu-osc-organization/repositories.qmd).
+For the conventions that apply to every repository, see [Repositories](/github/lmu-osc-organization/repositories.qmd).
 
 ---
 
