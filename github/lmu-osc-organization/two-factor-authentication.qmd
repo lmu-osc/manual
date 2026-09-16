@@ -1,0 +1,12 @@
+---
+title: Two-Factor Authentication (2FA)
+subtitle: Our 2FA requirement for members, and the methods we recommend
+---
+
+We are in the process of **requiring 2FA** for all members. Even if a password is compromised, a second factor stops someone getting into our repositories and code. If you already have 2FA enabled you're all set; if not, set it up before you can access the organization.
+
+We recommend a **TOTP app** (Google Authenticator, 1Password, Duo, Microsoft Authenticator) or the **GitHub Mobile app**. Passkeys and hardware security keys are also good options. **SMS is not recommended** --- codes sent by text can be intercepted, and GitHub advises against it.
+
+Whichever you choose, **save your recovery codes** in your password manager: they're the only way back into your account if you lose your phone.
+
+> **Read the GitHub docs:** [About two-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication) explains the options and [Configuring two-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication) walks through the setup --- then come back here, and check [Who to ask for help](index.qmd#who-to-ask-for-help) if you get stuck.
