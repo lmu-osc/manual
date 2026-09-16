@@ -1,0 +1,52 @@
+# The LMU OSC GitHub Organization
+
+Code
+
+How we use GitHub for collaboration, hosting our code and content, and management
+
+A **GitHub Organization** is a shared workspace where several people collaborate on repositories under a single umbrella. Unlike a personal account, the repositories belong to the group rather than to one person — which gives us continuity when people leave, permissions we can manage in groups through teams, and one place ([github.com/lmu-osc](https://github.com/lmu-osc)) where all of our code, content, and documentation lives.
+
+**This chapter documents only what is specific to the LMU OSC:** our teams, our permission defaults, and our onboarding and offboarding procedures. GitHub’s own documentation is the reference for how GitHub’s features work, and we link to it throughout. The pattern is always:
+
+1.  Read the linked GitHub documentation for the feature or task.
+2.  Come back here for the conventions and decisions *we* have made about it.
+
+## Pages in this section
+
+| Page | Description |
+|----|----|
+| [What is a GitHub Organization?](../../github/lmu-osc-organization/what-is-a-github-organization.llms.md) | What an organization is, and what you’ll see at github.com/lmu-osc. |
+| [Repositories](../../github/lmu-osc-organization/repositories.llms.md) | How we create and manage repositories, and who can access what. |
+| [Organization Features](../../github/lmu-osc-organization/organization-features.llms.md) | Teams and repository roles, Discussions, and Projects. |
+| [Membership and Permissions](../../github/lmu-osc-organization/membership-and-permissions.llms.md) | Membership types, base permissions, who can do what, and onboarding and offboarding. |
+| [Two-Factor Authentication (2FA)](../../github/lmu-osc-organization/two-factor-authentication.llms.md) | Our 2FA requirement, and the methods we recommend. |
+
+------------------------------------------------------------------------
+
+## Quick reference
+
+### Key links
+
+| Resource | Link |
+|----|----|
+| OSC GitHub Organization | [github.com/lmu-osc](https://github.com/lmu-osc) |
+| Organization role management | [Settings → Org Roles](https://github.com/organizations/lmu-osc/settings/org_roles) |
+| Member privileges settings | [Settings → Member Privileges](https://github.com/organizations/lmu-osc/settings/member_privileges) |
+| Your organization memberships | [github.com/settings/organizations](https://github.com/settings/organizations) |
+| 2FA setup guide | [GitHub Docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication) |
+| Publicising organization membership | [GitHub Docs](https://docs.github.com/en/account-and-profile/how-tos/organization-membership/publicizing-or-hiding-organization-membership) |
+
+### Who to ask for help
+
+If you run into any of the following, here’s who to contact:
+
+| Situation | Who to ask |
+|----|----|
+| I need to be added to the organization | Any full-time staff member (an organization owner) |
+| I need someone else invited to (or removed from) the organization | Any full-time staff member (only owners can do this) |
+| I can’t access a specific repository | Ask the team that maintains it, or a staff member |
+| I need a new team created | You can create one yourself; giving it repository access needs Admin on those repositories, or ask a staff member |
+| I’m having trouble with 2FA | Check the [GitHub docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa) or ask a staff member |
+| I’m not sure where a project lives | Check the organization’s Repositories tab, or ask in the relevant Matrix channel |
+
+Back to top

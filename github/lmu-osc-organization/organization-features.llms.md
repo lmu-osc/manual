@@ -1,0 +1,83 @@
+# Organization Features
+
+Code
+
+How we use GitHub’s organization-level teams, Discussions, and Projects
+
+GitHub provides several features at the organization level. Here’s how we use (and don’t use) them at the OSC.
+
+------------------------------------------------------------------------
+
+## Teams
+
+Teams are the primary way we manage permissions. Instead of adding people to individual repositories one by one, you can create a team, give that team a set of permissions across all repos (or specific ones), and then add or remove members from the team. This makes it easy to see who has access to what and to onboard or offboard people quickly.
+
+Anyone who is an organization member but **not** in any team has only the organization’s base permissions — see [Base member permissions](../../github/lmu-osc-organization/membership-and-permissions.llms.md#base-member-permissions).
+
+### How team permissions work
+
+When you add someone to a team, they get that team’s permission level — its **repository role** — on all repositories the team can access. From least to most access:
+
+| Role | Can… |
+|----|----|
+| **Read** | View and clone, open issues, comment, review pull requests, send pull requests from forks |
+| **Triage** | Read, plus labels, milestones, closing and assigning issues, and requesting reviews |
+| **Write** | Triage, plus push branches and merge pull requests |
+| **Maintain** | Write, plus repository configuration that doesn’t change access or visibility |
+| **Admin** | Everything, including repository settings, access, secrets, and destructive actions |
+
+> **Read the GitHub docs:** [Repository roles for an organization](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization) has the exhaustive permission matrix for each role — then come back here for which roles our teams use.
+
+> **Owner** is a separate, *organization*-level role rather than a repository role — see [Organization owners](../../github/lmu-osc-organization/membership-and-permissions.llms.md#organization-owners).
+
+### Our current teams
+
+| Team | Who’s in it | Access |
+|----|----|----|
+| `osc-admin-members` | Full-time staff | **Admin** on all repos, including CI/CD workflows and repository settings |
+| `osc-research-assistants` | Student research assistants (HiWis) | **Admin** on all repos |
+| `osc-trusted-members` | Non-staff, non-HiWi OSC members | **Maintain** on all repos |
+
+- **`osc-admin-members`** — full-time staff. In the future we may give staff their repository permissions through this team rather than through Owner status, to keep the number of Owners small.
+- **`osc-research-assistants`** — HiWis. Currently the same **Admin** access as staff, because HiWis work across many repositories and often need to manage settings and CI/CD workflows, not just push code.
+- **`osc-trusted-members`** — OSC members who are neither staff nor HiWis but should still be able to work across all of our repositories. **Maintain** is a step down from Admin, but in practice enough for reviewing code, managing issues, and coordinating releases.
+
+> **Repository Admin is not the same as being an organization Owner.** Our teams have Admin on the repositories, which is what lets them manage code, workflows, and repository settings — but only Owners can invite or remove members or change organization-wide settings. See [Who can do what](../../github/lmu-osc-organization/membership-and-permissions.llms.md#who-can-do-what).
+
+### Creating a new team
+
+Any member can create a team, unless the owners have restricted team creation. Check the [organization role management settings](https://github.com/organizations/lmu-osc/settings/org_roles) first, and follow the principle of least privilege: **start with Read or Write** unless there’s a clear need for Admin, since it’s easier to escalate permissions later than to roll them back after an accident. Giving the team access to repositories needs admin access to those repositories — ask a staff member if you don’t have it.
+
+> **Read the GitHub docs:** [About teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams) and [Creating a team](https://docs.github.com/en/organizations/organizing-members-into-teams/creating-a-team).
+
+### Practical example: onboarding and offboarding a HiWi
+
+When a new student research assistant joins, a staff member does the following:
+
+1.  **Invite them to the organization**, adding them to the `osc-research-assistants` team in the same step — see [Adding new members](../../github/lmu-osc-organization/membership-and-permissions.llms.md#adding-new-members).
+2.  **They accept the invitation** and automatically get Admin access to all repositories.
+
+**When they leave**, the offboarding steps are:
+
+1.  **A staff member (or a maintainer of that team) removes them from the `osc-research-assistants` team.** This is the step that actually revokes their elevated access — it takes effect across every repository at once, so you don’t have to hunt down individual permissions.
+2.  **A staff member decides whether they should stay in the organization.** This is a judgement call:
+    - If they’re leaving the OSC entirely (contract or studies finished, no ongoing collaboration), **remove them from the organization** as well — again an owner-level action. They then have no access at all.
+    - If they’ll stay connected — for example as an alumni contact, a co-author, or an occasional collaborator — **keep them as a member** but out of the team. They then fall back to the base permissions (Read): they can still browse and clone our repositories and take part in discussions, but they can no longer push to them.
+
+> **Tip:** Removing someone from a team is reversible and cheap; removing them from the organization (and re-inviting them later) is not. If you’re unsure, take them out of the team first — you can always remove their membership later.
+
+------------------------------------------------------------------------
+
+## Discussions
+
+We use Discussions for **forum-style conversations** that aren’t tied to a specific issue or pull request. So far we’ve only adopted them for the [main OSC website](https://github.com/lmu-osc/lmu-osc.github.io/discussions), which holds a backlog of ideas for the site; otherwise we rely on **Issues** for tracking tasks and bugs and **pull requests** for proposing and reviewing changes. If a topic doesn’t have a clear actionable issue yet — a design proposal, say — feel free to start a discussion.
+
+> **Read the GitHub docs:** [GitHub Discussions](https://docs.github.com/en/discussions).
+
+## Projects
+
+Projects are GitHub’s **Kanban-style boards**. We experimented with them and found they didn’t fit our workflow, so we don’t use them formally at the organization level — but you’re welcome to create your own for personal productivity: a board for issues you’re responsible for, a fixed-timeline event, or a short-term initiative. Just don’t expect others to use or maintain it.
+
+> **Read the GitHub docs:** [About Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects).
+
+Back to top

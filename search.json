@@ -1670,7 +1670,7 @@
     "href": "github/our-repositories.html",
     "title": "Repositories of the LMU Open Science Center",
     "section": "",
-    "text": "Our GitHub organization hosts over 50 repositories covering a diverse range of projects — from public-facing websites and tutorials to internal tooling and configuration. This page provides a structured overview of the types of repositories we maintain and details on some of our most important ones.\nEach repository should contain its own documentation (typically a README.md) describing its purpose, contents, and how to use it. This page is meant to provide broader context about how our repositories relate to each other and how they fit into our workflows.",
+    "text": "Our GitHub organization hosts over 50 repositories covering a diverse range of projects — from public-facing websites and tutorials to internal tooling and configuration. This page provides a structured overview of the types of repositories we maintain and details on some of our most important ones.\nEach repository should contain its own documentation (typically a README.md) describing its purpose, contents, and how to use it. This page is meant to provide broader context about how our repositories relate to each other and how they fit into our workflows.\nFor the conventions that apply to every repository, see Repositories.",
     "crumbs": [
       "Home",
       "GitHub Organization",
@@ -1682,7 +1682,7 @@
     "href": "github/our-repositories.html#overview",
     "title": "Repositories of the LMU Open Science Center",
     "section": "",
-    "text": "Our GitHub organization hosts over 50 repositories covering a diverse range of projects — from public-facing websites and tutorials to internal tooling and configuration. This page provides a structured overview of the types of repositories we maintain and details on some of our most important ones.\nEach repository should contain its own documentation (typically a README.md) describing its purpose, contents, and how to use it. This page is meant to provide broader context about how our repositories relate to each other and how they fit into our workflows.",
+    "text": "Our GitHub organization hosts over 50 repositories covering a diverse range of projects — from public-facing websites and tutorials to internal tooling and configuration. This page provides a structured overview of the types of repositories we maintain and details on some of our most important ones.\nEach repository should contain its own documentation (typically a README.md) describing its purpose, contents, and how to use it. This page is meant to provide broader context about how our repositories relate to each other and how they fit into our workflows.\nFor the conventions that apply to every repository, see Repositories.",
     "crumbs": [
       "Home",
       "GitHub Organization",
@@ -1747,6 +1747,133 @@
       "Home",
       "GitHub Organization",
       "Our Repositories"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/repositories.html",
+    "href": "github/lmu-osc-organization/repositories.html",
+    "title": "Repositories",
+    "section": "",
+    "text": "Every repository at github.com/lmu-osc belongs to the organization rather than to whoever created it, which is what lets us manage access in groups and keep work going when people move on. This page is about managing repositories — creating them, controlling access, and retiring them. For what we have and what each repository is for, see Our Repositories.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Repositories"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/repositories.html#public-or-private",
+    "href": "github/lmu-osc-organization/repositories.html#public-or-private",
+    "title": "Repositories",
+    "section": "Public or private",
+    "text": "Public or private\n\nPublic — visible to anyone on the internet. All of our content repositories (this manual, our tutorials, our public-facing websites) are public, in line with our commitment to open science: anyone can view, clone, and learn from them.\nPrivate — visible to members and to any outside collaborators we add, but not to the public. We use these for internal tools, drafts not yet ready for release, and configurations that contain sensitive information.\n\nPrefer public where you reasonably can: a private repository is easy to forget about. Work that shouldn’t live in the shared organization — internal server administration, for example — goes to our organization on the LRZ GitLab instance instead: see LRZ GitLab. Setting repository visibility explains how to change it.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Repositories"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/repositories.html#who-has-access-to-what",
+    "href": "github/lmu-osc-organization/repositories.html#who-has-access-to-what",
+    "title": "Repositories",
+    "section": "Who has access to what",
+    "text": "Who has access to what\nAccess comes from one of three places: the organization’s base permission, teams, or direct access to a single repository.\n\n\n\n\n\n\n\n\nWho\nRole\nWhere\n\n\n\n\nStaff (osc-admin-members) and HiWis (osc-research-assistants)\nAdmin\nAll repositories\n\n\nosc-trusted-members\nMaintain\nAll repositories\n\n\nOutside collaborators we add\nUsually Write\nThe one repository they were added to\n\n\nEvery other member\nRead (base permission)\nAll repositories\n\n\n\nBase Read is what every member has on every repository without being added to anything: clone and read, open issues, and contribute through forks, but not push — see Base member permissions.\nTeams are the normal way to give someone more: adding someone to a team gives them that team’s role on every repository it can access, which is what makes offboarding a single action. Direct access is for one-off or narrowly scoped work, including outside collaborators who aren’t members — add them from the repository’s Settings → Collaborators and teams, which needs Admin on that repository. If you’re adding the same person repeatedly, make them a member instead.\nTwo rules: grant the lowest role that lets the person work, and prefer teams over per-repository access. See Teams for what each role can do, and Membership and Permissions for who may invite people, create teams, or change settings.\n\nRead the GitHub docs: Repository roles for an organization.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Repositories"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/repositories.html#creating-a-repository",
+    "href": "github/lmu-osc-organization/repositories.html#creating-a-repository",
+    "title": "Repositories",
+    "section": "Creating a repository",
+    "text": "Creating a repository\nCreate it in the organization rather than a personal account, so it inherits our access rules and survives staff changes — work that started in a personal account can be transferred in later. Start from a template where one fits (tutorials always start from tutorial-template), and follow our conventions: a kebab-case name, a README.md, a LICENSE, and a short description with topic tags. See Working Practices.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Repositories"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/repositories.html#looking-after-a-repository",
+    "href": "github/lmu-osc-organization/repositories.html#looking-after-a-repository",
+    "title": "Repositories",
+    "section": "Looking after a repository",
+    "text": "Looking after a repository\n\nRenaming changes the repository’s URL: GitHub redirects the old paths, but local clones and links elsewhere won’t follow. Transferring it to a new owner means checking everything that referenced it — clones, deployment secrets, topics, access.\nArchiving is how we retire a repository: read-only, no new issues or pull requests, but everything stays visible and citable. Add a note to the README explaining why — see Working Practices.\nDeleting is permanent, so archive instead unless the content genuinely shouldn’t exist, and agree it with a staff member first.\nBackups run monthly, for disaster recovery rather than browsing old versions. Issue templates, pull request templates, and CONTRIBUTING come from .github unless a repository defines its own. See Our Repositories.\n\n\nRead the GitHub docs: Renaming, transferring, archiving, and deleting repositories.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Repositories"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/repositories.html#finding-repositories",
+    "href": "github/lmu-osc-organization/repositories.html#finding-repositories",
+    "title": "Repositories",
+    "section": "Finding repositories",
+    "text": "Finding repositories\nBrowse the Repositories tab and filter by name, description, or topic; star anything you work on regularly. Searching for repositories covers the search syntax. If you can’t find something, ask a staff member — it may be private, or it may be on LRZ GitLab.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Repositories"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/two-factor-authentication.html",
+    "href": "github/lmu-osc-organization/two-factor-authentication.html",
+    "title": "Two-Factor Authentication (2FA)",
+    "section": "",
+    "text": "We are in the process of requiring 2FA for all members. Even if a password is compromised, a second factor stops someone getting into our repositories and code. If you already have 2FA enabled you’re all set; if not, set it up before you can access the organization.\nWe recommend a TOTP app (Google Authenticator, 1Password, Duo, Microsoft Authenticator) or the GitHub Mobile app. Passkeys and hardware security keys are also good options. SMS is not recommended — codes sent by text can be intercepted, and GitHub advises against it.\nWhichever you choose, save your recovery codes in your password manager: they’re the only way back into your account if you lose your phone.\n\nRead the GitHub docs: About two-factor authentication explains the options and Configuring two-factor authentication walks through the setup — then come back here, and check Who to ask for help if you get stuck.\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Two-Factor Authentication (2FA)"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/index.html",
+    "href": "github/lmu-osc-organization/index.html",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "",
+    "text": "A GitHub Organization is a shared workspace where several people collaborate on repositories under a single umbrella. Unlike a personal account, the repositories belong to the group rather than to one person — which gives us continuity when people leave, permissions we can manage in groups through teams, and one place (github.com/lmu-osc) where all of our code, content, and documentation lives.\nThis chapter documents only what is specific to the LMU OSC: our teams, our permission defaults, and our onboarding and offboarding procedures. GitHub’s own documentation is the reference for how GitHub’s features work, and we link to it throughout. The pattern is always:",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/index.html#pages-in-this-section",
+    "href": "github/lmu-osc-organization/index.html#pages-in-this-section",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "Pages in this section",
+    "text": "Pages in this section\n\n\n\nPage\nDescription\n\n\n\n\nWhat is a GitHub Organization?\nWhat an organization is, and what you’ll see at github.com/lmu-osc.\n\n\nRepositories\nHow we create and manage repositories, and who can access what.\n\n\nOrganization Features\nTeams and repository roles, Discussions, and Projects.\n\n\nMembership and Permissions\nMembership types, base permissions, who can do what, and onboarding and offboarding.\n\n\nTwo-Factor Authentication (2FA)\nOur 2FA requirement, and the methods we recommend.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/index.html#quick-reference",
+    "href": "github/lmu-osc-organization/index.html#quick-reference",
+    "title": "The LMU OSC GitHub Organization",
+    "section": "Quick reference",
+    "text": "Quick reference\n\nKey links\n\n\n\nResource\nLink\n\n\n\n\nOSC GitHub Organization\ngithub.com/lmu-osc\n\n\nOrganization role management\nSettings → Org Roles\n\n\nMember privileges settings\nSettings → Member Privileges\n\n\nYour organization memberships\ngithub.com/settings/organizations\n\n\n2FA setup guide\nGitHub Docs\n\n\nPublicising organization membership\nGitHub Docs\n\n\n\n\n\nWho to ask for help\nIf you run into any of the following, here’s who to contact:\n\n\n\nSituation\nWho to ask\n\n\n\n\nI need to be added to the organization\nAny full-time staff member (an organization owner)\n\n\nI need someone else invited to (or removed from) the organization\nAny full-time staff member (only owners can do this)\n\n\nI can’t access a specific repository\nAsk the team that maintains it, or a staff member\n\n\nI need a new team created\nYou can create one yourself; giving it repository access needs Admin on those repositories, or ask a staff member\n\n\nI’m having trouble with 2FA\nCheck the GitHub docs or ask a staff member\n\n\nI’m not sure where a project lives\nCheck the organization’s Repositories tab, or ask in the relevant Matrix channel",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization"
     ]
   },
   {
@@ -1913,102 +2040,6 @@
     "crumbs": [
       "Home",
       "GitHub Organization"
-    ]
-  },
-  {
-    "objectID": "github/lmu-osc-organization.html",
-    "href": "github/lmu-osc-organization.html",
-    "title": "The LMU OSC GitHub Organization",
-    "section": "",
-    "text": "A GitHub Organization is a shared workspace where multiple people can collaborate on repositories under a single umbrella. Unlike a personal account, an organization allows you to group repositories, manage permissions with teams, and centralise billing and settings. Our organization lives at github.com/lmu-osc and is where we host all of our code, content, and documentation.\nThis page covers what you need to know about navigating our organization, how permissions work, and how to manage members and teams.",
-    "crumbs": [
-      "Home",
-      "GitHub Organization",
-      "The LMU OSC GitHub Organization"
-    ]
-  },
-  {
-    "objectID": "github/lmu-osc-organization.html#overview",
-    "href": "github/lmu-osc-organization.html#overview",
-    "title": "The LMU OSC GitHub Organization",
-    "section": "",
-    "text": "A GitHub Organization is a shared workspace where multiple people can collaborate on repositories under a single umbrella. Unlike a personal account, an organization allows you to group repositories, manage permissions with teams, and centralise billing and settings. Our organization lives at github.com/lmu-osc and is where we host all of our code, content, and documentation.\nThis page covers what you need to know about navigating our organization, how permissions work, and how to manage members and teams.",
-    "crumbs": [
-      "Home",
-      "GitHub Organization",
-      "The LMU OSC GitHub Organization"
-    ]
-  },
-  {
-    "objectID": "github/lmu-osc-organization.html#what-is-a-github-organization",
-    "href": "github/lmu-osc-organization.html#what-is-a-github-organization",
-    "title": "The LMU OSC GitHub Organization",
-    "section": "What is a GitHub Organization?",
-    "text": "What is a GitHub Organization?\nIf you’re new to GitHub Organizations, think of it as a shared account that multiple people can belong to. With a personal account, you own your repositories personally — if you leave a project or change roles, those repos can be tricky to transfer. With an organization, the repos belong to the group, not to any one person. This means:\n\nContinuity — Repositories aren’t lost when someone leaves the group. The organization remains the owner.\nScalable permissions — Instead of adding people to repos one by one, you can create teams with predefined permissions and simply add or remove people from those teams.\nDiscoverability — The organization provides a single place (github.com/lmu-osc) where anyone can find all our projects.\n\n\nA quick comparison\n\n\n\n\n\n\n\n\n\nPersonal account\nOrganization\n\n\n\n\nOwnership\nBelongs to one person\nBelongs to the group\n\n\nRepositories\nUnder your name\nUnder the org name\n\n\nPermissions\nSimple (collaborator or not)\nGranular (teams, roles, base permissions)\n\n\nBest for\nIndividual projects, personal work\nCollaborative projects, teams\n\n\n\n\n\nWhat you’ll see at github.com/lmu-osc\nWhen you visit github.com/lmu-osc, you’ll see:\n\nPinned repositories — A few key repos highlighted at the top (like this manual). These are our most important or most active projects.\nOrganization README — A short description of who we are, pulled from the .github repository.\nTabs — Repositories, Packages, and People are the main ones you’ll use. The Repositories tab lists everything we have (public ones are visible to everyone; private ones only if you have access).",
-    "crumbs": [
-      "Home",
-      "GitHub Organization",
-      "The LMU OSC GitHub Organization"
-    ]
-  },
-  {
-    "objectID": "github/lmu-osc-organization.html#repositories",
-    "href": "github/lmu-osc-organization.html#repositories",
-    "title": "The LMU OSC GitHub Organization",
-    "section": "Repositories",
-    "text": "Repositories\nOur organization contains a mix of public and private repositories.\n\nPublic repositories are visible to anyone on the internet. All of our content repositories (like this manual, our tutorials, and public-facing websites) are public. This aligns with our commitment to open science — anyone can view, clone, and learn from our work.\nPrivate repositories are only visible to members of the organization who have been granted access. We use private repositories mainly for internal tools, drafts of projects not yet ready for public release, or configurations that contain sensitive information.\n\nBeyond our GitHub organization, we also have an organization on the LRZ GitLab instance for internal server administration and other private work/repositories that should not be in the shared GitHub organization. See LRZ GitLab for more information.\n\nTip: If you see a repository name in a discussion or issue but can’t find it, it might be private and you may not have been granted access yet. Ask a team member to add you if you need it.\n\n\nFinding repositories\nYou can browse all repositories by clicking the “Repositories” tab on the organization’s GitHub page. From there you can:\n\nScroll through the list of all public repositories.\nUse the search bar at the top of the page to filter by repository name, description, or topic tags.\nSort by last updated, name, or number of stars.\n\nYou can also star repositories you work on frequently — they’ll be saved under your personal “Starred” tab for quick access later. This is especially useful if you regularly contribute to several different repos.\nIf you’re looking for something specific and can’t find it, ask a team member — it may be in a private repository that you don’t yet have access to, or it may be stored elsewhere.",
-    "crumbs": [
-      "Home",
-      "GitHub Organization",
-      "The LMU OSC GitHub Organization"
-    ]
-  },
-  {
-    "objectID": "github/lmu-osc-organization.html#organization-features",
-    "href": "github/lmu-osc-organization.html#organization-features",
-    "title": "The LMU OSC GitHub Organization",
-    "section": "Organization features",
-    "text": "Organization features\nGitHub provides several features at the organization level. Here’s how we use (and don’t use) them at the OSC.\n\nTeams\nTeams are the primary way we manage permissions. Instead of adding people to individual repositories one by one, you can create a team, give that team a set of permissions across all repos (or specific ones), and then add or remove members from the team. This makes it easy to see who has access to what and to onboard or offboard people quickly.\n\nHow team permissions work\nWhen you add someone to a team, they automatically get the team’s permission level on all repositories the team has been granted access to. GitHub offers several permission levels, but the main ones you’ll encounter are:\n\n\n\n\n\n\n\nLevel\nCan…\n\n\n\n\nRead\nView and clone repositories, open issues, leave comments\n\n\nWrite\nAll of the above, plus push changes, manage issues and pull requests\n\n\nAdmin\nAll of the above, plus manage repository settings, add collaborators, configure CI/CD\n\n\nOwner\nFull control over the entire organization (billing, settings, all repos)\n\n\n\n\n\nOur current teams\n\n\n\n\n\n\n\n\nTeam Name\nWho’s in it\nWhat they can do\n\n\n\n\nosc-admin-members\nFull-time staff\nAdmin access to all repos, including managing CI/CD workflows and repository settings\n\n\nosc-research-assistants\nStudent research assistants (HiWis)\nAdmin access to all repos\n\n\n\nBoth teams currently have Admin-level access to all repositories. If you’re on either team, you can push to any branch, merge pull requests, and change repository settings.\n\n\nCreating a new team\nIf you need a new team for a specific project or group of people, feel free to create one. Before doing so, check the organization role management settings to understand what permission levels are available and appropriate. As a rule of thumb:\n\nStart with Read or Write unless there’s a clear need for Admin.\nIt’s easier to escalate permissions later than to roll them back after an accident.\nConsider the principle of least privilege: give people the minimum access they need to do their work.\n\nWe want to avoid giving out Admin permissions unnecessarily, but we also don’t want to micromanage permissions to the point where it becomes a burden. Use your judgement, and when in doubt, ask another team member.\n\n\nPractical example: onboarding a new HiWi\nWhen a new student research assistant joins, here’s roughly what happens:\n\nThey’re invited to join the organization (see “Adding new members” below).\nThey’re added to the osc-research-assistants team.\nThey automatically get Admin access to all repositories.\nWhen they leave, they’re removed from the team (and optionally the organization), and their access is revoked everywhere at once.\n\n\n\n\nAdding people to individual repositories\nSometimes you need to give someone access to just one repository without making them a full member of the organization. This is common when we contract with someone for a specific piece of work — for example, a freelance designer working on a website template.\nHow to do it:\n\nGo to the repository on GitHub.\nClick Settings (in the right sidebar).\nClick Collaborators and teams in the left menu.\nUnder “Manage access”, click Add people.\nSearch by username, full name, or email, choose their permission level (Read, Write, or Admin), and send the invite.\n\nWhen to use this approach:\n\n✅ The person only needs access to one repo.\n✅ It’s a short-term or one-off collaboration.\n❌ Avoid if you find yourself doing this repeatedly for the same person — in that case, create a team instead.\n\n\nWhy teams are usually better: If you give five people access to three different repos each via individual invitations, you now have fifteen separate permissions to track and manually revoke. With teams, you add each person to one team and give that team access to the relevant repos — much cleaner.\n\n\n\nDiscussions\nGitHub Discussions is a feature for having forum-style conversations that aren’t tied to a specific issue or pull request. It’s useful for Q&A, brainstorming, announcements, or general community engagement.\nSo far, we have only adopted Discussions for the main OSC website, which contain a backlog of ideas to implement for the website. Mostly, we rely on Issues for tracking tasks and bugs, and pull requests for proposing and reviewing changes. If you think a topic would benefit from a discussion thread (e.g., a design proposal that doesn’t have a clear actionable issue yet), feel free to start one.\n\n\nProjects\nGitHub Projects provides a Kanban-style board for organizing and tracking work across issues and pull requests. We experimented with it for a period but found it didn’t fit our workflow well, so we don’t use it formally at the organization level.\nThat said, you’re welcome to create your own project board if you find it useful for tracking your work. For example, you could:\n\nCreate a personal board to keep track of issues you’re responsible for across multiple repositories.\nSet up a board for a specific event or project with a fixed timeline.\nUse it as a lightweight to-do list for a short-term initiative.\n\nTo create one, go to the organization’s Projects tab and click “New project”. Just keep in mind that this is for your personal productivity — there’s no expectation that others will use or maintain it.",
-    "crumbs": [
-      "Home",
-      "GitHub Organization",
-      "The LMU OSC GitHub Organization"
-    ]
-  },
-  {
-    "objectID": "github/lmu-osc-organization.html#membership-and-permissions",
-    "href": "github/lmu-osc-organization.html#membership-and-permissions",
-    "title": "The LMU OSC GitHub Organization",
-    "section": "Membership and permissions",
-    "text": "Membership and permissions\nUnderstanding how membership works is important for both new and existing members. Here are the main membership types and how they relate to each other.\n\nMembership types\n\nMember: A normal organization member. Members belong to the organization, appear in the member list, and count toward any license seats for GitHub Team/Enterprise.\nOwner: A member with full control over the organization. Owners can manage members and teams, change organization-wide settings, and access all repositories. We generally reserve owner access for full-time staff.\nOutside Collaborator: Not a member of the organization. Outside collaborators can be granted access to specific repositories only, and they do not appear in the org member list.\n\n\n\nHow members are different from outside collaborators\n\n\n\n\n\n\n\n\nAspect\nMembers\nOutside collaborators\n\n\n\n\nBelong to the organization\nYes\nNo\n\n\nAppear in organization member list\nYes\nNo\n\n\nCan be added to teams\nYes\nNo\n\n\nAccess management\nUsually via teams and org roles\nDirect repository-level access only\n\n\nCan access multiple repos through teams\nYes\nNo\n\n\nCount toward license seats (GitHub Team/Enterprise)\nUsually yes\nDepends on plan and permissions\n\n\nVisibility into organization\nMore organizational visibility\nLimited to assigned repositories\n\n\nBest for\nEmployees, long-term contributors\nContractors, vendors, external partners\n\n\n\n\n\nBase member permissions\nBase permissions are the default access level for all members of the organization. Ours are set to Read, which means every member can:\n\n✅ View and clone repositories.\n✅ Open issues and leave comments.\n❌ Cannot push changes to repositories.\n❌ Cannot manage issues or pull requests on repositories they haven’t been explicitly granted access to.\n\nThis is a sensible default: it lets people access the content they need without giving them unnecessary control over repositories they’re not actively working on.\n\n\nTeams and elevated permissions\nTeams are the primary way we give members additional permissions across one or more repositories.\n\nMembers can have their base permissions elevated by being added to a team.\nThe best way to manage permissions is usually with teams, not one repository at a time.\nTeams let you grant the same access level to a group of people and then manage that access from one place.\n\n\nOur current team structure\n\n\n\n\n\n\n\n\nTeam Name\nWho’s in it\nWhat they can do\n\n\n\n\nosc-admin-members\nFull-time staff\nAdmin access to all repos, including managing CI/CD workflows and repository settings\n\n\nosc-research-assistants\nStudent research assistants (HiWis)\nAdmin access to all repos\n\n\nosc-trusted-members\nNon-staff OSC members\nMaintenance access to all repos\n\n\n\n\nNote: The osc-admin-members team is currently used by full-time staff. In the future, we may want to keep the number of actual Owners small and give staff their repo permissions via a team instead.\n\nThe osc-trusted-members team is used for non-staff and non-HiWi OSC members who should have maintenance access to all of our repositories. Maintenance is a step down from admin, but in practice it is often sufficient for reviewing code, managing issues, and coordinating releases.\n\n\nPractical example: onboarding a new HiWi\nWhen a new student research assistant joins, here’s roughly what happens:\n\nThey’re invited to join the organization (see “Adding new members” below).\nThey’re added to the osc-research-assistants team.\nThey automatically get Admin access to the repositories that team covers.\nWhen they leave, they’re removed from the team (and optionally the organization), and their access is revoked everywhere at once.\n\n\n\n\nAdding new members\nThe most common management task is inviting new people to the organization. Here’s how to do it step by step:\n\nGo to the organization’s People tab (visible only to members with sufficient permissions).\nClick the green Invite Member button.\nSearch by GitHub username, full name, or email address.\n\nUsername is the quickest way if you know it.\nEmail works too, but make sure it matches the email they use on GitHub.\n\nChoose whether to add them to a team right away (recommended) or just add them to the organization directly.\n\nAdding to a team means they’ll automatically get that team’s permissions.\nAdding them directly means they’ll only have base permissions (Read).\n\nThe invite will expire after a few days if not accepted. You can resend it if needed.\n\n\nWhat if I can’t invite someone? You need to have Owner permissions or be a team maintainer with the right privileges to invite new members. If you don’t see the option, ask an owner to do it.\n\n\n\nAdding outside collaborators to a repository\nIf someone only needs access to one repository and should not be an organization member, grant them access as an outside collaborator.\nHow to do it:\n\nGo to the repository on GitHub.\nClick Settings (in the right sidebar).\nClick Collaborators and teams in the left menu.\nUnder “Manage access”, click Add people.\nSearch by username, full name, or email, choose their permission level (Read, Write, or Admin), and send the invite.\n\nWhen to use this approach:\n\n✅ The person only needs access to one repo.\n✅ It’s a short-term or one-off collaboration.\n❌ Avoid if you find yourself doing this repeatedly for the same person — in that case, add them as a member instead, and consider adding them to the osc-trusted-members team or creating a new team with the necessary permissions.\n\n\nWhy teams are usually better: If you give five people access to three different repos each via individual invitations, you now have fifteen separate permissions to track and manually revoke. With teams, you add each person to one team and give that team access to the relevant repos — much cleaner.\n\n\n\nMember visibility\nBy default, new members are listed as Private — their membership is not visible to the public. This means no one outside the organization can see they’re a member.\nWe ask members to make themselves Public so that:\n\nOther team members can easily find them.\nExternal collaborators and the community can see who is part of the OSC.\nIt’s easier for people to know who to contact about specific projects.\n\nMaking your membership public is entirely optional. If you’d like to do it:\n\nGo to your organization membership page.\nFind the lmu-osc entry and change the visibility from Private to Public.\n\nGitHub also provides official documentation on this setting.\n\n\nOrganization owners\nAbove regular members and teams are organization owners. Owners have full control over the organization, including:\n\nManaging members and teams.\nChanging organization-wide settings (e.g., base permissions, 2FA requirements).\nAccessing and managing all repositories, including private ones.\nDeleting the organization (use with caution!).\n\nWho gets owner access: We generally grant owner permissions only to full-time staff members, not to student research assistants or other collaborators. We may further restrict this in the future for security purposes.\n\nWhy this matters: If you ever need something done that requires owner-level access (creating a new team, changing org-wide settings, adding a new owner), ask one of the full-time staff members. Normal team admins cannot do these things.\n\nYou can review and adjust base permissions at any time in the organization’s member privileges settings.",
-    "crumbs": [
-      "Home",
-      "GitHub Organization",
-      "The LMU OSC GitHub Organization"
-    ]
-  },
-  {
-    "objectID": "github/lmu-osc-organization.html#security-two-factor-authentication-2fa",
-    "href": "github/lmu-osc-organization.html#security-two-factor-authentication-2fa",
-    "title": "The LMU OSC GitHub Organization",
-    "section": "Security: two-factor authentication (2FA)",
-    "text": "Security: two-factor authentication (2FA)\nWe are in the process of requiring two-factor authentication (2FA) for all members of the organization. This is an important security practice: even if someone’s password is compromised, a second factor (like a code from your phone) prevents unauthorized access to our repositories and code.\n\nWhat you need to do\n\nIf you already have 2FA enabled on your GitHub account, you’re all set. You should be able to access the organization without any issues.\nIf you don’t have 2FA enabled, you’ll need to set it up before you can access the organization. GitHub provides a step-by-step guide on configuring 2FA.\n\n\n\nWhich 2FA method to choose\nGitHub offers several options. Here’s what we recommend:\n\n\n\nMethod\nRecommendation\nHow it works\n\n\n\n\nTOTP app (e.g. Duo, Google Authenticator, Authy, 1Password, Microsoft Authenticator)\n✅ Recommended\nYou scan a QR code with your phone or password manager, and it generates a 6-digit code that changes every 30 seconds.\n\n\nGitHub Mobile app\n✅ Recommended\nYou can use the GitHub Mobile app as a second factor. It sends a push notification to your phone for approval.\n\n\nPasskeys (biometric or device-based)\n✅ Good option\nUses your device’s fingerprint, face recognition, or PIN. Works well if your device supports it.\n\n\nSMS text message\n❌ Not recommended\nCodes sent via SMS can be intercepted. GitHub itself advises against it.\n\n\nSecurity keys (hardware, e.g., YubiKey)\n✅ Good for extra security\nPhysical key that you plug in or tap. More expensive but very secure.\n\n\n\n\n\nSetting up a TOTP app\nIf you’re new to 2FA, a TOTP app is the easiest place to start:\n\nInstall an authenticator app on your phone (Google Authenticator, Authy, or 1Password all work well).\nGo to your GitHub security settings.\nClick “Enable two-factor authentication” and follow the prompts to scan the QR code with your app.\nSave your recovery codes somewhere safe (you’ll need them if you lose access to your phone).\n\n\nTip: When you set up 2FA, GitHub gives you a set of recovery codes. Save these somewhere secure (e.g., in your password manager). If you ever lose your phone, these codes are the only way to get back into your account.",
-    "crumbs": [
-      "Home",
-      "GitHub Organization",
-      "The LMU OSC GitHub Organization"
-    ]
-  },
-  {
-    "objectID": "github/lmu-osc-organization.html#quick-reference",
-    "href": "github/lmu-osc-organization.html#quick-reference",
-    "title": "The LMU OSC GitHub Organization",
-    "section": "Quick reference",
-    "text": "Quick reference\n\nKey links\n\n\n\nResource\nLink\n\n\n\n\nOSC GitHub Organization\ngithub.com/lmu-osc\n\n\nOrganization role management\nSettings → Org Roles\n\n\nMember privileges settings\nSettings → Member Privileges\n\n\nYour organization memberships\ngithub.com/settings/organizations\n\n\n2FA setup guide\nGitHub Docs\n\n\nPublicising organization membership\nGitHub Docs\n\n\n\n\n\nWho to ask for help\nIf you run into any of the following, here’s who to contact:\n\n\n\nSituation\nWho to ask\n\n\n\n\nI need to be added to the organization\nAny full-time staff member (an organization owner)\n\n\nI can’t access a specific repository\nAsk the team that maintains it, or a staff member\n\n\nI need a new team created\nAn organization owner\n\n\nI’m having trouble with 2FA\nCheck the GitHub docs or ask a staff member\n\n\nI’m not sure where a project lives\nCheck the organization’s Repositories tab, or ask in the relevant Matrix channel",
-    "crumbs": [
-      "Home",
-      "GitHub Organization",
-      "The LMU OSC GitHub Organization"
     ]
   },
   {
@@ -2189,6 +2220,175 @@
       "Home",
       "GitHub Organization",
       "Git and GitHub Review"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/membership-and-permissions.html",
+    "href": "github/lmu-osc-organization/membership-and-permissions.html",
+    "title": "Membership and Permissions",
+    "section": "",
+    "text": "TipTL;DR: who to add, and where\n\n\n\n\nStaff → invite them to the organization and add them to osc-admin-members (Admin on all repos).\nHiWis → invite them to the organization and add them to osc-research-assistants (Admin on all repos).\nMembers (OSC members who are neither staff nor HiWi) → invite them to the organization. They will have Read permission on all repos by default.\n\nAdd them to osc-trusted-members (Maintain on all repos) only if they need to work across all of our repositories; otherwise leave them in no team (base Read), and add them to repos individually as needed.\n\nCollaborators (people outside the OSC, such as freelancers) → no team. Invite them to the organization with no team if they’re building something of their own from one of our templates, or add them as an outside collaborator with Write on a single repository if the work is inside one of ours.\n\nInviting someone to the organization is an owner-level action, so in practice a staff member invites them; a team maintainer can also add someone straight into their own team. Everything below is the detail — start with Who can do what.\nThere are four kinds of people in our organization’s ecosystem:\nMembers and outside collaborators differ in more than permissions: members can be organized into teams and can see the organization as a whole, whereas outside collaborators only see the repositories they’ve been added to. As a rule, members are for people working with us over time, and outside collaborators for one-off or narrowly scoped work.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Membership and Permissions"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/membership-and-permissions.html#who-can-do-what",
+    "href": "github/lmu-osc-organization/membership-and-permissions.html#who-can-do-what",
+    "title": "Membership and Permissions",
+    "section": "Who can do what",
+    "text": "Who can do what\nSeveral of the tasks described below need a specific role. In our organization Owners are full-time staff, while both staff and HiWis have Admin on every repository through their teams. Team membership gives repository access, not organization ownership.\n\n\n\n\n\n\n\nTask\nWho can do it\n\n\n\n\nInvite someone to the organization\nAn organization owner (staff). A team maintainer can also invite a non-member directly into their team, which sends the same invitation.\n\n\nAdd an existing member to a team\nAn organization owner, or a maintainer of that team\n\n\nRemove someone from the organization\nAn organization owner (staff)\n\n\nRemove someone from a team\nAn organization owner, or a maintainer of that team\n\n\nAdd an outside collaborator to a repository\nAnyone with Admin on that repository\n\n\nGive a team access to a repository\nAn owner, a team maintainer, or anyone with Admin on that repository\n\n\nCreate a team\nAny member, unless the owners have restricted team creation\n\n\nChange base permissions or other organization-wide settings\nAn organization owner (staff)",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Membership and Permissions"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/membership-and-permissions.html#base-member-permissions",
+    "href": "github/lmu-osc-organization/membership-and-permissions.html#base-member-permissions",
+    "title": "Membership and Permissions",
+    "section": "Base member permissions",
+    "text": "Base member permissions\nEvery member has a base permission that applies to all of the organization’s repositories unless a team grants them more. Ours is set to Read, which means:\n\n✅ Clone and read any repository, open issues, comment, and review pull requests.\n✅ Fork a repository and send a pull request from the fork — this is how anyone without write access contributes changes.\n✅ Create a new repository from one of our template repositories.\n❌ Cannot push branches to our repositories, and therefore cannot open a pull request from a branch inside one of them (fork first).\n❌ Cannot merge pull requests, apply labels, close or assign issues, or change repository settings and access.\n\nWe call these members base members: they are ordinary members who haven’t been added to a team, so the base permission is all they have. It isn’t a lesser kind of membership — just the starting point before any team is involved. It’s a sensible default: it lets people read and discuss everything we do, and contribute changes through forks, without giving them write access to repositories they’re not working on.\n\nBase permissions do not apply to outside collaborators — they only get the access granted to them on the specific repositories they’ve been added to.\n\nYou can review base permissions in the organization’s member privileges settings. Teams are how we raise members above this base level: adding someone to a team gives them that team’s role on the repositories it covers, which keeps our permissions auditable and makes offboarding a single action.\n\nRead the GitHub docs: Setting base permissions for an organization.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Membership and Permissions"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/membership-and-permissions.html#adding-new-members",
+    "href": "github/lmu-osc-organization/membership-and-permissions.html#adding-new-members",
+    "title": "Membership and Permissions",
+    "section": "Adding new members",
+    "text": "Adding new members\nInviting people to the organization is an owner-level action — in practice, a staff member does it, so ask one if that isn’t you. (The one exception: a team maintainer can add a non-member straight into their own team, which sends the same invitation.) Open the organization’s People tab, click Invite Member, and search by username, full name, or email.\nDecide up front whether they belong in a team:\n\nInto a team (the usual case) — they immediately get that team’s role on the repositories it covers.\nNo team (base member) — they get base Read only. This is what you want for commissioned external people below.\n\nUnaccepted invites expire after seven days and can be resent. If you don’t see the invite option, you don’t have owner access — ask a staff member.\n\nRead the GitHub docs: Inviting users to join your organization — then come back here for who goes into which team.\n\n\nCommissioned external people (freelancers, contractors)\nFor a one-off commission from someone who isn’t joining the OSC — a freelance designer building a template, say:\n\nA staff member invites them as a member, adding them to no team. Base Read is all they need to browse and clone our repositories, and to create a new repository of their own from one of our templates (such as the tutorial template), which they control fully.\nWe agree the end date up front, because offboarding them means removing them from the organization entirely.\nWe don’t give them elevated access to our existing repositories. If the work happens inside one of our repositories, use an outside collaborator with Write on that repository instead.\n\n\nWhy not a team? A team would give a contractor access to all of our repositories — far more than a one-off commission needs.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Membership and Permissions"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/membership-and-permissions.html#giving-access-to-a-single-repository-outside-collaborators",
+    "href": "github/lmu-osc-organization/membership-and-permissions.html#giving-access-to-a-single-repository-outside-collaborators",
+    "title": "Membership and Permissions",
+    "section": "Giving access to a single repository (outside collaborators)",
+    "text": "Giving access to a single repository (outside collaborators)\nFor someone who needs one repository and shouldn’t be a member, add them as an outside collaborator from the repository’s Settings → Collaborators and teams → Add people. This needs Admin on that repository, which both our staff and HiWi teams have. Pick the lowest role that lets them work (usually Write).\n\n✅ One repository, one-off work, inside an existing repository of ours.\n✅ If they need to build something new from one of our templates instead, follow the commissioned external people procedure.\n❌ If you’re adding the same person repeatedly, make them a member instead — osc-trusted-members, or a team of their own — rather than stacking up per-repository invitations.\n\n\nRead the GitHub docs: Adding outside collaborators to repositories.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Membership and Permissions"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/membership-and-permissions.html#member-visibility",
+    "href": "github/lmu-osc-organization/membership-and-permissions.html#member-visibility",
+    "title": "Membership and Permissions",
+    "section": "Member visibility",
+    "text": "Member visibility\nMembership is Private by default, so nobody outside the organization can see it. We ask members to make theirs Public, so other members, collaborators, and the community can see who is part of the OSC and who to contact about what. It’s optional: change it from Private to Public on your organization memberships page.\n\nRead the GitHub docs: Publicizing or hiding organization membership.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Membership and Permissions"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/membership-and-permissions.html#organization-owners",
+    "href": "github/lmu-osc-organization/membership-and-permissions.html#organization-owners",
+    "title": "Membership and Permissions",
+    "section": "Organization owners",
+    "text": "Organization owners\nOwners have full control over the organization: managing members and teams, organization-wide settings (base permissions, 2FA requirements), all repositories including private ones — and deleting the organization.\nWe grant owner access only to full-time staff, not to HiWis or other collaborators, and may restrict it further in future. Being an Owner is what lets someone invite or remove members and change organization-wide settings — see Who can do what. If you need something owner-level done — creating a team, changing org-wide settings, adding an owner — ask a staff member. Repository admins cannot do these things.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Membership and Permissions"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/what-is-a-github-organization.html",
+    "href": "github/lmu-osc-organization/what-is-a-github-organization.html",
+    "title": "What is a GitHub Organization?",
+    "section": "",
+    "text": "An organization is effectively a shared account that several people belong to. Because the repositories belong to the group, they survive staff changes, and access can be managed in groups rather than person by person. Ours is at github.com/lmu-osc.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "What is a GitHub Organization?"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/what-is-a-github-organization.html#what-youll-see-at-github.comlmu-osc",
+    "href": "github/lmu-osc-organization/what-is-a-github-organization.html#what-youll-see-at-github.comlmu-osc",
+    "title": "What is a GitHub Organization?",
+    "section": "What you’ll see at github.com/lmu-osc",
+    "text": "What you’ll see at github.com/lmu-osc\n\nPinned repositories — a few key repos at the top, such as this manual.\nOrganization README — a short description of who we are, taken from our .github repository.\nTabs — Repositories, Packages, and People are the ones you’ll use. The Repositories tab lists everything we have (public ones to everyone, private ones only if you have access).",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "What is a GitHub Organization?"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/organization-features.html",
+    "href": "github/lmu-osc-organization/organization-features.html",
+    "title": "Organization Features",
+    "section": "",
+    "text": "GitHub provides several features at the organization level. Here’s how we use (and don’t use) them at the OSC.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Organization Features"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/organization-features.html#teams",
+    "href": "github/lmu-osc-organization/organization-features.html#teams",
+    "title": "Organization Features",
+    "section": "Teams",
+    "text": "Teams\nTeams are the primary way we manage permissions. Instead of adding people to individual repositories one by one, you can create a team, give that team a set of permissions across all repos (or specific ones), and then add or remove members from the team. This makes it easy to see who has access to what and to onboard or offboard people quickly.\nAnyone who is an organization member but not in any team has only the organization’s base permissions — see Base member permissions.\n\nHow team permissions work\nWhen you add someone to a team, they get that team’s permission level — its repository role — on all repositories the team can access. From least to most access:\n\n\n\n\n\n\n\nRole\nCan…\n\n\n\n\nRead\nView and clone, open issues, comment, review pull requests, send pull requests from forks\n\n\nTriage\nRead, plus labels, milestones, closing and assigning issues, and requesting reviews\n\n\nWrite\nTriage, plus push branches and merge pull requests\n\n\nMaintain\nWrite, plus repository configuration that doesn’t change access or visibility\n\n\nAdmin\nEverything, including repository settings, access, secrets, and destructive actions\n\n\n\n\nRead the GitHub docs: Repository roles for an organization has the exhaustive permission matrix for each role — then come back here for which roles our teams use.\n\n\nOwner is a separate, organization-level role rather than a repository role — see Organization owners.\n\n\n\nOur current teams\n\n\n\n\n\n\n\n\nTeam\nWho’s in it\nAccess\n\n\n\n\nosc-admin-members\nFull-time staff\nAdmin on all repos, including CI/CD workflows and repository settings\n\n\nosc-research-assistants\nStudent research assistants (HiWis)\nAdmin on all repos\n\n\nosc-trusted-members\nNon-staff, non-HiWi OSC members\nMaintain on all repos\n\n\n\n\nosc-admin-members — full-time staff. In the future we may give staff their repository permissions through this team rather than through Owner status, to keep the number of Owners small.\nosc-research-assistants — HiWis. Currently the same Admin access as staff, because HiWis work across many repositories and often need to manage settings and CI/CD workflows, not just push code.\nosc-trusted-members — OSC members who are neither staff nor HiWis but should still be able to work across all of our repositories. Maintain is a step down from Admin, but in practice enough for reviewing code, managing issues, and coordinating releases.\n\n\nRepository Admin is not the same as being an organization Owner. Our teams have Admin on the repositories, which is what lets them manage code, workflows, and repository settings — but only Owners can invite or remove members or change organization-wide settings. See Who can do what.\n\n\n\nCreating a new team\nAny member can create a team, unless the owners have restricted team creation. Check the organization role management settings first, and follow the principle of least privilege: start with Read or Write unless there’s a clear need for Admin, since it’s easier to escalate permissions later than to roll them back after an accident. Giving the team access to repositories needs admin access to those repositories — ask a staff member if you don’t have it.\n\nRead the GitHub docs: About teams and Creating a team.\n\n\n\nPractical example: onboarding and offboarding a HiWi\nWhen a new student research assistant joins, a staff member does the following:\n\nInvite them to the organization, adding them to the osc-research-assistants team in the same step — see Adding new members.\nThey accept the invitation and automatically get Admin access to all repositories.\n\nWhen they leave, the offboarding steps are:\n\nA staff member (or a maintainer of that team) removes them from the osc-research-assistants team. This is the step that actually revokes their elevated access — it takes effect across every repository at once, so you don’t have to hunt down individual permissions.\nA staff member decides whether they should stay in the organization. This is a judgement call:\n\nIf they’re leaving the OSC entirely (contract or studies finished, no ongoing collaboration), remove them from the organization as well — again an owner-level action. They then have no access at all.\nIf they’ll stay connected — for example as an alumni contact, a co-author, or an occasional collaborator — keep them as a member but out of the team. They then fall back to the base permissions (Read): they can still browse and clone our repositories and take part in discussions, but they can no longer push to them.\n\n\n\nTip: Removing someone from a team is reversible and cheap; removing them from the organization (and re-inviting them later) is not. If you’re unsure, take them out of the team first — you can always remove their membership later.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Organization Features"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/organization-features.html#discussions",
+    "href": "github/lmu-osc-organization/organization-features.html#discussions",
+    "title": "Organization Features",
+    "section": "Discussions",
+    "text": "Discussions\nWe use Discussions for forum-style conversations that aren’t tied to a specific issue or pull request. So far we’ve only adopted them for the main OSC website, which holds a backlog of ideas for the site; otherwise we rely on Issues for tracking tasks and bugs and pull requests for proposing and reviewing changes. If a topic doesn’t have a clear actionable issue yet — a design proposal, say — feel free to start a discussion.\n\nRead the GitHub docs: GitHub Discussions.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Organization Features"
+    ]
+  },
+  {
+    "objectID": "github/lmu-osc-organization/organization-features.html#projects",
+    "href": "github/lmu-osc-organization/organization-features.html#projects",
+    "title": "Organization Features",
+    "section": "Projects",
+    "text": "Projects\nProjects are GitHub’s Kanban-style boards. We experimented with them and found they didn’t fit our workflow, so we don’t use them formally at the organization level — but you’re welcome to create your own for personal productivity: a board for issues you’re responsible for, a fixed-timeline event, or a short-term initiative. Just don’t expect others to use or maintain it.\n\nRead the GitHub docs: About Projects.",
+    "crumbs": [
+      "Home",
+      "GitHub Organization",
+      "The LMU OSC GitHub Organization",
+      "Organization Features"
     ]
   },
   {
