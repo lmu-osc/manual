@@ -87,25 +87,26 @@ When you add someone to a team, they get that team's permission level --- its **
 - **`osc-research-assistants`** --- HiWis. Currently the same **Admin** access as staff, because HiWis work across many repositories and often need to manage settings and CI/CD workflows, not just push code.
 - **`osc-trusted-members`** --- OSC members who are neither staff nor HiWis but should still be able to work across all of our repositories. **Maintain** is a step down from Admin, but in practice enough for reviewing code, managing issues, and coordinating releases.
 
+> **Repository Admin is not the same as being an organization Owner.** Our teams have Admin on the repositories, which is what lets them manage code, workflows, and repository settings --- but only Owners can invite or remove members or change organization-wide settings. See [Who can do what](#who-can-do-what).
+
 #### Creating a new team
 
-Feel free to create a team for a specific project or group. Check the [organization role management settings](https://github.com/organizations/lmu-osc/settings/org_roles) first, and follow the principle of least privilege: **start with Read or Write** unless there's a clear need for Admin, since it's easier to escalate permissions later than to roll them back after an accident. Don't micromanage to the point where it becomes a burden --- when in doubt, ask another team member.
+Any member can create a team, unless the owners have restricted team creation. Check the [organization role management settings](https://github.com/organizations/lmu-osc/settings/org_roles) first, and follow the principle of least privilege: **start with Read or Write** unless there's a clear need for Admin, since it's easier to escalate permissions later than to roll them back after an accident. Giving the team access to repositories needs admin access to those repositories --- ask a staff member if you don't have it.
 
 > **Read the GitHub docs:** [About teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams) and [Creating a team](https://docs.github.com/en/organizations/organizing-members-into-teams/creating-a-team).
 
 #### Practical example: onboarding and offboarding a HiWi
 
-When a new student research assistant joins, here's roughly what happens:
+When a new student research assistant joins, a staff member does the following:
 
-1. They're invited to join the organization (see "Adding new members" below).
-2. They're added to the `osc-research-assistants` team.
-3. They automatically get Admin access to all repositories.
+1. **Invite them to the organization**, adding them to the `osc-research-assistants` team in the same step --- see [Adding new members](#adding-new-members) below.
+2. **They accept the invitation** and automatically get Admin access to all repositories.
 
 **When they leave**, the offboarding steps are:
 
-1. **Remove them from the `osc-research-assistants` team.** This is the step that actually revokes their elevated access --- it takes effect across every repository at once, so you don't have to hunt down individual permissions.
-2. **Decide whether they should stay in the organization.** This is a judgement call:
-   - If they're leaving the OSC entirely (contract or studies finished, no ongoing collaboration), **remove them from the organization** as well. They then have no access at all.
+1. **A staff member (or a maintainer of that team) removes them from the `osc-research-assistants` team.** This is the step that actually revokes their elevated access --- it takes effect across every repository at once, so you don't have to hunt down individual permissions.
+2. **A staff member decides whether they should stay in the organization.** This is a judgement call:
+   - If they're leaving the OSC entirely (contract or studies finished, no ongoing collaboration), **remove them from the organization** as well --- again an owner-level action. They then have no access at all.
    - If they'll stay connected --- for example as an alumni contact, a co-author, or an occasional collaborator --- **keep them as a member** but out of the team. They then fall back to the base permissions (Read): they can still browse and clone our repositories and take part in discussions, but they can no longer push to them.
 
 > **Tip:** Removing someone from a team is reversible and cheap; removing them from the organization (and re-inviting them later) is not. If you're unsure, take them out of the team first --- you can always remove their membership later.
@@ -137,6 +138,21 @@ Members and outside collaborators differ in more than permissions: members can b
 
 > **Read the GitHub docs:** [Roles in an organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization) and [Adding outside collaborators to repositories](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/adding-outside-collaborators-to-repositories-in-your-organization).
 
+### Who can do what
+
+Several of the tasks described below need a specific role. In our organization **Owners are full-time staff**, while both staff and HiWis have **Admin on every repository** through their teams. Team membership gives repository access, not organization ownership.
+
+| Task | Who can do it |
+|---|---|
+| Invite someone to the organization | An organization **owner** (staff). A **team maintainer** can also invite a non-member directly into their team, which sends the same invitation. |
+| Add an existing member to a team | An organization **owner**, or a **maintainer** of that team |
+| Remove someone from the organization | An organization **owner** (staff) |
+| Remove someone from a team | An organization **owner**, or a **maintainer** of that team |
+| Add an outside collaborator to a repository | Anyone with **Admin** on that repository |
+| Give a team access to a repository | An **owner**, a **team maintainer**, or anyone with **Admin** on that repository |
+| Create a team | Any member, unless the owners have restricted team creation |
+| Change base permissions or other organization-wide settings | An organization **owner** (staff) |
+
 ### Base member permissions
 
 Every member has a **base permission** that applies to **all of the organization's repositories** unless a team grants them more. Ours is set to **Read**, which means:
@@ -157,12 +173,14 @@ You can review base permissions in the [organization's member privileges setting
 
 ### Adding new members
 
-Invite people from the organization's **People** tab (**Invite Member**), searching by username, full name, or email. Decide up front whether they belong in a team:
+**Inviting people to the organization is an owner-level action --- in practice, a staff member does it**, so ask one if that isn't you. (The one exception: a team maintainer can add a non-member straight into their own team, which sends the same invitation.) Open the organization's **People** tab, click **Invite Member**, and search by username, full name, or email.
+
+Decide up front whether they belong in a team:
 
 - **Into a team** (the usual case) --- they immediately get that team's role on the repositories it covers.
 - **No team** (base member) --- they get base Read only. This is what you want for [commissioned external people](#commissioned-external-people-freelancers-contractors) below.
 
-Unaccepted invites expire after a few days and can be resent. If you don't see the invite option, you need Owner permissions or an appropriate team role --- ask an owner.
+Unaccepted invites expire after seven days and can be resent. If you don't see the invite option, you don't have owner access --- ask a staff member.
 
 > **Read the GitHub docs:** [Inviting users to join your organization](https://docs.github.com/en/organizations/managing-membership-in-your-organization/inviting-users-to-join-your-organization) --- then come back here for who goes into which team.
 
@@ -170,15 +188,15 @@ Unaccepted invites expire after a few days and can be resent. If you don't see t
 
 For a one-off commission from someone who isn't joining the OSC --- a freelance designer building a template, say:
 
-1. **Invite them as a member, but add them to no team.** Base **Read** is all they need to browse and clone our repositories, and to create a new repository of their own from one of our templates (such as the tutorial template), which they control fully.
-2. **Agree the end date up front**, because offboarding them means removing them from the organization entirely.
-3. **Don't give them elevated access to our existing repositories.** If the work happens *inside* one of our repositories, use an [outside collaborator](#giving-access-to-a-single-repository-outside-collaborators) with Write on that repository instead.
+1. **A staff member invites them as a member**, adding them to no team. Base **Read** is all they need to browse and clone our repositories, and to create a new repository of their own from one of our templates (such as the tutorial template), which they control fully.
+2. **We agree the end date up front**, because offboarding them means removing them from the organization entirely.
+3. **We don't give them elevated access to our existing repositories.** If the work happens *inside* one of our repositories, use an [outside collaborator](#giving-access-to-a-single-repository-outside-collaborators) with Write on that repository instead.
 
 > **Why not a team?** A team would give a contractor access to *all* of our repositories --- far more than a one-off commission needs.
 
 ### Giving access to a single repository (outside collaborators)
 
-For someone who needs one repository and shouldn't be a member, add them as an **outside collaborator** from the repository's **Settings → Collaborators and teams → Add people**. Pick the lowest role that lets them work (usually Write).
+For someone who needs one repository and shouldn't be a member, add them as an **outside collaborator** from the repository's **Settings → Collaborators and teams → Add people**. This needs **Admin** on that repository, which both our staff and HiWi teams have. Pick the lowest role that lets them work (usually Write).
 
 - ✅ One repository, one-off work, inside an existing repository of ours.
 - ✅ If they need to build something new from one of our templates instead, follow the [commissioned external people](#commissioned-external-people-freelancers-contractors) procedure.
@@ -196,7 +214,7 @@ Membership is **Private** by default, so nobody outside the organization can see
 
 Owners have full control over the organization: managing members and teams, organization-wide settings (base permissions, 2FA requirements), all repositories including private ones --- and deleting the organization.
 
-We grant owner access only to **full-time staff**, not to HiWis or other collaborators, and may restrict it further in future. If you need something owner-level done --- creating a team, changing org-wide settings, adding an owner --- ask a staff member. Normal team admins cannot do these things.
+We grant owner access only to **full-time staff**, not to HiWis or other collaborators, and may restrict it further in future. Being an Owner is what lets someone invite or remove members and change organization-wide settings --- see [Who can do what](#who-can-do-what). If you need something owner-level done --- creating a team, changing org-wide settings, adding an owner --- ask a staff member. Repository admins cannot do these things.
 
 ---
 
@@ -232,7 +250,8 @@ If you run into any of the following, here's who to contact:
 | Situation | Who to ask |
 |---|---|
 | I need to be added to the organization | Any full-time staff member (an organization owner) |
+| I need someone else invited to (or removed from) the organization | Any full-time staff member (only owners can do this) |
 | I can't access a specific repository | Ask the team that maintains it, or a staff member |
-| I need a new team created | An organization owner |
+| I need a new team created | You can create one yourself; giving it repository access needs Admin on those repositories, or ask a staff member |
 | I'm having trouble with 2FA | Check the [GitHub docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa) or ask a staff member |
 | I'm not sure where a project lives | Check the organization's Repositories tab, or ask in the relevant Matrix channel |
