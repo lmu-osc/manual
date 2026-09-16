@@ -51,8 +51,19 @@ website:
         contents:
           - href: github/review.qmd
             text: "Git and GitHub Review"
-          - href: github/lmu-osc-organization.qmd
-            text: "The LMU OSC GitHub Organization"
+          - section: "The LMU OSC GitHub Organization"
+            href: github/lmu-osc-organization/index.qmd
+            contents:
+              - href: github/lmu-osc-organization/what-is-a-github-organization.qmd
+                text: "What is a GitHub Organization?"
+              - href: github/lmu-osc-organization/repositories.qmd
+                text: "Repositories"
+              - href: github/lmu-osc-organization/organization-features.qmd
+                text: "Organization Features"
+              - href: github/lmu-osc-organization/membership-and-permissions.qmd
+                text: "Membership and Permissions"
+              - href: github/lmu-osc-organization/two-factor-authentication.qmd
+                text: "Two-Factor Authentication (2FA)"
           - href: github/our-repositories.qmd
             text: "Our Repositories"
           - href: github/working-practices.qmd

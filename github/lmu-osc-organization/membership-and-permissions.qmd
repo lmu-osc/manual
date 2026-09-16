@@ -1,0 +1,95 @@
+---
+title: Membership and Permissions
+subtitle: Membership types, base permissions, who can do what, and how we onboard and offboard people
+---
+
+There are four kinds of people in our organization's ecosystem:
+
+- **Base member** --- a member who isn't in any team, so the organization's base permission is all they have: they can clone and read everything and contribute through forks, but they cannot push to our repositories. See [Base member permissions](#base-member-permissions).
+- **Member** --- a normal organization member; appears in the member list and counts toward any license seats.
+- **Owner** --- a member with full control over the organization. We reserve this for full-time staff --- see [Organization owners](#organization-owners).
+- **Outside collaborator** --- not a member at all; granted direct access to specific repositories only, and never appears in the member list.
+
+Members and outside collaborators differ in more than permissions: members can be organized into teams and can see the organization as a whole, whereas outside collaborators only see the repositories they've been added to. As a rule, **members** are for people working with us over time, and **outside collaborators** for one-off or narrowly scoped work.
+
+> **Read the GitHub docs:** [Roles in an organization](https://docs.github.com/en/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization) and [Adding outside collaborators to repositories](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/adding-outside-collaborators-to-repositories-in-your-organization).
+
+---
+
+## Who can do what
+
+Several of the tasks described below need a specific role. In our organization **Owners are full-time staff**, while both staff and HiWis have **Admin on every repository** through their teams. Team membership gives repository access, not organization ownership.
+
+| Task | Who can do it |
+|---|---|
+| Invite someone to the organization | An organization **owner** (staff). A **team maintainer** can also invite a non-member directly into their team, which sends the same invitation. |
+| Add an existing member to a team | An organization **owner**, or a **maintainer** of that team |
+| Remove someone from the organization | An organization **owner** (staff) |
+| Remove someone from a team | An organization **owner**, or a **maintainer** of that team |
+| Add an outside collaborator to a repository | Anyone with **Admin** on that repository |
+| Give a team access to a repository | An **owner**, a **team maintainer**, or anyone with **Admin** on that repository |
+| Create a team | Any member, unless the owners have restricted team creation |
+| Change base permissions or other organization-wide settings | An organization **owner** (staff) |
+
+## Base member permissions
+
+Every member has a **base permission** that applies to **all of the organization's repositories** unless a team grants them more. Ours is set to **Read**, which means:
+
+- ✅ Clone and read any repository, open issues, comment, and review pull requests.
+- ✅ Fork a repository and **send a pull request from the fork** --- this is how anyone without write access contributes changes.
+- ✅ Create a new repository from one of our template repositories.
+- ❌ **Cannot** push branches to our repositories, and therefore cannot open a pull request from a branch inside one of them (fork first).
+- ❌ **Cannot** merge pull requests, apply labels, close or assign issues, or change repository settings and access.
+
+We call these members **base members**: they are ordinary members who haven't been added to a team, so the base permission is all they have. It isn't a lesser kind of membership --- just the starting point before any team is involved. It's a sensible default: it lets people read and discuss everything we do, and contribute changes through forks, without giving them write access to repositories they're not working on.
+
+> **Base permissions do not apply to outside collaborators** --- they only get the access granted to them on the specific repositories they've been added to.
+
+You can review base permissions in the [organization's member privileges settings](https://github.com/organizations/lmu-osc/settings/member_privileges). [Teams](organization-features.qmd#teams) are how we raise members above this base level: adding someone to a team gives them that team's role on the repositories it covers, which keeps our permissions auditable and makes offboarding a single action.
+
+> **Read the GitHub docs:** [Setting base permissions for an organization](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/setting-base-permissions-for-an-organization).
+
+## Adding new members
+
+**Inviting people to the organization is an owner-level action --- in practice, a staff member does it**, so ask one if that isn't you. (The one exception: a team maintainer can add a non-member straight into their own team, which sends the same invitation.) Open the organization's **People** tab, click **Invite Member**, and search by username, full name, or email.
+
+Decide up front whether they belong in a team:
+
+- **Into a team** (the usual case) --- they immediately get that team's role on the repositories it covers.
+- **No team** (base member) --- they get base Read only. This is what you want for [commissioned external people](#commissioned-external-people-freelancers-contractors) below.
+
+Unaccepted invites expire after seven days and can be resent. If you don't see the invite option, you don't have owner access --- ask a staff member.
+
+> **Read the GitHub docs:** [Inviting users to join your organization](https://docs.github.com/en/organizations/managing-membership-in-your-organization/inviting-users-to-join-your-organization) --- then come back here for who goes into which team.
+
+### Commissioned external people (freelancers, contractors)
+
+For a one-off commission from someone who isn't joining the OSC --- a freelance designer building a template, say:
+
+1. **A staff member invites them as a member**, adding them to no team. Base **Read** is all they need to browse and clone our repositories, and to create a new repository of their own from one of our templates (such as the tutorial template), which they control fully.
+2. **We agree the end date up front**, because offboarding them means removing them from the organization entirely.
+3. **We don't give them elevated access to our existing repositories.** If the work happens *inside* one of our repositories, use an [outside collaborator](#giving-access-to-a-single-repository-outside-collaborators) with Write on that repository instead.
+
+> **Why not a team?** A team would give a contractor access to *all* of our repositories --- far more than a one-off commission needs.
+
+## Giving access to a single repository (outside collaborators)
+
+For someone who needs one repository and shouldn't be a member, add them as an **outside collaborator** from the repository's **Settings → Collaborators and teams → Add people**. This needs **Admin** on that repository, which both our staff and HiWi teams have. Pick the lowest role that lets them work (usually Write).
+
+- ✅ One repository, one-off work, inside an existing repository of ours.
+- ✅ If they need to build something new from one of our templates instead, follow the [commissioned external people](#commissioned-external-people-freelancers-contractors) procedure.
+- ❌ If you're adding the same person repeatedly, make them a member instead --- `osc-trusted-members`, or a team of their own --- rather than stacking up per-repository invitations.
+
+> **Read the GitHub docs:** [Adding outside collaborators to repositories](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-outside-collaborators/adding-outside-collaborators-to-repositories-in-your-organization).
+
+## Member visibility
+
+Membership is **Private** by default, so nobody outside the organization can see it. We **ask members to make theirs Public**, so other members, collaborators, and the community can see who is part of the OSC and who to contact about what. It's optional: change it from **Private** to **Public** on your [organization memberships page](https://github.com/settings/organizations).
+
+> **Read the GitHub docs:** [Publicizing or hiding organization membership](https://docs.github.com/en/account-and-profile/how-tos/organization-membership/publicizing-or-hiding-organization-membership).
+
+## Organization owners
+
+Owners have full control over the organization: managing members and teams, organization-wide settings (base permissions, 2FA requirements), all repositories including private ones --- and deleting the organization.
+
+We grant owner access only to **full-time staff**, not to HiWis or other collaborators, and may restrict it further in future. Being an Owner is what lets someone invite or remove members and change organization-wide settings --- see [Who can do what](#who-can-do-what). If you need something owner-level done --- creating a team, changing org-wide settings, adding an owner --- ask a staff member. Repository admins cannot do these things.

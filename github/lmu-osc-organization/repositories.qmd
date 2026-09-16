@@ -1,0 +1,21 @@
+---
+title: Repositories
+subtitle: Our public and private repositories, and how to find your way around them
+---
+
+We keep a mix of **public** and **private** repositories:
+
+- **Public** --- visible to anyone on the internet. All of our content repositories (this manual, our tutorials, our public-facing websites) are public, in line with our commitment to open science: anyone can view, clone, and learn from them.
+- **Private** --- visible only to members with access. We use these for internal tools, drafts not yet ready for release, and configurations that contain sensitive information.
+
+Work that shouldn't live in the shared GitHub organization --- internal server administration, for example --- goes to our organization on the **LRZ GitLab** instance instead: see [LRZ GitLab](/lrz-gitlab/index.qmd).
+
+For what each of our main repositories is for, see [Repositories of the LMU Open Science Center](/github/our-repositories.qmd).
+
+## Finding repositories
+
+Browse the **Repositories** tab to see everything we have, and use the search bar there to filter by name, description, or topic. If you work on a repository regularly, star it so it's quick to find again.
+
+> **Read the GitHub docs:** [Searching for repositories](https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories) covers the search syntax in detail --- then come back here for how we organize ours.
+
+If you can't find something, ask a staff member: it may be private and you may not have access yet, or it may be on LRZ GitLab.
