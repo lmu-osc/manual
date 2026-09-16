@@ -17,7 +17,7 @@ A **GitHub Organization** is a shared workspace where several people collaborate
 | Page | Description |
 |---|---|
 | [What is a GitHub Organization?](what-is-a-github-organization.qmd) | What an organization is, and what you'll see at github.com/lmu-osc. |
-| [Repositories](repositories.qmd) | Our public and private repositories, and how to find what you're looking for. |
+| [Repositories](repositories.qmd) | How we create and manage repositories, and who can access what. |
 | [Organization Features](organization-features.qmd) | Teams and repository roles, Discussions, and Projects. |
 | [Membership and Permissions](membership-and-permissions.qmd) | Membership types, base permissions, who can do what, and onboarding and offboarding. |
 | [Two-Factor Authentication (2FA)](two-factor-authentication.qmd) | Our 2FA requirement, and the methods we recommend. |

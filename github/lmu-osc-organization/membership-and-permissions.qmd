@@ -7,8 +7,8 @@ subtitle: Membership types, base permissions, who can do what, and how we onboar
 - **Staff** → invite them to the organization and add them to `osc-admin-members` (**Admin** on all repos).
 - **HiWis** → invite them to the organization and add them to `osc-research-assistants` (**Admin** on all repos).
 - **Members** (OSC members who are neither staff nor HiWi) → invite them to the organization. They will have [Read](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization#repository-roles-for-organizations) permission on all repos by default.
-    - Add them to `osc-trusted-members` (**Maintain** on all repos) ***only*** if they need to work across all of our repositories; otherwise leave them in no team (base **Read**).
-- **Collaborators** (people outside the OSC, such as freelance designers) → **no team**. Invite them to the organization with no team if they're building something of their own from one of our templates, or add them as an **outside collaborator** with Write on a single repository if the work is inside one of ours.
+    - Add them to `osc-trusted-members` (**Maintain** on all repos) ***only*** if they need to work across all of our repositories; otherwise leave them in no team (base **Read**), and add them to repos individually as needed.
+- **Collaborators** (people outside the OSC, such as freelancers) → **no team**. Invite them to the organization with no team if they're building something of their own from one of our templates, or add them as an **outside collaborator** with Write on a single repository if the work is inside one of ours.
 
 Inviting someone to the organization is an owner-level action, so in practice **a staff member invites them**; a team maintainer can also add someone straight into their own team. Everything below is the detail --- start with [Who can do what](#who-can-do-what).
 :::
