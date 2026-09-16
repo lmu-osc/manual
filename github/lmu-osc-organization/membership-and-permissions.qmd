@@ -3,6 +3,16 @@ title: Membership and Permissions
 subtitle: Membership types, base permissions, who can do what, and how we onboard and offboard people
 ---
 
+::: {.callout-tip title="TL;DR: who to add, and where"}
+- **Staff** → invite them to the organization and add them to `osc-admin-members` (**Admin** on all repos).
+- **HiWis** → invite them to the organization and add them to `osc-research-assistants` (**Admin** on all repos).
+- **Members** (OSC members who are neither staff nor HiWi) → invite them to the organization. 
+    - Add them to `osc-trusted-members` (**Maintain** on all repos) ***only*** if they need to work across all of our repositories; otherwise leave them in no team (base **Read**).
+- **Collaborators** (people outside the OSC, such as freelance designers) → **no team**. Invite them to the organization with no team if they're building something of their own from one of our templates, or add them as an **outside collaborator** with Write on a single repository if the work is inside one of ours.
+
+Inviting someone to the organization is an owner-level action, so in practice **a staff member invites them**; a team maintainer can also add someone straight into their own team. Everything below is the detail --- start with [Who can do what](#who-can-do-what).
+:::
+
 There are four kinds of people in our organization's ecosystem:
 
 - **Base member** --- a member who isn't in any team, so the organization's base permission is all they have: they can clone and read everything and contribute through forks, but they cannot push to our repositories. See [Base member permissions](#base-member-permissions).
