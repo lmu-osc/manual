@@ -13,6 +13,19 @@ With the Train-the-Trainer program, we aim to:
 - **Encourage** researchers and educators at LMU familiar with open research to **disseminate their open research knowledge and skills** through **teaching** (standalone open research modules, or individual workshops/seminars..)
 - **Familiarize** a broad audience across the LMU with open research principles and the relevance for their own work, e.g., Master students, PhDs, PostDocs, PIs, research support staff...
 
+## General delivery procedure (incomplete!)
+
+<div style="font-size: 0.8em;">
+| **When** | **What** | **Actions to be taken** | **Notes** |
+|---|---|---|---|
+| Pre workshop | Advertising | | |
+| Pre workshop | Pre-workshop survey | | |
+| Delivery | | | |
+| Post workshop | Post-workshop survey | | |
+| Post workshop | Follow up sessions (for summer school participants) | | |
+</div>
+
+
 ## Delivery options
 
 An overview of possible delivery options and formats for the train-the-trainer program. *Note that these were pulled from brainstorming discussions and are not fully developed ideas.*
