@@ -1,0 +1,48 @@
+---
+title: "Content development"
+---
+
+## About the content development process
+
+Our detailed [content development guidelines](https://docs.google.com/document/d/1fBJyQIhP8zAt0vm19bOoHNgRqZ5YFc3vXoN1j3FSrj4/edit?tab=t.0#heading=h.8930in8q5sry) take you through a **general overview of the program**, important **prerequisites** for starting the development process, including software and topic-specific skills, and the **different steps of the content development workflow**, from selecting and familiarizing yourself with a topic you want to develop, to understanding the deliverables and the theoretical framework used as quality-control for the materials, the practical material creation process in RStudio with Quarto, Git and GitHub to obtaining feedback and finalizing your materials.
+
+::: {.callout-important}
+## Content development guidelines - where to find them
+The content development guidelines can be found in this Google Document: [https://docs.google.com/document/d/1fBJyQIhP8zAt0vm19bOoHNgRqZ5YFc3vXoN1j3FSrj4/edit?tab=t.0#heading=h.8930in8q5sry](https://docs.google.com/document/d/1fBJyQIhP8zAt0vm19bOoHNgRqZ5YFc3vXoN1j3FSrj4/edit?tab=t.0#heading=h.8930in8q5sry).
+:::
+
+## Content development timeline
+
+Below an overview of the different steps by the **content developer** and the **reviewer** to finalize materials for a given topic, depending on if materials are developed internally or party externally, e.g., with FORRT. <br>
+
+*Note that time estimates are approximate and depend on the topic, if materials already exist, prior knowledge and skills of the content developer and/or reviewer.*
+
+### Internally generated materials
+
+For internally developed materials, i.e., the **content developer is OSC staff** and the **reviewer is OSC staff**, the development timeline is as follows: 
+
+<div style="font-size: 0.8em;">
+| **What** | **Who** | **How long (in hours)** |
+|:----------|:-------|:-------|
+| Familiarisation with existing materials | Content developer | 0.5–2 |
+| Additional topic reading | Content developer | 0.5–2 |
+| Generation of the topic outline using template (optional depending on preferences) | Content developer | 8–16 |
+| Feedback on topic outline | Reviewer | Within 16 working hours |
+| Integration of feedback on topic outline | Content developer | 2 |
+| Set up of local directory and remote connection with GitHub (one-time only per topic) | Content developer | 1–2 |
+| Creation of first draft of slides for topic | Content developer | 12–16 |
+| Revision of first slide draft | Reviewer | Within 16 working hours |
+| Integration of feedback for first draft and creation of second draft | Content developer | 2–4 |
+| Revision of second slide draft | Reviewer | Within 16 working hours |
+| Integration of feedback for second draft and creation of final draft | Content developer | 2–4 |
+| Revision of final slide draft | Reviewer | Within 16 working hours |
+| Integration of feedback for final draft | Content developer | 2–4 |
+| Technical implementation: PR, merge, GitHub checks | Reviewer | Within 24 working hours |
+</div>
+
+
+**Total estimated development time for topic given that both the content developer and the reviewer are OSC staff: within 10 - 15 working days**.
+
+### Externally developed materials. e.g., with FORRT
+
+For (partly or fully) externally developed materials, i.e., the **content developer is OSC staff** but there are also **external content developers** and/or **reviewers** (e.g., from FORRT), see here for the development and review instructions: [https://docs.google.com/document/d/1HhTvQKDETzElxUbv7lp2045xbBHuw4Q39hcucSlvy6k/edit?tab=t.0#heading=h.ztyiiey6x50](https://docs.google.com/document/d/1HhTvQKDETzElxUbv7lp2045xbBHuw4Q39hcucSlvy6k/edit?tab=t.0#heading=h.ztyiiey6x50) 

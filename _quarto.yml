@@ -151,9 +151,13 @@ website:
         href: swop/index.qmd
         text: "Switch to Open Program"
 
-      - contents:
+      - section: "Train-the-Trainer"
         href: train-the-trainer/index.qmd
-        text: "Train-the-Trainer"
+        contents:
+          - href: train-the-trainer/content-development.qmd
+            text: "Content development"
+          - href: train-the-trainer/program-delivery.qmd
+            text: "Program delivery"
 
       - section: "Matomo Analytics"
         href: matomo/index.qmd
