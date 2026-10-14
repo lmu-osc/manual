@@ -11,7 +11,7 @@ Our detailed [content development guidelines](https://docs.google.com/document/d
 The content development guidelines can be found in this Google Document: [https://docs.google.com/document/d/1fBJyQIhP8zAt0vm19bOoHNgRqZ5YFc3vXoN1j3FSrj4/edit?tab=t.0#heading=h.8930in8q5sry](https://docs.google.com/document/d/1fBJyQIhP8zAt0vm19bOoHNgRqZ5YFc3vXoN1j3FSrj4/edit?tab=t.0#heading=h.8930in8q5sry).
 :::
 
-## Content development timeline
+## Development timeline
 
 Below an overview of the different steps by the **content developer** and the **reviewer** to finalize materials for a given topic, depending on if materials are developed internally or party externally, e.g., with FORRT. <br>
 
@@ -46,3 +46,34 @@ For internally developed materials, i.e., the **content developer is OSC staff**
 ### Externally developed materials. e.g., with FORRT
 
 For (partly or fully) externally developed materials, i.e., the **content developer is OSC staff** but there are also **external content developers** and/or **reviewers** (e.g., from FORRT), see here for the development and review instructions: [https://docs.google.com/document/d/1HhTvQKDETzElxUbv7lp2045xbBHuw4Q39hcucSlvy6k/edit?tab=t.0#heading=h.ztyiiey6x50](https://docs.google.com/document/d/1HhTvQKDETzElxUbv7lp2045xbBHuw4Q39hcucSlvy6k/edit?tab=t.0#heading=h.ztyiiey6x50) 
+
+
+## Next steps
+
+<div style="font-size: 0.8em;">
+| **What** | **Description** |**Relevant repository/ links** |**Who** | **Priority** |
+|------|------|------|------|------|
+| Create pptx versions for Quarto slides | Conversion of existing Quarto slide decks to pptx using template with minimal pptx formatting for easy editing | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/); [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/) | PC, SvG | <span style="background-color: #f8d7da; color: #842029; padding: 3px 6px; border-radius: 4px;">high</span> |
+| Add pptx download button to topic landing page | Add pptx download button on each landing page across both repositories and verify output of pptx files | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/); [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/) | VG | <span style="background-color: #f8d7da; color: #842029; padding: 3px 6px; border-radius: 4px;">high</span> |
+| Verify all links on the website | *(already added to assistant TODO)* check orcids,  external page links, download buttons for pdf, pptx and helpfiles, typos, correct bolding/italics, matching prerequisites, learning objectives, licence statements, contributor and citation statements across slides and corresponding landing page, hyperlinks... | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/); [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/) | VG | <span style="background-color: #f8d7da; color: #842029; padding: 3px 6px; border-radius: 4px;">high</span> |
+| Zenodo repositories for slide decks | Separation of existing slide decks into separate Zenodo repositories for a citeable doi| [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/); [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/) | PC, SvG | <span style="background-color: #f8d7da; color: #842029; padding: 3px 6px; border-radius: 4px;">high</span> |
+| Content development: Teaching materials for novices | **Preregistration** (slide deck development in progress) | [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/) | SM | <span style="background-color: #f8d7da; color: #842029; padding: 3px 6px; border-radius: 4px;">high</span> |
+| Content development: Teaching materials for novices | **FAIR Research Data Management** (existing slides from OSSS26) | [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/) | Reema | <span style="background-color: #f8d7da; color: #842029; padding: 3px 6px; border-radius: 4px;">high</span> |
+| Content development: Teaching materials for novices | **Naming conventions, good coding practices** (use materials from OSSS26, include accessbility cheatsheet) | [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/) |  | <span style="background-color: #f8d7da; color: #842029; padding: 3px 6px; border-radius: 4px;">high</span> |
+| Content development: Teaching materials for novices | **Data anonymity** (make introductory slides, then link to existing tutorial?) | [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/); [https://lmu-osc.github.io/data-anonymization/](https://lmu-osc.github.io/data-anonymization/) |  | <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">medium</span>
+ |
+| Content development: Teaching materials for novices | **Wrap up practical workshop (for novice level)** (use existing tutorial as base) | [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/); [https://lmu-osc.github.io/code-publishing/](https://lmu-osc.github.io/code-publishing/) |  | <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">medium</span>
+ |
+| Content development: Train-the-Trainer materials | **Community fostering worksheet** for live sessions, format as collection of prompts, ice-breaking activities, getting-to-know questions to create cohort for TTT-delivery, to deliver prior to any content | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/) | | <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">medium</span>
+ |
+| Content development: Train-the-Trainer materials | **Science communication and public outreach** | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/) | | <span style="background-color: #d1e7dd; color: #0f5132; padding: 3px 6px; border-radius: 4px;">low</span>
+ |
+| Content development: Train-the-Trainer materials | **Participatory research, and social and responsible research** | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/) | | <span style="background-color: #d1e7dd; color: #0f5132; padding: 3px 6px; border-radius: 4px;">low</span>
+ |
+</div>
+
+
+
+
+
+
