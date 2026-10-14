@@ -2,7 +2,7 @@
 title: "Content development"
 ---
 
-## About the content development process
+## About the process
 
 Our detailed [content development guidelines](https://docs.google.com/document/d/1fBJyQIhP8zAt0vm19bOoHNgRqZ5YFc3vXoN1j3FSrj4/edit?tab=t.0#heading=h.8930in8q5sry) take you through a **general overview of the program**, important **prerequisites** for starting the development process, including software and topic-specific skills, and the **different steps of the content development workflow**, from selecting and familiarizing yourself with a topic you want to develop, to understanding the deliverables and the theoretical framework used as quality-control for the materials, the practical material creation process in RStudio with Quarto, Git and GitHub to obtaining feedback and finalizing your materials.
 
@@ -47,7 +47,6 @@ For internally developed materials, i.e., the **content developer is OSC staff**
 
 For (partly or fully) externally developed materials, i.e., the **content developer is OSC staff** but there are also **external content developers** and/or **reviewers** (e.g., from FORRT), see here for the development and review instructions: [https://docs.google.com/document/d/1HhTvQKDETzElxUbv7lp2045xbBHuw4Q39hcucSlvy6k/edit?tab=t.0#heading=h.ztyiiey6x50](https://docs.google.com/document/d/1HhTvQKDETzElxUbv7lp2045xbBHuw4Q39hcucSlvy6k/edit?tab=t.0#heading=h.ztyiiey6x50) 
 
-
 ## Next steps
 
 <div style="font-size: 0.8em;">
@@ -62,8 +61,13 @@ For (partly or fully) externally developed materials, i.e., the **content develo
 | Content development: Teaching materials for novices | **Naming conventions, good coding practices** (use materials from OSSS26, include accessbility cheatsheet) | [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/) |  | <span style="background-color: #f8d7da; color: #842029; padding: 3px 6px; border-radius: 4px;">high</span> |
 | Content development: Teaching materials for novices | **Data anonymity** (make introductory slides, then link to existing tutorial?) | [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/); [https://lmu-osc.github.io/data-anonymization/](https://lmu-osc.github.io/data-anonymization/) |  | <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">medium</span> |
 | Content development: Teaching materials for novices | **Wrap up practical workshop (for novice level)** (use existing tutorial as base) | [https://lmu-osc.github.io/teaching-material-for-novices/](https://lmu-osc.github.io/teaching-material-for-novices/); [https://lmu-osc.github.io/code-publishing/](https://lmu-osc.github.io/code-publishing/) |  | <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">medium</span> |
-| Content development: Train-the-Trainer materials | **Open Research Design Workbook**: Quarto book for the design workbook, without references to the summer school (also no links to OSF), to provide as resource for instructors, integrate into GitHub website | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/) | HiWis? | <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">medium</span> |
+| Content development: Train-the-Trainer materials | **Open Research Design Workbook**: Rework the Google Doc with the design worksbook, without references to the summer school (also no links to OSF), to provide as resource for instructors, integrate into GitHub website | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/), needs to be downloadable and clearly marked as a resource for instructors | HiWis? | <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">medium</span> |
 | Content development: Train-the-Trainer materials | **Community fostering worksheet** for live sessions, format as collection of prompts, ice-breaking activities, getting-to-know questions to create cohort for TTT-delivery, to deliver prior to any content | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/) | | <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">medium</span> |
 | Content development: Train-the-Trainer materials | **Science communication and public outreach**, see overview spreadsheet | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/) | | <span style="background-color: #d1e7dd; color: #0f5132; padding: 3px 6px; border-radius: 4px;">low</span> |
 | Content development: Train-the-Trainer materials | **Participatory research, and social and responsible research**, see overview spreadsheet  | [https://lmu-osc.github.io/train-the-trainer-open-research/](https://lmu-osc.github.io/train-the-trainer-open-research/) | | <span style="background-color: #d1e7dd; color: #0f5132; padding: 3px 6px; border-radius: 4px;">low</span> |
+| Content updates: Teaching materials for novices | Add branching to Git/GitHub slide decks, change to Positron?  | [https://lmu-osc.github.io/teaching-materials-for-novices/](https://lmu-osc.github.io/teaching-materials-for-novices/) | | <span style="background-color: #d1e7dd; color: #0f5132; padding: 3px 6px; border-radius: 4px;">low</span> |
 </div>
+
+In the [Train-the-Trainer overview sheet](https://docs.google.com/spreadsheets/d/1X37k0DKuXkvlI29d5MfEoIWV1cRsrAJX4wQGu3IwbpE/edit?gid=905232093#gid=905232093), completed topics are marked in <span style="background-color: #d1e7dd; color: #0f5132; padding: 3px 6px; border-radius: 4px;">green</span>, ongoing developments in <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">yellow</span>, and future priorities in <span style="background-color: #EDE3F8; color: #5B3A7A; padding: 3px 6px; border-radius: 4px;">light purple</span>.
+
+ 
