@@ -2,3 +2,41 @@
 title: "Train-the-trainer"
 ---
 
+## Important GitHub links
+
+<div style="font-size: 0.8em;">
+| **Document** | **Description** | **Links** | **Notes** |
+|-----|-----|-----|-----|
+| Teaching materials for novices | GitHub repository with teaching materials on open research for novices. Material format: Quarto slides, cheatsheets, assignment sheets, activties sheets, downloadable pdf and pptx slides. [Public project website here.](https://lmu-osc.github.io/teaching-material-for-novices/)| [Teaching materials for novices](https://github.com/lmu-osc/teaching-material-for-novices)  | |
+| Train-the-Trainer materials | GitHub repository with training materials on how to teach and lead in open research for open research instructors and open research train-the-trainers. Material format: Quarto slides, downloadable pdf and pptx slides. [Public project website here.](https://lmu-osc.github.io/train-the-trainer-open-research/)| [Train-the-Trainer materials](https://github.com/lmu-osc/train-the-trainer-open-research) | |
+</div>
+
+## Project management and guidelines
+
+<div style="font-size: 0.8em;">
+| **Document** | **Description** | **Link** | **Notes** |
+|-----|-----|-----|-----|
+| Train-the-Trainer program overview | Initial starting document for kicking off the Train-the-Trainer project, brainstorming notes about goals, key links, program structure, etc. in February 2025 | [Train-the-Trainer program overview](https://docs.google.com/document/d/19Bvdd4VHR1_clQHUaKdertTtVt7NoSadFWNPIkpBDGo/edit?tab=t.8scy9vgopfdx#heading=h.8930in8q5sry) | Has not been updated in a while |
+| Train-the-trainer project management | A multi-tab spreadsheet outlining the program topics, development progress, workflow options, and risk assessment. Tabs used most often: 3a and 3b. Completed topics are marked in <span style="background-color: #d1e7dd; color: #0f5132; padding: 3px 6px; border-radius: 4px;">green</span>, ongoing developments in <span style="background-color: #fff3cd; color: #664d03; padding: 3px 6px; border-radius: 4px;">yellow</span>, and future priorities in <span style="background-color: #EDE3F8; color: #5B3A7A; padding: 3px 6px; border-radius: 4px;">light purple</span>.| [Train-the-Trainer project management](https://docs.google.com/spreadsheets/d/1X37k0DKuXkvlI29d5MfEoIWV1cRsrAJX4wQGu3IwbpE/edit?gid=1353360292#gid=1353360292) | Last updated on 16.10.2026 |
+| Train-the-Trainer Content Creation Guidelines | A step-by-step guide written in Google Documents for developing training materials in the Quarto slide format. | [Train-the-Trainer Content Development Guidelines](https://docs.google.com/document/d/1fBJyQIhP8zAt0vm19bOoHNgRqZ5YFc3vXoN1j3FSrj4/edit?tab=t.0#heading=h.8930in8q5sry) | Last updated on 16.10.2026 |
+| Train-the-Trainer External Developer and Reviewer Information Pack | A detailed guide written in Google Documents for external developers and (internal and external) reviewers of materials in the Quarto slide format. | [Train-the-Trainer external development team information pack](https://docs.google.com/document/d/1HhTvQKDETzElxUbv7lp2045xbBHuw4Q39hcucSlvy6k/edit?tab=t.0#heading=h.tfc0f4jg5hjy) | Reviewer guidelines embedded in case study development guidelines |
+| Template folder for developing teaching materials for novices | Folder integrated into GitHub repository containing a template folder structure, landing page (index file) and template slide deck for developing teaching materials for novices | [Templates for developing teaching materials for novices](https://github.com/lmu-osc/teaching-material-for-novices/tree/main/template-folder/) | Last updated on 16.10.2026 |
+| Template folder for developing train-the-trainer materials | Folder integrated into GitHub repository containing a template folder structure, landing page (index file) and template slide deck for developing materials for the train-the-trainer topics | [Templates for developing train-the-trainer materials](https://github.com/lmu-osc/train-the-trainer-open-research/tree/main/template-folder) | Last updated on 16.10.2026 |
+| Topic development plan template | Google Document template document to plan the outline and content for a selected topic prior to developing slides in Quarto itself (start of development process). | [Topic development plan template](https://docs.google.com/document/d/1nrX2tprPshd-MziWJNdiasTWAQkqJ_ZrZ74gjnIqp60/edit?tab=t.0#heading=h.nb3onsicirn2) | Last updated on 16.10.2026 |
+| Storage location for development plans | Google Drive folders to store the development plan for a given topic. Separate folders depending on the topic (teaching materials for novices vs. train-the-trainer materials.) | [Storage location for teaching materials for novices](https://drive.google.com/drive/folders/1ypnzc-xisEXljx2EKw390mRSzx9wcjAW); [Storage location for train-the-trainer materials](https://drive.google.com/drive/folders/1RkkOUeMeTtLDEyunI_EO3dENNIkKJvA7) | Last updated on 16.10.2026 |
+| Templates for helpfiles | Google Drive folder containing templates for cheatsheets and worksheets to accompany the slides  | [Click here to access the templates folder](https://drive.google.com/drive/folders/1qAgSbymKCqx9wMoAiVmjRhEpHiJ-eULo) | Last updated on 16.10.2026 |
+| Train-the-Trainer team meeting notes | Google Document for notes from regular team meetings showing progress and key decisions made from spring 2025 to present (July 2026). | [Train-the-Trainer Team Meeting Notes](https://docs.google.com/document/d/1aqdYr33CO8n7pvbBEiBKlmzELLTzLja13dEmIKzyuyg/edit?tab=t.2uy8529a8k9u#heading=h.mfzieiym21z7) | Last updated on 16.10.2026 |
+</div>
+
+## Supplementary project files
+
+<div style="font-size: 0.8em;">
+| **Document** | **Description** | **Link** | **Notes** |
+|-----|-----|-----|-----|
+| Zotero Group Library for topic reading | A group library on zotero that integrates into quarto and generates reference list for each quarto slide deck. Administrator is SvG, the reference files for both repositories are automatically exported directly from her Zotero, including the references of the group library. | [Zotero Group Library](https://www.zotero.org/groups/6281127/lmu-osc-train-the-trainer) | Currently private group, stored on SvG private account. |
+| Train-the-Trainer Roles, responsibilities and timelines | A multi-tab spreadsheet written in Google Sheets showing key team members’ roles and responsibilities. | [Train-the-Trainer Roles, responsibilities and timelines](https://docs.google.com/spreadsheets/d/1WYwnI-bZkYqU-wqJsAdy-6gpM-bNjHNIDyPppeIwszA/edit?gid=26161278#gid=26161278) | Has not been updated in a while |
+| Train-the-Trainer Personas | A document with Train-the-Trainer thinking on users and target audience of training materials and new OSC website | [Train-the-Trainer personas](https://drive.google.com/drive/folders/1S7FuDpd0hwekPPDDI_EQiF8tsNI_1qWi) | Has not been updated in a while |
+| Train-the-Trainer Resource bank | A spreadsheet written in Google Sheets with ideas for activities, survey questions etc that can be used while developing the train-the-trainer program. | [Train-the-Trainer Resource bank ](https://docs.google.com/spreadsheets/d/1RIV-75vT9Tsz3uvnGJyHNmFD9OBiAHJFeJt5ujAS4P0/edit?gid=0#gid=0) | Originally assigned as a task to a Hiwi, not completed. |
+| Leadership in Open Science case study series | Zenodo links with case studies that link to Track 2, Day 2 of OSSS26. | [Case Study 1: Big Team Science](https://zenodo.org/records/22282068)<br>[Case Study 2: AI and open code](https://zenodo.org/records/22306455)<br>[Case study 3: Cultural awareness](https://zenodo.org/records/22308238)<br>[Case study 4: Preregistration](https://zenodo.org/records/22307709)<br>[Case study 5: Contributorship](https://zenodo.org/records/22307117)<br>[Case study 6: Qualitative methodology](https://zenodo.org/records/22308007) | |
+</div>
+
