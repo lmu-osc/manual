@@ -1,0 +1,65 @@
+# Programme delivery
+
+Code
+
+> **IMPORTANT:**
+>
+> Existing materials for the Train-the-Trainer program can be found here: <https://lmu-osc.github.io/train-the-trainer-open-research/>.
+
+# Goal of delivering the program
+
+With the Train-the-Trainer program, we aim to:
+
+- **Encourage** researchers and educators at LMU familiar with open research to **disseminate their open research knowledge and skills** through **teaching** (standalone open research modules, or individual workshops/seminars..)
+- **Familiarize** a broad audience across the LMU with open research principles and the relevance for their own work, e.g., Master students, PhDs, PostDocs, PIs, research support staff…
+
+## General delivery procedure (incomplete!)
+
+| **When** | **What** | **Actions to be taken** | **Notes** |
+|----|----|----|----|
+| Pre workshop | Advertising |  |  |
+| Pre workshop | Pre-workshop survey |  |  |
+| Delivery |  |  |  |
+| Post workshop | Post-workshop survey |  |  |
+| Post workshop | Follow up sessions (for summer school participants) |  |  |
+
+## Delivery options
+
+An overview of possible delivery options and formats for the train-the-trainer program. *Note that these were pulled from brainstorming discussions and are not fully developed ideas.*
+
+| **What** | **Target audience** | **Timeframe** | **Concept/notes** | **Feasability** |
+|:---|:---|:---|:---|:---|
+| Consultation and follow-up on open research teaching plans | Track 2 participants from LMU (PhDs, PostDocs) | variable | Follow-up, consult and support Track 2 LMU participants to deliver their workshop, possibly co-teach or support | Have trainers teach parts of SWoP? |
+| Standalone train-the-trainer course | Track 1 participants from LMU (PhDs, PostDocs) | 2 days | Two-day course following the program of Track 2 of the [Open Science Summer School 2026](https://lmu-osc.github.io/Open-Science-Summer-School-2026/track2-program.html) |  |
+| Standalone train-the-trainer course | SWoP participants (PhDs, PostDocs) | 1 day | Modified program of Track 2 of the [Open Science Summer School 2026](https://lmu-osc.github.io/Open-Science-Summer-School-2026/track2-program.html) | Attach to SWoP sessions |
+| Standalone train-the-trainer course | Principal investigators from LMU | 1 day | Asychronous introductory lectures and modified program of Track 2 of the [Open Science Summer School 2026](https://lmu-osc.github.io/Open-Science-Summer-School-2026/track2-program.html) to convey basic teaching and leadership skills for OS teaching |  |
+| Introduction to Open Research | Principal investigators from LMU | 2 - 4 hours | Modified versions of the introductory and solution slides (watch online first). No hands-on experience required; aim is to improve their conceptual understanding, why it is important, and to reduce misconceptions and myths. (cf. devil’s advocate game in prereg; “common myths” to debunk). Potential format: They should watch the lecture at least once (could be done asynchronously as a video), then have a 2h session which (a) points towards next steps (in-depth material, what comes next) and (b) interactively (in person?) work on misconceptions (gamification) |  |
+
+### Standalone course: Outline
+
+Designed for PhDs, PostDocs, PIs etc. with experience in Open Research over a two-day period or four mornings/afternoons; modelled after [Open Science Summer School 2026](https://lmu-osc.github.io/Open-Science-Summer-School-2026/track2-program.html).
+
+| **Session** | **Facilitator** | **Timeframe** | **Modality** | **Homework/assignments** |
+|----|----|----|----|----|
+| Core didactic principles | Yes | 90 mins | Hybrid ok, just online not ok |  |
+| Content planning for your Open Science event/workshop | Yes | 90 mins | Hybrid ok, just online not ok |  |
+| Creating a positive learning environment | Yes | 90 mins | Hybrid ok, just online not ok |  |
+| Activation methods | Yes | 90 mins | Hybrid ok, just online not ok |  |
+| Leadership skills, values and culture | Yes | 90 mins | Hybrid ok |  |
+| Leadership in Open Science challenges | Yes | 60 mins | Hybrid ok |  |
+| Leadership in Open Science strategies | Yes | 45–60 mins | Hybrid ok |  |
+| Leadership in Open Science case studies | Yes | 15–45 mins | Hybrid ok | Yes |
+
+## Important contacts
+
+- Graduate school coordinators
+- SWoP groups, particularly PIs
+
+*List not complete.*
+
+# Supporting notes
+
+- Brainstorming document Sarah-Sara-Malika: <https://docs.google.com/document/d/14AbOokb5SovLdqUWV60IU0Uwnv0xAmaYzTvdCuYiq_M/edit?tab=t.0#heading=h.feamp2qkbbpu>
+- Meeting notes All-Staff meeting: <https://docs.google.com/document/d/1pYlSL9yyJq4lnPQabHYuFh_jkUakI0yJSBHq61sffCU/edit?tab=t.fxengurzkanc>
+
+Back to top

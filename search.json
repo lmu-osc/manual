@@ -540,6 +540,54 @@
     ]
   },
   {
+    "objectID": "train-the-trainer/content-development.html",
+    "href": "train-the-trainer/content-development.html",
+    "title": "Content development",
+    "section": "",
+    "text": "Our detailed content development guidelines take you through a general overview of the program, important prerequisites for starting the development process, including software and topic-specific skills, and the different steps of the content development workflow, from selecting and familiarizing yourself with a topic you want to develop, to understanding the deliverables and the theoretical framework used as quality-control for the materials, the practical material creation process in RStudio with Quarto, Git and GitHub to obtaining feedback and finalizing your materials.\n\n\n\n\n\n\nImportantContent development guidelines - where to find them\n\n\n\nThe content development guidelines can be found in this Google Document: https://docs.google.com/document/d/1fBJyQIhP8zAt0vm19bOoHNgRqZ5YFc3vXoN1j3FSrj4/edit?tab=t.0#heading=h.8930in8q5sry.",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer",
+      "Content development"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/content-development.html#about-the-process",
+    "href": "train-the-trainer/content-development.html#about-the-process",
+    "title": "Content development",
+    "section": "",
+    "text": "Our detailed content development guidelines take you through a general overview of the program, important prerequisites for starting the development process, including software and topic-specific skills, and the different steps of the content development workflow, from selecting and familiarizing yourself with a topic you want to develop, to understanding the deliverables and the theoretical framework used as quality-control for the materials, the practical material creation process in RStudio with Quarto, Git and GitHub to obtaining feedback and finalizing your materials.\n\n\n\n\n\n\nImportantContent development guidelines - where to find them\n\n\n\nThe content development guidelines can be found in this Google Document: https://docs.google.com/document/d/1fBJyQIhP8zAt0vm19bOoHNgRqZ5YFc3vXoN1j3FSrj4/edit?tab=t.0#heading=h.8930in8q5sry.",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer",
+      "Content development"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/content-development.html#development-timeline",
+    "href": "train-the-trainer/content-development.html#development-timeline",
+    "title": "Content development",
+    "section": "Development timeline",
+    "text": "Development timeline\nBelow an overview of the different steps by the content developer and the reviewer to finalize materials for a given topic, depending on if materials are developed internally or party externally, e.g., with FORRT. \nNote that time estimates are approximate and depend on the topic, if materials already exist, prior knowledge and skills of the content developer and/or reviewer.\n\nInternally generated materials\nFor internally developed materials, i.e., the content developer is OSC staff and the reviewer is OSC staff, the development timeline is as follows:\n\n\n\n\n\n\n\n\n\nWhat\nWho\nHow long (in hours)\n\n\n\n\nFamiliarisation with existing materials\nContent developer\n0.5–2\n\n\nAdditional topic reading\nContent developer\n0.5–2\n\n\nGeneration of the topic outline using template (optional depending on preferences)\nContent developer\n8–16\n\n\nFeedback on topic outline\nReviewer\nWithin 16 working hours\n\n\nIntegration of feedback on topic outline\nContent developer\n2\n\n\nSet up of local directory and remote connection with GitHub (one-time only per topic)\nContent developer\n1–2\n\n\nCreation of first draft of slides for topic\nContent developer\n12–16\n\n\nRevision of first slide draft\nReviewer\nWithin 16 working hours\n\n\nIntegration of feedback for first draft and creation of second draft\nContent developer\n2–4\n\n\nRevision of second slide draft\nReviewer\nWithin 16 working hours\n\n\nIntegration of feedback for second draft and creation of final draft\nContent developer\n2–4\n\n\nRevision of final slide draft\nReviewer\nWithin 16 working hours\n\n\nIntegration of feedback for final draft\nContent developer\n2–4\n\n\nTechnical implementation: PR, merge, GitHub checks\nReviewer\nWithin 24 working hours\n\n\n\n\nTotal estimated development time for topic given that both the content developer and the reviewer are OSC staff: within 10 - 15 working days.\n\n\nExternally developed materials. e.g., with FORRT\nFor (partly or fully) externally developed materials, i.e., the content developer is OSC staff but there are also external content developers and/or reviewers (e.g., from FORRT), see here for the development and review instructions: https://docs.google.com/document/d/1HhTvQKDETzElxUbv7lp2045xbBHuw4Q39hcucSlvy6k/edit?tab=t.0#heading=h.ztyiiey6x50",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer",
+      "Content development"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/content-development.html#next-steps",
+    "href": "train-the-trainer/content-development.html#next-steps",
+    "title": "Content development",
+    "section": "Next steps",
+    "text": "Next steps\n\n\n\n\nWhat\nDescription\nRelevant repository/ links\nWho\nPriority\n\n\n\n\nCreate pptx versions for Quarto slides\nConversion of existing Quarto slide decks to pptx using template with minimal pptx formatting for easy editing\nhttps://lmu-osc.github.io/train-the-trainer-open-research/; https://lmu-osc.github.io/teaching-material-for-novices/\nPC, SvG\nhigh\n\n\nAdd pptx download button to topic landing page\nAdd pptx download button on each landing page across both repositories and verify output of pptx files\nhttps://lmu-osc.github.io/train-the-trainer-open-research/; https://lmu-osc.github.io/teaching-material-for-novices/\nVG\nhigh\n\n\nVerify all links on the website\n(already added to assistant TODO) check orcids, external page links, download buttons for pdf, pptx and helpfiles, typos, correct bolding/italics, matching prerequisites, learning objectives, licence statements, contributor and citation statements across slides and corresponding landing page, hyperlinks…\nhttps://lmu-osc.github.io/train-the-trainer-open-research/; https://lmu-osc.github.io/teaching-material-for-novices/\nHiWi\nhigh\n\n\nZenodo repositories for slide decks\nSeparation of existing slide decks into separate Zenodo repositories for a citeable doi\nhttps://lmu-osc.github.io/train-the-trainer-open-research/; https://lmu-osc.github.io/teaching-material-for-novices/\nPC, SvG\nhigh\n\n\nContent development: Teaching materials for novices\nPreregistration (slide deck development in progress), see overview spreadsheet\nhttps://lmu-osc.github.io/teaching-material-for-novices/\nSM\nhigh\n\n\nContent development: Teaching materials for novices\nFAIR Research Data Management (existing slides from OSSS26), see overview spreadsheet\nhttps://lmu-osc.github.io/teaching-material-for-novices/\nReema\nhigh\n\n\nContent development: Teaching materials for novices\nNaming conventions, good coding practices (use materials from OSSS26, include accessbility cheatsheet), see overview spreadsheet\nhttps://lmu-osc.github.io/teaching-material-for-novices/\n\nhigh\n\n\nContent development: Teaching materials for novices\nData anonymity (make introductory slides, then link to existing tutorial?), see overview spreadsheet\nhttps://lmu-osc.github.io/teaching-material-for-novices/; https://lmu-osc.github.io/data-anonymization/\nHiWi\nmedium\n\n\nContent development: Teaching materials for novices\nWrap up practical workshop (for novice level) (use existing tutorial as base), see overview spreadsheet\nhttps://lmu-osc.github.io/teaching-material-for-novices/; https://lmu-osc.github.io/code-publishing/\nHiWi\nmedium\n\n\nContent development: Train-the-Trainer materials\nOpen Research Design Workbook: Rework the Google Doc with the design worksbook, without references to the summer school (also no links to OSF), to provide as resource for instructors, integrate into GitHub website\nhttps://lmu-osc.github.io/train-the-trainer-open-research/, needs to be downloadable and clearly marked as a resource for instructors\nHiWi?\nmedium\n\n\nContent development: Train-the-Trainer materials\nCommunity fostering worksheet for live sessions, format as collection of prompts, ice-breaking activities, getting-to-know questions to create cohort for TTT-delivery, to deliver prior to any content\nhttps://lmu-osc.github.io/train-the-trainer-open-research/\n\nmedium\n\n\nContent updates: Back transfer of pedagogical elements from novice materials to existing tutorials\n1. Compare slides and tutorial: what elements are there? 2. To tutorials, add minimum learning objectives following Bloom’s taxonomy, key terms, summaries and recap to self-paced tutorials (= Level 1), subsequently interactive activities where applicable (= Level 2)\nhttps://lmu-osc.github.io/teaching-materials-for-novices/\n\nmedium\n\n\nContent development: Train-the-Trainer materials\nScience communication and public outreach, see overview spreadsheet\nhttps://lmu-osc.github.io/train-the-trainer-open-research/\n\nlow\n\n\nContent development: Train-the-Trainer materials\nParticipatory research, and social and responsible research, see overview spreadsheet\nhttps://lmu-osc.github.io/train-the-trainer-open-research/\n\nlow\n\n\nContent updates: Teaching materials for novices\nAdd branching to Git/GitHub slide decks, change to Positron?\nhttps://lmu-osc.github.io/teaching-materials-for-novices/\n\nlow\n\n\n\n\nIn the Train-the-Trainer overview spreadsheet with all topics, completed topics are marked in green, ongoing developments in yellow, and future priorities in light purple.",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer",
+      "Content development"
+    ]
+  },
+  {
     "objectID": "staff-onboarding/working-envi.html",
     "href": "staff-onboarding/working-envi.html",
     "title": "Working Environment",
@@ -3235,10 +3283,91 @@
     "href": "train-the-trainer/index.html",
     "title": "Train-the-trainer",
     "section": "",
-    "text": "Back to top",
+    "text": "Document\nDescription\nLinks\nNotes\n\n\n\n\nTeaching materials for novices\nGitHub repository with teaching materials on open research for novices. Material format: Quarto slides, cheatsheets, assignment sheets, activties sheets, downloadable pdf and pptx slides. Public project website here.\nTeaching materials for novices\n\n\n\nTrain-the-Trainer materials\nGitHub repository with training materials on how to teach and lead in open research for open research instructors and open research train-the-trainers. Material format: Quarto slides, downloadable pdf and pptx slides. Public project website here.\nTrain-the-Trainer materials",
     "crumbs": [
       "Home",
       "Train-the-Trainer"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/index.html#important-github-links",
+    "href": "train-the-trainer/index.html#important-github-links",
+    "title": "Train-the-trainer",
+    "section": "",
+    "text": "Document\nDescription\nLinks\nNotes\n\n\n\n\nTeaching materials for novices\nGitHub repository with teaching materials on open research for novices. Material format: Quarto slides, cheatsheets, assignment sheets, activties sheets, downloadable pdf and pptx slides. Public project website here.\nTeaching materials for novices\n\n\n\nTrain-the-Trainer materials\nGitHub repository with training materials on how to teach and lead in open research for open research instructors and open research train-the-trainers. Material format: Quarto slides, downloadable pdf and pptx slides. Public project website here.\nTrain-the-Trainer materials",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/index.html#project-management-and-guidelines",
+    "href": "train-the-trainer/index.html#project-management-and-guidelines",
+    "title": "Train-the-trainer",
+    "section": "Project management and guidelines",
+    "text": "Project management and guidelines\n\n\n\n\nDocument\nDescription\nLink\nNotes\n\n\n\n\nTrain-the-Trainer program overview\nInitial starting document for kicking off the Train-the-Trainer project, brainstorming notes about goals, key links, program structure, etc. in February 2025\nTrain-the-Trainer program overview\nHas not been updated in a while\n\n\nTrain-the-trainer project management\nA multi-tab spreadsheet outlining the program topics, development progress, workflow options, and risk assessment. Tabs used most often: 3a and 3b. Completed topics are marked in green, ongoing developments in yellow, and future priorities in light purple.\nTrain-the-Trainer project management\nLast updated on 16.10.2026\n\n\nTrain-the-Trainer Content Creation Guidelines\nA step-by-step guide written in Google Documents for developing training materials in the Quarto slide format.\nTrain-the-Trainer Content Development Guidelines\nLast updated on 16.10.2026\n\n\nTrain-the-Trainer External Developer and Reviewer Information Pack\nA detailed guide written in Google Documents for external developers and (internal and external) reviewers of materials in the Quarto slide format.\nTrain-the-Trainer external development team information pack\nReviewer guidelines embedded in case study development guidelines\n\n\nTemplate folder for developing teaching materials for novices\nFolder integrated into GitHub repository containing a template folder structure, landing page (index file) and template slide deck for developing teaching materials for novices\nTemplates for developing teaching materials for novices\nLast updated on 16.10.2026\n\n\nTemplate folder for developing train-the-trainer materials\nFolder integrated into GitHub repository containing a template folder structure, landing page (index file) and template slide deck for developing materials for the train-the-trainer topics\nTemplates for developing train-the-trainer materials\nLast updated on 16.10.2026\n\n\nTopic development plan template\nGoogle Document template document to plan the outline and content for a selected topic prior to developing slides in Quarto itself (start of development process).\nTopic development plan template\nLast updated on 16.10.2026\n\n\nStorage location for development plans\nGoogle Drive folders to store the development plan for a given topic. Separate folders depending on the topic (teaching materials for novices vs. train-the-trainer materials.)\nStorage location for teaching materials for novices; Storage location for train-the-trainer materials\nLast updated on 16.10.2026\n\n\nTemplates for helpfiles\nGoogle Drive folder containing templates for cheatsheets and worksheets to accompany the slides\nClick here to access the templates folder\nLast updated on 16.10.2026\n\n\nTrain-the-Trainer team meeting notes\nGoogle Document for notes from regular team meetings showing progress and key decisions made from spring 2025 to present (July 2026).\nTrain-the-Trainer Team Meeting Notes\nLast updated on 16.10.2026",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/index.html#supplementary-project-files",
+    "href": "train-the-trainer/index.html#supplementary-project-files",
+    "title": "Train-the-trainer",
+    "section": "Supplementary project files",
+    "text": "Supplementary project files\n\n\n\n\nDocument\nDescription\nLink\nNotes\n\n\n\n\nZotero Group Library for topic reading\nA group library on zotero that integrates into quarto and generates reference list for each quarto slide deck. Administrator is SvG, the reference files for both repositories are automatically exported directly from her Zotero, including the references of the group library.\nZotero Group Library\nCurrently private group, stored on SvG private account.\n\n\nTrain-the-Trainer Roles, responsibilities and timelines\nA multi-tab spreadsheet written in Google Sheets showing key team members’ roles and responsibilities.\nTrain-the-Trainer Roles, responsibilities and timelines\nHas not been updated in a while\n\n\nTrain-the-Trainer Personas\nA document with Train-the-Trainer thinking on users and target audience of training materials and new OSC website\nTrain-the-Trainer personas\nHas not been updated in a while\n\n\nTrain-the-Trainer Resource bank\nA spreadsheet written in Google Sheets with ideas for activities, survey questions etc that can be used while developing the train-the-trainer program.\nTrain-the-Trainer Resource bank\nOriginally assigned as a task to a Hiwi, not completed.\n\n\nLeadership in Open Science case study series\nZenodo links with case studies that link to Track 2, Day 2 of OSSS26.\nCase Study 1: Big Team ScienceCase Study 2: AI and open codeCase study 3: Cultural awarenessCase study 4: PreregistrationCase study 5: ContributorshipCase study 6: Qualitative methodology",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/program-delivery.html",
+    "href": "train-the-trainer/program-delivery.html",
+    "title": "Programme delivery",
+    "section": "",
+    "text": "Important\n\n\n\nExisting materials for the Train-the-Trainer program can be found here: https://lmu-osc.github.io/train-the-trainer-open-research/.",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer",
+      "Program delivery"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/program-delivery.html#general-delivery-procedure-incomplete",
+    "href": "train-the-trainer/program-delivery.html#general-delivery-procedure-incomplete",
+    "title": "Programme delivery",
+    "section": "General delivery procedure (incomplete!)",
+    "text": "General delivery procedure (incomplete!)\n\n\n\n\n\n\n\n\n\n\nWhen\nWhat\nActions to be taken\nNotes\n\n\n\n\nPre workshop\nAdvertising\n\n\n\n\nPre workshop\nPre-workshop survey\n\n\n\n\nDelivery\n\n\n\n\n\nPost workshop\nPost-workshop survey\n\n\n\n\nPost workshop\nFollow up sessions (for summer school participants)",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer",
+      "Program delivery"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/program-delivery.html#delivery-options",
+    "href": "train-the-trainer/program-delivery.html#delivery-options",
+    "title": "Programme delivery",
+    "section": "Delivery options",
+    "text": "Delivery options\nAn overview of possible delivery options and formats for the train-the-trainer program. Note that these were pulled from brainstorming discussions and are not fully developed ideas.\n\n\n\n\nWhat\nTarget audience\nTimeframe\nConcept/notes\nFeasability\n\n\n\n\nConsultation and follow-up on open research teaching plans\nTrack 2 participants from LMU (PhDs, PostDocs)\nvariable\nFollow-up, consult and support Track 2 LMU participants to deliver their workshop, possibly co-teach or support\nHave trainers teach parts of SWoP?\n\n\nStandalone train-the-trainer course\nTrack 1 participants from LMU (PhDs, PostDocs)\n2 days\nTwo-day course following the program of Track 2 of the Open Science Summer School 2026\n\n\n\nStandalone train-the-trainer course\nSWoP participants (PhDs, PostDocs)\n1 day\nModified program of Track 2 of the Open Science Summer School 2026\nAttach to SWoP sessions\n\n\nStandalone train-the-trainer course\nPrincipal investigators from LMU\n1 day\nAsychronous introductory lectures and modified program of Track 2 of the Open Science Summer School 2026 to convey basic teaching and leadership skills for OS teaching\n\n\n\nIntroduction to Open Research\nPrincipal investigators from LMU\n2 - 4 hours\nModified versions of the introductory and solution slides (watch online first). No hands-on experience required; aim is to improve their conceptual understanding, why it is important, and to reduce misconceptions and myths. (cf. devil’s advocate game in prereg; “common myths” to debunk). Potential format: They should watch the lecture at least once (could be done asynchronously as a video), then have a 2h session which (a) points towards next steps (in-depth material, what comes next) and (b) interactively (in person?) work on misconceptions (gamification)\n\n\n\n\n\n\nStandalone course: Outline\nDesigned for PhDs, PostDocs, PIs etc. with experience in Open Research over a two-day period or four mornings/afternoons; modelled after Open Science Summer School 2026.\n\n\n\n\n\n\n\n\n\n\n\nSession\nFacilitator\nTimeframe\nModality\nHomework/assignments\n\n\n\n\nCore didactic principles\nYes\n90 mins\nHybrid ok, just online not ok\n\n\n\nContent planning for your Open Science event/workshop\nYes\n90 mins\nHybrid ok, just online not ok\n\n\n\nCreating a positive learning environment\nYes\n90 mins\nHybrid ok, just online not ok\n\n\n\nActivation methods\nYes\n90 mins\nHybrid ok, just online not ok\n\n\n\nLeadership skills, values and culture\nYes\n90 mins\nHybrid ok\n\n\n\nLeadership in Open Science challenges\nYes\n60 mins\nHybrid ok\n\n\n\nLeadership in Open Science strategies\nYes\n45–60 mins\nHybrid ok\n\n\n\nLeadership in Open Science case studies\nYes\n15–45 mins\nHybrid ok\nYes",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer",
+      "Program delivery"
+    ]
+  },
+  {
+    "objectID": "train-the-trainer/program-delivery.html#important-contacts",
+    "href": "train-the-trainer/program-delivery.html#important-contacts",
+    "title": "Programme delivery",
+    "section": "Important contacts",
+    "text": "Important contacts\n\nGraduate school coordinators\nSWoP groups, particularly PIs\n\nList not complete.",
+    "crumbs": [
+      "Home",
+      "Train-the-Trainer",
+      "Program delivery"
     ]
   },
   {
