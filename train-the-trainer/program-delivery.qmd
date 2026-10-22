@@ -10,18 +10,19 @@ Existing materials for the Train-the-Trainer program can be found here:  [https:
 
 With the Train-the-Trainer program, we aim to:
 
-- **Encourage** researchers and educators at LMU familiar with open research to **disseminate their open research knowledge and skills** through **teaching** (standalone open research modules, or individual workshops/seminars..)
-- **Familiarize** a broad audience across the LMU with open research principles and the relevance for their own work, e.g., Master students, PhDs, PostDocs, PIs, research support staff...
+- **Encourage** researchers and educators at LMU familiar with open research to **disseminate their open research knowledge and skills** through **teaching** (standalone open research modules, or individual workshops/seminars.)
+- **Familiarize** a broad audience across the LMU with open research principles and the relevance for their own work, e.g., Master students, PhDs, PostDocs, PIs, research support staff.
 
 ## General delivery procedure (incomplete!)
 
 <div style="font-size: 0.8em;">
 | **When** | **What** | **Actions to be taken** | **Notes** |
 |---|---|---|---|
-| Pre workshop | Advertising | | |
-| Pre workshop | Pre-workshop survey | | |
+| Pre workshop | Advertising | Email administrators of graduate programs to add to newsletters, share workshop application link on OSC social media accounts (LinkedIn, BlueSky) | Ensure selection criteria for attendance and certificates and any post-workshop sessions are clearly communicated on applicaiton form. |
+| Pre workshop | Pre-workshop survey |Generate survey using [formR](https://formr.org/)  | |
 | Delivery | | | |
-| Post workshop | Post-workshop survey | | |
+| Post workshop | Post-workshop survey | Use [formR survey](https://surveys.osc.lmu.de/template-workshop-feedback/) based on the Google Doc [template](https://docs.google.com/spreadsheets/d/1bOJMFQGDvXsULr8sb7aZ2Sn37lrIV7liAY7KummEfms/edit?usp=sharing) analysed with our template quarto to docx [report](https://github.com/MalikaIhle/ttt-workshop-feedback)  | Important questions to include pre and post ability (workshop) or understanding (lecture) + highlights + suggestions for improvement.
+|
 | Post workshop | Follow up sessions (for summer school participants) | | |
 </div>
 
@@ -38,6 +39,7 @@ An overview of possible delivery options and formats for the train-the-trainer p
 | Standalone train-the-trainer course | SWoP participants (PhDs, PostDocs) | 1 day | Modified  program of Track 2 of the [Open Science Summer School 2026](https://lmu-osc.github.io/Open-Science-Summer-School-2026/track2-program.html) | Attach to SWoP sessions |
 | Standalone train-the-trainer course | Principal investigators from LMU | 1 day | Asychronous introductory lectures and modified program of Track 2 of the [Open Science Summer School 2026](https://lmu-osc.github.io/Open-Science-Summer-School-2026/track2-program.html) to convey basic teaching and leadership skills for OS teaching | |
 | Introduction to Open Research | Principal investigators from LMU | 2 - 4 hours | Modified versions of the introductory and solution slides (watch online first). No hands-on experience required; aim is to improve their conceptual understanding, why it is important, and to reduce misconceptions and myths. (cf. devil’s advocate game in prereg; “common myths” to debunk). Potential format: They should watch the lecture at least once (could be done asynchronously as a video), then have a 2h session which (a) points towards next steps (in-depth material, what comes next) and (b) interactively (in person?) work on misconceptions (gamification) | |
+| Monthly themed workshop | Late-stage PhDs, Post Docs from LMU | 2  hours | A targeted one off instructor training workshop for learners who have expertise in a particular Open Science practice (e.g. preregistration, R, Quarto, Git, power analysis and simulations) wishing to improve their pedagogy skills and apply it to a specific practice. Call for participants should be explicit that they should have medium-to-high competency in the Open Science topic for the practice they wish to teach. Workshops would occur on a monthly basis focusing on a particular topic. During workshop participants would be signposted to the OSC's existing materials (e.g. self-paced tutorial and/or training materials for novices) | |
 </div>
 
 ### Standalone course: Outline
