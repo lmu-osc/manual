@@ -1,0 +1,43 @@
+---
+title: "LMU OSC Zotero (Group) library"
+---
+
+The LMU Open Science Center has its own [Zotero account](https://www.zotero.org/opensciencecenterlmu/library). Within that account, you are free to add new subcollections or references, or add to existing collections. When collaborating on projects within the OSC, it can be extremely useful to store your references in a joint [Zotero group library](https://www.zotero.org/support/groups). This is handy not just to share literature, but also to create joint `reference.bib` files for LMU OSC repositories. A Zotero group library is separate from your personal *My Library*, so it is also a convenient separation between your own personal reference libraries and a group library within the same Zotero profile.
+
+### Setting up a Zotero group
+
+See [here](https://www.zotero.org/support/groups) for how to create a new group for a new project and check out the different group types and group settings. You can add your collaborators to your Zotero group.
+
+## Collaborating via Zotero groups
+
+For the Train-the-Trainer program, we set up collections within a dedicated group library called [lmu-open-science-center](https://www.zotero.org/opensciencecenterlmu/library). One collection is named `train-the-trainer-open-research`, containing folders matching the individual topics that were developed for the corresponding [repository](https://lmu-osc.github.io/train-the-trainer-open-research/), and the other collection is named `teaching-materials-for-novices`, with folders containing references for individual topics such as preregistration, reproducibility etc. for the matching [repository](https://lmu-osc.github.io/teaching-material-for-novices/).
+
+::: {.callout-tip}
+A Zotero group library is extremely useful to collect references and share literature. Incorporate the [LMU OSC Zotero account](https://www.zotero.org/opensciencecenterlmu/library) as a routine element into your content development process and store all of your references within this Zotero account.
+:::
+
+**The basic procedure for working jointly within a Zotero group library is as follows:**
+
+- A group library is created remotely (in our case, [lmu-open-science-center](https://www.zotero.org/opensciencecenterlmu/library) already exists)
+- **Become a member of the group** with your personal Zotero account. Members are managed directly from the LMU OSC Zotero account, see [here](https://www.zotero.org/support/groups).
+- **View the group library** on your local Zotero desktop app or in your remote library.
+- If you are working on a new topic, **create a new subcollection** under the relevant header (train-the-trainer-open-research or teaching-materials-for-novices).
+- **Save all of your future references** in that subcollection. Zotero syncs the group library with the online storage, and your collaborators can see and access the new references you added. If you are revising a topic, make sure to **add the references** to the correct subcollection.
+- **Ensure** that the local group library **is synced** with the remote group library. 
+
+::: {.callout-warning}
+Remember that any changes that you make in the group library from your Zotero desktop app will be synced with the remote library or vice versa. **When you change something for you, you are changing it for everyone.** Changes are sometimes complex to reverse, check out the **Undo support**: [https://www.zotero.org/blog/zotero-10/](https://www.zotero.org/blog/zotero-10/) (Zotero 10).
+:::
+
+### Generating a joint `reference.bib` file
+
+You have now collected all of your references in a subcollection in the Zotero group. For the Train-the-Trainer repositories, there is a `reference.bib` file stored in the assets folder at the root of the repository. That reference file contains all references relevant for the program (not just for individual topics). When you add new references to the group (in Zotero Desktop or to the remote group), you need to **update the reference file inside the repository folders** from the LMU Open Science Center Zotero account. To do this, there are two options:
+
+- **Manual export**: In the Zotero desktop app, right-click on the group library and choose *Export Items* or *Export Collection*, see [here](https://www.zotero.org/support/kb/exporting) for support. Save the `reference.bib` file in the corresponding repository. *Note that you will have to do this manually everytime you add or change a reference*. 
+
+- **Automatic export via BetterBibTeX**: To avoid the manual export, you can install the [BetterBibTeX extension](https://retorque.re/zotero-better-bibtex/) to **automatically generate and export** the `reference.bib` file from yout Zotero desktop app a soon as there are changes to your Group library.  Check out the [installation steps](https://retorque.re/zotero-better-bibtex/installation/index.html), and the [automatic export documentation](https://retorque.re/zotero-better-bibtex/preferences/automatic-export/index.html). Once you have the extension installed and perform the automatic export via BetterBibTex, tick *Keep updated* in the export menu. This way, whenever someone adds a reference to your group library, and you open your local Zotero, the `reference.bib` file is generated from scratch and saved in the destination folder you chose. 
+
+::: {.callout-tip}
+## Wondering why your new references do not show up in the `reference.bib` file?
+For the automatic export, the `reference.bib` files inside the Train-the-Trainer repositories **only update automatically if the Zotero desktop app is opened** from time to time with the LMU Open Science Center Zotero account. To solve this, open the Desktop app, check that you are logged in with the LMU OSC Zotero account, and initialize the BetterBibTeX export. Then check the reference file in the repository.
+:::
