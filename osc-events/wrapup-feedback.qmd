@@ -32,7 +32,9 @@ When sending feedback requests, keep the survey open for approximately one week 
 Feedback should be collected from both attendees (quantitative) and event contributors (qualitative) whenever appropriate.
 
 Example feedback forms are available as Gsheet in our Gdrive (see [Events](https://drive.google.com/drive/folders/1jrBRX6GLYdkQVerpMJIOsyrHhc0d6HWC)), to be used in **formr**: [https://formr.osc.lmu.de/](https://formr.osc.lmu.de/). 
-See the [application chapter](https://lmu-osc.github.io/manual/osc-events/application.html) to learn more about formr. For example, here is a template for workshop feedback: [Workshop Feedback Form Gsheet](https://docs.google.com/spreadsheets/d/1bOJMFQGDvXsULr8sb7aZ2Sn37lrIV7liAY7KummEfms/edit?gid=2110598566#gid=2110598566), [Workshop Feedback Form formR](https://surveys.osc.lmu.de/template-workshop-feedback/).
+
+See the [application chapter](https://lmu-osc.github.io/manual/osc-events/application.html) to learn more about formr. 
+For example, here is a template for workshop feedback: [Workshop Feedback Form Gsheet](https://docs.google.com/spreadsheets/d/1bOJMFQGDvXsULr8sb7aZ2Sn37lrIV7liAY7KummEfms/edit?gid=2110598566#gid=2110598566), [Workshop Feedback Form formR](https://surveys.osc.lmu.de/template-workshop-feedback/).
 
 ## Communication with Participants
 
