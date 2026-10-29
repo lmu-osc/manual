@@ -72,6 +72,45 @@ Recommended workflow:
 2. Save it locally.
 3. Insert the SVG into PowerPoint.
 
+### Creating a Long-Term QR Code
+
+Many free online QR code generators create *dynamic* QR codes. These send the scan through the provider's server, and they often stop working once a free trial ends or the service shuts down. This is a problem for printed flyers and posters, which can stay in circulation for years.
+
+Instead, create a *static* QR code, which stores the URL directly in the image. It works for as long as the URL itself works and does not depend on any external service. You can make one with either of two free, open-source programs: [LibreOffice Draw](https://www.libreoffice.org/download/download-libreoffice/) or [Inkscape](https://inkscape.org/release/).
+
+::: {.callout-tip}
+## Choose a stable URL
+
+A static QR code cannot be edited after printing, so link to a URL that will not change, such as a page on the OSC website or a DOI. If you want to track how many people scan the code, add Matomo campaign parameters to the URL before you create the code (see [Campaigns and Reporting](/matomo/campaigns-and-reporting.qmd)).
+:::
+
+#### Option 1: LibreOffice Draw
+
+1. Open **LibreOffice Draw** and create a new drawing.
+2. Go to **Insert → OLE Object → QR and Barcode...**.
+3. Paste the URL into the **URL/Text** field.
+4. Make sure **QR Code** is selected as the type, and choose an error correction level (**Medium** or higher is a good choice for print).
+5. Click **OK**. The QR code is inserted into the drawing.
+6. Select the QR code, then go to **File → Export...**.
+7. Choose **SVG** (or PNG) as the file type, tick **Selection** so that only the QR code is exported, and click **Save**.
+
+#### Option 2: Inkscape
+
+1. Open **Inkscape** and create a new document.
+2. Go to **Extensions → Render → Barcode → QR Code...**.
+3. Paste the URL into the **Text** field.
+4. Choose an error correction level (**M** or higher is a good choice for print) and adjust the **Square size** if needed.
+5. Click **Apply**. The QR code is drawn onto the page.
+6. Save the file with **File → Save As...** and choose **Plain SVG**, or export a PNG with **File → Export...**.
+
+You can then insert the SVG into PowerPoint, Canva, or any other design tool.
+
+::: {.callout-important}
+## Test before printing
+
+Always scan the finished QR code with at least one phone before sending a flyer or poster to print. Check that it opens the correct page, and keep the code large enough (at least about 2 × 2 cm) with a white margin around it.
+:::
+
 ### Why Use SVG?
 
 SVG images are recommended because they:
