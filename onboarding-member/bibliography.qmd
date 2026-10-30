@@ -2,43 +2,43 @@
 title: "Updating the Members Publications (Bibliometrics) Sheet"
 ---
 
-
 Here is the Google Sheet used to collect and store publications information of each OSC member:
 
 - [Members Publications Sheet](https://docs.google.com/spreadsheets/d/15vXf-iksan44LKMagVAWdcBNnGMtmhk4/edit?gid=293446652#gid=293446652)
 
 To add the bibliometrics of a new member, follow these steps:
 
-1. Check whether the member already exists by searching the sheet for the member's last name. A member is considered to already exist in the system if at least one of their entries has a **1** in both of the first two columns. If the member is already present, simply add any additional OpenAlex IDs if necessary. If the member is not present, continue with the next step.
+1.  Check whether the member already exists by searching the sheet for the member's last name. A member is considered to already exist in the system if at least one of their entries has a **1** in both of the first two columns. If the member is already present, simply add any additional OpenAlex IDs if necessary. If the member is not present, continue with the next step.
 
-2. Find the OpenAlex Author ID on the [OpenAlex website](https://openalex.org/). Search for the person by name, affiliation, publications, or research field. In the search results, click the person's name and then select **Author profile**. The URL of the profile page corresponds to the OpenAlex author ID.
+2.  Find the OpenAlex Author ID on the [OpenAlex website](https://openalex.org/). Search for the person by name, affiliation, publications, or research field. In the search results, click the person's name and then select **Author profile**. The URL of the profile page corresponds to the OpenAlex author ID.
 
 Example:
 
-```text
+``` text
 https://openalex.org/authors/A5061123357
 ```
 
-::: {.callout-tip}
+::: callout-tip
 ## Alternative Method: Using the R Script
 
-1. Open `01b-Add_members.R`.
-2. Modify the search string.
-3. Run the script.
-4. Inspect the results object to identify the correct OpenAlex author ID.
+1.  Open `01b-Add_members.R`.
+2.  Modify the search string.
+3.  Run the script.
+4.  Inspect the results object to identify the correct OpenAlex author ID.
 :::
 
-3. Add the information to the OSC Author List. Add one row for **each valid OpenAlex ID**.
+3.  Add the information to the OSC Author List. Add one row **at the bottom** of the sheet for **each valid OpenAlex ID**.
 
 The following cells must be updated:
 
-| Column | Information |
-|---|-------------|
-| A | Enter `1` |
-| B | Enter `1` |
-| C | Enter the `osc_id` |
-| E | Enter the OpenAlex ID |
-| G | Enter the official `display_name` |
+| Column | Information                       |
+|--------|-----------------------------------|
+| A      | Enter `1`                         |
+| B      | Enter `1`                         |
+| C      | Enter the `osc_id`                |
+| D      | Enter the OpenAlex ID             |
+| E      | Enter the official `display_name` |
+| F      | Enter the ORCID.                  |
 
 ### Creating the `osc_id`
 
@@ -54,7 +54,7 @@ General rule:
 
 Examples:
 
-```text
+``` text
 Schulz
 SchulzC
 SchulzE
@@ -64,7 +64,7 @@ SchulzE
 
 Use the following format:
 
-```text
+``` text
 https://openalex.org/A5061123357
 ```
 
@@ -75,24 +75,40 @@ https://openalex.org/A5061123357
 
 Example:
 
-```text
+``` text
 https://openalex.org/A5061123357
 ```
 
+### Finding the ORCID
+
+The author's ORCID iD (Open Researcher and Contributor ID) should be identified. It can usually be found in the following places:
+
+1. The author's institutional or university profile.
+2. The [ORCID website](https://orcid.org), where researchers can be searched by name.
+
+Once a potential ORCID iD has been identified, the corresponding ORCID profile should be accessed and the available information cross-checked against the author's details. Particular attention should be paid to the institutional affiliation, research field, publication history, and other identifying information to ensure that the profile belongs to the correct individual.
+
 ### Special Cases
 
-#### If the Person Already Exists
+#### **If the Person Already Exists**
 
 Simply add the new OpenAlex ID.
 
 Example:
 
-```text
+``` text
 1 | 1 | lastname | lastname firstname | OpenAlex ID | firstname lastname
 ```
+#### **In cases where multiple OpenAlex entries are associated with the same author**
 
+1. Only valid author IDs should be considered. Each entry must be assessed by cross-checking the available information, including institutional affiliation, department, research field, and publication history, to ensure that it corresponds to the correct individual. In cases of conflicting information, entries containing publications predating 2014 should generally be excluded.
+
+2. All entries that meet the verification criteria described in Point 1 should be included and listed in separate rows. The level of certainty regarding each entry's validity must be indicated in Column A, under **'certainty'**, using the following values:
+    **1** – The author ID is considered valid, with a high degree of certainty.
+    **0** – The author ID may correspond to the author, but its validity cannot be confirmed with sufficient certainty.
+   
 ### What happens next?
 
-Felix renders the LRZ GitLab repository [https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics](https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics) around once or twice a year to create the website [https://www.resources.osc.lmu.de/bibliography/](https://www.resources.osc.lmu.de/bibliography/) currently only linked in the main website through the About Page [https://www.osc.lmu.de/about/#meta-research-hub](https://www.osc.lmu.de/about/#meta-research-hub).
+Felix renders the LRZ GitLab repository <https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics> around once or twice a year to create the website <https://www.resources.osc.lmu.de/bibliography/> currently only linked in the main website through the About Page <https://www.osc.lmu.de/about/#meta-research-hub>.
 
 <!-- FS TODO -->
