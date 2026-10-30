@@ -90,7 +90,7 @@ Once a potential ORCID iD has been identified, the corresponding ORCID profile s
 
 ### Special Cases
 
-#### If the Person Already Exists
+#### **If the Person Already Exists**
 
 Simply add the new OpenAlex ID.
 
@@ -99,13 +99,13 @@ Example:
 ``` text
 1 | 1 | lastname | lastname firstname | OpenAlex ID | firstname lastname
 ```
-#### In cases where multiple OpenAlex entries are associated with the same author
+#### **In cases where multiple OpenAlex entries are associated with the same author**
 
 1. Only valid author IDs should be considered. Each entry must be assessed by cross-checking the available information, including institutional affiliation, department, research field, and publication history, to ensure that it corresponds to the correct individual. In cases of conflicting information, entries containing publications predating 2014 should generally be excluded.
 
 2. All entries that meet the verification criteria described in Point 1 should be included and listed in separate rows. The level of certainty regarding each entry's validity must be indicated in Column A, under **'certainty'**, using the following values:
-   - **1** – The author ID is considered valid, with a high degree of certainty.
-   - **0** – The author ID may correspond to the author, but its validity cannot be confirmed with sufficient certainty.
+    **1** – The author ID is considered valid, with a high degree of certainty.
+    **0** – The author ID may correspond to the author, but its validity cannot be confirmed with sufficient certainty.
    
 ### What happens next?
 
