@@ -3687,7 +3687,7 @@
     "href": "osc-events/wrapup-feedback.html#creating-feedback-forms",
     "title": "Wrap Up and Feedback",
     "section": "Creating feedback forms",
-    "text": "Creating feedback forms\nFeedback should be collected from both attendees (quantitative) and event contributors (qualitative) whenever appropriate.\nTemplates for feedback forms are available as Gsheet in our Gdrive (e.g. lectures, workshops or symposia) to be used in formr: https://formr.osc.lmu.de/. See the application chapter to learn more about formr.",
+    "text": "Creating feedback forms\nFeedback should be collected from both attendees (quantitative) and event contributors (qualitative) whenever appropriate.\nExample feedback forms are available as Gsheet in our Gdrive (see Events), to be used in formr: https://formr.osc.lmu.de/.\nSee the application chapter to learn more about formr. For example, here is a template for workshop feedback: Workshop Feedback Form Gsheet, Workshop Feedback Form formR.",
     "crumbs": [
       "Home",
       "Organizing an OSC Event",
