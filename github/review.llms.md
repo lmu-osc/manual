@@ -25,7 +25,8 @@ These two tutorials are designed for beginners and use RStudio, which is common 
 
 ### Recommended video tutorials
 
-- [Git & GitHub Crash Course (Boot.dev)](https://www.youtube.com/watch?v=rH3zE7VlIMs) — a hands-on, visual walkthrough. The same content is available as an interactive tutorial on the [Boot.dev](https://boot.dev) website (free tier available). Consider doing the interactive version first, then watch the video to reinforce the concepts.
+- [Git Branching and Merging (GitHub)](https://www.youtube.com/watch?v=Q1kHG842HoI) — a 1 hour walkthrough of branching and merging, including a discussion of merge conflicts. This is a good follow-up to the OSC tutorials above.
+- [Git & GitHub Crash Course (Boot.dev)](https://www.youtube.com/watch?v=rH3zE7VlIMs) — a hands-on, visual walkthrough. The same content is available as an interactive tutorial on the [Boot.dev](https://boot.dev) website (free tier available). Consider doing the interactive version first, then watch the video to reinforce the concepts. **This is a longer tutorial (~4 hour video), but really helps you understand the fundamentals rather than just memorizing commands.**
 
 ### Commit messages
 
