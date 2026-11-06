@@ -58,6 +58,25 @@ Name, Campus email, LRZ SSO.
 
 You can access your mailbox via <https://xmail.mwn.de>. **Note that this email will now be the one used by Exchange in services such as LSF and Moodle.**
 
+::: {.callout-note icon=false collapse=true}
+## Set up your E-Mail in the Outlook Desktop App
+### Step 1: Procedure in the Web Browser
+- Log in to Webmail
+- Navigate to **Account Options**
+- Click on the **Settings** icon (gear icon) located in the upper right corner of the page.
+- Select **Options** from the menu.
+- Go to **Account → POP and IMAP**.
+- Keep this browser tab open, as you will need to copy the server names, ports, and security settings in the next step.
+
+### Step 2: Configure the Outlook Desktop App
+- Open the Outlook application on your device.
+- Click **Add Account** (or follow the prompt to log in if you don't have an active account configured yet).
+- Type in your new email address (ending in \@lmu.de).
+- Click to choose **E-Mail Provider** → Select **IMAP**.
+- Fill in the incoming and outgoing server information using the details retrieved from your open web browser tab (Step 1).
+- Complete the setup.
+:::
+
 #### Set up E-Mail transfer
 To set up e-mail forwarding from your lmu.de account to your personal e-mail, login in the <https://xmail.mwn.de> browser, go to **Settings**, to **Options** and select **Inbox and Sweep rules**.
 Add an Inbox rule and apply to all incoming messages to forward to your personal e-mail address.
