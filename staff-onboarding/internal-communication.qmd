@@ -10,6 +10,33 @@ This section provides information about the main communication channels, meeting
 
 The OSC primarily uses **email** and **LMU Chat (Matrix)** for communication.
 
+### LMU Chat (Matrix)
+
+**Matrix** is an open, decentralized platform for real-time communication. LMU hosts its own Matrix server, called **LMU Chat**, which serves as the central messaging platform for university members.
+
+The recommended application for accessing LMU Chat is **Element**, which is available for:
+
+- Windows
+- macOS
+- Linux
+- iOS
+- Android
+
+LMU Chat is the preferred communication channel for:
+
+- Quick back-and-forth discussions
+- Short tasks and questions
+- FYIs and informal communication
+- Team coordination
+
+#### Getting Started
+
+For detailed instructions on setting up your Matrix account and installing Element, consult the official LMU documentation:
+
+- [LMU Chat (Matrix) Documentation](https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division-vi/it-service-desk/central-it-services/lmu-chat-matrix/)
+
+Once your account is set up, join the OSC workspace using the following invitation link: <https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de>
+
 ### Email
 
 You will receive an **\@lmu.de email account**. Malika will submit a ticket to the IT department to initiate the account creation process.
@@ -49,32 +76,21 @@ It is still acceptable to communicate with OSC staff through your personal email
 
 :::
 
-### LMU Chat (Matrix)
+## Zoom
 
-**Matrix** is an open, decentralized platform for real-time communication. LMU hosts its own Matrix server, called **LMU Chat**, which serves as the central messaging platform for university members.
+Zoom is the primary platform used for OSC meetings, workshops, and webinars.
 
-The recommended application for accessing LMU Chat is **Element**, which is available for:
+If you do not already have a Zoom Pro account, request one through [Faculty 11 Help Desk](https://helpdesk.fak11.lmu.de/)
 
-- Windows
-- macOS
-- Linux
-- iOS
-- Android
+After receiving a Zoom account, contact `it-servicedesk@lmu.de` and ask Faculty 11 to add **Zoom Webinar Pro** access (required for events such as the Open Science Summer School).
 
-LMU Chat is the preferred communication channel for:
+This is important because Malika may need to designate you as an **alternative host** for OSC events.
 
-- Quick back-and-forth discussions
-- Short tasks and questions
-- FYIs and informal communication
-- Team coordination
+### Logging In
 
-#### Getting Started
+Use your **LMU email address** together with your **LRZ Single Sign-On credentials** to activate and access your Zoom account.
 
-For detailed instructions on setting up your Matrix account and installing Element, consult the official LMU documentation:
-
-- [LMU Chat (Matrix) Documentation](https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division-vi/it-service-desk/central-it-services/lmu-chat-matrix/)
-
-Once your account is set up, join the OSC workspace using the following invitation link: <https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de>
+LMU Zoom portal: <https://lmu-munich.zoom.us/>
 
 ## Setting Up Meetings
 
@@ -110,22 +126,6 @@ This opens the **New Event** window.
 
 After scheduling a meeting, always send participants a calendar invitation (e.g., Outlook, Gmail, or an `.ics` attachment) containing the Zoom link.
 :::
-
-## Zoom
-
-Zoom is the primary platform used for OSC meetings, workshops, and webinars.
-
-If you do not already have a Zoom Pro account, request one through [Faculty 11 Help Desk](https://helpdesk.fak11.lmu.de/)
-
-After receiving a Zoom account, contact `it-servicedesk@lmu.de` and ask Faculty 11 to add **Zoom Webinar Pro** access (required for events such as the Open Science Summer School).
-
-This is important because Malika may need to designate you as an **alternative host** for OSC events.
-
-### Logging In
-
-Use your **LMU email address** together with your **LRZ Single Sign-On credentials** to activate and access your Zoom account.
-
-LMU Zoom portal: <https://lmu-munich.zoom.us/>
 
 ## Office and Equipment
 
