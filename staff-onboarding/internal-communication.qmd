@@ -14,7 +14,7 @@ The OSC primarily uses **email** and **LMU Chat (Matrix)** for communication.
 
 You will receive an **\@lmu.de email account**. Malika will submit a ticket to the IT department to initiate the account creation process.
 
-::: {.callout-note icon=false}
+::: {.callout-note icon=false collapse=true}
 ## ✉️ Email Template: Requesting an \@lmu.de email account and a Zoom Webinar Pro Access
 to : <it-servicedesk@lmu.de>
 
@@ -36,7 +36,7 @@ To set up e-mail forwarding from your lmu.de account to your personal e-mail, lo
 Add an Inbox rule and apply to all incoming messages to forward to your personal e-mail address.
 Save and test by sending an e-mail to your \@lmu.de account.
 
-Email should be used for:
+#### Email should be used for:
 
 - Important communications that need to be documented
 - Tasks that cannot be completed immediately
