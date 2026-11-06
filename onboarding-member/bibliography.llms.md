@@ -25,7 +25,7 @@ https://openalex.org/authors/A5061123357
 > 3.  Run the script.
 > 4.  Inspect the results object to identify the correct OpenAlex author ID.
 
-3.  Add the information to the OSC Author List. Add one row for **each valid OpenAlex ID**.
+3.  Add the information to the OSC Author List. Add one row **at the bottom** of the sheet for **each valid OpenAlex ID**.
 
 The following cells must be updated:
 
@@ -34,8 +34,9 @@ The following cells must be updated:
 | A      | Enter `1`                         |
 | B      | Enter `1`                         |
 | C      | Enter the `osc_id`                |
-| E      | Enter the OpenAlex ID             |
-| G      | Enter the official `display_name` |
+| D      | Enter the OpenAlex ID             |
+| E      | Enter the official `display_name` |
+| F      | Enter the ORCID.                  |
 
 ### Creating the `osc_id`
 
@@ -76,9 +77,18 @@ Example:
 https://openalex.org/A5061123357
 ```
 
+### Finding the ORCID
+
+The author’s ORCID iD (Open Researcher and Contributor ID) should be identified. It can usually be found in the following places:
+
+1.  The author’s institutional or university profile.
+2.  The [ORCID website](https://orcid.org), where researchers can be searched by name.
+
+Once a potential ORCID iD has been identified, the corresponding ORCID profile should be accessed and the available information cross-checked against the author’s details. Particular attention should be paid to the institutional affiliation, research field, publication history, and other identifying information to ensure that the profile belongs to the correct individual.
+
 ### Special Cases
 
-#### If the Person Already Exists
+#### **If the Person Already Exists**
 
 Simply add the new OpenAlex ID.
 
@@ -87,6 +97,15 @@ Example:
 ``` text
 1 | 1 | lastname | lastname firstname | OpenAlex ID | firstname lastname
 ```
+
+#### **In cases where multiple OpenAlex entries are associated with the same author**
+
+1.  Only valid author IDs should be considered. Each entry must be assessed by cross-checking the available information, including institutional affiliation, department, research field, and publication history, to ensure that it corresponds to the correct individual. In cases of conflicting information, entries containing publications predating 2014 should generally be excluded.
+
+2.  All entries that meet the verification criteria described in Point 1 should be included and listed in separate rows. The level of certainty regarding each entry’s validity must be indicated in Column A, under **‘certainty’**, using the following values:
+
+- The author ID is considered valid, with a high degree of certainty: **1**
+- The author ID may correspond to the author, but its validity cannot be confirmed with sufficient certainty: **0**
 
 ### What happens next?
 

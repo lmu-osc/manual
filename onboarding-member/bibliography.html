@@ -908,6 +908,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
   <ul>
   <li><a href="#creating-the-osc_id" id="toc-creating-the-osc_id" class="nav-link active" data-scroll-target="#creating-the-osc_id">Creating the <code>osc_id</code></a></li>
   <li><a href="#formatting-the-openalex-id" id="toc-formatting-the-openalex-id" class="nav-link" data-scroll-target="#formatting-the-openalex-id">Formatting the OpenAlex ID</a></li>
+  <li><a href="#finding-the-orcid" id="toc-finding-the-orcid" class="nav-link" data-scroll-target="#finding-the-orcid">Finding the ORCID</a></li>
   <li><a href="#special-cases" id="toc-special-cases" class="nav-link" data-scroll-target="#special-cases">Special Cases</a></li>
   <li><a href="#what-happens-next" id="toc-what-happens-next" class="nav-link" data-scroll-target="#what-happens-next">What happens next?</a></li>
   </ul>
@@ -966,7 +967,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </div>
 </div>
 <ol start="3" type="1">
-<li>Add the information to the OSC Author List. Add one row for <strong>each valid OpenAlex ID</strong>.</li>
+<li>Add the information to the OSC Author List. Add one row <strong>at the bottom</strong> of the sheet for <strong>each valid OpenAlex ID</strong>.</li>
 </ol>
 <p>The following cells must be updated:</p>
 <table class="caption-top table">
@@ -990,12 +991,16 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <td>Enter the <code>osc_id</code></td>
 </tr>
 <tr class="even">
-<td>E</td>
+<td>D</td>
 <td>Enter the OpenAlex ID</td>
 </tr>
 <tr class="odd">
-<td>G</td>
+<td>E</td>
 <td>Enter the official <code>display_name</code></td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>Enter the ORCID.</td>
 </tr>
 </tbody>
 </table>
@@ -1028,19 +1033,38 @@ SchulzE</code></pre>
 <p>Example:</p>
 <pre class="text"><code>https://openalex.org/A5061123357</code></pre>
 </section>
+<section id="finding-the-orcid" class="level3">
+<h3 class="anchored" data-anchor-id="finding-the-orcid">Finding the ORCID</h3>
+<p>The author’s ORCID iD (Open Researcher and Contributor ID) should be identified. It can usually be found in the following places:</p>
+<ol type="1">
+<li>The author’s institutional or university profile.</li>
+<li>The <a href="https://orcid.org">ORCID website</a>, where researchers can be searched by name.</li>
+</ol>
+<p>Once a potential ORCID iD has been identified, the corresponding ORCID profile should be accessed and the available information cross-checked against the author’s details. Particular attention should be paid to the institutional affiliation, research field, publication history, and other identifying information to ensure that the profile belongs to the correct individual.</p>
+</section>
 <section id="special-cases" class="level3">
 <h3 class="anchored" data-anchor-id="special-cases">Special Cases</h3>
 <section id="if-the-person-already-exists" class="level4">
-<h4 class="anchored" data-anchor-id="if-the-person-already-exists">If the Person Already Exists</h4>
+<h4 class="anchored" data-anchor-id="if-the-person-already-exists"><strong>If the Person Already Exists</strong></h4>
 <p>Simply add the new OpenAlex ID.</p>
 <p>Example:</p>
 <pre class="text"><code>1 | 1 | lastname | lastname firstname | OpenAlex ID | firstname lastname</code></pre>
 </section>
+<section id="in-cases-where-multiple-openalex-entries-are-associated-with-the-same-author" class="level4">
+<h4 class="anchored" data-anchor-id="in-cases-where-multiple-openalex-entries-are-associated-with-the-same-author"><strong>In cases where multiple OpenAlex entries are associated with the same author</strong></h4>
+<ol type="1">
+<li><p>Only valid author IDs should be considered. Each entry must be assessed by cross-checking the available information, including institutional affiliation, department, research field, and publication history, to ensure that it corresponds to the correct individual. In cases of conflicting information, entries containing publications predating 2014 should generally be excluded.</p></li>
+<li><p>All entries that meet the verification criteria described in Point 1 should be included and listed in separate rows. The level of certainty regarding each entry’s validity must be indicated in Column A, under <strong>‘certainty’</strong>, using the following values:</p></li>
+</ol>
+<ul>
+<li>The author ID is considered valid, with a high degree of certainty: <strong>1</strong></li>
+<li>The author ID may correspond to the author, but its validity cannot be confirmed with sufficient certainty: <strong>0</strong></li>
+</ul>
+</section>
 </section>
 <section id="what-happens-next" class="level3">
 <h3 class="anchored" data-anchor-id="what-happens-next">What happens next?</h3>
-<p>Felix renders the LRZ GitLab repository <a href="https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics">https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics</a> around once or twice a year to create the website <a href="https://www.resources.osc.lmu.de/bibliography/">https://www.resources.osc.lmu.de/bibliography/</a> currently only linked in the main website through the About Page <a href="https://www.osc.lmu.de/about/#meta-research-hub">https://www.osc.lmu.de/about/#meta-research-hub</a>.</p>
-<!-- FS TODO -->
+<p>Felix renders the LRZ GitLab repository <a href="https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics" class="uri">https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics</a> around once or twice a year to create the website <a href="https://www.resources.osc.lmu.de/bibliography/" class="uri">https://www.resources.osc.lmu.de/bibliography/</a> currently only linked in the main website through the About Page <a href="https://www.osc.lmu.de/about/#meta-research-hub" class="uri">https://www.osc.lmu.de/about/#meta-research-hub</a>.</p>
 
 
 <!-- -->
@@ -1665,43 +1689,43 @@ SchulzE</code></pre>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Updating the Members Publications (Bibliometrics) Sheet"</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>Here is the Google Sheet used to collect and store publications information of each OSC member:</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Members Publications Sheet</span><span class="co">](https://docs.google.com/spreadsheets/d/15vXf-iksan44LKMagVAWdcBNnGMtmhk4/edit?gid=293446652#gid=293446652)</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>To add the bibliometrics of a new member, follow these steps:</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Check whether the member already exists by searching the sheet for the member's last name. A member is considered to already exist in the system if at least one of their entries has a **1** in both of the first two columns. If the member is already present, simply add any additional OpenAlex IDs if necessary. If the member is not present, continue with the next step.</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Find the OpenAlex Author ID on the <span class="co">[</span><span class="ot">OpenAlex website</span><span class="co">](https://openalex.org/)</span>. Search for the person by name, affiliation, publications, or research field. In the search results, click the person's name and then select **Author profile**. The URL of the profile page corresponds to the OpenAlex author ID.</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>Example:</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="in">https://openalex.org/authors/A5061123357</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Alternative Method: Using the R Script</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Open <span class="in">`01b-Add_members.R`</span>.</span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Modify the search string.</span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Run the script.</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Inspect the results object to identify the correct OpenAlex author ID.</span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Add the information to the OSC Author List. Add one row for **each valid OpenAlex ID**.</span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>The following cells must be updated:</span>
-<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Column <span class="pp">|</span> Information <span class="pp">|</span></span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|-------------|</span></span>
-<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A <span class="pp">|</span> Enter <span class="in">`1`</span> <span class="pp">|</span></span>
-<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B <span class="pp">|</span> Enter <span class="in">`1`</span> <span class="pp">|</span></span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C <span class="pp">|</span> Enter the <span class="in">`osc_id`</span> <span class="pp">|</span></span>
-<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> E <span class="pp">|</span> Enter the OpenAlex ID <span class="pp">|</span></span>
-<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> G <span class="pp">|</span> Enter the official <span class="in">`display_name`</span> <span class="pp">|</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>Here is the Google Sheet used to collect and store publications information of each OSC member:</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Members Publications Sheet</span><span class="co">](https://docs.google.com/spreadsheets/d/15vXf-iksan44LKMagVAWdcBNnGMtmhk4/edit?gid=293446652#gid=293446652)</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>To add the bibliometrics of a new member, follow these steps:</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Check whether the member already exists by searching the sheet for the member's last name. A member is considered to already exist in the system if at least one of their entries has a **1** in both of the first two columns. If the member is already present, simply add any additional OpenAlex IDs if necessary. If the member is not present, continue with the next step.</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Find the OpenAlex Author ID on the <span class="co">[</span><span class="ot">OpenAlex website</span><span class="co">](https://openalex.org/)</span>. Search for the person by name, affiliation, publications, or research field. In the search results, click the person's name and then select **Author profile**. The URL of the profile page corresponds to the OpenAlex author ID.</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>Example:</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="in">``` text</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="in">https://openalex.org/authors/A5061123357</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>::: callout-tip</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="fu">## Alternative Method: Using the R Script</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Open <span class="in">`01b-Add_members.R`</span>.</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>Modify the search string.</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Run the script.</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>Inspect the results object to identify the correct OpenAlex author ID.</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>Add the information to the OSC Author List. Add one row **at the bottom** of the sheet for **each valid OpenAlex ID**.</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>The following cells must be updated:</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Column <span class="pp">|</span> Information                       <span class="pp">|</span></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|-----------------------------------|</span></span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> A      <span class="pp">|</span> Enter <span class="in">`1`</span>                         <span class="pp">|</span></span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> B      <span class="pp">|</span> Enter <span class="in">`1`</span>                         <span class="pp">|</span></span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C      <span class="pp">|</span> Enter the <span class="in">`osc_id`</span>                <span class="pp">|</span></span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> D      <span class="pp">|</span> Enter the OpenAlex ID             <span class="pp">|</span></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> E      <span class="pp">|</span> Enter the official <span class="in">`display_name`</span> <span class="pp">|</span></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> F      <span class="pp">|</span> Enter the ORCID.                  <span class="pp">|</span></span>
 <span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a><span class="fu">### Creating the `osc_id`</span></span>
 <span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a></span>
@@ -1717,7 +1741,7 @@ SchulzE</code></pre>
 <span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>Examples:</span>
 <span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a><span class="in">``` text</span></span>
 <span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a><span class="in">Schulz</span></span>
 <span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a><span class="in">SchulzC</span></span>
 <span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a><span class="in">SchulzE</span></span>
@@ -1727,7 +1751,7 @@ SchulzE</code></pre>
 <span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a>Use the following format:</span>
 <span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a><span class="in">``` text</span></span>
 <span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a><span class="in">https://openalex.org/A5061123357</span></span>
 <span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a></span>
@@ -1738,27 +1762,43 @@ SchulzE</code></pre>
 <span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a>Example:</span>
 <span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a><span class="in">``` text</span></span>
 <span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a><span class="in">https://openalex.org/A5061123357</span></span>
 <span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a><span class="fu">### Special Cases</span></span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a><span class="fu">### Finding the ORCID</span></span>
 <span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a><span class="fu">#### If the Person Already Exists</span></span>
+<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a>The author's ORCID iD (Open Researcher and Contributor ID) should be identified. It can usually be found in the following places:</span>
 <span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a>Simply add the new OpenAlex ID.</span>
-<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a>Example:</span>
-<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a><span class="in">```text</span></span>
-<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a><span class="in">1 | 1 | lastname | lastname firstname | OpenAlex ID | firstname lastname</span></span>
-<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a><span class="fu">### What happens next?</span></span>
-<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a>Felix renders the LRZ GitLab repository <span class="co">[</span><span class="ot">https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics</span><span class="co">](https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics)</span> around once or twice a year to create the website <span class="co">[</span><span class="ot">https://www.resources.osc.lmu.de/bibliography/</span><span class="co">](https://www.resources.osc.lmu.de/bibliography/)</span> currently only linked in the main website through the About Page <span class="co">[</span><span class="ot">https://www.osc.lmu.de/about/#meta-research-hub</span><span class="co">](https://www.osc.lmu.de/about/#meta-research-hub)</span>.</span>
-<span id="cb6-97"><a href="#cb6-97" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- FS </span><span class="al">TODO</span><span class="co"> --&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>The author's institutional or university profile.</span>
+<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>The <span class="co">[</span><span class="ot">ORCID website</span><span class="co">](https://orcid.org)</span>, where researchers can be searched by name.</span>
+<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a>Once a potential ORCID iD has been identified, the corresponding ORCID profile should be accessed and the available information cross-checked against the author's details. Particular attention should be paid to the institutional affiliation, research field, publication history, and other identifying information to ensure that the profile belongs to the correct individual.</span>
+<span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a><span class="fu">### Special Cases</span></span>
+<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **If the Person Already Exists**</span></span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-95"><a href="#cb6-95" aria-hidden="true" tabindex="-1"></a>Simply add the new OpenAlex ID.</span>
+<span id="cb6-96"><a href="#cb6-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-97"><a href="#cb6-97" aria-hidden="true" tabindex="-1"></a>Example:</span>
+<span id="cb6-98"><a href="#cb6-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-99"><a href="#cb6-99" aria-hidden="true" tabindex="-1"></a><span class="in">``` text</span></span>
+<span id="cb6-100"><a href="#cb6-100" aria-hidden="true" tabindex="-1"></a><span class="in">1 | 1 | lastname | lastname firstname | OpenAlex ID | firstname lastname</span></span>
+<span id="cb6-101"><a href="#cb6-101" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-102"><a href="#cb6-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-103"><a href="#cb6-103" aria-hidden="true" tabindex="-1"></a><span class="fu">#### **In cases where multiple OpenAlex entries are associated with the same author**</span></span>
+<span id="cb6-104"><a href="#cb6-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-105"><a href="#cb6-105" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>Only valid author IDs should be considered. Each entry must be assessed by cross-checking the available information, including institutional affiliation, department, research field, and publication history, to ensure that it corresponds to the correct individual. In cases of conflicting information, entries containing publications predating 2014 should generally be excluded.</span>
+<span id="cb6-106"><a href="#cb6-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-107"><a href="#cb6-107" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>All entries that meet the verification criteria described in Point 1 should be included and listed in separate rows. The level of certainty regarding each entry's validity must be indicated in Column A, under **'certainty'**, using the following values:</span>
+<span id="cb6-108"><a href="#cb6-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-109"><a href="#cb6-109" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The author ID is considered valid, with a high degree of certainty: **1**</span>
+<span id="cb6-110"><a href="#cb6-110" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The author ID may correspond to the author, but its validity cannot be confirmed with sufficient certainty: **0**</span>
+<span id="cb6-111"><a href="#cb6-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-112"><a href="#cb6-112" aria-hidden="true" tabindex="-1"></a><span class="fu">### What happens next?</span></span>
+<span id="cb6-113"><a href="#cb6-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-114"><a href="#cb6-114" aria-hidden="true" tabindex="-1"></a>Felix renders the LRZ GitLab repository <span class="ot">&lt;https://gitlab.lrz.de/lmu-open-science-center/OSC-bibliometrics&gt;</span> around once or twice a year to create the website <span class="ot">&lt;https://www.resources.osc.lmu.de/bibliography/&gt;</span> currently only linked in the main website through the About Page <span class="ot">&lt;https://www.osc.lmu.de/about/#meta-research-hub&gt;</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
