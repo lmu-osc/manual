@@ -101,7 +101,8 @@ A static QR code cannot be edited after printing, so link to a URL that will not
 3. Paste the URL into the **Text** field.
 4. Choose an error correction level (**M** or higher is a good choice for print) and adjust the **Square size** if needed.
 5. Click **Apply**. The QR code is drawn onto the page.
-6. Save the file with **File → Save As...** and choose **Plain SVG**, or export a PNG with **File → Export...**.
+6. Right klick on the page's background and go to **Document Settings → Change page size to fit content**.
+7. Save the QR Code as file with **File → Save As...** and choose **Plain SVG**, or export a PNG with **File → Export...**.
 
 You can then insert the SVG into PowerPoint, Canva, or any other design tool.
 
