@@ -60,7 +60,7 @@ You can access your mailbox via <https://xmail.mwn.de>. **Note that this email w
 
 ::: {.callout-note icon=false collapse=true}
 ## Set up your E-Mail in the Outlook Desktop App
-### Step 1: Procedure in the Web Browser
+#### Step 1: Procedure in the Web Browser
 - Log in to Webmail
 - Navigate to **Account Options**
 - Click on the **Settings** icon (gear icon) located in the upper right corner of the page.
@@ -68,7 +68,7 @@ You can access your mailbox via <https://xmail.mwn.de>. **Note that this email w
 - Go to **Account → POP and IMAP**.
 - Keep this browser tab open, as you will need to copy the server names, ports, and security settings in the next step.
 
-### Step 2: Configure the Outlook Desktop App
+#### Step 2: Configure the Outlook Desktop App
 - Open the Outlook application on your device.
 - Click **Add Account** (or follow the prompt to log in if you don't have an active account configured yet).
 - Type in your new email address (ending in \@lmu.de).
