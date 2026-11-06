@@ -91,6 +91,18 @@ SVG images are recommended because they:
 
 The official printing service for LMU is the **Hausdruckerei (Ricoh Deutschland GmbH Printcenter LMU)**.
 
+**Access to the LMU In-House Printing Service is restricted to LMU staff.**
+
+To request printing services (e.g., flyers or posters), LMU staff must:
+
+1.  Log in to the LMU Service Portal: [LMU In-House Printing Service Information](https://www.serviceportal.verwaltung.uni-muenchen.de/services/beschaffung/ausstatt_rahmenvertr_dienstlst/hausdruckerei/index.html)
+2.  Complete the order form available there. The form contains our account and financial information required for billing.
+3.  Send the completed order form by email to the printing service at `hausdruckerei@lmu.de`, together with the file to be printed.
+
+Please ensure that both the completed form and the print-ready file are attached to your email submission.
+
+![](../osc-outreach/images/lmu-in-house-printing.png)
+
 You can find additional information, including price lists and forms, on the LMU Service Portal:
 
 - [LMU In-House Printing Service Information](https://www.serviceportal.verwaltung.uni-muenchen.de/services/beschaffung/ausstatt_rahmenvertr_dienstlst/hausdruckerei/index.html)
@@ -107,10 +119,6 @@ You can find additional information, including price lists and forms, on the LMU
 |-----------------|-------------------|
 | Monday–Thursday | 9:00 AM – 3:00 PM |
 | Friday          | Closed            |
-
-To print materials (e.g., flyers or posters), contact the print shop by email or phone to discuss your requirements.
-
-- Email: `hausdruckerei@lmu.de`
 
 ### External Printing Option: Printy
 
