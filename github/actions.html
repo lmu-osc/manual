@@ -1518,7 +1518,7 @@ Tip
 <p>Broken links undermine the credibility of our websites. We run <strong>link checker</strong> workflows to scan for dead links and report them. We currently have two different link checker setups:</p>
 <section id="main-website-lycheeverselychee-action" class="level4">
 <h4 class="anchored" data-anchor-id="main-website-lycheeverselychee-action">Main website: <code>lycheeverse/lychee-action</code></h4>
-<p>The <a href="https://github.com/lmu-osc/lmu-osc.github.io">main OSC website</a> uses <a href="https://github.com/lycheeverse/lychee-action"><code>lycheeverse/lychee-action</code></a> to scan the Markdown and HTML files in the repository for broken links. It runs on a weekly schedule. For specific details, refer to the documentation in that repository.</p>
+<p>The <a href="https://github.com/lmu-osc/lmu-osc.github.io">main OSC website</a> uses <a href="https://github.com/lycheeverse/lychee-action"><code>lycheeverse/lychee-action</code></a> to scan the Markdown and HTML files in the repository for broken links. It runs on a monthly schedule. For specific details, refer to the documentation in that repository.</p>
 <p>Note: the main difference between this link checker and the one used in the tutorial template is that this one is more complex and customizable, allowing us to exclude certain files, folders, and external domains from the check.</p>
 </section>
 <section id="tutorial-template-filiphlinkcheck" class="level4">
@@ -1527,13 +1527,44 @@ Tip
 <p>Key characteristics of the tutorial template link checker:</p>
 <ul>
 <li><strong>Scheduling</strong>: Runs on the first day of every month at midnight (<code>cron: '0 0 1 * *'</code>). It can also be triggered manually via <code>workflow_dispatch</code>.</li>
-<li><strong>Scope</strong>: Checks the entire website with no exclusions for specific files, folders, or external domains.</li>
+<li><strong>Scope</strong>: Checks every page of the published site for broken internal links, including same-site anchors and references to assets such as scripts and stylesheets. External links are <strong>not</strong> checked: <code>filiph/linkcheck</code> ignores them unless the <code>-e</code> flag is passed, and this workflow does not pass it. (The main website’s <code>lychee</code> workflow does check external links.)</li>
 <li><strong>Reporting</strong>: If broken links are found, the workflow automatically creates a GitHub issue (labeled <code>link-checker</code>) with a detailed report. It will not create duplicate issues if one is already open.</li>
-<li><strong>Why a simpler approach?</strong>: Tutorials typically have fewer outbound links than the main website, and virtually all links should always be functional (or replaced when a linked site goes down). A straightforward link checker that scans the live site is therefore sufficient — there is no need for complex exclusion patterns or file-level filtering.</li>
+<li><strong>Why a simpler approach?</strong>: Tutorials typically have fewer outbound links than the main website, and most problems arise from internal links and anchors, which this checker catches by crawling the live site. External links are still worth checking by hand when finalizing a tutorial. A straightforward checker is therefore sufficient — there is no need for complex exclusion patterns or file-level filtering.</li>
 </ul>
 <blockquote class="blockquote">
 <p><strong>Note:</strong> Because this checker scans the <em>live</em> website, updates pushed shortly before a run might not yet be reflected in the deployed site. That said, the monthly schedule means the checker will naturally catch any broken links soon enough.</p>
 </blockquote>
+</section>
+<section id="what-to-do-when-a-link-checker-opens-an-issue" class="level4">
+<h4 class="anchored" data-anchor-id="what-to-do-when-a-link-checker-opens-an-issue">What to do when a link checker opens an issue</h4>
+<p>Both setups report their findings as a GitHub issue, but the details differ: the <code>filiph/linkcheck</code> workflow opens an issue labelled <code>link-checker</code>, and only when none is already open; the <code>lychee</code> workflow on the main website opens a new “Link Checker Report” issue (labelled <code>report</code> and <code>automated issue</code>) on every run that finds problems, so more than one may be open at a time. The triage is the same for both:</p>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Start from the reported page, not the reported URL.</strong> Each entry lists the page that <em>contains</em> the broken link, then the link target and the problem. Edit the source <code>.qmd</code> of that page.</label></li>
+<li><label><input type="checkbox"><strong>Ignore <code>connection failed</code> entries.</strong> These are almost always temporary crawl or network hiccups, not broken links. This applies in particular to internal <code>lmu-osc.github.io</code> links and whenever the same URL fails across many or all pages in one report, as well as to <code>site_libs/</code> scripts and stylesheets.</label></li>
+<li><label><input type="checkbox"><strong>Fix <code>HTTP 404</code> entries.</strong> The target no longer exists: correct the URL, or remove or replace the link.</label></li>
+<li><label><input type="checkbox"><strong>Fix <code>HTTP 200 but missing anchor</code> entries.</strong> The page exists, but the heading it points to was renamed or removed. Update the <code>#anchor</code>, or drop it and link to the page only.</label></li>
+<li><label><input type="checkbox"><strong>Fix links that end in <code>.qmd</code></strong> (for example <code>.../path/link.qmd</code>). Raw source paths do not exist on the published site — replace them with the rendered page path or a proper cross-reference.</label></li>
+<li><label><input type="checkbox"><strong>Look for typos in file names.</strong> A misspelled file name is reported as a 404 even when the intended page exists.</label></li>
+<li><label><input type="checkbox"><strong>Commit the fixes to <code>main</code>.</strong> The <code>filiph/linkcheck</code> workflow scans the <em>live</em> site, so fixes there only take effect once the site has been re-rendered and deployed. <code>lychee</code> reads the repository itself, so re-running its workflow is enough.</label></li>
+<li><label><input type="checkbox"><strong>Close the issue once the report is resolved to your satisfaction.</strong> Most historical links have already been fixed across our sites, so there should be relatively few actual broken links. Many “broken links” are transient, and issues can generally be closed without taking any action.</label></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Note:</strong> The <code>filiph/linkcheck</code> workflow only opens an issue when none is already open, so broken links found while an issue is still open are not appended to it — if the report looks out of date, re-run the workflow. The <code>lychee</code> workflow instead opens a fresh report on each run, so close older reports once they have been addressed.</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Because <code>lychee</code> also checks <strong>external</strong> links, it may report outbound URLs that are temporarily unreachable. In that case no change to our content is needed — re-check later. If a domain is permanently gone or consistently causes false positives, it can be excluded in the main website repository, either in the <code>.lycheeignore</code> file or through the <code>--exclude-path</code> arguments in its link checker workflow; the <code>filiph/linkcheck</code> setup has no equivalent exclusion list.</p>
+</div>
+</div>
+<p>To catch broken links before they are published, also follow the link checks in <a href="../authoring-tutorials/finalization-and-publishing.html">Finalization and Publishing</a>.</p>
 </section>
 </section>
 <section id="code-formatting-with-the-r-styler-package" class="level3">
@@ -2728,7 +2759,7 @@ Tip
 <span id="cb19-474"><a href="#cb19-474" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-475"><a href="#cb19-475" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Main website: `lycheeverse/lychee-action`</span></span>
 <span id="cb19-476"><a href="#cb19-476" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-477"><a href="#cb19-477" aria-hidden="true" tabindex="-1"></a>The <span class="co">[</span><span class="ot">main OSC website</span><span class="co">](https://github.com/lmu-osc/lmu-osc.github.io)</span> uses <span class="co">[</span><span class="ot">`lycheeverse/lychee-action`</span><span class="co">](https://github.com/lycheeverse/lychee-action)</span> to scan the Markdown and HTML files in the repository for broken links. It runs on a weekly schedule. For specific details, refer to the documentation in that repository.</span>
+<span id="cb19-477"><a href="#cb19-477" aria-hidden="true" tabindex="-1"></a>The <span class="co">[</span><span class="ot">main OSC website</span><span class="co">](https://github.com/lmu-osc/lmu-osc.github.io)</span> uses <span class="co">[</span><span class="ot">`lycheeverse/lychee-action`</span><span class="co">](https://github.com/lycheeverse/lychee-action)</span> to scan the Markdown and HTML files in the repository for broken links. It runs on a monthly schedule. For specific details, refer to the documentation in that repository.</span>
 <span id="cb19-478"><a href="#cb19-478" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-479"><a href="#cb19-479" aria-hidden="true" tabindex="-1"></a>Note: the main difference between this link checker and the one used in the tutorial template is that this one is more complex and customizable, allowing us to exclude certain files, folders, and external domains from the check. </span>
 <span id="cb19-480"><a href="#cb19-480" aria-hidden="true" tabindex="-1"></a></span>
@@ -2739,126 +2770,149 @@ Tip
 <span id="cb19-485"><a href="#cb19-485" aria-hidden="true" tabindex="-1"></a>Key characteristics of the tutorial template link checker:</span>
 <span id="cb19-486"><a href="#cb19-486" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-487"><a href="#cb19-487" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Scheduling**: Runs on the first day of every month at midnight (<span class="in">`cron: '0 0 1 * *'`</span>). It can also be triggered manually via <span class="in">`workflow_dispatch`</span>.</span>
-<span id="cb19-488"><a href="#cb19-488" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Scope**: Checks the entire website with no exclusions for specific files, folders, or external domains.</span>
+<span id="cb19-488"><a href="#cb19-488" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Scope**: Checks every page of the published site for broken internal links, including same-site anchors and references to assets such as scripts and stylesheets. External links are **not** checked: <span class="in">`filiph/linkcheck`</span> ignores them unless the <span class="in">`-e`</span> flag is passed, and this workflow does not pass it. (The main website's <span class="in">`lychee`</span> workflow does check external links.)</span>
 <span id="cb19-489"><a href="#cb19-489" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Reporting**: If broken links are found, the workflow automatically creates a GitHub issue (labeled <span class="in">`link-checker`</span>) with a detailed report. It will not create duplicate issues if one is already open.</span>
-<span id="cb19-490"><a href="#cb19-490" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Why a simpler approach?**: Tutorials typically have fewer outbound links than the main website, and virtually all links should always be functional (or replaced when a linked site goes down). A straightforward link checker that scans the live site is therefore sufficient --- there is no need for complex exclusion patterns or file-level filtering.</span>
+<span id="cb19-490"><a href="#cb19-490" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Why a simpler approach?**: Tutorials typically have fewer outbound links than the main website, and most problems arise from internal links and anchors, which this checker catches by crawling the live site. External links are still worth checking by hand when finalizing a tutorial. A straightforward checker is therefore sufficient --- there is no need for complex exclusion patterns or file-level filtering.</span>
 <span id="cb19-491"><a href="#cb19-491" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-492"><a href="#cb19-492" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **Note:** Because this checker scans the *live* website, updates pushed shortly before a run might not yet be reflected in the deployed site. That said, the monthly schedule means the checker will naturally catch any broken links soon enough.</span></span>
 <span id="cb19-493"><a href="#cb19-493" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-494"><a href="#cb19-494" aria-hidden="true" tabindex="-1"></a><span class="fu">### 5. Code formatting with the R styler package</span></span>
+<span id="cb19-494"><a href="#cb19-494" aria-hidden="true" tabindex="-1"></a><span class="fu">#### What to do when a link checker opens an issue</span></span>
 <span id="cb19-495"><a href="#cb19-495" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-496"><a href="#cb19-496" aria-hidden="true" tabindex="-1"></a>Consistent code style makes our R code easier to read and maintain. The **styler** workflow automatically formats R code according to a standard style guide.</span>
+<span id="cb19-496"><a href="#cb19-496" aria-hidden="true" tabindex="-1"></a>Both setups report their findings as a GitHub issue, but the details differ: the <span class="in">`filiph/linkcheck`</span> workflow opens an issue labelled <span class="in">`link-checker`</span>, and only when none is already open; the <span class="in">`lychee`</span> workflow on the main website opens a new "Link Checker Report" issue (labelled <span class="in">`report`</span> and <span class="in">`automated issue`</span>) on every run that finds problems, so more than one may be open at a time. The triage is the same for both:</span>
 <span id="cb19-497"><a href="#cb19-497" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-498"><a href="#cb19-498" aria-hidden="true" tabindex="-1"></a>We use the <span class="co">[</span><span class="ot">styler workflow</span><span class="co">](https://github.com/r-lib/actions/tree/v2-branch/examples#style-package)</span> from the <span class="in">`r-lib/actions`</span> repository.</span>
-<span id="cb19-499"><a href="#cb19-499" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-500"><a href="#cb19-500" aria-hidden="true" tabindex="-1"></a>One difference to note is that the documentation provided above uses:</span>
-<span id="cb19-501"><a href="#cb19-501" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-502"><a href="#cb19-502" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
-<span id="cb19-503"><a href="#cb19-503" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Style</span></span>
-<span id="cb19-504"><a href="#cb19-504" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> styler::style_pkg()</span></span>
-<span id="cb19-505"><a href="#cb19-505" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span>
-<span id="cb19-506"><a href="#cb19-506" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-507"><a href="#cb19-507" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-508"><a href="#cb19-508" aria-hidden="true" tabindex="-1"></a>However, we are not styling R packages but rather just a directory of files that may or may not be in a package structure. Therefore, we use:</span>
-<span id="cb19-509"><a href="#cb19-509" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-510"><a href="#cb19-510" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
-<span id="cb19-511"><a href="#cb19-511" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Style</span></span>
-<span id="cb19-512"><a href="#cb19-512" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> styler::style_dir()</span></span>
-<span id="cb19-513"><a href="#cb19-513" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span>
-<span id="cb19-514"><a href="#cb19-514" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-515"><a href="#cb19-515" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-516"><a href="#cb19-516" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb19-517"><a href="#cb19-517" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-518"><a href="#cb19-518" aria-hidden="true" tabindex="-1"></a><span class="fu">## Best practices for GitHub Actions</span></span>
-<span id="cb19-519"><a href="#cb19-519" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-520"><a href="#cb19-520" aria-hidden="true" tabindex="-1"></a>Here are some guidelines to keep your workflows reliable and maintainable.</span>
-<span id="cb19-521"><a href="#cb19-521" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-522"><a href="#cb19-522" aria-hidden="true" tabindex="-1"></a><span class="fu">### Use specific action versions</span></span>
-<span id="cb19-523"><a href="#cb19-523" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-524"><a href="#cb19-524" aria-hidden="true" tabindex="-1"></a>Always pin actions to a specific version tag (e.g., <span class="in">`@v4`</span>, <span class="in">`@v2`</span>) rather than using <span class="in">`@main`</span> or <span class="in">`@master`</span>. This prevents unexpected changes from breaking your workflows when action maintainers update their code.</span>
-<span id="cb19-525"><a href="#cb19-525" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-526"><a href="#cb19-526" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
-<span id="cb19-527"><a href="#cb19-527" aria-hidden="true" tabindex="-1"></a><span class="co"># Good --- version is explicit</span></span>
-<span id="cb19-528"><a href="#cb19-528" aria-hidden="true" tabindex="-1"></a><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
-<span id="cb19-529"><a href="#cb19-529" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-530"><a href="#cb19-530" aria-hidden="true" tabindex="-1"></a><span class="co"># Risky --- could break when the action is updated</span></span>
-<span id="cb19-531"><a href="#cb19-531" aria-hidden="true" tabindex="-1"></a><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@main</span></span>
-<span id="cb19-532"><a href="#cb19-532" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-533"><a href="#cb19-533" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-534"><a href="#cb19-534" aria-hidden="true" tabindex="-1"></a><span class="fu">### Keep workflows focused</span></span>
-<span id="cb19-535"><a href="#cb19-535" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-536"><a href="#cb19-536" aria-hidden="true" tabindex="-1"></a>Each workflow should do one thing well. If you have a spellchecker and a deployment workflow, keep them in separate files. This makes it easier to:</span>
-<span id="cb19-537"><a href="#cb19-537" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-538"><a href="#cb19-538" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>See at a glance what automation exists.</span>
-<span id="cb19-539"><a href="#cb19-539" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Re-run a single workflow without triggering others.</span>
-<span id="cb19-540"><a href="#cb19-540" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Understand failures (a spellcheck failure shouldn't block deployment).</span>
-<span id="cb19-541"><a href="#cb19-541" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-542"><a href="#cb19-542" aria-hidden="true" tabindex="-1"></a><span class="fu">### Name your steps</span></span>
-<span id="cb19-543"><a href="#cb19-543" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-544"><a href="#cb19-544" aria-hidden="true" tabindex="-1"></a>Adding <span class="in">`name`</span> to each step makes the workflow log much easier to read, especially when a step fails:</span>
-<span id="cb19-545"><a href="#cb19-545" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-546"><a href="#cb19-546" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
-<span id="cb19-547"><a href="#cb19-547" aria-hidden="true" tabindex="-1"></a><span class="co"># Good</span></span>
-<span id="cb19-548"><a href="#cb19-548" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install dependencies</span></span>
-<span id="cb19-549"><a href="#cb19-549" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm install</span></span>
-<span id="cb19-550"><a href="#cb19-550" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-551"><a href="#cb19-551" aria-hidden="true" tabindex="-1"></a><span class="co"># Less helpful</span></span>
-<span id="cb19-552"><a href="#cb19-552" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm install</span></span>
-<span id="cb19-553"><a href="#cb19-553" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-554"><a href="#cb19-554" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-555"><a href="#cb19-555" aria-hidden="true" tabindex="-1"></a><span class="fu">### Use caching when possible</span></span>
+<span id="cb19-498"><a href="#cb19-498" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Start from the reported page, not the reported URL.** Each entry lists the page that *contains* the broken link, then the link target and the problem. Edit the source <span class="in">`.qmd`</span> of that page.</span>
+<span id="cb19-499"><a href="#cb19-499" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Ignore `connection failed` entries.** These are almost always temporary crawl or network hiccups, not broken links. This applies in particular to internal <span class="in">`lmu-osc.github.io`</span> links and whenever the same URL fails across many or all pages in one report, as well as to <span class="in">`site_libs/`</span> scripts and stylesheets.</span>
+<span id="cb19-500"><a href="#cb19-500" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Fix `HTTP 404` entries.** The target no longer exists: correct the URL, or remove or replace the link.</span>
+<span id="cb19-501"><a href="#cb19-501" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Fix `HTTP 200 but missing anchor` entries.** The page exists, but the heading it points to was renamed or removed. Update the <span class="in">`#anchor`</span>, or drop it and link to the page only.</span>
+<span id="cb19-502"><a href="#cb19-502" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Fix links that end in `.qmd`** (for example <span class="in">`.../path/link.qmd`</span>). Raw source paths do not exist on the published site --- replace them with the rendered page path or a proper cross-reference.</span>
+<span id="cb19-503"><a href="#cb19-503" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Look for typos in file names.** A misspelled file name is reported as a 404 even when the intended page exists.</span>
+<span id="cb19-504"><a href="#cb19-504" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Commit the fixes to `main`.** The <span class="in">`filiph/linkcheck`</span> workflow scans the *live* site, so fixes there only take effect once the site has been re-rendered and deployed. <span class="in">`lychee`</span> reads the repository itself, so re-running its workflow is enough.</span>
+<span id="cb19-505"><a href="#cb19-505" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Close the issue once the report is resolved to your satisfaction.** Most historical links have already been fixed across our sites, so there should be relatively few actual broken links. Many "broken links" are transient, and issues can generally be closed without taking any action.</span>
+<span id="cb19-506"><a href="#cb19-506" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-507"><a href="#cb19-507" aria-hidden="true" tabindex="-1"></a><span class="at">&gt; **Note:** The </span><span class="in">`filiph/linkcheck`</span><span class="at"> workflow only opens an issue when none is already open, so broken links found while an issue is still open are not appended to it --- if the report looks out of date, re-run the workflow. The </span><span class="in">`lychee`</span><span class="at"> workflow instead opens a fresh report on each run, so close older reports once they have been addressed.</span></span>
+<span id="cb19-508"><a href="#cb19-508" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-509"><a href="#cb19-509" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb19-510"><a href="#cb19-510" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-511"><a href="#cb19-511" aria-hidden="true" tabindex="-1"></a>Because <span class="in">`lychee`</span> also checks **external** links, it may report outbound URLs that are temporarily unreachable. In that case no change to our content is needed --- re-check later. If a domain is permanently gone or consistently causes false positives, it can be excluded in the main website repository, either in the <span class="in">`.lycheeignore`</span> file or through the <span class="in">`--exclude-path`</span> arguments in its link checker workflow; the <span class="in">`filiph/linkcheck`</span> setup has no equivalent exclusion list.</span>
+<span id="cb19-512"><a href="#cb19-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-513"><a href="#cb19-513" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb19-514"><a href="#cb19-514" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-515"><a href="#cb19-515" aria-hidden="true" tabindex="-1"></a>To catch broken links before they are published, also follow the link checks in <span class="co">[</span><span class="ot">Finalization and Publishing</span><span class="co">](../authoring-tutorials/finalization-and-publishing.qmd)</span>.</span>
+<span id="cb19-516"><a href="#cb19-516" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-517"><a href="#cb19-517" aria-hidden="true" tabindex="-1"></a><span class="fu">### 5. Code formatting with the R styler package</span></span>
+<span id="cb19-518"><a href="#cb19-518" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-519"><a href="#cb19-519" aria-hidden="true" tabindex="-1"></a>Consistent code style makes our R code easier to read and maintain. The **styler** workflow automatically formats R code according to a standard style guide.</span>
+<span id="cb19-520"><a href="#cb19-520" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-521"><a href="#cb19-521" aria-hidden="true" tabindex="-1"></a>We use the <span class="co">[</span><span class="ot">styler workflow</span><span class="co">](https://github.com/r-lib/actions/tree/v2-branch/examples#style-package)</span> from the <span class="in">`r-lib/actions`</span> repository.</span>
+<span id="cb19-522"><a href="#cb19-522" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-523"><a href="#cb19-523" aria-hidden="true" tabindex="-1"></a>One difference to note is that the documentation provided above uses:</span>
+<span id="cb19-524"><a href="#cb19-524" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-525"><a href="#cb19-525" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
+<span id="cb19-526"><a href="#cb19-526" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Style</span></span>
+<span id="cb19-527"><a href="#cb19-527" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> styler::style_pkg()</span></span>
+<span id="cb19-528"><a href="#cb19-528" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span>
+<span id="cb19-529"><a href="#cb19-529" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-530"><a href="#cb19-530" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-531"><a href="#cb19-531" aria-hidden="true" tabindex="-1"></a>However, we are not styling R packages but rather just a directory of files that may or may not be in a package structure. Therefore, we use:</span>
+<span id="cb19-532"><a href="#cb19-532" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-533"><a href="#cb19-533" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
+<span id="cb19-534"><a href="#cb19-534" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Style</span></span>
+<span id="cb19-535"><a href="#cb19-535" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> styler::style_dir()</span></span>
+<span id="cb19-536"><a href="#cb19-536" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">shell</span><span class="kw">:</span><span class="at"> Rscript {0}</span></span>
+<span id="cb19-537"><a href="#cb19-537" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-538"><a href="#cb19-538" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-539"><a href="#cb19-539" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb19-540"><a href="#cb19-540" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-541"><a href="#cb19-541" aria-hidden="true" tabindex="-1"></a><span class="fu">## Best practices for GitHub Actions</span></span>
+<span id="cb19-542"><a href="#cb19-542" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-543"><a href="#cb19-543" aria-hidden="true" tabindex="-1"></a>Here are some guidelines to keep your workflows reliable and maintainable.</span>
+<span id="cb19-544"><a href="#cb19-544" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-545"><a href="#cb19-545" aria-hidden="true" tabindex="-1"></a><span class="fu">### Use specific action versions</span></span>
+<span id="cb19-546"><a href="#cb19-546" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-547"><a href="#cb19-547" aria-hidden="true" tabindex="-1"></a>Always pin actions to a specific version tag (e.g., <span class="in">`@v4`</span>, <span class="in">`@v2`</span>) rather than using <span class="in">`@main`</span> or <span class="in">`@master`</span>. This prevents unexpected changes from breaking your workflows when action maintainers update their code.</span>
+<span id="cb19-548"><a href="#cb19-548" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-549"><a href="#cb19-549" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
+<span id="cb19-550"><a href="#cb19-550" aria-hidden="true" tabindex="-1"></a><span class="co"># Good --- version is explicit</span></span>
+<span id="cb19-551"><a href="#cb19-551" aria-hidden="true" tabindex="-1"></a><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb19-552"><a href="#cb19-552" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-553"><a href="#cb19-553" aria-hidden="true" tabindex="-1"></a><span class="co"># Risky --- could break when the action is updated</span></span>
+<span id="cb19-554"><a href="#cb19-554" aria-hidden="true" tabindex="-1"></a><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@main</span></span>
+<span id="cb19-555"><a href="#cb19-555" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb19-556"><a href="#cb19-556" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-557"><a href="#cb19-557" aria-hidden="true" tabindex="-1"></a>Some GitHub Actions support caching, which speeds up subsequent runs. The <span class="in">`setup-renv`</span> action caches R packages automatically. For other languages, look for <span class="in">`setup-*`</span> actions that support caching (e.g., <span class="in">`actions/setup-node`</span> with <span class="in">`cache: 'npm'`</span>).</span>
+<span id="cb19-557"><a href="#cb19-557" aria-hidden="true" tabindex="-1"></a><span class="fu">### Keep workflows focused</span></span>
 <span id="cb19-558"><a href="#cb19-558" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-559"><a href="#cb19-559" aria-hidden="true" tabindex="-1"></a><span class="fu">### Don't store secrets in the workflow file</span></span>
+<span id="cb19-559"><a href="#cb19-559" aria-hidden="true" tabindex="-1"></a>Each workflow should do one thing well. If you have a spellchecker and a deployment workflow, keep them in separate files. This makes it easier to:</span>
 <span id="cb19-560"><a href="#cb19-560" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-561"><a href="#cb19-561" aria-hidden="true" tabindex="-1"></a>Never hard-code passwords, tokens, or API keys in your workflow YAML. Use **GitHub Secrets** instead (found under Settings → Secrets and variables → Actions in your repository). Reference them with <span class="in">`${{ secrets.SECRET_NAME }}`</span>.</span>
-<span id="cb19-562"><a href="#cb19-562" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-563"><a href="#cb19-563" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
-<span id="cb19-564"><a href="#cb19-564" aria-hidden="true" tabindex="-1"></a><span class="co"># Good</span></span>
-<span id="cb19-565"><a href="#cb19-565" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy</span></span>
-<span id="cb19-566"><a href="#cb19-566" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">run</span><span class="kw">:</span><span class="at"> deploy-script.sh</span></span>
-<span id="cb19-567"><a href="#cb19-567" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">env</span><span class="kw">:</span></span>
-<span id="cb19-568"><a href="#cb19-568" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">API_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.DEPLOY_TOKEN }}</span></span>
-<span id="cb19-569"><a href="#cb19-569" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-570"><a href="#cb19-570" aria-hidden="true" tabindex="-1"></a><span class="co"># Bad --- don't do this</span></span>
-<span id="cb19-571"><a href="#cb19-571" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy</span></span>
-<span id="cb19-572"><a href="#cb19-572" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">run</span><span class="kw">:</span><span class="at"> deploy-script.sh</span></span>
-<span id="cb19-573"><a href="#cb19-573" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">env</span><span class="kw">:</span></span>
-<span id="cb19-574"><a href="#cb19-574" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">API_TOKEN</span><span class="kw">:</span><span class="at"> </span><span class="st">"my-super-secret-token"</span></span>
-<span id="cb19-575"><a href="#cb19-575" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb19-576"><a href="#cb19-576" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-577"><a href="#cb19-577" aria-hidden="true" tabindex="-1"></a><span class="fu">### Test workflow changes on a branch</span></span>
-<span id="cb19-578"><a href="#cb19-578" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-579"><a href="#cb19-579" aria-hidden="true" tabindex="-1"></a>If you're modifying a workflow file or adding a new one, do it on a branch and open a pull request. This way, you can see the workflow run against your changes before they land on <span class="in">`main`</span>. The workflow file itself is part of the repository, so it will be triggered by the PR that introduces it.</span>
-<span id="cb19-580"><a href="#cb19-580" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-581"><a href="#cb19-581" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb19-582"><a href="#cb19-582" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-583"><a href="#cb19-583" aria-hidden="true" tabindex="-1"></a><span class="fu">## Security considerations</span></span>
-<span id="cb19-584"><a href="#cb19-584" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-585"><a href="#cb19-585" aria-hidden="true" tabindex="-1"></a>While the GitHub Actions tool is powerful, it's important to use it safely:</span>
-<span id="cb19-586"><a href="#cb19-586" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-587"><a href="#cb19-587" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Review actions from the Marketplace**: Anyone can publish an action on the GitHub Marketplace. For critical workflows, prefer actions from well-known publishers (like <span class="in">`actions/`</span>, <span class="in">`r-lib/`</span>, <span class="in">`quarto-dev/`</span>).</span>
-<span id="cb19-588"><a href="#cb19-588" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Limit permissions**: You can set the default <span class="in">`GITHUB_TOKEN`</span> permissions to be as restrictive as possible. In your workflow, use the <span class="in">`permissions`</span> key to grant only what's needed.</span>
-<span id="cb19-589"><a href="#cb19-589" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Be careful with `pull_request_target`**: This event runs workflows in the context of the target repository (not the PR), giving them access to secrets. *We do not currently have any use cases for this event, and we recommend against using it unless you have a specific need and understand the security implications. We only mention it here because some users might encounter workflow templates using this event.*</span>
-<span id="cb19-590"><a href="#cb19-590" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-591"><a href="#cb19-591" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb19-561"><a href="#cb19-561" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>See at a glance what automation exists.</span>
+<span id="cb19-562"><a href="#cb19-562" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Re-run a single workflow without triggering others.</span>
+<span id="cb19-563"><a href="#cb19-563" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Understand failures (a spellcheck failure shouldn't block deployment).</span>
+<span id="cb19-564"><a href="#cb19-564" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-565"><a href="#cb19-565" aria-hidden="true" tabindex="-1"></a><span class="fu">### Name your steps</span></span>
+<span id="cb19-566"><a href="#cb19-566" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-567"><a href="#cb19-567" aria-hidden="true" tabindex="-1"></a>Adding <span class="in">`name`</span> to each step makes the workflow log much easier to read, especially when a step fails:</span>
+<span id="cb19-568"><a href="#cb19-568" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-569"><a href="#cb19-569" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
+<span id="cb19-570"><a href="#cb19-570" aria-hidden="true" tabindex="-1"></a><span class="co"># Good</span></span>
+<span id="cb19-571"><a href="#cb19-571" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install dependencies</span></span>
+<span id="cb19-572"><a href="#cb19-572" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm install</span></span>
+<span id="cb19-573"><a href="#cb19-573" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-574"><a href="#cb19-574" aria-hidden="true" tabindex="-1"></a><span class="co"># Less helpful</span></span>
+<span id="cb19-575"><a href="#cb19-575" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm install</span></span>
+<span id="cb19-576"><a href="#cb19-576" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-577"><a href="#cb19-577" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-578"><a href="#cb19-578" aria-hidden="true" tabindex="-1"></a><span class="fu">### Use caching when possible</span></span>
+<span id="cb19-579"><a href="#cb19-579" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-580"><a href="#cb19-580" aria-hidden="true" tabindex="-1"></a>Some GitHub Actions support caching, which speeds up subsequent runs. The <span class="in">`setup-renv`</span> action caches R packages automatically. For other languages, look for <span class="in">`setup-*`</span> actions that support caching (e.g., <span class="in">`actions/setup-node`</span> with <span class="in">`cache: 'npm'`</span>).</span>
+<span id="cb19-581"><a href="#cb19-581" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-582"><a href="#cb19-582" aria-hidden="true" tabindex="-1"></a><span class="fu">### Don't store secrets in the workflow file</span></span>
+<span id="cb19-583"><a href="#cb19-583" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-584"><a href="#cb19-584" aria-hidden="true" tabindex="-1"></a>Never hard-code passwords, tokens, or API keys in your workflow YAML. Use **GitHub Secrets** instead (found under Settings → Secrets and variables → Actions in your repository). Reference them with <span class="in">`${{ secrets.SECRET_NAME }}`</span>.</span>
+<span id="cb19-585"><a href="#cb19-585" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-586"><a href="#cb19-586" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
+<span id="cb19-587"><a href="#cb19-587" aria-hidden="true" tabindex="-1"></a><span class="co"># Good</span></span>
+<span id="cb19-588"><a href="#cb19-588" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy</span></span>
+<span id="cb19-589"><a href="#cb19-589" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">run</span><span class="kw">:</span><span class="at"> deploy-script.sh</span></span>
+<span id="cb19-590"><a href="#cb19-590" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb19-591"><a href="#cb19-591" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">API_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.DEPLOY_TOKEN }}</span></span>
 <span id="cb19-592"><a href="#cb19-592" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-593"><a href="#cb19-593" aria-hidden="true" tabindex="-1"></a><span class="fu">## Self-check</span></span>
-<span id="cb19-594"><a href="#cb19-594" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-595"><a href="#cb19-595" aria-hidden="true" tabindex="-1"></a>After reading this page, you should be able to answer "yes" to each of these:</span>
-<span id="cb19-596"><a href="#cb19-596" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-597"><a href="#cb19-597" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can I explain what GitHub Actions are and why we use them?</span>
-<span id="cb19-598"><a href="#cb19-598" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I understand the difference between a workflow, a job, a step, and an action?</span>
-<span id="cb19-599"><a href="#cb19-599" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can I identify where workflow files are stored (<span class="in">`.github/workflows/`</span>)?</span>
-<span id="cb19-600"><a href="#cb19-600" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I know how to find and read a workflow run's results on the Actions tab?</span>
-<span id="cb19-601"><a href="#cb19-601" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can I name at least three events that can trigger a workflow?</span>
-<span id="cb19-602"><a href="#cb19-602" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I know what a runner is and why each run starts from a clean environment?</span>
-<span id="cb19-603"><a href="#cb19-603" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can I list the main ways we use GitHub Actions at the OSC (deployment, spellcheck, link checking, R package restoration, code formatting)?</span>
-<span id="cb19-604"><a href="#cb19-604" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I know how to troubleshoot a failed workflow run?</span>
-<span id="cb19-605"><a href="#cb19-605" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I understand why we pin action versions and avoid hard-coding secrets?</span>
-<span id="cb19-606"><a href="#cb19-606" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb19-607"><a href="#cb19-607" aria-hidden="true" tabindex="-1"></a>If you checked all the boxes, you're ready to work with---and create---GitHub Actions workflows in our organization!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb19-593"><a href="#cb19-593" aria-hidden="true" tabindex="-1"></a><span class="co"># Bad --- don't do this</span></span>
+<span id="cb19-594"><a href="#cb19-594" aria-hidden="true" tabindex="-1"></a><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy</span></span>
+<span id="cb19-595"><a href="#cb19-595" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">run</span><span class="kw">:</span><span class="at"> deploy-script.sh</span></span>
+<span id="cb19-596"><a href="#cb19-596" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb19-597"><a href="#cb19-597" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">API_TOKEN</span><span class="kw">:</span><span class="at"> </span><span class="st">"my-super-secret-token"</span></span>
+<span id="cb19-598"><a href="#cb19-598" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-599"><a href="#cb19-599" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-600"><a href="#cb19-600" aria-hidden="true" tabindex="-1"></a><span class="fu">### Test workflow changes on a branch</span></span>
+<span id="cb19-601"><a href="#cb19-601" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-602"><a href="#cb19-602" aria-hidden="true" tabindex="-1"></a>If you're modifying a workflow file or adding a new one, do it on a branch and open a pull request. This way, you can see the workflow run against your changes before they land on <span class="in">`main`</span>. The workflow file itself is part of the repository, so it will be triggered by the PR that introduces it.</span>
+<span id="cb19-603"><a href="#cb19-603" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-604"><a href="#cb19-604" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb19-605"><a href="#cb19-605" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-606"><a href="#cb19-606" aria-hidden="true" tabindex="-1"></a><span class="fu">## Security considerations</span></span>
+<span id="cb19-607"><a href="#cb19-607" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-608"><a href="#cb19-608" aria-hidden="true" tabindex="-1"></a>While the GitHub Actions tool is powerful, it's important to use it safely:</span>
+<span id="cb19-609"><a href="#cb19-609" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-610"><a href="#cb19-610" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Review actions from the Marketplace**: Anyone can publish an action on the GitHub Marketplace. For critical workflows, prefer actions from well-known publishers (like <span class="in">`actions/`</span>, <span class="in">`r-lib/`</span>, <span class="in">`quarto-dev/`</span>).</span>
+<span id="cb19-611"><a href="#cb19-611" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Limit permissions**: You can set the default <span class="in">`GITHUB_TOKEN`</span> permissions to be as restrictive as possible. In your workflow, use the <span class="in">`permissions`</span> key to grant only what's needed.</span>
+<span id="cb19-612"><a href="#cb19-612" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Be careful with `pull_request_target`**: This event runs workflows in the context of the target repository (not the PR), giving them access to secrets. *We do not currently have any use cases for this event, and we recommend against using it unless you have a specific need and understand the security implications. We only mention it here because some users might encounter workflow templates using this event.*</span>
+<span id="cb19-613"><a href="#cb19-613" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-614"><a href="#cb19-614" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb19-615"><a href="#cb19-615" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-616"><a href="#cb19-616" aria-hidden="true" tabindex="-1"></a><span class="fu">## Self-check</span></span>
+<span id="cb19-617"><a href="#cb19-617" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-618"><a href="#cb19-618" aria-hidden="true" tabindex="-1"></a>After reading this page, you should be able to answer "yes" to each of these:</span>
+<span id="cb19-619"><a href="#cb19-619" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-620"><a href="#cb19-620" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can I explain what GitHub Actions are and why we use them?</span>
+<span id="cb19-621"><a href="#cb19-621" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I understand the difference between a workflow, a job, a step, and an action?</span>
+<span id="cb19-622"><a href="#cb19-622" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can I identify where workflow files are stored (<span class="in">`.github/workflows/`</span>)?</span>
+<span id="cb19-623"><a href="#cb19-623" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I know how to find and read a workflow run's results on the Actions tab?</span>
+<span id="cb19-624"><a href="#cb19-624" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can I name at least three events that can trigger a workflow?</span>
+<span id="cb19-625"><a href="#cb19-625" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I know what a runner is and why each run starts from a clean environment?</span>
+<span id="cb19-626"><a href="#cb19-626" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Can I list the main ways we use GitHub Actions at the OSC (deployment, spellcheck, link checking, R package restoration, code formatting)?</span>
+<span id="cb19-627"><a href="#cb19-627" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I know how to troubleshoot a failed workflow run?</span>
+<span id="cb19-628"><a href="#cb19-628" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> Do I understand why we pin action versions and avoid hard-coding secrets?</span>
+<span id="cb19-629"><a href="#cb19-629" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-630"><a href="#cb19-630" aria-hidden="true" tabindex="-1"></a>If you checked all the boxes, you're ready to work with---and create---GitHub Actions workflows in our organization!</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

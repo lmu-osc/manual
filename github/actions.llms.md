@@ -465,7 +465,7 @@ Broken links undermine the credibility of our websites. We run **link checker** 
 
 #### Main website: `lycheeverse/lychee-action`
 
-The [main OSC website](https://github.com/lmu-osc/lmu-osc.github.io) uses [`lycheeverse/lychee-action`](https://github.com/lycheeverse/lychee-action) to scan the Markdown and HTML files in the repository for broken links. It runs on a weekly schedule. For specific details, refer to the documentation in that repository.
+The [main OSC website](https://github.com/lmu-osc/lmu-osc.github.io) uses [`lycheeverse/lychee-action`](https://github.com/lycheeverse/lychee-action) to scan the Markdown and HTML files in the repository for broken links. It runs on a monthly schedule. For specific details, refer to the documentation in that repository.
 
 Note: the main difference between this link checker and the one used in the tutorial template is that this one is more complex and customizable, allowing us to exclude certain files, folders, and external domains from the check.
 
@@ -476,11 +476,39 @@ The [tutorial template](https://github.com/lmu-osc/tutorial-template) uses a dif
 Key characteristics of the tutorial template link checker:
 
 - **Scheduling**: Runs on the first day of every month at midnight (`cron: '0 0 1 * *'`). It can also be triggered manually via `workflow_dispatch`.
-- **Scope**: Checks the entire website with no exclusions for specific files, folders, or external domains.
+- **Scope**: Checks every page of the published site for broken internal links, including same-site anchors and references to assets such as scripts and stylesheets. External links are **not** checked: `filiph/linkcheck` ignores them unless the `-e` flag is passed, and this workflow does not pass it. (The main website’s `lychee` workflow does check external links.)
 - **Reporting**: If broken links are found, the workflow automatically creates a GitHub issue (labeled `link-checker`) with a detailed report. It will not create duplicate issues if one is already open.
-- **Why a simpler approach?**: Tutorials typically have fewer outbound links than the main website, and virtually all links should always be functional (or replaced when a linked site goes down). A straightforward link checker that scans the live site is therefore sufficient — there is no need for complex exclusion patterns or file-level filtering.
+- **Why a simpler approach?**: Tutorials typically have fewer outbound links than the main website, and most problems arise from internal links and anchors, which this checker catches by crawling the live site. External links are still worth checking by hand when finalizing a tutorial. A straightforward checker is therefore sufficient — there is no need for complex exclusion patterns or file-level filtering.
 
 > **Note:** Because this checker scans the *live* website, updates pushed shortly before a run might not yet be reflected in the deployed site. That said, the monthly schedule means the checker will naturally catch any broken links soon enough.
+
+#### What to do when a link checker opens an issue
+
+Both setups report their findings as a GitHub issue, but the details differ: the `filiph/linkcheck` workflow opens an issue labelled `link-checker`, and only when none is already open; the `lychee` workflow on the main website opens a new “Link Checker Report” issue (labelled `report` and `automated issue`) on every run that finds problems, so more than one may be open at a time. The triage is the same for both:
+
+**Start from the reported page, not the reported URL.** Each entry lists the page that *contains* the broken link, then the link target and the problem. Edit the source `.qmd` of that page.
+
+**Ignore `connection failed` entries.** These are almost always temporary crawl or network hiccups, not broken links. This applies in particular to internal `lmu-osc.github.io` links and whenever the same URL fails across many or all pages in one report, as well as to `site_libs/` scripts and stylesheets.
+
+**Fix `HTTP 404` entries.** The target no longer exists: correct the URL, or remove or replace the link.
+
+**Fix `HTTP 200 but missing anchor` entries.** The page exists, but the heading it points to was renamed or removed. Update the `#anchor`, or drop it and link to the page only.
+
+**Fix links that end in `.qmd`** (for example `.../path/link.qmd`). Raw source paths do not exist on the published site — replace them with the rendered page path or a proper cross-reference.
+
+**Look for typos in file names.** A misspelled file name is reported as a 404 even when the intended page exists.
+
+**Commit the fixes to `main`.** The `filiph/linkcheck` workflow scans the *live* site, so fixes there only take effect once the site has been re-rendered and deployed. `lychee` reads the repository itself, so re-running its workflow is enough.
+
+**Close the issue once the report is resolved to your satisfaction.** Most historical links have already been fixed across our sites, so there should be relatively few actual broken links. Many “broken links” are transient, and issues can generally be closed without taking any action.
+
+> **Note:** The `filiph/linkcheck` workflow only opens an issue when none is already open, so broken links found while an issue is still open are not appended to it — if the report looks out of date, re-run the workflow. The `lychee` workflow instead opens a fresh report on each run, so close older reports once they have been addressed.
+
+> **TIP:**
+>
+> Because `lychee` also checks **external** links, it may report outbound URLs that are temporarily unreachable. In that case no change to our content is needed — re-check later. If a domain is permanently gone or consistently causes false positives, it can be excluded in the main website repository, either in the `.lycheeignore` file or through the `--exclude-path` arguments in its link checker workflow; the `filiph/linkcheck` setup has no equivalent exclusion list.
+
+To catch broken links before they are published, also follow the link checks in [Finalization and Publishing](../authoring-tutorials/finalization-and-publishing.llms.md).
 
 ### 5. Code formatting with the R styler package
 
