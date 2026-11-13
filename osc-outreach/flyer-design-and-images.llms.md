@@ -67,6 +67,42 @@ Recommended workflow:
 2.  Save it locally.
 3.  Insert the SVG into PowerPoint.
 
+### Creating a Long-Term QR Code
+
+Many free online QR code generators create *dynamic* QR codes. These send the scan through the provider’s server, and they often stop working once a free trial ends or the service shuts down. This is a problem for printed flyers and posters, which can stay in circulation for years.
+
+Instead, create a *static* QR code, which stores the URL directly in the image. It works for as long as the URL itself works and does not depend on any external service. You can make one with either of two free, open-source programs: [LibreOffice Draw](https://www.libreoffice.org/download/download-libreoffice/) or [Inkscape](https://inkscape.org/release/).
+
+> **TIP:**
+>
+> A static QR code cannot be edited after printing, so link to a URL that will not change, such as a page on the OSC website or a DOI. If you want to track how many people scan the code, add Matomo campaign parameters to the URL before you create the code (see [Campaigns and Reporting](../matomo/campaigns-and-reporting.llms.md)).
+
+#### Option 1: LibreOffice Draw
+
+1.  Open **LibreOffice Draw** and create a new drawing.
+2.  Go to **Insert → OLE Object → QR and Barcode…**.
+3.  Paste the URL into the **URL/Text** field.
+4.  Make sure **QR Code** is selected as the type, and choose an error correction level (**Medium** or higher is a good choice for print).
+5.  Click **OK**. The QR code is inserted into the drawing.
+6.  Select the QR code, then go to **File → Export…**.
+7.  Choose **SVG** (or PNG) as the file type, tick **Selection** so that only the QR code is exported, and click **Save**.
+
+#### Option 2: Inkscape
+
+1.  Open **Inkscape** and create a new document.
+2.  Go to **Extensions → Render → Barcode → QR Code…**.
+3.  Paste the URL into the **Text** field.
+4.  Choose an error correction level (**M** or higher is a good choice for print) and adjust the **Square size** if needed.
+5.  Click **Apply**. The QR code is drawn onto the page.
+6.  Right klick on the page’s background and go to **Document Settings → Change page size to fit content**.
+7.  Save the QR Code as file with **File → Save As…** and choose **Plain SVG**, or export a PNG with **File → Export…**.
+
+You can then insert the SVG into PowerPoint, Canva, or any other design tool.
+
+> **IMPORTANT:**
+>
+> Always scan the finished QR code with at least one phone before sending a flyer or poster to print. Check that it opens the correct page, and keep the code large enough (at least about 2 × 2 cm) with a white margin around it.
+
 ### Why Use SVG?
 
 SVG images are recommended because they:
@@ -91,18 +127,6 @@ SVG images are recommended because they:
 
 The official printing service for LMU is the **Hausdruckerei (Ricoh Deutschland GmbH Printcenter LMU)**.
 
-**Access to the LMU In-House Printing Service is restricted to LMU staff.**
-
-To request printing services (e.g., flyers or posters), LMU staff must:
-
-1.  Log in to the LMU Service Portal: [LMU In-House Printing Service Information](https://www.serviceportal.verwaltung.uni-muenchen.de/services/beschaffung/ausstatt_rahmenvertr_dienstlst/hausdruckerei/index.html)
-2.  Complete the order form available there. The form contains our account and financial information required for billing.
-3.  Send the completed order form by email to the printing service at `hausdruckerei@lmu.de`, together with the file to be printed.
-
-Please ensure that both the completed form and the print-ready file are attached to your email submission.
-
-![](../osc-outreach/images/lmu-in-house-printing.png)
-
 You can find additional information, including price lists and forms, on the LMU Service Portal:
 
 - [LMU In-House Printing Service Information](https://www.serviceportal.verwaltung.uni-muenchen.de/services/beschaffung/ausstatt_rahmenvertr_dienstlst/hausdruckerei/index.html)
@@ -119,6 +143,10 @@ You can find additional information, including price lists and forms, on the LMU
 |-----------------|-------------------|
 | Monday–Thursday | 9:00 AM – 3:00 PM |
 | Friday          | Closed            |
+
+To print materials (e.g., flyers or posters), contact the print shop by email or phone to discuss your requirements.
+
+- Email: `hausdruckerei@lmu.de`
 
 ### External Printing Option: Printy
 
