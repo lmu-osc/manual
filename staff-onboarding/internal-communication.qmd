@@ -95,6 +95,17 @@ It is still acceptable to communicate with OSC staff through your personal email
 
 :::
 
+## Meetings schedulers
+
+When scheduling meetings involving multiple participants, it is often helpful to first identify suitable meeting times.
+
+Recommended scheduling tools include:
+
+| Tool | Typical Use |
+|-------|-------------|
+| [When2Meet](https://www.when2meet.com/) | Best when participants should indicate availability across several days. |
+| [TerminPlaner](https://terminplaner6.dfn.de/) | Best when participants only need to choose among a small number of proposed time slots. |
+
 ## Zoom
 
 Zoom is the primary platform used for OSC meetings, workshops, and webinars.
@@ -111,16 +122,7 @@ Use your **LMU email address** together with your **LRZ Single Sign-On credentia
 
 LMU Zoom portal: <https://lmu-munich.zoom.us/>
 
-## Setting Up Meetings
 
-When scheduling meetings involving multiple participants, it is often helpful to first identify suitable meeting times.
-
-Recommended scheduling tools include:
-
-| Tool | Typical Use |
-|-------|-------------|
-| [When2Meet](https://www.when2meet.com/) | Best when participants should indicate availability across several days. |
-| [TerminPlaner](https://terminplaner6.dfn.de/) | Best when participants only need to choose among a small number of proposed time slots. |
 
 ### Scheduling a Zoom Meeting
 
