@@ -10,25 +10,6 @@ This section provides information about the main communication channels, meeting
 
 The OSC primarily uses **email** and **LMU Chat (Matrix)** for communication.
 
-### Email
-
-You will receive an **\@lmu.de email account**. Malika will submit a ticket to the IT department to initiate the account creation process.
-
-You can access your mailbox via <https://xmail.mwn.de>
-
-Email should be used for:
-
-- Important communications that need to be documented
-- Tasks that cannot be completed immediately
-- Formal communication with researchers, instructors, and external organizations
-
-::: {.callout-tip}
-## Personal Email
-
-It is still acceptable to communicate with OSC staff through your personal email address and when using Google Workspace platforms.
-
-:::
-
 ### LMU Chat (Matrix)
 
 **Matrix** is an open, decentralized platform for real-time communication. LMU hosts its own Matrix server, called **LMU Chat**, which serves as the central messaging platform for university members.
@@ -56,7 +37,65 @@ For detailed instructions on setting up your Matrix account and installing Eleme
 
 Once your account is set up, join the OSC workspace using the following invitation link: <https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de>
 
-## Setting Up Meetings
+### Email
+
+You will receive an **\@lmu.de email account**. Malika will submit a ticket to the IT department to initiate the account creation process.
+
+::: {.callout-note icon=false collapse=true}
+## ✉️ Email Template: Requesting an \@lmu.de email account and a Zoom Webinar Pro Access
+to : <it-servicedesk@lmu.de>
+
+cc: HiWi, Malika
+
+Dear IT service desk
+
+My new research assistant XX requires / I require a \@lmu.de email to be able to organize large Webinars with Zoom pro and be added as cohost to our events.
+
+Could you please create their/my email / activate their/my Zoom pro account?
+
+Name, Campus email, LRZ SSO.
+:::
+
+You can access your mailbox via <https://xmail.mwn.de>. **Note that this email will now be the one used by Exchange in services such as LSF and Moodle.**
+
+::: {.callout-note icon=false collapse=true}
+## Set up your E-Mail in the Outlook Desktop App
+#### Step 1: Procedure in the Web Browser
+- Log in to Webmail
+- Navigate to **Account Options**
+- Click on the **Settings** icon (gear icon) located in the upper right corner of the page.
+- Select **Options** from the menu.
+- Go to **Account → POP and IMAP**.
+- Keep this browser tab open, as you will need to copy the server names, ports, and security settings in the next step.
+
+#### Step 2: Configure the Outlook Desktop App
+- Open the Outlook application on your device.
+- Click **Add Account** (or follow the prompt to log in if you don't have an active account configured yet).
+- Type in your new email address (ending in \@lmu.de).
+- Click to choose **E-Mail Provider** → Select **IMAP**.
+- Fill in the incoming and outgoing server information using the details retrieved from your open web browser tab (Step 1).
+- Complete the setup.
+:::
+
+#### Set up E-Mail transfer
+To set up e-mail forwarding from your lmu.de account to your personal e-mail, login in the <https://xmail.mwn.de> browser, go to **Settings**, to **Options** and select **Inbox and Sweep rules**.
+Add an Inbox rule and apply to all incoming messages to forward to your personal e-mail address.
+Save and test by sending an e-mail to your \@lmu.de account.
+
+#### Email should be used for:
+
+- Important communications that need to be documented
+- Tasks that cannot be completed immediately
+- Formal communication with researchers, instructors, and external organizations
+
+::: {.callout-tip}
+## Personal Email
+
+It is still acceptable to communicate with OSC staff through your personal email address and when using Google Workspace platforms.
+
+:::
+
+## Meetings schedulers
 
 When scheduling meetings involving multiple participants, it is often helpful to first identify suitable meeting times.
 
@@ -66,6 +105,24 @@ Recommended scheduling tools include:
 |-------|-------------|
 | [When2Meet](https://www.when2meet.com/) | Best when participants should indicate availability across several days. |
 | [TerminPlaner](https://terminplaner6.dfn.de/) | Best when participants only need to choose among a small number of proposed time slots. |
+
+## Zoom
+
+Zoom is the primary platform used for OSC meetings, workshops, and webinars.
+
+If you do not already have a Zoom Pro account, request one through [Faculty 11 Help Desk](https://helpdesk.fak11.lmu.de/)
+
+After receiving a Zoom account, contact `it-servicedesk@lmu.de` and ask Faculty 11 to add **Zoom Webinar Pro** access (required for events such as the Open Science Summer School).
+
+This is important because Malika may need to designate you as an **alternative host** for OSC events.
+
+### Logging In
+
+Use your **LMU email address** together with your **LRZ Single Sign-On credentials** to activate and access your Zoom account.
+
+LMU Zoom portal: <https://lmu-munich.zoom.us/>
+
+
 
 ### Scheduling a Zoom Meeting
 
@@ -90,22 +147,6 @@ This opens the **New Event** window.
 
 After scheduling a meeting, always send participants a calendar invitation (e.g., Outlook, Gmail, or an `.ics` attachment) containing the Zoom link.
 :::
-
-## Zoom
-
-Zoom is the primary platform used for OSC meetings, workshops, and webinars.
-
-If you do not already have a Zoom Pro account, request one through [Faculty 11 Help Desk](https://helpdesk.fak11.lmu.de/)
-
-After receiving a Zoom account, contact `it-servicedesk@lmu.de` and ask Faculty 11 to add **Zoom Webinar Pro** access (required for events such as the Open Science Summer School).
-
-This is important because Malika may need to designate you as an **alternative host** for OSC events.
-
-### Logging In
-
-Use your **LMU email address** together with your **LRZ Single Sign-On credentials** to activate and access your Zoom account.
-
-LMU Zoom portal: <https://lmu-munich.zoom.us/>
 
 ## Office and Equipment
 
