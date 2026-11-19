@@ -70,7 +70,7 @@ Install the following software in advance:
 - [ ] Phone charger + external battery pack
 
 ## Hand-held mcirophone from LMU Central Event Service
-Andreas Hofmann, Meister für Veranstaltungstechnik, Leitung Veranstaltungstechnik Stammgelände listed here: https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/liegenschaften-und-technik-dezernat-iv/referat-iv.2/
+Andreas Hofmann, Meister für Veranstaltungstechnik, Leitung Veranstaltungstechnik Stammgelände listed here: [https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/liegenschaften-und-technik-dezernat-iv/referat-iv.2/](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/liegenschaften-und-technik-dezernat-iv/referat-iv.2/)
 can provide a technician, a big suitcase of handheld microphones that can be connected to several of the room speakers on campus. They can be used in combination with Zoom and Kandao (for the camera).
 
 :::
