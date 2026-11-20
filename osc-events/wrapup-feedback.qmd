@@ -99,20 +99,7 @@ Als LMU-Angehörige können Sie sich auch aktiv an unseren Aktivitäten beteilig
 Viele Grüße,  
 *Name*
 
-## English Wrap-Up Email Example 1
-
-Dear participants of the „XX“ workshop,
-
-📝 If you attended the workshop, we invite you to take time to provide us with your **feedback** within one week: *FIXME link to the feedback form*
-
-📄 You can find the **workshop materials** here: *ZENODO link to the materials*
-
-📢 A list of **Open Science events** can be found on our Website: [https://www.osc.lmu.de/events/](https://www.osc.lmu.de/events/)
-
-Best regards,  
-*Name*
-
-## English Wrap-Up Email Example 2
+## English Wrap-Up Email Example
 Dear attendees of the „XX“ workshop,
 
 Thank you for your participation!
