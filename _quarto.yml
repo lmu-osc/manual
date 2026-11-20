@@ -184,6 +184,9 @@ website:
             text: "Zenodo Community"
           - href: misc-topics/ror.qmd
             text: "ROR Identifier"
+          - href: misc-topics/zotero-groups.qmd
+            text: "OSC Zotero library"
+
 
       - section: Financial procedures
         href: financial-procedures/index.qmd
