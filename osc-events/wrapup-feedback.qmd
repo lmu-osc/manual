@@ -56,22 +56,28 @@ The following examples can be adapted depending on the event, language, and avai
 ::: {.panel-tabset}
 
 ## German Wrap-Up Email Example 1
-
 Liebe Teilnehmerinnen und Teilnehmer des Workshops „XX“,
 
 vielen Dank für Ihr Interesse und Ihre Teilnahme! 
 
-Wir laden Sie herzlich zu einer kurzen **Feedbackumfrage** zum Event ein:
-*FIXME Link*
+**Feedback:**
+Wir möchten unsere Veranstaltungen stetig verbessern und laden Sie herzlich ein, uns in den kommenden ein bis zwei Wochen Ihr Feedback zu geben: *https://surveys.osc.lmu.de/XXX*.
 
-Das **Material zum Workshop** finden Sie hier:
-*ZENODO Link *
+**Material:**
+Die Materialien zum Workshop finden Sie hier: *ZENODO LINK*.
 
-Eine Liste **zukünftiger Open Science-Veranstaltungen** finden Sie hier:
-[https://www.osc.lmu.de/events/](https://www.osc.lmu.de/events/)
+**Weitere Trainings:** 
+Besuchen Sie unser Website: [https://www.osc.lmu.de/](https://www.osc.lmu.de/) und insbesondere unsere Sammlung an Trainings-Ressourcen, die es ermöglichen sollen, offene und reproduzierbare Praktiken in unetrscheidlichen Disziplinen einfacher umzusetzen:
 
-Herzliche Grüße,  
+- ***Self-Learning Catalog*** - Praxisbezogene Tutorials zum Selbstlernen sowie Vorlesungsaufzeichnungen zu Open-Research-Methoden – darunter R für reproduzierbare Analysen,, Git/GitHub version control, Datenmanagement und -dokumentation, Datensimulation und Power-Analysen, Datenanonymisierung und vieles mehr
+- ***Research Cycle Handbook*** - Ein praxisorientierter Leitfaden für Forschende und Forschungsgruppen, um offene, verantwortungsvolle und reproduzierbare Praktiken Schritt für Schritt über den gesamten Projektlebenszyklus hinweg zu verankern
+- ***Educator Toolkit*** - Didaktische Schulungen und direkt einsetzbare Materialien, die Lehrende dabei unterstützen, ansprechende Trainings zu Open Research durchzuführen
+
+**Bleiben Sie im Austausch!** Abonnieren Sie unsere LMU Open Science Center Mailingliste, um Ankündigungen zu Workshops, neuen  Tutorials, und Symposien zu erhalten: [https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc).
+
+Herzliche Grüße,
 *Name*
+
 
 ## German Wrap-Up Email Example 2
 
@@ -91,6 +97,8 @@ Wie hat es Ihnen gefallen? Was würden Sie sich wünschen?
 📢 **Informiert bleiben**:
 Auf unserer Website oder über unsere Mailingliste erhalten Sie Ankündigungen zu zukünftigen Workshops und Symposien des LMU Open Science Center. 
 Link zu unserer Mailingliste: [https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc).
+Eine Liste **zukünftiger Open Science-Veranstaltungen** finden Sie hier:
+[https://www.osc.lmu.de/events/](https://www.osc.lmu.de/events/).
 
 🤝 **Mitglied werden**:
 Als LMU-Angehörige können Sie sich auch aktiv an unseren Aktivitäten beteiligen, indem Sie Mitglied werden.
@@ -105,7 +113,7 @@ Dear attendees of the „XX“ workshop,
 Thank you for your participation!
 
 **Feedback:**
-In order to improve our events, please take 5 minutes to give us feedback by (1 or 2 weeks later): *https://surveys.osc.lmu.de/XXX*
+In order to improve our events, please take 5 minutes to give us feedback by (1 or 2 weeks later): *https://surveys.osc.lmu.de/XXX*.
 
 **Materials:**
 You can find the workshop materials here: *ZENODO LINK*.
