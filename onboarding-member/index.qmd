@@ -10,7 +10,7 @@ The onboarding process goes beyond creating the member's profile page on the web
 
 After accepting a new member, complete the following tasks:
 
-- [ ] [Send Onboarding Email to the Member or Fellow](email-templates.qmd)
+- [ ] [Send Onboarding Email to the Prospective Member or Fellow](email-templates.qmd)
 - [ ] [Update the Member Management sheet](member-management-sheet.qmd)
 - [ ] [Add the member to the Members Publications (Bibliometrics) sheet](bibliography.qmd)
 - [ ] [Add the member to the appropriate mailing lists](mailing-lists.qmd)
