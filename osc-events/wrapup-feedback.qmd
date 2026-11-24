@@ -59,57 +59,71 @@ The following examples can be adapted depending on the event, language, and avai
 
 Liebe Teilnehmerinnen und Teilnehmer des Workshops „XX“,
 
-wenn Sie am Workshop teilgenommen haben, nehmen Sie sich bitte FIXME Zeit, um uns innerhalb einer Woche ein Feedback zu geben:
-FIXME Link zum Feedbackformular
+vielen Dank für Ihr Interesse und Ihre Teilnahme! 
 
-Das Material zum Workshop finden Sie hier:
-FIXME Link zu den Materialien
+Wir laden Sie herzlich zu einer kurzen **Feedbackumfrage** zum Event ein:
+*FIXME Link*
 
-Eine Liste aller zukünftigen OSIP- und OSC-Veranstaltungen finden Sie hier:
-https://www.osc.lmu.de/events/
+Das **Material zum Workshop** finden Sie hier:
+*ZENODO Link *
+
+Eine Liste **zukünftiger Open Science-Veranstaltungen** finden Sie hier:
+[https://www.osc.lmu.de/events/](https://www.osc.lmu.de/events/)
 
 Herzliche Grüße,  
-Malika
+*Name*
 
 ## German Wrap-Up Email Example 2
 
-Liebe Teilnehmerinnen und Teilnehmer von „DEAL zu Diamond“,
+Liebe Teilnehmerinnen und Teilnehmer von „XX“,
 
 vielen Dank für Ihr Interesse und Engagement!
 
 📄 **Materialien**:
-Folien sowie das Video von Teil 2 finden Sie auf OSF: https://osf.io/r49ng/files/osfstorage
+Das Material zum Event finden Sie auf OSF: *ZENODO Link*
 
 Die Folien haben eine CC-BY-Lizenz und können gerne nachgenutzt werden.
 
 📝 **Feedback**:
-Wir laden Sie herzlich zu einer kurzen (2 Minuten) Umfrage zum Event ein:
+Wir laden Sie herzlich zu einer kurzen (2 Minuten) Umfrage zum Event ein: *https://surveys.osc.lmu.de/XXX*
 Wie hat es Ihnen gefallen? Was würden Sie sich wünschen?
-https://surveys.osc.lmu.de/deal-diamond-feedback
 
 📢 **Informiert bleiben**:
-Auf unserer Website oder über unsere Mailingliste erhalten Sie Ankündigungen zu zukünftigen Workshops und Symposien des LMU Open Science Center.
+Auf unserer Website oder über unsere Mailingliste erhalten Sie Ankündigungen zu zukünftigen Workshops und Symposien des LMU Open Science Center. 
+Link zu unserer Mailingliste: [https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc).
 
 🤝 **Mitglied werden**:
 Als LMU-Angehörige können Sie sich auch aktiv an unseren Aktivitäten beteiligen, indem Sie Mitglied werden.
 
 Viele Grüße,  
-Felix Schönbrodt
+*Name*
 
-## English Wrap-Up Email Example 1
+## English Wrap-Up Email Example
 
-Dear participants of the "XX" workshop,
+Dear attendees of the „XX“ workshop,
 
-If you attended the workshop, please take FIXME time to provide us with your feedback within one week: FIXME link to the feedback form
+Thank you for your participation!
 
-You can find the workshop materials here: FIXME link to the materials
+**Feedback:**
+In order to improve our events, please take 5 minutes to give us feedback by (1 or 2 weeks later): *https://surveys.osc.lmu.de/XXX*
 
-A list of all upcoming OSIP and OSC events can be found here: https://www.osc.lmu.de/events/
+**Materials:**
+You can find the workshop materials here: *ZENODO LINK*.
 
-Best regards,  
-Malika
+**Further training:** 
+Visit our website: [https://www.osc.lmu.de/](https://www.osc.lmu.de/) and particularly, our training resource collections that aim to make the adoption of open and reproducible research practices easier and more scalable across disciplines:
 
-## Carpentry workshop Wrap up email
+- ***Self-Learning Catalog*** - free hands-on self-paced tutorials and lecture recordings on open research skills, including R for reproducible analyses, Git/GitHub for version control, data management and documentation, data simulation and power analyses, data anonymisation and many more
+- ***Research Cycle Handbook*** - practical guidance for researchers and research groups to embed open, responsible, and reproducible practices, step-by-step, across the full lifecycle of a project
+- ***Educator Toolkit*** - offering pedagogical training and ready-to-use materials to help educators deliver engaging training on Open Research
+
+**Stay in touch!** You can subscribe to the LMU Open Science Center mailing list to receive announcements of workshops, new self-paced tutorials, and symposia here: [https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc).
+
+Best wishes,
+
+*Name*
+
+## Carpentry workshop Wrap-Up Email
 
 Subject: Certificate of Participation Software Carpentry
 
