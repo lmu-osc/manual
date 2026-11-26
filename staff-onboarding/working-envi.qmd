@@ -49,6 +49,12 @@ Detailed instructions on using GitHub at the OSC can be found here:
 No. There are many, many things you can learn to do with Quarto. But, specifically for non-technical HiWis, focus on the [Computations](https://quarto.org/docs/get-started/computations/rstudio.html) and [Authoring](https://quarto.org/docs/get-started/authoring/rstudio.html) parts of the tutorials.
 :::
 
+# Matomo
+
+The OSC [Matomo dashboard](https://www.analytics.osc.lmu.de/) requires an account; accounts are not created automatically with an LMU or OSC account. If you need access for your role, ask your supervisor to confirm that it is needed, then contact Felix, the Matomo Superuser, to create your account under **Administration > Users > Add a new user** and grant access to the relevant website(s). Request only the access needed for your tasks.
+
+For guidance on using Matomo, see the [Matomo Analytics chapter](/matomo/index.qmd).
+
 # Google Drive
 
 Google Drive is a cloud-based storage platform used for storing, organizing, sharing, and collaboratively editing files.

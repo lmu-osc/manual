@@ -7,15 +7,13 @@ title: Matomo Overview and Our Server Setup
 
 Web analytics is an essential part of managing any modern website. By understanding how visitors find, navigate, and interact with a site, you can make informed decisions about content, layout, and outreach. Matomo (formerly known as Piwik) is a free and open-source web analytics platform designed to provide exactly this kind of insight. Originally created as a privacy-respecting alternative to proprietary tools like Google Analytics, Matomo has grown into a mature, full-featured platform that gives website operators complete ownership and control over their analytics data.
 
-Matomo offers a comprehensive suite of features for tracking and understanding website traffic. These include real-time visitor monitoring, customizable dashboards, detailed visitor profiles, goal and conversion tracking, heatmaps and session recordings, and a wide range of pre-built and custom reports. Because it is open-source, Matomo can be extended with plugins, integrated with other systems, and tailored to fit specific institutional needs. Its strong emphasis on data privacy -- including full compliance with the General Data Protection Regulation (GDPR) by default -- makes it particularly well suited for academic and research organizations such as ours.
+Matomo offers a broad set of tools for understanding website traffic, including visitor and campaign reports, goals, and customizable dashboards. Because it is open-source, it can also be extended with plugins, a handful of which we have installed in our instance through the Matomo marketplace.
 
-At the Open Science Center, we use Matomo to track visitor interactions across our websites. This helps us understand who our audience is, which content resonates with them, and how we can continuously improve the user experience. Our Matomo instance is hosted on our own dedicated server, which means that we retain full control over all analytics data and can ensure that our tracking practices remain in line with our privacy commitments and with applicable regulations.
+At the Open Science Center, we use Matomo to understand how visitors use our websites. Our instance runs on a dedicated server that we manage.
 
 ## Our Matomo Server Setup
 
-Our Matomo instance is hosted on a dedicated server that we manage ourselves. This self-hosted approach gives us complete control over the analytics data and allows us to customize tracking and reporting features to suit our specific needs without relying on a third-party service. It also means that no data ever leaves our infrastructure, which is an important factor in our overall data protection strategy.
-
-The specific details of our server configuration -- including access credentials, network setup, and deployment procedures -- are kept within our LRZ GitLab instance and are not publicly available. If you are involved in the maintenance of our Matomo instance and need access to these details, or if you have questions about our setup, please reach out to us directly.
+Our Matomo instance is self-hosted on a dedicated server. The server-maintenance and reverse-proxy configuration repositories are in the restricted [LRZ GitLab organization](https://gitlab.lrz.de/lmu-open-science-center/). Access requires an authorized LRZ GitLab account; contact the person responsible for server maintenance if you need access.
 
 That said, the core of our deployment follows a fairly standard pattern. We use Docker Compose to run Matomo alongside a MariaDB (MySQL-compatible) database. This containerized setup makes it straightforward to deploy, update, and maintain the application while keeping its dependencies isolated. The relevant `docker-compose.yml` file looks like this:
 
@@ -48,19 +46,19 @@ The `db` service uses the official MariaDB image to store all analytics data per
 
 ## Privacy and Data Protection
 
-Data privacy is at the heart of how we use Matomo. Our setup is configured to comply fully with LMU's own data protection policies. We do not collect personally identifiable information (PII) without explicit consent, and we provide website visitors with the option to opt out of tracking entirely.
-
-A key part of our privacy-conscious configuration is IP address anonymization. All IP addresses collected by our Matomo instance are truncated to 2 bytes (for example, `192.168.xxx.xxx`), which means that individual visitors cannot be identified by their IP address alone. In addition, we have enabled Matomo's "Force tracking without cookies" option. This setting has two important effects: first, the tracking code (`matomo.js`) is updated so that no cookies are set in the visitor's browser; second, Matomo's server-side logic ignores any tracking cookies it receives, even if consent methods are used on the front end. The official Matomo documentation describes this option as follows:
+Our Matomo configuration anonymizes two bytes of each IP address and enables Matomo's "Force tracking without cookies" option. This updates `matomo.js` so trackers do not set cookies and tells Matomo to ignore tracking cookies on the server:
 
 > Enabling this option will automatically update matomo.js, so it contains some additional code to ensure all trackers won't use cookies. Additionally Matomo will ignore all tracking cookies on server side.
 >
 > Cookies will be disabled even when using the consent methods in Matomo tracker and calling for example the cookie consent methods won't enable cookies.
 
-Because we do not use cookies and we anonymize IP addresses, we do not track individual users across sessions, nor do we collect any information that could be used to identify specific individuals. It is worth noting that IP anonymization does have a modest impact on geolocation accuracy. As Matomo notes:
+With tracking cookies disabled, Matomo does not use those cookies to link visits across sessions. IP anonymization also reduces geolocation accuracy:
 
 > Note: Geolocation will have approximately the same results with 1 byte anonymized. With 2 bytes or more, Geolocation will be inaccurate.
 
-We have judged this trade-off to be acceptable, as our primary interest is in aggregate trends rather than precise geographic data. This approach is also in line with LMU's official privacy policy, which you can read at <https://www.lmu.de/de/footer/datenschutz/>.
+We accept this trade-off because our primary interest is in aggregate trends rather than precise geographic data.
+
+For information about LMU's data protection requirements, consult the [LMU privacy policy](https://www.lmu.de/de/footer/datenschutz/).
 
 ## Updating Matomo
 
