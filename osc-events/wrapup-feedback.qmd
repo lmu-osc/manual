@@ -56,84 +56,110 @@ The following examples can be adapted depending on the event, language, and avai
 ::: {.panel-tabset}
 
 ## German Wrap-Up Email Example 1
-
 Liebe Teilnehmerinnen und Teilnehmer des Workshops „XX“,
 
-wenn Sie am Workshop teilgenommen haben, nehmen Sie sich bitte FIXME Zeit, um uns innerhalb einer Woche ein Feedback zu geben:
-FIXME Link zum Feedbackformular
+vielen Dank für Ihr Interesse und Ihre Teilnahme! 
 
-Das Material zum Workshop finden Sie hier:
-FIXME Link zu den Materialien
+**Feedback:**
+Wir möchten unsere Veranstaltungen stetig verbessern und laden Sie herzlich ein, uns in den kommenden ein bis zwei Wochen Ihr Feedback zu geben: *https://surveys.osc.lmu.de/XXX*.
 
-Eine Liste aller zukünftigen OSIP- und OSC-Veranstaltungen finden Sie hier:
-https://www.osc.lmu.de/events/
+**Material:**
+Die Materialien zum Workshop finden Sie hier: *ZENODO LINK*.
 
-Herzliche Grüße,  
-Malika
+**Weitere Trainings:** 
+Besuchen Sie unser Website: [https://www.osc.lmu.de/](https://www.osc.lmu.de/) und insbesondere unsere Sammlung an Trainings-Ressourcen, die es ermöglichen sollen, offene und reproduzierbare Praktiken in unetrscheidlichen Disziplinen einfacher umzusetzen:
+
+- ***[Self-Learning Catalog](https://www.osc.lmu.de/training/self-learning.html)*** - Praxisbezogene Tutorials zum Selbstlernen sowie Vorlesungsaufzeichnungen zu Open-Research-Methoden – darunter R für reproduzierbare Analysen,, Git/GitHub version control, Datenmanagement und -dokumentation, Datensimulation und Power-Analysen, Datenanonymisierung und vieles mehr
+- ***[Research Cycle Handbook](https://www.osc.lmu.de/training/research-cycle-handbook.html)*** - Ein praxisorientierter Leitfaden für Forschende und Forschungsgruppen, um offene, verantwortungsvolle und reproduzierbare Praktiken Schritt für Schritt über den gesamten Projektlebenszyklus hinweg zu verankern
+- ***[Educator Toolkit](https://www.osc.lmu.de/training/educator-toolkit.html)*** - Didaktische Schulungen und direkt einsetzbare Materialien, die Lehrende dabei unterstützen, ansprechende Trainings zu Open Research durchzuführen
+
+**Bleiben Sie im Austausch!** Abonnieren Sie unsere LMU Open Science Center Mailingliste, um Ankündigungen zu Workshops, neuen  Tutorials, und Symposien zu erhalten: [https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc).
+
+Herzliche Grüße,
+*Name*
+
 
 ## German Wrap-Up Email Example 2
 
-Liebe Teilnehmerinnen und Teilnehmer von „DEAL zu Diamond“,
+Liebe Teilnehmerinnen und Teilnehmer von „XX“,
 
 vielen Dank für Ihr Interesse und Engagement!
 
 📄 **Materialien**:
-Folien sowie das Video von Teil 2 finden Sie auf OSF: https://osf.io/r49ng/files/osfstorage
+Das Material zum Event finden Sie auf OSF: *ZENODO Link*
 
 Die Folien haben eine CC-BY-Lizenz und können gerne nachgenutzt werden.
 
 📝 **Feedback**:
-Wir laden Sie herzlich zu einer kurzen (2 Minuten) Umfrage zum Event ein:
+Wir laden Sie herzlich zu einer kurzen (2 Minuten) Umfrage zum Event ein: *https://surveys.osc.lmu.de/XXX*
 Wie hat es Ihnen gefallen? Was würden Sie sich wünschen?
-https://surveys.osc.lmu.de/deal-diamond-feedback
 
 📢 **Informiert bleiben**:
-Auf unserer Website oder über unsere Mailingliste erhalten Sie Ankündigungen zu zukünftigen Workshops und Symposien des LMU Open Science Center.
+Auf unserer Website oder über unsere Mailingliste erhalten Sie Ankündigungen zu zukünftigen Workshops und Symposien des LMU Open Science Center. 
+Link zu unserer Mailingliste: [https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc).
+Eine Liste **zukünftiger Open Science-Veranstaltungen** finden Sie hier:
+[https://www.osc.lmu.de/events/](https://www.osc.lmu.de/events/).
 
 🤝 **Mitglied werden**:
 Als LMU-Angehörige können Sie sich auch aktiv an unseren Aktivitäten beteiligen, indem Sie Mitglied werden.
 
 Viele Grüße,  
-Felix Schönbrodt
+*Name*
 
-## English Wrap-Up Email Example 1
+## English Wrap-Up Email Example
 
-Dear participants of the "XX" workshop,
+Dear attendees of the „XX“ workshop,
 
-If you attended the workshop, please take FIXME time to provide us with your feedback within one week: FIXME link to the feedback form
+Thank you for your participation!
 
-You can find the workshop materials here: FIXME link to the materials
+**Feedback:**
+In order to improve our events, please take 5 minutes to give us feedback by (1 or 2 weeks later): *https://surveys.osc.lmu.de/XXX*.
 
-A list of all upcoming OSIP and OSC events can be found here: https://www.osc.lmu.de/events/
+**Materials:**
+You can find the workshop materials here: *ZENODO LINK*.
 
-Best regards,  
-Malika
+**Further training:** 
+Visit our website: [https://www.osc.lmu.de/](https://www.osc.lmu.de/) and particularly, our training resource collections that aim to make the adoption of open and reproducible research practices easier and more scalable across disciplines:
 
-## Carpentry workshop Wrap up email
+- ***[Self-Learning Catalog](https://www.osc.lmu.de/training/self-learning.html)*** - free hands-on self-paced tutorials and lecture recordings on open research skills, including R for reproducible analyses, Git/GitHub for version control, data management and documentation, data simulation and power analyses, data anonymisation and many more
+- ***[Research Cycle Handbook](https://www.osc.lmu.de/training/research-cycle-handbook.html)*** - practical guidance for researchers and research groups to embed open, responsible, and reproducible practices, step-by-step, across the full lifecycle of a project
+- ***[Educator Toolkit](https://www.osc.lmu.de/training/educator-toolkit.html)*** - offering pedagogical training and ready-to-use materials to help educators deliver engaging training on Open Research
+
+**Stay in touch!** You can subscribe to the LMU Open Science Center mailing list to receive announcements of workshops, new self-paced tutorials, and symposia here: [https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc).
+
+Best wishes,
+
+*Name*
+
+## Carpentry workshop Wrap-Up Email
 
 Subject: Certificate of Participation Software Carpentry
 
-
 Dear <<Attendee>>,
+
 Thank you for participating in the recent Software Carpentry Workshop. We appreciate your engagement and contributions during the sessions, and we hope the workshop has provided you with valuable insights and skills.
 Attached to this email, you’ll find your certificate of participation.
+
 Additionally, we would like to invite you to explore more self-paced tutorials offered by the LMU Open Science Center. These tutorials are designed to help you continue developing your computing skills and can be reused for your own teaching:
-Introduction to R: https://lmu-osc.github.io/introduction-to-R/ 
-Version control with Git within RStudio:  https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/ &  https://lmu-osc.github.io/Collaborative-RStudio-GitHub/ 
-Quarto: https://lmu-osc.github.io/introduction-to-Quarto/ 
-Introduction to simulation of data analyses in R: https://lmu-osc.github.io/Introduction-Simulations-in-R/ 
-Simulations for advanced power analysis in R: https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/  
-FAIR data management: https://lmu-osc.github.io/FAIR-Data-Management/  
-Code publishing: https://lmu-osc.github.io/code-publishing/    
+
+- Introduction to R: [https://lmu-osc.github.io/introduction-to-R/](https://lmu-osc.github.io/introduction-to-R/) 
+- Version control with Git within RStudio:  [https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) &  [https://lmu-osc.github.io/Collaborative-RStudio-GitHub/](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/) 
+- Quarto: [https://lmu-osc.github.io/introduction-to-Quarto/](https://lmu-osc.github.io/introduction-to-Quarto/) 
+- Introduction to simulation of data analyses in R: [https://lmu-osc.github.io/Introduction-Simulations-in-R/](https://lmu-osc.github.io/Introduction-Simulations-in-R/) 
+- Simulations for advanced power analysis in R: [https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/)  
+- FAIR data management: [https://lmu-osc.github.io/FAIR-Data-Management/](https://lmu-osc.github.io/FAIR-Data-Management/)  
+- Code publishing: [https://lmu-osc.github.io/code-publishing/](https://lmu-osc.github.io/code-publishing/)    
  
 and more, on the LMU Open Science Center GitHub organisation:
-https://github.com/lmu-osc 
+[https://github.com/lmu-osc](https://github.com/lmu-osc) 
 
 
-To receive announcements of future workshops and symposia organised by the LMU Open Science Center (see list of events here: https://www.osc.uni-muenchen.de/events/index.html), please subscribe to the mailing list here:
-https://lists.lrz.de/mailman/listinfo/lmu-osc 
+To receive announcements of future workshops and symposia organised by the LMU Open Science Center (see list of events here: [https://www.osc.uni-muenchen.de/events/index.html](https://www.osc.uni-muenchen.de/events/index.html)), please subscribe to the mailing list here:
+[https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc)
 
+Best wishes,
 
+*Name*
 :::
 
 
