@@ -158,6 +158,8 @@ website:
             text: "Content development"
           - href: train-the-trainer/program-delivery.qmd
             text: "Program delivery"
+          - href: train-the-trainer/infrastructure.qmd
+            text: "Technical Infrastructure"
 
       - section: "Matomo Analytics"
         href: matomo/index.qmd
