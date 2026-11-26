@@ -936,17 +936,12 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </header>
 
 
-<p>This chapter describes how to add a new website to Matomo and how to set up the tracking code on your website so that you can begin collecting data.</p>
+<p>This chapter describes how to add a website to Matomo and install its tracking code. Matomo records visits only on pages that actually load that code; campaign links to an untracked destination (such as a hosted registration page) are not tracked by Matomo. See <a href="../matomo/campaigns-and-reporting.html">Campaigns and Reporting</a> for examples and alternatives.</p>
 <section id="adding-a-new-website" class="level2">
 <h2 class="anchored" data-anchor-id="adding-a-new-website">Adding a New Website</h2>
 <p>Start by logging into your Matomo account. On the landing page, click the “Add a New Website” button. You will then be prompted to choose the type of website you would like to track. Select <strong>“Website”</strong> rather than “Intranet Website”—we will likely never use the Intranet Website option, which is intended for tracking internal traffic on a private network.</p>
-<p>Next, fill in the form with the appropriate information about your website, including the name and URL of the website. There are a few settings you should configure at this stage:</p>
-<ul>
-<li>Add <code>127.0.0.1</code> to the <strong>Excluded IPs</strong> list.</li>
-<li>Add <code>localhost</code> to the <strong>Excluded referrers</strong> list.</li>
-<li>Under <strong>“Tracking data anonymization settings”</strong>, make sure that the “Use System settings” option is selected. This should already be the default, but it is worth confirming.</li>
-</ul>
-<p>Once you have filled in the form, click the <strong>Save</strong> button.</p>
+<p>Next, fill in the form with the appropriate information about your website, including the name and URL of the website. Once you have filled in the form, click the <strong>Save</strong> button.</p>
+<p>Note: under <strong>“Tracking data anonymization settings”</strong>, make sure that the “Use System settings” option is selected. This should already be the default, but it is worth confirming.</p>
 </section>
 <section id="obtaining-and-installing-the-tracking-code" class="level2">
 <h2 class="anchored" data-anchor-id="obtaining-and-installing-the-tracking-code">Obtaining and Installing the Tracking Code</h2>
@@ -958,7 +953,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </section>
 <section id="preventing-local-tracking-during-development" class="level2">
 <h2 class="anchored" data-anchor-id="preventing-local-tracking-during-development">Preventing Local Tracking during Development</h2>
-<p>It is important to ensure that the tracking code only runs on the live, production version of your website and not on local development instances. This prevents you from collecting data about your own visits while developing and testing the site locally. To achieve this, wrap the tracking code in a conditional statement that checks the hostname of the page. The tracking code should only execute if the hostname is neither <code>localhost</code> nor <code>127.0.0.1</code>. Here is an example:</p>
+<p>To avoid collecting visits from local previews, keep the hostname check in the tracking snippet so it does not run on <code>localhost</code> or <code>127.0.0.1</code>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">script</span><span class="dt">&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (location<span class="op">.</span><span class="at">hostname</span> <span class="op">!==</span> <span class="st">'localhost'</span> <span class="op">&amp;&amp;</span> location<span class="op">.</span><span class="at">hostname</span> <span class="op">!==</span> <span class="st">'127.0.0.1'</span>) {</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">// the tracking code goes here</span></span>
@@ -1596,51 +1591,49 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>This chapter describes how to add a new website to Matomo and how to set up the tracking code on your website so that you can begin collecting data.</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>This chapter describes how to add a website to Matomo and install its tracking code. Matomo records visits only on pages that actually load that code; campaign links to an untracked destination (such as a hosted registration page) are not tracked by Matomo. See <span class="co">[</span><span class="ot">Campaigns and Reporting</span><span class="co">](campaigns-and-reporting.qmd)</span> for examples and alternatives.</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Adding a New Website</span></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>Start by logging into your Matomo account. On the landing page, click the "Add a New Website" button. You will then be prompted to choose the type of website you would like to track. Select **"Website"** rather than "Intranet Website"---we will likely never use the Intranet Website option, which is intended for tracking internal traffic on a private network.</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>Next, fill in the form with the appropriate information about your website, including the name and URL of the website. There are a few settings you should configure at this stage:</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>Next, fill in the form with the appropriate information about your website, including the name and URL of the website. Once you have filled in the form, click the **Save** button.</span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add <span class="in">`127.0.0.1`</span> to the **Excluded IPs** list.</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Add <span class="in">`localhost`</span> to the **Excluded referrers** list.</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Under **"Tracking data anonymization settings"**, make sure that the "Use System settings" option is selected. This should already be the default, but it is worth confirming.</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>Note: under **"Tracking data anonymization settings"**, make sure that the "Use System settings" option is selected. This should already be the default, but it is worth confirming.</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>Once you have filled in the form, click the **Save** button.</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="fu">## Obtaining and Installing the Tracking Code</span></span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="fu">## Obtaining and Installing the Tracking Code</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>After saving the new website, you will be taken to a page that displays the tracking code for your website. This code is what enables Matomo to collect data about your website visitors and their interactions with your site. Copy this tracking code and add it to the HTML of your website.</span>
 <span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>After saving the new website, you will be taken to a page that displays the tracking code for your website. This code is what enables Matomo to collect data about your website visitors and their interactions with your site. Copy this tracking code and add it to the HTML of your website.</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>The convention we have adopted for our websites is to place the tracking code in a file named <span class="in">`matomo-analytics.html`</span> in the root directory of the website. This file is then included in the HTML of every page by configuring <span class="in">`_quarto.yml`</span> as follows:</span>
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>The convention we have adopted for our websites is to place the tracking code in a file named <span class="in">`matomo-analytics.html`</span> in the root directory of the website. This file is then included in the HTML of every page by configuring <span class="in">`_quarto.yml`</span> as follows:</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">include-in-header</span><span class="kw">:</span><span class="at"> matomo-analytics.html</span></span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="in">```yaml</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">include-in-header</span><span class="kw">:</span><span class="at"> matomo-analytics.html</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Preventing Local Tracking during Development</span></span>
 <span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Preventing Local Tracking during Development</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>To avoid collecting visits from local previews, keep the hostname check in the tracking snippet so it does not run on <span class="in">`localhost`</span> or <span class="in">`127.0.0.1`</span>.</span>
 <span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>It is important to ensure that the tracking code only runs on the live, production version of your website and not on local development instances. This prevents you from collecting data about your own visits while developing and testing the site locally. To achieve this, wrap the tracking code in a conditional statement that checks the hostname of the page. The tracking code should only execute if the hostname is neither <span class="in">`localhost`</span> nor <span class="in">`127.0.0.1`</span>. Here is an example:</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="in">```html</span></span>
-<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>script<span class="op">&gt;</span></span>
-<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>location<span class="op">.</span>hostname <span class="op">!==</span> <span class="ch">'l</span><span class="er">ocalhost</span><span class="ch">'</span> <span class="op">&amp;&amp;</span> location<span class="op">.</span>hostname <span class="op">!==</span> <span class="ch">'1</span><span class="er">27.0.0.1</span><span class="ch">'</span><span class="op">)</span> <span class="op">{</span></span>
-<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    <span class="co">// the tracking code goes here</span></span>
-<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>    <span class="op">...</span></span>
-<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>    <span class="op">...</span></span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>script<span class="op">&gt;</span></span>
-<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a><span class="in">```html</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>script<span class="op">&gt;</span></span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>location<span class="op">.</span>hostname <span class="op">!==</span> <span class="ch">'l</span><span class="er">ocalhost</span><span class="ch">'</span> <span class="op">&amp;&amp;</span> location<span class="op">.</span>hostname <span class="op">!==</span> <span class="ch">'1</span><span class="er">27.0.0.1</span><span class="ch">'</span><span class="op">)</span> <span class="op">{</span></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    <span class="co">// the tracking code goes here</span></span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    <span class="op">...</span></span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    <span class="op">...</span></span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>script<span class="op">&gt;</span></span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a><span class="fu">## Additional Notes on Implementation</span></span>
 <span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## Additional Notes on Implementation</span></span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a>You can look at any of our existing website repositories to see how this is implemented in practice. For example, the <span class="in">`matomo-analytics.html`</span> file in the root directory of the <span class="in">`lmu-osc.github.io`</span> repository, together with its corresponding <span class="in">`_quarto.yml`</span>, provides a working reference. The main difference between repositories is the <span class="in">`site_id`</span> variable in the tracking code (e.g. <span class="in">`_paq.push(['setSiteId', '3']);`</span>), because each website has a unique site ID in Matomo. The rest of the code should remain the same across all of our websites.</span>
 <span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>You can look at any of our existing website repositories to see how this is implemented in practice. For example, the <span class="in">`matomo-analytics.html`</span> file in the root directory of the <span class="in">`lmu-osc.github.io`</span> repository, together with its corresponding <span class="in">`_quarto.yml`</span>, provides a working reference. The main difference between repositories is the <span class="in">`site_id`</span> variable in the tracking code (e.g. <span class="in">`_paq.push(['setSiteId', '3']);`</span>), because each website has a unique site ID in Matomo. The rest of the code should remain the same across all of our websites.</span>
-<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>Note that the OSC website is a partial exception: it sends data to both our OSC Matomo instance and the LMU Matomo instance. As a result, the tracking code on the OSC website contains two sets of tracking instructions instead of one. The principle is the same, however---you are simply repeating the pattern for a second Matomo instance.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>Note that the OSC website is a partial exception: it sends data to both our OSC Matomo instance and the LMU Matomo instance. As a result, the tracking code on the OSC website contains two sets of tracking instructions instead of one. The principle is the same, however---you are simply repeating the pattern for a second Matomo instance.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

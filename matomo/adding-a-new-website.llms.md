@@ -2,19 +2,15 @@
 
 Code
 
-This chapter describes how to add a new website to Matomo and how to set up the tracking code on your website so that you can begin collecting data.
+This chapter describes how to add a website to Matomo and install its tracking code. Matomo records visits only on pages that actually load that code; campaign links to an untracked destination (such as a hosted registration page) are not tracked by Matomo. See [Campaigns and Reporting](../matomo/campaigns-and-reporting.llms.md) for examples and alternatives.
 
 ## Adding a New Website
 
 Start by logging into your Matomo account. On the landing page, click the “Add a New Website” button. You will then be prompted to choose the type of website you would like to track. Select **“Website”** rather than “Intranet Website”—we will likely never use the Intranet Website option, which is intended for tracking internal traffic on a private network.
 
-Next, fill in the form with the appropriate information about your website, including the name and URL of the website. There are a few settings you should configure at this stage:
+Next, fill in the form with the appropriate information about your website, including the name and URL of the website. Once you have filled in the form, click the **Save** button.
 
-- Add `127.0.0.1` to the **Excluded IPs** list.
-- Add `localhost` to the **Excluded referrers** list.
-- Under **“Tracking data anonymization settings”**, make sure that the “Use System settings” option is selected. This should already be the default, but it is worth confirming.
-
-Once you have filled in the form, click the **Save** button.
+Note: under **“Tracking data anonymization settings”**, make sure that the “Use System settings” option is selected. This should already be the default, but it is worth confirming.
 
 ## Obtaining and Installing the Tracking Code
 
@@ -30,7 +26,7 @@ format:
 
 ## Preventing Local Tracking during Development
 
-It is important to ensure that the tracking code only runs on the live, production version of your website and not on local development instances. This prevents you from collecting data about your own visits while developing and testing the site locally. To achieve this, wrap the tracking code in a conditional statement that checks the hostname of the page. The tracking code should only execute if the hostname is neither `localhost` nor `127.0.0.1`. Here is an example:
+To avoid collecting visits from local previews, keep the hostname check in the tracking snippet so it does not run on `localhost` or `127.0.0.1`.
 
 ``` html
 <script>

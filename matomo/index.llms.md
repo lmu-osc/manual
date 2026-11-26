@@ -2,9 +2,9 @@
 
 Code
 
-Matomo is a free and open-source web analytics platform that we self-host on our own infrastructure. Unlike many analytics services, Matomo gives us full control over our data — no third-party tracking, no data sharing — while still providing powerful insights into how our websites are used.
+Matomo is a free and open-source web analytics platform that we host on OSC infrastructure. Sign in to the [OSC Matomo dashboard](https://www.analytics.osc.lmu.de/); you need an account to log in. See [Working Environment](../staff-onboarding/working-envi.llms.md#matomo) for how new staff can request access.
 
-This chapter is divided into four sections:
+This chapter is divided into three sections:
 
 - **[Matomo Overview and Setup](../matomo/matomo-overview-and-setup.llms.md)** — What Matomo is, how it compares to alternatives like Google Analytics, and a technical walkthrough of our server setup, configuration, and upgrade process.
 - **[Adding a New Website](../matomo/adding-a-new-website.llms.md)** — How and when to add Matomo tracking to a new site, including embedding the tracking code, configuring goals, and verifying that tracking is working correctly.

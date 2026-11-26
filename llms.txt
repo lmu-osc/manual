@@ -57,7 +57,7 @@
 - [Flyer Design and Images](https://lmu-osc.github.io/manual/osc-outreach/flyer-design-and-images.llms.md)
 - [Finalizing and Publishing Your Tutorial](https://lmu-osc.github.io/manual/authoring-tutorials/finalization-and-publishing.llms.md)
 - [Quarto Overview](https://lmu-osc.github.io/manual/authoring-tutorials/quarto-overview.llms.md)
-- [Campaigns and Reporting Analytics](https://lmu-osc.github.io/manual/matomo/campaigns-and-reporting.llms.md)
+- [Campaigns and Reporting](https://lmu-osc.github.io/manual/matomo/campaigns-and-reporting.llms.md)
 - [Matomo Analytics](https://lmu-osc.github.io/manual/matomo/index.llms.md)
 - [Repositories of the LMU Open Science Center](https://lmu-osc.github.io/manual/github/our-repositories.llms.md)
 - [GitHub, the OSC Organization, and Repositories](https://lmu-osc.github.io/manual/github/index.llms.md)

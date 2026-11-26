@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Campaigns and Reporting Analytics – OSC Manual</title>
+<title>Campaigns and Reporting – OSC Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -902,19 +902,8 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-   
-  <ul>
-  <li><a href="#what-are-campaigns" id="toc-what-are-campaigns" class="nav-link active" data-scroll-target="#what-are-campaigns">What Are Campaigns?</a></li>
-  <li><a href="#how-and-when-to-create-campaigns" id="toc-how-and-when-to-create-campaigns" class="nav-link" data-scroll-target="#how-and-when-to-create-campaigns">How and When to Create Campaigns</a></li>
-  <li><a href="#campaign-examples" id="toc-campaign-examples" class="nav-link" data-scroll-target="#campaign-examples">Campaign Examples</a>
-  <ul class="collapse">
-  <li><a href="#a-bad-but-original-example-of-a-campaign" id="toc-a-bad-but-original-example-of-a-campaign" class="nav-link" data-scroll-target="#a-bad-but-original-example-of-a-campaign">A Bad, But Original, Example of a Campaign</a></li>
-  <li><a href="#a-better-example-of-a-campaign" id="toc-a-better-example-of-a-campaign" class="nav-link" data-scroll-target="#a-better-example-of-a-campaign">A Better Example of a Campaign</a></li>
-  </ul></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/blob/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
@@ -922,7 +911,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../matomo/index.html">Matomo Analytics</a></li><li class="breadcrumb-item"><a href="../matomo/campaigns-and-reporting.html">Campaigns</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Campaigns and Reporting Analytics</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Campaigns and Reporting</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -939,62 +928,19 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </header>
 
 
-<p>This chapter discusses how to use the campaign tracking features of Matomo, and how to use the data from Matomo to understand your audience and improve your website.</p>
-<section id="what-are-campaigns" class="level2">
-<h2 class="anchored" data-anchor-id="what-are-campaigns">What Are Campaigns?</h2>
-<p>Campaigns are a way to track the effectiveness of specific marketing efforts, such as email campaigns, social media posts, or paid advertising. By creating a campaign in Matomo and including the appropriate tracking parameters in your URLs, you can see how many visitors are coming to your website from each campaign, and how they are interacting with your site once they arrive.</p>
-<p>For example, if you are running a social media campaign to promote a new blog post, you could create a campaign in Matomo called “Social Media Campaign” and include the appropriate tracking parameters in the URLs that you share on social media. This would allow you to see how many visitors are coming to your website from that campaign, and how they are engaging with your content.</p>
-<p>In short, a campaign is a way to track the effectiveness of specific marketing efforts by using personalized URLs with tracking parameters. These tracking parameters are added to the end of a URL, and they typically include information about the campaign, such as the source, medium, and name of the campaign. For example, a URL with tracking parameters might look like this:</p>
-<p><code>https://www.example.com/?utm_source=social&amp;utm_medium=post&amp;utm_campaign=social_media_campaign</code></p>
-<p>where the <code>utm_source</code>, <code>utm_medium</code>, and <code>utm_campaign</code> parameters are used to track the source, medium, and name of the campaign, respectively. This is a general example, and Matomo uses its own specific tracking parameters, but the concept is the same: you add tracking parameters to your URLs to track the effectiveness of your campaigns in Matomo. For example, a Matomo URL with tracking parameters might look like this:</p>
-<p><code>https://example.org/?mtm_campaign=name&amp;mtm_kwd=campaign-keyword&amp;mtm_medium=medium</code></p>
-<p>where <code>mtm_campaign</code> is the campaign name, <code>mtm_kwd</code> is the campaign keyword, and <code>mtm_medium</code> is the campaign medium. By including these tracking parameters in your URLs, you can track the effectiveness of your campaigns in Matomo and see how many visitors are coming to your website from each campaign, and how they are engaging with your content.</p>
-<p>Note that these tracking parameters (UTM parameters) are not what is actually used in Matomo, but they are a common example of how tracking parameters work in general. Matomo uses its own specific tracking parameters, several of which will be discussed in the next section.</p>
-</section>
-<section id="how-and-when-to-create-campaigns" class="level2">
-<h2 class="anchored" data-anchor-id="how-and-when-to-create-campaigns">How and When to Create Campaigns</h2>
-<p>Strictly speaking, you can “create” a campaign in Matomo by simply including the appropriate tracking parameters in your URLs. There is no need to create a campaign in the Matomo dashboard before you start tracking, as Matomo will automatically recognize the tracking parameters and attribute the traffic to the appropriate campaign.</p>
-<p>However, it is often helpful to use the “Campaign URL Builder” found in the Matomo dashboard of a website, which can help you generate the appropriate tracking parameters for your URLs. This feature allows you to easily create URLs with the correct tracking parameters by inputting the base URL and any of the following parameters:</p>
+<p>Campaign links add labels to a URL so Matomo can attribute visits to a campaign or channel. Use the <strong>Campaign URL Builder</strong> in the <a href="https://www.analytics.osc.lmu.de/">OSC Matomo dashboard</a> to create a link, then share that link in the corresponding email, post, or announcement. Keep labels consistent and do not include personal information in URLs.</p>
+<p>Campaign tracking helps us compare the reach and response of outreach efforts. For example, separate links for an email, social media post, or mailing list can show which channels bring more visitors to a tracked OSC page and how those visitors engage with the content. These comparisons help us choose effective communication channels, plan future events, and evaluate whether changes to outreach or webpages improve engagement. The collected results can be aggregated across campaigns; the campaign URL itself should not contain personal information.</p>
+<p>Matomo only records campaign visits when the destination page has Matomo tracking installed. Adding campaign parameters to a direct Pretix or formR link does not, by itself, let Matomo count clicks or registrations. For an event without a tracked page, keep the direct registration link if that is best for attendees; use the registration platform’s totals or a short-link service’s click counts instead. For event-planning guidance, see <a href="../osc-events/advertisement.html">Advertisement</a>.</p>
+<p>For detailed instructions and the supported parameters, see Matomo’s official documentation:</p>
 <ul>
-<li><strong>Campaign Name (required)</strong>: The name of the campaign you want to track. This is the most important parameter, as it will be used to identify the campaign in your Matomo reports.</li>
-<li><strong>Campaign Keyword</strong>: The keyword associated with the campaign, which can be useful for tracking specific keywords in paid search campaigns.</li>
-<li><strong>Campaign Source</strong>: The source of the traffic, such as “social media”, “email”, or “paid advertising”. This parameter helps you understand where your traffic is coming from.</li>
-<li><strong>Campaign Medium</strong>: The medium through which the traffic is coming, such as “post”, “newsletter”, or “cpc”. This parameter helps you understand how your traffic is being delivered.</li>
-<li><strong>Campaign Content</strong>: Additional information about the campaign, such as the specific ad or link that was clicked. This can help you differentiate between different versions of a campaign.</li>
-<li><strong>Campaign ID</strong>: A unique identifier for the campaign, which can be useful for tracking campaigns across different platforms or tools.</li>
-<li><strong>Campaign Group</strong>: Identifies a specific group or audience.</li>
-<li><strong>Campaign Placement</strong>: Used to describe the advertising placement or position, for example an entire website, specific pages from a website, an individual ad unit positioned on a single page, a video, a mobile phone app, and more.</li>
+<li><a href="https://matomo.org/faq/general/faq_119/">Campaign tracking and URL parameters</a></li>
+<li><a href="https://matomo.org/faq/reports/how-to-build-campaign-tracking-urls/">Creating campaign tracking URLs</a></li>
+<li><a href="https://matomo.org/docs/tracking-campaigns-url-builder/">Campaign URL Builder guide</a></li>
 </ul>
-<p>The bolded parameters above are the ones that we typically use for our campaigns, but you can use any combination of these parameters to track your campaigns in Matomo. <strong>The important thing is to be consistent in how you use these parameters across your campaigns, so that you can easily compare and analyze the data in your Matomo reports for a website.</strong> Think of your parameter choices as being like the columns in an Excel Pivot Table or a Table 1 in a paper—you want to establish clear, reusable, descriptive categories that allow you to look at cross-sections of data.</p>
-</section>
-<section id="campaign-examples" class="level2">
-<h2 class="anchored" data-anchor-id="campaign-examples">Campaign Examples</h2>
-<section id="a-bad-but-original-example-of-a-campaign" class="level3">
-<h3 class="anchored" data-anchor-id="a-bad-but-original-example-of-a-campaign">A Bad, But Original, Example of a Campaign</h3>
-<p>At the launch of our new OSC website in 2026, we ran a campaign to promote the new website and encourage people to visit and explore the new content. We created a campaign in Matomo and included the following tracking parameters in the URLs that we shared on social media and in our email newsletters:</p>
-<ul>
-<li>Campaign Name: <code>launch</code></li>
-<li>Campaign Keywords: <code>email</code>, <code>linkedin</code>, <code>bsky</code>, <code>mastodon</code></li>
-</ul>
-<p>This was our first use of the campaign tracking features of Matomo, and it allowed us to see how many visitors were coming to our website from each of our promotional efforts, and how they were engaging with our content as a result.</p>
-<p><strong>However, this was ultimately not the best use of the campaign tracking features of Matomo.</strong> We should have considered using the <strong>Campaign Source</strong> parameter to differentiate between the different platforms (e.g., email, LinkedIn, Bluesky, Mastodon) instead of using the <strong>Campaign Keywords</strong> parameter. The <strong>Campaign Source</strong> parameter is specifically designed to track the source of traffic, and it is how we collect data going forward. By using <strong>Campaign Keywords</strong> instead, we introduced an inconsistency in how the parameters are used across our campaigns. This is a good example of why it is important to be consistent in how you use the tracking parameters across campaigns, so that you can easily compare and analyze the data in your Matomo reports. Ultimately, the data from this campaign was still useful, but it would have been more straightforward to analyze if we had used the <strong>Campaign Source</strong> parameter to differentiate between the different platforms.</p>
-</section>
-<section id="a-better-example-of-a-campaign" class="level3">
-<h3 class="anchored" data-anchor-id="a-better-example-of-a-campaign">A Better Example of a Campaign</h3>
-<p>Now let us look at how a well-structured campaign should be set up. Suppose the OSC is organising a workshop on research data management (RDM) and wants to promote it via email to our mailing list, as well as on LinkedIn, Bluesky, and Mastodon. A properly configured campaign would assign each parameter to the dimension it is meant to describe, like this:</p>
-<ul>
-<li><strong>Campaign Name</strong>: <code>rdm-workshop-2026</code></li>
-<li><strong>Campaign Source</strong>: <code>email</code>, <code>linkedin</code>, <code>bsky</code>, <code>mastodon</code></li>
-<li><strong>Campaign Medium</strong>: <code>newsletter</code>, <code>social-post</code></li>
-</ul>
-<p>In this setup, the <strong>Campaign Name</strong> groups all traffic under a single campaign (<code>rdm-workshop-2026</code>), making it easy to see the total impact of the workshop promotion. The <strong>Campaign Source</strong> parameter cleanly separates traffic by platform, so you can compare which channel drove the most visitors. The <strong>Campaign Medium</strong> distinguishes the delivery method (a newsletter versus a social media post). Finally, <strong>Campaign Group</strong> captures which audience segment each link targeted (our mailing list versus a general audience on social media), which can be useful for understanding how different groups respond to your promotions.</p>
-<p>With this structure, your Matomo reports will immediately show you meaningful breakdowns without any manual cleanup. For example, you could quickly answer questions like: “How many visitors came from the LinkedIn post vs.&nbsp;the email newsletter?” or “Did the email newsletter drive more engagement per visitor than the social media posts?” By keeping each parameter focused on a single dimension, you ensure that your data remains clean, consistent, and easy to analyse across all future campaigns.</p>
 
 
 <!-- -->
 
-</section>
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1611,70 +1557,20 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Campaigns and Reporting Analytics</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> Campaigns and Reporting</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>This chapter discusses how to use the campaign tracking features of Matomo, and how to use the data from Matomo to understand your audience and improve your website.</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Campaign links add labels to a URL so Matomo can attribute visits to a campaign or channel. Use the **Campaign URL Builder** in the <span class="co">[</span><span class="ot">OSC Matomo dashboard</span><span class="co">](https://www.analytics.osc.lmu.de/)</span> to create a link, then share that link in the corresponding email, post, or announcement. Keep labels consistent and do not include personal information in URLs.</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## What Are Campaigns?</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Campaign tracking helps us compare the reach and response of outreach efforts. For example, separate links for an email, social media post, or mailing list can show which channels bring more visitors to a tracked OSC page and how those visitors engage with the content. These comparisons help us choose effective communication channels, plan future events, and evaluate whether changes to outreach or webpages improve engagement. The collected results can be aggregated across campaigns; the campaign URL itself should not contain personal information.</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Campaigns are a way to track the effectiveness of specific marketing efforts, such as email campaigns, social media posts, or paid advertising. By creating a campaign in Matomo and including the appropriate tracking parameters in your URLs, you can see how many visitors are coming to your website from each campaign, and how they are interacting with your site once they arrive.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Matomo only records campaign visits when the destination page has Matomo tracking installed. Adding campaign parameters to a direct Pretix or formR link does not, by itself, let Matomo count clicks or registrations. For an event without a tracked page, keep the direct registration link if that is best for attendees; use the registration platform's totals or a short-link service's click counts instead. For event-planning guidance, see <span class="co">[</span><span class="ot">Advertisement</span><span class="co">](/osc-events/advertisement.qmd)</span>.</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>For example, if you are running a social media campaign to promote a new blog post, you could create a campaign in Matomo called "Social Media Campaign" and include the appropriate tracking parameters in the URLs that you share on social media. This would allow you to see how many visitors are coming to your website from that campaign, and how they are engaging with your content.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>For detailed instructions and the supported parameters, see Matomo's official documentation:</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>In short, a campaign is a way to track the effectiveness of specific marketing efforts by using personalized URLs with tracking parameters. These tracking parameters are added to the end of a URL, and they typically include information about the campaign, such as the source, medium, and name of the campaign. For example, a URL with tracking parameters might look like this:</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="in">`https://www.example.com/?utm_source=social&amp;utm_medium=post&amp;utm_campaign=social_media_campaign`</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>where the <span class="in">`utm_source`</span>, <span class="in">`utm_medium`</span>, and <span class="in">`utm_campaign`</span> parameters are used to track the source, medium, and name of the campaign, respectively. This is a general example, and Matomo uses its own specific tracking parameters, but the concept is the same: you add tracking parameters to your URLs to track the effectiveness of your campaigns in Matomo. For example, a Matomo URL with tracking parameters might look like this:</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="in">`https://example.org/?mtm_campaign=name&amp;mtm_kwd=campaign-keyword&amp;mtm_medium=medium`</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>where <span class="in">`mtm_campaign`</span> is the campaign name, <span class="in">`mtm_kwd`</span> is the campaign keyword, and <span class="in">`mtm_medium`</span> is the campaign medium. By including these tracking parameters in your URLs, you can track the effectiveness of your campaigns in Matomo and see how many visitors are coming to your website from each campaign, and how they are engaging with your content.</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>Note that these tracking parameters (UTM parameters) are not what is actually used in Matomo, but they are a common example of how tracking parameters work in general. Matomo uses its own specific tracking parameters, several of which will be discussed in the next section.</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## How and When to Create Campaigns</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Strictly speaking, you can "create" a campaign in Matomo by simply including the appropriate tracking parameters in your URLs. There is no need to create a campaign in the Matomo dashboard before you start tracking, as Matomo will automatically recognize the tracking parameters and attribute the traffic to the appropriate campaign.</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>However, it is often helpful to use the "Campaign URL Builder" found in the Matomo dashboard of a website, which can help you generate the appropriate tracking parameters for your URLs. This feature allows you to easily create URLs with the correct tracking parameters by inputting the base URL and any of the following parameters:</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Name (required)**: The name of the campaign you want to track. This is the most important parameter, as it will be used to identify the campaign in your Matomo reports.</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Keyword**: The keyword associated with the campaign, which can be useful for tracking specific keywords in paid search campaigns.</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Source**: The source of the traffic, such as "social media", "email", or "paid advertising". This parameter helps you understand where your traffic is coming from.</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Medium**: The medium through which the traffic is coming, such as "post", "newsletter", or "cpc". This parameter helps you understand how your traffic is being delivered.</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Content**: Additional information about the campaign, such as the specific ad or link that was clicked. This can help you differentiate between different versions of a campaign.</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign ID**: A unique identifier for the campaign, which can be useful for tracking campaigns across different platforms or tools.</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Group**: Identifies a specific group or audience.</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Placement**: Used to describe the advertising placement or position, for example an entire website, specific pages from a website, an individual ad unit positioned on a single page, a video, a mobile phone app, and more.</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>The bolded parameters above are the ones that we typically use for our campaigns, but you can use any combination of these parameters to track your campaigns in Matomo. **The important thing is to be consistent in how you use these parameters across your campaigns, so that you can easily compare and analyze the data in your Matomo reports for a website.** Think of your parameter choices as being like the columns in an Excel Pivot Table or a Table 1 in a paper---you want to establish clear, reusable, descriptive categories that allow you to look at cross-sections of data.</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Campaign Examples</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="fu">### A Bad, But Original, Example of a Campaign</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>At the launch of our new OSC website in 2026, we ran a campaign to promote the new website and encourage people to visit and explore the new content. We created a campaign in Matomo and included the following tracking parameters in the URLs that we shared on social media and in our email newsletters:</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Campaign Name: <span class="in">`launch`</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Campaign Keywords: <span class="in">`email`</span>, <span class="in">`linkedin`</span>, <span class="in">`bsky`</span>, <span class="in">`mastodon`</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>This was our first use of the campaign tracking features of Matomo, and it allowed us to see how many visitors were coming to our website from each of our promotional efforts, and how they were engaging with our content as a result.</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>**However, this was ultimately not the best use of the campaign tracking features of Matomo.** We should have considered using the **Campaign Source** parameter to differentiate between the different platforms (e.g., email, LinkedIn, Bluesky, Mastodon) instead of using the **Campaign Keywords** parameter. The **Campaign Source** parameter is specifically designed to track the source of traffic, and it is how we collect data going forward. By using **Campaign Keywords** instead, we introduced an inconsistency in how the parameters are used across our campaigns. This is a good example of why it is important to be consistent in how you use the tracking parameters across campaigns, so that you can easily compare and analyze the data in your Matomo reports. Ultimately, the data from this campaign was still useful, but it would have been more straightforward to analyze if we had used the **Campaign Source** parameter to differentiate between the different platforms.</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="fu">### A Better Example of a Campaign</span></span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>Now let us look at how a well-structured campaign should be set up. Suppose the OSC is organising a workshop on research data management (RDM) and wants to promote it via email to our mailing list, as well as on LinkedIn, Bluesky, and Mastodon. A properly configured campaign would assign each parameter to the dimension it is meant to describe, like this:</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Name**: <span class="in">`rdm-workshop-2026`</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Source**: <span class="in">`email`</span>, <span class="in">`linkedin`</span>, <span class="in">`bsky`</span>, <span class="in">`mastodon`</span></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Campaign Medium**: <span class="in">`newsletter`</span>, <span class="in">`social-post`</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>In this setup, the **Campaign Name** groups all traffic under a single campaign (`rdm-workshop-2026`), making it easy to see the total impact of the workshop promotion. The **Campaign Source** parameter cleanly separates traffic by platform, so you can compare which channel drove the most visitors. The **Campaign Medium** distinguishes the delivery method (a newsletter versus a social media post). Finally, **Campaign Group** captures which audience segment each link targeted (our mailing list versus a general audience on social media), which can be useful for understanding how different groups respond to your promotions.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>With this structure, your Matomo reports will immediately show you meaningful breakdowns without any manual cleanup. For example, you could quickly answer questions like: "How many visitors came from the LinkedIn post vs. the email newsletter?" or "Did the email newsletter drive more engagement per visitor than the social media posts?" By keeping each parameter focused on a single dimension, you ensure that your data remains clean, consistent, and easy to analyse across all future campaigns.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Campaign tracking and URL parameters</span><span class="co">](https://matomo.org/faq/general/faq_119/)</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Creating campaign tracking URLs</span><span class="co">](https://matomo.org/faq/reports/how-to-build-campaign-tracking-urls/)</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="co">[</span><span class="ot">Campaign URL Builder guide</span><span class="co">](https://matomo.org/docs/tracking-campaigns-url-builder/)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
@@ -1684,7 +1580,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     </div>   
     <div class="nav-footer-center">
 <p>© 2026 Pat Callahan, Elizabeth Waterfield, Malika Ihle. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/blob/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/manual/edit/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/manual/blob/main/matomo/campaigns-and-reporting.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/lmu-osc/manual/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
