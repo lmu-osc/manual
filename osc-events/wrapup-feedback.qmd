@@ -69,9 +69,9 @@ Die Materialien zum Workshop finden Sie hier: *ZENODO LINK*.
 **Weitere Trainings:** 
 Besuchen Sie unser Website: [https://www.osc.lmu.de/](https://www.osc.lmu.de/) und insbesondere unsere Sammlung an Trainings-Ressourcen, die es ermöglichen sollen, offene und reproduzierbare Praktiken in unetrscheidlichen Disziplinen einfacher umzusetzen:
 
-- ***Self-Learning Catalog*** - Praxisbezogene Tutorials zum Selbstlernen sowie Vorlesungsaufzeichnungen zu Open-Research-Methoden – darunter R für reproduzierbare Analysen,, Git/GitHub version control, Datenmanagement und -dokumentation, Datensimulation und Power-Analysen, Datenanonymisierung und vieles mehr
-- ***Research Cycle Handbook*** - Ein praxisorientierter Leitfaden für Forschende und Forschungsgruppen, um offene, verantwortungsvolle und reproduzierbare Praktiken Schritt für Schritt über den gesamten Projektlebenszyklus hinweg zu verankern
-- ***Educator Toolkit*** - Didaktische Schulungen und direkt einsetzbare Materialien, die Lehrende dabei unterstützen, ansprechende Trainings zu Open Research durchzuführen
+- ***[Self-Learning Catalog](https://www.osc.lmu.de/training/self-learning.html)*** - Praxisbezogene Tutorials zum Selbstlernen sowie Vorlesungsaufzeichnungen zu Open-Research-Methoden – darunter R für reproduzierbare Analysen,, Git/GitHub version control, Datenmanagement und -dokumentation, Datensimulation und Power-Analysen, Datenanonymisierung und vieles mehr
+- ***[Research Cycle Handbook](https://www.osc.lmu.de/training/research-cycle-handbook.html)*** - Ein praxisorientierter Leitfaden für Forschende und Forschungsgruppen, um offene, verantwortungsvolle und reproduzierbare Praktiken Schritt für Schritt über den gesamten Projektlebenszyklus hinweg zu verankern
+- ***[Educator Toolkit](https://www.osc.lmu.de/training/educator-toolkit.html)*** - Didaktische Schulungen und direkt einsetzbare Materialien, die Lehrende dabei unterstützen, ansprechende Trainings zu Open Research durchzuführen
 
 **Bleiben Sie im Austausch!** Abonnieren Sie unsere LMU Open Science Center Mailingliste, um Ankündigungen zu Workshops, neuen  Tutorials, und Symposien zu erhalten: [https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc).
 
@@ -121,9 +121,9 @@ You can find the workshop materials here: *ZENODO LINK*.
 **Further training:** 
 Visit our website: [https://www.osc.lmu.de/](https://www.osc.lmu.de/) and particularly, our training resource collections that aim to make the adoption of open and reproducible research practices easier and more scalable across disciplines:
 
-- ***Self-Learning Catalog*** - free hands-on self-paced tutorials and lecture recordings on open research skills, including R for reproducible analyses, Git/GitHub for version control, data management and documentation, data simulation and power analyses, data anonymisation and many more
-- ***Research Cycle Handbook*** - practical guidance for researchers and research groups to embed open, responsible, and reproducible practices, step-by-step, across the full lifecycle of a project
-- ***Educator Toolkit*** - offering pedagogical training and ready-to-use materials to help educators deliver engaging training on Open Research
+- ***[Self-Learning Catalog](https://www.osc.lmu.de/training/self-learning.html)*** - free hands-on self-paced tutorials and lecture recordings on open research skills, including R for reproducible analyses, Git/GitHub for version control, data management and documentation, data simulation and power analyses, data anonymisation and many more
+- ***[Research Cycle Handbook](https://www.osc.lmu.de/training/research-cycle-handbook.html)*** - practical guidance for researchers and research groups to embed open, responsible, and reproducible practices, step-by-step, across the full lifecycle of a project
+- ***[Educator Toolkit](https://www.osc.lmu.de/training/educator-toolkit.html)*** - offering pedagogical training and ready-to-use materials to help educators deliver engaging training on Open Research
 
 **Stay in touch!** You can subscribe to the LMU Open Science Center mailing list to receive announcements of workshops, new self-paced tutorials, and symposia here: [https://lists.lrz.de/mailman/listinfo/lmu-osc](https://lists.lrz.de/mailman/listinfo/lmu-osc).
 
