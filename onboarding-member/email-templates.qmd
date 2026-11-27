@@ -4,6 +4,8 @@ title: "E-Mail Templates for Onboarding New Members or Fellows"
 
 These E-mail Templates are for Malika to send to prospective OSC Members or Fellows.
 
+::: {.panel-tabset}
+
 ## E-Mail Template to Onboard New Members
 Dear XX,
 
@@ -11,70 +13,78 @@ As a post doc, you are welcome to become a member of the OSC.
 
 As a Professor, you are welcome to become a member of the OSC.
 
-### What does becoming a LMU OSC Member mean?
-- If you were not part of it already, we would add you to the LMU OSC announcement mailing list or ‘community list’ so you could stay informed about our activities. We expect you to disseminate information as relevant to your networks.
-- We would add you to our dedicated member’s mailing list, notably to invite you to our annual member’s meeting
-- You will have a profile page on the OSC website, and people may contact you for specific advice (e.g. if they want to know of resources in your field, or collaborate on creating an initiative, etc.)
-- You will have the opportunity to sign up yourself on a database of experts in which you can find out (a) who among us is available in principle as a speaker for lectures/workshops/panel discussions, and (b) on which special topics you could be invited. We occasionally get requests, and then we could simply refer to the overview list in the future.
-- Overall, members are expected to express that they actively support the goals of the OSC (e.g. in their profile page statement). Beyond this, we encourage members to become ‘ambassadors’ of open research practices in whatever capacity they find suitable, e.g. contribute in delivering training events or seminar (even informally within their group), or contribute in community building (organize or join various meet ups around open research), or get involved in meta-research projects, and/or liaise with stakeholders to inform on the design of incentives and policies.
-### What to do if you are interested?
-Provide us with information for your profile page (you do not have to share all information to be welcomed as a member, but a complete profile would be appreciated. Please explicitly mention ‘not provided’ so we know nothing is missing by mistake)
+**What does becoming a LMU OSC Member mean?**
 
-1. Complete Name (Surname, First Name)
-2. Academic Title (e.g. Prof. Dr., PD. Dr.; Dr.)
-3. Affiliations (Faculty + Department/Institution +  Unit/Chair)
-4. Position (e.g. Head of Department, Chair, Research Group Leader, Researcher, etc.)
-5. Picture
-6. Email
-7. ORCID
-8. Personal Website URL 
-9. Social Media URL (Mastodon, GitHub,...)
-10. Short mission statement in which you can describe e.g. why you find Open Science important, e.g. what you may already be implementing, where you see the most important areas of work, etc. A few sentences are sufficient. You can see the statements of current members as a guide.
+- If you were not part of it already, we would add you to the [LMU OSC announcement mailing list](https://lists.lrz.de/mailman/listinfo/lmu-osc) or ‘community list’ so you could stay informed about our activities. We expect you to disseminate information as relevant to your networks.
+- We would add you to our dedicated **member’s mailing list**, notably to invite you to our **annual member’s meeting**
+- You will have a **profile page** on the OSC website, and people may contact you for specific advice (e.g. if they want to know of resources in your field, or collaborate on creating an initiative, etc.)
+- You will have the opportunity to sign up yourself on a [database of experts](https://docs.google.com/spreadsheets/d/11GNb9bEpdDFTCKHwIqRbj460HRyR5ec6s-Tr9P-amyU/edit?usp=sharing) in which you can find out 
+    (a) who among us is available in principle as a speaker for lectures/workshops/panel discussions, and 
+    (b) on which special topics you could be invited. We occasionally get requests, and then we could simply refer to the overview list in the future.
+- Overall, members are expected to express that they actively **support the goals of the OSC** (e.g. in their profile page statement). Beyond this, we encourage members to become ‘ambassadors’ of open research practices in whatever capacity they find suitable, e.g. contribute in delivering training events or seminar (even informally within their group), or contribute in community building (organize or join various meet ups around open research), or get involved in meta-research projects, and/or liaise with stakeholders to inform on the design of incentives and policies.
 
-Feel free to include the DOI of an open science related article or open dataset or open source code so we can list selected open resources to your profile 
+**What to do if you are interested?**
 
-Let us know the type of contribution(s), if any, you would be interested in providing to the OSC. Is there a topic (or topics) that would be of particular interest to you, and on which you could make some contribution (e.g. to co-instruct a workshop, participate in the creation of guidelines, provide a short demonstration or presentation. etc.) ?
+1. Provide us with **information for your profile page** (you do not have to share all information to be welcomed as a member, but a complete profile would be appreciated. Please explicitly mention ‘not provided’ so we know nothing is missing by mistake)
 
-Let us know in which area(s) you could most imagine getting involved in your field or at the OSC (we then try to connect people together based on areas of interest). The three pillars of our work are Education, Meta-Research, and Policy/Incentive Structures.
+    1. Complete Name (Surname, First Name)
+    2. Academic Title (e.g. Prof. Dr., PD. Dr.; Dr.)
+    3. Affiliations (Faculty + Department/Institution +  Unit/Chair)
+    4. Position (e.g. Head of Department, Chair, Research Group Leader, Researcher, etc.)
+    5. Picture
+    6. Email
+    7. ORCID
+    8. Personal Website URL 
+    9. Social Media URL (Mastodon, GitHub,...)
+    10. Short mission statement in which you can describe e.g. why you find Open Science important, e.g. what you may already be implementing, where you see the most important areas of work, etc. A few sentences are sufficient. You can see the statements of current members as a guide.
+    11. Feel free to include the DOI of an open science related article or open dataset or open source code so we can list selected open resources to your profile 
 
-Feel free to then also request a 20 min onboarding meeting with me and/or the managing director Prof Felix Schönbrodt, if you are interested and have time, so we can discuss your interests/remits, and see how we can best support you in your ‘ambassador role’.
+2. Let us know the type of **contribution(s)**, if any, you would be interested in providing to the OSC. Is there a topic (or topics) that would be of particular interest to you, and on which you could make some contribution (e.g. to co-instruct a workshop, participate in the creation of guidelines, provide a short demonstration or presentation. etc.) ?
+
+3. Let us know in which area(s) you could most imagine getting involved in your field or at the OSC (we then try to connect people together based on areas of interest). The three pillars of our work are **Education, Meta-Research, and Policy/Incentive Structures**.
+
+Feel free to then also request a 20 min **onboarding meeting** with me and/or the managing director Prof Felix Schönbrodt, if you are interested and have time, so we can discuss your interests/remits, and see how we can best support you in your ‘ambassador role’.
 
 Please let us know what your questions are, and if you are still interested or were expecting something else!
 
 Best wishes
+
 Malika 
 
 
 ## E-Mail Template to Onboard New Fellows
 
 Dear XX
-My name is Malika, I’m the LMU Open Science Center (OSC) coordinator. 
+
+My name is Malika, I’m the [LMU Open Science Center](https://www.osc.lmu.de/) (OSC) coordinator. 
+
 As you contribute to promoting open research practices through the XXX initiative you co-lead, but as you do not hold a PhD, I would like to invite you to become a Fellow of the LMU Open Science Center, should that be of interest:
 
-### What does becoming a LMU OSC Fellow mean?
-- If you are not, I will add you to the LMU OSC announcement mailing list so you can stay informed about our activities. We expect you to disseminate information as relevant to your networks.
-- You will have a profile page on the OSC website, and people may contact you for specific advice (e.g. if they wanted to replicate your initiative or help with yours).
-- I will add you to a OSC Fellow mailing list where we can all exchange opportunities and requests (e.g. call for applications for train-the-trainer trainings, requests for presenters/co-instructors on a specific topic, calls for contribution on opinion pieces or reports to stakeholders ; if you are unsure about what to post, you can always contact me at malika.ihle@lmu.de).
-- You will have the opportunity to connect with other Fellows during networking events organized by the OSC (e.g. dinners, informal and irregular meetings to reflect on your initiatives)
+**What does becoming a LMU OSC Fellow mean?**
 
-### What to do if you are interested?
-Provide me with information for your profile page  (you do not have to share all information to be welcomed as a Fellow, but a complete profile would be appreciated. Please explicitly mention ‘not provided’ so I know nothing is missing by mistake)
+- If you are not, I will add you to the [LMU OSC announcement mailing list](https://lists.lrz.de/mailman/listinfo/lmu-osc) so you can stay informed about our activities. We expect you to disseminate information as relevant to your networks.
+- You will have a **profile page** on the OSC website, and people may contact you for specific advice (e.g. if they wanted to replicate your initiative or help with yours).
+- I will add you to a **OSC Fellow mailing list** where we can all exchange opportunities and requests (e.g. call for applications for train-the-trainer trainings, requests for presenters/co-instructors on a specific topic, calls for contribution on opinion pieces or reports to stakeholders ; if you are unsure about what to post, you can always contact me at malika.ihle@lmu.de).
+- You will have the **opportunity to connect** with other Fellows during networking events organized by the OSC (e.g. dinners, informal and irregular meetings to reflect on your initiatives)
 
-Let me know the type of contribution(s), if any, you would be interested in providing to the OSC. Is there a topic (or topics) that would be of particular interest to you, and on which you could make some contribution (e.g. to co-instruct a workshop, participate in the creation of guidelines, provide a short demonstration or presentation. etc.) ?
-Request a 20 min onboarding meeting with me if you are interested and have time, so we can discuss your interests/remits, and see how I can best support you in your role.
+**What to do if you are interested?**
 
-1. Complete Name (Surname, First Name)
-2. Title (e.g. BSc., MSc.)
-3. Position (e.g. Student, Researcher)
-4. Affiliations (e.g. Faculty + Department/Institution +  Unit/Chair)
-5. Picture
-6. Email
-7. ORCID
-8. Personal Website URL 
-9. Social Media URL (Mastodon, GitHub,...)
-10. Short personal statement in which you can describe e.g. why you find Open Science important, what is your role in the grassroot initiative you are involved with, what you may already be implementing, where you see the most important areas of work, etc. A few sentences are sufficient. You can see the statements of current fellows as a guide. 
+1. Provide me with **information for your profile page** (you do not have to share all information to be welcomed as a Fellow, but a complete profile would be appreciated. Please explicitly mention ‘not provided’ so I know nothing is missing by mistake)
+    1. Complete Name (Surname, First Name)
+    2. Title (e.g. BSc., MSc.)
+    3. Position (e.g. Student, Researcher)
+    4. Affiliations (e.g. Faculty + Department/Institution +  Unit/Chair)
+    5. Picture
+    6. Email
+    7. ORCID
+    8. Personal Website URL 
+    9. Social Media URL (Mastodon, GitHub,...)
+    10. Short personal statement in which you can describe e.g. why you find Open Science important, what is your role in the grassroot initiative you are involved with, what you may already be implementing, where you see the most important areas of work, etc. A few sentences are sufficient. You can see the statements of current fellows as a guide. 
+2. Let me know the type of **contribution(s)**, if any, you would be interested in providing to the OSC. Is there a topic (or topics) that would be of particular interest to you, and on which you could make some contribution (e.g. to co-instruct a workshop, participate in the creation of guidelines, provide a short demonstration or presentation. etc.) ?
+3. Request a 20 min **onboarding meeting** with me if you are interested and have time, so we can discuss your interests/remits, and see how I can best support you in your role.
 
 Let me know what you think and what your questions are!
 
 Best wishes
+
 Malika
