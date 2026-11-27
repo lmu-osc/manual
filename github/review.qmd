@@ -15,6 +15,14 @@ You will also need to know how to **set up an SSH connection** between your comp
 
 ## Learning resources
 
+::: {.callout-important}
+## For Windows Users!
+Before proceeding, run the following command in your terminal to prevent Git from introducing Windows-style (CRLF) line endings into files:
+`git config --global core.autocrlf input`
+
+You only need to run this command once per computer.
+:::
+
 ### OSC introductory tutorials
 
 These two tutorials are designed for beginners and use RStudio, which is common among OSC members:
